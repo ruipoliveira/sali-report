@@ -1,22 +1,11 @@
-%
-% uaThesis example (for a thesis written in Portuguese)
-%
-% the complete list of options and commands can be found in uaThesis.sty
-%
 
 \documentclass[11pt,twoside,a4paper]{report}
 \usepackage[DETI,newLogo]{uaThesis}
-
 \def\ThesisYear{2017}
-
 
 % optional packages
 \usepackage[portuguese]{babel}
-
 \usepackage[utf8]{inputenc}
-
-
-
 \usepackage{hyperref}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -24,11 +13,8 @@
 \usepackage{xspace}% used by \sigla
 \usepackage{fancyhdr}
 
-
 \usepackage{setspace} % espacamento entre linhas
-
 % padrao 1.5 de espacamento entre linhas
-
 
 \usepackage{datetime}
 \usepackage{fancyhdr}
@@ -124,10 +110,12 @@
 % First alternative, with a figure
 \TitlePage
   %\GRID  % for debugging ONLY
-  \HEADER{\BAR\FIG{\includegraphics[height=60mm]{uaLogoOld}}} % the \FIG{} is optional
+  \HEADER{\BAR\FIG{\includegraphics[height=60mm]{uaLogoNew}}} % the \FIG{} is optional
          {\ThesisYear}
-  \TITLE{Rui Pedro dos Santos Oliveira}
-        {Plataforma de apoio a producao de salci cornia na Ria de Aveiro
+  \TITLE{Rui Pedro dos \newline Santos Oliveira}
+        {Plataforma de apoio a producao de salcicornia na Ria de Aveiro
+        \newline \newline
+       	Platform to support the cultivation of samphire in Ria de Aveiro
     	}
 \EndTitlePage
 \titlepage\ \endtitlepage % empty page
@@ -136,14 +124,13 @@
 \TitlePage
   %\GRID  % for debugging ONLY
   \HEADER{\BAR\FIG{\begin{minipage}{50mm} % no more than 120mm
-          ``I'm King of the world.''
-           \begin{flushright}
-            --- Jack Nicholson
-           \end{flushright}
           \end{minipage}}}
          {\ThesisYear}
-  \TITLE{Z\'e \newline Manel}
-        {Como escrever uma tese bonita e cheia de resultados importantes}
+  \TITLE{Rui Pedro dos \newline Santos Oliveira}
+{Plataforma de apoio a producao de salcicornia na Ria de Aveiro
+	\newline \newline
+	Platform to support the cultivation of samphire in Ria de Aveiro
+}
 \EndTitlePage
 \titlepage\ \endtitlepage % empty page
 
@@ -153,14 +140,15 @@
 %
 
 \TitlePage
-  \HEADER{}{\ThesisYear}
-  \TITLE{Z\'e \newline Manel}
-        {Como escrever uma tese bonita e cheia de resultados importantes}
+  \HEADERSEM{}{\ThesisYear}
+    \TITLE{Rui Pedro dos Santos Oliveira}
+  {Plataforma de apoio a producao de salcicornia na Ria de Aveiro
+  	\newline \newline
+  	Platform to support the cultivation of samphire in Ria de Aveiro
+  }
   \vspace*{15mm}
   \TEXT{}
-       {Disserta\c c\~ao apresentada \`a Universidade de Aveiro para cumprimento dos requesitos
-        necess\'arios \`a obten\c c\~ao do grau de Doutor em X, realizada sob a orienta\c c\~ao
-        cient\'\i fica de Y, Professor do Departamento Z da Universidade de Aveiro}
+       {Dissertação apresentada à Universidade de Aveiro para cumprimento dos requisitos necessários à obtenção do grau de Mestre em Engenharia de Computadores e Telemática, realizada sob a orientação científica do Doutor Joaquim Manuel Henriques de Sousa Pinto, Professor Associado do Departamento de Eletrónica, Telecomunicações e Informática da Universidade de Aveiro e do Doutor José Alberto Gouveia Fonseca, Professor Associado do Departamento de Eletrónica, Telecomunicações e Informática da Universidade de Aveiro. }
 \EndTitlePage
 \titlepage\ \endtitlepage % empty page
 
@@ -200,8 +188,11 @@
 \titlepage\ \endtitlepage % empty page
 
 \TitlePage
-  \vspace*{55mm}
-  \TEXT{\textbf{Resumo}}
+	\vspace*{55mm}
+    \TEXT{\textbf{palavras chave}}
+	{Cultivo da salicórnia, irrigação, sensores, atuadores, web, monitorização, atuação remota.}
+  	\vspace*{5mm}
+  \TEXT{\textbf{resumo}}
        {Nos dias que correm, \'e frequente um trabalho ser avaliado pela sua apar\^encia em vez de
         o ser pelo seu conte\'udo. Sendo assim, sem descurar este \'ultimo, nesta tese descrevemos
         maneiras revolucion\'arias de transformar um documento s\'olido e austero num documento
@@ -215,7 +206,10 @@
 
 \TitlePage
   \vspace*{55mm}
-  \TEXT{\textbf{Abstract}}
+  \TEXT{\textbf{keywords}}
+  {Cultivo da salicórnia, irrigação, sensores, atuadores, web, monitorização, atuação remota.}
+  \vspace*{5mm}
+  \TEXT{\textbf{abstract}}
        {Nowadays, it is usual to evaluate a work \ldots}
 \EndTitlePage
 \titlepage\ \endtitlepage % empty page
@@ -239,11 +233,6 @@
 
 \cleardoublepage
 \pagenumbering{arabic}
-
-
-
-
-
 
 
 \cleardoublepage
@@ -284,11 +273,13 @@
 %
 % The bibliography
 %
-\bibliographystyle{unsrt}
+%\bibliographystyle{unsrt}
+\bibliographystyle{IEEEtran}
 \cleardoublepage
 \phantomsection
 %\addcontentsline{toc}{chapter}{Bibliography}
-\bibliography{bibliography}
+\bibliography{tese}
+%\bibliography{tese}
 
 %
 % The Appendix

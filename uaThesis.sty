@@ -148,6 +148,25 @@
       \smash{\rlap{\kern 20mm\lower 122mm\hbox{\Huge\textsf{\textbf{PROVIS\'ORIO}}}}}%
     \fi
   \par\vspace*{40mm}}
+\long\def\HEADERSEM#1#2{\vspace*{5mm}\noindent\ua@font@size0\rlap{\parbox{\textwidth}{%
+    \ua@font@size0\hspace*{77mm}#1\textsf{\textbf{Universidade de Aveiro}}\space\space
+      \ua@above{\ua@textA}{\ua@textB}%
+    \iffalse
+      \hrule width \textwidth height .3pt depth 0mm\relax
+    \else
+      % pdflatex apparently draws the logo before the hrule (why?), so we need to split the hrule in two
+      \hrule width 66mm height 0.3pt depth 0mm\relax
+      \vskip -0.3pt
+      \nointerlineskip\moveright 75.2mm\vbox{\hrule width 134.8mm height 0.3pt depth 0mm}\nointerlineskip
+    \fi
+    \ua@font@size0\hspace*{77mm}\rlap{\ua@font@size0\textsf{\textbf{\strut #2}}}%
+      \hphantom{\ua@font@size0\textsf{\textbf{Universidade de Aveiro}}}\space\space
+      \ua@below{\ua@textC}{\ua@textD}}}\par
+  \ua@font@size0\vspace*{-8.8mm}\noindent\hspace*{67mm}\includegraphics[height=9mm]{\ua@logo}%
+    \ifua@final@\else
+
+    \fi
+  \par\vspace*{40mm}}
 
 %
 % Used to put the thesis title in the page. Must be placed immediately after
