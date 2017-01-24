@@ -37,4 +37,11 @@ Jose, ``{IEEE Internet of Things Journal},'' pp. C3--C3, 12. [Online].
   http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6488907}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Z}
+\BIBentryALTinterwordspacing
+Z, ``{Internet das Coisas (IoT) a custo zero - Artigos - Tecnologia -
+  Administradores.com},'' p. wqwq. [Online]. Available:
+  \url{http://www.administradores.com.br/artigos/tecnologia/internet-das-coisas-iot-a-custo-zero/92084/}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

@@ -81,5 +81,8 @@
     <requires type="dynamic">
       <file>example.bcf</file>
     </requires>
+    <requires type="editable">
+      <file>tese.bib</file>
+    </requires>
   </external>
 </requests>

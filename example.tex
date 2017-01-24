@@ -21,6 +21,9 @@
 
 \pagestyle{fancy}
 
+\usepackage{titlesec}
+
+
 \makeatletter
 \DeclareRobustCommand{\format@sec@number}[2]{{\normalfont\upshape#1}#2}
 \renewcommand{\chaptermark}[1]{%
@@ -141,7 +144,7 @@
 
 \TitlePage
   \HEADERSEM{}{\ThesisYear}
-    \TITLE{Rui Pedro dos Santos Oliveira}
+    \TITLE{Rui Pedro dos \newline Santos Oliveira}
   {Plataforma de apoio a producao de salcicornia na Ria de Aveiro
   	\newline \newline
   	Platform to support the cultivation of samphire in Ria de Aveiro
@@ -158,7 +161,7 @@
        {}
   \TEXT{presidente~/~president}
        {\textbf{ABC}\newline {\small
-        Professor Catedr\'atico da Universidade de Aveiro (por delega\c c\~ao da Reitora da
+        Professor Catedrático da Universidade de Aveiro (por delega\c c\~ao da Reitora da
         Universidade de Aveiro)}}
   \vspace*{5mm}
   \TEXT{vogais~/~examiners committee}
@@ -274,7 +277,7 @@
 % The bibliography
 %
 %\bibliographystyle{unsrt}
-\bibliographystyle{IEEEtran}
+\bibliographystyle{ieeetr}
 \cleardoublepage
 \phantomsection
 %\addcontentsline{toc}{chapter}{Bibliography}

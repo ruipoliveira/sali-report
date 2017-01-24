@@ -11,10 +11,8 @@ The style file: IEEEtran.bst
 A level-1 auxiliary file: texSource/appendix1.aux
 A level-1 auxiliary file: texSource/appendix2.aux
 Database file #1: tese.bib
-Warning--I didn't find a database entry for "tese1"
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-(There was 1 warning)
