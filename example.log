@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.23)  24 JAN 2017 18:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.23)  27 JAN 2017 11:29
 entering extended mode
 **./example.tex
 (example.tex
@@ -1349,6 +1349,10 @@ l.253 \include{texSource/chapter1}
 Cap\'{\i }tulo 2.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 2.
+
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 7.
 Package babel Info: Redefining portuges shorthand "|
@@ -1370,11 +1374,17 @@ Package babel Info: Redefining portuges shorthand "|
 
 
 ]
+
+Package Fancyhdr Warning: \headheight is too small (13.59999pt): 
+ Make it at least 25.2842pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 257.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 257.
- [4
+[4
 
 
 ]
@@ -1384,6 +1394,10 @@ Package babel Info: Redefining portuges shorthand "|
 Cap\'{\i }tulo 3.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\\' on input line 1.
+
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 3.
@@ -1519,16 +1533,16 @@ Package babel Info: Redefining portuges shorthand "|
 
 
 ] (example.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 33--39
+Underfull \hbox (badness 10000) in paragraph at lines 34--41
 \OT1/cmr/m/n/10.95 / / www . ua . pt / sbidm / biblioteca / page / 16342http : 
 / / ieeexplore . ieee . org / xpl / RecentIssue .
  []
 
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 291.
+(babel)             in language  on input line 296.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 291.
+(babel)             in language  on input line 296.
  [15
 
 
@@ -1541,9 +1555,9 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 291.
+(babel)             in language  on input line 296.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 291.
+(babel)             in language  on input line 296.
  [16
 
 
@@ -1556,9 +1570,9 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 293.
+(babel)             in language  on input line 298.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 293.
+(babel)             in language  on input line 298.
  [17
 
 
@@ -1566,30 +1580,37 @@ Package babel Info: Redefining portuges shorthand "|
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 294.
+(babel)             in language  on input line 299.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 294.
+(babel)             in language  on input line 299.
  [18
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 296.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 296.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 301.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 301.
  (example.aux (texSource/acronyms.aux) (texSource/chapter1.aux)
 (texSource/chapter2.aux) (texSource/chapter3.aux) (texSource/chapter4.aux)
 (texSource/chapter5.aux) (texSource/chapter6.aux) (texSource/chapter7.aux)
 (texSource/appendix1.aux) (texSource/appendix2.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 296.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 296.
-Package rerunfilecheck Info: File `example.out' has not changed.
-(rerunfilecheck)             Checksum: E0D28D34AF265F1166363BB60287CE02;1832.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 296.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 301.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 301.
+
+
+Package rerunfilecheck Warning: File `example.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `example.out':
+(rerunfilecheck)             Before: F6F187861983E8747E088561A02820AF;1855
+(rerunfilecheck)             After:  087D5DF6CFBCFC08F5AB6ED97A8777EF;1844.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 301.
  ) 
 Here is how much of TeX's memory you used:
- 19223 strings out of 493333
- 340315 string characters out of 3139176
+ 19224 strings out of 493333
+ 340320 string characters out of 3139176
  538484 words of memory out of 3000000
- 22223 multiletter control sequences out of 15000+200000
+ 22224 multiletter control sequences out of 15000+200000
  13156 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,12n,54p,1013b,547s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1600,9 +1621,9 @@ X 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmti10.pfb>
-Output written on example.pdf (40 pages, 169405 bytes).
+Output written on example.pdf (40 pages, 169970 bytes).
 PDF statistics:
- 363 PDF objects out of 1000 (max. 8388607)
+ 365 PDF objects out of 1000 (max. 8388607)
  64 named destinations out of 1000 (max. 500000)
  226 words of extra memory for PDF output out of 10000 (max. 10000000)
 
