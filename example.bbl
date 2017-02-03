@@ -21,30 +21,49 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{Toz}
+\bibitem{overviewsal}
+V.~Isca, A.~Seca, D.~Pinto, and A.~Silva, \emph{{An overview of Salicornia
+  genus: the phytochemical and pharmacological profile}}, natural pr~ed.,
+  V.~Gupta, Ed.\hskip 1em plus 0.5em minus 0.4em\relax Daya Publishing House,
+  New Delhi, 2014.
+
+\bibitem{chambers}
+T.~Davidson, \emph{{Chambers twentieth century dictionary}}, {W. {\&} R. Ch},
+  Ed., London, 1903.
+
+\bibitem{JoaoSilva}
 \BIBentryALTinterwordspacing
-Toz{\'{e}}, ``{Networked Art - IoT Internet of Things Awards},'' 2221.
-  [Online]. Available:
-  \url{http://www.postscapes.com/internet-of-things-award/networked-art/{\#}winners}
-  [Accessed: 2017-01-23]
+{Jo{\~{a}}o Silva}, ``{Sal verde, National Geographic}.'' [Online]. Available:
+  \url{https://nationalgeographic.sapo.pt/23-arquivo/as-nossas-historias/298-sal-verde}
+  [Accessed: 2017-02-01]
 \BIBentrySTDinterwordspacing
 
-\bibitem{Jose12}
+\bibitem{chenopodiaceae}
+S.~Beer and O.~Demina, ``{A new species of Salicornia (Chenopodiaceae) from
+  European Russia},'' pp. 253--257, 2005.
+
+\bibitem{ferri}
+M.~Ferri and N.~Menezes, \emph{{Gloss{\'{a}}rio Ilustrado de Bot{\^{a}}nica}},
+  1st~ed., {Livraria Nobel}, Ed., Brasil, 1981.
+
+\bibitem{Silva2000}
 \BIBentryALTinterwordspacing
-Jose, ``{IEEE Internet of Things Journal},'' pp. C3--C3, 12. [Online].
-  Available:
-  \url{http://www.ieeer8.org/news/ieee-academic-larry-k-wilson-award-recipient/
-  http://www.ua.pt/sbidm/biblioteca/page/16342
-  http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6488907} [Accessed:
-  2017-01-23]
+M.~H.~A. Silva, ``{Aspectos morfol{\'{o}}gicos e ecofisiol{\'{o}}gicos de
+  algumas hal{\'{o}}fitas do sapal da Ria de Aveiro},'' Ph.D. dissertation,
+  Universidade de Aveiro, 2000. [Online]. Available:
+  \url{http://ria.ua.pt/handle/10773/925}
 \BIBentrySTDinterwordspacing
 
-\bibitem{Z}
+\bibitem{RaquelPinto}
 \BIBentryALTinterwordspacing
-Z, ``{Internet das Coisas (IoT) a custo zero - Artigos - Tecnologia -
-  Administradores.com},'' p. wqwq. [Online]. Available:
-  \url{http://www.administradores.com.br/artigos/tecnologia/internet-das-coisas-iot-a-custo-zero/92084/}
-  [Accessed: 2017-01-23]
+R.~Pinto, ``{Expresso | A planta que {\'{e}} uma alternativa ao sal: antes era
+  uma praga, agora {\'{e}} uma erva gourmet},'' 2015. [Online]. Available:
+  \url{http://bit.ly/1PR7KAG} [Accessed: 2017-02-01]
 \BIBentrySTDinterwordspacing
+
+\bibitem{Silva2007}
+H.~Silva, G.~Caldeira, and H.~Freitas, ``{Salicornia ramosissima population
+  dynamics and tolerance of salinity},'' \emph{Ecological Research}, vol.~22,
+  no.~1, pp. 125--134, 2007.
 
 \end{thebibliography}

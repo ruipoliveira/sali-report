@@ -14,7 +14,7 @@
 \usepackage{fancyhdr}
 
 \usepackage{setspace} % espacamento entre linhas
-% padrao 1.5 de espacamento entre linhas
+
 
 \usepackage{datetime}
 \usepackage{fancyhdr}
@@ -23,6 +23,10 @@
 
 \usepackage{titlesec}
 
+%%%%%%%%%%%%%%%%%%%%%% MACROS%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\sr}{\textit{Salicornia ramosissima }}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \makeatletter
 \DeclareRobustCommand{\format@sec@number}[2]{{\normalfont\upshape#1}#2}
@@ -221,6 +225,8 @@
 %
 % Tables of contents, of figures, ...
 %
+\setstretch{1.5}
+
 
 \pagenumbering{roman}
 \tableofcontents
@@ -249,6 +255,8 @@
 %
 \cleardoublepage
 \pagenumbering{arabic}
+
+
 
 \include{texSource/chapter1}
 \cleardoublepage
