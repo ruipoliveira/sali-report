@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.23)  2 FEB 2017 23:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.1.23)  4 FEB 2017 12:35
 entering extended mode
 **./example.tex
 (example.tex
@@ -986,9 +986,12 @@ Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count160
 ) (example.aux
 (texSource/acronyms.aux) (texSource/chapter1.aux) (texSource/chapter2.aux)
-(texSource/chapter3.aux) (texSource/chapter4.aux) (texSource/chapter5.aux)
-(texSource/chapter6.aux) (texSource/chapter7.aux) (texSource/appendix1.aux)
-(texSource/appendix2.aux))
+(texSource/chapter3.aux
+
+LaTeX Warning: Label `Rotulo' multiply defined.
+
+) (texSource/chapter4.aux) (texSource/chapter5.aux) (texSource/chapter6.aux)
+(texSource/chapter7.aux) (texSource/appendix1.aux) (texSource/appendix2.aux))
 \openout1 = `example.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
@@ -1052,7 +1055,7 @@ LaTeX Info: Redefining \nameref on input line 111.
 \openout5 = `example.out'.
 
  ABD: EveryShipout initializing macros
-<uaLogoNew.pdf, id=106, 60.225pt x 75.28125pt>
+<uaLogoNew.pdf, id=134, 60.225pt x 75.28125pt>
 File: uaLogoNew.pdf Graphic file (type pdf)
  <use uaLogoNew.pdf>
 Package pdftex.def Info: uaLogoNew.pdf used on input line 121.
@@ -1217,10 +1220,12 @@ been already used, duplicate ignored
                    \relax 
 l.222 \titlepage\ \endtitlepage
                                 % empty page [1] (example.toc
+Package acronym Info: Label `acro:IoT' newly defined as it shall be overridden
+although it is yet undefined on input line 18.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 22.
+(babel)             in language  on input line 32.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 22.
+(babel)             in language  on input line 32.
  [1
 
 ])
@@ -1310,15 +1315,16 @@ File: uaLogoNew.pdf Graphic file (type pdf)
 Package pdftex.def Info: uaLogoNew.pdf used on input line 9.
 (pdftex.def)             Requested size: 60.22484pt x 75.28105pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 44.
+(babel)             in language  on input line 71.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 44.
+(babel)             in language  on input line 71.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.44 
-      [1
+l.71 A
+       evolução tecnológica é algo que sempre esteve presente na vida do...
+[1
 
 
 ]
@@ -1332,50 +1338,39 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 86.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 104.
+)
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 113.
+(babel)             in language  on input line 261.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 113.
+(babel)             in language  on input line 261.
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.113 o
-        projeto CAMBADA e identifica-se os pontos chave tanto [2])
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 261.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 261.
- [3]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 262.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 262.
- [4
-
-
-]
+l.261 \include{texSource/chapter1}
+                                   [2]
 \openout2 = `texSource/chapter2.aux'.
 
-
-(texSource/chapter2.tex
+ (texSource/chapter2.tex
 Cap\'{\i }tulo 2.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 8.
+File: uaLogoNew.pdf Graphic file (type pdf)
+<use uaLogoNew.pdf>
+Package pdftex.def Info: uaLogoNew.pdf used on input line 18.
+(pdftex.def)             Requested size: 60.22484pt x 75.28105pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 14.
+(babel)             in language  on input line 27.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 14.
-[5
+(babel)             in language  on input line 27.
+ [3
+
+
 
 
 ]
-File: uaLogoNew.pdf Graphic file (type pdf)
- <use uaLogoNew.pdf>
-Package pdftex.def Info: uaLogoNew.pdf used on input line 18.
-(pdftex.def)             Requested size: 60.22484pt x 75.28105pt.
 File: uaLogoNew.pdf Graphic file (type pdf)
  <use uaLogoNew.pdf>
 Package pdftex.def Info: uaLogoNew.pdf used on input line 30.
@@ -1383,14 +1378,14 @@ Package pdftex.def Info: uaLogoNew.pdf used on input line 30.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 39.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 45.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 45.
- [6]
-Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 48.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 53.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 72.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 72.
+ [4]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 72.
 Package babel Info: Redefining portuges shorthand "|
@@ -1402,18 +1397,21 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 104.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 104.
- [7]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 104.
-Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 113.
 )
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 264.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 264.
- [8]
+ [5]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 265.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 265.
+ [6
+
+
+]
 \openout2 = `texSource/chapter3.aux'.
 
 
@@ -1422,38 +1420,116 @@ Cap\'{\i }tulo 3.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 4.
-Package acronym Info: Label `acro:IoT' newly defined as it shall be overridden
-although it is yet undefined on input line 7.
+(babel)             in language  on input line 8.
 Package acronym Info: Label `acro:WWW' newly defined as it shall be overridden
-although it is yet undefined on input line 7.
+although it is yet undefined on input line 11.
+Package acronym Info: Label `acro:URL' newly defined as it shall be overridden
+although it is yet undefined on input line 14.
+Package acronym Info: Label `acro:HTML' newly defined as it shall be overridden
+
+although it is yet undefined on input line 14.
+Package acronym Info: Label `acro:HTTP' newly defined as it shall be overridden
+
+although it is yet undefined on input line 14.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 14.
+(babel)             in language  on input line 22.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 14.
-[9
+(babel)             in language  on input line 22.
+[7
+
+
+] <img/cap3-iot/diagrama-evolution.png, id=332, 909.3975pt x 331.99031pt>
+File: img/cap3-iot/diagrama-evolution.png Graphic file (type png)
+
+<use img/cap3-iot/diagrama-evolution.png>
+Package pdftex.def Info: img/cap3-iot/diagrama-evolution.png used on input line
+ 26.
+(pdftex.def)             Requested size: 454.69765pt x 165.99474pt.
+
+Overfull \hbox (12.0439pt too wide) in paragraph at lines 26--27
+ [][] |
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 34.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 41.
+
+! Package inputenc Error: Unicode char ´ (U+B4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44 ...envolver uma determinada aplica¸c˜ao, ´
+                                                  e
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char ´ (U+B4)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45 ...valia¸c˜ao de aplica¸c˜oes da mesma ´
+                                                  area se encontram no mercado.
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 267.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 267.
+ [8 <./img/cap3-iot/diagrama-evolution.png>]
+\openout2 = `texSource/chapter4.aux'.
+
+ (texSource/chapter4.tex
+Cap\'{\i }tulo 4.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 4.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 6.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 8.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 11.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 15.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 18.
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 270.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 270.
+ [9
 
 
 
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 21.
+(babel)             in language  on input line 271.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 28.
-)
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 267.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 267.
- [10]
-\openout2 = `texSource/chapter4.aux'.
+(babel)             in language  on input line 271.
+ [10
 
- (texSource/chapter4.tex)
+
+]
 \openout2 = `texSource/chapter5.aux'.
 
  (texSource/chapter5.tex
-Cap\'{\i }tulo 4.
+Cap\'{\i }tulo 5.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 )
@@ -1462,11 +1538,6 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 273.
  [11
-
-
-
-
-
 
 
 ]
@@ -1481,7 +1552,7 @@ Package babel Info: Redefining portuges shorthand "|
 \openout2 = `texSource/chapter6.aux'.
 
  (texSource/chapter6.tex
-Cap\'{\i }tulo 5.
+Cap\'{\i }tulo 6.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 )
@@ -1504,7 +1575,7 @@ Package babel Info: Redefining portuges shorthand "|
 \openout2 = `texSource/chapter7.aux'.
 
  (texSource/chapter7.tex
-Cap\'{\i }tulo 6.
+Cap\'{\i }tulo 7.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2.
 Package babel Info: Redefining portuges shorthand "|
@@ -1585,17 +1656,21 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 309.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 309.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 309.
 Package rerunfilecheck Info: File `example.out' has not changed.
-(rerunfilecheck)             Checksum: 0D37437B2922AFD727C3CB7DF7A03C2C;1789.
+(rerunfilecheck)             Checksum: C5AC2BD8283726FC8388D65A6B0FF68D;2357.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 309.
  ) 
 Here is how much of TeX's memory you used:
- 19252 strings out of 493333
- 340709 string characters out of 3139176
- 537916 words of memory out of 3000000
- 22242 multiletter control sequences out of 15000+200000
+ 19291 strings out of 493333
+ 341257 string characters out of 3139176
+ 540082 words of memory out of 3000000
+ 22265 multiletter control sequences out of 15000+200000
  13156 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,13n,54p,1013b,547s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,12n,54p,1013b,547s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKT
@@ -1604,9 +1679,9 @@ nts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/amsfonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
 nts/cm/cmti10.pfb>
-Output written on example.pdf (42 pages, 193857 bytes).
+Output written on example.pdf (42 pages, 359541 bytes).
 PDF statistics:
- 393 PDF objects out of 1000 (max. 8388607)
- 74 named destinations out of 1000 (max. 500000)
- 218 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 443 PDF objects out of 1000 (max. 8388607)
+ 88 named destinations out of 1000 (max. 500000)
+ 279 words of extra memory for PDF output out of 10000 (max. 10000000)
 
