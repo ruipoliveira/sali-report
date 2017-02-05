@@ -15,19 +15,27 @@
 \contentsline {subsection}{\numberline {2.2.8}O cliente - Horta dos Peixinhos, Lda}{5}{subsection.2.2.8}
 \contentsline {chapter}{\numberline {3}Solu\IeC {\c c}\IeC {\~o}es para Internet of Things}{7}{chapter.3}
 \contentsline {section}{\numberline {3.1}Da tecnologia ao IoT}{7}{section.3.1}
-\contentsline {section}{\numberline {3.2}Protocolos de comunica\IeC {\c c}\IeC {\~a}o usados em \ac {IoT}}{8}{section.3.2}
+\contentsline {section}{\numberline {3.2}Tecnologias de comunica\IeC {\c c}\IeC {\~a}o usadas em \ac {IoT}}{8}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Bluetooth}{8}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}WiFi}{8}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}NFC (Near Field Communication)}{8}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Zigbee}{8}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Sigfox}{8}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}LoRa}{8}{subsection.3.2.6}
+\contentsline {subsection}{\numberline {3.2.7}GSM}{8}{subsection.3.2.7}
+\contentsline {subsection}{\numberline {3.2.8}Compara\IeC {\c c}\IeC {\~a}o de tecnologias de comunica\IeC {\c c}\IeC {\~a}o}{8}{subsection.3.2.8}
 \contentsline {section}{\numberline {3.3}Aplica\IeC {\c c}\IeC {\~o}es relacionadas}{8}{section.3.3}
-\contentsline {chapter}{\numberline {4}Sistema de informa\IeC {\c c}\IeC {\~a}o: an\IeC {\'a}lise de requisitos e arquitetura}{9}{chapter.4}
-\contentsline {section}{\numberline {4.1}Frameworks de desenvolvimento}{9}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Web}{9}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Movel}{9}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Requisitos gerais}{9}{section.4.2}
-\contentsline {section}{\numberline {4.3}Requisitos de funcionamento}{9}{section.4.3}
-\contentsline {section}{\numberline {4.4}Casos de utiliza\IeC {\c c}\IeC {\~a}o}{9}{section.4.4}
-\contentsline {chapter}{\numberline {5}Desenvolvimento do sistema de controlo de monotoriza\IeC {\c c}\IeC {\~a}o}{11}{chapter.5}
-\contentsline {chapter}{\numberline {6}XXXXXXXXXXX}{13}{chapter.6}
-\contentsline {chapter}{\numberline {7}Conclus\IeC {\~a}o e trabalho futuro}{15}{chapter.7}
-\contentsline {section}{\numberline {7.1}Conclus\IeC {\~a}o}{15}{section.7.1}
-\contentsline {section}{\numberline {7.2}Trabalho futuro}{15}{section.7.2}
-\contentsline {chapter}{\numberline {A}Untitled appendix \#A}{18}{appendix.A}
-\contentsline {chapter}{\numberline {B}Untitled appendix \#B}{19}{appendix.B}
+\contentsline {chapter}{\numberline {4}Sistema de informa\IeC {\c c}\IeC {\~a}o: an\IeC {\'a}lise de requisitos e arquitetura}{11}{chapter.4}
+\contentsline {section}{\numberline {4.1}Frameworks de desenvolvimento}{11}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Web}{11}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}M\IeC {\'o}vel}{11}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Requisitos gerais}{11}{section.4.2}
+\contentsline {section}{\numberline {4.3}Requisitos de funcionamento}{11}{section.4.3}
+\contentsline {section}{\numberline {4.4}Casos de utiliza\IeC {\c c}\IeC {\~a}o}{11}{section.4.4}
+\contentsline {chapter}{\numberline {5}Desenvolvimento do sistema de controlo de monitoriza\IeC {\c c}\IeC {\~a}o}{13}{chapter.5}
+\contentsline {chapter}{\numberline {6}XXXXXXXXXXX}{15}{chapter.6}
+\contentsline {chapter}{\numberline {7}Conclus\IeC {\~a}o e trabalho futuro}{17}{chapter.7}
+\contentsline {section}{\numberline {7.1}Conclus\IeC {\~a}o}{17}{section.7.1}
+\contentsline {section}{\numberline {7.2}Trabalho futuro}{17}{section.7.2}
+\contentsline {chapter}{\numberline {A}Untitled appendix \#A}{20}{appendix.A}
+\contentsline {chapter}{\numberline {B}Untitled appendix \#B}{21}{appendix.B}
