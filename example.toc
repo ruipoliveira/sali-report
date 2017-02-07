@@ -1,41 +1,37 @@
 \select@language {portuguese}
 \contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Objetivos}{2}{section.1.1}
-\contentsline {section}{\numberline {1.2}Organiza\IeC {\c c}\IeC {\~a}o do documento}{2}{section.1.2}
-\contentsline {chapter}{\numberline {2}Salic\IeC {\'o}rnia: caracteriza\IeC {\c c}\IeC {\~a}o, import\IeC {\^a}ncia e cultivo}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}Caracter\IeC {\'\i }sticas da planta}{3}{section.2.1}
-\contentsline {section}{\numberline {2.2}Import\IeC {\^a}ncia da planta}{4}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Aplica\IeC {\c c}\IeC {\~o}es alimentares}{4}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Processo de secagem}{4}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Propriedades medicinais}{5}{subsection.2.2.3}
-\contentsline {subsection}{\numberline {2.2.4}Condi\IeC {\c c}\IeC {\~o}es ideias de cultivo da salic\IeC {\'o}rnia}{5}{subsection.2.2.4}
-\contentsline {subsection}{\numberline {2.2.5}Controlo}{5}{subsection.2.2.5}
-\contentsline {subsection}{\numberline {2.2.6}Monitoriza\IeC {\c c}\IeC {\~a}o}{5}{subsection.2.2.6}
-\contentsline {subsection}{\numberline {2.2.7}Import\IeC {\^a}ncia do controlo}{5}{subsection.2.2.7}
-\contentsline {subsection}{\numberline {2.2.8}O cliente - Horta dos Peixinhos, Lda}{5}{subsection.2.2.8}
-\contentsline {chapter}{\numberline {3}Solu\IeC {\c c}\IeC {\~o}es para Internet of Things}{7}{chapter.3}
-\contentsline {section}{\numberline {3.1}Da tecnologia ao IoT}{7}{section.3.1}
-\contentsline {section}{\numberline {3.2}Tecnologias de comunica\IeC {\c c}\IeC {\~a}o usadas em \ac {IoT}}{8}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Bluetooth}{8}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}WiFi}{8}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}NFC (Near Field Communication)}{8}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Zigbee}{8}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Sigfox}{8}{subsection.3.2.5}
-\contentsline {subsection}{\numberline {3.2.6}LoRa}{8}{subsection.3.2.6}
-\contentsline {subsection}{\numberline {3.2.7}GSM}{8}{subsection.3.2.7}
-\contentsline {subsection}{\numberline {3.2.8}Compara\IeC {\c c}\IeC {\~a}o de tecnologias de comunica\IeC {\c c}\IeC {\~a}o}{8}{subsection.3.2.8}
-\contentsline {section}{\numberline {3.3}Aplica\IeC {\c c}\IeC {\~o}es relacionadas}{8}{section.3.3}
-\contentsline {chapter}{\numberline {4}Sistema de informa\IeC {\c c}\IeC {\~a}o: an\IeC {\'a}lise de requisitos e arquitetura}{11}{chapter.4}
-\contentsline {section}{\numberline {4.1}Frameworks de desenvolvimento}{11}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Web}{11}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}M\IeC {\'o}vel}{11}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Requisitos gerais}{11}{section.4.2}
-\contentsline {section}{\numberline {4.3}Requisitos de funcionamento}{11}{section.4.3}
-\contentsline {section}{\numberline {4.4}Casos de utiliza\IeC {\c c}\IeC {\~a}o}{11}{section.4.4}
-\contentsline {chapter}{\numberline {5}Desenvolvimento do sistema de controlo de monitoriza\IeC {\c c}\IeC {\~a}o}{13}{chapter.5}
-\contentsline {chapter}{\numberline {6}XXXXXXXXXXX}{15}{chapter.6}
-\contentsline {chapter}{\numberline {7}Conclus\IeC {\~a}o e trabalho futuro}{17}{chapter.7}
-\contentsline {section}{\numberline {7.1}Conclus\IeC {\~a}o}{17}{section.7.1}
-\contentsline {section}{\numberline {7.2}Trabalho futuro}{17}{section.7.2}
-\contentsline {chapter}{\numberline {A}Untitled appendix \#A}{20}{appendix.A}
-\contentsline {chapter}{\numberline {B}Untitled appendix \#B}{21}{appendix.B}
+\contentsline {section}{\numberline {1.1}Motiva\IeC {\c c}\IeC {\~a}o}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Objetivos}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}Organiza\IeC {\c c}\IeC {\~a}o do documento}{2}{section.1.3}
+\contentsline {chapter}{\numberline {2}Salic\IeC {\'o}rnia: caracteriza\IeC {\c c}\IeC {\~a}o, import\IeC {\^a}ncia e cultivo}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Caracter\IeC {\'\i }sticas da planta}{5}{section.2.1}
+\contentsline {section}{\numberline {2.2}Import\IeC {\^a}ncia da planta}{7}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Aplica\IeC {\c c}\IeC {\~o}es alimentares}{7}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Aplica\IeC {\c c}\IeC {\~o}es medicinais}{7}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Condi\IeC {\c c}\IeC {\~o}es ideais de cultivo da salic\IeC {\'o}rnia}{7}{section.2.3}
+\contentsline {chapter}{\numberline {3}Solu\IeC {\c c}\IeC {\~o}es para Internet of Things}{9}{chapter.3}
+\contentsline {section}{\numberline {3.1}Evolu\IeC {\c c}\IeC {\~a}o tecnologia: o IoT}{9}{section.3.1}
+\contentsline {section}{\numberline {3.2}Tecnologias de comunica\IeC {\c c}\IeC {\~a}o usadas em \ac {IoT}}{10}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Bluetooth}{10}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}WiFi}{10}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}NFC (Near Field Communication)}{10}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Zigbee}{11}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Sigfox}{11}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}LoRa}{11}{subsection.3.2.6}
+\contentsline {subsection}{\numberline {3.2.7}GSM}{11}{subsection.3.2.7}
+\contentsline {subsection}{\numberline {3.2.8}Compara\IeC {\c c}\IeC {\~a}o de tecnologias de comunica\IeC {\c c}\IeC {\~a}o}{11}{subsection.3.2.8}
+\contentsline {section}{\numberline {3.3}Aplica\IeC {\c c}\IeC {\~o}es relacionadas}{11}{section.3.3}
+\contentsline {chapter}{\numberline {4}Sistema de informa\IeC {\c c}\IeC {\~a}o: an\IeC {\'a}lise de requisitos e arquitetura}{13}{chapter.4}
+\contentsline {section}{\numberline {4.1}Frameworks de desenvolvimento}{13}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Web}{13}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}M\IeC {\'o}vel}{13}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Requisitos gerais}{13}{section.4.2}
+\contentsline {section}{\numberline {4.3}Requisitos de funcionamento}{13}{section.4.3}
+\contentsline {section}{\numberline {4.4}Casos de utiliza\IeC {\c c}\IeC {\~a}o}{13}{section.4.4}
+\contentsline {chapter}{\numberline {5}Desenvolvimento do sistema de controlo de monitoriza\IeC {\c c}\IeC {\~a}o}{15}{chapter.5}
+\contentsline {chapter}{\numberline {6}XXXXXXXXXXX}{17}{chapter.6}
+\contentsline {chapter}{\numberline {7}Conclus\IeC {\~a}o e trabalho futuro}{19}{chapter.7}
+\contentsline {section}{\numberline {7.1}Conclus\IeC {\~a}o}{19}{section.7.1}
+\contentsline {section}{\numberline {7.2}Trabalho futuro}{19}{section.7.2}
+\contentsline {chapter}{\numberline {A}Untitled appendix \#A}{23}{appendix.A}
+\contentsline {chapter}{\numberline {B}Untitled appendix \#B}{25}{appendix.B}
