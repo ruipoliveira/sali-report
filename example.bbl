@@ -21,6 +21,10 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{Our2013}
+T.~Our, ``{Resume : Context Aware Computing for The Internet of Things : A
+  Survey Article 2013},'' pp. 1--5, 2013.
+
 \bibitem{overviewsal}
 V.~Isca, A.~Seca, D.~Pinto, and A.~Silva, \emph{{An overview of Salicornia
   genus: the phytochemical and pharmacological profile}}, natural pr~ed.,
@@ -79,9 +83,5 @@ E.~Figueroa, J.~Jimenez-Nieva, J.~Carranza, and C.~{Gonzalez Vilches},
 H.~Silva, G.~Caldeira, and H.~Freitas, ``{Salicornia ramosissima population
   dynamics and tolerance of salinity},'' \emph{Ecological Research}, vol.~22,
   no.~1, pp. 125--134, 2007.
-
-\bibitem{Our2013}
-T.~Our, ``{Resume : Context Aware Computing for The Internet of Things : A
-  Survey Article 2013},'' pp. 1--5, 2013.
 
 \end{thebibliography}

@@ -14,12 +14,12 @@ Database file #1: tese.bib
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in Our2013
 Warning--edition ordinal word "Natural Pr" may be too high (or improper) for conversion in overviewsal
 Warning--missing publisher in chambers
 Warning--empty journal in chenopodiaceae
 Warning--missing publisher in ferri
 Warning--there is url but no urldate in Silva2000
-Warning--empty journal in Our2013
 
 Done.
 (There were 6 warnings)
