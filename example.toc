@@ -22,14 +22,18 @@
 \contentsline {subsection}{\numberline {3.2.8}GPRS}{12}{subsection.3.2.8}
 \contentsline {subsection}{\numberline {3.2.9}Compara\IeC {\c c}\IeC {\~a}o de tecnologias de comunica\IeC {\c c}\IeC {\~a}o}{12}{subsection.3.2.9}
 \contentsline {section}{\numberline {3.3}Aplica\IeC {\c c}\IeC {\~o}es relacionadas}{12}{section.3.3}
-\contentsline {chapter}{\numberline {4}Sistema de informa\IeC {\c c}\IeC {\~a}o: an\IeC {\'a}lise de requisitos e arquitetura}{13}{chapter.4}
-\contentsline {section}{\numberline {4.1}Frameworks de desenvolvimento}{13}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Web}{13}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}M\IeC {\'o}vel}{13}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Requisitos gerais}{13}{section.4.2}
-\contentsline {section}{\numberline {4.3}Requisitos de funcionamento}{13}{section.4.3}
-\contentsline {section}{\numberline {4.4}Casos de utiliza\IeC {\c c}\IeC {\~a}o}{13}{section.4.4}
-\contentsline {chapter}{\numberline {5}Desenvolvimento do sistema de controlo de monitoriza\IeC {\c c}\IeC {\~a}o}{15}{chapter.5}
+\contentsline {chapter}{\numberline {4}Sistema de controlo e monitoriza\IeC {\c c}\IeC {\~a}o}{13}{chapter.4}
+\contentsline {section}{\numberline {4.1}Descri\IeC {\c c}\IeC {\~a}o}{13}{section.4.1}
+\contentsline {section}{\numberline {4.2}Arquitetura geral}{13}{section.4.2}
+\contentsline {section}{\numberline {4.3}Componentes}{13}{section.4.3}
+\contentsline {section}{\numberline {4.4}title}{13}{section.4.4}
+\contentsline {chapter}{\numberline {5}Sistema de informa\IeC {\c c}\IeC {\~a}o: an\IeC {\'a}lise de requisitos e arquitetura}{15}{chapter.5}
+\contentsline {section}{\numberline {5.1}Frameworks de desenvolvimento}{15}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Web}{15}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}M\IeC {\'o}vel}{15}{subsection.5.1.2}
+\contentsline {section}{\numberline {5.2}Requisitos gerais}{15}{section.5.2}
+\contentsline {section}{\numberline {5.3}Requisitos de funcionamento}{15}{section.5.3}
+\contentsline {section}{\numberline {5.4}Casos de utiliza\IeC {\c c}\IeC {\~a}o}{15}{section.5.4}
 \contentsline {chapter}{\numberline {6}XXXXXXXXXXX}{17}{chapter.6}
 \contentsline {chapter}{\numberline {7}Conclus\IeC {\~a}o e trabalho futuro}{19}{chapter.7}
 \contentsline {section}{\numberline {7.1}Conclus\IeC {\~a}o}{19}{section.7.1}
