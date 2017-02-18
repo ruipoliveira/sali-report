@@ -11,31 +11,34 @@
 \BOOKMARK [0][-]{chapter.3}{Solu\347\365es para Internet of Things}{}% 11
 \BOOKMARK [1][-]{section.3.1}{Evolu\347\343o tecnologia: o IoT}{chapter.3}% 12
 \BOOKMARK [1][-]{section.3.2}{Tecnologias de comunica\347\343o usadas em IoT}{chapter.3}% 13
-\BOOKMARK [2][-]{subsection.3.2.1}{RFID}{section.3.2}% 14
-\BOOKMARK [2][-]{subsection.3.2.2}{NFC \(Near Field Communication\)}{section.3.2}% 15
-\BOOKMARK [2][-]{subsection.3.2.3}{Bluetooth}{section.3.2}% 16
-\BOOKMARK [2][-]{subsection.3.2.4}{WiFi}{section.3.2}% 17
-\BOOKMARK [2][-]{subsection.3.2.5}{Zigbee}{section.3.2}% 18
-\BOOKMARK [2][-]{subsection.3.2.6}{LoRa}{section.3.2}% 19
-\BOOKMARK [2][-]{subsection.3.2.7}{Sigfox}{section.3.2}% 20
-\BOOKMARK [2][-]{subsection.3.2.8}{GPRS}{section.3.2}% 21
-\BOOKMARK [2][-]{subsection.3.2.9}{Compara\347\343o de tecnologias de comunica\347\343o}{section.3.2}% 22
-\BOOKMARK [1][-]{section.3.3}{Aplica\347\365es relacionadas}{chapter.3}% 23
-\BOOKMARK [0][-]{chapter.4}{Sistema de controlo e monitoriza\347\343o}{}% 24
-\BOOKMARK [1][-]{section.4.1}{Descri\347\343o}{chapter.4}% 25
-\BOOKMARK [1][-]{section.4.2}{Arquitetura geral}{chapter.4}% 26
-\BOOKMARK [1][-]{section.4.3}{Componentes}{chapter.4}% 27
-\BOOKMARK [1][-]{section.4.4}{title}{chapter.4}% 28
-\BOOKMARK [0][-]{chapter.5}{Sistema de informa\347\343o: an\341lise de requisitos e arquitetura}{}% 29
-\BOOKMARK [1][-]{section.5.1}{Frameworks de desenvolvimento}{chapter.5}% 30
-\BOOKMARK [2][-]{subsection.5.1.1}{Web}{section.5.1}% 31
-\BOOKMARK [2][-]{subsection.5.1.2}{M\363vel}{section.5.1}% 32
-\BOOKMARK [1][-]{section.5.2}{Requisitos gerais}{chapter.5}% 33
-\BOOKMARK [1][-]{section.5.3}{Requisitos de funcionamento}{chapter.5}% 34
-\BOOKMARK [1][-]{section.5.4}{Casos de utiliza\347\343o}{chapter.5}% 35
-\BOOKMARK [0][-]{chapter.6}{XXXXXXXXXXX}{}% 36
-\BOOKMARK [0][-]{chapter.7}{Conclus\343o e trabalho futuro}{}% 37
-\BOOKMARK [1][-]{section.7.1}{Conclus\343o}{chapter.7}% 38
-\BOOKMARK [1][-]{section.7.2}{Trabalho futuro}{chapter.7}% 39
-\BOOKMARK [0][-]{appendix.A}{Untitled appendix \043A}{}% 40
-\BOOKMARK [0][-]{appendix.B}{Untitled appendix \043B}{}% 41
+\BOOKMARK [2][-]{subsection.3.2.1}{RFID/NFC}{section.3.2}% 14
+\BOOKMARK [2][-]{subsection.3.2.2}{Bluetooth}{section.3.2}% 15
+\BOOKMARK [2][-]{subsection.3.2.3}{WiFi}{section.3.2}% 16
+\BOOKMARK [2][-]{subsection.3.2.4}{Zigbee}{section.3.2}% 17
+\BOOKMARK [2][-]{subsection.3.2.5}{LoRa}{section.3.2}% 18
+\BOOKMARK [2][-]{subsection.3.2.6}{Sigfox}{section.3.2}% 19
+\BOOKMARK [2][-]{subsection.3.2.7}{GPRS/GSM}{section.3.2}% 20
+\BOOKMARK [2][-]{subsection.3.2.8}{Compara\347\343o de tecnologias de comunica\347\343o}{section.3.2}% 21
+\BOOKMARK [1][-]{section.3.3}{Aplica\347\365es relacionadas}{chapter.3}% 22
+\BOOKMARK [2][-]{subsection.3.3.1}{Multi-monitoriza\347\343o de estufas agr\355colas }{section.3.3}% 23
+\BOOKMARK [2][-]{subsection.3.3.2}{Agroopar}{section.3.3}% 24
+\BOOKMARK [0][-]{chapter.4}{Sistema de controlo e monitoriza\347\343o}{}% 25
+\BOOKMARK [1][-]{section.4.1}{Descri\347\343o}{chapter.4}% 26
+\BOOKMARK [1][-]{section.4.2}{Arquitetura geral}{chapter.4}% 27
+\BOOKMARK [1][-]{section.4.3}{Componentes}{chapter.4}% 28
+\BOOKMARK [1][-]{section.4.4}{title}{chapter.4}% 29
+\BOOKMARK [0][-]{chapter.5}{Sistema de informa\347\343o: an\341lise de requisitos e arquitetura}{}% 30
+\BOOKMARK [1][-]{section.5.1}{Requisitos gerais}{chapter.5}% 31
+\BOOKMARK [1][-]{section.5.2}{Requisitos de funcionamento}{chapter.5}% 32
+\BOOKMARK [1][-]{section.5.3}{Frameworks de desenvolvimento}{chapter.5}% 33
+\BOOKMARK [2][-]{subsection.5.3.1}{Web}{section.5.3}% 34
+\BOOKMARK [3][-]{section*.15}{Django}{subsection.5.3.1}% 35
+\BOOKMARK [2][-]{subsection.5.3.2}{M\363vel}{section.5.3}% 36
+\BOOKMARK [3][-]{section*.16}{Android }{subsection.5.3.2}% 37
+\BOOKMARK [1][-]{section.5.4}{Casos de utiliza\347\343o}{chapter.5}% 38
+\BOOKMARK [0][-]{chapter.6}{XXXXXXXXXXX}{}% 39
+\BOOKMARK [0][-]{chapter.7}{Conclus\343o e trabalho futuro}{}% 40
+\BOOKMARK [1][-]{section.7.1}{Conclus\343o}{chapter.7}% 41
+\BOOKMARK [1][-]{section.7.2}{Trabalho futuro}{chapter.7}% 42
+\BOOKMARK [0][-]{appendix.A}{Untitled appendix \043A}{}% 43
+\BOOKMARK [0][-]{appendix.B}{Untitled appendix \043B}{}% 44

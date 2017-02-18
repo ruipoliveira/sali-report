@@ -1,4 +1,6 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: example.aux
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: example.aux
 A level-1 auxiliary file: texSource/acronyms.aux
 A level-1 auxiliary file: texSource/chapter1.aux
 A level-1 auxiliary file: texSource/chapter2.aux
@@ -10,6 +12,11 @@ A level-1 auxiliary file: texSource/chapter7.aux
 The style file: IEEEtran.bst
 A level-1 auxiliary file: texSource/appendix1.aux
 A level-1 auxiliary file: texSource/appendix2.aux
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: tese.bib
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
@@ -22,4 +29,45 @@ Warning--missing publisher in ferri
 Warning--there is url but no urldate in Silva2000
 
 Done.
+You've used 11 entries,
+            4106 wiz_defined-function locations,
+            913 strings with 9565 characters,
+and the built_in function-call counts, 6869 in all, are:
+= -- 552
+> -- 150
+< -- 51
++ -- 75
+- -- 26
+* -- 342
+:= -- 1107
+add.period$ -- 20
+call.type$ -- 11
+change.case$ -- 17
+chr.to.int$ -- 120
+cite$ -- 17
+duplicate$ -- 485
+empty$ -- 551
+format.name$ -- 32
+if$ -- 1553
+int.to.chr$ -- 0
+int.to.str$ -- 11
+missing$ -- 86
+newline$ -- 62
+num.names$ -- 17
+pop$ -- 210
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 4
+skip$ -- 523
+stack$ -- 0
+substring$ -- 267
+swap$ -- 372
+text.length$ -- 11
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 11
+warning$ -- 6
+while$ -- 35
+width$ -- 13
+write$ -- 126
 (There were 6 warnings)

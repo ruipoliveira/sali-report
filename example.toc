@@ -12,31 +12,34 @@
 \contentsline {chapter}{\numberline {3}Solu\IeC {\c c}\IeC {\~o}es para Internet of Things}{9}{chapter.3}
 \contentsline {section}{\numberline {3.1}Evolu\IeC {\c c}\IeC {\~a}o tecnologia: o IoT}{9}{section.3.1}
 \contentsline {section}{\numberline {3.2}Tecnologias de comunica\IeC {\c c}\IeC {\~a}o usadas em \ac {IoT}}{11}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}RFID}{11}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}NFC (Near Field Communication)}{11}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Bluetooth}{12}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}WiFi}{12}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Zigbee}{12}{subsection.3.2.5}
-\contentsline {subsection}{\numberline {3.2.6}LoRa}{12}{subsection.3.2.6}
-\contentsline {subsection}{\numberline {3.2.7}Sigfox}{12}{subsection.3.2.7}
-\contentsline {subsection}{\numberline {3.2.8}GPRS}{12}{subsection.3.2.8}
-\contentsline {subsection}{\numberline {3.2.9}Compara\IeC {\c c}\IeC {\~a}o de tecnologias de comunica\IeC {\c c}\IeC {\~a}o}{12}{subsection.3.2.9}
-\contentsline {section}{\numberline {3.3}Aplica\IeC {\c c}\IeC {\~o}es relacionadas}{12}{section.3.3}
-\contentsline {chapter}{\numberline {4}Sistema de controlo e monitoriza\IeC {\c c}\IeC {\~a}o}{13}{chapter.4}
-\contentsline {section}{\numberline {4.1}Descri\IeC {\c c}\IeC {\~a}o}{13}{section.4.1}
-\contentsline {section}{\numberline {4.2}Arquitetura geral}{13}{section.4.2}
-\contentsline {section}{\numberline {4.3}Componentes}{13}{section.4.3}
-\contentsline {section}{\numberline {4.4}title}{13}{section.4.4}
-\contentsline {chapter}{\numberline {5}Sistema de informa\IeC {\c c}\IeC {\~a}o: an\IeC {\'a}lise de requisitos e arquitetura}{15}{chapter.5}
-\contentsline {section}{\numberline {5.1}Frameworks de desenvolvimento}{15}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Web}{15}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}M\IeC {\'o}vel}{15}{subsection.5.1.2}
-\contentsline {section}{\numberline {5.2}Requisitos gerais}{15}{section.5.2}
-\contentsline {section}{\numberline {5.3}Requisitos de funcionamento}{15}{section.5.3}
-\contentsline {section}{\numberline {5.4}Casos de utiliza\IeC {\c c}\IeC {\~a}o}{15}{section.5.4}
-\contentsline {chapter}{\numberline {6}XXXXXXXXXXX}{17}{chapter.6}
-\contentsline {chapter}{\numberline {7}Conclus\IeC {\~a}o e trabalho futuro}{19}{chapter.7}
-\contentsline {section}{\numberline {7.1}Conclus\IeC {\~a}o}{19}{section.7.1}
-\contentsline {section}{\numberline {7.2}Trabalho futuro}{19}{section.7.2}
-\contentsline {chapter}{\numberline {A}Untitled appendix \#A}{23}{appendix.A}
-\contentsline {chapter}{\numberline {B}Untitled appendix \#B}{25}{appendix.B}
+\contentsline {subsection}{\numberline {3.2.1}RFID/NFC}{11}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Bluetooth}{12}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}WiFi}{12}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Zigbee}{12}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}LoRa}{12}{subsection.3.2.5}
+\contentsline {subsection}{\numberline {3.2.6}Sigfox}{13}{subsection.3.2.6}
+\contentsline {subsection}{\numberline {3.2.7}GPRS/GSM}{13}{subsection.3.2.7}
+\contentsline {subsection}{\numberline {3.2.8}Compara\IeC {\c c}\IeC {\~a}o de tecnologias de comunica\IeC {\c c}\IeC {\~a}o}{13}{subsection.3.2.8}
+\contentsline {section}{\numberline {3.3}Aplica\IeC {\c c}\IeC {\~o}es relacionadas}{13}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Multi-monitoriza\IeC {\c c}\IeC {\~a}o de estufas agr\IeC {\'\i }colas }{13}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Agroopar}{13}{subsection.3.3.2}
+\contentsline {chapter}{\numberline {4}Sistema de controlo e monitoriza\IeC {\c c}\IeC {\~a}o}{15}{chapter.4}
+\contentsline {section}{\numberline {4.1}Descri\IeC {\c c}\IeC {\~a}o}{15}{section.4.1}
+\contentsline {section}{\numberline {4.2}Arquitetura geral}{15}{section.4.2}
+\contentsline {section}{\numberline {4.3}Componentes}{15}{section.4.3}
+\contentsline {section}{\numberline {4.4}title}{15}{section.4.4}
+\contentsline {chapter}{\numberline {5}Sistema de informa\IeC {\c c}\IeC {\~a}o: an\IeC {\'a}lise de requisitos e arquitetura}{17}{chapter.5}
+\contentsline {section}{\numberline {5.1}Requisitos gerais}{17}{section.5.1}
+\contentsline {section}{\numberline {5.2}Requisitos de funcionamento}{17}{section.5.2}
+\contentsline {section}{\numberline {5.3}Frameworks de desenvolvimento}{17}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Web}{17}{subsection.5.3.1}
+\contentsline {subsubsection}{Django}{17}{section*.15}
+\contentsline {subsection}{\numberline {5.3.2}M\IeC {\'o}vel}{17}{subsection.5.3.2}
+\contentsline {subsubsection}{Android }{17}{section*.16}
+\contentsline {section}{\numberline {5.4}Casos de utiliza\IeC {\c c}\IeC {\~a}o}{17}{section.5.4}
+\contentsline {chapter}{\numberline {6}XXXXXXXXXXX}{19}{chapter.6}
+\contentsline {chapter}{\numberline {7}Conclus\IeC {\~a}o e trabalho futuro}{21}{chapter.7}
+\contentsline {section}{\numberline {7.1}Conclus\IeC {\~a}o}{21}{section.7.1}
+\contentsline {section}{\numberline {7.2}Trabalho futuro}{21}{section.7.2}
+\contentsline {chapter}{\numberline {A}Untitled appendix \#A}{25}{appendix.A}
+\contentsline {chapter}{\numberline {B}Untitled appendix \#B}{27}{appendix.B}
