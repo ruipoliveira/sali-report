@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.3.10)  11 MAR 2017 00:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.3.26)  2 APR 2017 14:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **example.tex
 (./example.tex
 LaTeX2e <2016/02/01>
-Babel <3.9q> and hyphenation patterns for 4 language(s) loaded.
+Babel <3.9q> and hyphenation patterns for 6 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size11.clo
@@ -610,149 +610,7 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 \f@ncyO@olf=\skip54
 \f@ncyO@orf=\skip55
 )
-(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
-Package: setspace 2011/12/19 v6.7a set line spacing
-)
-(/usr/share/texlive/texmf-dist/tex/latex/datetime/datetime.sty
-Package: datetime 2015/03/20 v2.60 Date Time Package
-
-(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count114
-)
-(/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fmtcount.sty
-Package: fmtcount 2015/05/05 v3.01
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
-
-(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks23
-\XKV@tempa@toks=\toks24
-)
-\XKV@depth=\count115
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-))
-(/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcprefix.sty
-Package: fcprefix 2012/09/28
-
-(/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
-Package: fcnumparser 2012/09/28
-\fc@digit@counter=\count116
-))
-\c@padzeroesN=\count117
-\fc@tmpcatcode=\count118
-
-(/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fc-portuges.def
-File: fc-portuges.def 2014/06/09
-)
-\@DT@modctr=\count119
-\@ordinalctr=\count120
-\@orgargctr=\count121
-\@strctr=\count122
-\@tmpstrctr=\count123
-\@DT@loopN=\count124
-\@DT@X=\count125
-)
-(/usr/share/texlive/texmf-dist/tex/latex/datetime/datetime-defaults.sty
-Package: datetime-defaults 2013/09/10
-)
-\@day=\count126
-\@month=\count127
-\@year=\count128
-\c@HOUR=\count129
-\c@HOURXII=\count130
-\c@MINUTE=\count131
-\c@TOHOUR=\count132
-\c@TOMINUTE=\count133
-\c@SECOND=\count134
-\currenthour=\count135
-\currentminute=\count136
-\currentsecond=\count137
-Package datetime Info: No datetime.cfg file found, using default settings on in
-put line 308.
-\@dtctr=\count138
-\dayofyear=\count139
-\dayofweek=\count140
-LaTeX Info: Redefining \today on input line 736.
-\dt@a=\toks25
-\dt@b=\toks26
-)
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks27
-\pgfutil@tempdima=\dimen119
-\pgfutil@tempdimb=\dimen120
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
-ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box28
-(/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
-Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
-))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
-Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
-))
-Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
-
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
-Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks28
-\pgfkeys@temptoks=\toks29
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
-ex
-\pgfkeys@tmptoks=\toks30
-))
-\pgf@x=\dimen121
-\pgf@y=\dimen122
-\pgf@xa=\dimen123
-\pgf@ya=\dimen124
-\pgf@xb=\dimen125
-\pgf@yb=\dimen126
-\pgf@xc=\dimen127
-\pgf@yc=\dimen128
-\w@pgf@writea=\write4
-\r@pgf@reada=\read1
-\c@pgf@counta=\count141
-\c@pgf@countb=\count142
-\c@pgf@countc=\count143
-\c@pgf@countd=\count144
-\t@pgf@toka=\toks31
-\t@pgf@tokb=\toks32
-\t@pgf@tokc=\toks33
- (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
-File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
-)
-Driver file for pgf: pgfsys-pdftex.def
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
-f
-File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
-)))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
-tex
-File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count145
-\pgfsyssoftpath@bigbuffer@items=\count146
-)
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
-tex
-File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
-)) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
@@ -770,6 +628,174 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count114
+\lst@gtempboxa=\box28
+\lst@token=\toks23
+\lst@length=\count115
+\lst@currlwidth=\dimen119
+\lst@column=\count116
+\lst@pos=\count117
+\lst@lostspace=\dimen120
+\lst@width=\dimen121
+\lst@newlines=\count118
+\lst@lineno=\count119
+\lst@maxwidth=\dimen122
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count120
+\lst@skipnumbers=\count121
+\lst@framebox=\box29
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(/usr/share/texlive/texmf-dist/tex/latex/datetime/datetime.sty
+Package: datetime 2015/03/20 v2.60 Date Time Package
+
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count122
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fmtcount.sty
+Package: fmtcount 2015/05/05 v3.01
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks24
+\XKV@tempa@toks=\toks25
+)
+\XKV@depth=\count123
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcprefix.sty
+Package: fcprefix 2012/09/28
+
+(/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fcnumparser.sty
+Package: fcnumparser 2012/09/28
+\fc@digit@counter=\count124
+))
+\c@padzeroesN=\count125
+\fc@tmpcatcode=\count126
+
+(/usr/share/texlive/texmf-dist/tex/latex/fmtcount/fc-portuges.def
+File: fc-portuges.def 2014/06/09
+)
+\@DT@modctr=\count127
+\@ordinalctr=\count128
+\@orgargctr=\count129
+\@strctr=\count130
+\@tmpstrctr=\count131
+\@DT@loopN=\count132
+\@DT@X=\count133
+)
+(/usr/share/texlive/texmf-dist/tex/latex/datetime/datetime-defaults.sty
+Package: datetime-defaults 2013/09/10
+)
+\@day=\count134
+\@month=\count135
+\@year=\count136
+\c@HOUR=\count137
+\c@HOURXII=\count138
+\c@MINUTE=\count139
+\c@TOHOUR=\count140
+\c@TOMINUTE=\count141
+\c@SECOND=\count142
+\currenthour=\count143
+\currentminute=\count144
+\currentsecond=\count145
+Package datetime Info: No datetime.cfg file found, using default settings on in
+put line 308.
+\@dtctr=\count146
+\dayofyear=\count147
+\dayofweek=\count148
+LaTeX Info: Redefining \today on input line 736.
+\dt@a=\toks26
+\dt@b=\toks27
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks28
+\pgfutil@tempdima=\dimen123
+\pgfutil@tempdimb=\dimen124
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box30
+(/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks29
+\pgfkeys@temptoks=\toks30
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex
+\pgfkeys@tmptoks=\toks31
+))
+\pgf@x=\dimen125
+\pgf@y=\dimen126
+\pgf@xa=\dimen127
+\pgf@ya=\dimen128
+\pgf@xb=\dimen129
+\pgf@yb=\dimen130
+\pgf@xc=\dimen131
+\pgf@yc=\dimen132
+\w@pgf@writea=\write4
+\r@pgf@reada=\read1
+\c@pgf@counta=\count149
+\c@pgf@countb=\count150
+\c@pgf@countc=\count151
+\c@pgf@countd=\count152
+\t@pgf@toka=\toks32
+\t@pgf@tokb=\toks33
+\t@pgf@tokc=\toks34
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count153
+\pgfsyssoftpath@bigbuffer@items=\count154
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 
@@ -777,12 +803,12 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen129
-\pgfmath@count=\count147
-\pgfmath@box=\box29
-\pgfmath@toks=\toks34
-\pgfmath@stack@operand=\toks35
-\pgfmath@stack@operation=\toks36
+\pgfmath@dimen=\dimen133
+\pgfmath@count=\count155
+\pgfmath@box=\box31
+\pgfmath@toks=\toks35
+\pgfmath@stack@operand=\toks36
+\pgfmath@stack@operation=\toks37
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
@@ -802,57 +828,57 @@ tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
 thmetics.code.tex)))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count148
+\c@pgfmathroundto@lastzeros=\count156
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
 x
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen130
-\pgf@picmaxx=\dimen131
-\pgf@picminy=\dimen132
-\pgf@picmaxy=\dimen133
-\pgf@pathminx=\dimen134
-\pgf@pathmaxx=\dimen135
-\pgf@pathminy=\dimen136
-\pgf@pathmaxy=\dimen137
-\pgf@xx=\dimen138
-\pgf@xy=\dimen139
-\pgf@yx=\dimen140
-\pgf@yy=\dimen141
-\pgf@zx=\dimen142
-\pgf@zy=\dimen143
+\pgf@picminx=\dimen134
+\pgf@picmaxx=\dimen135
+\pgf@picminy=\dimen136
+\pgf@picmaxy=\dimen137
+\pgf@pathminx=\dimen138
+\pgf@pathmaxx=\dimen139
+\pgf@pathminy=\dimen140
+\pgf@pathmaxy=\dimen141
+\pgf@xx=\dimen142
+\pgf@xy=\dimen143
+\pgf@yx=\dimen144
+\pgf@yy=\dimen145
+\pgf@zx=\dimen146
+\pgf@zy=\dimen147
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
 code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen144
-\pgf@path@lasty=\dimen145
+\pgf@path@lastx=\dimen148
+\pgf@path@lasty=\dimen149
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
 .tex
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen146
-\pgf@shorten@start@additional=\dimen147
+\pgf@shorten@end@additional=\dimen150
+\pgf@shorten@start@additional=\dimen151
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
 x
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box30
-\pgf@hbox=\box31
-\pgf@layerbox@main=\box32
-\pgf@picture@serial@count=\count149
+\pgfpic=\box32
+\pgf@hbox=\box33
+\pgf@layerbox@main=\box34
+\pgf@picture@serial@count=\count157
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
 ode.tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen148
+\pgflinewidth=\dimen152
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
 s.code.tex
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen149
-\pgf@pt@y=\dimen150
-\pgf@pt@temp=\dimen151
+\pgf@pt@x=\dimen153
+\pgf@pt@y=\dimen154
+\pgf@pt@temp=\dimen155
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
@@ -868,12 +894,12 @@ File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
 x
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen152
+\pgfarrowsep=\dimen156
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen153
-\pgf@sys@shading@range@num=\count150
+\pgf@max=\dimen157
+\pgf@sys@shading@range@num=\count158
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
@@ -881,7 +907,7 @@ File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
 tex
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box33
+\pgfexternal@startupbox=\box35
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
 x
@@ -897,15 +923,15 @@ File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box34
+\pgfnodeparttextbox=\box36
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
 .sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen154
-\pgf@nodesepend=\dimen155
+\pgf@nodesepstart=\dimen158
+\pgf@nodesepend=\dimen159
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
 .sty
@@ -919,10 +945,10 @@ Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen156
-\pgffor@skip=\dimen157
-\pgffor@stack=\toks37
-\pgffor@toks=\toks38
+\pgffor@iter=\dimen160
+\pgffor@skip=\dimen161
+\pgffor@stack=\toks38
+\pgffor@toks=\toks39
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
@@ -930,31 +956,31 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers
 .code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count151
-\pgfplotmarksize=\dimen158
+\pgf@plot@mark@count=\count159
+\pgfplotmarksize=\dimen162
 )
-\tikz@lastx=\dimen159
-\tikz@lasty=\dimen160
-\tikz@lastxsaved=\dimen161
-\tikz@lastysaved=\dimen162
-\tikzleveldistance=\dimen163
-\tikzsiblingdistance=\dimen164
-\tikz@figbox=\box35
-\tikz@figbox@bg=\box36
-\tikz@tempbox=\box37
-\tikz@tempbox@bg=\box38
-\tikztreelevel=\count152
-\tikznumberofchildren=\count153
-\tikznumberofcurrentchild=\count154
-\tikz@fig@count=\count155
+\tikz@lastx=\dimen163
+\tikz@lasty=\dimen164
+\tikz@lastxsaved=\dimen165
+\tikz@lastysaved=\dimen166
+\tikzleveldistance=\dimen167
+\tikzsiblingdistance=\dimen168
+\tikz@figbox=\box37
+\tikz@figbox@bg=\box38
+\tikz@tempbox=\box39
+\tikz@tempbox@bg=\box40
+\tikztreelevel=\count160
+\tikznumberofchildren=\count161
+\tikznumberofcurrentchild=\count162
+\tikz@fig@count=\count163
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count156
-\pgfmatrixcurrentcolumn=\count157
-\pgf@matrix@numberofcolumns=\count158
+\pgfmatrixcurrentrow=\count164
+\pgfmatrixcurrentcolumn=\count165
+\pgf@matrix@numberofcolumns=\count166
 )
-\tikz@expandcount=\count159
+\tikz@expandcount=\count167
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarytopaths.code.tex
@@ -962,7 +988,7 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
 (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count160
+\c@lips@count=\count168
 ) (./example.aux
 (./texSource/acronyms.aux) (./texSource/chapter1.aux) (./texSource/chapter2.aux
 ) (./texSource/chapter3.aux) (./texSource/chapter4.aux
@@ -977,37 +1003,38 @@ LaTeX Warning: Label `dikw' multiply defined.
 LaTeX Warning: Label `dikw' multiply defined.
 
 ) (./texSource/chapter6.aux) (./texSource/chapter7.aux)
-(./texSource/appendix1.aux) (./texSource/appendix2.aux))
+(./texSource/appendix1.aux) (./texSource/appendix2.aux)
+(./texSource/appendix3.aux))
 \openout1 = `example.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count161
-\scratchdimen=\dimen165
-\scratchbox=\box39
-\nofMPsegments=\count162
-\nofMParguments=\count163
-\everyMPshowfont=\toks39
-\MPscratchCnt=\count164
-\MPscratchDim=\dimen166
-\MPnumerator=\count165
-\makeMPintoPDFobject=\count166
-\everyMPtoPDFconversion=\toks40
+\scratchcounter=\count169
+\scratchdimen=\dimen169
+\scratchbox=\box41
+\nofMPsegments=\count170
+\nofMParguments=\count171
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count172
+\MPscratchDim=\dimen170
+\MPnumerator=\count173
+\makeMPintoPDFobject=\count174
+\everyMPtoPDFconversion=\toks41
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1023,8 +1050,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box40
-Package hyperref Info: Link coloring OFF on input line 114.
+\AtBeginShipoutBox=\box42
+Package hyperref Info: Link coloring OFF on input line 148.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1032,195 +1059,192 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count167
+\c@section@level=\count175
 )
-LaTeX Info: Redefining \ref on input line 114.
-LaTeX Info: Redefining \pageref on input line 114.
-LaTeX Info: Redefining \nameref on input line 114.
+LaTeX Info: Redefining \ref on input line 148.
+LaTeX Info: Redefining \pageref on input line 148.
+LaTeX Info: Redefining \nameref on input line 148.
 
 (./example.out) (./example.out)
 \@outlinefile=\write5
 \openout5 = `example.out'.
 
+\c@lstlisting=\count176
  ABD: EveryShipout initializing macros
-<uaLogoNew.pdf, id=187, 60.225pt x 75.28125pt>
+<uaLogoNew.pdf, id=292, 60.225pt x 75.28125pt>
 File: uaLogoNew.pdf Graphic file (type pdf)
  <use uaLogoNew.pdf>
-Package pdftex.def Info: uaLogoNew.pdf used on input line 124.
+Package pdftex.def Info: uaLogoNew.pdf used on input line 158.
 (pdftex.def)             Requested size: 136.60036pt x 170.71652pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 124.
+LaTeX Font Info:    Try loading font information for U+msa on input line 158.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 124.
+LaTeX Font Info:    Try loading font information for U+msb on input line 158.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 File: uaLogoNew.pdf Graphic file (type pdf)
  <use uaLogoNew.pdf>
-Package pdftex.def Info: uaLogoNew.pdf used on input line 124.
+Package pdftex.def Info: uaLogoNew.pdf used on input line 158.
 (pdftex.def)             Requested size: 20.48633pt x 25.60747pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 130.
+(babel)             in language  on input line 164.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 130.
+(babel)             in language  on input line 164.
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./uaLogoNew.pdf>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 131.
+(babel)             in language  on input line 165.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 131.
+(babel)             in language  on input line 165.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.131 \titlepage\ \endtitlepage
+l.165 \titlepage\ \endtitlepage
                                 % empty page [1]
 File: uaLogoNew.pdf Graphic file (type pdf)
  <use uaLogoNew.pdf>
-Package pdftex.def Info: uaLogoNew.pdf used on input line 138.
+Package pdftex.def Info: uaLogoNew.pdf used on input line 172.
 (pdftex.def)             Requested size: 20.48633pt x 25.60747pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 144.
+(babel)             in language  on input line 177.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 144.
+(babel)             in language  on input line 177.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.144 \EndTitlePage
+l.177 \EndTitlePage
                     [1]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 145.
+(babel)             in language  on input line 178.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 145.
+(babel)             in language  on input line 178.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.145 \titlepage\ \endtitlepage
+l.178 \titlepage\ \endtitlepage
                                 % empty page [1]
 File: uaLogoNew.pdf Graphic file (type pdf)
  <use uaLogoNew.pdf>
-Package pdftex.def Info: uaLogoNew.pdf used on input line 153.
+Package pdftex.def Info: uaLogoNew.pdf used on input line 186.
 (pdftex.def)             Requested size: 20.48633pt x 25.60747pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 162.
+(babel)             in language  on input line 195.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 162.
+(babel)             in language  on input line 195.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.162 \EndTitlePage
+l.195 \EndTitlePage
                     [1]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 163.
+(babel)             in language  on input line 196.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 163.
+(babel)             in language  on input line 196.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.163 \titlepage\ \endtitlepage
+l.196 \titlepage\ \endtitlepage
                                 % empty page [1]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 185.
+(babel)             in language  on input line 218.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 185.
+(babel)             in language  on input line 218.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.185 \EndTitlePage
+l.218 \EndTitlePage
                     [1]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 219.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 219.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.186 \titlepage\ \endtitlepage
+l.219 \titlepage\ \endtitlepage
                                 % empty page [1]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 197.
+(babel)             in language  on input line 230.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 197.
+(babel)             in language  on input line 230.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.197 \EndTitlePage
+l.230 \EndTitlePage
                     [1]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 198.
+(babel)             in language  on input line 231.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 198.
+(babel)             in language  on input line 231.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.198 \titlepage\ \endtitlepage
+l.231 \titlepage\ \endtitlepage
                                 % empty page [1]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 214.
+(babel)             in language  on input line 247.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 214.
+(babel)             in language  on input line 247.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.214 \EndTitlePage
+l.247 \EndTitlePage
                     [1]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 215.
+(babel)             in language  on input line 248.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 215.
+(babel)             in language  on input line 248.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.215 \titlepage\ \endtitlepage
+l.248 \titlepage\ \endtitlepage
                                 % empty page [1]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 225.
+(babel)             in language  on input line 258.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 225.
+(babel)             in language  on input line 258.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.225 \EndTitlePage
+l.258 \EndTitlePage
                     [1]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 226.
+(babel)             in language  on input line 259.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 226.
+(babel)             in language  on input line 259.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.226 \titlepage\ \endtitlepage
+l.259 \titlepage\ \endtitlepage
                                 % empty page [1] (./example.toc
 Package acronym Info: Label `acro:IoT' newly defined as it shall be overridden
-although it is yet undefined on input line 14.
+although it is yet undefined on input line 19.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 27.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 27.
  [1
 
-])
-\tf@toc=\write6
-\openout6 = `example.toc'.
-
-
+]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1228,67 +1252,85 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 238.
+(babel)             in language  on input line 61.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 238.
-[2] (./example.lof)
+(babel)             in language  on input line 61.
+[2])
+\tf@toc=\write6
+\openout6 = `example.toc'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 271.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 271.
+ [3]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 271.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 271.
+ [4
+
+]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 272.
+ (./example.lof)
 \tf@lof=\write7
 \openout7 = `example.lof'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 241.
+(babel)             in language  on input line 277.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 241.
- [3
-
-
-]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 241.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 241.
- [4
-
-] (./example.lot)
-\tf@lot=\write8
-\openout8 = `example.lot'.
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 247.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 247.
+(babel)             in language  on input line 277.
  [5
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 247.
+(babel)             in language  on input line 277.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 247.
+(babel)             in language  on input line 277.
  [6
+
+]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 278.
+ (./example.lot)
+\tf@lot=\write8
+\openout8 = `example.lot'.
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 285.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 285.
+ [7
+
+]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 285.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 285.
+ [8
 
 ]
 \openout2 = `texSource/acronyms.aux'.
 
- (./texSource/acronyms.tex)
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 255.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 255.
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.255 \include{texSource/acronyms}
-                                   [1
 
+(./texSource/acronyms.tex
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 289.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 289.
+ [9
 
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 260.
+(babel)             in language  on input line 296.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 260.
- [2
+(babel)             in language  on input line 296.
+ [10
 
 
 ]
@@ -1331,22 +1373,17 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 119.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 119.
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.119 P
-       ara finalizar, no Capıtulo 5 apresentam-se conclusões sobre o traba...
-[2])
+ [2])
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 265.
+(babel)             in language  on input line 301.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 265.
- [3]
+(babel)             in language  on input line 301.
+
+[3]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 266.
+(babel)             in language  on input line 302.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 266.
+(babel)             in language  on input line 302.
  [4
 
 
@@ -1366,7 +1403,7 @@ Package babel Info: Redefining portuges shorthand "|
 [5
 
 
-] <img/cap2-sali/Salicornia04.JPG, id=397, 853.38824pt x 569.12625pt>
+] <img/cap2-sali/Salicornia04.JPG, id=538, 853.38824pt x 569.12625pt>
 File: img/cap2-sali/Salicornia04.JPG Graphic file (type jpg)
 
 <use img/cap2-sali/Salicornia04.JPG>
@@ -1391,14 +1428,14 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 78.
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 268.
+(babel)             in language  on input line 304.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 268.
+(babel)             in language  on input line 304.
  [7]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 269.
+(babel)             in language  on input line 305.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 269.
+(babel)             in language  on input line 305.
  [8
 
 
@@ -1434,7 +1471,7 @@ Package babel Info: Redefining portuges shorthand "|
 [9
 
 
-] <img/cap3-iot/diagrama-evolution.png, id=442, 909.3975pt x 331.99031pt>
+] <img/cap3-iot/diagrama-evolution.png, id=583, 909.3975pt x 331.99031pt>
 File: img/cap3-iot/diagrama-evolution.png Graphic file (type png)
 
 <use img/cap3-iot/diagrama-evolution.png>
@@ -1449,7 +1486,7 @@ Overfull \hbox (12.0439pt too wide) in paragraph at lines 36--37
 
 LaTeX Warning: Citation `Rowley2007' on page 10 undefined on input line 43.
 
-<img/cap3-iot/dikw.png, id=445, 753.5653pt x 588.69937pt>
+<img/cap3-iot/dikw.png, id=586, 753.5653pt x 588.69937pt>
 File: img/cap3-iot/dikw.png Graphic file (type png)
 
 <use img/cap3-iot/dikw.png>
@@ -1461,70 +1498,73 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 51.
  [10 <./img/cap3-iot/diagrama-evolution.png>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 58.
+(babel)             in language  on input line 59.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 61.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 64.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 67.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 73.
 Package acronym Info: Label `acro:RFID' newly defined as it shall be overridden
 
-although it is yet undefined on input line 66.
-Package acronym Info: Label `acro:UID' newly defined as it shall be overridden
-although it is yet undefined on input line 70.
+although it is yet undefined on input line 75.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 73.
+(babel)             in language  on input line 77.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 73.
+(babel)             in language  on input line 77.
 
 [11 <./img/cap3-iot/dikw.png>]
+Package acronym Info: Label `acro:UID' newly defined as it shall be overridden
+although it is yet undefined on input line 79.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 73.
+(babel)             in language  on input line 82.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 78.
+(babel)             in language  on input line 87.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 83.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 88.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 98.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 101.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 101.
- [12]
+(babel)             in language  on input line 97.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 104.
-Package acronym Info: Label `acro:GPRS' newly defined as it shall be overridden
-
-although it is yet undefined on input line 107.
-Package acronym Info: Label `acro:GSM' newly defined as it shall be overridden
-although it is yet undefined on input line 107.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 104.
+ [12]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 107.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 113.
+Package acronym Info: Label `acro:GPRS' newly defined as it shall be overridden
+
+although it is yet undefined on input line 116.
+Package acronym Info: Label `acro:GSM' newly defined as it shall be overridden
+although it is yet undefined on input line 116.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 122.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 133.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 137.
+(babel)             in language  on input line 131.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 142.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 146.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 151.
 
 
-LaTeX Warning: Citation `Abreu2012' on page 13 undefined on input line 145.
+LaTeX Warning: Citation `Abreu2012' on page 13 undefined on input line 154.
 
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 271.
+(babel)             in language  on input line 307.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 271.
+(babel)             in language  on input line 307.
  [13]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 272.
+(babel)             in language  on input line 307.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 272.
- [14
-
-
-]
+(babel)             in language  on input line 307.
+ [14]
 \openout2 = `texSource/chapter4.aux'.
 
  (./texSource/chapter4.tex
@@ -1534,42 +1574,79 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 6.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 13.
-<esquemas/arquitetura_geral.pdf, id=482, 763.85374pt x 366.36874pt>
+(babel)             in language  on input line 16.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 18.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 26.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 30.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 34.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 37.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 41.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 46.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 51.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 54.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 61.
+<esquemas/arquitetura_geral.pdf, id=625, 763.85374pt x 366.36874pt>
 File: esquemas/arquitetura_geral.pdf Graphic file (type pdf)
 
 <use esquemas/arquitetura_geral.pdf>
-Package pdftex.def Info: esquemas/arquitetura_geral.pdf used on input line 17.
+Package pdftex.def Info: esquemas/arquitetura_geral.pdf used on input line 65.
 (pdftex.def)             Requested size: 420.12085pt x 201.50342pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 23.
+(babel)             in language  on input line 71.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 23.
+(babel)             in language  on input line 71.
  [15
 
 
- <./esquemas/arquitetura_geral.pdf>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 26.
 
-<esquemas/general-electronic-modules.pdf, id=492, 722.7pt x 553.06625pt>
+
+]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 74.
+
+<esquemas/general-electronic-modules.pdf, id=630, 722.7pt x 553.06625pt>
 File: esquemas/general-electronic-modules.pdf Graphic file (type pdf)
 
 <use esquemas/general-electronic-modules.pdf>
 Package pdftex.def Info: esquemas/general-electronic-modules.pdf used on input 
-line 31.
+line 79.
 (pdftex.def)             Requested size: 397.48622pt x 304.18738pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 37.
+(babel)             in language  on input line 85.
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 274.
+(babel)             in language  on input line 310.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 274.
- [16 <./esquemas/general-electronic-modules.pdf>]
+(babel)             in language  on input line 310.
+ [16 <./esquemas/arquitetura_geral.pdf> <./esquemas/general-electronic-modules.
+pdf>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 310.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 310.
+ [17]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 311.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 311.
+ [18
+
+
+]
 \openout2 = `texSource/chapter5.aux'.
 
- (./texSource/chapter5.tex
+
+(./texSource/chapter5.tex
 Cap\'{\i }tulo 5.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
@@ -1578,39 +1655,49 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 11.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 14.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 18.
+(babel)             in language  on input line 17.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 20.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 24.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 26.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 30.
-<esquemas/usecases.pdf, id=504, 844.65562pt x 596.98032pt>
-File: esquemas/usecases.pdf Graphic file (type pdf)
-
-<use esquemas/usecases.pdf>
-Package pdftex.def Info: esquemas/usecases.pdf used on input line 36.
-(pdftex.def)             Requested size: 422.32678pt x 298.48943pt.
-)
+(babel)             in language  on input line 34.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 277.
+(babel)             in language  on input line 37.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 277.
- [17
-
-
+(babel)             in language  on input line 40.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 46.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 47.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 47.
+[19
 
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 277.
+(babel)             in language  on input line 49.
+ <esquemas/usecases.pdf, id=660, 844.65562pt x 596.98032pt>
+File: esquemas/usecases.pdf Graphic file (type pdf)
+
+<use esquemas/usecases.pdf>
+Package pdftex.def Info: esquemas/usecases.pdf used on input line 53.
+(pdftex.def)             Requested size: 422.32678pt x 298.48943pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 277.
- [18 <./esquemas/usecases.pdf>]
+(babel)             in language  on input line 65.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 77.
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 313.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 313.
+ [20 <./esquemas/usecases.pdf>]
 \openout2 = `texSource/chapter6.aux'.
 
 
@@ -1618,22 +1705,24 @@ Package babel Info: Redefining portuges shorthand "|
 Cap\'{\i }tulo 6.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 6.
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 280.
+(babel)             in language  on input line 316.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 280.
- [19
+(babel)             in language  on input line 316.
+ [21
 
 
 
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 281.
+(babel)             in language  on input line 317.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 281.
- [20
+(babel)             in language  on input line 317.
+ [22
 
 
 ]
@@ -1649,18 +1738,18 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 7.
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 283.
+(babel)             in language  on input line 319.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 283.
- [21
+(babel)             in language  on input line 319.
+ [23
 
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 284.
+(babel)             in language  on input line 320.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 284.
- [22
+(babel)             in language  on input line 320.
+ [24
 
 
 ] (./example.bbl
@@ -1668,22 +1757,22 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 81.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 81.
- [23
+ [25
 
 
 ])
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 305.
+(babel)             in language  on input line 341.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 305.
- [24]
+(babel)             in language  on input line 341.
+ [26]
 \openout2 = `texSource/appendix1.aux'.
 
  (./texSource/appendix1.tex
 Ap\^endice A.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
-<esquemas/database_tese.pdf, id=553, 1308.33789pt x 1282.03969pt>
+<esquemas/database_tese.pdf, id=705, 1308.33789pt x 1282.03969pt>
 File: esquemas/database_tese.pdf Graphic file (type pdf)
 
 <use esquemas/database_tese.pdf>
@@ -1691,18 +1780,18 @@ Package pdftex.def Info: esquemas/database_tese.pdf used on input line 7.
 (pdftex.def)             Requested size: 327.08368pt x 320.50914pt.
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 305.
+(babel)             in language  on input line 341.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 305.
- [25
+(babel)             in language  on input line 341.
+ [27
 
 
  <./esquemas/database_tese.pdf>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 306.
+(babel)             in language  on input line 342.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 306.
- [26
+(babel)             in language  on input line 342.
+ [28
 
 
 ]
@@ -1713,34 +1802,61 @@ Package babel Info: Redefining portuges shorthand "|
 Ap\^endice B.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 3.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 6.
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 307.
+(babel)             in language  on input line 343.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 307.
- [27
+(babel)             in language  on input line 343.
+ [29
 
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 308.
+(babel)             in language  on input line 344.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 308.
- [28
+(babel)             in language  on input line 344.
+ [30
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 310.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 310.
- (./example.aux (./texSource/acronyms.aux) (./texSource/chapter1.aux) (./texSou
-rce/chapter2.aux) (./texSource/chapter3.aux)
-(./texSource/chapter4.aux) (./texSource/chapter5.aux) (./texSource/chapter6.aux
-) (./texSource/chapter7.aux) (./texSource/appendix1.aux)
-(./texSource/appendix2.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 310.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 310.
+\openout2 = `texSource/appendix3.aux'.
+
+ (./texSource/appendix3.tex
+Ap\^endice C.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 1.
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 36.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 36.
+ [31
+
+
+])
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 346.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 346.
+ [32]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 349.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 349.
+
+(./example.aux (./texSource/acronyms.aux) (./texSource/chapter1.aux)
+(./texSource/chapter2.aux) (./texSource/chapter3.aux) (./texSource/chapter4.aux
+) (./texSource/chapter5.aux) (./texSource/chapter6.aux)
+(./texSource/chapter7.aux) (./texSource/appendix1.aux)
+(./texSource/appendix2.aux) (./texSource/appendix3.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 349.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 349.
 Package rerunfilecheck Info: File `example.out' has not changed.
-(rerunfilecheck)             Checksum: 2C7C54938A924C456FE381D8226C6EB0;3156.
+(rerunfilecheck)             Checksum: 8A58A58C488AA6D2DD3C7B8BB3370474;4856.
 
 
 LaTeX Warning: There were undefined references.
@@ -1748,28 +1864,31 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 310.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 349.
  ) 
 Here is how much of TeX's memory you used:
- 19121 strings out of 494929
- 339960 string characters out of 6180142
- 528780 words of memory out of 5000000
- 21820 multiletter control sequences out of 15000+600000
- 13156 words of font info for 48 fonts, out of 8000000 for 9000
- 16 hyphenation exceptions out of 8191
- 55i,13n,54p,1010b,547s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 21118 strings out of 494888
+ 366007 string characters out of 6179127
+ 613581 words of memory out of 5000000
+ 23729 multiletter control sequences out of 15000+600000
+ 14042 words of font info for 51 fonts, out of 8000000 for 9000
+ 38 hyphenation exceptions out of 8191
+ 55i,13n,76p,1010b,2174s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmti10.pfb>
-Output written on example.pdf (50 pages, 1693350 bytes).
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmtt10.pfb>
+Output written on example.pdf (56 pages, 1739283 bytes).
 PDF statistics:
- 635 PDF objects out of 1000 (max. 8388607)
- 556 compressed objects within 6 object streams
- 126 named destinations out of 1000 (max. 500000)
- 413 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 859 PDF objects out of 1000 (max. 8388607)
+ 769 compressed objects within 8 object streams
+ 196 named destinations out of 1000 (max. 500000)
+ 621 words of extra memory for PDF output out of 10000 (max. 10000000)
 

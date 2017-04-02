@@ -1,45 +1,71 @@
-\BOOKMARK [0][-]{chapter.1}{Introdu\347\343o}{}% 1
-\BOOKMARK [1][-]{section.1.1}{Motiva\347\343o}{chapter.1}% 2
-\BOOKMARK [1][-]{section.1.2}{Objetivos}{chapter.1}% 3
-\BOOKMARK [1][-]{section.1.3}{Organiza\347\343o do documento}{chapter.1}% 4
-\BOOKMARK [0][-]{chapter.2}{Salic\363rnia: caracteriza\347\343o, import\342ncia e cultivo}{}% 5
-\BOOKMARK [1][-]{section.2.1}{Caracter\355sticas da planta}{chapter.2}% 6
-\BOOKMARK [1][-]{section.2.2}{Import\342ncia da planta}{chapter.2}% 7
-\BOOKMARK [2][-]{subsection.2.2.1}{Aplica\347\365es alimentares}{section.2.2}% 8
-\BOOKMARK [2][-]{subsection.2.2.2}{Aplica\347\365es medicinais}{section.2.2}% 9
-\BOOKMARK [1][-]{section.2.3}{Condi\347\365es ideais de cultivo da salic\363rnia}{chapter.2}% 10
-\BOOKMARK [0][-]{chapter.3}{Solu\347\365es para Internet of Things}{}% 11
-\BOOKMARK [1][-]{section.3.1}{Evolu\347\343o tecnologia: o IoT}{chapter.3}% 12
-\BOOKMARK [1][-]{section.3.2}{Tecnologias de comunica\347\343o usadas em IoT}{chapter.3}% 13
-\BOOKMARK [2][-]{subsection.3.2.1}{RFID/NFC}{section.3.2}% 14
-\BOOKMARK [2][-]{subsection.3.2.2}{Bluetooth}{section.3.2}% 15
-\BOOKMARK [2][-]{subsection.3.2.3}{WiFi}{section.3.2}% 16
-\BOOKMARK [2][-]{subsection.3.2.4}{Zigbee}{section.3.2}% 17
-\BOOKMARK [2][-]{subsection.3.2.5}{LoRa}{section.3.2}% 18
-\BOOKMARK [2][-]{subsection.3.2.6}{Sigfox}{section.3.2}% 19
-\BOOKMARK [2][-]{subsection.3.2.7}{GPRS/GSM}{section.3.2}% 20
-\BOOKMARK [2][-]{subsection.3.2.8}{Compara\347\343o de tecnologias de comunica\347\343o}{section.3.2}% 21
-\BOOKMARK [1][-]{section.3.3}{Aplica\347\365es relacionadas}{chapter.3}% 22
-\BOOKMARK [2][-]{subsection.3.3.1}{Multi-monitoriza\347\343o de estufas agr\355colas }{section.3.3}% 23
-\BOOKMARK [2][-]{subsection.3.3.2}{Agroopar}{section.3.3}% 24
-\BOOKMARK [1][-]{section.3.4}{Sistema de Monitoriza\347\343o de Estufas Agr\355colas}{chapter.3}% 25
-\BOOKMARK [0][-]{chapter.4}{Sistema de controlo e monitoriza\347\343o}{}% 26
-\BOOKMARK [1][-]{section.4.1}{Descri\347\343o}{chapter.4}% 27
-\BOOKMARK [1][-]{section.4.2}{Arquitetura geral}{chapter.4}% 28
-\BOOKMARK [1][-]{section.4.3}{Componentes}{chapter.4}% 29
-\BOOKMARK [1][-]{section.4.4}{title}{chapter.4}% 30
-\BOOKMARK [0][-]{chapter.5}{Sistema de informa\347\343o: an\341lise de requisitos e arquitetura}{}% 31
-\BOOKMARK [1][-]{section.5.1}{Requisitos gerais}{chapter.5}% 32
-\BOOKMARK [1][-]{section.5.2}{Requisitos de funcionamento}{chapter.5}% 33
-\BOOKMARK [1][-]{section.5.3}{Frameworks de desenvolvimento}{chapter.5}% 34
-\BOOKMARK [2][-]{subsection.5.3.1}{Web}{section.5.3}% 35
-\BOOKMARK [3][-]{section*.15}{Django}{subsection.5.3.1}% 36
-\BOOKMARK [2][-]{subsection.5.3.2}{M\363vel}{section.5.3}% 37
-\BOOKMARK [3][-]{section*.16}{Android }{subsection.5.3.2}% 38
-\BOOKMARK [1][-]{section.5.4}{Casos de utiliza\347\343o}{chapter.5}% 39
-\BOOKMARK [0][-]{chapter.6}{XXXXXXXXXXX}{}% 40
-\BOOKMARK [0][-]{chapter.7}{Conclus\343o e trabalho futuro}{}% 41
-\BOOKMARK [1][-]{section.7.1}{Conclus\343o}{chapter.7}% 42
-\BOOKMARK [1][-]{section.7.2}{Trabalho futuro}{chapter.7}% 43
-\BOOKMARK [0][-]{appendix.A}{Untitled appendix \043A}{}% 44
-\BOOKMARK [0][-]{appendix.B}{Untitled appendix \043B}{}% 45
+\BOOKMARK [0][-]{chapter*.1}{Lista de Figuras}{}% 1
+\BOOKMARK [0][-]{chapter*.3}{Lista de Tabelas}{}% 2
+\BOOKMARK [0][-]{section*.5}{Acr\363nimos}{}% 3
+\BOOKMARK [0][-]{chapter.1}{Introdu\347\343o}{}% 4
+\BOOKMARK [1][-]{section.1.1}{Motiva\347\343o}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.2}{Objetivos}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.3}{Organiza\347\343o do documento}{chapter.1}% 7
+\BOOKMARK [0][-]{chapter.2}{Salic\363rnia: caracteriza\347\343o, import\342ncia e cultivo}{}% 8
+\BOOKMARK [1][-]{section.2.1}{Caracter\355sticas da planta}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.2}{Import\342ncia da planta}{chapter.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.1}{Aplica\347\365es alimentares}{section.2.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.2}{Aplica\347\365es medicinais}{section.2.2}% 12
+\BOOKMARK [1][-]{section.2.3}{Condi\347\365es ideais de cultivo da salic\363rnia}{chapter.2}% 13
+\BOOKMARK [0][-]{chapter.3}{Solu\347\365es para Internet of Things}{}% 14
+\BOOKMARK [1][-]{section.3.1}{Evolu\347\343o tecnologia: o IoT}{chapter.3}% 15
+\BOOKMARK [2][-]{subsection.3.1.1}{Vantagens}{section.3.1}% 16
+\BOOKMARK [2][-]{subsection.3.1.2}{Desvantagens}{section.3.1}% 17
+\BOOKMARK [1][-]{section.3.2}{Arquitetura em IoT}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.3}{Tecnologias de comunica\347\343o usadas em IoT}{chapter.3}% 19
+\BOOKMARK [2][-]{subsection.3.3.1}{RFID/NFC}{section.3.3}% 20
+\BOOKMARK [2][-]{subsection.3.3.2}{Bluetooth}{section.3.3}% 21
+\BOOKMARK [2][-]{subsection.3.3.3}{WiFi}{section.3.3}% 22
+\BOOKMARK [2][-]{subsection.3.3.4}{Zigbee}{section.3.3}% 23
+\BOOKMARK [2][-]{subsection.3.3.5}{LoRa}{section.3.3}% 24
+\BOOKMARK [2][-]{subsection.3.3.6}{Sigfox}{section.3.3}% 25
+\BOOKMARK [2][-]{subsection.3.3.7}{GPRS/GSM}{section.3.3}% 26
+\BOOKMARK [2][-]{subsection.3.3.8}{Compara\347\343o de tecnologias de comunica\347\343o}{section.3.3}% 27
+\BOOKMARK [1][-]{section.3.4}{Aplica\347\365es relacionadas}{chapter.3}% 28
+\BOOKMARK [2][-]{subsection.3.4.1}{Multi-monitoriza\347\343o de estufas agr\355colas }{section.3.4}% 29
+\BOOKMARK [2][-]{subsection.3.4.2}{Agroopar}{section.3.4}% 30
+\BOOKMARK [1][-]{section.3.5}{Sistema de Monitoriza\347\343o de Estufas Agr\355colas}{chapter.3}% 31
+\BOOKMARK [0][-]{chapter.4}{Sistema de controlo e monitoriza\347\343o}{}% 32
+\BOOKMARK [1][-]{section.4.1}{Design funcional}{chapter.4}% 33
+\BOOKMARK [2][-]{subsection.4.1.1}{Requisitos funcionais}{section.4.1}% 34
+\BOOKMARK [2][-]{subsection.4.1.2}{Requisitos n\343o funcionais}{section.4.1}% 35
+\BOOKMARK [1][-]{section.4.2}{Design t\351cnico}{chapter.4}% 36
+\BOOKMARK [2][-]{subsection.4.2.1}{Arquitetura do sistema}{section.4.2}% 37
+\BOOKMARK [3][-]{section*.15}{Camada de apresenta\347\343o}{subsection.4.2.1}% 38
+\BOOKMARK [3][-]{section*.16}{Camada de neg\363cio}{subsection.4.2.1}% 39
+\BOOKMARK [3][-]{section*.17}{Camada de dados}{subsection.4.2.1}% 40
+\BOOKMARK [1][-]{section.4.3}{Diagrama de componentes}{chapter.4}% 41
+\BOOKMARK [1][-]{section.4.4}{Sistema de intera\347\343o}{chapter.4}% 42
+\BOOKMARK [1][-]{section.4.5}{Descri\347\343o}{chapter.4}% 43
+\BOOKMARK [1][-]{section.4.6}{Arquitetura geral}{chapter.4}% 44
+\BOOKMARK [1][-]{section.4.7}{Componentes}{chapter.4}% 45
+\BOOKMARK [1][-]{section.4.8}{title}{chapter.4}% 46
+\BOOKMARK [0][-]{chapter.5}{Sistema de informa\347\343o: an\341lise de requisitos e arquitetura}{}% 47
+\BOOKMARK [1][-]{section.5.1}{An\341lise de requisitos}{chapter.5}% 48
+\BOOKMARK [1][-]{section.5.2}{Diagramas}{chapter.5}% 49
+\BOOKMARK [2][-]{subsection.5.2.1}{Entidade-rela\347\343o}{section.5.2}% 50
+\BOOKMARK [2][-]{subsection.5.2.2}{Modelo relacional}{section.5.2}% 51
+\BOOKMARK [2][-]{subsection.5.2.3}{Estrutura final}{section.5.2}% 52
+\BOOKMARK [1][-]{section.5.3}{Requisitos de funcionamento}{chapter.5}% 53
+\BOOKMARK [1][-]{section.5.4}{Tecnologias de desenvolvimento}{chapter.5}% 54
+\BOOKMARK [2][-]{subsection.5.4.1}{Web}{section.5.4}% 55
+\BOOKMARK [2][-]{subsection.5.4.2}{Base de dados}{section.5.4}% 56
+\BOOKMARK [2][-]{subsection.5.4.3}{Mobile}{section.5.4}% 57
+\BOOKMARK [1][-]{section.5.5}{title}{chapter.5}% 58
+\BOOKMARK [1][-]{section.5.6}{Casos de utiliza\347\343o}{chapter.5}% 59
+\BOOKMARK [1][-]{section.5.7}{API rest}{chapter.5}% 60
+\BOOKMARK [1][-]{section.5.8}{Deploy do projecto}{chapter.5}% 61
+\BOOKMARK [0][-]{chapter.6}{Resultados}{}% 62
+\BOOKMARK [1][-]{section.6.1}{Testar API }{chapter.6}% 63
+\BOOKMARK [0][-]{chapter.7}{Conclus\343o e trabalho futuro}{}% 64
+\BOOKMARK [1][-]{section.7.1}{Conclus\343o}{chapter.7}% 65
+\BOOKMARK [1][-]{section.7.2}{Trabalho futuro}{chapter.7}% 66
+\BOOKMARK [0][-]{appendix.A}{Untitled appendix \043A}{}% 67
+\BOOKMARK [0][-]{appendix.B}{Mockups da interface}{}% 68
+\BOOKMARK [1][-]{section.B.1}{Vers\343o web}{appendix.B}% 69
+\BOOKMARK [1][-]{section.B.2}{Vers\343o mobile}{appendix.B}% 70
+\BOOKMARK [0][-]{appendix.C}{Trigger SQL }{}% 71

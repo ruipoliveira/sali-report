@@ -1,0 +1,50 @@
+\chapter{Trigger SQL }
+
+
+\begin{lstlisting}[
+language=SQL,
+showspaces=false,
+basicstyle=\ttfamily,
+numbers=left,
+numberstyle=\tiny,
+commentstyle=\color{gray}
+]
+CREATE OR REPLACE FUNCTION alarm_occurred()
+RETURNS TRIGGER AS $alarm$
+
+DECLARE
+varmax FLOAT;
+varmin FLOAT;
+BEGIN
+
+varmax := (SELECT max FROM saliapp_alarmssettings 
+	WHERE id_sensor_id= new.id_sensor_id);
+varmin := (SELECT min FROM saliapp_alarmssettings 
+	WHERE id_sensor_id= new.id_sensor_id);
+
+IF (new.value >= varmax) THEN 
+	INSERT INTO 
+	saliapp_alarms (id_reading_id, checked, max_or_min) 
+	VALUES (new.id, 'f', 't');
+	RETURN new;
+END IF;
+IF (new.value <= varmin) THEN 
+	INSERT INTO 
+	saliapp_alarms (id_reading_id, checked, max_or_min)
+	VALUES (new.id, 'f', 'f');
+	RETURN new;
+END IF;
+
+RETURN NULL;
+END
+$alarm$
+LANGUAGE plpgsql;
+
+CREATE TRIGGER trigger_alarm_occurred AFTER INSERT 
+ON saliapp_reading
+FOR EACH ROW EXECUTE PROCEDURE alarm_occurred()
+
+DROP FUNCTION alarm_occurred()
+DROP TRIGGER trigger_alarm_occurred ON saliapp_reading;
+
+\end{lstlisting}

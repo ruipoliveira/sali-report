@@ -1,4 +1,7 @@
 \select@language {portuguese}
+\contentsline {chapter}{Lista de Figuras}{v}{chapter*.1}
+\contentsline {chapter}{Lista de Tabelas}{vii}{chapter*.3}
+\contentsline {chapter}{Acr\IeC {\'o}nimos}{ix}{section*.5}
 \contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Motiva\IeC {\c c}\IeC {\~a}o}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Objetivos}{2}{section.1.2}
@@ -11,36 +14,59 @@
 \contentsline {section}{\numberline {2.3}Condi\IeC {\c c}\IeC {\~o}es ideais de cultivo da salic\IeC {\'o}rnia}{7}{section.2.3}
 \contentsline {chapter}{\numberline {3}Solu\IeC {\c c}\IeC {\~o}es para Internet of Things}{9}{chapter.3}
 \contentsline {section}{\numberline {3.1}Evolu\IeC {\c c}\IeC {\~a}o tecnologia: o IoT}{9}{section.3.1}
-\contentsline {section}{\numberline {3.2}Tecnologias de comunica\IeC {\c c}\IeC {\~a}o usadas em \ac {IoT}}{11}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}RFID/NFC}{11}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Bluetooth}{12}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}WiFi}{12}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Zigbee}{12}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}LoRa}{12}{subsection.3.2.5}
-\contentsline {subsection}{\numberline {3.2.6}Sigfox}{13}{subsection.3.2.6}
-\contentsline {subsection}{\numberline {3.2.7}GPRS/GSM}{13}{subsection.3.2.7}
-\contentsline {subsection}{\numberline {3.2.8}Compara\IeC {\c c}\IeC {\~a}o de tecnologias de comunica\IeC {\c c}\IeC {\~a}o}{13}{subsection.3.2.8}
-\contentsline {section}{\numberline {3.3}Aplica\IeC {\c c}\IeC {\~o}es relacionadas}{13}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Multi-monitoriza\IeC {\c c}\IeC {\~a}o de estufas agr\IeC {\'\i }colas }{13}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Agroopar}{13}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}Sistema de Monitoriza\IeC {\c c}\IeC {\~a}o de Estufas Agr\IeC {\'\i }colas}{13}{section.3.4}
+\contentsline {subsection}{\numberline {3.1.1}Vantagens}{11}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Desvantagens}{11}{subsection.3.1.2}
+\contentsline {section}{\numberline {3.2}Arquitetura em \ac {IoT}}{11}{section.3.2}
+\contentsline {section}{\numberline {3.3}Tecnologias de comunica\IeC {\c c}\IeC {\~a}o usadas em \ac {IoT}}{11}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}RFID/NFC}{11}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Bluetooth}{12}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}WiFi}{12}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Zigbee}{12}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.5}LoRa}{12}{subsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3.6}Sigfox}{13}{subsection.3.3.6}
+\contentsline {subsection}{\numberline {3.3.7}GPRS/GSM}{13}{subsection.3.3.7}
+\contentsline {subsection}{\numberline {3.3.8}Compara\IeC {\c c}\IeC {\~a}o de tecnologias de comunica\IeC {\c c}\IeC {\~a}o}{13}{subsection.3.3.8}
+\contentsline {section}{\numberline {3.4}Aplica\IeC {\c c}\IeC {\~o}es relacionadas}{13}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Multi-monitoriza\IeC {\c c}\IeC {\~a}o de estufas agr\IeC {\'\i }colas }{13}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Agroopar}{13}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.5}Sistema de Monitoriza\IeC {\c c}\IeC {\~a}o de Estufas Agr\IeC {\'\i }colas}{14}{section.3.5}
 \contentsline {chapter}{\numberline {4}Sistema de controlo e monitoriza\IeC {\c c}\IeC {\~a}o}{15}{chapter.4}
-\contentsline {section}{\numberline {4.1}Descri\IeC {\c c}\IeC {\~a}o}{15}{section.4.1}
-\contentsline {section}{\numberline {4.2}Arquitetura geral}{15}{section.4.2}
-\contentsline {section}{\numberline {4.3}Componentes}{16}{section.4.3}
-\contentsline {section}{\numberline {4.4}title}{16}{section.4.4}
-\contentsline {chapter}{\numberline {5}Sistema de informa\IeC {\c c}\IeC {\~a}o: an\IeC {\'a}lise de requisitos e arquitetura}{17}{chapter.5}
-\contentsline {section}{\numberline {5.1}Requisitos gerais}{17}{section.5.1}
-\contentsline {section}{\numberline {5.2}Requisitos de funcionamento}{17}{section.5.2}
-\contentsline {section}{\numberline {5.3}Frameworks de desenvolvimento}{17}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Web}{17}{subsection.5.3.1}
-\contentsline {subsubsection}{Django}{17}{section*.15}
-\contentsline {subsection}{\numberline {5.3.2}M\IeC {\'o}vel}{17}{subsection.5.3.2}
-\contentsline {subsubsection}{Android }{17}{section*.16}
-\contentsline {section}{\numberline {5.4}Casos de utiliza\IeC {\c c}\IeC {\~a}o}{17}{section.5.4}
-\contentsline {chapter}{\numberline {6}XXXXXXXXXXX}{19}{chapter.6}
-\contentsline {chapter}{\numberline {7}Conclus\IeC {\~a}o e trabalho futuro}{21}{chapter.7}
-\contentsline {section}{\numberline {7.1}Conclus\IeC {\~a}o}{21}{section.7.1}
-\contentsline {section}{\numberline {7.2}Trabalho futuro}{21}{section.7.2}
-\contentsline {chapter}{\numberline {A}Untitled appendix \#A}{25}{appendix.A}
-\contentsline {chapter}{\numberline {B}Untitled appendix \#B}{27}{appendix.B}
+\contentsline {section}{\numberline {4.1}Design funcional}{15}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Requisitos funcionais}{15}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Requisitos n\IeC {\~a}o funcionais}{15}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Design t\IeC {\'e}cnico}{15}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Arquitetura do sistema}{15}{subsection.4.2.1}
+\contentsline {subsubsection}{Camada de apresenta\IeC {\c c}\IeC {\~a}o}{15}{section*.15}
+\contentsline {subsubsection}{Camada de neg\IeC {\'o}cio}{15}{section*.16}
+\contentsline {subsubsection}{Camada de dados}{15}{section*.17}
+\contentsline {section}{\numberline {4.3}Diagrama de componentes}{15}{section.4.3}
+\contentsline {section}{\numberline {4.4}Sistema de intera\IeC {\c c}\IeC {\~a}o}{15}{section.4.4}
+\contentsline {section}{\numberline {4.5}Descri\IeC {\c c}\IeC {\~a}o}{15}{section.4.5}
+\contentsline {section}{\numberline {4.6}Arquitetura geral}{15}{section.4.6}
+\contentsline {section}{\numberline {4.7}Componentes}{16}{section.4.7}
+\contentsline {section}{\numberline {4.8}title}{17}{section.4.8}
+\contentsline {chapter}{\numberline {5}Sistema de informa\IeC {\c c}\IeC {\~a}o: an\IeC {\'a}lise de requisitos e arquitetura}{19}{chapter.5}
+\contentsline {section}{\numberline {5.1}An\IeC {\'a}lise de requisitos}{19}{section.5.1}
+\contentsline {section}{\numberline {5.2}Diagramas}{19}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Entidade-rela\IeC {\c c}\IeC {\~a}o}{19}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Modelo relacional}{19}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Estrutura final}{19}{subsection.5.2.3}
+\contentsline {section}{\numberline {5.3}Requisitos de funcionamento}{19}{section.5.3}
+\contentsline {section}{\numberline {5.4}Tecnologias de desenvolvimento}{19}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}\textit {Web}}{19}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Base de dados}{19}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}\textit {Mobile}}{19}{subsection.5.4.3}
+\contentsline {section}{\numberline {5.5}title}{19}{section.5.5}
+\contentsline {section}{\numberline {5.6}Casos de utiliza\IeC {\c c}\IeC {\~a}o}{20}{section.5.6}
+\contentsline {section}{\numberline {5.7}API rest}{20}{section.5.7}
+\contentsline {section}{\numberline {5.8}\textit {Deploy} do projecto}{20}{section.5.8}
+\contentsline {chapter}{\numberline {6}Resultados}{21}{chapter.6}
+\contentsline {section}{\numberline {6.1}Testar API }{21}{section.6.1}
+\contentsline {chapter}{\numberline {7}Conclus\IeC {\~a}o e trabalho futuro}{23}{chapter.7}
+\contentsline {section}{\numberline {7.1}Conclus\IeC {\~a}o}{23}{section.7.1}
+\contentsline {section}{\numberline {7.2}Trabalho futuro}{23}{section.7.2}
+\contentsline {chapter}{\numberline {A}Untitled appendix \#A}{27}{appendix.A}
+\contentsline {chapter}{\numberline {B}Mockups da interface}{29}{appendix.B}
+\contentsline {section}{\numberline {B.1}Vers\IeC {\~a}o web}{29}{section.B.1}
+\contentsline {section}{\numberline {B.2}Vers\IeC {\~a}o mobile}{29}{section.B.2}
+\contentsline {chapter}{\numberline {C}Trigger SQL }{31}{appendix.C}
