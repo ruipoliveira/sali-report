@@ -29,43 +29,62 @@
 \BOOKMARK [2][-]{subsection.3.4.1}{Multi-monitoriza\347\343o de estufas agr\355colas }{section.3.4}% 29
 \BOOKMARK [2][-]{subsection.3.4.2}{Agroopar}{section.3.4}% 30
 \BOOKMARK [1][-]{section.3.5}{Sistema de Monitoriza\347\343o de Estufas Agr\355colas}{chapter.3}% 31
-\BOOKMARK [0][-]{chapter.4}{Sistema de controlo e monitoriza\347\343o}{}% 32
-\BOOKMARK [1][-]{section.4.1}{Design funcional}{chapter.4}% 33
-\BOOKMARK [2][-]{subsection.4.1.1}{Requisitos funcionais}{section.4.1}% 34
-\BOOKMARK [2][-]{subsection.4.1.2}{Requisitos n\343o funcionais}{section.4.1}% 35
-\BOOKMARK [1][-]{section.4.2}{Design t\351cnico}{chapter.4}% 36
-\BOOKMARK [2][-]{subsection.4.2.1}{Arquitetura do sistema}{section.4.2}% 37
-\BOOKMARK [3][-]{section*.15}{Camada de apresenta\347\343o}{subsection.4.2.1}% 38
-\BOOKMARK [3][-]{section*.16}{Camada de neg\363cio}{subsection.4.2.1}% 39
-\BOOKMARK [3][-]{section*.17}{Camada de dados}{subsection.4.2.1}% 40
-\BOOKMARK [1][-]{section.4.3}{Diagrama de componentes}{chapter.4}% 41
-\BOOKMARK [1][-]{section.4.4}{Sistema de intera\347\343o}{chapter.4}% 42
-\BOOKMARK [1][-]{section.4.5}{Descri\347\343o}{chapter.4}% 43
-\BOOKMARK [1][-]{section.4.6}{Arquitetura geral}{chapter.4}% 44
-\BOOKMARK [1][-]{section.4.7}{Componentes}{chapter.4}% 45
-\BOOKMARK [1][-]{section.4.8}{title}{chapter.4}% 46
-\BOOKMARK [0][-]{chapter.5}{Sistema de informa\347\343o: an\341lise de requisitos e arquitetura}{}% 47
-\BOOKMARK [1][-]{section.5.1}{An\341lise de requisitos}{chapter.5}% 48
-\BOOKMARK [1][-]{section.5.2}{Diagramas}{chapter.5}% 49
-\BOOKMARK [2][-]{subsection.5.2.1}{Entidade-rela\347\343o}{section.5.2}% 50
-\BOOKMARK [2][-]{subsection.5.2.2}{Modelo relacional}{section.5.2}% 51
-\BOOKMARK [2][-]{subsection.5.2.3}{Estrutura final}{section.5.2}% 52
-\BOOKMARK [1][-]{section.5.3}{Requisitos de funcionamento}{chapter.5}% 53
-\BOOKMARK [1][-]{section.5.4}{Tecnologias de desenvolvimento}{chapter.5}% 54
-\BOOKMARK [2][-]{subsection.5.4.1}{Web}{section.5.4}% 55
-\BOOKMARK [2][-]{subsection.5.4.2}{Base de dados}{section.5.4}% 56
-\BOOKMARK [2][-]{subsection.5.4.3}{Mobile}{section.5.4}% 57
-\BOOKMARK [1][-]{section.5.5}{title}{chapter.5}% 58
-\BOOKMARK [1][-]{section.5.6}{Casos de utiliza\347\343o}{chapter.5}% 59
-\BOOKMARK [1][-]{section.5.7}{API rest}{chapter.5}% 60
-\BOOKMARK [1][-]{section.5.8}{Deploy do projecto}{chapter.5}% 61
-\BOOKMARK [0][-]{chapter.6}{Resultados}{}% 62
-\BOOKMARK [1][-]{section.6.1}{Testar API }{chapter.6}% 63
-\BOOKMARK [0][-]{chapter.7}{Conclus\343o e trabalho futuro}{}% 64
-\BOOKMARK [1][-]{section.7.1}{Conclus\343o}{chapter.7}% 65
-\BOOKMARK [1][-]{section.7.2}{Trabalho futuro}{chapter.7}% 66
-\BOOKMARK [0][-]{appendix.A}{Untitled appendix \043A}{}% 67
-\BOOKMARK [0][-]{appendix.B}{Mockups da interface}{}% 68
-\BOOKMARK [1][-]{section.B.1}{Vers\343o web}{appendix.B}% 69
-\BOOKMARK [1][-]{section.B.2}{Vers\343o mobile}{appendix.B}% 70
-\BOOKMARK [0][-]{appendix.C}{Trigger SQL }{}% 71
+\BOOKMARK [0][-]{chapter.4}{Estado de arte}{}% 32
+\BOOKMARK [1][-]{section.4.1}{Sistema de controlo de vers\365es}{chapter.4}% 33
+\BOOKMARK [2][-]{subsection.4.1.1}{Solu\347\365es livres}{section.4.1}% 34
+\BOOKMARK [2][-]{subsection.4.1.2}{Solu\347\365es comerciais}{section.4.1}% 35
+\BOOKMARK [2][-]{subsection.4.1.3}{Solu\347\343o adoptada}{section.4.1}% 36
+\BOOKMARK [1][-]{section.4.2}{Sistema de gest\343o de base de dados}{chapter.4}% 37
+\BOOKMARK [2][-]{subsection.4.2.1}{PostgreSQL}{section.4.2}% 38
+\BOOKMARK [2][-]{subsection.4.2.2}{SQL server}{section.4.2}% 39
+\BOOKMARK [2][-]{subsection.4.2.3}{Solu\347\343o adoptada}{section.4.2}% 40
+\BOOKMARK [1][-]{section.4.3}{Framework de desenvolvimento web}{chapter.4}% 41
+\BOOKMARK [1][-]{section.4.4}{Frameworks/Tecnologias de desenvolvimento mobile}{chapter.4}% 42
+\BOOKMARK [1][-]{section.4.5}{Android nativo}{chapter.4}% 43
+\BOOKMARK [1][-]{section.4.6}{IOS nativo}{chapter.4}% 44
+\BOOKMARK [1][-]{section.4.7}{Multi-plataforma}{chapter.4}% 45
+\BOOKMARK [2][-]{subsection.4.7.1}{title}{section.4.7}% 46
+\BOOKMARK [1][-]{section.4.8}{API web}{chapter.4}% 47
+\BOOKMARK [0][-]{chapter.5}{Sistema de controlo e monitoriza\347\343o}{}% 48
+\BOOKMARK [1][-]{section.5.1}{Design funcional}{chapter.5}% 49
+\BOOKMARK [2][-]{subsection.5.1.1}{Requisitos funcionais}{section.5.1}% 50
+\BOOKMARK [2][-]{subsection.5.1.2}{Requisitos n\343o funcionais}{section.5.1}% 51
+\BOOKMARK [1][-]{section.5.2}{Design t\351cnico}{chapter.5}% 52
+\BOOKMARK [2][-]{subsection.5.2.1}{Arquitetura do sistema}{section.5.2}% 53
+\BOOKMARK [3][-]{section*.15}{Camada de apresenta\347\343o}{subsection.5.2.1}% 54
+\BOOKMARK [3][-]{section*.16}{Camada de neg\363cio}{subsection.5.2.1}% 55
+\BOOKMARK [3][-]{section*.17}{Camada de dados}{subsection.5.2.1}% 56
+\BOOKMARK [1][-]{section.5.3}{Diagrama de componentes}{chapter.5}% 57
+\BOOKMARK [1][-]{section.5.4}{Sistema de intera\347\343o}{chapter.5}% 58
+\BOOKMARK [1][-]{section.5.5}{Descri\347\343o}{chapter.5}% 59
+\BOOKMARK [1][-]{section.5.6}{Arquitetura geral}{chapter.5}% 60
+\BOOKMARK [1][-]{section.5.7}{Componentes}{chapter.5}% 61
+\BOOKMARK [1][-]{section.5.8}{title}{chapter.5}% 62
+\BOOKMARK [0][-]{chapter.6}{Sistema de informa\347\343o: an\341lise de requisitos e arquitetura}{}% 63
+\BOOKMARK [1][-]{section.6.1}{An\341lise de requisitos}{chapter.6}% 64
+\BOOKMARK [1][-]{section.6.2}{Diagramas}{chapter.6}% 65
+\BOOKMARK [2][-]{subsection.6.2.1}{Entidade-rela\347\343o}{section.6.2}% 66
+\BOOKMARK [2][-]{subsection.6.2.2}{Modelo relacional}{section.6.2}% 67
+\BOOKMARK [2][-]{subsection.6.2.3}{Estrutura final}{section.6.2}% 68
+\BOOKMARK [1][-]{section.6.3}{Requisitos de funcionamento}{chapter.6}% 69
+\BOOKMARK [1][-]{section.6.4}{Tecnologias de desenvolvimento}{chapter.6}% 70
+\BOOKMARK [2][-]{subsection.6.4.1}{Web}{section.6.4}% 71
+\BOOKMARK [2][-]{subsection.6.4.2}{Base de dados}{section.6.4}% 72
+\BOOKMARK [2][-]{subsection.6.4.3}{Mobile}{section.6.4}% 73
+\BOOKMARK [1][-]{section.6.5}{title}{chapter.6}% 74
+\BOOKMARK [1][-]{section.6.6}{Casos de utiliza\347\343o}{chapter.6}% 75
+\BOOKMARK [1][-]{section.6.7}{API rest}{chapter.6}% 76
+\BOOKMARK [1][-]{section.6.8}{Simula\347\343o da API}{chapter.6}% 77
+\BOOKMARK [1][-]{section.6.9}{Valores simulados}{chapter.6}% 78
+\BOOKMARK [1][-]{section.6.10}{Valores reais}{chapter.6}% 79
+\BOOKMARK [1][-]{section.6.11}{Deploy do projecto}{chapter.6}% 80
+\BOOKMARK [0][-]{chapter.7}{Sistema de dete\347\343o}{}% 81
+\BOOKMARK [0][-]{chapter.8}{Resultados}{}% 82
+\BOOKMARK [1][-]{section.8.1}{Testar API }{chapter.8}% 83
+\BOOKMARK [0][-]{chapter.9}{Conclus\343o e trabalho futuro}{}% 84
+\BOOKMARK [1][-]{section.9.1}{Conclus\343o}{chapter.9}% 85
+\BOOKMARK [1][-]{section.9.2}{Trabalho futuro}{chapter.9}% 86
+\BOOKMARK [1][-]{section.9.3}{Considera\347\365es finais}{chapter.9}% 87
+\BOOKMARK [0][-]{appendix.A}{Untitled appendix \043A}{}% 88
+\BOOKMARK [0][-]{appendix.B}{Mockups da aplica\347\343o mobile}{}% 89
+\BOOKMARK [0][-]{appendix.C}{Trigger SQL }{}% 90
