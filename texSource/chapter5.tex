@@ -1,10 +1,21 @@
+
+
 \chapter{Sistema de informação: análise de requisitos e arquitetura}
 
 
 
 
+\section{Modulação}
 
-\section{Análise de requisitos}
+\subsection{Análise de requisitos}
+
+
+\subsubsection{Entidades envolventes}
+
+
+\subsection{Casos de uso}
+
+
 
 
 
@@ -14,12 +25,39 @@
 \subsection{Entidade-relação}
 
 
+
+
+
+
+
+
+
+\begin{table}[h]
+	\centering
+	
+	\begin{tabular}{|
+			>{\columncolor[HTML]{EFEFEF}}l |l|}
+		\hline
+		\textbf{Caso de utilização:} & \begin{tabular}[c]{@{}l@{}}-dasdasdasasdasdddddddddddddddddddddddd\\ -dasdasd\\ -dasdasda\end{tabular} \\ \hline
+		\textbf{Ator:} &  \\ \hline
+		\textbf{Descrição:} &  \\ \hline
+		\textbf{Pré-condições:} &  \\ \hline
+		\textbf{Pós-condições:} &  \\ \hline
+	\end{tabular}
+	\caption{Casos de utilização: Login/Logout}
+	\label{my-label}
+\end{table}
+
+
+
+
 \subsection{Modelo relacional}
 
 
 \subsection{Estrutura final}
 
 
+\newpage
 
 \section{Requisitos de funcionamento}
 
@@ -29,22 +67,57 @@
 
 
 
+\subsection{Base de dados}
+
+
+
+\section{Sistema de gestão de base de dados}
+
+
+\subsection{PostgreSQL}
+
+
+\subsection{SQL server}
+
+
+
+\subsection{Solução adoptada}
+
+
 
 
 \subsection{\textit{Web}}
 
 
-\subsection{Base de dados}
+
+
+\section{Frameworks de desenvolvimento web}
+
+
+Manipulação local usando JS do DOM
+Angular, React
+
+Servidor serve conteudos criados em função dos pedidos do cliente 
+
+
 
 
 \subsection{\textit{Mobile}}
 
+\section{Frameworks/tecnologias de desenvolvimento mobile}
 
 
 
+\subsection{Android nativo}
 
-\section{title}
-\newpage 
+\subsection{Ios nativo}
+
+\subsection{Multi-plataforma}
+
+http://websocialdev.com/lista-de-frameworks-para-desenvolvimento-mobile/
+
+
+
 
 \section{Casos de utilização}
 
@@ -57,12 +130,14 @@
 
 
 
-
-
-
-
-
 \section{API rest}
+
+com autenticação via token 
+
+\subsection{Documentação API}
+
+utilizado swagger; apenas permite acesso a quem está logado... incorporar layout do swagger com o do salidashboard
+
 
 
 
@@ -92,6 +167,7 @@ Caracteristicas da maquina virtual
 Description:	Ubuntu 14.04.1 LTS
 64 bitsRAM 2GB 
 
+\section{Considerações finais}
 
 
 
