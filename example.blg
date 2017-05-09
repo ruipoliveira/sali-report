@@ -15,6 +15,7 @@ The style file: IEEEtran.bst
 A level-1 auxiliary file: texSource/appendix1.aux
 A level-1 auxiliary file: texSource/appendix2.aux
 A level-1 auxiliary file: texSource/appendix3.aux
+A level-1 auxiliary file: texSource/appendix4.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -39,7 +40,7 @@ Warning--empty journal in Evans2011a
 Done.
 You've used 12 entries,
             4106 wiz_defined-function locations,
-            930 strings with 9848 characters,
+            931 strings with 9871 characters,
 and the built_in function-call counts, 7422 in all, are:
 = -- 598
 > -- 158
