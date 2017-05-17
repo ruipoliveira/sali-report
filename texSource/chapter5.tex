@@ -5,24 +5,37 @@
 
 
 
-\section{Modulação}
-
-\subsection{Análise de requisitos}
 
 
-\subsubsection{Entidades envolventes}
+\section{Análise de requisitos}
 
 
-\subsection{Casos de uso}
+\subsection{Entidades envolventes}
+
+
+No contexto deste sistema existem três entidades distintas: 
+
+\begin{itemize}
+	\item \textbf{Administrador} (ou vulgarmente denominado por Admin): pretende-se que apenas exista uma único administrador. Genericamente este ator tem a possibilidade de poder adicionar novas empresas ao sistema i.e. criar novas utilizador com permissões especificas. 
+	\item \textbf{Companny}: utilizador que gere todos os 
+	\item \textbf{General user}: poderá registar-se associando-se a uma company (empresa) tendo apenas permissão à sua area reservada se essa permissão tenham sido validada. 
+\end{itemize}
 
 
 
+\newpage
+
+\subsection{Casos de utilização}
 
 
-\section{Diagramas}
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.5]{esquemas/usecases.pdf}
+	\caption{Pirâmide do conhecimento: modelo DIKW}
+	\label{dikw}
+\end{figure}
 
 
-\subsection{Entidade-relação}
 
 
 
@@ -51,10 +64,42 @@
 
 
 
-\subsection{Modelo relacional}
+\newpage
+\section{Estrutura da base de dados}
 
 
-\subsection{Estrutura final}
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.25]{esquemas/database_tese.pdf}
+	\caption{Pirâmide do conhecimento: modelo DIKW}
+	\label{db}
+\end{figure}
+
+
+
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|l|l|l|}
+		\hline
+		\multicolumn{1}{|c|}{\textbf{Nome}} & \multicolumn{1}{c|}{\textbf{Identificador}} & \multicolumn{1}{c|}{\textbf{Descrição}} \\ \hline
+		User & auto-incrementado & dasdas \\ \hline
+		ControllerModule&  &  \\ \hline
+		SensorModule&  &  \\ \hline
+		CommunicationType&  &  \\ \hline
+		SensorType&  &  \\ \hline
+		Sensor&  &  \\ \hline
+		Reading&  &  \\ \hline
+		AlarmsSettings&  &  \\ \hline
+		Alarms&  &  \\ \hline
+	\end{tabular}
+	\caption{My caption}
+	\label{my-label}
+\end{table}
+
+
+
+
 
 
 \newpage
@@ -62,96 +107,22 @@
 \section{Requisitos de funcionamento}
 
 
-
-\section{Tecnologias de desenvolvimento}
-
+\newpage
 
 
-\subsection{Base de dados}
+\section{API}
 
+Os métodos da API permitem executar as funções REST. Assim, torna-se fundamental perceber estes métodos para ter um melhor conhecimento do funcionamento do sistema. Como tal, de seguida, são descritos os métodos mais importantes que dão suporte a cada uma das funções REST.
 
-
-\section{Sistema de gestão de base de dados}
-
-
-\subsection{PostgreSQL}
-
-
-\subsection{SQL server}
-
-
-
-\subsection{Solução adoptada}
+\begin{itemize}
+	\item \textbf{GET}: 
+	\item \textbf{POST}: 
+	\item \textbf{DELETE}: 
+\end{itemize}
 
 
 
 
-\subsection{\textit{Web}}
-
-
-
-
-\section{Frameworks de desenvolvimento web}
-
-
-Manipulação local usando JS do DOM
-Angular, React
-
-Servidor serve conteudos criados em função dos pedidos do cliente 
-
-
-
-
-\subsection{\textit{Mobile}}
-
-\section{Frameworks/tecnologias de desenvolvimento mobile}
-
-
-
-\subsection{Android nativo}
-
-\subsection{Ios nativo}
-
-\subsection{Multi-plataforma}
-
-http://websocialdev.com/lista-de-frameworks-para-desenvolvimento-mobile/
-
-
-
-
-\section{Casos de utilização}
-
-\begin{figure}[!htb]
-	\centering
-	\includegraphics[scale=0.5]{esquemas/usecases.pdf}
-	\caption{Pirâmide do conhecimento: modelo DIKW}
-	\label{dikw}
-\end{figure}
-
-
-
-\section{API rest}
-
-com autenticação via token 
-
-\subsection{Documentação API}
-
-utilizado swagger; apenas permite acesso a quem está logado... incorporar layout do swagger com o do salidashboard
-
-
-
-
-app mobile
-microcontroladores -> controller modulers 
-
-
-documentação com swager 
-
-
-
-
-
-\section{Simulação da API}
 
 \section{Valores simulados}
 
