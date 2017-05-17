@@ -1,6 +1,6 @@
 \BOOKMARK [0][-]{chapter*.1}{Lista de Figuras}{}% 1
-\BOOKMARK [0][-]{chapter*.3}{Lista de Tabelas}{}% 2
-\BOOKMARK [0][-]{section*.5}{Acr\363nimos}{}% 3
+\BOOKMARK [0][-]{chapter*.4}{Lista de Tabelas}{}% 2
+\BOOKMARK [0][-]{section*.6}{Acr\363nimos}{}% 3
 \BOOKMARK [0][-]{chapter.1}{Introdu\347\343o}{}% 4
 \BOOKMARK [1][-]{section.1.1}{Motiva\347\343o}{chapter.1}% 5
 \BOOKMARK [1][-]{section.1.2}{Objetivos}{chapter.1}% 6
@@ -17,95 +17,104 @@
 \BOOKMARK [2][-]{subsection.3.1.1}{Vantagens}{section.3.1}% 17
 \BOOKMARK [2][-]{subsection.3.1.2}{Desvantagens}{section.3.1}% 18
 \BOOKMARK [1][-]{section.3.2}{Arquitetura em IoT}{chapter.3}% 19
-\BOOKMARK [1][-]{section.3.3}{Tecnologias de comunica\347\343o usadas em IoT}{chapter.3}% 20
-\BOOKMARK [2][-]{subsection.3.3.1}{RFID/NFC}{section.3.3}% 21
-\BOOKMARK [2][-]{subsection.3.3.2}{Bluetooth}{section.3.3}% 22
-\BOOKMARK [2][-]{subsection.3.3.3}{WiFi}{section.3.3}% 23
-\BOOKMARK [2][-]{subsection.3.3.4}{Zigbee}{section.3.3}% 24
-\BOOKMARK [2][-]{subsection.3.3.5}{LoRa}{section.3.3}% 25
-\BOOKMARK [2][-]{subsection.3.3.6}{Sigfox}{section.3.3}% 26
-\BOOKMARK [2][-]{subsection.3.3.7}{GPRS/GSM}{section.3.3}% 27
-\BOOKMARK [2][-]{subsection.3.3.8}{Compara\347\343o de tecnologias de comunica\347\343o}{section.3.3}% 28
-\BOOKMARK [1][-]{section.3.4}{Aplica\347\365es relacionadas}{chapter.3}% 29
-\BOOKMARK [2][-]{subsection.3.4.1}{Multi-monitoriza\347\343o de estufas agr\355colas }{section.3.4}% 30
-\BOOKMARK [2][-]{subsection.3.4.2}{Agroopar}{section.3.4}% 31
-\BOOKMARK [1][-]{section.3.5}{Sistema de Monitoriza\347\343o de Estufas Agr\355colas}{chapter.3}% 32
-\BOOKMARK [0][-]{chapter.4}{Sistema de controlo e monitoriza\347\343o}{}% 33
-\BOOKMARK [1][-]{section.4.1}{Descri\347\343o global do sistema}{chapter.4}% 34
-\BOOKMARK [1][-]{section.4.2}{Componentes}{chapter.4}% 35
-\BOOKMARK [1][-]{section.4.3}{Design funcional}{chapter.4}% 36
-\BOOKMARK [2][-]{subsection.4.3.1}{Requisitos funcionais}{section.4.3}% 37
-\BOOKMARK [2][-]{subsection.4.3.2}{Requisitos n\343o funcionais}{section.4.3}% 38
-\BOOKMARK [1][-]{section.4.4}{Design t\351cnico}{chapter.4}% 39
-\BOOKMARK [2][-]{subsection.4.4.1}{Arquitetura do sistema}{section.4.4}% 40
-\BOOKMARK [3][-]{section*.15}{Camada de apresenta\347\343o}{subsection.4.4.1}% 41
-\BOOKMARK [3][-]{section*.16}{Camada de neg\363cio}{subsection.4.4.1}% 42
-\BOOKMARK [3][-]{section*.17}{Camada de dados}{subsection.4.4.1}% 43
-\BOOKMARK [1][-]{section.4.5}{Diagrama de componentes}{chapter.4}% 44
-\BOOKMARK [1][-]{section.4.6}{Sistema de intera\347\343o}{chapter.4}% 45
-\BOOKMARK [1][-]{section.4.7}{Descri\347\343o}{chapter.4}% 46
-\BOOKMARK [1][-]{section.4.8}{Arquitetura geral}{chapter.4}% 47
-\BOOKMARK [1][-]{section.4.9}{Considera\347\365es finais}{chapter.4}% 48
-\BOOKMARK [0][-]{chapter.5}{Sistema de informa\347\343o: an\341lise de requisitos e arquitetura}{}% 49
-\BOOKMARK [1][-]{section.5.1}{Modula\347\343o}{chapter.5}% 50
-\BOOKMARK [2][-]{subsection.5.1.1}{An\341lise de requisitos}{section.5.1}% 51
-\BOOKMARK [3][-]{section*.18}{Entidades envolventes}{subsection.5.1.1}% 52
-\BOOKMARK [2][-]{subsection.5.1.2}{Casos de uso}{section.5.1}% 53
-\BOOKMARK [1][-]{section.5.2}{Diagramas}{chapter.5}% 54
-\BOOKMARK [2][-]{subsection.5.2.1}{Entidade-rela\347\343o}{section.5.2}% 55
-\BOOKMARK [2][-]{subsection.5.2.2}{Modelo relacional}{section.5.2}% 56
-\BOOKMARK [2][-]{subsection.5.2.3}{Estrutura final}{section.5.2}% 57
-\BOOKMARK [1][-]{section.5.3}{Requisitos de funcionamento}{chapter.5}% 58
-\BOOKMARK [1][-]{section.5.4}{Tecnologias de desenvolvimento}{chapter.5}% 59
-\BOOKMARK [2][-]{subsection.5.4.1}{Base de dados}{section.5.4}% 60
-\BOOKMARK [1][-]{section.5.5}{Sistema de gest\343o de base de dados}{chapter.5}% 61
-\BOOKMARK [2][-]{subsection.5.5.1}{PostgreSQL}{section.5.5}% 62
-\BOOKMARK [2][-]{subsection.5.5.2}{SQL server}{section.5.5}% 63
-\BOOKMARK [2][-]{subsection.5.5.3}{Solu\347\343o adoptada}{section.5.5}% 64
-\BOOKMARK [2][-]{subsection.5.5.4}{Web}{section.5.5}% 65
-\BOOKMARK [1][-]{section.5.6}{Frameworks de desenvolvimento web}{chapter.5}% 66
-\BOOKMARK [2][-]{subsection.5.6.1}{Mobile}{section.5.6}% 67
-\BOOKMARK [1][-]{section.5.7}{Frameworks/tecnologias de desenvolvimento mobile}{chapter.5}% 68
-\BOOKMARK [2][-]{subsection.5.7.1}{Android nativo}{section.5.7}% 69
-\BOOKMARK [2][-]{subsection.5.7.2}{Ios nativo}{section.5.7}% 70
-\BOOKMARK [2][-]{subsection.5.7.3}{Multi-plataforma}{section.5.7}% 71
-\BOOKMARK [1][-]{section.5.8}{Casos de utiliza\347\343o}{chapter.5}% 72
-\BOOKMARK [1][-]{section.5.9}{API rest}{chapter.5}% 73
-\BOOKMARK [2][-]{subsection.5.9.1}{Documenta\347\343o API}{section.5.9}% 74
-\BOOKMARK [1][-]{section.5.10}{Simula\347\343o da API}{chapter.5}% 75
-\BOOKMARK [1][-]{section.5.11}{Valores simulados}{chapter.5}% 76
-\BOOKMARK [1][-]{section.5.12}{Deploy do projecto}{chapter.5}% 77
-\BOOKMARK [1][-]{section.5.13}{Considera\347\365es finais}{chapter.5}% 78
-\BOOKMARK [0][-]{chapter.6}{Simula\347\343o em hardware}{}% 79
-\BOOKMARK [1][-]{section.6.1}{Micro-controladores}{chapter.6}% 80
-\BOOKMARK [2][-]{subsection.6.1.1}{Arduino Nano}{section.6.1}% 81
-\BOOKMARK [2][-]{subsection.6.1.2}{Raspberry pi }{section.6.1}% 82
-\BOOKMARK [1][-]{section.6.2}{Sensores}{chapter.6}% 83
-\BOOKMARK [2][-]{subsection.6.2.1}{Sensor de temperatura }{section.6.2}% 84
-\BOOKMARK [3][-]{section*.19}{Solu\347\343o adotada}{subsection.6.2.1}% 85
-\BOOKMARK [2][-]{subsection.6.2.2}{Sensor de luminosidade \(GL5528\)}{section.6.2}% 86
-\BOOKMARK [2][-]{subsection.6.2.3}{Sensor de n\355vel l\355quido}{section.6.2}% 87
-\BOOKMARK [2][-]{subsection.6.2.4}{Simulador de bomba para transfer\352ncias de \341guas \(led\)}{section.6.2}% 88
-\BOOKMARK [1][-]{section.6.3}{Comunica\347\343o}{chapter.6}% 89
-\BOOKMARK [2][-]{subsection.6.3.1}{M\363dulo bluetooth}{section.6.3}% 90
-\BOOKMARK [1][-]{section.6.4}{Interliga\347\343o de componentes}{chapter.6}% 91
-\BOOKMARK [1][-]{section.6.5}{Considera\347\365es finais}{chapter.6}% 92
-\BOOKMARK [0][-]{chapter.7}{Sistema de dete\347\343o de intrusos}{}% 93
-\BOOKMARK [1][-]{section.7.1}{Bibliotecas de processamento de imagem}{chapter.7}% 94
-\BOOKMARK [1][-]{section.7.2}{Considera\347\365es finais}{chapter.7}% 95
-\BOOKMARK [0][-]{chapter.8}{Resultados}{}% 96
-\BOOKMARK [1][-]{section.8.1}{Testar API }{chapter.8}% 97
-\BOOKMARK [0][-]{chapter.9}{Conclus\343o e trabalho futuro}{}% 98
-\BOOKMARK [1][-]{section.9.1}{Conclus\343o}{chapter.9}% 99
-\BOOKMARK [1][-]{section.9.2}{Trabalho futuro}{chapter.9}% 100
-\BOOKMARK [1][-]{section.9.3}{Considera\347\365es finais}{chapter.9}% 101
-\BOOKMARK [0][-]{appendix.A}{Untitled appendix \043A}{}% 102
-\BOOKMARK [0][-]{appendix.B}{Mockups da aplica\347\343o mobile}{}% 103
-\BOOKMARK [0][-]{appendix.C}{Trigger SQL }{}% 104
-\BOOKMARK [0][-]{appendix.D}{Resultados processamento de imagem }{}% 105
-\BOOKMARK [1][-]{section.D.1}{Frame 1}{appendix.D}% 106
-\BOOKMARK [1][-]{section.D.2}{Frame 2}{appendix.D}% 107
-\BOOKMARK [1][-]{section.D.3}{Frame 3}{appendix.D}% 108
-\BOOKMARK [1][-]{section.D.4}{Frame 4}{appendix.D}% 109
-\BOOKMARK [1][-]{section.D.5}{Frame 5}{appendix.D}% 110
-\BOOKMARK [1][-]{section.D.6}{Frame 6}{appendix.D}% 111
+\BOOKMARK [1][-]{section.3.3}{Aplica\347\365es relacionadas}{chapter.3}% 20
+\BOOKMARK [2][-]{subsection.3.3.1}{Multi-monitoriza\347\343o de estufas agr\355colas }{section.3.3}% 21
+\BOOKMARK [2][-]{subsection.3.3.2}{Agroopar}{section.3.3}% 22
+\BOOKMARK [1][-]{section.3.4}{Sistema de Monitoriza\347\343o de Estufas Agr\355colas}{chapter.3}% 23
+\BOOKMARK [0][-]{chapter.4}{Estado de arte}{}% 24
+\BOOKMARK [1][-]{section.4.1}{Sistema de gest\343o de base de dados \(SGBD\)}{chapter.4}% 25
+\BOOKMARK [2][-]{subsection.4.1.1}{PostgreSQL}{section.4.1}% 26
+\BOOKMARK [2][-]{subsection.4.1.2}{MySQL}{section.4.1}% 27
+\BOOKMARK [2][-]{subsection.4.1.3}{SQL server}{section.4.1}% 28
+\BOOKMARK [2][-]{subsection.4.1.4}{Compara\347\343o e solu\347\343o adotada}{section.4.1}% 29
+\BOOKMARK [1][-]{section.4.2}{Desenvolvimento web}{chapter.4}% 30
+\BOOKMARK [2][-]{subsection.4.2.1}{Django}{section.4.2}% 31
+\BOOKMARK [2][-]{subsection.4.2.2}{Faslk}{section.4.2}% 32
+\BOOKMARK [2][-]{subsection.4.2.3}{ASP.net}{section.4.2}% 33
+\BOOKMARK [2][-]{subsection.4.2.4}{Conclus\365es e solu\347\343o adotada}{section.4.2}% 34
+\BOOKMARK [1][-]{section.4.3}{Desenvolvimento mobile}{chapter.4}% 35
+\BOOKMARK [2][-]{subsection.4.3.1}{Plataformas nativas}{section.4.3}% 36
+\BOOKMARK [2][-]{subsection.4.3.2}{Multi-plataforma}{section.4.3}% 37
+\BOOKMARK [2][-]{subsection.4.3.3}{Conclus\365es e solu\347\343o adotada}{section.4.3}% 38
+\BOOKMARK [1][-]{section.4.4}{REST Frameworks}{chapter.4}% 39
+\BOOKMARK [2][-]{subsection.4.4.1}{Django Rest Framework}{section.4.4}% 40
+\BOOKMARK [2][-]{subsection.4.4.2}{Flask-RESTful}{section.4.4}% 41
+\BOOKMARK [2][-]{subsection.4.4.3}{Conclus\365es e solu\347\343o adotada}{section.4.4}% 42
+\BOOKMARK [1][-]{section.4.5}{Documenta\347\343o autom\341tica}{chapter.4}% 43
+\BOOKMARK [2][-]{subsection.4.5.1}{Documenta\347\343o API}{section.4.5}% 44
+\BOOKMARK [1][-]{section.4.6}{Sensores}{chapter.4}% 45
+\BOOKMARK [2][-]{subsection.4.6.1}{Sensor de temperatura }{section.4.6}% 46
+\BOOKMARK [3][-]{section*.12}{Solu\347\343o adotada}{subsection.4.6.1}% 47
+\BOOKMARK [2][-]{subsection.4.6.2}{Sensor de luminosidade \(GL5528\)}{section.4.6}% 48
+\BOOKMARK [3][-]{section*.13}{Solu\347\343o adotada}{subsection.4.6.2}% 49
+\BOOKMARK [2][-]{subsection.4.6.3}{Sensor de n\355vel l\355quido}{section.4.6}% 50
+\BOOKMARK [2][-]{subsection.4.6.4}{Simulador de bomba para transfer\352ncias de \341guas \(led\)}{section.4.6}% 51
+\BOOKMARK [1][-]{section.4.7}{Tecnologias de comunica\347\343o usadas em IoT}{chapter.4}% 52
+\BOOKMARK [2][-]{subsection.4.7.1}{RFID/NFC}{section.4.7}% 53
+\BOOKMARK [2][-]{subsection.4.7.2}{Bluetooth}{section.4.7}% 54
+\BOOKMARK [2][-]{subsection.4.7.3}{WiFi}{section.4.7}% 55
+\BOOKMARK [2][-]{subsection.4.7.4}{Zigbee}{section.4.7}% 56
+\BOOKMARK [2][-]{subsection.4.7.5}{LoRa}{section.4.7}% 57
+\BOOKMARK [2][-]{subsection.4.7.6}{Sigfox}{section.4.7}% 58
+\BOOKMARK [2][-]{subsection.4.7.7}{GPRS/GSM}{section.4.7}% 59
+\BOOKMARK [2][-]{subsection.4.7.8}{Compara\347\343o de tecnologias de comunica\347\343o}{section.4.7}% 60
+\BOOKMARK [2][-]{subsection.4.7.9}{M\363dulo bluetooth}{section.4.7}% 61
+\BOOKMARK [0][-]{chapter.5}{Sistema de controlo e monitoriza\347\343o}{}% 62
+\BOOKMARK [1][-]{section.5.1}{Descri\347\343o global do sistema}{chapter.5}% 63
+\BOOKMARK [1][-]{section.5.2}{Componentes}{chapter.5}% 64
+\BOOKMARK [2][-]{subsection.5.2.1}{Controller Module}{section.5.2}% 65
+\BOOKMARK [2][-]{subsection.5.2.2}{Sensor Module}{section.5.2}% 66
+\BOOKMARK [1][-]{section.5.3}{Design funcional}{chapter.5}% 67
+\BOOKMARK [2][-]{subsection.5.3.1}{Requisitos funcionais}{section.5.3}% 68
+\BOOKMARK [3][-]{section*.20}{Dashboard}{subsection.5.3.1}% 69
+\BOOKMARK [3][-]{section*.21}{Aplica\347\343o mobile}{subsection.5.3.1}% 70
+\BOOKMARK [2][-]{subsection.5.3.2}{Requisitos n\343o funcionais}{section.5.3}% 71
+\BOOKMARK [1][-]{section.5.4}{Design t\351cnico}{chapter.5}% 72
+\BOOKMARK [2][-]{subsection.5.4.1}{Arquitetura do sistema}{section.5.4}% 73
+\BOOKMARK [3][-]{section*.22}{Camada de apresenta\347\343o}{subsection.5.4.1}% 74
+\BOOKMARK [3][-]{section*.23}{Camada de neg\363cio}{subsection.5.4.1}% 75
+\BOOKMARK [3][-]{section*.24}{Camada de dados}{subsection.5.4.1}% 76
+\BOOKMARK [1][-]{section.5.5}{Diagrama de componentes}{chapter.5}% 77
+\BOOKMARK [1][-]{section.5.6}{Sistema de intera\347\343o}{chapter.5}% 78
+\BOOKMARK [1][-]{section.5.7}{Descri\347\343o}{chapter.5}% 79
+\BOOKMARK [1][-]{section.5.8}{Arquitetura geral}{chapter.5}% 80
+\BOOKMARK [1][-]{section.5.9}{Considera\347\365es finais}{chapter.5}% 81
+\BOOKMARK [0][-]{chapter.6}{Sistema de informa\347\343o: an\341lise de requisitos e arquitetura}{}% 82
+\BOOKMARK [1][-]{section.6.1}{An\341lise de requisitos}{chapter.6}% 83
+\BOOKMARK [2][-]{subsection.6.1.1}{Entidades envolventes}{section.6.1}% 84
+\BOOKMARK [2][-]{subsection.6.1.2}{Casos de utiliza\347\343o}{section.6.1}% 85
+\BOOKMARK [1][-]{section.6.2}{Estrutura da base de dados}{chapter.6}% 86
+\BOOKMARK [1][-]{section.6.3}{Requisitos de funcionamento}{chapter.6}% 87
+\BOOKMARK [1][-]{section.6.4}{API}{chapter.6}% 88
+\BOOKMARK [1][-]{section.6.5}{Valores simulados}{chapter.6}% 89
+\BOOKMARK [1][-]{section.6.6}{Deploy do projecto}{chapter.6}% 90
+\BOOKMARK [1][-]{section.6.7}{Considera\347\365es finais}{chapter.6}% 91
+\BOOKMARK [0][-]{chapter.7}{Simula\347\343o em hardware}{}% 92
+\BOOKMARK [1][-]{section.7.1}{Micro-controladores}{chapter.7}% 93
+\BOOKMARK [2][-]{subsection.7.1.1}{Arduino Nano}{section.7.1}% 94
+\BOOKMARK [2][-]{subsection.7.1.2}{Raspberry pi }{section.7.1}% 95
+\BOOKMARK [1][-]{section.7.2}{Interliga\347\343o de componentes}{chapter.7}% 96
+\BOOKMARK [1][-]{section.7.3}{Considera\347\365es finais}{chapter.7}% 97
+\BOOKMARK [0][-]{chapter.8}{Sistema de dete\347\343o de intrusos}{}% 98
+\BOOKMARK [1][-]{section.8.1}{Bibliotecas de processamento de imagem}{chapter.8}% 99
+\BOOKMARK [1][-]{section.8.2}{Flask}{chapter.8}% 100
+\BOOKMARK [1][-]{section.8.3}{Servidor web NGNIX}{chapter.8}% 101
+\BOOKMARK [1][-]{section.8.4}{Considera\347\365es finais}{chapter.8}% 102
+\BOOKMARK [0][-]{chapter.9}{Resultados}{}% 103
+\BOOKMARK [1][-]{section.9.1}{Testar API }{chapter.9}% 104
+\BOOKMARK [1][-]{section.9.2}{Aplica\347\343o mobile}{chapter.9}% 105
+\BOOKMARK [0][-]{chapter.10}{Conclus\343o e trabalho futuro}{}% 106
+\BOOKMARK [1][-]{section.10.1}{Conclus\343o}{chapter.10}% 107
+\BOOKMARK [1][-]{section.10.2}{Trabalho futuro}{chapter.10}% 108
+\BOOKMARK [1][-]{section.10.3}{Considera\347\365es finais}{chapter.10}% 109
+\BOOKMARK [0][-]{appendix.A}{Untitled appendix \043A}{}% 110
+\BOOKMARK [0][-]{appendix.B}{Mockups da aplica\347\343o mobile}{}% 111
+\BOOKMARK [0][-]{appendix.C}{Trigger SQL }{}% 112
+\BOOKMARK [0][-]{appendix.D}{Resultados processamento de imagem }{}% 113
+\BOOKMARK [1][-]{section.D.1}{Frame 1}{appendix.D}% 114
+\BOOKMARK [1][-]{section.D.2}{Frame 2}{appendix.D}% 115
+\BOOKMARK [1][-]{section.D.3}{Frame 3}{appendix.D}% 116
+\BOOKMARK [1][-]{section.D.4}{Frame 4}{appendix.D}% 117
+\BOOKMARK [1][-]{section.D.5}{Frame 5}{appendix.D}% 118
+\BOOKMARK [1][-]{section.D.6}{Frame 6}{appendix.D}% 119
+\BOOKMARK [0][-]{appendix.E}{Interface gr\341fica}{}% 120

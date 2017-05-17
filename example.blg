@@ -5,6 +5,7 @@ A level-1 auxiliary file: texSource/acronyms.aux
 A level-1 auxiliary file: texSource/chapter1.aux
 A level-1 auxiliary file: texSource/chapter2.aux
 A level-1 auxiliary file: texSource/chapter3.aux
+A level-1 auxiliary file: texSource/state.aux
 A level-1 auxiliary file: texSource/chapter4.aux
 A level-1 auxiliary file: texSource/chapter5.aux
 A level-1 auxiliary file: texSource/chapter6_2.aux
@@ -40,7 +41,7 @@ Warning--empty journal in Evans2011a
 Done.
 You've used 12 entries,
             4106 wiz_defined-function locations,
-            931 strings with 9871 characters,
+            932 strings with 9890 characters,
 and the built_in function-call counts, 7422 in all, are:
 = -- 598
 > -- 158
