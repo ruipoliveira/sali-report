@@ -21,7 +21,7 @@
 \BOOKMARK [2][-]{subsection.3.3.1}{Multi-monitoriza\347\343o de estufas agr\355colas }{section.3.3}% 21
 \BOOKMARK [2][-]{subsection.3.3.2}{Agroopar}{section.3.3}% 22
 \BOOKMARK [1][-]{section.3.4}{Sistema de Monitoriza\347\343o de Estufas Agr\355colas}{chapter.3}% 23
-\BOOKMARK [0][-]{chapter.4}{Estado de arte}{}% 24
+\BOOKMARK [0][-]{chapter.4}{Estado da arte}{}% 24
 \BOOKMARK [1][-]{section.4.1}{Sistema de gest\343o de base de dados \(SGBD\)}{chapter.4}% 25
 \BOOKMARK [2][-]{subsection.4.1.1}{PostgreSQL}{section.4.1}% 26
 \BOOKMARK [2][-]{subsection.4.1.2}{MySQL}{section.4.1}% 27
@@ -115,6 +115,4 @@
 \BOOKMARK [1][-]{section.D.2}{Frame 2}{appendix.D}% 115
 \BOOKMARK [1][-]{section.D.3}{Frame 3}{appendix.D}% 116
 \BOOKMARK [1][-]{section.D.4}{Frame 4}{appendix.D}% 117
-\BOOKMARK [1][-]{section.D.5}{Frame 5}{appendix.D}% 118
-\BOOKMARK [1][-]{section.D.6}{Frame 6}{appendix.D}% 119
-\BOOKMARK [0][-]{appendix.E}{Interface gr\341fica}{}% 120
+\BOOKMARK [0][-]{appendix.E}{Interface gr\341fica}{}% 118

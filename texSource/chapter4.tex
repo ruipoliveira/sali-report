@@ -23,15 +23,9 @@ entre si.
 
 \section{Descrição global do sistema}
 
-
 Este sistema tem como objetivo a supervisão remota da produção de salicornia,  permitindo não só a monitorização dos dados adquiridos pelos sensores, como também da atuação remota de determinados comandos. Neste contexto também será possível a aquisição de imagens que possibilitará a deteção de intrusos nas quintas onde se produz esta espécie.
 
 O esquema da figura X ilustra todos os componentes de um modo geral e as diferentes plataformas com que o cliente pode interagir. 
-
-
-%A figura 4.1 representa o diagrama de blocos do sistema, onde se encontram todos os seus elementos, seguidamente descritos.
-
-
 
 
 \begin{figure}[!htb]
@@ -41,28 +35,21 @@ O esquema da figura X ilustra todos os componentes de um modo geral e as diferen
 	\label{dikw}
 \end{figure}
 
-
-
-
-
-
-
-Como vimos no capitulo 3, uma plantação de  salicórnia carece de um controlo relativamente fino da salinidade do terreno onde ela cresce. A salinidade do terreno depende, por sua vez, das chuvas, da salinidade da água dos canais da ria, etc. Nas “quintas” de salicórnia da Ria, a produção faz-se numa espécie de leiras limitadas por pequenos canais de irrigação. Esses canais podem ser cheios de água salgada proveniente dos esteiros que rodeiam a “quinta”. Essa operação implica a abertura de válvulas de admissão dessa água, medida do nível da maré nos canais, monitorização da qualidade e salinidade da água exterior.
-Por sua vez, a cultura pode ser ameaçada por excesso de água doce de chuvas ou ser objeto de vandalismo.
+Como vimos no capitulo 3, uma plantação de  salicórnia carece de um controlo relativamente fino de certos parâmetros ambientais sobretudo da salinidade do terreno onde ela cresce. A salinidade do terreno depende, por sua vez, das chuvas, da salinidade da água dos canais da ria. Nas “quintas” onde se cultiva salicórnia, a produção faz-se numa espécie de leiras limitadas por pequenos canais de irrigação. Esses canais podem ser cheios de água salgada proveniente dos esteiros que rodeiam a “quinta”. Essa operação implica a abertura de válvulas de admissão dessa água, medida do nível da maré nos canais, monitorização da qualidade e salinidade da água exterior.
 
 
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.55]{esquemas/leiras-comm-geral.pdf}
 	\caption{Ilustração de uma "quinta" onde se produz salicornia}
-	\label{dikw}
+	\label{leira}
 \end{figure}
 
+A figura \ref{leira} ilustra esquematicamente a localização de duas leiras com determinados canais de irrigação para água doce e água salgada. 
+ 
 
 
-
-
-Neste contexto, cada grupo de sensores espalhado por cada leira irá comunicar com um módulo central, originando uma topologia de rede em estrela.  Por sua vez, este módulo irá comunicar diretamente com a servidor que possibilitará que os dados sejam tratados e disponíveis para visualização ao cliente.  Pressupõe-se portanto que este ultimo módulo tenha necessariamente ligação à rede wifi de modo a conseguir consumir a API REST desenvolvida para o efeito. 
+Neste contexto, cada grupo de sensores espalhado por cada leira irá comunicar com um módulo central, originando uma topologia de rede em estrela.  Por sua vez, este módulo irá comunicar diretamente com a servidor que possibilitará que os dados sejam tratados e disponíveis para visualização ao cliente. Pressupõe-se portanto que este ultimo módulo tenha necessariamente ligação à rede de modo a conseguir consumir a API REST por HTTP desenvolvida para o efeito. 
 
 
 \section{Componentes}
@@ -70,41 +57,33 @@ Neste contexto, cada grupo de sensores espalhado por cada leira irá comunicar c
 No contexto desta dissertação é necessário reter dois conceitos principais, são eles: 
 
 \begin{itemize}
-	\item \textbf{\textit{\ac{SM}}:} consiste num microcontrolador responsável pela aquisição de dados provenientes dos mais diversos tipos de sensores. Cada \textit{sensor module} terá que utilizar um determinado módulo de comunicação de modo a possibilitar a comunicação com o módulo central, sendo que este envia os dados adquiridos para o servidor. Para além disso, pretende-se que o sensor module possa ter controlo sobre si, ou seja, inteligência própria.  
+	\item \textbf{\textit{\ac{SM}}:} consiste num microcontrolador responsável pela aquisição de dados provenientes dos mais diversos tipos de sensores. Cada \textit{sensor module} terá que utilizar um determinado módulo de comunicação de modo a possibilitar a comunicação com um determinado módulo central. Para além disso, pretende-se que o sensor module possa ter controlo sobre si, ou seja, inteligência própria.   
 	 
-	\item \textbf{\textit{\ac{CM}}:} consiste num microcontrolador responsável pela recepção dos dados preveniente dos \textit{sensor modules}. Pretende-se que este módulo envie informações para os sensores modules quando requisitados pelo utilizador. 
+	\item \textbf{\textit{\ac{CM}}:} consiste num microcontrolador responsável pela receção dos dados preveniente dos \textit{sensor modules}. Pretende-se que este módulo envie informações para os sensores modules quando requisitados pelo utilizador. O principal objetivo deste módulo consiste e receber a informação proveniente dos sensor modules e enviá-las para o servidor. 
 	
 	
-	Não é mais do que um modulo central que recebe todos as...
 \end{itemize}
 
 
-
-
-A figura seguinte, ilustra a comunicação entre três \ac{SM} com um \ac{CM}. 
+A figura \ref{esquema1}, ilustra a comunicação entre três sensor modules com um controller moduler. Cada um desses sensor modules possui um conjunto especifico de sensores que comunica com controller module através de um determinado modulo de comunicação. Posteriormente, o controller module possui um determinado protocolo de comunicação que permite a utilização da API REST. 
 
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.35]{esquemas/general-electronic-modules.pdf}
 	\caption{Pirâmide do conhecimento: modelo DIKW}
-	\label{dikw}
+	\label{esquema1}
 \end{figure}
 
 
-
+Seguidamente serão especificados todos os detalhes de cada modulo, uma vez que serão considerados na modulação do sistema. 
 
 \subsection{Controller Module}
 
+Será importan
+
 
 \subsection{Sensor Module}
-
-
-
-
-
-
-
 
 
 \newpage
@@ -116,14 +95,10 @@ A figura seguinte, ilustra a comunicação entre três \ac{SM} com um \ac{CM}.
 
 
 
-
-
-
-
 \subsection{Requisitos funcionais}
 
 
-%Os requisitos funcionais especificam os critérios que devem ser usados ​​para avaliar comportamentos ou funções especificas do sistema. Estes são os requisitos funcionais do sistema proposto nesta dissertação. 
+%Os requisitos funcionais especificam os critérios que devem ser usados ​​para avaliar comportamentos ou funções especificas do sistema. Estes são os requisitos funcionais propostos no contexto deste projeto. 
 
 
 
@@ -133,10 +108,27 @@ A figura seguinte, ilustra a comunicação entre três \ac{SM} com um \ac{CM}.
 
 
 \begin{itemize}
-	\item A interface do sistema deve permitir que o usuário faça login no sistema
-	Admin ou um usuário.
+	\item A interface do sistema deve permitir que o utilizador, seja ele qual for, entre ou faça \textit{login} no sistema. 
 	
-	\item A interface do sistema deve permitir que o usuário saia do sistema.
+	\item A interface do sistema deve permitir que o utilizador, seja ele qual for, saia ou faça (\textit{logout}) no sistema.
+	
+	\item O dashboard deverá permitir que qualquer utilizador possa recuperar a sua chave de acesso ao sistema.
+	 
+	\item O sistema deve permitir que qualquer utilizador se possa registar embora sempre associado a uma determinada empresa. 
+	
+	\item O dashboard deverá permitir ao administrador a adição de novas empresas e a gestão de todos os utilizadores. 
+	
+	\item O sistema deve permitir que qualquer utilizador possa adicionar, editar ou remover: 
+	\begin{itemize}
+		\item Tipos de sensores 
+		\item Tipos de comunicação 
+		\item Controller modules
+		\item Tipo de comunicação a um controller modudel
+		\item Sensor modules a um determinado Controller modules
+		\item Um ou vários tipos de comunicação de um Sensor moduel
+		\item Um ou vários sensores a um sensor moduel em que cada sensor é de um determinado tipo 
+		
+	\end{itemize}
 	
 	\item O sistema deve permitir o armazenamento de informações do cliente.
 	
@@ -159,7 +151,7 @@ necessariamente pedidos pelo cliente.
 
 
 \begin{itemize}
-	\item  o sistema deverá executar em qualquer plataforma.
+	\item O sistema deverá executar em qualquer plataforma.
 	
 	\item O sistema deverá disponibilizar uma API para que possam ser criados novos produtos com base neste 
 	

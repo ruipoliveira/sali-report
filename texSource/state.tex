@@ -1,24 +1,39 @@
-\chapter{Estado de arte}
+\chapter{Estado da arte}
 
 
 
-Neste capitulo pretende-se apresentar algumas das possíveis tecnologias de utilização nesta. 
-
-
+Nesta secção, são apresentados os resultados da pesquisa efectuada sobre o
+estado da arte das ferramentas com funcionalidades que deverão estar presentes no sistema desenvolvido. Pretende-se apresentar de forma geral todas as tecnologias possíveis de utilização e respetiva comparação. 
 
 
 \section{Sistema de gestão de base de dados (\ac{SGBD})}
 
+Um \ac{SGBD} é um conjunto de software responsáveis pela gestão de uma base de dados.
 
 \subsection{PostgreSQL}
 
+O PostgreSQL é um sistema de gestão de base de dados do tipo objeto-relacional uma vez que permite um modelo de dados orientado a objetos i.e. possibilita a manipulação de objetos, classes e heranças diretamente no esquemas da base de dados. Segundo o site oficial do PostgreSQL este é considerado um \ac{SGBD} bastante poderoso e com desenvolvimento \textit{open sources}. []
+
+
+%Ele tem mais de 15 anos de desenvolvimento ativo e uma arquitetura comprovada que ela ganhou uma forte reputação de confiabilidade, integridade de dados e correção. Ele roda em todos os principais sistemas operacionais, incluindo Linux, UNIX (AIX, BSD, HP-UX, SGI IRIX, MacOS, Solaris, Tru64), e Windows. É totalmente compatível com ACID, tem suporte completo para chaves estrangeiras, junções views, triggers e procedimentos armazenados (em várias línguas). Ele inclui mais SQL: 2008 tipos de dados, incluindo INTEGER, NUMERIC, BOOLEAN, CHAR, VARCHAR, DATE, INTERVALO e TIMESTAMP. Ele também suporta o armazenamento de grandes objetos binários, incluindo imagens, sons ou vídeo. Ele tem interfaces de programação nativas para C / C ++, Java, .Net, Perl, Python, Ruby, Tcl, ODBC, entre outros, e documentação
+
+
+
+
 \subsection{MySQL}
+
+
 
 \subsection{SQL server}
 
 
 
 \subsection{Comparação e solução adotada}
+
+
+Os próprios criadores do Django recomendam a utilização do PostgreSQL, indicando que alcança um bom equilibrio entre custo, caracterıas, rapidez e estabilidade
+
+
 
 
 No entanto, é pertinente fazer uma comparação entre o PostgreSQL e
@@ -38,7 +53,10 @@ do MySQL na maioria das queries [22].
 Para o desenvolvimento da dashboard poderiam ser adotadas duas estratégias distintas para o desenvolvimento web: 
 
 \begin{itemize}
-	\item Manipulação local usando \ref{JS} do DOM. 
+	\item Manipulação local usando javascript do DOM. 
+	
+	\item Acesso ao servidor que serve conteúdos criados em função dos pedidos do cliente
+	
 \end{itemize}
 
 
@@ -53,6 +71,14 @@ Servidor serve conteudos criados em função dos pedidos do cliente
 
 
 \subsection{Django}
+
+
+Assim, e de acordo com as explicações dos autores da ferramenta [18], as
+principais vantagens tiradas da utilização da framework Django são:
+Boa documentação;
+Facilidade e rapidez de desenvolvimento e deployment;
+Estabilidade;
+Escalabilidade.
 
 
 \subsection{Faslk}
