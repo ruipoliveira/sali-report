@@ -17,16 +17,13 @@ A level-1 auxiliary file: texSource/appendix1.aux
 A level-1 auxiliary file: texSource/appendix2.aux
 A level-1 auxiliary file: texSource/appendix3.aux
 A level-1 auxiliary file: texSource/appendix4.aux
+A level-1 auxiliary file: texSource/appendix5.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: tese.bib
-Warning--I didn't find a database entry for "Getting"
-Warning--I didn't find a database entry for "Lovato2014"
-Warning--I didn't find a database entry for "Rowley2007"
-Warning--I didn't find a database entry for "Abreu2012"
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -37,47 +34,49 @@ Warning--empty journal in chenopodiaceae
 Warning--missing publisher in ferri
 Warning--there is url but no urldate in Silva2000
 Warning--empty journal in Evans2011a
+Warning--there is url but no urldate in Rowley2007
+Warning--there is url but no urldate in Abreu2012
 
 Done.
-You've used 12 entries,
+You've used 17 entries,
             4106 wiz_defined-function locations,
-            932 strings with 9890 characters,
-and the built_in function-call counts, 7422 in all, are:
-= -- 598
-> -- 158
-< -- 56
-+ -- 79
-- -- 27
-* -- 365
-:= -- 1198
-add.period$ -- 22
-call.type$ -- 12
-change.case$ -- 18
-chr.to.int$ -- 132
-cite$ -- 19
-duplicate$ -- 527
-empty$ -- 595
-format.name$ -- 33
-if$ -- 1679
+            958 strings with 10642 characters,
+and the built_in function-call counts, 9758 in all, are:
+= -- 798
+> -- 186
+< -- 67
++ -- 95
+- -- 32
+* -- 473
+:= -- 1627
+add.period$ -- 32
+call.type$ -- 17
+change.case$ -- 23
+chr.to.int$ -- 156
+cite$ -- 26
+duplicate$ -- 700
+empty$ -- 793
+format.name$ -- 38
+if$ -- 2194
 int.to.chr$ -- 0
-int.to.str$ -- 12
-missing$ -- 92
-newline$ -- 65
-num.names$ -- 18
-pop$ -- 225
+int.to.str$ -- 17
+missing$ -- 127
+newline$ -- 90
+num.names$ -- 23
+pop$ -- 315
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 4
-skip$ -- 565
+skip$ -- 745
 stack$ -- 0
-substring$ -- 296
-swap$ -- 402
-text.length$ -- 12
+substring$ -- 357
+swap$ -- 520
+text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 12
-warning$ -- 7
-while$ -- 40
-width$ -- 14
-write$ -- 134
-(There were 11 warnings)
+type$ -- 17
+warning$ -- 9
+while$ -- 49
+width$ -- 19
+write$ -- 188
+(There were 9 warnings)

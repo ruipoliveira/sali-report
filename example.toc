@@ -1,7 +1,7 @@
 \select@language {portuguese}
-\contentsline {chapter}{Lista de Figuras}{v}{chapter*.1}
-\contentsline {chapter}{Lista de Tabelas}{vii}{chapter*.4}
-\contentsline {chapter}{Acr\IeC {\'o}nimos}{ix}{section*.6}
+\contentsline {chapter}{Lista de Figuras}{vii}{chapter*.1}
+\contentsline {chapter}{Lista de Tabelas}{ix}{chapter*.4}
+\contentsline {chapter}{Acr\IeC {\'o}nimos}{xi}{section*.6}
 \contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Motiva\IeC {\c c}\IeC {\~a}o}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Objetivos}{2}{section.1.2}
@@ -94,26 +94,32 @@
 \contentsline {section}{\numberline {7.1}Micro-controladores}{39}{section.7.1}
 \contentsline {subsection}{\numberline {7.1.1}Arduino Nano}{39}{subsection.7.1.1}
 \contentsline {subsection}{\numberline {7.1.2}Raspberry pi }{41}{subsection.7.1.2}
-\contentsline {section}{\numberline {7.2}Interliga\IeC {\c c}\IeC {\~a}o de componentes}{42}{section.7.2}
-\contentsline {section}{\numberline {7.3}Considera\IeC {\c c}\IeC {\~o}es finais}{42}{section.7.3}
-\contentsline {chapter}{\numberline {8}Sistema de dete\IeC {\c c}\IeC {\~a}o de intrusos}{43}{chapter.8}
-\contentsline {section}{\numberline {8.1}Bibliotecas de processamento de imagem}{43}{section.8.1}
-\contentsline {section}{\numberline {8.2}Flask}{44}{section.8.2}
-\contentsline {section}{\numberline {8.3}Servidor web NGNIX}{44}{section.8.3}
-\contentsline {section}{\numberline {8.4}Considera\IeC {\c c}\IeC {\~o}es finais}{44}{section.8.4}
-\contentsline {chapter}{\numberline {9}Resultados}{45}{chapter.9}
-\contentsline {section}{\numberline {9.1}Testar API }{45}{section.9.1}
-\contentsline {section}{\numberline {9.2}Aplica\IeC {\c c}\IeC {\~a}o mobile}{45}{section.9.2}
-\contentsline {chapter}{\numberline {10}Conclus\IeC {\~a}o e trabalho futuro}{47}{chapter.10}
-\contentsline {section}{\numberline {10.1}Conclus\IeC {\~a}o}{47}{section.10.1}
-\contentsline {section}{\numberline {10.2}Trabalho futuro}{47}{section.10.2}
-\contentsline {section}{\numberline {10.3}Considera\IeC {\c c}\IeC {\~o}es finais}{47}{section.10.3}
-\contentsline {chapter}{\numberline {A}Untitled appendix \#A}{51}{appendix.A}
-\contentsline {chapter}{\numberline {B}Mockups da aplica\IeC {\c c}\IeC {\~a}o mobile}{53}{appendix.B}
-\contentsline {chapter}{\numberline {C}Trigger SQL }{55}{appendix.C}
-\contentsline {chapter}{\numberline {D}Resultados processamento de imagem }{57}{appendix.D}
-\contentsline {section}{\numberline {D.1}Frame 1}{58}{section.D.1}
-\contentsline {section}{\numberline {D.2}Frame 2}{59}{section.D.2}
-\contentsline {section}{\numberline {D.3}Frame 3}{60}{section.D.3}
-\contentsline {section}{\numberline {D.4}Frame 4}{61}{section.D.4}
-\contentsline {chapter}{\numberline {E}Interface gr\IeC {\'a}fica}{63}{appendix.E}
+\contentsline {section}{\numberline {7.2}Sensores}{42}{section.7.2}
+\contentsline {section}{\numberline {7.3}Interliga\IeC {\c c}\IeC {\~a}o de componentes}{43}{section.7.3}
+\contentsline {section}{\numberline {7.4}Considera\IeC {\c c}\IeC {\~o}es finais}{43}{section.7.4}
+\contentsline {chapter}{\numberline {8}Sistema de dete\IeC {\c c}\IeC {\~a}o de intrusos}{45}{chapter.8}
+\contentsline {section}{\numberline {8.1}Biblioteca de processamento de imagem: OpenCV}{45}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Conclus\IeC {\~o}es}{46}{subsection.8.1.1}
+\contentsline {section}{\numberline {8.2}Algoritmo de dete\IeC {\c c}\IeC {\~a}o de intrusos}{47}{section.8.2}
+\contentsline {section}{\numberline {8.3}Testes}{48}{section.8.3}
+\contentsline {section}{\numberline {8.4}Implementa\IeC {\c c}\IeC {\~a}o}{48}{section.8.4}
+\contentsline {subsection}{\numberline {8.4.1}Flask}{48}{subsection.8.4.1}
+\contentsline {subsection}{\numberline {8.4.2}Servidor web NGNIX}{48}{subsection.8.4.2}
+\contentsline {section}{\numberline {8.5}Considera\IeC {\c c}\IeC {\~o}es finais}{48}{section.8.5}
+\contentsline {chapter}{\numberline {9}Resultados}{49}{chapter.9}
+\contentsline {section}{\numberline {9.1}Testar API }{49}{section.9.1}
+\contentsline {section}{\numberline {9.2}Aplica\IeC {\c c}\IeC {\~a}o mobile}{49}{section.9.2}
+\contentsline {section}{\numberline {9.3}Dete\IeC {\c c}\IeC {\~a}o de intrusos}{49}{section.9.3}
+\contentsline {chapter}{\numberline {10}Conclus\IeC {\~a}o e trabalho futuro}{51}{chapter.10}
+\contentsline {section}{\numberline {10.1}Conclus\IeC {\~a}o}{51}{section.10.1}
+\contentsline {section}{\numberline {10.2}Trabalho futuro}{51}{section.10.2}
+\contentsline {section}{\numberline {10.3}Considera\IeC {\c c}\IeC {\~o}es finais}{51}{section.10.3}
+\contentsline {chapter}{\numberline {A}Untitled appendix \#A}{55}{appendix.A}
+\contentsline {chapter}{\numberline {B}Mockups da aplica\IeC {\c c}\IeC {\~a}o mobile}{57}{appendix.B}
+\contentsline {chapter}{\numberline {C}Trigger SQL }{59}{appendix.C}
+\contentsline {chapter}{\numberline {D}Resultados processamento de imagem }{61}{appendix.D}
+\contentsline {section}{\numberline {D.1}Frame 1}{62}{section.D.1}
+\contentsline {section}{\numberline {D.2}Frame 2}{64}{section.D.2}
+\contentsline {section}{\numberline {D.3}Frame 3}{66}{section.D.3}
+\contentsline {section}{\numberline {D.4}Frame 4}{68}{section.D.4}
+\contentsline {chapter}{\numberline {E}Interface gr\IeC {\'a}fica}{71}{appendix.E}

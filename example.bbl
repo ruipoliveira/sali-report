@@ -88,4 +88,39 @@ H.~Silva, G.~Caldeira, and H.~Freitas, ``{Salicornia ramosissima population
 D.~Evans, ``{A Internet das Coisas Como a pr{\'{o}}xima evolu{\c{c}}{\~{a}}o da
   Internet est{\'{a}} mudando tudo},'' pp. 5--7, 2011.
 
+\bibitem{Getting}
+\BIBentryALTinterwordspacing
+B.~Getting, ``{Basic Definitions: Web 1.0, Web. 2.0, Web 3.0 | Practical
+  Ecommerce}.'' [Online]. Available:
+  \url{http://www.practicalecommerce.com/articles/464-Basic-Definitions-Web-1-0-Web-2-0-Web-3-0}
+  [Accessed: 2017-02-20]
+\BIBentrySTDinterwordspacing
+
+\bibitem{Lovato2014}
+\BIBentryALTinterwordspacing
+J.~Lovato, ``{Google's evolution in 10 years},'' 2014. [Online]. Available:
+  \url{http://www.mediavisioninteractive.com/blog/search-enginenews/looking-back-moving-forward-google-evolution/}
+  [Accessed: 2017-02-20]
+\BIBentrySTDinterwordspacing
+
+\bibitem{Rowley2007}
+\BIBentryALTinterwordspacing
+J.~Rowley, ``{The wisdom hierarchy: representations of the DIKW hierarchy},''
+  \emph{Journal of Information Science}, vol.~33, no.~2, pp. 163--180, 2007.
+  [Online]. Available: \url{http://alturl.com/7qike}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Abreu2012}
+\BIBentryALTinterwordspacing
+A.~S. H.~G. Abreu, ``{Sistema de Monitoriza{\c{c}}{\~{a}}o de Estufas
+  Agr{\'{i}}colas},'' Ph.D. dissertation, University of Aveiro, 2012. [Online].
+  Available: \url{http://ria.ua.pt/handle/10773/10269}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Itseez}
+\BIBentryALTinterwordspacing
+Itseez, ``{About - OpenCV library}.'' [Online]. Available:
+  \url{http://opencv.org/about.html} [Accessed: 2017-05-19]
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}
