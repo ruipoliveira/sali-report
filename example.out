@@ -65,60 +65,64 @@
 \BOOKMARK [2][-]{subsection.5.2.1}{Controller Module}{section.5.2}% 65
 \BOOKMARK [2][-]{subsection.5.2.2}{Sensor Module}{section.5.2}% 66
 \BOOKMARK [1][-]{section.5.3}{Design funcional}{chapter.5}% 67
-\BOOKMARK [2][-]{subsection.5.3.1}{Requisitos funcionais}{section.5.3}% 68
-\BOOKMARK [3][-]{section*.20}{Dashboard}{subsection.5.3.1}% 69
-\BOOKMARK [3][-]{section*.21}{Aplica\347\343o mobile}{subsection.5.3.1}% 70
-\BOOKMARK [2][-]{subsection.5.3.2}{Requisitos n\343o funcionais}{section.5.3}% 71
-\BOOKMARK [1][-]{section.5.4}{Design t\351cnico}{chapter.5}% 72
-\BOOKMARK [2][-]{subsection.5.4.1}{Arquitetura do sistema}{section.5.4}% 73
-\BOOKMARK [3][-]{section*.22}{Camada de apresenta\347\343o}{subsection.5.4.1}% 74
-\BOOKMARK [3][-]{section*.23}{Camada de neg\363cio}{subsection.5.4.1}% 75
-\BOOKMARK [3][-]{section*.24}{Camada de dados}{subsection.5.4.1}% 76
-\BOOKMARK [1][-]{section.5.5}{Diagrama de componentes}{chapter.5}% 77
-\BOOKMARK [1][-]{section.5.6}{Sistema de intera\347\343o}{chapter.5}% 78
-\BOOKMARK [1][-]{section.5.7}{Descri\347\343o}{chapter.5}% 79
-\BOOKMARK [1][-]{section.5.8}{Arquitetura geral}{chapter.5}% 80
-\BOOKMARK [1][-]{section.5.9}{Considera\347\365es finais}{chapter.5}% 81
-\BOOKMARK [0][-]{chapter.6}{Sistema de informa\347\343o: an\341lise de requisitos e arquitetura}{}% 82
-\BOOKMARK [1][-]{section.6.1}{An\341lise de requisitos}{chapter.6}% 83
-\BOOKMARK [2][-]{subsection.6.1.1}{Entidades envolventes}{section.6.1}% 84
-\BOOKMARK [2][-]{subsection.6.1.2}{Casos de utiliza\347\343o}{section.6.1}% 85
-\BOOKMARK [1][-]{section.6.2}{Estrutura da base de dados}{chapter.6}% 86
-\BOOKMARK [1][-]{section.6.3}{Requisitos de funcionamento}{chapter.6}% 87
-\BOOKMARK [1][-]{section.6.4}{API}{chapter.6}% 88
-\BOOKMARK [1][-]{section.6.5}{Valores simulados}{chapter.6}% 89
-\BOOKMARK [1][-]{section.6.6}{Deploy do projecto}{chapter.6}% 90
-\BOOKMARK [1][-]{section.6.7}{Considera\347\365es finais}{chapter.6}% 91
-\BOOKMARK [0][-]{chapter.7}{Simula\347\343o em hardware}{}% 92
-\BOOKMARK [1][-]{section.7.1}{Micro-controladores}{chapter.7}% 93
-\BOOKMARK [2][-]{subsection.7.1.1}{Arduino Nano}{section.7.1}% 94
-\BOOKMARK [2][-]{subsection.7.1.2}{Raspberry pi }{section.7.1}% 95
-\BOOKMARK [1][-]{section.7.2}{Sensores}{chapter.7}% 96
-\BOOKMARK [1][-]{section.7.3}{Interliga\347\343o de componentes}{chapter.7}% 97
-\BOOKMARK [1][-]{section.7.4}{Considera\347\365es finais}{chapter.7}% 98
-\BOOKMARK [0][-]{chapter.8}{Sistema de dete\347\343o de intrusos}{}% 99
-\BOOKMARK [1][-]{section.8.1}{Biblioteca de processamento de imagem: OpenCV}{chapter.8}% 100
-\BOOKMARK [2][-]{subsection.8.1.1}{Conclus\365es}{section.8.1}% 101
-\BOOKMARK [1][-]{section.8.2}{Algoritmo de dete\347\343o de intrusos}{chapter.8}% 102
-\BOOKMARK [1][-]{section.8.3}{Testes}{chapter.8}% 103
-\BOOKMARK [1][-]{section.8.4}{Implementa\347\343o}{chapter.8}% 104
-\BOOKMARK [2][-]{subsection.8.4.1}{Flask}{section.8.4}% 105
-\BOOKMARK [2][-]{subsection.8.4.2}{Servidor web NGNIX}{section.8.4}% 106
-\BOOKMARK [1][-]{section.8.5}{Considera\347\365es finais}{chapter.8}% 107
-\BOOKMARK [0][-]{chapter.9}{Resultados}{}% 108
-\BOOKMARK [1][-]{section.9.1}{Testar API }{chapter.9}% 109
-\BOOKMARK [1][-]{section.9.2}{Aplica\347\343o mobile}{chapter.9}% 110
-\BOOKMARK [1][-]{section.9.3}{Dete\347\343o de intrusos}{chapter.9}% 111
-\BOOKMARK [0][-]{chapter.10}{Conclus\343o e trabalho futuro}{}% 112
-\BOOKMARK [1][-]{section.10.1}{Conclus\343o}{chapter.10}% 113
-\BOOKMARK [1][-]{section.10.2}{Trabalho futuro}{chapter.10}% 114
-\BOOKMARK [1][-]{section.10.3}{Considera\347\365es finais}{chapter.10}% 115
-\BOOKMARK [0][-]{appendix.A}{Untitled appendix \043A}{}% 116
-\BOOKMARK [0][-]{appendix.B}{Mockups da aplica\347\343o mobile}{}% 117
-\BOOKMARK [0][-]{appendix.C}{Trigger SQL }{}% 118
-\BOOKMARK [0][-]{appendix.D}{Resultados processamento de imagem }{}% 119
-\BOOKMARK [1][-]{section.D.1}{Frame 1}{appendix.D}% 120
-\BOOKMARK [1][-]{section.D.2}{Frame 2}{appendix.D}% 121
-\BOOKMARK [1][-]{section.D.3}{Frame 3}{appendix.D}% 122
-\BOOKMARK [1][-]{section.D.4}{Frame 4}{appendix.D}% 123
-\BOOKMARK [0][-]{appendix.E}{Interface gr\341fica}{}% 124
+\BOOKMARK [1][-]{section.5.4}{Considera\347\365es finais}{chapter.5}% 68
+\BOOKMARK [0][-]{chapter.6}{Sistema de informa\347\343o: an\341lise de requisitos e arquitetura}{}% 69
+\BOOKMARK [1][-]{section.6.1}{An\341lise de requisitos}{chapter.6}% 70
+\BOOKMARK [2][-]{subsection.6.1.1}{Entidades envolventes}{section.6.1}% 71
+\BOOKMARK [2][-]{subsection.6.1.2}{Casos de utiliza\347\343o}{section.6.1}% 72
+\BOOKMARK [1][-]{section.6.2}{Estrutura da base de dados}{chapter.6}% 73
+\BOOKMARK [2][-]{subsection.6.2.1}{Requisitos funcionais}{section.6.2}% 74
+\BOOKMARK [3][-]{section*.20}{Dashboard}{subsection.6.2.1}% 75
+\BOOKMARK [3][-]{section*.21}{Aplica\347\343o mobile}{subsection.6.2.1}% 76
+\BOOKMARK [2][-]{subsection.6.2.2}{Requisitos n\343o funcionais}{section.6.2}% 77
+\BOOKMARK [1][-]{section.6.3}{Design t\351cnico}{chapter.6}% 78
+\BOOKMARK [1][-]{section.6.4}{Arquitetura l\363gica}{chapter.6}% 79
+\BOOKMARK [2][-]{subsection.6.4.1}{Camada de apresenta\347\343o}{section.6.4}% 80
+\BOOKMARK [2][-]{subsection.6.4.2}{Camada de l\363gica de neg\363cio}{section.6.4}% 81
+\BOOKMARK [2][-]{subsection.6.4.3}{Camada de acesso a dados}{section.6.4}% 82
+\BOOKMARK [1][-]{section.6.5}{Arquitetura f\355sica}{chapter.6}% 83
+\BOOKMARK [2][-]{subsection.6.5.1}{Sistema de informa\347\343o}{section.6.5}% 84
+\BOOKMARK [2][-]{subsection.6.5.2}{Aplica\347\343o web}{section.6.5}% 85
+\BOOKMARK [2][-]{subsection.6.5.3}{Aplica\347\343o mobile}{section.6.5}% 86
+\BOOKMARK [1][-]{section.6.6}{Diagrama de componentes}{chapter.6}% 87
+\BOOKMARK [1][-]{section.6.7}{Sistema de intera\347\343o}{chapter.6}% 88
+\BOOKMARK [1][-]{section.6.8}{Descri\347\343o}{chapter.6}% 89
+\BOOKMARK [1][-]{section.6.9}{Arquitetura geral}{chapter.6}% 90
+\BOOKMARK [1][-]{section.6.10}{Requisitos de funcionamento}{chapter.6}% 91
+\BOOKMARK [1][-]{section.6.11}{API}{chapter.6}% 92
+\BOOKMARK [1][-]{section.6.12}{Valores simulados}{chapter.6}% 93
+\BOOKMARK [1][-]{section.6.13}{Deploy do projecto}{chapter.6}% 94
+\BOOKMARK [1][-]{section.6.14}{Considera\347\365es finais}{chapter.6}% 95
+\BOOKMARK [0][-]{chapter.7}{Simula\347\343o em hardware}{}% 96
+\BOOKMARK [1][-]{section.7.1}{Micro-controladores}{chapter.7}% 97
+\BOOKMARK [2][-]{subsection.7.1.1}{Arduino Nano}{section.7.1}% 98
+\BOOKMARK [2][-]{subsection.7.1.2}{Raspberry pi }{section.7.1}% 99
+\BOOKMARK [1][-]{section.7.2}{Sensores}{chapter.7}% 100
+\BOOKMARK [1][-]{section.7.3}{Interliga\347\343o de componentes}{chapter.7}% 101
+\BOOKMARK [1][-]{section.7.4}{Considera\347\365es finais}{chapter.7}% 102
+\BOOKMARK [0][-]{chapter.8}{Sistema de dete\347\343o de intrusos}{}% 103
+\BOOKMARK [1][-]{section.8.1}{Biblioteca de processamento de imagem: OpenCV}{chapter.8}% 104
+\BOOKMARK [2][-]{subsection.8.1.1}{Conclus\365es}{section.8.1}% 105
+\BOOKMARK [1][-]{section.8.2}{Algoritmo de dete\347\343o de intrusos}{chapter.8}% 106
+\BOOKMARK [1][-]{section.8.3}{Testes}{chapter.8}% 107
+\BOOKMARK [1][-]{section.8.4}{Implementa\347\343o}{chapter.8}% 108
+\BOOKMARK [2][-]{subsection.8.4.1}{Flask}{section.8.4}% 109
+\BOOKMARK [2][-]{subsection.8.4.2}{Servidor web NGNIX}{section.8.4}% 110
+\BOOKMARK [1][-]{section.8.5}{Considera\347\365es finais}{chapter.8}% 111
+\BOOKMARK [0][-]{chapter.9}{Resultados}{}% 112
+\BOOKMARK [1][-]{section.9.1}{Testar API }{chapter.9}% 113
+\BOOKMARK [1][-]{section.9.2}{Aplica\347\343o mobile}{chapter.9}% 114
+\BOOKMARK [1][-]{section.9.3}{Dete\347\343o de intrusos}{chapter.9}% 115
+\BOOKMARK [0][-]{chapter.10}{Conclus\343o e trabalho futuro}{}% 116
+\BOOKMARK [1][-]{section.10.1}{Conclus\343o}{chapter.10}% 117
+\BOOKMARK [1][-]{section.10.2}{Trabalho futuro}{chapter.10}% 118
+\BOOKMARK [1][-]{section.10.3}{Considera\347\365es finais}{chapter.10}% 119
+\BOOKMARK [0][-]{appendix.A}{Untitled appendix \043A}{}% 120
+\BOOKMARK [0][-]{appendix.B}{Mockups da aplica\347\343o mobile}{}% 121
+\BOOKMARK [0][-]{appendix.C}{Trigger SQL }{}% 122
+\BOOKMARK [0][-]{appendix.D}{Resultados processamento de imagem }{}% 123
+\BOOKMARK [1][-]{section.D.1}{Frame 1}{appendix.D}% 124
+\BOOKMARK [1][-]{section.D.2}{Frame 2}{appendix.D}% 125
+\BOOKMARK [1][-]{section.D.3}{Frame 3}{appendix.D}% 126
+\BOOKMARK [1][-]{section.D.4}{Frame 4}{appendix.D}% 127
+\BOOKMARK [0][-]{appendix.E}{Interface gr\341fica}{}% 128
