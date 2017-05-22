@@ -10,133 +10,6 @@
 \section{Análise de requisitos}
 
 
-\subsection{Entidades envolventes}
-
-
-No contexto deste sistema existem três entidades distintas que são importantes numerar: 
-
-\begin{itemize}
-	
-	\item \textbf{General user}: este poderá registar-se e associando-se a uma determinada empresa registada no sistema. Após a validação por parte da empresa este utilizador poderá aceder à sua área reservada através das dashboard ou aplicação mobile. 
-	
-	\item \textbf{Companny user}: utilizador que gere todos os general users que se possam associar a si. Deste modo, este utilizador poderá validar os general users que a si se associam ou eliminá-los caso a permissão não seja desejada.  
-	
-	\item \textbf{Administrador}: vulgarmente denominado por Admin. Pretende-se que apenas exista uma único administrador. Genericamente este utilizador tem a possibilidade de poder adicionar novas empresas ao sistema i.e. criar novas utilizador com permissões especificas. 
-	
-\end{itemize}
-
-
-
-\newpage
-
-\subsection{Casos de utilização}
-
-
-\begin{figure}[!htb]
-	\centering
-	\includegraphics[scale=0.5]{esquemas/usecases.pdf}
-	\caption{Pirâmide do conhecimento: modelo DIKW}
-	\label{dikw}
-\end{figure}
-
-
-
-
-
-
-
-
-
-
-
-\begin{table}[h]
-	\centering
-	
-	\begin{tabular}{|
-			>{\columncolor[HTML]{EFEFEF}}l |l|}
-		\hline
-		\textbf{Caso de utilização:} & \begin{tabular}[c]{@{}l@{}}-dasdasdasasdasdddddddddddddddddddddddd\\ -dasdasd\\ -dasdasda\end{tabular} \\ \hline
-		\textbf{Ator:} &  \\ \hline
-		\textbf{Descrição:} &  \\ \hline
-		\textbf{Pré-condições:} &  \\ \hline
-		\textbf{Pós-condições:} &  \\ \hline
-	\end{tabular}
-	\caption{Casos de utilização: Login/Logout}
-	\label{my-label}
-\end{table}
-
-
-
-\begin{table}[h]
-	\centering
-	
-	\begin{tabular}{|
-			>{\columncolor[HTML]{EFEFEF}}l |l|}
-		\hline
-		\textbf{Caso de utilização:} & \begin{tabular}[c]{@{}l@{}}-dasdasdasasdasdddddddddddddddddddddddd\\ -dasdasd\\ -dasdasda\end{tabular} \\ \hline
-		\textbf{Ator:} &  \\ \hline
-		\textbf{Descrição:} &  \\ \hline
-		\textbf{Pré-condições:} &  \\ \hline
-		\textbf{Pós-condições:} &  \\ \hline
-	\end{tabular}
-	\caption{Casos de utilização: Login/Logout}
-	\label{my-label}
-\end{table}
-
-
-
-
-
-\newpage
-\section{Estrutura da base de dados}
-
-
-\begin{figure}[!htb]
-	\centering
-	\includegraphics[scale=0.25]{esquemas/database_tese.pdf}
-	\caption{Pirâmide do conhecimento: modelo DIKW}
-	\label{db}
-\end{figure}
-
-
-\newpage
-
-\begin{table}[h]
-	\centering
-	\begin{tabular}{|l|l|l|}
-		\hline
-		\multicolumn{1}{|c|}{\textbf{Nome}} & \multicolumn{1}{c|}{\textbf{Identificador}} & \multicolumn{1}{c|}{\textbf{Descrição}} \\ \hline
-		User & auto-incrementado & dasdas \\ \hline
-		ControllerModule&  &  \\ \hline
-		SensorModule&  &  \\ \hline
-		CommunicationType&  &  \\ \hline
-		SensorType&  &  \\ \hline
-		Sensor&  &  \\ \hline
-		Reading&  &  \\ \hline
-		AlarmsSettings&  &  \\ \hline
-		Alarms&  &  \\ \hline
-	\end{tabular}
-	\caption{My caption}
-	\label{my-label}
-\end{table}
-
-
-
-
-
-
-
-
-
-\newpage
-
-
-
-
-
-
-
-
 
 
 
@@ -203,6 +76,100 @@ necessariamente pedidos pelo cliente.
 	\item 
 	
 \end{itemize}
+
+
+
+
+
+
+
+
+\subsection{Entidades envolventes}
+
+
+No contexto deste sistema existem três entidades distintas que são importantes numerar: 
+
+\begin{itemize}
+	
+	\item \textbf{General user}: este poderá registar-se e associando-se a uma determinada empresa registada no sistema. Após a validação por parte da empresa este utilizador poderá aceder à sua área reservada através das dashboard ou aplicação mobile. 
+	
+	\item \textbf{Companny user}: utilizador que gere todos os general users que se possam associar a si. Deste modo, este utilizador poderá validar os general users que a si se associam ou eliminá-los caso a permissão não seja desejada.  
+	
+	\item \textbf{Administrador}: vulgarmente denominado por Admin. Pretende-se que apenas exista uma único administrador. Genericamente este utilizador tem a possibilidade de poder adicionar novas empresas ao sistema i.e. criar novas utilizador com permissões especificas. 
+	
+\end{itemize}
+
+
+
+\newpage
+
+\subsection{Casos de utilização}
+
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.5]{esquemas/usecases.pdf}
+	\caption{Pirâmide do conhecimento: modelo DIKW}
+	\label{dikw}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+\newpage
+\section{Estrutura da base de dados}
+
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.25]{esquemas/database_tese.pdf}
+	\caption{Pirâmide do conhecimento: modelo DIKW}
+	\label{db}
+\end{figure}
+
+
+\newpage
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|l|l|l|}
+		\hline
+		\multicolumn{1}{|c|}{\textbf{Nome}} & \multicolumn{1}{c|}{\textbf{Identificador}} & \multicolumn{1}{c|}{\textbf{Descrição}} \\ \hline
+		User & auto-incrementado & dasdas \\ \hline
+		ControllerModule&  &  \\ \hline
+		SensorModule&  &  \\ \hline
+		CommunicationType&  &  \\ \hline
+		SensorType&  &  \\ \hline
+		Sensor&  &  \\ \hline
+		Reading&  &  \\ \hline
+		AlarmsSettings&  &  \\ \hline
+		Alarms&  &  \\ \hline
+	\end{tabular}
+	\caption{My caption}
+	\label{my-label}
+\end{table}
+
+
+
+
+
+
+
+
+
+\newpage
+
+
+
+
+
 
 
 
