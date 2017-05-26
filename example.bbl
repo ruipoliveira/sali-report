@@ -25,6 +25,21 @@
 T.~Our, ``{Resume : Context Aware Computing for The Internet of Things : A
   Survey Article 2013},'' pp. 1--5, 2013.
 
+\bibitem{temp-dta}
+\BIBentryALTinterwordspacing
+``{Datasheet, NTC Thermistor TTC05 Series, Disc Type for Temperature
+  Sensing/Compensation}.'' [Online]. Available:
+  \url{http://extra-parts.com/datasheets/TTC.pdf}
+\BIBentrySTDinterwordspacing
+
+\bibitem{lum-data}
+\BIBentryALTinterwordspacing
+L.~{LIDA OPTICAL{\&}ELECTRONIC CO.}, ``{Datasheet, CdS Photoconductive cells,
+  GL5528},'' p.~1. [Online]. Available:
+  \url{https://pi.gate.ac.uk/pages/airpi-files/PD0001.pdf} [Accessed:
+  2017-05-24]
+\BIBentrySTDinterwordspacing
+
 \bibitem{overviewsal}
 V.~Isca, A.~Seca, D.~Pinto, and A.~Silva, \emph{{An overview of Salicornia
   genus: the phytochemical and pharmacological profile}}, natural pr~ed.,

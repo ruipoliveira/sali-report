@@ -28,11 +28,13 @@
 \begin{itemize}
 	\item A interface do sistema deve permitir que o utilizador, seja ele qual for, entre ou faça \textit{login} no sistema. 
 	
-	\item A interface do sistema deve permitir que o utilizador, seja ele qual for, saia ou faça (\textit{logout}) no sistema.
+	\item A interface do sistema deve permitir que o utilizador, seja ele qual for, saia ou faça \textit{logout} no sistema.
 	
 	\item O dashboard deverá permitir que qualquer utilizador possa recuperar a sua chave de acesso ao sistema.
 	
-	\item O sistema deve permitir que qualquer utilizador se possa registar embora sempre associado a uma determinada empresa. 
+	\item O sistema deve permitir que qualquer utilizador se possa registar no sistema, embora tenha que estar obrigatoriamente associado a uma empresa.
+	
+	\item O utilizador comum só terá acesso à sua área reserva após a validação por parte da empresa.   
 	
 	\item O dashboard deverá permitir ao administrador a adição de novas empresas e a gestão de todos os utilizadores. 
 	
@@ -48,6 +50,18 @@
 		
 	\end{itemize}
 	
+	\item Visualizar graficamente os dados de cada sensor para um determinado \ac{SM}. 
+	
+	
+	\item Visualizar em modo tabular os dados de cada sensor para um determinado \ac{SM}. 
+	
+	\item Em cada uma das visualizações anteriormente descritas, pretende-se que seja possível filtrar efetuar uma filtragem por data
+	
+	
+	\item O sistema permitirá a exportação dos dados de uma determinado \ac{SM} em formato \ac{CSV}. 
+	
+	
+	
 	\item O sistema deve permitir o armazenamento de informações do cliente.
 	
 	\item O sistema deve permitir a atualização das informações do cliente.
@@ -57,6 +71,19 @@
 \subsubsection{Aplicação mobile}
 
 
+
+\begin{itemize}
+	\item A interface da aplicação mobile deve permitir que o utilizador, seja ele qual for, entre ou faça \textit{login} no sistema. 
+	
+	\item A interface da aplicação mobile deve permitir que o utilizador, seja ele qual for, saia ou faça \textit{logout} no sistema.
+	
+	
+	\item Visualizar graficamente os dados de cada sensor para um determinado \ac{SM}. 
+	
+	\item Receber alarmes quando um determinado valor lido está fora do estipulado.
+	
+	
+\end{itemize}
 
 
 
@@ -72,8 +99,7 @@ necessariamente pedidos pelo cliente.
 	\item O sistema deverá executar em qualquer plataforma.
 	
 	\item O sistema deverá disponibilizar uma API para que possam ser criados novos produtos com base neste 
-	
-	\item 
+ 
 	
 \end{itemize}
 
@@ -103,7 +129,7 @@ No contexto deste sistema existem três entidades distintas que são importantes
 
 \newpage
 
-\subsection{Casos de utilização}
+\subsection{Casos de uso}
 
 
 \begin{figure}[!htb]
@@ -124,7 +150,7 @@ No contexto deste sistema existem três entidades distintas que são importantes
 
 
 \newpage
-\section{Estrutura da base de dados}
+\section{Modelo de dados}
 
 
 \begin{figure}[!htb]
@@ -195,6 +221,28 @@ No contexto deste sistema existem três entidades distintas que são importantes
 
 
 \subsection{Camada de apresentação}
+
+
+A camada de apresentação é responsável pela comunicação entre os utilizadores e a aplicação, sendo ela web ou mobile, exibindo informações aos utilizadores, abrangendo uma interface que permite solicitações ao sistema.
+
+
+A interface de usuário foi desenvolvida em HTML5 e CSS, fazendo uso de jQuery e Javascript.
+
+
+
+\begin{itemize}
+	\item \textbf{HTML5}: \ac{HTML} é a linguagem padrão usada para estruturar e apresentar conteúdo da web. HTML5 é a quinta versão do HTML.
+	\item \textbf{CSS}: \ac{CSS} é uma linguagem usada para descrever a apresentação de conteúdo escrito em uma marcação Como HTML.
+	\item \textbf{Javascript}: Javascript é a linguagem de programação para páginas da web.
+	\item \textbf{JQuery}: JQuery é uma biblioteca Javascript que simplifica a programação Javascript
+\end{itemize}
+
+
+
+
+
+
+
 
 
 \subsection{Camada de lógica de negócio}

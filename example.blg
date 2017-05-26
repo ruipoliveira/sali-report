@@ -18,6 +18,8 @@ A level-1 auxiliary file: texSource/appendix2.aux
 A level-1 auxiliary file: texSource/appendix3.aux
 A level-1 auxiliary file: texSource/appendix4.aux
 A level-1 auxiliary file: texSource/appendix5.aux
+A level-1 auxiliary file: texSource/appendix6.aux
+A level-1 auxiliary file: texSource/appendix7.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -28,6 +30,10 @@ Database file #1: tese.bib
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 Warning--empty journal in Our2013
+Warning--empty author in temp-dta
+Warning--empty journal in temp-dta
+Warning--empty year in temp-dta
+Warning--there is url but no urldate in temp-dta
 Warning--edition ordinal word "Natural Pr" may be too high (or improper) for conversion in overviewsal
 Warning--missing publisher in chambers
 Warning--empty journal in chenopodiaceae
@@ -38,45 +44,45 @@ Warning--there is url but no urldate in Rowley2007
 Warning--there is url but no urldate in Abreu2012
 
 Done.
-You've used 17 entries,
+You've used 19 entries,
             4106 wiz_defined-function locations,
-            958 strings with 10642 characters,
-and the built_in function-call counts, 9758 in all, are:
-= -- 798
-> -- 186
-< -- 67
-+ -- 95
-- -- 32
-* -- 473
-:= -- 1627
-add.period$ -- 32
-call.type$ -- 17
-change.case$ -- 23
+            968 strings with 10977 characters,
+and the built_in function-call counts, 10445 in all, are:
+= -- 846
+> -- 191
+< -- 68
++ -- 98
+- -- 33
+* -- 510
+:= -- 1748
+add.period$ -- 36
+call.type$ -- 19
+change.case$ -- 25
 chr.to.int$ -- 156
-cite$ -- 26
-duplicate$ -- 700
-empty$ -- 793
-format.name$ -- 38
-if$ -- 2194
+cite$ -- 32
+duplicate$ -- 762
+empty$ -- 861
+format.name$ -- 39
+if$ -- 2342
 int.to.chr$ -- 0
-int.to.str$ -- 17
-missing$ -- 127
-newline$ -- 90
-num.names$ -- 23
-pop$ -- 315
+int.to.str$ -- 19
+missing$ -- 139
+newline$ -- 100
+num.names$ -- 24
+pop$ -- 356
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 4
-skip$ -- 745
+skip$ -- 794
 stack$ -- 0
-substring$ -- 357
-swap$ -- 520
-text.length$ -- 15
+substring$ -- 361
+swap$ -- 550
+text.length$ -- 16
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 17
-warning$ -- 9
-while$ -- 49
-width$ -- 19
-write$ -- 188
-(There were 9 warnings)
+type$ -- 19
+warning$ -- 13
+while$ -- 51
+width$ -- 21
+write$ -- 206
+(There were 13 warnings)
