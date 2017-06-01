@@ -1,0 +1,88 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: thesis-roliveira.aux
+A level-1 auxiliary file: texSource/acronyms.aux
+A level-1 auxiliary file: texSource/chapter1.aux
+A level-1 auxiliary file: texSource/chapter2.aux
+A level-1 auxiliary file: texSource/state.aux
+A level-1 auxiliary file: texSource/chapter4.aux
+A level-1 auxiliary file: texSource/chapter5.aux
+A level-1 auxiliary file: texSource/chapter6_2.aux
+A level-1 auxiliary file: texSource/chapter6_1.aux
+A level-1 auxiliary file: texSource/chapter6.aux
+A level-1 auxiliary file: texSource/chapter7.aux
+The style file: IEEEtran.bst
+A level-1 auxiliary file: texSource/appendix1.aux
+A level-1 auxiliary file: texSource/appendix2.aux
+A level-1 auxiliary file: texSource/appendix3.aux
+A level-1 auxiliary file: texSource/appendix4.aux
+A level-1 auxiliary file: texSource/appendix5.aux
+A level-1 auxiliary file: texSource/appendix6.aux
+A level-1 auxiliary file: texSource/appendix7.aux
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Database file #1: tese.bib
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--edition ordinal word "Natural Pr" may be too high (or improper) for conversion in overviewsal
+Warning--there is url but no urldate in Saini2014
+Warning--missing publisher in chambers
+Warning--empty journal in chenopodiaceae
+Warning--missing publisher in ferri
+Warning--there is url but no urldate in Silva2000
+Warning--empty journal in Evans2011a
+Warning--empty journal in Our2013
+Warning--there is url but no urldate in Rowley2007
+Warning--there is url but no urldate in Abreu2012
+Warning--empty author in temp-dta
+Warning--empty journal in temp-dta
+Warning--empty year in temp-dta
+Warning--there is url but no urldate in temp-dta
+
+Done.
+You've used 21 entries,
+            4106 wiz_defined-function locations,
+            980 strings with 11474 characters,
+and the built_in function-call counts, 11898 in all, are:
+= -- 966
+> -- 228
+< -- 79
++ -- 118
+- -- 40
+* -- 585
+:= -- 1979
+add.period$ -- 40
+call.type$ -- 21
+change.case$ -- 27
+chr.to.int$ -- 180
+cite$ -- 35
+duplicate$ -- 862
+empty$ -- 969
+format.name$ -- 47
+if$ -- 2672
+int.to.chr$ -- 0
+int.to.str$ -- 21
+missing$ -- 159
+newline$ -- 110
+num.names$ -- 26
+pop$ -- 404
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 4
+skip$ -- 904
+stack$ -- 0
+substring$ -- 419
+swap$ -- 633
+text.length$ -- 19
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 21
+warning$ -- 14
+while$ -- 57
+width$ -- 23
+write$ -- 230
+(There were 14 warnings)

@@ -1,0 +1,384 @@
+
+\documentclass[11pt,twoside,a4paper]{report}
+\usepackage[DETI,newLogo]{uaThesis}
+\def\ThesisYear{2017}
+
+% optional packages
+\usepackage[portuguese]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[printonlyused]{acronym}
+\usepackage{xspace}% used by \sigla
+\usepackage{fancyhdr}
+\usepackage{xcolor,listings}
+\usepackage{xcolor,colortbl}
+\usepackage{longtable}
+\usepackage{eurosym}
+
+\usepackage{setspace} % espacamento entre linhas
+
+\usepackage{datetime}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+
+\hypersetup{%
+	pdfborder = {0 0 0}
+}
+
+\usepackage{color}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+\lstset{style=mystyle}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%% MACROS%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\sr}{\textit{Salicornia ramosissima }}
+
+\newcommand{\namethesispt}{Sistema de monitorização e controlo da produção de salicórnia na Ria de Aveiro}
+\newcommand{\namethesisen}{A decidir...}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\makeatletter
+\DeclareRobustCommand{\format@sec@number}[2]{{\normalfont\upshape#1}#2}
+\renewcommand{\chaptermark}[1]{%
+	\markboth{\format@sec@number{\ifnum\c@secnumdepth>\m@ne\@chapapp\ \thechapter. \fi}{#1}}{}}
+\renewcommand{\sectionmark}[1]{%
+	\markright{\format@sec@number{\ifnum\c@secnumdepth>\z@\thesection. \fi}{#1}}}
+\makeatother
+
+\fancyhf{}
+\fancyhead[RE]{\itshape\nouppercase{\leftmark}}
+\fancyhead[LO]{\itshape\nouppercase{\rightmark}}
+\fancyhead[LE,RO]{\thepage}
+
+
+
+\usepackage{tikz, lipsum}% http://ctan.org/pkg/{pgf,lipsum}
+\newcommand*{\chapnumfont}{\normalfont\sffamily\huge\bfseries}
+\newcommand*{\printchapternum}{
+	\begin{tikzpicture}
+	\draw[fill,color=black] (0,0) rectangle (2cm,2cm);
+	\draw[color=white] (1cm,1cm) node { \chapnumfont\thechapter };
+	\end{tikzpicture}
+}
+\newcommand*{\chaptitlefont}{\normalfont\sffamily\Huge\bfseries}
+\newcommand*{\printchaptertitle}[1]{\flushright\chaptitlefont#1}
+
+\makeatletter
+% \@makechapterhead prints regular chapter heading.
+% Taken directly from report.cls and modified.
+\def\@makechapterhead#1{%
+	\vspace*{50\p@}%
+	{\parindent \z@ \raggedleft
+		\ifnum \c@secnumdepth >\m@ne
+		\printchapternum
+		\par\nobreak
+		\vskip 20\p@
+		\fi
+		\interlinepenalty\@M
+		\printchaptertitle{#1}\par\nobreak
+		\vskip 40\p@
+}}
+% \@makeschapterhead prints starred chapter heading.
+% Taken directly from report.cls and modified.
+\def\@makeschapterhead#1{%
+	\vspace*{50\p@}%
+	{\parindent \z@ \raggedleft
+		\interlinepenalty\@M
+		\printchaptertitle{#1}\par\nobreak
+		\vskip 40\p@
+}}
+\makeatother
+
+% optional (comment to use default)s
+%   depth of the table of contents
+%     1 ... chapther and sections
+%     2 ... chapters, sections, and subsections
+%     3 ... chapters, sections, subsections, and subsubsections
+\setcounter{tocdepth}{3}
+
+% optional (comment to used default)
+%   horizontal line to separate floats (figures and tables) from text
+\def\topfigrule{\kern 7.8pt \hrule width\textwidth\kern -8.2pt\relax}
+\def\dblfigrule{\kern 7.8pt \hrule width\textwidth\kern -8.2pt\relax}
+\def\botfigrule{\kern -7.8pt \hrule width\textwidth\kern 8.2pt\relax}
+
+% custom macros (could also be defined using \newcommand)
+\def\I{\mathtt{i}}         % one possible way to represent $\sqrt{-1}$
+\def\Exp#1{e^{2\pi\I #1}}  % argument inside braces, i.e., "{}"
+\def\EXP#1.{e^{2\pi\I #1}} % argument finishes when a full stop is encountered, i.e., "."
+\def\sigla{\LaTeX\xspace}  % use as "blabla \sigla blabla (no need to do "blabla \sigla\ blabla"
+
+\def\AddVMargin#1{\setbox0=\hbox{#1}%
+                  \dimen0=\ht0\advance\dimen0 by 2pt\ht0=\dimen0%
+                  \dimen0=\dp0\advance\dimen0 by 2pt\dp0=\dimen0%
+                  \box0}   % add extra vertical space above and below the argument (#1)
+\def\Header#1#2{\setbox1=\hbox{#1}\setbox2=\hbox{#2}%
+           \ifdim\wd1>\wd2\dimen0=\wd1\else\dimen0=\wd2\fi%
+           \AddVMargin{\parbox{\dimen0}{\centering #1\\#2}}} % put #1 on top #2
+
+
+\begin{document}
+
+%
+% Cover page (use only one of the first two \TitlePage)
+%
+
+% First alternative, with a figure
+\TitlePage
+  %\GRID  % for debugging ONLY
+  \HEADER{\BAR\FIG{\includegraphics[height=60mm]{uaLogoNew}}} % the \FIG{} is optional
+         {\ThesisYear}
+  \TITLE{Rui Pedro dos \newline Santos Oliveira}
+        {\namethesispt
+        \newline \newline
+       	\namethesisen
+    	}
+\EndTitlePage
+\titlepage\ \endtitlepage % empty page
+
+% Second alternative, with a citation
+\TitlePage
+  %\GRID  % for debugging ONLY
+  \HEADER{\BAR\FIG{\begin{minipage}{50mm} % no more than 120mm
+          \end{minipage}}}
+         {\ThesisYear}
+  \TITLE{Rui Pedro dos \newline Santos Oliveira}
+{\namethesispt
+\newline \newline
+\namethesisen}
+\EndTitlePage
+\titlepage\ \endtitlepage % empty page
+
+
+%
+% Initial thesis pages
+%
+
+\TitlePage
+  \HEADERSEM{}{\ThesisYear}
+    \TITLE{Rui Pedro dos \newline Santos Oliveira}
+  {\namethesispt
+  	\newline \newline
+  	\namethesisen
+  }
+  \vspace*{15mm}
+  \TEXT{}
+       {Dissertação apresentada à Universidade de Aveiro para cumprimento dos requisitos necessários à obtenção do grau de Mestre em Engenharia de Computadores e Telemática, realizada sob a orientação científica do Doutor Joaquim Manuel Henriques de Sousa Pinto, Professor Associado do Departamento de Eletrónica, Telecomunicações e Informática da Universidade de Aveiro e do Doutor José Alberto Gouveia Fonseca, Professor Associado do Departamento de Eletrónica, Telecomunicações e Informática da Universidade de Aveiro. }
+\EndTitlePage
+\titlepage\ \endtitlepage % empty page
+
+\TitlePage
+  \vspace*{55mm}
+  \TEXT{\textbf{o j\'uri~/~the jury\newline}}
+       {}
+  \TEXT{presidente~/~president}
+       {\textbf{ABC}\newline {\small
+        Professor Catedrático da Universidade de Aveiro (por delega\c c\~ao da Reitora da
+        Universidade de Aveiro)}}
+  \vspace*{5mm}
+  \TEXT{vogais~/~examiners committee}
+       {\textbf{DEF}\newline {\small
+        Professor Catedr\'atico da Universidade de Aveiro (orientador)}}
+  \vspace*{5mm}
+  \TEXT{}
+       {\textbf{GHI}\newline {\small
+        Professor associado da Universidade J (co-orientador)}}
+  \vspace*{5mm}
+  \TEXT{}
+       {\textbf{KLM}\newline {\small
+        Professor Catedr\'atico da Universidade N}}
+\EndTitlePage
+\titlepage\ \endtitlepage % empty page
+
+\TitlePage
+  \vspace*{55mm}
+  \TEXT{\textbf{agradecimentos~/\newline acknowledgements}}
+       {Um agradecimento especial aos meus pais e irmao por todo o apoio	prestado ao longo deste meu percurso académico, como também a toda a minha família.
+       	A todos os meus colegas e amigos, que conheci ao longo destes 5 anos na Universidade de Aveiro, um grande obrigado}
+    
+
+    
+  \TEXT{}
+       {Desejo tamb\'em pedir desculpa a todos que tiveram de suportar o meu desinteresse pelas
+        tarefas mundanas do dia-a-dia, \ldots}
+\EndTitlePage
+\titlepage\ \endtitlepage % empty page
+
+\TitlePage
+	\vspace*{55mm}
+    \TEXT{\textbf{palavras chave}}
+	{Cultivo da salicórnia, irrigação, sensores, atuadores, web, monitorização, atuação remota.}
+  	\vspace*{5mm}
+  \TEXT{\textbf{resumo}}
+       {Nos dias que correm, \'e frequente um trabalho ser avaliado pela sua apar\^encia em vez de
+        o ser pelo seu conte\'udo. Sendo assim, sem descurar este \'ultimo, nesta tese descrevemos
+        maneiras revolucion\'arias de transformar um documento s\'olido e austero num documento
+        s\'olido e belo, capaz de fazer chorar de alegria (ou de inveja) qualquer leitor, mesmo
+        quando este n\~ao percebe nada do que l\'a est\'a escrito.}
+  \TEXT{}
+       {A explora\c c\~ao de novas descobertas na \'area da percep\c c\~ao visual, nomeadamente
+        no que se refere \`a aprecia\c c\~ao de obras de arte geniais, \ldots}
+\EndTitlePage
+\titlepage\ \endtitlepage % empty page
+
+
+\TitlePage
+  \vspace*{55mm}
+  \TEXT{\textbf{keywords}}
+  {Cultivo da salicórnia, irrigação, sensores, atuadores, web, monitorização, atuação remota.}
+  \vspace*{5mm}
+  \TEXT{\textbf{abstract}}
+       {Nowadays, it is usual to evaluate a work \ldots}
+\EndTitlePage
+\titlepage\ \endtitlepage % empty page
+
+
+%
+% Tables of contents, of figures, ...
+%
+\setstretch{1.3}
+
+
+\pagenumbering{roman}
+\tableofcontents
+
+\cleardoublepage
+\addcontentsline{toc}{chapter}{\listfigurename}
+\listoffigures
+
+
+
+\cleardoublepage
+\addcontentsline{toc}{chapter}{\listtablename}
+\listoftables
+
+
+
+% The chapters (usually written using the isolatin font encoding ...)
+
+\cleardoublepage
+
+\phantomsection
+
+\include{texSource/acronyms}
+
+
+
+%
+% The chapters (usually written using the isolatin font encoding ...)
+%
+\cleardoublepage
+\pagenumbering{arabic}
+
+
+
+\include{texSource/chapter1}
+\cleardoublepage
+
+\include{texSource/chapter2}
+\cleardoublepage
+
+%\include{texSource/chapter3}
+%\cleardoublepage
+
+\include{texSource/state}
+\cleardoublepage
+
+
+\include{texSource/chapter4}
+\cleardoublepage
+
+\include{texSource/chapter5}
+\cleardoublepage
+
+\include{texSource/chapter6_2}
+\cleardoublepage
+
+\include{texSource/chapter6_1}
+\cleardoublepage
+
+\include{texSource/chapter6}
+\cleardoublepage
+
+\include{texSource/chapter7}
+\cleardoublepage
+
+
+
+\medskip
+
+\bibliographystyle{IEEEtran}
+\bibliography{tese}
+
+
+%
+% The bibliography
+%
+%\medskip
+
+%\bibliographystyle{unsrt}
+
+%\cleardoublepage
+%\phantomsection
+%\addcontentsline{toc}{chapter}{Bibliography}
+%\bibliography{tese}
+
+%\bibliography{tese}
+
+
+%
+% The Appendix
+%
+\appendix
+\include{texSource/appendix1}
+\cleardoublepage
+\include{texSource/appendix2}
+\cleardoublepage
+
+\include{texSource/appendix3}
+\cleardoublepage
+
+\include{texSource/appendix4}
+\cleardoublepage
+
+\include{texSource/appendix5}
+\cleardoublepage
+
+\include{texSource/appendix6}
+\cleardoublepage
+
+\include{texSource/appendix7}
+\cleardoublepage
+
+
+
+\end{document}

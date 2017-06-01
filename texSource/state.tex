@@ -4,18 +4,13 @@
 
 Nesta secção, são apresentados os resultados da pesquisa efectuada sobre o
 estado da arte das ferramentas com funcionalidades que deverão estar presentes no sistema desenvolvido. Pretende-se apresentar de forma geral todas as tecnologias possíveis de utilização e respetiva comparação. 
+\ac{SGBD})
 
-
-\section{Sistema de gestão de base de dados (\ac{SGBD})}
+\section{Sistema de gestão de base de dados}
 
 Um \ac{SGBD} é um conjunto de software responsáveis pela gestão de uma base de dados.
 
-\subsection{PostgreSQL}
 
-O PostgreSQL é um sistema de gestão de base de dados do tipo objeto-relacional uma vez que permite um modelo de dados orientado a objetos i.e. possibilita a manipulação de objetos, classes e heranças diretamente no esquemas da base de dados. Segundo o site oficial do PostgreSQL este é considerado um \ac{SGBD} bastante poderoso e com desenvolvimento \textit{open sources}. []
-
-
-%Ele tem mais de 15 anos de desenvolvimento ativo e uma arquitetura comprovada que ela ganhou uma forte reputação de confiabilidade, integridade de dados e correção. Ele roda em todos os principais sistemas operacionais, incluindo Linux, UNIX (AIX, BSD, HP-UX, SGI IRIX, MacOS, Solaris, Tru64), e Windows. É totalmente compatível com ACID, tem suporte completo para chaves estrangeiras, junções views, triggers e procedimentos armazenados (em várias línguas). Ele inclui mais SQL: 2008 tipos de dados, incluindo INTEGER, NUMERIC, BOOLEAN, CHAR, VARCHAR, DATE, INTERVALO e TIMESTAMP. Ele também suporta o armazenamento de grandes objetos binários, incluindo imagens, sons ou vídeo. Ele tem interfaces de programação nativas para C / C ++, Java, .Net, Perl, Python, Ruby, Tcl, ODBC, entre outros, e documentação
 
 
 
@@ -25,6 +20,15 @@ O PostgreSQL é um sistema de gestão de base de dados do tipo objeto-relacional
 
 
 \subsection{SQL server}
+
+
+
+\subsection{PostgreSQL}
+
+O PostgreSQL é um sistema de gestão de base de dados do tipo objeto-relacional uma vez que permite um modelo de dados orientado a objetos, isto é, possibilita a manipulação de objetos, classes e heranças diretamente no esquemas da base de dados. Segundo o site oficial do PostgreSQL este é considerado um \ac{SGBD} bastante poderoso e com desenvolvimento \textit{open sources} \cite{ThePostgreSQLGlobalDevelopmentGroup2012}. 
+
+
+%Ele tem mais de 15 anos de desenvolvimento ativo e uma arquitetura comprovada que ela ganhou uma forte reputação de confiabilidade, integridade de dados e correção. Ele roda em todos os principais sistemas operacionais, incluindo Linux, UNIX (AIX, BSD, HP-UX, SGI IRIX, MacOS, Solaris, Tru64), e Windows. É totalmente compatível com ACID, tem suporte completo para chaves estrangeiras, junções views, triggers e procedimentos armazenados (em várias línguas). Ele inclui mais SQL: 2008 tipos de dados, incluindo INTEGER, NUMERIC, BOOLEAN, CHAR, VARCHAR, DATE, INTERVALO e TIMESTAMP. Ele também suporta o armazenamento de grandes objetos binários, incluindo imagens, sons ou vídeo. Ele tem interfaces de programação nativas para C / C ++, Java, .Net, Perl, Python, Ruby, Tcl, ODBC, entre outros, e documentação
 
 
 
@@ -70,6 +74,14 @@ Servidor serve conteudos criados em função dos pedidos do cliente
 
 
 
+
+
+
+
+\subsection{ASP.net}
+
+\subsection{Flask}
+
 \subsection{Django}
 
 
@@ -79,12 +91,6 @@ Boa documentação;
 Facilidade e rapidez de desenvolvimento e deployment;
 Estabilidade;
 Escalabilidade.
-
-
-\subsection{Faslk}
-
-\subsection{ASP.net}
-
 
 
 \subsection{Conclusões e solução adotada}
@@ -118,6 +124,9 @@ http://websocialdev.com/lista-de-frameworks-para-desenvolvimento-mobile/
 
 
 
+\subsection{Flask-RESTful}
+
+
 \subsection{Django Rest Framework}
 
 
@@ -144,7 +153,7 @@ Red Hat , Heroku , e Eventbrite .
 
 
 
-\subsection{Flask-RESTful}
+
 
 \subsection{Conclusões e solução adotada}
 
@@ -154,11 +163,7 @@ Red Hat , Heroku , e Eventbrite .
 com autenticação via token 
 
 
-\section{Documentação automática}
 
-\subsection{Documentação API}
-
-utilizado swagger; apenas permite acesso a quem está logado... incorporar layout do swagger com o do salidashboard
 
 
 
@@ -168,6 +173,137 @@ microcontroladores -> controller modulers
 
 
 documentação com swager 
+
+
+
+
+
+\newpage
+\section{Micro-controladores}
+
+
+Para o cenário anteriormente descrito foram utilizados dois micro-controladores bastante comuns no mercado: um Arduino Nano e um Raspberry Pi 3. Neste contexto, assume-se que o Arduino Nano é considerado um \ac{SM} que possui um conjunto de sensores enquanto que o Raspberry Pi 3 é um \ac{CM} que recebe os dados provenientes do \ac{SM} enviando-os para o servidor. 
+
+
+\subsection{Arduino Nano}
+
+
+O Arduino é fruto da evolução de um projeto italiano desenvolvido no ano de 2005, cujo o objetivo foi ser utilizado em projetos escolares de forma a ter um orçamento menor que outros sistemas de prototipagem disponíveis naquela época.
+
+Tal como descrito no seu site oficial, um Arduino consiste numa plataforma \textit{open-source} de prototipagem eletrónica com \textit{hardware} e \textit{software} flexíveis e com elevada facilidade utilização[]. O Arduino é utilizado para projetos especialmente no contexto do \ac{IoT} e da robótica educativa.Neste micro-controlador, podem ser estendidos vários módulos, dependendo da tarefa que se quer que seja executada. 
+
+
+
+O Arduino possui um conjunto de pinos que podem ser programados para funcionarem como entradas ou saídas fazendo com que o Arduino interaja com o meio externo para os mais diversos fins. Para além dos pinos de I/O exitem pinos de alimentação que Fornecem diversos valores de tensão que podem ser utilizados para transmitir energia elétrica aos diferentes componentes de um projeto. 
+
+Na figura \ref{ard2} e \ref{ard1} apresenta-se uma imagem do arduino utilizado e a identificação dos diferentes pinos existentes, respectivamente. Na tabela \ref{caraarduino} encontram-se as principais características desta versão do Arduino. 
+
+
+\begin{figure}[h]
+	\centering
+	\begin{minipage}[b]{0.5\textwidth}
+		\includegraphics[width=\textwidth]{img/hardware/nano-img.jpg}
+		\caption{Arduin Nano}
+		\label{ard2}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[b]{0.3\textwidth}
+		\includegraphics[width=\textwidth]{img/hardware/nano-esquema.png}
+		\caption{Identificação dos pinos no Arduino Nano}
+		\label{ard1}
+	\end{minipage}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+\begin{table}[h]
+	\centering
+	
+	\begin{tabular}{|
+			>{\columncolor[HTML]{C0C0C0}}l |l|} \hline
+		Microcontrolador & ATmega328 \\ \hline
+		Tensão de operação & 5V \\ \hline
+		Tensão de entrada & 7-12V \\ \hline
+		Portas digitais & 14 (6 podem ser usadas como PWM) \\ \hline
+		Portas analógicas & 8 \\ \hline
+		Corrente nos pinos I/O & 40mA \\ \hline
+		Memória Flash & 32KB (2KB usado no bootloader) \\ \hline
+		Memória RAM (SRAM) & 2KB \\ \hline
+		EEPROM & 1KB \\ \hline
+		Velocidade do Clock & 16MHz \\ \hline
+		Dimensões & 45 x 18mm \\ \hline
+		LED Interno & Pino digital 13 \\ \hline
+		Ligação USB & Ligação ao computador e alimentação \\ \hline
+	\end{tabular}
+	\caption{Características do sensor TTC 104}
+	\label{caraarduino}
+\end{table}
+
+
+
+
+
+
+
+\newpage
+
+\subsection{Raspberry Pi }
+
+O Raspberry Pi (figura \ref{rasp1}) é considerado um micro-computador do tamanho de um cartão de crédito que possui um conjunto de \textit{hardware} integrado que tal como Arduino possibilita uma interação com o meio exterior. O principal objetivo deste poderoso componente consistiu em promover o ensino da ciência da computação em escolas de ensino básico. 
+O Raspberry Pi foi desenvolvido no Reino Unido pela \textit{Raspberry Pi Foundation}.
+
+
+
+
+\begin{figure}[h]
+	\centering
+	\begin{minipage}[b]{0.4\textwidth}
+		\includegraphics[width=\textwidth]{img/hardware/rasp3-img.jpg}
+		\caption{Raspberry Pi 3}
+		\label{rasp1}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[b]{0.5\textwidth}
+		\includegraphics[width=\textwidth]{img/hardware/rasp-esquema.PNG}
+		\caption{Identificação dos principais componentes no Raspberry Pi 3 }
+	\end{minipage}
+\end{figure}
+
+
+
+
+\begin{table}[h]
+	\centering
+	
+	\begin{tabular}{|
+			>{\columncolor[HTML]{C0C0C0}}l |l|l|}
+		\hline
+		& \cellcolor[HTML]{C0C0C0}\textbf{Raspberry Pi 3 Model B} & \cellcolor[HTML]{C0C0C0}\textbf{Raspberry Pi 2 Model B 1.2} \\ \hline
+		\textbf{Processor Chipset} & \begin{tabular}[c]{@{}l@{}}Broadcom BCM2837\\ 64Bit  Quad Core \\ Processor powered \\ Single Board Computer\\ running at 1.2GHz\end{tabular} & \begin{tabular}[c]{@{}l@{}}Broadcom BCM2837 64Bit \\ Quad Core Processor \\ powered Single Board \\ Computer running at \\ 900MHz\end{tabular} \\ \hline
+		\textbf{Processor Speed} & QUAD Core @1.2 GHz & QUAD Core @900 MHz \\ \hline
+		\textbf{RAM} & 1GB SDRAM @ 400 MHz & 1GB SDRAM @ 400 MHz \\ \hline
+		\textbf{Storage} & MicroSD & MicroSD \\ \hline
+		\textbf{USB 2.0} & 4x USB Ports & 4x USB Ports \\ \hline
+		\textbf{\begin{tabular}[c]{@{}l@{}}Max Power \\ Draw/voltage\end{tabular}} & 2.5A @ 5V & 1.8A @ 5V \\ \hline
+		\textbf{GPIO} & 40 pin & 40 pin \\ \hline
+		\textbf{Ethernet Port} & Yes & Yes \\ \hline
+		\textbf{WiFi} & Built  in (802.11n) & No \\ \hline
+		\textbf{Bluetooth LE} & Built in (4.1) & No \\ \hline
+	\end{tabular}
+	\caption{Comparação entre versão 2 e 3 do Raspberry Pi}
+	\label{my-label}
+\end{table}
+
+
+
+
 
 
 
@@ -204,7 +340,7 @@ Existem vários tipos de sensores de temperatura baseados em princípios de func
 
 \newpage
 
-\subsection{Sensor de luminosidade (GL5528)}
+\subsection{Sensor de luminosidade }
 
 
 O LDR (Light Dependent Resistor) é um componente cuja resistência varia de acordo com a intensidade da luz. Quanto mais luz incidir sobre o componente, menor a resistência. Este sensor de luminosidade pode ser utilizado em projetos com arduino e outros microcontroladores para alarmes, automação residencial, sensores de presença e etc.
@@ -213,30 +349,12 @@ O LDR (Light Dependent Resistor) é um componente cuja resistência varia de aco
 
 
 
-
-\section{Tecnologias de comunicação usadas em \ac{IoT}}
+\newpage
+\section{Tecnologias de comunicação}
 
 Nesta secção serão apresentados alguns das tecnologias de comunicação mais utilizados em \textit{Internet of Things} que permite a troca de informações entre dispositivos e respetiva comparação entre eles. 
 
 
-
-\subsection{RFID/NFC}
-
-A identificação por radiofrequência, conhecida por tecnologia \ac{RFID}, é um método de identificação automático através de sinais de rádio. Consiste essencialmente no armazenamento e posterior envio de informação por meio de ondas electromagnéticas para circuitos integrados compatíveis em rádio frequência.  
-Os actuais sistemas de \ac{RFID} possuem grande capacidade de identificação e localização de bens ou pessoas levou, o que fez com que esta tecnologia começasse assumisse um papel importante na indústria e no comércio. A comunicação é efetuada entre uma etiqueta, ou marca, e um leitor.
-
-
-De forma conceptual, o leitor \ac{RFID} é responsável por transmitir um sinal de rádio através da antena para a tag, e esta responde emitindo para o leitor \ac{RFID} o seu \ac{UID}.
-
-
-\subsection{Bluetooth}
-
-Bluetooth é uma especificação de rede sem fio de âmbito pessoal (Wireless personal area networks – PANs) consideradas do tipo PAN ou mesmo WPAN
-
-
-\subsection{WiFi}
-
-rede sem fio IEEE 802.11, que também são conhecidas como redes Wi-Fi ou wireless, foram uma das grandes novidades tecnológicas dos últimos anos. Atuando na camada física, o 802.11 define uma série de padrões de transmissão e codificação para comunicações sem fio, sendo os mais comuns: FHSS (Frequency Hopping Spread Spectrun), DSSS (Direct Sequence Spread Spectrum) e OFDM (Orthogonal Frequency Division Multiplexing). Atualmente, é o padrão de fato em conectividade sem fio para redes locais. Como prova desse sucesso pode-se citar o crescente número de Hot Spots e o fato de a maioria dos computadores portáteis novos já saírem de fábrica equipados com interfaces IEEE 802.25. A Rede IEEE possui como principal característica transmitir sinal sem fio através de ondas!
 
 
 \subsection{Zigbee}
@@ -260,13 +378,16 @@ Uma empresa francesa que constrói redes sem fio para conectar objetos de baixa 
 
 
 
-\subsection{GPRS/GSM}
+\subsection{Bluetooth}
+
+Bluetooth é uma especificação de rede sem fio de âmbito pessoal (Wireless personal area networks – PANs) consideradas do tipo PAN ou mesmo WPAN
 
 
-O \ac{GPRS} é uma tecnologia que aumenta as taxas de transferência de dados nas redes \ac{GSM} existentes. 
+\subsection{WiFi}
+
+rede sem fio IEEE 802.11, que também são conhecidas como redes Wi-Fi ou wireless, foram uma das grandes novidades tecnológicas dos últimos anos. Atuando na camada física, o 802.11 define uma série de padrões de transmissão e codificação para comunicações sem fio, sendo os mais comuns: FHSS (Frequency Hopping Spread Spectrun), DSSS (Direct Sequence Spread Spectrum) e OFDM (Orthogonal Frequency Division Multiplexing). Atualmente, é o padrão de fato em conectividade sem fio para redes locais. Como prova desse sucesso pode-se citar o crescente número de Hot Spots e o fato de a maioria dos computadores portáteis novos já saírem de fábrica equipados com interfaces IEEE 802.25. A Rede IEEE possui como principal característica transmitir sinal sem fio através de ondas!
 
 
-Vantagens em relação ao GSM
 
 
 \subsection{Comparação de tecnologias de comunicação}
@@ -275,7 +396,7 @@ Vantagens em relação ao GSM
 
 
 
-\subsection{Módulo bluetooth}
+%\subsection{Módulo bluetooth}
 
 
 
@@ -304,7 +425,9 @@ https://repositorio.ipcb.pt/bitstream/10400.11/949/1/Multimonitorizacao%20Estufa
 http://www.vidarural.pt/agroopar-os-custos-na-mao-do-agricultor/
 
 
-\subsection{Sistema de Monitorização de Estufas Agrícolas}
+\subsection{outras que vale a pena para comparacao..}
+
+%\subsection{Sistema de Monitorização de Estufas Agrícolas}
 
 
 \cite{Abreu2012}
