@@ -5,7 +5,7 @@
 
 Este capítulo tem como objetivo a descrição do sistema que resultou do trabalho prático
 desta dissertação. Para esse fim, cada elemento pertencente ao sistema é caracterizado de
-acordo com as suas funções, especificidades e respectiva arquitetura. É também descrito como os elementos interagem entre si. É também apresentado todo o processo de modelação do sistema tendo por base os requisitos adquiridos pelo cliente. 
+acordo com as suas funções, especificidades e respectiva arquitetura. É também descrito como os elementos interagem entre si. Para além disso, é apresentado todo o processo de modelação do sistema tendo por base os requisitos adquiridos pelo cliente. 
 
 
 
@@ -40,14 +40,12 @@ Como vimos no capitulo 3, uma plantação de  salicórnia carece de um controlo 
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.55]{esquemas/leiras-comm-geral.pdf}
-	\caption{Ilustração de uma "quinta" onde se produz salicornia}
+	\caption{Ilustração da distribuição dos módulos em leiras para produção de salicornia }
 	\label{leira}
 \end{figure}
 
 
- 
- 
-Neste contexto, cada grupo de sensores espalhado por cada leira irá comunicar com um módulo central, originando uma topologia de rede em estrela.  Por sua vez, este módulo irá comunicar diretamente com a servidor que possibilitará que os dados sejam tratados e disponíveis para visualização ao cliente. Pressupõe-se portanto que este ultimo módulo tenha necessariamente ligação à rede de modo a conseguir consumir a API REST por HTTP desenvolvida para o efeito. 
+Tal como ilustrado na figura X, pretende-se que sejam colocados modulos com sensores - \ac{SM} - distribuídos estrategicamente por cada leira. Cada um desses modulos irá comunicar com um módulo central - \ac{CM} -, originando uma topologia de rede em estrela.  Por sua vez, este módulo irá comunicar diretamente com a servidor que possibilitará que os dados sejam tratados e disponíveis para visualização ao cliente. Pressupõe-se portanto que este ultimo módulo tenha necessariamente ligação à rede de modo a conseguir consumir a API REST por HTTP desenvolvida para o efeito. 
 
 
 
@@ -57,44 +55,52 @@ Neste contexto, cada grupo de sensores espalhado por cada leira irá comunicar c
 No contexto desta dissertação é necessário reter dois conceitos principais, são eles: 
 
 \begin{itemize}
-	\item \textbf{\textit{\acl{SM}}:} consiste num microcontrolador responsável pela aquisição de dados provenientes dos mais diversos tipos de sensores. Cada \textit{sensor module} terá que utilizar um determinado módulo de comunicação de modo a possibilitar a comunicação com um módulo central. Para além disso, pretende-se que o sensor module possa ter controlo sobre si, ou seja, inteligência própria.
-	 
-	\item \textbf{\textit{\acl{CM}}:} consiste num microcontrolador responsável pela receção dos dados preveniente dos \textit{sensor modules}. Pretende-se que este módulo envie informações para os sensor modules quando requisitados pelo utilizador. O principal objetivo deste módulo consiste em receber a informação proveniente dos sensor modules e respectivo envio para o servidor em cloud. 
+	\item \textbf{\textit{\acl{SM}}:} consiste num módulo responsável pela aquisição de dados provenientes dos mais diversos tipos de sensores.
 	
+	
+	\item \textbf{\textit{\acl{CM}}:} consiste num módulo responsável pela receção dos dados/estados do \acl{SM} e respetivo envio para a \textit{cloud}.  
 	
 \end{itemize}
 
 
-A figura \ref{esquema1}, ilustra a comunicação entre três sensor modules com um controller moduler. Cada um desses sensor modules possui um conjunto especifico de sensores que comunica com controller module através de um determinado modulo de comunicação. Posteriormente, o controller module possui um determinado protocolo de comunicação que permite a utilização da API REST. 
+A figura \ref{esquema1}, ilustra três \acl{SM} que comunicam com um \acl{CM}. Cada um desses \acl{SM} que possui um conjunto especifico de sensores, comunica com \acl{CM} através de um determinado modulo de comunicação. Posteriormente, o \acl{CM} possui um determinado protocolo de comunicação que permite a utilização de uma API REST criada para o efeito. 
+
+
 
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\linewidth]{esquemas/general-electronic-modules.pdf}
-	\caption{Pirâmide do conhecimento: modelo DIKW}
+	\caption{Esquema de componentes da comunicação de três \ac{SM} com um \ac{CM}}
 	\label{esquema1}
 \end{figure}
 
 
-Seguidamente serão especificados todos os detalhes de cada modulo, uma vez que serão considerados na modulação deste sistema de informação. 
-
-\subsection{Controller Module}
-
-nome
-bateria
-memoria
-comunicacao
-localizacao
+Seguidamente serão especificados todos os detalhes de cada modulo, uma vez que serão considerados na modelação de todo o sistema. 
 
 
-\subsection{Sensor Module}
+\subsection{\acl{SM}}
 
 
-nome
-tipos de senores 
-tempo em que é recebida info 
-bateria
-localizacao
+
+Um \acl{SM} consiste num microcontrolador responsável pela aquisição de dados provenientes dos mais diversos tipos de sensores. Cada \acl{SM} terá que utilizar um determinado módulo de comunicação de modo a possibilitar a comunicação com um módulo central. Para além disso, pretende-se que o sensor module possa ter controlo sobre si, ou seja, inteligência própria. 
+
+Prentede-se que este módulo seja identificado por um determinado nome, possua uma bateria que permita a sua mobilidade, um ou vários modulos de comunicação que permita comunicar com um módulo centrar, uma memoria e um módulo \ac{GPS} que permita aceder à sua localização. Para além disso, um \acl{SM} terá que possuir um ou vários sensores.  
+
+
+
+
+
+\subsection{\acl{CM}}
+
+
+
+\acl{CM} consiste num microcontrolador responsável pela receção dos dados preveniente dos \acl{SM}. Pretende-se que este módulo envie informações para os \acl{SM} quando requisitados pelo utilizador. O principal objetivo deste módulo consiste em receber a informação proveniente dos \ac{SM} e respectivo envio para um servidor em \textit{cloud}. 
+
+Pretende-se que este módulo seja identificado por um determinado nome, tenho um  módulo de comunicação que possibilite o envio de dados para o servidor e um campo que nos permita definir o tempo de receção desses dados. Para alem disso, pretende-se que exista um módulo de \ac{GPS} que permita localizar o \acl{CM} em caso de robo.
+ 
+
+
 
 
 
@@ -128,7 +134,7 @@ O ciclo de vida do desenvolvimento de um software dá o padrão necessário e as
 
 
 \begin{itemize}
-	\item Análise de Viabilidade: Nesta fase, a viabilidade do projeto está sendo avaliada em termos de dados de entrada, dados de saída, processamento necessário para transformar a entrada para a produção necessária, análise de custo e planejamento do projeto. Ele também inclui a viabilidade técnica em termos de software, hardware e pessoas qualificadas. No final do estudo de viabilidade é gerado o relatório de viabilidade.
+	\item \textbf{Análise de viabilidade}: nesta fase é analisada a viabilidade do projeto, sendo analisados dados de entrada e saida, processamento necessário, análise de custos e planeamento do projeto. Nesta fase é incluida a viabilidade técnica em termos de software, hardware e pessoas qualificadas. 
 	
 	\item \textbf{Analise e especificação de requisitos}: nesta fase são recolhidos e analisados os requisitos necessário para a elaboração do \textit{software}. Pretende-se que no final desta fase sejam conhecidos os vários requisitos do software e seja também criado um documento que os especifique. 
 	
@@ -148,27 +154,16 @@ O ciclo de vida do desenvolvimento de um software dá o padrão necessário e as
 
 
 
-%
-
-
-
-
-
 %http://www.sersc.org/journals/IJSEIA/vol8_no3_2014/38.pdf
 
 
 
 
-A forma como um software realiza as tarefas para as quais foi desenvolvido determina a eficiência de execução do mesmo. 
-% http://wer.inf.puc-rio.br/WERpapers/pdf_counter.lua?wer=WER03&file_name=leandro_audy.pdf 
+A forma como um software realiza as tarefas para as quais foi desenvolvido determina a eficiência de execução do mesmo\cite{Requirementsengineering}. O levantamento de requisitos é umas das fases essenciais no processo de desenvolvimento de um determinado sistema, que nos leva a entender o que o cliente deseja ou acredita precisar levando-nos à criação dos processos de negócio do sistema. 
 
 
+Seguidamente são apresentados os requisitos funcionais e não funcionais do sistema. 
 
-
-
-O levantamento de requisitos é umas das partes mais importantes do processo que resultará no desenvolvimento de um determinado sistema. Entender aquilo que o cliente deseja ou o que o cliente acredita que precisa e as regras do negócio ou processos do negócio. Isso é o o fator determinante que move essa importante função que faz parte da Engenharia de Software(Engenharia de requisitos). 
-
-% http://www.klebermota.eti.br/wp-content/aluno_leandro_cicero_levantamento_de_requisitos.pdf 
 
 
 
@@ -263,17 +258,31 @@ necessariamente pedidos pelo cliente.
 
 
 \begin{itemize}
-	\item O sistema deverá executar em qualquer plataforma.
+	\item O sistema deverá executar em qualquer plataforma, tanto web como mobile. 
+	
+	
+	\item A base de dados deve ser protegida para acesso apenas a utilizadores autorizados. 
+		
 	
 	\item O sistema deverá disponibilizar uma API para que possam ser criados novos produtos com base neste 
+	
+	\item Deverá ser usada, na medida do possível, tecnologias sem qualquer custo para o cliente (\textit{opensource}). 
+	
+	\item Pretende-se que o sistema possa ser adaptado a qualquer outro contexto. 
+	
+
 	
 	
 \end{itemize}
 
 
 
-\newpage
 \section{Modelação}
+
+A conceção de uma arquitetura envolve o estudo e modelacao de compontes que sao necessários para a elaboracao da mesma, bem como a analise dos casos de uso, modelos de dados e diagramas de fluxos, entre outros, para melhor entender como emparelhar a estrutura pretendida. Na secção será... %% rever... .................. 
+
+
+
 \subsection{Entidades envolventes}
 
 
@@ -283,84 +292,206 @@ No contexto do sistema descrito existem três entidades distintas que são impor
 
 \begin{itemize}
 	
-	\item \textbf{General user}: este poderá registar-se e associando-se a uma determinada empresa registada no sistema. Após a validação por parte da empresa, este utilizador poderá aceder à sua área reservada através das dashboard ou aplicação mobile. 
+	\item \textbf{General user}: este poderá registar-se e associando-se a uma determinada empresa registada no sistema. Após a validação por parte da empresa, este utilizador poderá aceder à sua área reservada através das dashboard ou da aplicação mobile. 
 	
-	\item \textbf{Companny user}: utilizador que gere todos os general users que se possam associar à sua empresa. Deste modo, este utilizador poderá validar os general users que a si se associam ou eliminá-los caso a permissão não seja desejada.  
+	\item \textbf{Company user}: utilizador que gere todos os general users que se possam associar à sua empresa. Deste modo, este utilizador poderá validar os general users que a si se associam ou eliminá-los.  
 	
-	\item \textbf{Administrador}: vulgarmente denominado por Admin. Pretende-se que apenas exista uma único administrador. Genericamente este utilizador tem a possibilidade de poder adicionar novas empresas ao sistema i.e. criar novas utilizador com permissões especificas. 
+	\item \textbf{Administrador}: vulgarmente denominado por Admin. Pretende-se que apenas exista uma único administrador. Genericamente este utilizador tem a possibilidade de poder adicionar novas empresas ao sistema, isto é, criar novas utilizador com permissões especificas. 
 	
 \end{itemize}
 
 
 
-\newpage
 
 \subsection{Casos de uso}
+
+
+Nas figuras \ref{usedash} e \ref{useMobile} encontram-se representados os esquemas dos casos de uso da \textit{dashboard} (denominada por saliDashboard) e da aplicação \textit{mobile} (denominada por saliMobile), respectivamente.
+Seguidamente serão descritos cada um dos casos de uso para as duas plataformas. De notar que todos os casos de uso na aplicação mobile também se encontram disponíveis através da dashboard. 
 
 
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=\linewidth]{esquemas/use-case-web.pdf}
-	\caption{Pirâmide do conhecimento: modelo DIKW}
-	\label{dikw}
+	\caption{Casos de uso para a aplicação web (dashboard) }
+	\label{usedash}
 \end{figure}
 
 
+\newpage
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=\linewidth]{esquemas/use-case-mobile.pdf}
-	\caption{Pirâmide do conhecimento: modelo DIKW}
-	\label{dikw}
+	\caption{Casos de uso para a aplicação mobile}
+	\label{useMobile}
 \end{figure}
+
+
+
+
+
+\begin{itemize}
+	\item \textbf{Login no sistema}: qualquer utilizador (general user, company user ou admin) poderá aceder ao sistema tendo para ir que possuir uma conta registada e validada no caso do user general. Após a validação das suas credenciais (username e password) o utilizador poderá aceder à pagina inicial da dashboard e a todo o seu conteúdo. Este caso de uso encontra-se disponível para os dois tipos de plataformas. 
+	
+	
+	\item \textbf{Logout no sistema}: qualquer utilizador (general user, company user ou admin) poderá sair da sistema tendo que para isso tenha que estar obrigatoriamente logado no sistema. Após o logout ser-lhe-á apresentado novamente a página de login. Este caso de uso encontra-se disponível para os dois tipos de plataformas. 
+	
+	
+	\item \textbf{Recuperar password}: qualquer utilizador (general user, company user ou admin) poderá recuperar a sua password de acesso ao sistema, para isso, terá que introduzir o seu email e posteriormente ser-lhe-á envia o acesso que possibilita a redefinição da mesma. 
+	
+	
+	
+	\item \textbf{Adicionar, editar, remover tipos de comunicação}: qualquer general user ou company user poderá adicionar, editar ou remover os tipos de comunicação existentes no sistema. Ao  adicionar, o utilizador terá que introduzir um nome, um caminho relevante para o tipo de comunicação e selecionar um icon ilustrativo. No caso da remoção, esta ação apenas é possível caso o tipo de comunicação não se encontre em utilização por nenhum \ac{CM} ou \ac{SM}.  
+	
+	\item \textbf{Adicionar, editar, remover tipos de sensores}: qualquer general user ou company user poderá adicionar, editar ou remover os tipos de sensores existentes no sistema. Ao  adicionar, o utilizador terá que introduzir um nome que o identifique, uma fonte de dados ou a escala dos dados  e um icon que identifique o sensor. Para além disso, o utilizador terá que escolher uma cor que identifique o tipo de sensor na dashboard. No caso da remoção, esta ação apenas é possível caso o tipo de sensor não se encontre em utilização por nenhum \ac{SM}.   
+	 
+	
+	\item \textbf{Adicionar, editar, remover um controller module}: qualquer \textit{general user} ou \textit{company user} poderá adicionar, editar ou remover um controller module existente no sistema. Neste caso, pressupõe-se que o utilizador possua um micro-controlador com as seguintes características que podem ser adicionadas: determinado nome que o identifique, valor da memória RAM em MB, estado inicial (ativo ou desativo) e um modulo de comunicação que permita comunicar com o servidor web. Estas características são possíveis de alteração. Pretende-se que o controller module possa ser removido tendo \ac{SM} a sí associado, sendo estes também removidos dos sistema. 
+
+
+	\item \textbf{Adicionar, editar, remover um sensor modules}: qualquer \textit{general user} ou \textit{company user} poderá adicionar, editar ou remover um sensor module existente no sistema. Pressupõe-se o utilizador possui um determinado micro-controlador com um ou mais sensores. Para adicionar o \ac{SM} à plataforma o utilizador terá que atribuir um nome que o identifique, definir qual o seu estado inicial (ativo ou desativo), escolher que tipos de comunicação possam estar presentes e definir o intervalo de tempo para o qual pretende receber os dados lidos pelos sensores. Para além disso, permite associar ao \ac{SM} os sensores presentes e definir o valor máximo e minimos para o qual são gerados alarmes e respectivas mensagens informativas. Todos os dados são possíveis de edição.  
+	
+
+	
+	\item \textbf{Receber notificações (gerar alarmes)}: sempre que um valor lido por um determinado sensor sai fora do limite imposto (valor máximo e valor mínimo) é gerado um alarme para o utilizador de modo a que este possa intervir. Este caso de uso encontra-se disponível para os dois tipos de plataformas. 
+	
+	
+	\item \textbf{Visualizar gráficamente os dados lidos pelos sensores}: 
+	
+	
+	Este caso de uso encontra-se disponível para os dois tipos de plataformas. 
+	
+	
+	\item Visualizar tabularmente os dados lidos pelos sensor
+	
+	\item \textbf{Exportar dados lidos por um sensor module}: qualquer \textit{general user} ou \textit{company user} poderá exportar os dados lido pelos sensores para um ficheiro do tipo \ac{CSV} para uma data especificada.
+	
+	\item \textbf{Visualizar a localização dos módulos (SM/CM)}: qualquer \textit{general user} ou \textit{company user} ao aceder à dashboard ser-lhe-à apresentado um mapa para cada \ac{CM} com a sua localização e dos seus respetivos \ac{SM}. 
+	
+	
+	\item \textbf{Consultar a documentação da API}: qualquer \textit{general user} ou \textit{company user} poderá aceder à dashboard para consultar a documentação da API existente. 
+		
+	\item \textbf{Consultar token de autenticação}: qualquer \textit{general user} ou \textit{company user} poderá aceder ao token de autenticação para utilização da API. 
+	
+
+	
+	\item \textbf{Validar general user}: qualquer company user tem a possibilidade de validar os general users que a si se associam. Sempre um novo general user é registado no sistema o comapny user é notificado via email. Posteriormente, caso o general user seja validado este também receberá um email de confirmação.  
+	
+	\item \textbf{Remove general user}: qualquer company user tem a possibilidade de remove os general users que a si estão associados. 
+	
+	
+	\item \textbf{Remover sensor modules e controller modules }: o admin do sistema tem a possibilidade de remover os sensores modules e/ou controller modules existentes no sistema. 
+	
+	
+	\item \textbf{Visualizar todos os sensor modules e controller modules}: o admim do sistema tem a possibilidade de visualizar todos os sensores modules e controller modules existentes no sistema de modo a alertar os clientes em caso de anomalias. 
+	
+	
+	\item \textbf{Criar um novo company user}: o admim tem a possibilidade de adicionar novos company user ao sistema, sendo para isso necessário 
+	
+	\item \textbf{Remover um company user}: o admim tem a possibilidade de remover qualquer company user registado no sistema.
+	
+	
+\end{itemize}
+
+
+
+
+
+
+
+De acordo com a figura \ref{useMobile} , é possível descrever os seguintes casos de uso: 
+
+
+
 
 
 
 \newpage
 \subsection{Modelo de dados}
 
+Depois da análise de requisitos desenhou-se um modelo de dados que permitisse modelar todo o sistema descrito, obtendo-se assim o seguinte esquema relacional apresentado na figura \ref{esquemarelacional}.
+
+
+
+
 
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=\linewidth]{esquemas/database_tese.pdf}
-	\caption{Pirâmide do conhecimento: modelo DIKW}
-	\label{db}
+	\caption{Esquema relacional da estrutura da base de dados}
+	\label{esquemarelacional}
 \end{figure}
+
+
+Nas tabelas \ref{tabeladb1} e \ref{tabeladb2} são descritos descritos cada uma das tabelas de dados existentes neste sistema, evidenciando as chaves primária e estrangeiras de cada uma. 
+
+
+
+\newpage
+\begin{landscape}
+	
+\begin{table}[]
+	\centering
+
+	\label{tabeladb1}
+	\begin{tabular}{|
+			>{\columncolor[HTML]{EFEFEF}}l |l|l|l|}
+		\hline
+		\textbf{Nome da tabela} & \cellcolor[HTML]{EFEFEF}\textbf{Chave primária (\acs{PK})} & \cellcolor[HTML]{EFEFEF}\textbf{Chave estrangeira (\acs{FK})} & \cellcolor[HTML]{EFEFEF}\textbf{Descrição} \\ \hline
+		\textbf{User} & id (auto-incrementado) & N/A & \begin{tabular}[c]{@{}l@{}}Identifica cada um dos \\ utilizadores inseridos no sistema\end{tabular} \\ \hline
+		\textbf{Token} & \begin{tabular}[c]{@{}l@{}}authtoken\_token\_pkey\\ (character varying(40))\end{tabular} & user\_id & \begin{tabular}[c]{@{}l@{}}Possui o token de autenticação \\ do utilizador para a API\end{tabular} \\ \hline
+		\textbf{Group} & id (auto-incrementado) & N/A & \begin{tabular}[c]{@{}l@{}}Possui todos os grupos \\ existentes: general user,\\ company user e admin\end{tabular} \\ \hline
+		\textbf{UserGroups} & id (auto-incrementado) & user\_id group\_id & \begin{tabular}[c]{@{}l@{}}Permite associar um \\ utilizador a um\\  determinado grupo\end{tabular} \\ \hline
+		\textbf{Permisson} & id (auto-incrementado) & N/A & \begin{tabular}[c]{@{}l@{}}Possui todas as permissões \\ existentes (escrita, leitura,\\  delete...)\end{tabular} \\ \hline
+		\textbf{GroupPermisson} & id (auto-incrementado) & group\_id permission\_id & \begin{tabular}[c]{@{}l@{}}Associa a cada groupo \\ determinadas permissões\end{tabular} \\ \hline
+		\textbf{UserPerCompany} & id (auto-incrementado) & company\_id general\_user\_id & \begin{tabular}[c]{@{}l@{}}Associa cada general user\\  a um company user\end{tabular} \\ \hline
+		\textbf{CommunicationType} & id (auto-incrementado) & N/A & \begin{tabular}[c]{@{}l@{}}Identifica cada um dos tipos \\ de comunicação inseridos \\ no sistema\end{tabular} \\ \hline
+		\textbf{ControllerModule} & id (auto-incrementado) & N/A & \begin{tabular}[c]{@{}l@{}}Identifica cada um dos \\ controller module \\ inseridos no sistema\end{tabular} \\ \hline
+	\end{tabular}
+	\caption{My caption}
+\end{table}
 
 
 \newpage
 
-\begin{table}[h]
+
+
+
+\begin{table}[]
 	\centering
-	\begin{tabular}{|l|l|l|}
+
+	\label{tabeladb2}
+	\begin{tabular}{|
+			>{\columncolor[HTML]{EFEFEF}}l |l|l|l|}
 		\hline
-		\multicolumn{1}{|c|}{\textbf{Nome}} & \multicolumn{1}{c|}{\textbf{Identificador}} & \multicolumn{1}{c|}{\textbf{Descrição}} \\ \hline
-		User & auto-incrementado & dasdas \\ \hline
-		ControllerModule&  &  \\ \hline
-		SensorModule&  &  \\ \hline
-		CommunicationType&  &  \\ \hline
-		SensorType&  &  \\ \hline
-		Sensor&  &  \\ \hline
-		Reading&  &  \\ \hline
-		AlarmsSettings&  &  \\ \hline
-		Alarms&  &  \\ \hline
+		\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{Nome da tabela}} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}\textbf{Chave primária (PK)}} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}\textbf{Chave estrangeira (FK)}} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}\textbf{Descrição}} \\ \hline
+		\textbf{CMPerCompany} & id (auto-incrementado) & \begin{tabular}[c]{@{}l@{}}cm\_id\\ company\_id\end{tabular} & \begin{tabular}[c]{@{}l@{}}Associa todos os controller module\\  a um determinado company user\end{tabular} \\ \hline
+		\textbf{SensorModule} & id (auto-incrementado) & N/A & \begin{tabular}[c]{@{}l@{}}Identifica cada um dos sensor \\ module inseridos no sistema\end{tabular} \\ \hline
+		\textbf{SMperCM} & id (auto-incrementado) & \begin{tabular}[c]{@{}l@{}}cm\_id\\ sm\_id\end{tabular} & \begin{tabular}[c]{@{}l@{}}Associa os sensor modules a \\ um determinado controller module\end{tabular} \\ \hline
+		\textbf{CommunicationTypePerSM} & id (auto-incrementado) & \begin{tabular}[c]{@{}l@{}}communication\_type\_id\\ \\ sm\_id\end{tabular} & \begin{tabular}[c]{@{}l@{}}Permite associar a um sensor \\ module um ou várias tipos \\ de comunicação\end{tabular} \\ \hline
+		\textbf{SensorType} & id (auto-incrementado) & N/A & \begin{tabular}[c]{@{}l@{}}Identifica cada um dos tipos \\ de sensores inseridos no sistema\end{tabular} \\ \hline
+		\textbf{Sensor} & id (auto-incrementado) & \begin{tabular}[c]{@{}l@{}}sensor\_type\_id\\ sm\_id\end{tabular} & \begin{tabular}[c]{@{}l@{}}Permite identificar um \\ determinado sensor\end{tabular} \\ \hline
+		\textbf{AlarmsSettings} & id (auto-incrementado) & sensor\_id & \begin{tabular}[c]{@{}l@{}}Permite guardar as configurações \\ para um determinado sensor\\ (max,min…)\end{tabular} \\ \hline
+		\textbf{Reading} & id (auto-incrementado) & sensor\_id & \begin{tabular}[c]{@{}l@{}}Permite guardar as leituras de \\ um determinado sensor\end{tabular} \\ \hline
+		\textbf{Alarms} & id (auto-incrementado) & reading\_id & \begin{tabular}[c]{@{}l@{}}Armazena os alarmes \\ que são gerados\end{tabular} \\ \hline
 	\end{tabular}
 	\caption{My caption}
-	\label{my-label}
 \end{table}
 
-
-
-
-
-
+\end{landscape}
 
 
 
 \newpage
 \section{Arquitetura lógica}
 
-Normalmente este tipo de arquitetura é composto por: camada de apresentação,
-camada de lógica de negócio e camada de acesso a dados.
+Nesta secção é apresentada uma arquitetura lógica do sistema, indicando as camadas que este deverá conter, especificando quais as relações de dependência que estas possuem entre si. Seguidamente, é explicado como implementar esta lógica com os respetivos componentes físicos. 
+
+
+Normalmente este tipo de arquitetura é composto por três camadas com intenções diferentes: camada de apresentação, camada de lógica de negócio e camada de acesso a dados. Pretende-se que com a descrição desta arquitetura seja facilitada a manutenção, a portabilidade e a
+escalabilidade, fatores importantes quando queremos partilhar funcionalidades e informação entre aplicações de diferentes tipos.
+
+
 
 
 \begin{figure}[!htb]
@@ -378,13 +509,14 @@ camada de lógica de negócio e camada de acesso a dados.
 A camada de apresentação é responsável pela comunicação entre os utilizadores e a aplicação, sendo ela web ou mobile, exibindo informações aos utilizadores, abrangendo uma interface que permite solicitações ao sistema. Esta camada tem uma relação de dependência com a camada de lógica de negócio e tira partido do acesso a serviços de informação externos, que fornecem diversas funcionalidades. 
 
 
-A interface do utilizador foi desenvolvida em  \ac{HTML} e \ac{CSS}, fazendo uso de jQuery e Javascript.
+A interface do utilizador foi desenvolvida em  \ac{HTML} e \acs{CSS}, fazendo uso de jQuery e Javascript.
 
 
 
 \begin{itemize}
 	\item \ac{HTML} é a linguagem padrão usada para estruturar e apresentar conteúdos na web. Neste caso, foi utilizado HTML5, a quinta versão do \ac{HTML}.
 	\item \ac{CSS} é uma linguagem usada para descrever a apresentação de conteúdo escrito em uma marcação Como HTML.
+	
 	\item Javascript é a linguagem de programação para páginas da web.
 	\item \textbf{JQuery}: JQuery é uma biblioteca Javascript que simplifica a programação Javascript
 \end{itemize}
@@ -409,9 +541,25 @@ de persistência e consulta de dados solicitadas pela camada de lógica de negó
 
 
 
+
+\newpage
 \section{Arquitetura física}
 
 
+Enquanto que a arquitetura lógica se concentra nos diferentes níveis de abstração do sistema, por outro lado a arquitetura física foca-se na estrutura de alto nível.  
+Seguidamente são apresentados todos os componentes físicos, tanto  a nivel de software com de hardware, que são fundamentais ao bom funcionamento de todo o sistema. 
+A figura X representa genericamente os blocos principais do sistema proposto que seguidamente serão descritos. 
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth]{esquemas/esquema-blocos.pdf}
+	\caption{Arquitetura lógica}
+	\label{opencvlogo}
+\end{figure}
+
+
+  
 \subsection{Sistema de informação}
 
 
@@ -423,6 +571,7 @@ Os métodos da API permitem executar as funções REST. Assim, torna-se fundamen
 \begin{itemize}
 	\item \textbf{GET}: 
 	\item \textbf{POST}: 
+	\item \textbf{PUT}: 
 	\item \textbf{DELETE}: 
 \end{itemize}
 
@@ -430,24 +579,6 @@ Os métodos da API permitem executar as funções REST. Assim, torna-se fundamen
 
 
 
-\begin{table}[h]
-	\centering
-	\begin{tabular}{|l|l|l|}
-		\hline
-		\multicolumn{1}{|c|}{\textbf{End point}} & \multicolumn{1}{c|}{\textbf{Tipo}} & \multicolumn{1}{c|}{\textbf{Descrição}} \\ \hline
-		User & auto-incrementado & dasdas \\ \hline
-		ControllerModule&  &  \\ \hline
-		SensorModule&  &  \\ \hline
-		CommunicationType&  &  \\ \hline
-		SensorType&  &  \\ \hline
-		Sensor&  &  \\ \hline
-		Reading&  &  \\ \hline
-		AlarmsSettings&  &  \\ \hline
-		Alarms&  &  \\ \hline
-	\end{tabular}
-	\caption{My caption}
-	\label{my-label}
-\end{table}
 
 Autenticação
 
@@ -469,16 +600,20 @@ utilizado swagger; apenas permite acesso a quem está logado... incorporar layou
 
 
 
-\subsection{Aplicação web}
+\subsubsection{Aplicação web}
 
-
-\subsection{Aplicação mobile}
+\subsubsection{Aplicação mobile}
 
 
 
 
 \newpage
 \subsection{Simulação em hardware}
+
+Para o cenário anteriormente descrito foram utilizados dois micro-controladores bastante comuns no mercado: um Arduino Nano e um Raspberry Pi 3. Neste contexto, assume-se que o Arduino Nano é considerado um \ac{SM} que possui um conjunto de sensores enquanto que o Raspberry Pi 3 é um \ac{CM} que recebe os dados provenientes do \ac{SM} enviando-os para o servidor. 
+
+
+--
 
 Após a desenvolvimento da API descrita no capitulo anterior, pretendeu-se simular o sistema num contexto real. Para tal, planeou-se encontrar hardware que encaixasse no contexto deste projeto. Foram utilizados dois micro-controladores e alguns sensores. Neste capitulo será descrito cada um deles e o processo de desenvolvimento da respetiva simulação.  
 
@@ -722,6 +857,14 @@ Em sua placa existe um regulador de tensão e você poderá alimentar com 3.3 a 
 
 \newpage
 \section{Diagrama de componentes}
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=\linewidth]{esquemas/database_tese.pdf}
+	\caption{Esquema relacional da estrutura da base de dados}
+	\label{esquemarelacional}
+\end{figure}
+
 
 
 

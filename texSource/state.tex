@@ -4,9 +4,9 @@
 
 Nesta secção, são apresentados os resultados da pesquisa efectuada sobre o
 estado da arte das ferramentas com funcionalidades que deverão estar presentes no sistema desenvolvido. Pretende-se apresentar de forma geral todas as tecnologias possíveis de utilização e respetiva comparação. 
-\ac{SGBD})
 
-\section{Sistema de gestão de base de dados}
+
+\section{\acl{SGBD}}
 
 Um \ac{SGBD} é um conjunto de software responsáveis pela gestão de uma base de dados.
 
@@ -124,9 +124,6 @@ http://websocialdev.com/lista-de-frameworks-para-desenvolvimento-mobile/
 
 
 
-\subsection{Flask-RESTful}
-
-
 \subsection{Django Rest Framework}
 
 
@@ -152,6 +149,11 @@ Red Hat , Heroku , e Eventbrite .
 
 
 
+
+\subsection{Flask-RESTful}
+
+
+\subsection{Restlet}
 
 
 
@@ -182,19 +184,18 @@ documentação com swager
 \section{Micro-controladores}
 
 
-Para o cenário anteriormente descrito foram utilizados dois micro-controladores bastante comuns no mercado: um Arduino Nano e um Raspberry Pi 3. Neste contexto, assume-se que o Arduino Nano é considerado um \ac{SM} que possui um conjunto de sensores enquanto que o Raspberry Pi 3 é um \ac{CM} que recebe os dados provenientes do \ac{SM} enviando-os para o servidor. 
 
-
-\subsection{Arduino Nano}
+\subsection{Arduino}
 
 
 O Arduino é fruto da evolução de um projeto italiano desenvolvido no ano de 2005, cujo o objetivo foi ser utilizado em projetos escolares de forma a ter um orçamento menor que outros sistemas de prototipagem disponíveis naquela época.
 
-Tal como descrito no seu site oficial, um Arduino consiste numa plataforma \textit{open-source} de prototipagem eletrónica com \textit{hardware} e \textit{software} flexíveis e com elevada facilidade utilização[]. O Arduino é utilizado para projetos especialmente no contexto do \ac{IoT} e da robótica educativa.Neste micro-controlador, podem ser estendidos vários módulos, dependendo da tarefa que se quer que seja executada. 
+Tal como descrito no seu site oficial, um Arduino consiste numa plataforma \textit{open-source} de prototipagem eletrónica com \textit{hardware} e \textit{software} flexíveis e com elevada facilidade utilização[]. O Arduino é utilizado para projetos especialmente no contexto do \ac{IoT} e da robótica educativa. A este micro-controlador, podem ser estendidos vários módulos, dependendo da tarefa que se quer que seja executada. 
 
 
+O Arduino possui um conjunto de pinos que podem ser programados para funcionarem como entradas ou saídas fazendo com que o Arduino interaja com o meio externo para os mais diversos fins. Para além dos pinos de I/O exitem pinos de alimentação que fornecem diversos valores de tensão que podem ser utilizados para transmitir energia elétrica aos diferentes componentes de um projeto. 
 
-O Arduino possui um conjunto de pinos que podem ser programados para funcionarem como entradas ou saídas fazendo com que o Arduino interaja com o meio externo para os mais diversos fins. Para além dos pinos de I/O exitem pinos de alimentação que Fornecem diversos valores de tensão que podem ser utilizados para transmitir energia elétrica aos diferentes componentes de um projeto. 
+A versão Nano do Arduino, 
 
 Na figura \ref{ard2} e \ref{ard1} apresenta-se uma imagem do arduino utilizado e a identificação dos diferentes pinos existentes, respectivamente. Na tabela \ref{caraarduino} encontram-se as principais características desta versão do Arduino. 
 
@@ -221,7 +222,7 @@ Na figura \ref{ard2} e \ref{ard1} apresenta-se uma imagem do arduino utilizado e
 
 
 
-
+\newpage
 
 \begin{table}[h]
 	\centering
@@ -233,16 +234,16 @@ Na figura \ref{ard2} e \ref{ard1} apresenta-se uma imagem do arduino utilizado e
 		Tensão de entrada & 7-12V \\ \hline
 		Portas digitais & 14 (6 podem ser usadas como PWM) \\ \hline
 		Portas analógicas & 8 \\ \hline
-		Corrente nos pinos I/O & 40mA \\ \hline
+		Corrente nos pinos \ac{I/O} & 40mA \\ \hline
 		Memória Flash & 32KB (2KB usado no bootloader) \\ \hline
-		Memória RAM (SRAM) & 2KB \\ \hline
+		Memória \ac{RAM} (SRAM) & 2KB \\ \hline
 		EEPROM & 1KB \\ \hline
 		Velocidade do Clock & 16MHz \\ \hline
 		Dimensões & 45 x 18mm \\ \hline
-		LED Interno & Pino digital 13 \\ \hline
+		LED interno & Pino digital 13 \\ \hline
 		Ligação USB & Ligação ao computador e alimentação \\ \hline
 	\end{tabular}
-	\caption{Características do sensor TTC 104}
+	\caption{Características do Arduino Nano}
 	\label{caraarduino}
 \end{table}
 
@@ -251,9 +252,6 @@ Na figura \ref{ard2} e \ref{ard1} apresenta-se uma imagem do arduino utilizado e
 
 
 
-
-\newpage
-
 \subsection{Raspberry Pi }
 
 O Raspberry Pi (figura \ref{rasp1}) é considerado um micro-computador do tamanho de um cartão de crédito que possui um conjunto de \textit{hardware} integrado que tal como Arduino possibilita uma interação com o meio exterior. O principal objetivo deste poderoso componente consistiu em promover o ensino da ciência da computação em escolas de ensino básico. 
@@ -261,7 +259,7 @@ O Raspberry Pi foi desenvolvido no Reino Unido pela \textit{Raspberry Pi Foundat
 
 
 
-
+\newpage
 \begin{figure}[h]
 	\centering
 	\begin{minipage}[b]{0.4\textwidth}
