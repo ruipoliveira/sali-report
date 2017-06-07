@@ -433,7 +433,7 @@ Nas tabelas \ref{tabeladb1} e \ref{tabeladb2} são descritos descritos cada uma 
 \begin{table}[]
 	\centering
 
-	\label{tabeladb1}
+	
 	\begin{tabular}{|
 			>{\columncolor[HTML]{EFEFEF}}l |l|l|l|}
 		\hline
@@ -449,6 +449,7 @@ Nas tabelas \ref{tabeladb1} e \ref{tabeladb2} são descritos descritos cada uma 
 		\textbf{ControllerModule} & id (auto-incrementado) & N/A & \begin{tabular}[c]{@{}l@{}}Identifica cada um dos \\ controller module \\ inseridos no sistema\end{tabular} \\ \hline
 	\end{tabular}
 	\caption{My caption}
+	\label{tabeladb1}
 \end{table}
 
 
@@ -460,7 +461,7 @@ Nas tabelas \ref{tabeladb1} e \ref{tabeladb2} são descritos descritos cada uma 
 \begin{table}[]
 	\centering
 
-	\label{tabeladb2}
+	
 	\begin{tabular}{|
 			>{\columncolor[HTML]{EFEFEF}}l |l|l|l|}
 		\hline
@@ -476,6 +477,7 @@ Nas tabelas \ref{tabeladb1} e \ref{tabeladb2} são descritos descritos cada uma 
 		\textbf{Alarms} & id (auto-incrementado) & reading\_id & \begin{tabular}[c]{@{}l@{}}Armazena os alarmes \\ que são gerados\end{tabular} \\ \hline
 	\end{tabular}
 	\caption{My caption}
+	\label{tabeladb2}
 \end{table}
 
 \end{landscape}
@@ -496,7 +498,7 @@ escalabilidade, fatores importantes quando queremos partilhar funcionalidades e 
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[width=\linewidth]{esquemas/arquitetura-logica.pdf}
+	\includegraphics[scale = 0.6]{esquemas/arquitetura-logica.pdf}
 	\caption{Arquitetura lógica}
 	\label{opencvlogo}
 \end{figure}
@@ -533,6 +535,9 @@ A interface do utilizador foi desenvolvida em  \ac{HTML} e \acs{CSS}, fazendo us
 
 
 
+verificar se valor se encontra lido se encontra dentro dos settings e gerar alarme 
+
+
 \subsection{Camada de acesso a dados}
 
 
@@ -546,21 +551,75 @@ de persistência e consulta de dados solicitadas pela camada de lógica de negó
 \section{Arquitetura física}
 
 
-Enquanto que a arquitetura lógica se concentra nos diferentes níveis de abstração do sistema, por outro lado a arquitetura física foca-se na estrutura de alto nível.  
-Seguidamente são apresentados todos os componentes físicos, tanto  a nivel de software com de hardware, que são fundamentais ao bom funcionamento de todo o sistema. 
-A figura X representa genericamente os blocos principais do sistema proposto que seguidamente serão descritos. 
+Enquanto que a arquitetura lógica se concentra nos diferentes níveis de abstração do sistema a arquitetura física foca-se na estrutura de alto nível.  
+Seguidamente são apresentados todos os componentes físicos, tanto  a nível de software com de hardware, que são fundamentais para ter um maior perceção do real funcionamento de todo o sistema. 
+A figura \ref{fisicablocos} representa genericamente os blocos principais do sistema proposto que seguidamente serão descritos. 
 
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\linewidth]{esquemas/esquema-blocos.pdf}
-	\caption{Arquitetura lógica}
-	\label{opencvlogo}
+	\includegraphics[scale=0.45]{esquemas/esquema-blocos.pdf}
+	\caption{Arquitetura física (blocos)}
+	\label{fisicablocos}
 \end{figure}
 
 
   
 \subsection{Sistema de informação}
+
+
+Segundo Laudon et al. \cite{Laudon1998}  um sistema de informação define-se como sendo uma inter-relação de múltiplos componente podendo estes ser equipamentos, telecomunicações, software, bases de dados e outras tecnologias de transformação de informação usadas para recolha, processamento, armazenamento e distribuição de informação que possibilita a tomada de decisões e controlo para uma determinada organização, ou até mesmo para a sociedade em geral, de modo a torná-la mais acessível e útil.
+
+Dada a elevada complexidade de um sistema de informação, é possivel identificar algumas funcionalidade comuns aos diversos sistema, são eles \cite{Turban1996}: 
+
+\begin{itemize}
+	\item \textbf{Recolha de dados}: sequência de tarefas que permitem a adição de novos dados ao sistema
+	\item \textbf{Organização e armazenamento de dados}: é imprescindível uma boa organização na estrutura de dados possibilitando uma fácil e rápida localização.
+	\item \textbf{Processamento de dados}: qualquer funcinalidade que permita a produção de resultados mais úteis do que os dados em bruto. 
+	 
+	\item \textbf{Distribuição de informação}: após o processamento de dados é fundamental a distribuição destes a quem precise deles.
+	
+	\item \textbf{Utilização da informação}: por si só, a informação não tem qualquer valor, a sua utilização em contexto adequado permite a extração de determinadas conclusões para que possam ser tomadas decisões.
+	
+\end{itemize}
+
+
+
+A figura \ref{arquiteturasi} ilustra a arquitetura do sistema de informação incluindo especificamente a base de dados, \ac{API}, \textit{dashboard} e respetiva implementação (deploy) do sistema. 
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth]{esquemas/fisica-si.pdf}
+	\caption{Arquitetura do sistema de informação (dashboard e API)}
+	\label{arquiteturasi}
+\end{figure}
+
+
+\subsubsection{Aplicação web}
+
+A aplicação web é um componente essencial, enquadrando-se na camada de lógica de negócio como também na camada de apresentação, permitindo a interação por parte do utilizador (\textit{frontend}) como também no processamento lógico (\textit{backend}).   
+
+Tal como vimos na secção do estado de arte, a tecnologia para o desenvolvimento web recaiu sobre a \textit{framework} Django, mais precisamente na versão 1.11 para python 2.7. Como \ac{IDE} foi utilizada a verão 2016.3.3 do PyCharm. 
+
+
+Visualização modulos usados 
+
+
+
+
+Base de dados -> fazer ligação com API 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -582,7 +641,33 @@ Os métodos da API permitem executar as funções REST. Assim, torna-se fundamen
 
 Autenticação
 
-Documentação automática
+
+
+
+
+\newpage
+\subsubsection{Documentação interativa}
+
+
+Para a geração automática da documentação da API utilizou-se o Swagger. Tal como descrito no site oficial desta framework \cite{SmartBearSoftware2017}, é considerada a ferramenta de API mais popular e completa de todo o mundo permitindo facilmente o desenvolvimento do ciclo de vida de uma API, desde o design, documentação, testes e também implementação, tendo a grande vantagem de ser opensource. Neste contexto, apenas será utilizada como documentação, de modo a facilitar a sua interpretação. O swagger possui uma interface apelativa e intuitiva, 
+permitindo interagir com a API e permitindo que os seus utilizadores tenham uma ideia geral de como esta responde aos pedidos para diversos parâmetros e opções. 
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth]{prints-web/api-doc.png}
+	\caption{Arquitetura do sistema de informação (dashboard e API)}
+	\label{docapi}
+\end{figure}
+
+
+
+
+
+
+% implementação falar da incorporação na dashboard e poss
+
+
 
 
 
@@ -590,7 +675,9 @@ Documentação automática
 
 %\subsection{Documentação API}
 
-utilizado swagger; apenas permite acesso a quem está logado... incorporar layout do swagger com o do salidashboard
+
+
+
 
 
 
@@ -600,7 +687,7 @@ utilizado swagger; apenas permite acesso a quem está logado... incorporar layou
 
 
 
-\subsubsection{Aplicação web}
+
 
 \subsubsection{Aplicação mobile}
 

@@ -133,6 +133,27 @@ A.~S. H.~G. Abreu, ``{Sistema de Monitoriza{\c{c}}{\~{a}}o de Estufas
   Available: \url{http://ria.ua.pt/handle/10773/10269}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Requirementsengineering}
+\BIBentryALTinterwordspacing
+B.~Nuseibeh and S.~Easterbrook, ``{Requirements engineering},''
+  \emph{Proceedings of the conference on The future of Software engineering -
+  ICSE '00}, vol.~1, pp. 35--46, 2000. [Online]. Available:
+  \url{http://portal.acm.org/citation.cfm?doid=336512.336523}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Laudon1998}
+Laudon, C.~Kenneth, Laudon, and P.~Jane, \emph{{Management Information Systems
+  New Approaches to Organization {\&} Technology}}.\hskip 1em plus 0.5em minus
+  0.4em\relax Prentice Hall, 1998.
+
+\bibitem{Turban1996}
+\BIBentryALTinterwordspacing
+E.~Turban, \emph{{Information technology for management : improving quality and
+  productivity}}.\hskip 1em plus 0.5em minus 0.4em\relax Wiley, 1996. [Online].
+  Available:
+  \url{https://books.google.pt/books?id=FqxzQgAACAAJ{\&}redir{\_}esc=y{\&}hl=pt-PT}
+\BIBentrySTDinterwordspacing
+
 \bibitem{temp-dta}
 \BIBentryALTinterwordspacing
 ``{Datasheet, NTC Thermistor TTC05 Series, Disc Type for Temperature

@@ -25,7 +25,6 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: tese.bib
-Warning--I didn't find a database entry for "Requirementsengineering"
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -39,51 +38,53 @@ Warning--empty journal in Evans2011a
 Warning--empty journal in Our2013
 Warning--there is url but no urldate in Rowley2007
 Warning--there is url but no urldate in Abreu2012
+Warning--there is url but no urldate in Requirementsengineering
+Warning--there is url but no urldate in Turban1996
 Warning--empty author in temp-dta
 Warning--empty journal in temp-dta
 Warning--empty year in temp-dta
 Warning--there is url but no urldate in temp-dta
 
 Done.
-You've used 21 entries,
+You've used 24 entries,
             4106 wiz_defined-function locations,
-            982 strings with 11520 characters,
-and the built_in function-call counts, 11898 in all, are:
-= -- 966
-> -- 228
-< -- 79
-+ -- 118
-- -- 40
-* -- 585
-:= -- 1979
-add.period$ -- 40
-call.type$ -- 21
-change.case$ -- 27
-chr.to.int$ -- 180
-cite$ -- 35
-duplicate$ -- 862
-empty$ -- 969
-format.name$ -- 47
-if$ -- 2672
+            1001 strings with 12085 characters,
+and the built_in function-call counts, 13538 in all, are:
+= -- 1095
+> -- 264
+< -- 87
++ -- 136
+- -- 47
+* -- 660
+:= -- 2251
+add.period$ -- 46
+call.type$ -- 24
+change.case$ -- 28
+chr.to.int$ -- 198
+cite$ -- 40
+duplicate$ -- 978
+empty$ -- 1125
+format.name$ -- 56
+if$ -- 3052
 int.to.chr$ -- 0
-int.to.str$ -- 21
-missing$ -- 159
-newline$ -- 110
-num.names$ -- 26
-pop$ -- 404
+int.to.str$ -- 24
+missing$ -- 180
+newline$ -- 123
+num.names$ -- 29
+pop$ -- 460
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 4
-skip$ -- 904
+skip$ -- 1037
 stack$ -- 0
-substring$ -- 419
-swap$ -- 633
-text.length$ -- 19
+substring$ -- 462
+swap$ -- 715
+text.length$ -- 21
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 21
-warning$ -- 14
-while$ -- 57
-width$ -- 23
-write$ -- 230
-(There were 15 warnings)
+type$ -- 24
+warning$ -- 16
+while$ -- 64
+width$ -- 26
+write$ -- 260
+(There were 16 warnings)
