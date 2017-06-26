@@ -18,22 +18,22 @@ acordo com as suas funções, especificidades e respectiva arquitetura. É tamb�
 
 \section{Descrição global do sistema}
 
-Este sistema tem como objetivo a supervisão remota da produção de salicornia,  permitindo não só a monitorização dos dados adquiridos pelos sensores, como também da atuação remota de determinados comandos. Neste contexto também será possível a aquisição de imagens que possibilitará a deteção de intrusos nas quintas onde se produz esta espécie.
+Este sistema tem como objetivo a supervisão remota da produção de salicornia,  permitindo não só a monitorização dos dados adquiridos pelos sensores, como também da atuação remota de determinados comandos. Neste contexto, também será possível a aquisição de imagens que possibilitará a deteção de intrusos nas quintas onde se realiza a produção desta espécie.
 
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[scale=0.40]{esquemas/global_arquitetura.pdf}
+	\includegraphics[scale=0.45]{esquemas/global_arquitetura.pdf}
 	\caption{Ilustração principais componentes}
 	\label{componentesall}
 \end{figure}
 
 
 
-O esquema da figura \ref{componentesall} ilustra todos os componentes de um modo geral e as diferentes plataformas com que o cliente pode interagir. 
+O esquema da figura \ref{componentesall} ilustra de um modo geral todos os componentes e as diferentes plataformas com que o cliente pode interagir. 
 
 
-Como vimos no capitulo 3, uma plantação de  salicórnia carece de um controlo relativamente fino de certos parâmetros ambientais sobretudo da salinidade do terreno onde ela cresce. A salinidade do terreno depende, por sua vez, das chuvas, da salinidade da água dos canais da ria. Nas quintas onde se cultiva salicórnia, a produção faz-se numa espécie de leiras limitadas por pequenos canais de irrigação. Esses canais podem ser cheios de água salgada proveniente dos esteiros que rodeiam a quinta. Essa operação implica a abertura de válvulas de admissão dessa água, medida do nível da maré nos canais, monitorização da qualidade e salinidade da água exterior.
+Como vimos no capitulo 3, uma plantação de  Salicórnia carece de um controlo relativamente fino de certos parâmetros ambientais sobretudo da salinidade do terreno onde ela cresce. A salinidade do terreno depende, por sua vez, das chuvas, da salinidade da água dos canais da ria. Nas quintas onde se cultiva salicórnia, a produção faz-se numa espécie de leiras limitadas por pequenos canais de irrigação. Esses canais podem ser cheios de água salgada proveniente dos esteiros que rodeiam a quinta. Essa operação implica a abertura de válvulas de admissão dessa água, medida do nível da maré nos canais, monitorização da qualidade e salinidade da água exterior.
 
 
 
@@ -45,7 +45,10 @@ Como vimos no capitulo 3, uma plantação de  salicórnia carece de um controlo 
 \end{figure}
 
 
-Tal como ilustrado na figura X, pretende-se que sejam colocados modulos com sensores - \ac{SM} - distribuídos estrategicamente por cada leira. Cada um desses modulos irá comunicar com um módulo central - \ac{CM} -, originando uma topologia de rede em estrela.  Por sua vez, este módulo irá comunicar diretamente com a servidor que possibilitará que os dados sejam tratados e disponíveis para visualização ao cliente. Pressupõe-se portanto que este ultimo módulo tenha necessariamente ligação à rede de modo a conseguir consumir a API REST por HTTP desenvolvida para o efeito. 
+Tal como ilustrado na figura \ref{leira}, pretende-se que sejam colocados módulos com sensores (\acl{SM}) distribuídos estrategicamente por cada leira. Cada um desses módulos irá comunicar com um módulo central (\acl{CM}), originando uma topologia de rede em estrela.  Por sua vez, cada um destes módulos central irá comunicar diretamente com a servidor que possibilitará que os dados sejam tratados e disponibilizados para visualização ao cliente. Pressupõe-se portanto que este ultimo módulo tenha necessariamente ligação à rede de modo a conseguir consumir a API REST por HTTP desenvolvida para o efeito. 
+
+
+falar mais sobre as plataformas 
 
 
 
@@ -63,7 +66,7 @@ No contexto desta dissertação é necessário reter dois conceitos principais, 
 \end{itemize}
 
 
-A figura \ref{esquema1}, ilustra três \acl{SM} que comunicam com um \acl{CM}. Cada um desses \acl{SM} que possui um conjunto especifico de sensores, comunica com \acl{CM} através de um determinado modulo de comunicação. Posteriormente, o \acl{CM} possui um determinado protocolo de comunicação que permite a utilização de uma API REST criada para o efeito. 
+O cenário da figura \ref{esquema1} ilustra três \acl{SM} que comunicam com um \acl{CM}. Cada um desses \acl{SM} possui um conjunto especifico de sensores e comunica com \acl{CM} através de um determinado modulo de comunicação. Posteriormente, o \acl{CM} possui um determinado protocolo de comunicação que permite a utilização de uma API REST criada para o efeito. 
 
 
 
@@ -79,6 +82,8 @@ A figura \ref{esquema1}, ilustra três \acl{SM} que comunicam com um \acl{CM}. C
 Seguidamente serão especificados todos os detalhes de cada modulo, uma vez que serão considerados na modelação de todo o sistema. 
 
 
+
+\newpage
 \subsection{\acl{SM}}
 
 
@@ -217,10 +222,12 @@ Os requisitos funcionais descrevem os critérios que devem ser usados para avali
 	
 	\item O sistema permitirá a exportação dos dados de um determinado \ac{SM} em formato \ac{CSV}. 
 	
+	\item O sistema deverá disponibilizar uma API que...  
 	
-	\item  Consultar a documentação da API 
+	\item Consultar a documentação da API 
 	
 	\item Consultar o token de autenticação da API 
+	
 	
 	
 	\item Alterar configurações do utilizador 
@@ -519,7 +526,7 @@ A interface do utilizador foi desenvolvida em  \ac{HTML} e \acs{CSS}, fazendo us
 	\item \ac{HTML} é a linguagem padrão usada para estruturar e apresentar conteúdos na web. Neste caso, foi utilizado HTML5, a quinta versão do \ac{HTML}.
 	\item \ac{CSS} é uma linguagem usada para descrever a apresentação de conteúdo escrito em uma marcação Como HTML.
 	
-	\item Javascript é a linguagem de programação para páginas da web.
+	\item \ac{JS} é a linguagem de programação para páginas da web.
 	\item \textbf{JQuery}: JQuery é uma biblioteca Javascript que simplifica a programação Javascript
 \end{itemize}
 
@@ -541,8 +548,7 @@ verificar se valor se encontra lido se encontra dentro dos settings e gerar alar
 \subsection{Camada de acesso a dados}
 
 
-Nesta camada deverão estar presentes as funcionalidades de criação, edição, remoção ou simples de visualização dos dados, sendo responsável pelas operações
-de persistência e consulta de dados solicitadas pela camada de lógica de negócio.
+Nesta camada deverão estar presentes as funcionalidades de criação, edição, remoção ou simples de visualização dos dados, sendo responsável pelas operações de persistência e consulta de dados solicitadas pela camada de lógica de negócio.
 
 
 
@@ -585,7 +591,7 @@ Dada a elevada complexidade de um sistema de informação, é possivel identific
 
 
 
-A figura \ref{arquiteturasi} ilustra a arquitetura do sistema de informação incluindo especificamente a base de dados, \ac{API}, \textit{dashboard} e respetiva implementação (deploy) do sistema. 
+A figura \ref{arquiteturasi} ilustra a arquitetura do sistema de informação incluindo especificamente a base de dados, \ac{API}, \textit{dashboard} e respetiva implementação do sistema. 
 
 
 \begin{figure}[h]
@@ -600,7 +606,32 @@ A figura \ref{arquiteturasi} ilustra a arquitetura do sistema de informação in
 
 A aplicação web é um componente essencial, enquadrando-se na camada de lógica de negócio como também na camada de apresentação, permitindo a interação por parte do utilizador (\textit{frontend}) como também no processamento lógico (\textit{backend}).   
 
-Tal como vimos na secção do estado de arte, a tecnologia para o desenvolvimento web recaiu sobre a \textit{framework} Django, mais precisamente na versão 1.11 para python 2.7. Como \ac{IDE} foi utilizada a verão 2016.3.3 do PyCharm. 
+Tal como vimos na secção do estado de arte, a tecnologia para o desenvolvimento web recaiu sobre a \textit{framework} Django, mais precisamente na versão 1.11 para python 2.7, sendo que como \ac{IDE} foi utilizada a verão 2016.3.3 do PyCharm.
+
+Dada a facilidade com que a framework django tem em manipular view e templates, optou-se que tanto o desenvolvimento frontend da aplicação web como obviamente backend seja desenvolvido em Django. Para além disso, optou-se por criar uma API RESt que permitisse a manipulação dos dados existentes na base de dados, sendo esta também desenvolvida paralelamente com a aplicação web. Seguidamente será explicada a sua arquitetura.   
+
+Uma das coisas mais interessantes no Django é sem dúvidas a existência de \ac{ORM}. Consiste numa técnica de desenvolvimento que permite modelar os dados através de classes em Python. Através dela, é possível gerar tabelas na base de dados e manipulá-las sem a necessidade de interagir diretamente com \ac{SQL} (embora também seja possível). Existiu necessidade de criar um script em \ac{SQL} que verifica os valores lido pelos sensores gerandam ou não um alarmes. Caso o valor lido esteja fora dos valores previsto então é gerado um alarme e o utilizador será notificado, no capitulo seguinte será descrita a sua implementação. 
+
+A escolha do \ac{SGBD} recaiu sobre o PostgreSQL, mais concretamente na versão xxx. Como ferramenta gráfica para administração deste \ac{SGBD} foi utilizado o PgAdmin III\footnote{www.pgadmin.org/} na versão 1.22. Este software gráfico tem inúmeras funcionalidades desde a possibilidade de ligação a base de dados remotas até à adição, edição, remoção e  consultas em tabelas. Esta ferramenta é \textit{opensource} e encontra-se disponível para Windows e UNIX.
+
+
+No que diz respeito à camada de apresentação na plataforma web foram utilizadas as seguintes bibliotecas/frameworks: 
+
+\begin{itemize}
+	\item \textbf{\ac{HTML}+\ac{CSS}+\ac{JS}}: o ponto de partida para a criação da interface web assentou no template denominado por AdminLTE sendo este baseado em Bootstrap 3\footnote{http://getbootstrap.com/}. Neste template prevalecem as seguintes características:  design responsivo, interface leve e apelativa, existência de múltiplos plugins, compatibilidade entre navegadores entre outros. 
+	
+	\item \textbf{Gravatar}: serviço que disponibiliza um avatar que esteja associado a endereços de email registado. O Gravatar disponibiliza uma API que pode ser utilizada nas mais diversas linguagens de programação\cite{gravatar}.
+	 
+	\item \textbf{\ac{API} Google Maps}: consiste num serviço de pesquisa e visualização de mapas e imagens de satélite. É usado na visualização da localização dos diferentes módulos. 
+	
+	\item \textbf{ZingChart}: biblioteca em \ac{JS} que permite receber dados a apresentá-los em formato gráfico. Esta solução \textit{opensource} disponibiliza mais de 35 tipos e módulos de gráficos. 
+\end{itemize}
+
+
+
+
+Dada da facilidade com que o django tem em  com um SGBD, 
+
 
 
 Visualização modulos usados 
@@ -623,15 +654,33 @@ Base de dados -> fazer ligação com API
 
 
 
-\subsubsection{\ac{API}}
+\subsubsection{\acs{API} \acs{REST}}
 
-Os métodos da API permitem executar as funções REST. Assim, torna-se fundamental perceber estes métodos para ter um melhor conhecimento do funcionamento do sistema. Como tal, de seguida, são descritos os métodos mais importantes que dão suporte a cada uma das funções REST.
+
+Os métodos desta API permitiram execuções funções do tipo \ac{REST}. A tecnologia \ac{REST} foi apresentada por Roy Fielding na Universidade de Califórnia no ano de 2000, cujo o titulo da sua dissertação era "Architectural Styles and the Design of Network-based Software Architectures". Roy estudou um conjunto de arquiteturas de software que usam a Web como uma plataforma para computação distribuída\cite{Rodriguez2015}. 
+
+ 
+ 
+Esta tecnologia define um conjunto de princípios...   
+
+ 
+%%%mudar 
+Representational State Transfer (REST) define um conjunto de princípios de arquitetura para
+sistemas distribuídos, com os quais podemos desenhar serviços web com foco nos recursos de um
+sistema, incluindo a forma com os recursos são organizados e transferidos através de HTTP para
+vários clientes em diferentes linguagens
+
+
+
+
+Os métodos da API permitem executar as funções REST usando métodos HTTP explicitamentee. Assim, torna-se fundamental perceber estes métodos para ter um melhor conhecimento da API. Como tal, de seguida, são descritos os métodos mais importantes que dão suporte a cada uma das funções REST.
+
 
 \begin{itemize}
-	\item \textbf{GET}: 
-	\item \textbf{POST}: 
-	\item \textbf{PUT}: 
-	\item \textbf{DELETE}: 
+	\item \textbf{GET}: permite efectuar operações de leitura 
+	\item \textbf{POST}: permite realizar operações de escrita, permitindo criar novos recursos ao sistema.
+	\item \textbf{PUT}: permite criar ou atualizar um novo objecto ao sistema 
+	\item \textbf{DELETE}: permite apagar objecto ou recurso ao sistema. 
 \end{itemize}
 
 
@@ -639,18 +688,32 @@ Os métodos da API permitem executar as funções REST. Assim, torna-se fundamen
 
 
 
+
+Como vimos na secão X do estado da Arte, a escolha da framework para construção de uma \ac{API} \ac{REST} recaiu sobre o \textit{Django REST framework}
+
+
+
+Endpoints 
+
+
+
+
+framework Django REST é um conjunto de ferramentas poderoso e flexível para a construção de APIs Web.
+
+
+
+
 Autenticação
 
 
-
-
+Seguidamente será apresentada como foi criada a documentação desta API. 
 
 \newpage
 \subsubsection{Documentação interativa}
 
 
-Para a geração automática da documentação da API utilizou-se o Swagger. Tal como descrito no site oficial desta framework \cite{SmartBearSoftware2017}, é considerada a ferramenta de API mais popular e completa de todo o mundo permitindo facilmente o desenvolvimento do ciclo de vida de uma API, desde o design, documentação, testes e também implementação, tendo a grande vantagem de ser opensource. Neste contexto, apenas será utilizada como documentação, de modo a facilitar a sua interpretação. O swagger possui uma interface apelativa e intuitiva, 
-permitindo interagir com a API e permitindo que os seus utilizadores tenham uma ideia geral de como esta responde aos pedidos para diversos parâmetros e opções. 
+Para a geração automática da documentação da API utilizou-se o Swagger. Tal como descrito no site oficial desta framework \cite{SmartBearSoftware2017}, o Swagger é considerada a ferramenta de APIs mais popular e completa de todo o mundo permitindo facilmente o desenvolvimento do ciclo de vida de uma API, desde o design, documentação, testes e também implementação, tendo a grande vantagem de ser opensource. Neste contexto, apenas será utilizada como documentação, de modo a facilitar a sua interpretação da API criada. O swagger possui uma interface apelativa e intuitiva, 
+permitindo interagir com a API e permitindo também que os seus utilizadores tenham uma ideia geral de como esta responde aos pedidos para diversos parâmetros e opções. 
 
 
 \begin{figure}[h]
@@ -659,6 +722,27 @@ permitindo interagir com a API e permitindo que os seus utilizadores tenham uma 
 	\caption{Arquitetura do sistema de informação (dashboard e API)}
 	\label{docapi}
 \end{figure}
+
+
+
+\subsubsection{Implementação do sistema}
+
+Para implementar (vulgarmente denominada por deployment) o projeto em Django e respetiva API foi-me fornecida uma máquina com um distribuição Linux (Ubuntu 14.04.5) com as seguintes características: 
+
+\begin{itemize}
+	\item \ac{CPU}: Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz
+	\item \ac{RAM}: 2 GB
+	\item Disco: 10.7 GB
+\end{itemize}
+
+
+Para o processo de \textit{deployment} deste projeto optou-se pela utilização do servidor Apache juntamente com o pacote mod\_wsgi\footnote{https://modwsgi.readthedocs.io/en/develop/}. 
+Este pacote fornece uma \ac{WSGI} compatível para o alojamento de aplicações web em Python sob o servidor Apache. 
+
+O Apache é um servidor web opensource mais utilizado em todo o mundo .......
+
+\cite{TheApacheSoftwareFoundation2016}
+
 
 
 
@@ -682,9 +766,6 @@ permitindo interagir com a API e permitindo que os seus utilizadores tenham uma 
 
 
 
-\newpage
-
-
 
 
 
@@ -692,31 +773,50 @@ permitindo interagir com a API e permitindo que os seus utilizadores tenham uma 
 \subsubsection{Aplicação mobile}
 
 
+Mockup da aplicação em anexo 
+
+Phonegap + angular js
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.5]{esquemas/arquitetura-mobile.pdf}
+	\caption{Arquitetura do sistema de informação (dashboard e API)}
+	\label{arquiteturasi}
+\end{figure}
+
+
+
+Tal como descrito na secção do estado de arte, para o desenvolvimento mobile optou-se pela utilização de um paradigma multi-plataforma, para tal, escolheu-se o PhoneGap juntamente com o Apache Cordova. 
+
+
+
+
+De modo a facilitar a manipulação em javascript optou-se por utilizar a framework AngularJS. Esta framework opensource mantida pela google desde 20XX 
+
 
 
 \newpage
 \subsection{Simulação em hardware}
 
-Para o cenário anteriormente descrito foram utilizados dois micro-controladores bastante comuns no mercado: um Arduino Nano e um Raspberry Pi 3. Neste contexto, assume-se que o Arduino Nano é considerado um \ac{SM} que possui um conjunto de sensores enquanto que o Raspberry Pi 3 é um \ac{CM} que recebe os dados provenientes do \ac{SM} enviando-os para o servidor. 
 
+Após a desenvolvimento da API anteriormente descrita, pretendeu-se simular o sistema num contexto real. Para tal, planeou-se encontrar hardware que encaixasse no contexto deste projeto. Foram utilizados dois micro-controladores (Arduino e Raspberry Pi) e alguns sensores. Neste contexto, assume-se que o Arduino é considerado um \ac{SM} que possui um conjunto de sensores enquanto que o Raspberry Pi é um \ac{CM} que recebe os dados provenientes do \ac{SM} enviando-os para o servidor web.  
 
---
-
-Após a desenvolvimento da API descrita no capitulo anterior, pretendeu-se simular o sistema num contexto real. Para tal, planeou-se encontrar hardware que encaixasse no contexto deste projeto. Foram utilizados dois micro-controladores e alguns sensores. Neste capitulo será descrito cada um deles e o processo de desenvolvimento da respetiva simulação.  
-
-\newpage
+Seguidamente, são apresentados os sensores utilizados bem como o tipo de comunicação. 
+ 
 
 \subsubsection{Sensores utilizados}
 
 Nesta secção serão apresentados os sensores utilizados na simulação e as suas principais características. Todos os sensores foram escolhidos tendo em conta o seu enquadramento no projeto e a sua disponibilidade no laboratório. Todos os sensores que se apresentam encontram-se ligados a um Arduino nano. \\
 
-
+\newpage
 \textbf{Temperatura}
 
 
 Como sensor de temperatura foi utilizado um termístor do tipo \ac{NTC}. Como vimo anteriormente, um termístor é um semicondutor sensível à temperatura i.e. cujo o coeficiente de variação da resistência com a temperatura é negativa, ou seja, quando a temperatura sobe então consequentemente a resistência diminui. 
 
 Na figura \ref{esquema-temp} encontra-se o esquema de ligação deste componente e na tabela \ref{table-temp} as propriedades principais. 
+
 
 \begin{figure}[h]
 	\centering
@@ -940,6 +1040,67 @@ Em sua placa existe um regulador de tensão e você poderá alimentar com 3.3 a 
 
 
 
+\newpage
+
+\section{Sistema de deteção de intrusos}
+
+
+No contexto desta dissertação houve necessidade de implementar um sistema de video-stream que permitisse detetar intrusos, maioritariamente pessoas ou animais de grande porte, que possam invadir as quintas onde se produz salicornia. Esta necessidade prende-se essencialmente com elevado custo do hardware do sistema de monitorização e também de eventuais instrumentos de elevado custo necessários ao cultivo desta espécie (e.g. geradores, maquinas elétricas para poda etc).
+
+Neste capitulo é descrita a tecnologia de processamento de imagem utilizada tal como o algoritmo disponibilizado pela mesma. Apresenta-se a implementação deste mecanismo e os testes necessários. 
+
+
+\subsection{Biblioteca de processamento de imagem: OpenCV}
+
+O OpenCV, também conhecido por \textit{Open Source Computer Vision Library}, é uma biblioteca de software de visão por computador de código \textit{open source} (figura \ref{opencvlogo}). OpenCV foi construído para fornecer uma infra-estrutura comum para aplicações de visão computacional e para criar o uso da perceção da máquina nos produtos comerciais.
+
+A biblioteca possui mais de 2500 algoritmos otimizados, que inclui um conjunto abrangente de algoritmos clássicos e avançados de visão computacional e algoritmos de \textit{machine learning}. Esses algoritmos podem ser usados para detectar e reconhecer rostos, identificar objetos, classificar ações humanas em vídeos, detetar movimentos numa câmara, seguir um objetos em movimento, produzir nuvens de pontos 3D de câmaras estéreo, entre outros.
+OpenCV tem mais de 47 mil pessoas na comunidade de usuários e o número estimado de downloads superior a 7 milhões. A biblioteca é amplamente utilizada em empresas e grupos de pesquisa \cite{Itseez}.
+
+O OpenCV é usado principalmente em aplicações de visão em tempo real. Esta biblioteca tem interfaces nas mais diversas linguagens: C++, C, Python, Java e MATLAB, embora seja nativamente escrito em C. OpenCV tem suporte para Windows, Linux e Mac OS\cite{Itseez}. 
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=0.5\linewidth]{img/vision/opencv_logo.jpg}
+	\caption{Logótipo OpenCV}
+	\label{opencvlogo}
+\end{figure}
+
+
+\textbf{Conclusoes} 
+
+Desde logo a escolha da tecnologia para processamento de imagem recaiu sobre o opencv não apenas por ser uma biblioteca bastante popular e possuir bastantes algoritmos implementados mas também por eu próprio possuir já algum background e projetos desenvolvidos neste neste contexto.
+
+
+Pretendeu-se que este processamento fosse implementado em material já adquirido sem necessidade de gastos. Optou-se então por utilizar um \textit{Raspberry Pi} que juntamente com um \textit{Raspberry Pi camera module} (figura \ref{raspicam}) permitirá a aquisição de imagem e servirá também como \textit{controller module} ao sistema de aquisição de dados. 
+
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=0.3\linewidth]{img/hardware/camera_v2.jpg}
+	\caption{Raspberry Pi Camera Board V2 8MP 1080p}
+	\label{raspicam}
+\end{figure}
+
+
+Eis algumas das características principais do Raspberry Pi Camera Board V2:
+
+\begin{itemize}
+	\item lente de foco fixo on-board
+	\item 150 milímetros CSI cabo da câmara incluída
+	\item 8 megapixels do sensor com capacidade de resolução nativa de 3.280 imagens estáticas de pixels x 2464
+	\item Suporta 1080p30, 720p60 e 640x480p90 vídeo
+	\item Tamanho 25 milímetros x 23 milímetros x 9 mm
+	\item Peso pouco mais de 3 g
+	\item Liga-se à placa de framboesa Pi por meio de um cabo de fita curta (fornecido)
+	\item Camera v2 é compatível com a última versão do Raspbian, sistema operacional preferido do Raspberry Pi
+\end{itemize}
+
+
+
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newpage
@@ -947,7 +1108,7 @@ Em sua placa existe um regulador de tensão e você poderá alimentar com 3.3 a 
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[width=\linewidth]{esquemas/database_tese.pdf}
+	\includegraphics[width=\linewidth]{esquemas/arquitetura-final.pdf}
 	\caption{Esquema relacional da estrutura da base de dados}
 	\label{esquemarelacional}
 \end{figure}

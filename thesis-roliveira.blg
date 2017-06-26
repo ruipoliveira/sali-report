@@ -34,57 +34,62 @@ Warning--missing publisher in chambers
 Warning--empty journal in chenopodiaceae
 Warning--missing publisher in ferri
 Warning--there is url but no urldate in Silva2000
+Warning--there is url but no urldate in Ventura2011
+Warning--empty journal in Filomena2009
+Warning--there is url but no urldate in Wang2012
 Warning--empty journal in Evans2011a
 Warning--empty journal in Our2013
 Warning--there is url but no urldate in Rowley2007
 Warning--there is url but no urldate in Abreu2012
 Warning--there is url but no urldate in Requirementsengineering
 Warning--there is url but no urldate in Turban1996
+Warning--empty journal in Rodriguez2015
+Warning--there is url but no urldate in Rodriguez2015
 Warning--empty author in temp-dta
 Warning--empty journal in temp-dta
 Warning--empty year in temp-dta
 Warning--there is url but no urldate in temp-dta
 
 Done.
-You've used 24 entries,
+You've used 31 entries,
             4106 wiz_defined-function locations,
-            1001 strings with 12085 characters,
-and the built_in function-call counts, 13538 in all, are:
-= -- 1095
-> -- 264
-< -- 87
-+ -- 136
-- -- 47
-* -- 660
-:= -- 2251
-add.period$ -- 46
-call.type$ -- 24
-change.case$ -- 28
-chr.to.int$ -- 198
-cite$ -- 40
-duplicate$ -- 978
-empty$ -- 1125
-format.name$ -- 56
-if$ -- 3052
+            1048 strings with 13814 characters,
+and the built_in function-call counts, 18084 in all, are:
+= -- 1451
+> -- 389
+< -- 117
++ -- 202
+- -- 72
+* -- 894
+:= -- 2970
+add.period$ -- 60
+call.type$ -- 31
+change.case$ -- 35
+chr.to.int$ -- 261
+cite$ -- 52
+duplicate$ -- 1305
+empty$ -- 1475
+format.name$ -- 84
+if$ -- 4079
 int.to.chr$ -- 0
-int.to.str$ -- 24
-missing$ -- 180
-newline$ -- 123
-num.names$ -- 29
-pop$ -- 460
+int.to.str$ -- 31
+missing$ -- 248
+newline$ -- 156
+num.names$ -- 35
+pop$ -- 633
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 4
-skip$ -- 1037
+skip$ -- 1373
 stack$ -- 0
-substring$ -- 462
-swap$ -- 715
-text.length$ -- 21
+substring$ -- 615
+swap$ -- 973
+text.length$ -- 30
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 24
-warning$ -- 16
-while$ -- 64
-width$ -- 26
-write$ -- 260
-(There were 16 warnings)
+type$ -- 31
+warning$ -- 21
+while$ -- 82
+width$ -- 33
+write$ -- 336
+(There were 21 warnings)
