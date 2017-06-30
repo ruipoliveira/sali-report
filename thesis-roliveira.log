@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.3.26)  26 JUN 2017 13:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.3.26)  29 JUN 2017 17:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1085,16 +1085,10 @@ Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 (./thesis-roliveira.aux (./texSource/acronyms.aux) (./texSource/chapter1.aux)
 (./texSource/chapter2.aux) (./texSource/state.aux) (./texSource/chapter4.aux
 
-LaTeX Warning: Label `arquiteturasi' multiply defined.
-
-
 LaTeX Warning: Label `lum-cara' multiply defined.
 
 
-LaTeX Warning: Label `opencvlogo' multiply defined.
-
-
-LaTeX Warning: Label `esquemarelacional' multiply defined.
+LaTeX Warning: Label `componentesall' multiply defined.
 
 ) (./texSource/chapter5.aux) (./texSource/chapter6_2.aux)
 (./texSource/chapter6_1.aux) (./texSource/chapter6.aux)
@@ -1204,7 +1198,7 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 ABD: EveryShipout initializing macros
-<uaLogoNew.pdf, id=497, 60.225pt x 75.28125pt>
+<uaLogoNew.pdf, id=489, 60.225pt x 75.28125pt>
 File: uaLogoNew.pdf Graphic file (type pdf)
  <use uaLogoNew.pdf>
 Package pdftex.def Info: uaLogoNew.pdf used on input line 161.
@@ -1389,7 +1383,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 61.
 [2]
 Package acronym Info: Label `acro:API' newly defined as it shall be overridden
-although it is yet undefined on input line 87.
+although it is yet undefined on input line 85.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 96.
 Package babel Info: Redefining portuges shorthand "|
@@ -1411,9 +1405,9 @@ although it is yet undefined on input line 17.
 Package acronym Info: Label `acro:CM' newly defined as it shall be overridden
 although it is yet undefined on input line 17.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 30.
+(babel)             in language  on input line 27.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 30.
+(babel)             in language  on input line 27.
  [5
 
 
@@ -1545,37 +1539,42 @@ Cap\'{\i }tulo 2.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 2.
 Package acronym Info: Label `acro:IoT' newly defined as it shall be overridden
-although it is yet undefined on input line 6.
+although it is yet undefined on input line 4.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 9.
+(babel)             in language  on input line 7.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 16.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 15.
+(babel)             in language  on input line 16.
 [5
 
 
-] <img/cap2-sali/Salicornia04.JPG, id=908, 1251.67625pt x 937.5025pt>
+] <img/cap2-sali/Salicornia04.JPG, id=906, 1240.635pt x 929.4725pt>
 File: img/cap2-sali/Salicornia04.JPG Graphic file (type jpg)
 
 <use img/cap2-sali/Salicornia04.JPG>
 Package pdftex.def Info: img/cap2-sali/Salicornia04.JPG used on input line 21.
-(pdftex.def)             Requested size: 216.90276pt x 162.44891pt.
+(pdftex.def)             Requested size: 216.90276pt x 162.48993pt.
 
-<img/cap2-sali/sal-outono.png, id=909, 661.47125pt x 496.85625pt>
+<img/cap2-sali/sal-outono.png, id=907, 661.47125pt x 496.85625pt>
 File: img/cap2-sali/sal-outono.png Graphic file (type png)
 
 <use img/cap2-sali/sal-outono.png>
 Package pdftex.def Info: img/cap2-sali/sal-outono.png used on input line 25.
 (pdftex.def)             Requested size: 216.90276pt x 162.91682pt.
 
-<img/cap2-sali/ciclo/ciclodevida.pdf, id=923, 1265.72874pt x 272.01625pt>
+<img/cap2-sali/ciclo/ciclodevida.pdf, id=918, 1265.72874pt x 272.01625pt>
 File: img/cap2-sali/ciclo/ciclodevida.pdf Graphic file (type pdf)
 
 <use img/cap2-sali/ciclo/ciclodevida.pdf>
 Package pdftex.def Info: img/cap2-sali/ciclo/ciclodevida.pdf used on input line
- 44.
+ 40.
 (pdftex.def)             Requested size: 442.65375pt x 95.12825pt.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 47.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 50.
 Package babel Info: Redefining portuges shorthand "|
@@ -1583,61 +1582,50 @@ Package babel Info: Redefining portuges shorthand "|
  [6 <./img/cap2-sali/Salicornia04.JPG> <./img/cap2-sali/sal-outono.png> <./img/
 cap2-sali/ciclo/ciclodevida.pdf>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 52.
+(babel)             in language  on input line 51.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 62.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 80.
+(babel)             in language  on input line 82.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 86.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 108.
-Package acronym Info: Label `acro:WWW' newly defined as it shall be overridden
-although it is yet undefined on input line 111.
-
-Underfull \vbox (badness 2538) has occurred while \output is active []
-
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 112.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 112.
+(babel)             in language  on input line 86.
  [7]
 Package acronym Info: Label `acro:URL' newly defined as it shall be overridden
-although it is yet undefined on input line 114.
+although it is yet undefined on input line 88.
 Package acronym Info: Label `acro:HTTP' newly defined as it shall be overridden
 
-although it is yet undefined on input line 114.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 129.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 129.
+although it is yet undefined on input line 88.
 
-[8] <esquemas/iot-diagram.pdf, id=986, 1364.09625pt x 515.9275pt>
+<esquemas/iot-diagram.pdf, id=965, 1364.09625pt x 515.9275pt>
 File: esquemas/iot-diagram.pdf Graphic file (type pdf)
 
 <use esquemas/iot-diagram.pdf>
-Package pdftex.def Info: esquemas/iot-diagram.pdf used on input line 133.
+Package pdftex.def Info: esquemas/iot-diagram.pdf used on input line 99.
 (pdftex.def)             Requested size: 442.65375pt x 167.42253pt.
+Package acronym Info: Label `acro:WWW' newly defined as it shall be overridden
+although it is yet undefined on input line 105.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 107.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 107.
+ [8 <./esquemas/iot-diagram.pdf>]
 Package acronym Info: Label `acro:DIKW' newly defined as it shall be overridden
 
-although it is yet undefined on input line 140.
+although it is yet undefined on input line 116.
 
-<img/cap3-iot/dikw.png, id=992, 753.5653pt x 588.69937pt>
+<img/cap3-iot/dikw.png, id=1005, 753.5653pt x 588.69937pt>
 File: img/cap3-iot/dikw.png Graphic file (type png)
 
 <use img/cap3-iot/dikw.png>
-Package pdftex.def Info: img/cap3-iot/dikw.png used on input line 145.
+Package pdftex.def Info: img/cap3-iot/dikw.png used on input line 121.
 (pdftex.def)             Requested size: 226.07133pt x 176.61116pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 156.
-
-Underfull \vbox (badness 2529) has occurred while \output is active []
-
+(babel)             in language  on input line 132.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 160.
+(babel)             in language  on input line 138.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 160.
- [9 <./esquemas/iot-diagram.pdf> <./img/cap3-iot/dikw.png>])
+(babel)             in language  on input line 138.
+ [9 <./img/cap3-iot/dikw.png>])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 303.
 Package babel Info: Redefining portuges shorthand "|
@@ -1645,7 +1633,8 @@ Package babel Info: Redefining portuges shorthand "|
  [10]
 \openout2 = `texSource/state.aux'.
 
- (./texSource/state.tex
+
+(./texSource/state.tex
 Cap\'{\i }tulo 3.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
@@ -1730,14 +1719,14 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 214.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 218.
- <img/hardware/nano-img.jpg, id=1058, 602.25pt x 451.6875pt>
+ <img/hardware/nano-img.jpg, id=1050, 602.25pt x 451.6875pt>
 File: img/hardware/nano-img.jpg Graphic file (type jpg)
 
 <use img/hardware/nano-img.jpg>
 Package pdftex.def Info: img/hardware/nano-img.jpg used on input line 236.
 (pdftex.def)             Requested size: 221.32687pt x 165.99832pt.
 
-<img/hardware/nano-esquema.png, id=1059, 515.9275pt x 572.1375pt>
+<img/hardware/nano-esquema.png, id=1051, 515.9275pt x 572.1375pt>
 File: img/hardware/nano-esquema.png Graphic file (type png)
 
 <use img/hardware/nano-esquema.png>
@@ -1762,14 +1751,14 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 292.
  [17]
-<img/hardware/rasp3-img.jpg, id=1074, 1505.625pt x 968.61874pt>
+<img/hardware/rasp3-img.jpg, id=1066, 1505.625pt x 968.61874pt>
 File: img/hardware/rasp3-img.jpg Graphic file (type jpg)
 
 <use img/hardware/rasp3-img.jpg>
 Package pdftex.def Info: img/hardware/rasp3-img.jpg used on input line 296.
 (pdftex.def)             Requested size: 177.05879pt x 113.894pt.
 
-<img/hardware/rasp-esquema.PNG, id=1075, 560.8453pt x 387.69844pt>
+<img/hardware/rasp-esquema.PNG, id=1067, 560.8453pt x 387.69844pt>
 File: img/hardware/rasp-esquema.PNG Graphic file (type png)
 
 <use img/hardware/rasp-esquema.PNG>
@@ -1852,7 +1841,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 3.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 19.
-<esquemas/global_arquitetura.pdf, id=1108, 636.3775pt x 288.07625pt>
+<esquemas/global_arquitetura.pdf, id=1100, 636.3775pt x 288.07625pt>
 File: esquemas/global_arquitetura.pdf Graphic file (type pdf)
 
 <use esquemas/global_arquitetura.pdf>
@@ -1867,246 +1856,255 @@ Package babel Info: Redefining portuges shorthand "|
 
 
  <./esquemas/global_arquitetura.pdf>]
-<esquemas/leiras-comm-geral.pdf, id=1127, 416.55624pt x 428.60126pt>
+<esquemas/leiras-comm-geral.pdf, id=1119, 608.2725pt x 237.88875pt>
 File: esquemas/leiras-comm-geral.pdf Graphic file (type pdf)
 
 <use esquemas/leiras-comm-geral.pdf>
 Package pdftex.def Info: esquemas/leiras-comm-geral.pdf used on input line 42.
-(pdftex.def)             Requested size: 229.10663pt x 235.73141pt.
+(pdftex.def)             Requested size: 383.21371pt x 149.8707pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 55.
+(babel)             in language  on input line 52.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 55.
+(babel)             in language  on input line 52.
  [26 <./esquemas/leiras-comm-geral.pdf>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 56.
 
-<esquemas/general-electronic-modules.pdf, id=1162, 1190.4475pt x 553.06625pt>
+<esquemas/general-electronic-modules.pdf, id=1159, 1190.4475pt x 553.06625pt>
 File: esquemas/general-electronic-modules.pdf Graphic file (type pdf)
 
 <use esquemas/general-electronic-modules.pdf>
 Package pdftex.def Info: esquemas/general-electronic-modules.pdf used on input 
-line 76.
-(pdftex.def)             Requested size: 442.65375pt x 205.644pt.
+line 75.
+(pdftex.def)             Requested size: 357.13701pt x 165.92114pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 86.
+(babel)             in language  on input line 85.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 86.
+(babel)             in language  on input line 90.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 90.
  [27 <./esquemas/general-electronic-modules.pdf>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 87.
 Package acronym Info: Label `acro:GPS' newly defined as it shall be overridden
-although it is yet undefined on input line 93.
+although it is yet undefined on input line 94.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 99.
+(babel)             in language  on input line 103.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 112.
+(babel)             in language  on input line 116.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 112.
+(babel)             in language  on input line 116.
  [28]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 121.
+(babel)             in language  on input line 125.
 Package acronym Info: Label `acro:SDLC' newly defined as it shall be overridden
 
-although it is yet undefined on input line 126.
+although it is yet undefined on input line 131.
 
-<esquemas/desenvolvimentoSW.pdf, id=1192, 642.4pt x 315.1775pt>
+<esquemas/desenvolvimentoSW.pdf, id=1188, 642.4pt x 315.1775pt>
 File: esquemas/desenvolvimentoSW.pdf Graphic file (type pdf)
 
 <use esquemas/desenvolvimentoSW.pdf>
-Package pdftex.def Info: esquemas/desenvolvimentoSW.pdf used on input line 133.
+Package pdftex.def Info: esquemas/desenvolvimentoSW.pdf used on input line 140.
 
 (pdftex.def)             Requested size: 385.44298pt x 189.10796pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 145.
+(babel)             in language  on input line 154.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 145.
+(babel)             in language  on input line 154.
  [29 <./esquemas/desenvolvimentoSW.pdf>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 175.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 192.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 192.
+(babel)             in language  on input line 171.
 
-[30]
-Package acronym Info: Label `acro:CSV' newly defined as it shall be overridden
-although it is yet undefined on input line 223.
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
 
-Overfull \hbox (0.3036pt too wide) in paragraph at lines 223--224
-[]\OT1/cmr/m/n/10.95 O sis-tema per-mi-tir^^Sa a ex-porta^^Xc~ao dos da-dos de 
-um de-ter-mi-nado [][] em for-mato [][][]Comma-|
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 248.
+(babel)             in language  on input line 189.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 248.
-[31]
+(babel)             in language  on input line 189.
+[30]
+Package acronym Info: Label `acro:CSV' newly defined as it shall be overridden
+although it is yet undefined on input line 195.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 259.
+(babel)             in language  on input line 234.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 234.
+ [31]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 263.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 287.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 293.
+(babel)             in language  on input line 290.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 305.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 305.
+(babel)             in language  on input line 290.
  [32]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 313.
- <esquemas/use-case-web.pdf, id=1226, 1014.79124pt x 779.91376pt>
+(babel)             in language  on input line 293.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 311.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 316.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 316.
+ [33]
+<esquemas/use-case-web.pdf, id=1224, 1014.79124pt x 779.91376pt>
 File: esquemas/use-case-web.pdf Graphic file (type pdf)
 
 <use esquemas/use-case-web.pdf>
-Package pdftex.def Info: esquemas/use-case-web.pdf used on input line 322.
+Package pdftex.def Info: esquemas/use-case-web.pdf used on input line 320.
 (pdftex.def)             Requested size: 442.65375pt x 340.19989pt.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 328.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 328.
- [33 <./esquemas/use-case-web.pdf>]
-<esquemas/use-case-mobile.pdf, id=1234, 1014.79124pt x 433.62pt>
+
+<esquemas/use-case-mobile.pdf, id=1225, 1014.79124pt x 433.62pt>
 File: esquemas/use-case-mobile.pdf Graphic file (type pdf)
 
 <use esquemas/use-case-mobile.pdf>
-Package pdftex.def Info: esquemas/use-case-mobile.pdf used on input line 331.
+Package pdftex.def Info: esquemas/use-case-mobile.pdf used on input line 329.
 (pdftex.def)             Requested size: 442.65375pt x 189.14587pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 354.
+(babel)             in language  on input line 337.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 354.
- [34 <./esquemas/use-case-mobile.pdf>]
+(babel)             in language  on input line 337.
+ [34 <./esquemas/use-case-web.pdf> <./esquemas/use-case-mobile.pdf>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 377.
+(babel)             in language  on input line 358.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 377.
-
-[35]
+(babel)             in language  on input line 358.
+ [35]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 416.
+(babel)             in language  on input line 389.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 416.
+(babel)             in language  on input line 389.
  [36]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 417.
- <esquemas/database_tese.pdf, id=1261, 852.75589pt x 834.9694pt>
+(babel)             in language  on input line 410.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 410.
+ [37]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 411.
+
+<esquemas/database_tese.pdf, id=1259, 780.43571pt x 831.6872pt>
 File: esquemas/database_tese.pdf Graphic file (type pdf)
 
 <use esquemas/database_tese.pdf>
-Package pdftex.def Info: esquemas/database_tese.pdf used on input line 427.
-(pdftex.def)             Requested size: 442.65375pt x 433.42215pt.
+Package pdftex.def Info: esquemas/database_tese.pdf used on input line 421.
+(pdftex.def)             Requested size: 442.65375pt x 471.73157pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 437.
+(babel)             in language  on input line 431.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 437.
- [37 <./esquemas/database_tese.pdf>]
+(babel)             in language  on input line 431.
+ [38 <./esquemas/database_tese.pdf>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 440.
+               Default added (so using `tbp') on input line 434.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 468.
+               Default added (so using `tbp') on input line 462.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 490.
+(babel)             in language  on input line 484.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 490.
-[38]
+(babel)             in language  on input line 484.
+[39]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 490.
+(babel)             in language  on input line 484.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 490.
- [39]
+(babel)             in language  on input line 484.
+ [40]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 495.
+(babel)             in language  on input line 489.
 
-<esquemas/arquitetura-logica.pdf, id=1285, 639.38875pt x 372.39125pt>
+<esquemas/arquitetura-logica.pdf, id=1282, 639.38875pt x 372.39125pt>
 File: esquemas/arquitetura-logica.pdf Graphic file (type pdf)
 
 <use esquemas/arquitetura-logica.pdf>
-Package pdftex.def Info: esquemas/arquitetura-logica.pdf used on input line 508
+Package pdftex.def Info: esquemas/arquitetura-logica.pdf used on input line 502
 .
 (pdftex.def)             Requested size: 383.6362pt x 223.43646pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 515.
+(babel)             in language  on input line 509.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 527.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 527.
- [40
+(babel)             in language  on input line 532.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 532.
+ [41
 
 
  <./esquemas/arquitetura-logica.pdf>]
-Package acronym Info: Label `acro:CSS' newly defined as it shall be overridden
-although it is yet undefined on input line 527.
-Package acronym Info: Label `acro:JS' newly defined as it shall be overridden
-although it is yet undefined on input line 529.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 541.
+(babel)             in language  on input line 545.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 548.
+(babel)             in language  on input line 551.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 556.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 556.
+(babel)             in language  on input line 551.
 
-[41]
+[42]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 557.
- <esquemas/esquema-blocos.pdf, id=1311, 705.63625pt x 406.51875pt>
+(babel)             in language  on input line 552.
+ <esquemas/esquema-blocos.pdf, id=1304, 705.63625pt x 406.51875pt>
 File: esquemas/esquema-blocos.pdf Graphic file (type pdf)
 
 <use esquemas/esquema-blocos.pdf>
-Package pdftex.def Info: esquemas/esquema-blocos.pdf used on input line 567.
+Package pdftex.def Info: esquemas/esquema-blocos.pdf used on input line 562.
 (pdftex.def)             Requested size: 317.53337pt x 182.93173pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 574.
+(babel)             in language  on input line 569.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 586.
+(babel)             in language  on input line 582.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 586.
- [42 <./esquemas/esquema-blocos.pdf>]
-<esquemas/fisica-si.pdf, id=1325, 954.56625pt x 671.50874pt>
+(babel)             in language  on input line 582.
+ [43 <./esquemas/esquema-blocos.pdf>]
+<esquemas/fisica-si.pdf, id=1319, 954.56625pt x 671.50874pt>
 File: esquemas/fisica-si.pdf Graphic file (type pdf)
 
 <use esquemas/fisica-si.pdf>
-Package pdftex.def Info: esquemas/fisica-si.pdf used on input line 599.
+Package pdftex.def Info: esquemas/fisica-si.pdf used on input line 595.
 (pdftex.def)             Requested size: 442.65375pt x 311.38765pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 605.
+(babel)             in language  on input line 601.
 Package acronym Info: Label `acro:IDE' newly defined as it shall be overridden
-although it is yet undefined on input line 609.
+although it is yet undefined on input line 605.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 610.
+(babel)             in language  on input line 606.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 610.
- [43 <./esquemas/fisica-si.pdf>]
+(babel)             in language  on input line 606.
+ [44 <./esquemas/fisica-si.pdf>]
 Package acronym Info: Label `acro:ORM' newly defined as it shall be overridden
-although it is yet undefined on input line 613.
+although it is yet undefined on input line 609.
 Package acronym Info: Label `acro:SQL' newly defined as it shall be overridden
-although it is yet undefined on input line 613.
+although it is yet undefined on input line 609.
+Package acronym Info: Label `acro:CSS' newly defined as it shall be overridden
+although it is yet undefined on input line 617.
+Package acronym Info: Label `acro:JS' newly defined as it shall be overridden
+although it is yet undefined on input line 617.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 628.
+(babel)             in language  on input line 623.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 628.
- [44]
+(babel)             in language  on input line 623.
+ [45]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 657.
+(babel)             in language  on input line 652.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 652.
+ [46]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 653.
 Package acronym Info: Label `acro:REST' newly defined as it shall be overridden
 
-although it is yet undefined on input line 660.
+although it is yet undefined on input line 656.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 711.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 711.
- [45]
+ [47]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 712.
 
-<prints-web/api-doc.png, id=1409, 1371.1225pt x 770.88pt>
+<prints-web/api-doc.png, id=1408, 1371.1225pt x 770.88pt>
 File: prints-web/api-doc.png Graphic file (type png)
 
 <use prints-web/api-doc.png>
@@ -2125,11 +2123,11 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 741.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 741.
- [46 <./prints-web/api-doc.png>]
+ [48 <./prints-web/api-doc.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 773.
 
-<esquemas/arquitetura-mobile.pdf, id=1423, 610.28pt x 473.77pt>
+<esquemas/arquitetura-mobile.pdf, id=1422, 610.28pt x 473.77pt>
 File: esquemas/arquitetura-mobile.pdf Graphic file (type pdf)
 
 <use esquemas/arquitetura-mobile.pdf>
@@ -2140,7 +2138,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 799.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 799.
- [47 <./esquemas/arquitetura-mobile.pdf>]
+ [49 <./esquemas/arquitetura-mobile.pdf>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 800.
 Package babel Info: Redefining portuges shorthand "|
@@ -2150,175 +2148,174 @@ Underfull \hbox (badness 10000) in paragraph at lines 810--811
 
  []
 
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 812.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 812.
-[48]
 Package acronym Info: Label `acro:NTC' newly defined as it shall be overridden
 although it is yet undefined on input line 816.
- <img/hardware/temperatura.jpg, id=1464, 242.9075pt x 182.6825pt>
+<img/hardware/temperatura.jpg, id=1457, 242.9075pt x 182.6825pt>
 File: img/hardware/temperatura.jpg Graphic file (type jpg)
 
 <use img/hardware/temperatura.jpg>
 Package pdftex.def Info: img/hardware/temperatura.jpg used on input line 824.
 (pdftex.def)             Requested size: 177.05879pt x 133.15918pt.
 
-<img/hardware/temp-esquema.pdf, id=1465, 297.11pt x 271.0125pt>
+<img/hardware/temp-esquema.pdf, id=1458, 297.11pt x 271.0125pt>
 File: img/hardware/temp-esquema.pdf Graphic file (type pdf)
 
 <use img/hardware/temp-esquema.pdf>
 Package pdftex.def Info: img/hardware/temp-esquema.pdf used on input line 829.
 (pdftex.def)             Requested size: 177.05879pt x 161.51288pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 854.
+(babel)             in language  on input line 835.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 854.
- [49 <./img/hardware/temperatura.jpg> <./img/hardware/temp-esquema.pdf>]
+(babel)             in language  on input line 835.
+ [50 <./img/hardware/temperatura.jpg> <./img/hardware/temp-esquema.pdf>]
 Package acronym Info: Label `acro:LDR' newly defined as it shall be overridden
 although it is yet undefined on input line 857.
 
-<img/hardware/luminosidade.png, id=1482, 256.70906pt x 174.6525pt>
+<img/hardware/luminosidade.png, id=1472, 256.70906pt x 174.6525pt>
 File: img/hardware/luminosidade.png Graphic file (type png)
 
 <use img/hardware/luminosidade.png>
 Package pdftex.def Info: img/hardware/luminosidade.png used on input line 870.
 (pdftex.def)             Requested size: 177.05879pt x 120.46237pt.
 
-<img/hardware/lumi_esquema.pdf, id=1483, 331.2375pt x 271.0125pt>
+<img/hardware/lumi_esquema.pdf, id=1473, 331.2375pt x 271.0125pt>
 File: img/hardware/lumi_esquema.pdf Graphic file (type pdf)
 
 <use img/hardware/lumi_esquema.pdf>
 Package pdftex.def Info: img/hardware/lumi_esquema.pdf used on input line 875.
 (pdftex.def)             Requested size: 177.05879pt x 144.86412pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 912.
+(babel)             in language  on input line 886.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 912.
- [50 <./img/hardware/luminosidade.png> <./img/hardware/lumi_esquema.pdf>]
-<img/hardware/liquido.JPG, id=1496, 1104.125pt x 836.12375pt>
+(babel)             in language  on input line 886.
+ [51 <./img/hardware/luminosidade.png> <./img/hardware/lumi_esquema.pdf>]
+<img/hardware/liquido.JPG, id=1487, 1104.125pt x 836.12375pt>
 File: img/hardware/liquido.JPG Graphic file (type jpg)
 
 <use img/hardware/liquido.JPG>
-Package pdftex.def Info: img/hardware/liquido.JPG used on input line 925.
+Package pdftex.def Info: img/hardware/liquido.JPG used on input line 922.
 (pdftex.def)             Requested size: 177.05879pt x 134.07596pt.
 
-<img/hardware/sw_esquema.pdf, id=1497, 275.0275pt x 137.51375pt>
+<img/hardware/sw_esquema.pdf, id=1488, 275.0275pt x 137.51375pt>
 File: img/hardware/sw_esquema.pdf Graphic file (type pdf)
 
 <use img/hardware/sw_esquema.pdf>
-Package pdftex.def Info: img/hardware/sw_esquema.pdf used on input line 930.
+Package pdftex.def Info: img/hardware/sw_esquema.pdf used on input line 927.
 (pdftex.def)             Requested size: 177.05879pt x 88.53096pt.
-
-<img/hardware/led.jpg, id=1498, 144.54pt x 144.54pt>
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 934.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 934.
+ [52 <./img/hardware/liquido.JPG> <./img/hardware/sw_esquema.pdf>] <img/hardwar
+e/led.jpg, id=1497, 144.54pt x 144.54pt>
 File: img/hardware/led.jpg Graphic file (type jpg)
 
 <use img/hardware/led.jpg>
-Package pdftex.def Info: img/hardware/led.jpg used on input line 946.
+Package pdftex.def Info: img/hardware/led.jpg used on input line 943.
 (pdftex.def)             Requested size: 177.05879pt x 177.06853pt.
 
-<img/hardware/led_esquema.pdf, id=1499, 355.3275pt x 318.18875pt>
+<img/hardware/led_esquema.pdf, id=1498, 355.3275pt x 318.18875pt>
 File: img/hardware/led_esquema.pdf Graphic file (type pdf)
 
 <use img/hardware/led_esquema.pdf>
-Package pdftex.def Info: img/hardware/led_esquema.pdf used on input line 951.
+Package pdftex.def Info: img/hardware/led_esquema.pdf used on input line 948.
 (pdftex.def)             Requested size: 177.05879pt x 158.55505pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 959.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 959.
- [51 <./img/hardware/liquido.JPG> <./img/hardware/sw_esquema.pdf> <./img/hardwa
-re/led.jpg> <./img/hardware/led_esquema.pdf>]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 960.
-<img/comm-blue/HW-geral.pdf, id=1514, 870.25125pt x 363.3575pt>
+(babel)             in language  on input line 955.
+
+<img/comm-blue/HW-geral.pdf, id=1503, 870.25125pt x 363.3575pt>
 File: img/comm-blue/HW-geral.pdf Graphic file (type pdf)
 
 <use img/comm-blue/HW-geral.pdf>
-Package pdftex.def Info: img/comm-blue/HW-geral.pdf used on input line 974.
+Package pdftex.def Info: img/comm-blue/HW-geral.pdf used on input line 969.
 (pdftex.def)             Requested size: 442.65375pt x 184.8275pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 993.
+(babel)             in language  on input line 985.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 993.
- [52 <./img/comm-blue/HW-geral.pdf>]
-<img/hardware/bluetooth_zs-040.png, id=1532, 337.26pt x 302.63063pt>
+(babel)             in language  on input line 985.
+ [53 <./img/hardware/led.jpg> <./img/hardware/led_esquema.pdf>]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 988.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 988.
+ [54 <./img/comm-blue/HW-geral.pdf>]
+<img/hardware/bluetooth_zs-040.png, id=1528, 337.26pt x 302.63063pt>
 File: img/hardware/bluetooth_zs-040.png Graphic file (type png)
 
 <use img/hardware/bluetooth_zs-040.png>
 Package pdftex.def Info: img/hardware/bluetooth_zs-040.png used on input line 9
-97.
+92.
 (pdftex.def)             Requested size: 177.05879pt x 158.87883pt.
 
-<img/comm-blue/electronic-sensors.pdf, id=1533, 362.35374pt x 386.44376pt>
+<img/comm-blue/electronic-sensors.pdf, id=1529, 362.35374pt x 386.44376pt>
 File: img/comm-blue/electronic-sensors.pdf Graphic file (type pdf)
 
 <use img/comm-blue/electronic-sensors.pdf>
 Package pdftex.def Info: img/comm-blue/electronic-sensors.pdf used on input lin
-e 1002.
+e 997.
 (pdftex.def)             Requested size: 177.05879pt x 188.83429pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1043.
+(babel)             in language  on input line 1038.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1043.
- [53 <./img/hardware/bluetooth_zs-040.png> <./img/comm-blue/electronic-sensors.
+(babel)             in language  on input line 1038.
+ [55 <./img/hardware/bluetooth_zs-040.png> <./img/comm-blue/electronic-sensors.
 pdf>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1045.
+(babel)             in language  on input line 1040.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1053.
+(babel)             in language  on input line 1048.
 
-<img/vision/opencv_logo.jpg, id=1546, 217.53511pt x 72.5117pt>
+<img/vision/opencv_logo.jpg, id=1543, 217.53511pt x 72.5117pt>
 File: img/vision/opencv_logo.jpg Graphic file (type jpg)
 
 <use img/vision/opencv_logo.jpg>
-Package pdftex.def Info: img/vision/opencv_logo.jpg used on input line 1064.
+Package pdftex.def Info: img/vision/opencv_logo.jpg used on input line 1059.
 (pdftex.def)             Requested size: 221.32687pt x 73.77615pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1073.
+(babel)             in language  on input line 1068.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1073.
- [54 <./img/vision/opencv_logo.jpg>]
-<img/hardware/camera_v2.jpg, id=1554, 702.625pt x 702.625pt>
+(babel)             in language  on input line 1068.
+ [56 <./img/vision/opencv_logo.jpg>]
+<img/hardware/camera_v2.jpg, id=1551, 702.625pt x 702.625pt>
 File: img/hardware/camera_v2.jpg Graphic file (type jpg)
 
 <use img/hardware/camera_v2.jpg>
-Package pdftex.def Info: img/hardware/camera_v2.jpg used on input line 1080.
+Package pdftex.def Info: img/hardware/camera_v2.jpg used on input line 1075.
 (pdftex.def)             Requested size: 132.79747pt x 132.79253pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1106.
+(babel)             in language  on input line 1101.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1106.
- [55 <./img/hardware/camera_v2.jpg>]
+(babel)             in language  on input line 1101.
+ [57 <./img/hardware/camera_v2.jpg>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1107.
+(babel)             in language  on input line 1102.
 
-<esquemas/arquitetura-final.pdf, id=1560, 1584.92125pt x 1506.62875pt>
+<esquemas/arquitetura-final.pdf, id=1556, 1584.92125pt x 1506.62875pt>
 File: esquemas/arquitetura-final.pdf Graphic file (type pdf)
 
 <use esquemas/arquitetura-final.pdf>
-Package pdftex.def Info: esquemas/arquitetura-final.pdf used on input line 1111
+Package pdftex.def Info: esquemas/arquitetura-final.pdf used on input line 1106
 .
 (pdftex.def)             Requested size: 442.65375pt x 420.77267pt.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1123.
+(babel)             in language  on input line 1118.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1123.
- [56 <./esquemas/arquitetura-final.pdf>]
+(babel)             in language  on input line 1118.
+ [58 <./esquemas/arquitetura-final.pdf>]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 1132.
+(babel)             in language  on input line 1127.
 )
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 313.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 313.
 
-[57]
+[59]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 314.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 314.
- [58
+ [60
 
 
 ]
@@ -2342,7 +2339,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 64.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 64.
-[59
+[61
 
 
 ]
@@ -2350,7 +2347,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 71.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 71.
- [60]
+ [62]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 72.
 Package babel Info: Redefining portuges shorthand "|
@@ -2363,7 +2360,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 114.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 114.
- [61]
+ [63]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 123.
 Package babel Info: Redefining portuges shorthand "|
@@ -2372,14 +2369,14 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 141.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 141.
- [62]
+ [64]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 148.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 169.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 169.
- [63]
+ [65]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 170.
 Package babel Info: Redefining portuges shorthand "|
@@ -2400,7 +2397,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 240.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 240.
-[64]
+[66]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 250.
 Package babel Info: Redefining portuges shorthand "|
@@ -2412,12 +2409,12 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 316.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 316.
- [65]
+ [67]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 317.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 317.
- [66
+ [68
 
 
 ]
@@ -2449,7 +2446,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 325.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 325.
- [67
+ [69
 
 
 
@@ -2463,7 +2460,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 326.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 326.
- [68
+ [70
 
 
 ]
@@ -2484,7 +2481,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 328.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 328.
- [69
+ [71
 
 
 ]
@@ -2492,7 +2489,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 329.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 329.
- [70
+ [72
 
 
 ] (./thesis-roliveira.bbl
@@ -2500,7 +2497,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 80.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 80.
- [71
+ [73
 
 ]
 Underfull \hbox (badness 1635) in paragraph at lines 131--135
@@ -2512,7 +2509,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 140.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 140.
-[72]
+[74]
 Underfull \hbox (badness 4765) in paragraph at lines 191--196
 []\OT1/cmr/m/n/10.95 A. Ro-dri-guez, ``REST-ful Web ser-vi-ces: The ba-
  []
@@ -2527,12 +2524,12 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 225.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 225.
-[73])
+[75])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 358.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 358.
- [74]
+ [76]
 \openout2 = `texSource/appendix1.aux'.
 
  (./texSource/appendix1.tex
@@ -2544,7 +2541,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 358.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 358.
- [75
+ [77
 
 
 ]
@@ -2552,7 +2549,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 359.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 359.
- [76
+ [78
 
 
 ]
@@ -2567,7 +2564,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 360.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 360.
- [77
+ [79
 
 
 ]
@@ -2575,7 +2572,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 361.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 361.
- [78
+ [80
 
 
 ]
@@ -2592,7 +2589,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 31.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 31.
- [79
+ [81
 
 
 ])
@@ -2600,7 +2597,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 363.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 363.
- [80]
+ [82]
 \openout2 = `texSource/appendix4.aux'.
 
 
@@ -2612,7 +2609,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 14.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 14.
-[81
+[83
 
 
 
@@ -2620,7 +2617,7 @@ Package babel Info: Redefining portuges shorthand "|
 ]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 15.
- <img/vision/frame1.jpg, id=1845, 490.83376pt x 366.36874pt>
+ <img/vision/frame1.jpg, id=1843, 490.83376pt x 366.36874pt>
 File: img/vision/frame1.jpg Graphic file (type jpg)
 
 <use img/vision/frame1.jpg>
@@ -2634,16 +2631,16 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 70.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 70.
-[82 <./img/vision/frame1.jpg>]
+[84 <./img/vision/frame1.jpg>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 73.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 73.
- [83]
+ [85]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 74.
 
-<img/vision/frame2.jpg, id=1854, 156.585pt x 106.4778pt>
+<img/vision/frame2.jpg, id=1853, 156.585pt x 106.4778pt>
 File: img/vision/frame2.jpg Graphic file (type jpg)
 
 <use img/vision/frame2.jpg>
@@ -2657,16 +2654,16 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 118.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 118.
-[84 <./img/vision/frame2.jpg>]
+[86 <./img/vision/frame2.jpg>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 121.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 121.
- [85]
+ [87]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 122.
 
-<img/vision/frame3.png, id=1865, 1371.1225pt x 770.88pt>
+<img/vision/frame3.png, id=1863, 1371.1225pt x 770.88pt>
 File: img/vision/frame3.png Graphic file (type png)
 
 <use img/vision/frame3.png>
@@ -2680,16 +2677,16 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 168.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 168.
-[86 <./img/vision/frame3.png>]
+[88 <./img/vision/frame3.png>]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 175.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 175.
- [87]
+ [89]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 176.
 
-<img/vision/frame4.png, id=1875, 1371.1225pt x 770.88pt>
+<img/vision/frame4.png, id=1873, 1371.1225pt x 770.88pt>
 File: img/vision/frame4.png Graphic file (type png)
 
 <use img/vision/frame4.png>
@@ -2703,17 +2700,17 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 222.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 222.
-[88 <./img/vision/frame4.png>])
+[90 <./img/vision/frame4.png>])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 366.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 366.
- [89]
+ [91]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 367.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 367.
- [90
+ [92
 
 
 ]
@@ -2723,14 +2720,14 @@ Package babel Info: Redefining portuges shorthand "|
 Ap\^endice E.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
-<prints-web/login.png, id=1889, 1371.1225pt x 770.88pt>
+<prints-web/login.png, id=1888, 1371.1225pt x 770.88pt>
 File: prints-web/login.png Graphic file (type png)
 
 <use prints-web/login.png>
 Package pdftex.def Info: prints-web/login.png used on input line 6.
 (pdftex.def)             Requested size: 442.65375pt x 248.8745pt.
 
-<prints-web/register.png, id=1890, 1371.1225pt x 770.88pt>
+<prints-web/register.png, id=1889, 1371.1225pt x 770.88pt>
 File: prints-web/register.png Graphic file (type png)
 
 <use prints-web/register.png>
@@ -2745,7 +2742,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 369.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 369.
- [91
+ [93
 
 
  <./prints-web/login.png>]
@@ -2753,7 +2750,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 369.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 369.
- [92 <./prints-web/register.png>]
+ [94 <./prints-web/register.png>]
 \openout2 = `texSource/appendix6.aux'.
 
 
@@ -2766,7 +2763,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 372.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 372.
- [93
+ [95
 
 
 
@@ -2776,7 +2773,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 373.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 373.
- [94
+ [96
 
 
 ]
@@ -2787,7 +2784,7 @@ Ap\^endice G.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 1.
 
-<esquemas/arduino-fritzing/esquema-arduino_bb.pdf, id=1910, 503.8825pt x 417.56
+<esquemas/arduino-fritzing/esquema-arduino_bb.pdf, id=1908, 503.8825pt x 417.56
 pt>
 File: esquemas/arduino-fritzing/esquema-arduino_bb.pdf Graphic file (type pdf)
  <use esquemas/arduino-fritzing/esquema-arduino_bb.pdf>
@@ -2799,7 +2796,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 375.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 375.
- [95
+ [97
 
 
  <./esquemas/arduino-fritzing/esquema-arduino_bb.pdf>]
@@ -2807,7 +2804,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 376.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 376.
- [96
+ [98
 
 
 ]
@@ -2825,7 +2822,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 380.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 380.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 380.
 Package rerunfilecheck Info: File `thesis-roliveira.out' has not changed.
-(rerunfilecheck)             Checksum: 6BCD51CB67FEC3A042BAE461A744042C;8650.
+(rerunfilecheck)             Checksum: E1808A260D09F190FFDB7754C04D6856;8484.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2833,10 +2830,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 380.
  ) 
 Here is how much of TeX's memory you used:
- 23401 strings out of 494888
- 405045 string characters out of 6179127
- 648180 words of memory out of 5000000
- 25663 multiletter control sequences out of 15000+600000
+ 23411 strings out of 494888
+ 405116 string characters out of 6179127
+ 648962 words of memory out of 5000000
+ 25671 multiletter control sequences out of 15000+600000
  16685 words of font info for 63 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  68i,17n,98p,1019b,2174s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2874,10 +2871,10 @@ cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 msy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.
 pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb>
-Output written on thesis-roliveira.pdf (120 pages, 12547324 bytes).
+Output written on thesis-roliveira.pdf (122 pages, 12557794 bytes).
 PDF statistics:
- 2168 PDF objects out of 2487 (max. 8388607)
- 1801 compressed objects within 19 object streams
- 413 named destinations out of 1000 (max. 500000)
- 1204 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2167 PDF objects out of 2487 (max. 8388607)
+ 1799 compressed objects within 18 object streams
+ 415 named destinations out of 1000 (max. 500000)
+ 1188 words of extra memory for PDF output out of 10000 (max. 10000000)
 

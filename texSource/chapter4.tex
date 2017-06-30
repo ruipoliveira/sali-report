@@ -3,13 +3,13 @@
 \chapter{Sistema de controlo e monitorização: arquitetura e modelação}
 
 
-Este capítulo tem como objetivo a descrição do sistema que resultou do trabalho prático
+Este capítulo tem como principal objetivo a descrição do sistema que resultou do trabalho prático
 desta dissertação. Para esse fim, cada elemento pertencente ao sistema é caracterizado de
 acordo com as suas funções, especificidades e respectiva arquitetura. É também descrito como os elementos interagem entre si. Para além disso, é apresentado todo o processo de modelação do sistema tendo por base os requisitos adquiridos pelo cliente. 
 
 
 
-%Dashboard - Interface que apresenta a informação mais importante para o utilizador de forma apelativa, tornando mais fácil a interacção e respetiva leitura
+%Dashboard - 
 
 
 % Mockups - Design que a plataforma deverá apresentar no fim do seu desenvolvimento.
@@ -33,48 +33,47 @@ Este sistema tem como objetivo a supervisão remota da produção de salicornia,
 O esquema da figura \ref{componentesall} ilustra de um modo geral todos os componentes e as diferentes plataformas com que o cliente pode interagir. 
 
 
-Como vimos no capitulo 3, uma plantação de  Salicórnia carece de um controlo relativamente fino de certos parâmetros ambientais sobretudo da salinidade do terreno onde ela cresce. A salinidade do terreno depende, por sua vez, das chuvas, da salinidade da água dos canais da ria. Nas quintas onde se cultiva salicórnia, a produção faz-se numa espécie de leiras limitadas por pequenos canais de irrigação. Esses canais podem ser cheios de água salgada proveniente dos esteiros que rodeiam a quinta. Essa operação implica a abertura de válvulas de admissão dessa água, medida do nível da maré nos canais, monitorização da qualidade e salinidade da água exterior.
+Como vimos no capítulo 3, uma plantação de  Salicórnia carece de um controlo relativamente fino de certos parâmetros ambientais sobretudo da salinidade do terreno onde ela cresce. A salinidade do terreno depende, por sua vez, das chuvas, da salinidade da água dos canais da ria. Nas quintas onde se cultiva salicórnia, a produção faz-se numa espécie de leiras limitadas por pequenos canais de irrigação. Esses canais podem ser cheios de água salgada proveniente dos esteiros que rodeiam a quinta. Essa operação implica a abertura de válvulas de admissão dessa água, medida do nível da maré nos canais, monitorização da qualidade e salinidade da água exterior.
 
 
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[scale=0.55]{esquemas/leiras-comm-geral.pdf}
-	\caption{Ilustração da distribuição dos módulos em leiras para produção de salicornia }
+	\includegraphics[scale=0.63]{esquemas/leiras-comm-geral.pdf}
+	\caption{Ilustração da distribuição dos módulos em duas leiras}
 	\label{leira}
 \end{figure}
 
 
-Tal como ilustrado na figura \ref{leira}, pretende-se que sejam colocados módulos com sensores (\acl{SM}) distribuídos estrategicamente por cada leira. Cada um desses módulos irá comunicar com um módulo central (\acl{CM}), originando uma topologia de rede em estrela.  Por sua vez, cada um destes módulos central irá comunicar diretamente com a servidor que possibilitará que os dados sejam tratados e disponibilizados para visualização ao cliente. Pressupõe-se portanto que este ultimo módulo tenha necessariamente ligação à rede de modo a conseguir consumir a API REST por HTTP desenvolvida para o efeito. 
+Tal como ilustrado na figura \ref{leira}, pretende-se que sejam colocados módulos com sensores (\acl{SM}) distribuídos estrategicamente por cada leira. Cada um desses módulos, irá comunicar com um módulo central (\acl{CM}) originando uma topologia de rede em estrela.  Por sua vez, cada um destes módulos centrais irá comunicar diretamente com o servidor que permitirá receber todos os dados adquiridos tanto pelos sensores como por atuadores, permitindo que estes sejam guardados numa base de dados especifica. Os atuadores, permitiram despoletar ações que autorizam a ativação ou desativação de bombas e/ou válvulas para transferências de águas de modo a melhorar as condições de cultivo da Salicornia. 
+Pretende-se que os módulos centrais tenham acesso à camada protocolar \acs{TCP}/\acs{IP} (Internet) de modo a permitir a utilização da \acs{API} \acs{REST} via \ac{HTTP} desenvolvida para o efeito. 
+
+No que diz respeito às plataformas para interação com o cliente, pretende-se que exista uma \textit{dashboard} e uma aplicação \textit{mobile}. A dashboard disponibilizará  uma interface que apresenta as informações mais importante para o utilizador de forma apelativa, tornando mais fácil a sua interação e respetiva leitura, possibilitando ainda gerir todo o sistema e realizar operações de controlo remoto. Por outro lado, a aplicação \textit{mobile} permitirá apenas a monitorização do cultivo da Salicornia e receção de alertas quando estes ocorram.
 
 
-falar mais sobre as plataformas 
 
 
-
-\newpage
 \section{Componentes}
 
 No contexto desta dissertação é necessário reter dois conceitos principais, são eles: 
 
 \begin{itemize}
-	\item \textbf{\textit{\acl{SM}}:} consiste num módulo responsável pela aquisição de dados provenientes dos mais diversos tipos de sensores.
+	\item \textbf{\acl{SM}:} consiste num módulo responsável pela aquisição de dados provenientes dos mais diversos tipos de sensores. 
 	
 	
-	\item \textbf{\textit{\acl{CM}}:} consiste num módulo responsável pela receção dos dados/estados do \acl{SM} e respetivo envio para a \textit{cloud}.  
+	\item \textbf{\acl{CM}:} consiste num módulo responsável pela receção dos dados/estados do \acl{SM} e respetivo envio para a \textit{cloud}.  
 	
 \end{itemize}
 
 
-O cenário da figura \ref{esquema1} ilustra três \acl{SM} que comunicam com um \acl{CM}. Cada um desses \acl{SM} possui um conjunto especifico de sensores e comunica com \acl{CM} através de um determinado modulo de comunicação. Posteriormente, o \acl{CM} possui um determinado protocolo de comunicação que permite a utilização de uma API REST criada para o efeito. 
-
+O cenário da figura \ref{esquema1} ilustra três \textit{Sensor Modules} que comunicam com um \acl{CM}. Cada um desses \acl{SM} possui um conjunto especifico de sensores, podendo estes ser atuadores ou câmaras. Para a comunicação com o \acl{CM}, cada \acl{SM} possui determinado módulo de comunicação que permita a transferência dos dado adquiridos pelos sensores. Posteriormente, o \acl{CM} possui um determinado protocolo de comunicação (TPC/IP) que permita a utilização da API REST e respetivo envio ou atualização dos dados adquiridos pelo sistema. 
 
 
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\linewidth]{esquemas/general-electronic-modules.pdf}
-	\caption{Esquema de componentes da comunicação de três \ac{SM} com um \ac{CM}}
+	\includegraphics[scale=0.3]{esquemas/general-electronic-modules.pdf}
+	\caption{Esquema de componentes e respetiva comunicação entre três \ac{SM} e um \ac{CM}}
 	\label{esquema1}
 \end{figure}
 
@@ -83,14 +82,19 @@ Seguidamente serão especificados todos os detalhes de cada modulo, uma vez que 
 
 
 
-\newpage
 \subsection{\acl{SM}}
 
 
 
-Um \acl{SM} consiste num microcontrolador responsável pela aquisição de dados provenientes dos mais diversos tipos de sensores. Cada \acl{SM} terá que utilizar um determinado módulo de comunicação de modo a possibilitar a comunicação com um módulo central. Para além disso, pretende-se que o sensor module possa ter controlo sobre si, ou seja, inteligência própria. 
+Um \acl{SM} consiste num micro-controlador responsável pela aquisição de dados provenientes dos mais diversos tipos de sensores, podendo estes ser atuadores ou câmaras. No caso de se tratar de um atuador, isto é, válvulas, bombas, contadores, pás ou cancelas, apenas serão lidos valores binários. Caso se trate de uma câmara, todo o processamento é feito internamente nesta, sendo que o sistema apenas irá receber o IP da mesma. 
 
-Prentede-se que este módulo seja identificado por um determinado nome, possua uma bateria que permita a sua mobilidade, um ou vários modulos de comunicação que permita comunicar com um módulo centrar, uma memoria e um módulo \ac{GPS} que permita aceder à sua localização. Para além disso, um \acl{SM} terá que possuir um ou vários sensores.  
+
+Tal como referido anteriormente, cada \acl{SM} terá que utilizar um determinado módulo de comunicação para possibilitar a transferência dos dados adquiridos para o módulo central. Para além disso, pretende-se que o \acl{SM} em condições extremas, possa tomar decisões de atuação, isto é, caso seja lido um valor fora do padrão e que seja necessário a ativação de um atuador, este deverá ser auto suficiente em tomar esta decisão, sem necessidade de intervenção do utilizador. 
+
+Pretende-se que este módulo seja identificado por um determinado nome, possua uma bateria que permita a sua mobilidade, tenha um ou vários módulos de comunicação acoplados que permitam comunicar com um módulo centrar, uma memoria e um módulo \ac{GPS} que permita aceder à sua localização, identificando-o em caso de furto. Para além disso, um \acl{SM} terá que possuir obrigatoriamente um ou vários sensores.
+
+
+
 
 
 
@@ -100,9 +104,9 @@ Prentede-se que este módulo seja identificado por um determinado nome, possua u
 
 
 
-\acl{CM} consiste num microcontrolador responsável pela receção dos dados preveniente dos \acl{SM}. Pretende-se que este módulo envie informações para os \acl{SM} quando requisitados pelo utilizador. O principal objetivo deste módulo consiste em receber a informação proveniente dos \ac{SM} e respectivo envio para um servidor em \textit{cloud}. 
+Um \acl{CM} consiste num micro-controlador responsável pela receção dos dados preveniente dos vários \textit{Sensor Modules}. Pretende-se que este módulo envie ou receba informações para os \acl{SM} quando solicitados pelo utilizador. Após a receção dos dados, estes são enviado para um servidor em \textit{cloud} através de uma API REST crida para o efeito. Sendo que o REST opera sobre HTTP, tal como vimos anteriormente, será necessário como requisito base deste componente o acesso à rede Internet via TCP/IP. 
 
-Pretende-se que este módulo seja identificado por um determinado nome, tenho um  módulo de comunicação que possibilite o envio de dados para o servidor e um campo que nos permita definir o tempo de receção desses dados. Para alem disso, pretende-se que exista um módulo de \ac{GPS} que permita localizar o \acl{CM} em caso de robo.
+Pretende-se que este módulo possua alguma capacidade de processamento, uma vez que poderá ter vários \textit{Sensor Modules} a sí associados e com necessidade de constante envio e receção de dados.  Para além disso, pretende-se que o \acl{CM} seja identificado por um determinado nome, tenha um  módulo de comunicação que possibilite o envio de dados para um servidor e outros para comunicação com os diferentes \textit{Sensor Modules}. Tal como acontece com os \textit{Sensor Modules}, existe necessidade de acoplado um módulo \ac{GPS} que permita localizar o micro-controlador em caso de robo.
  
 
 
@@ -119,13 +123,16 @@ Pretende-se que este módulo seja identificado por um determinado nome, tenho um
 
 
 \section{Análise de requisitos}
+\label{sect:analise}
 
-Durante o desenvolvimento um software pressupõe-se que os seus intervenientes sigam determinadas metodologia para o seu programa possa revolucionar a vida de um grupo em especifico ou até mesmo da sociedade. 
+Durante o desenvolvimento um \textit{software} pressupõe-se que os seus intervenientes sigam determinadas metodologia para que o seu sistema possa revolucionar a vida de um grupo em especifico ou até mesmo da sociedade. 
 
 
-O ciclo de vida do desenvolvimento de um software, também conhecido como \ac{SDLC}, é composto genericamente por quatro fase principais: concepção, projeto, criação e a implementação. Antes do \ac{SDLC}, o processo de desenvolvimento do software foi tomado como atividade informal sem regras e padrões formais. Isso poderá levar a vários problemas, tais como o atraso no desenvolvimento, aumento de custos e baixa qualidade do software criado. 
+O ciclo de vida do desenvolvimento de um software, também conhecido como \ac{SDLC}, é composto genericamente por quatro fases principais: conceção, projeto, criação e a implementação. Antes do \ac{SDLC}, o processo de desenvolvimento do \textit{software} foi tomado como atividade informal sem regras nem padrões formais. Este facto poderá originar vários problemas, tais como o atraso no desenvolvimento, aumento de custos e baixa qualidade do \textit{software} criado. Existem enumerados modelos e visões que propõe alguns padrões e etapas necessárias ao desenvolvimento de um sistema com qualidade.
+Na figura \ref{sdlcartic} encontram-se as várias etapas consideradas por \textit{Munish Kaur et al.}\cite{Saini2014} que seguidamente são descritas. 
 
-O ciclo de vida do desenvolvimento de um software dá o padrão necessário e as etapas para o desenvolvimento de um software com qualidade. Existem enumeros modelos e visões para o ciclo de vida de desenvolvimento, o que a seguir descrevo foi considerado por Munish Kaur \cite{Saini2014}. A figura \ref{sdlcartic} mostra as várias etapas que compõe este modelos e que seguidamente são descritas. 
+
+
 
 
 \begin{figure}[!htb]
@@ -139,46 +146,35 @@ O ciclo de vida do desenvolvimento de um software dá o padrão necessário e as
 
 
 \begin{itemize}
-	\item \textbf{Análise de viabilidade}: nesta fase é analisada a viabilidade do projeto, sendo analisados dados de entrada e saida, processamento necessário, análise de custos e planeamento do projeto. Nesta fase é incluida a viabilidade técnica em termos de software, hardware e pessoas qualificadas. 
+	\item \textbf{Análise de viabilidade}: nesta fase é analisada a viabilidade do projeto, sendo analisados dados de entrada e saída, processamento necessário, análise de custos e planeamento do projeto. Nesta fase é incluída a viabilidade técnica em termos de \textit{software}, \textit{hardware} e pessoas qualificadas. 
 	
-	\item \textbf{Analise e especificação de requisitos}: nesta fase são recolhidos e analisados os requisitos necessário para a elaboração do \textit{software}. Pretende-se que no final desta fase sejam conhecidos os vários requisitos do software e seja também criado um documento que os especifique. 
+	\item \textbf{Analise e especificação de requisitos}: nesta fase são recolhidos e analisados os requisitos necessário para a elaboração do \textit{software}. Pretende-se que no final desta fase sejam conhecidos os vários requisitos do \textit{software} e seja também criado um documento que os especifique. 
 	
-	\item  \textbf{\textit{Designing}}: consiste na tradução dos requisitos especificado na fase anterior para a estrutura lógica.Pretende-se que seja elaborado um documento de especificação do \textit{design}. 
+	\item  \textbf{\textit{Designing}}: consiste na tradução dos requisitos especificado para uma estrutura lógica. Pretende-se que seja elaborado um documento de especificação do \textit{design}. 
 	
 	
 	\item  \textbf{\textit{Coding}}: o programação real é elaborada nesta fase. O documento de \textit{design} é traduzido para o código-fonte numa determinada linguagem de forma a que possa ser executado. 
 	
 	\item \textbf{Testes}: o código-fonte gerado na fase anterior é testado usando vários cenários de testes. São usadas várias técnicas de teste para avaliar a correção e validação do \textit{software}. 
 	
-	\item  \textbf{Implementação}: o software desenvolvido é implementado para que possa ser disponbilizado ao utilizador para uso real. Pretende-se que o utilizado do sistema possa reportar erros ou problemas quando encontrados. 
+	\item  \textbf{Implementação}: o \textit{software} desenvolvido é implementado para que possa ser disponibilizado ao utilizador para uso real. Pretende-se que o utilizado do sistema possa reportar erros ou problemas quando encontrados. 
 	
-	\item  \textbf{Manutenção}: o software poderá sofrer alterações que possam solucionar problemas que tenham ocorrido. Esta fase é responsável pela pós-implementação e manutenção do software para o seu bom funcionamento.
+	\item  \textbf{Manutenção}: o \textit{software} poderá sofrer alterações que possam solucionar problemas que tenham ocorrido. Esta fase é responsável pela pós-implementação e manutenção do \textit{software} para o seu bom funcionamento.
 	
 \end{itemize}
 
-
-
-
 %http://www.sersc.org/journals/IJSEIA/vol8_no3_2014/38.pdf
 
-
-
-
-A forma como um software realiza as tarefas para as quais foi desenvolvido determina a eficiência de execução do mesmo\cite{Requirementsengineering}. O levantamento de requisitos é umas das fases essenciais no processo de desenvolvimento de um determinado sistema, que nos leva a entender o que o cliente deseja ou acredita precisar levando-nos à criação dos processos de negócio do sistema. 
-
-
-Seguidamente são apresentados os requisitos funcionais e não funcionais do sistema. 
-
-
+Após entender a descrição geral do sistema bem como todos os componentes envolvidos, segue a fase de efectuar o levantamento dos requisitos do sistema, levando-nos a entender o que o cliente deseja ou acredita precisar possibilitando a criação dos processos de negocio necessários ao sistema. Seguidamente serão apresentados os requisitos funcionais e não funcionais deste sistema. 
 
 
 \subsection{Requisitos funcionais}
 
 
-Os requisitos funcionais descrevem os critérios que devem ser usados para avaliar as funções especificas ou os comportamentos de um determinado sistema. Seguidamente são apresentados os requisitos funcionais propostos pelo cliente no contexto deste projeto para as duas plataformas disponíveis: web (dashboard) e mobile. 
+Os requisitos funcionais descrevem os critérios que devem ser usados para avaliar as funções especificas ou os comportamentos de um determinado sistema. Seguidamente são apresentados os requisitos funcionais propostos pelo cliente no contexto deste projeto para as duas plataformas disponíveis: web (\textit{dashboard}) e mobile. \\
 
 
-\textbf{Aplicação mobile (dashboard)}
+\textbf{Aplicação web (\textit{dashboard})}
 
 
 \begin{itemize}
@@ -186,55 +182,63 @@ Os requisitos funcionais descrevem os critérios que devem ser usados para avali
 	
 	\item A interface do sistema deve permitir que o utilizador, seja ele qual for, saia ou faça \textit{logout} no sistema.
 	
-	\item O dashboard deverá permitir que qualquer utilizador possa recuperar a sua chave de acesso ao sistema.
+	\item O \textit{dashboard} deverá permitir que qualquer utilizador possa recuperar a sua chave de acesso ao sistema.
+
+	\item O sistema deve permitir que o utilizador possa adicionar e/ou gerir um ou vários módulos de sensores. 
 	
+	\item A aplicação web deve permitir visualizar graficamente os dados que cada sensor obtém. 
+		
+	\item O sistema de permitir visualizar tabularmente (\textit{dataset}) os dados que cada sensor obtém. 
+	
+	\item Em cada uma das visualizações anteriormente descritas, pretende-se que seja possível efetuar uma filtragem por data.
+	
+	\item O sistema deverá permitir a exportação dos dados obtidos pelos sensores  em formato \ac{CSV}. 
+		
+	\item O sistema deve ter a capacidade de gerar alarmes quando algum valor lido pelos sensores esteja fora do previsto. 
+	
+\end{itemize}
+
+
+De modo a tornar o sistema genérico e \textit{standalone} foram impostos os seguintes requisitos adicionais: 
+
+
+\begin{itemize}
 	\item O sistema deve permitir que qualquer utilizador se possa registar no sistema, embora tenha que estar obrigatoriamente associado a uma empresa.
 	
-	\item O utilizador comum só terá acesso à sua área reserva após a validação por parte da empresa.   
+	\item O utilizador comum só terá acesso à sua área reserva após a validação por parte da empresa.
 	
-	\item O dashboard deverá permitir ao administrador a adição de novas empresas e a gestão de todos os utilizadores. 
+	\item A \textit{dashboard} deverá permitir ao administrador a adição de novas empresas e a gestão de todos os utilizadores. 
+	
 	
 	\item O sistema deve permitir que qualquer utilizador possa adicionar, editar ou remover: 
 	\begin{itemize}
-		\item Tipos de sensores
+		\item Tipos de sensores; 
 		
-		\item Tipos de comunicação
+		\item Tipos de comunicação;
 		
-		\item Controller modules com as suas caracteristicas
+		\item \acl{CM} com as respetivas especificações e características;
 		
-		\item Tipo de comunicação a um controller modules que permite a comunicação como servidor 
+		\item Tipo de comunicação a um \acl{CM} que possibilite a sua comunicação como o servidor; 
 		
-		\item Sensor modules a um determinado controller modules e as suas características 
+		\item  \textit{Sensor Modules} a um determinado \acl{CM} com as suas respetivas especificações e características; 
 		
-		\item Um ou vários tipos de comunicação de um Sensor moduel
+		\item Um ou vários tipos de comunicação a um \acl{SM} que permita a sua comunicação com um \acl{CM}. 
 		
-		\item Um ou vários sensores a um sensor module em que cada sensor é de um determinado tipo 
 		
+		\item Um ou vários sensores a um \acl{SM} em que cada sensor poderá ser de um determinado tipo
 	\end{itemize}
 	
-	\item Visualizar graficamente os dados de cada sensor para um determinado \ac{SM}. 
+		
+	\item O sistema deverá disponibilizar uma \ac{API} que permita a criação de novas aplicações com base nesta. 
 	
+	\item Consultar a documentação da \ac{API} de modo interativo. 
 	
-	\item Visualizar em modo tabular (dataset) os dados de cada sensor para um determinado \ac{SM}. 
+	\item Gerar e consultar  \textit{token} de autenticação para utilização da \ac{API} 
 	
-	\item Em cada uma das visualizações anteriormente descritas, pretende-se que seja possível uma filtragem por data
-	
-	
-	\item O sistema permitirá a exportação dos dados de um determinado \ac{SM} em formato \ac{CSV}. 
-	
-	\item O sistema deverá disponibilizar uma API que...  
-	
-	\item Consultar a documentação da API 
-	
-	\item Consultar o token de autenticação da API 
-	
-	
-	
-	\item Alterar configurações do utilizador 
-	
-	
+	\item Alterar configurações base de utilizador 
 	
 \end{itemize}
+	
 
 
 \textbf{Aplicação mobile}
@@ -247,9 +251,9 @@ Os requisitos funcionais descrevem os critérios que devem ser usados para avali
 	\item A interface da aplicação mobile deve permitir que o utilizador, seja ele qual for, saia ou faça \textit{logout} no sistema.
 	
 	
-	\item Visualizar graficamente os dados de cada sensor para um determinado \ac{SM}. 
+	\item A aplicação mobile deve permitir visualizar graficamente os dados de cada sensor. 
 	
-	\item Receber alarmes quando um determinado valor lido está fora do estipulado.
+	\item  A aplicação deve permitir receber alarmes quando um determinado valor lido pelo sensor esteja fora do pretendido.
 	
 	
 \end{itemize}
@@ -259,9 +263,8 @@ Os requisitos funcionais descrevem os critérios que devem ser usados para avali
 \subsection{Requisitos não funcionais}
 
 
-Requisitos não funcionais são todos os requisitos da aplicação relacionados com
-performance, escalabilidade, segurança, disponibilidade e usabilidade. Estes não são
-necessariamente pedidos pelo cliente. 
+Os requisitos não funcionais são todos os requisitos da aplicação relacionados com
+performance, escalabilidade, segurança, disponibilidade e usabilidade. Estes não são necessariamente pedidos pelo cliente, embora grande parte exista com devido 
 
 
 \begin{itemize}
@@ -275,35 +278,30 @@ necessariamente pedidos pelo cliente.
 	
 	\item Deverá ser usada, na medida do possível, tecnologias sem qualquer custo para o cliente (\textit{opensource}). 
 	
-	\item Pretende-se que o sistema possa ser adaptado a qualquer outro contexto. 
-	
-
-	
-	
+	\item Pretende-se que o sistema possa ser adaptado a qualquer outro contexto, não sendo especificamente restrito ao contexto da produção da Salicornia.  
+		
 \end{itemize}
 
 
 
 \section{Modelação}
 
-A conceção de uma arquitetura envolve o estudo e modelacao de compontes que sao necessários para a elaboracao da mesma, bem como a analise dos casos de uso, modelos de dados e diagramas de fluxos, entre outros, para melhor entender como emparelhar a estrutura pretendida. Na secção será... %% rever... .................. 
+Tal como vimos no inicio da secção \ref{sect:analise}, a conceção de uma arquitetura envolve o estudo e respetiva modelação dos componentes que são fundamentais para a realização da mesma, bem como a análise dos casos de uso e respetiva especificação, criação do modelo de dados, diagramas de fluxos, entre outros. Toda esta modelação será descrita neste secção permitindo entender melhor como emparelhar toda a estrutura pretendida. 
 
 
 
-\subsection{Entidades envolventes}
-
-
+\subsection{Entidades envolvidas}
 
 
 No contexto do sistema descrito existem três entidades distintas que são importantes descrever: 
 
 \begin{itemize}
 	
-	\item \textbf{General user}: este poderá registar-se e associando-se a uma determinada empresa registada no sistema. Após a validação por parte da empresa, este utilizador poderá aceder à sua área reservada através das dashboard ou da aplicação mobile. 
+	\item \textbf{General user}: este ator poderá registar-se e associando-se a uma determinada empresa existente no sistema. Após a validação por parte da empresa, este utilizador poderá aceder à sua área reservada através da \textit{dashboard} ou da aplicação mobile. 
 	
-	\item \textbf{Company user}: utilizador que gere todos os general users que se possam associar à sua empresa. Deste modo, este utilizador poderá validar os general users que a si se associam ou eliminá-los.  
+	\item \textbf{Company user}: este utilizador tem a possibilidade de gerir todos os \textit{general users} que se possam associar à sua empresa. Deste modo, este utilizador poderá validar ou remover os \textit{general users} que a si se associam. 
 	
-	\item \textbf{Administrador}: vulgarmente denominado por Admin. Pretende-se que apenas exista uma único administrador. Genericamente este utilizador tem a possibilidade de poder adicionar novas empresas ao sistema, isto é, criar novas utilizador com permissões especificas. 
+	\item \textbf{Administrador}: vulgarmente denominado por Admin. Pretende-se que apenas exista uma único administrador. Este ator tem a possibilidade de adicionar novas empresas ao sistema, isto é, criar novas utilizador com permissões especificas. 
 	
 \end{itemize}
 
@@ -313,9 +311,9 @@ No contexto do sistema descrito existem três entidades distintas que são impor
 \subsection{Casos de uso}
 
 
-Nas figuras \ref{usedash} e \ref{useMobile} encontram-se representados os esquemas dos casos de uso da \textit{dashboard} (denominada por saliDashboard) e da aplicação \textit{mobile} (denominada por saliMobile), respectivamente.
-Seguidamente serão descritos cada um dos casos de uso para as duas plataformas. De notar que todos os casos de uso na aplicação mobile também se encontram disponíveis através da dashboard. 
-
+Nas figuras \ref{usedash} e \ref{useMobile} encontram-se representados os esquemas dos casos de uso da \textit{dashboard} (denominada por \textit{saliDashboard}) e da aplicação \textit{mobile} (denominada por \textit{saliMobile}), respectivamente.
+Seguidamente serão descritos cada um dos casos de uso para as duas plataformas. De notar que todos os casos de uso na aplicação \textit{mobile} também se encontram disponíveis através da \textit{dashboard}. 
+\newpage
 
 \begin{figure}[!htb]
 	\centering
@@ -325,7 +323,7 @@ Seguidamente serão descritos cada um dos casos de uso para as duas plataformas.
 \end{figure}
 
 
-\newpage
+
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=\linewidth]{esquemas/use-case-mobile.pdf}
@@ -336,7 +334,7 @@ Seguidamente serão descritos cada um dos casos de uso para as duas plataformas.
 
 
 
-
+\newpage
 \begin{itemize}
 	\item \textbf{Login no sistema}: qualquer utilizador (general user, company user ou admin) poderá aceder ao sistema tendo para ir que possuir uma conta registada e validada no caso do user general. Após a validação das suas credenciais (username e password) o utilizador poderá aceder à pagina inicial da dashboard e a todo o seu conteúdo. Este caso de uso encontra-se disponível para os dois tipos de plataformas. 
 	
@@ -406,10 +404,6 @@ Seguidamente serão descritos cada um dos casos de uso para as duas plataformas.
 
 
 
-De acordo com a figura \ref{useMobile} , é possível descrever os seguintes casos de uso: 
-
-
-
 
 
 
@@ -430,7 +424,7 @@ Depois da análise de requisitos desenhou-se um modelo de dados que permitisse m
 \end{figure}
 
 
-Nas tabelas \ref{tabeladb1} e \ref{tabeladb2} são descritos descritos cada uma das tabelas de dados existentes neste sistema, evidenciando as chaves primária e estrangeiras de cada uma. 
+Nas tabelas \ref{tabeladb1} e \ref{tabeladb2} são descritos cada uma das entidades de dados existente neste sistema, evidenciando as chaves primária e estrangeiras de cada uma. 
 
 
 
@@ -455,7 +449,7 @@ Nas tabelas \ref{tabeladb1} e \ref{tabeladb2} são descritos descritos cada uma 
 		\textbf{CommunicationType} & id (auto-incrementado) & N/A & \begin{tabular}[c]{@{}l@{}}Identifica cada um dos tipos \\ de comunicação inseridos \\ no sistema\end{tabular} \\ \hline
 		\textbf{ControllerModule} & id (auto-incrementado) & N/A & \begin{tabular}[c]{@{}l@{}}Identifica cada um dos \\ controller module \\ inseridos no sistema\end{tabular} \\ \hline
 	\end{tabular}
-	\caption{My caption}
+	\caption{Especificação das tabelas existentes no sistema }
 	\label{tabeladb1}
 \end{table}
 
@@ -483,7 +477,7 @@ Nas tabelas \ref{tabeladb1} e \ref{tabeladb2} são descritos descritos cada uma 
 		\textbf{Reading} & id (auto-incrementado) & sensor\_id & \begin{tabular}[c]{@{}l@{}}Permite guardar as leituras de \\ um determinado sensor\end{tabular} \\ \hline
 		\textbf{Alarms} & id (auto-incrementado) & reading\_id & \begin{tabular}[c]{@{}l@{}}Armazena os alarmes \\ que são gerados\end{tabular} \\ \hline
 	\end{tabular}
-	\caption{My caption}
+	\caption{Especificação das tabelas existentes no sistema (continuação) }
 	\label{tabeladb2}
 \end{table}
 
@@ -507,7 +501,7 @@ escalabilidade, fatores importantes quando queremos partilhar funcionalidades e 
 	\centering
 	\includegraphics[scale = 0.6]{esquemas/arquitetura-logica.pdf}
 	\caption{Arquitetura lógica}
-	\label{opencvlogo}
+	\label{logicaarqu}
 \end{figure}
 
 
@@ -522,27 +516,30 @@ A interface do utilizador foi desenvolvida em  \ac{HTML} e \acs{CSS}, fazendo us
 
 
 
+
+
+
+
+
+
+
+
+\subsection{Camada da lógica de negócio}
+
+É nesta camada que é realizado todo o processamento dos dados adquiridos pelos sensores ou introduzidos pelos utilizadores do sistema através da camada de apresentação. 
+
+
+Tal como apresentado na figura \ref{logicaarqu}, existem quatro sub-camadas principais, que enfatizam os principiais conceitos existentes na camada de negócio. 
+
+
 \begin{itemize}
-	\item \ac{HTML} é a linguagem padrão usada para estruturar e apresentar conteúdos na web. Neste caso, foi utilizado HTML5, a quinta versão do \ac{HTML}.
-	\item \ac{CSS} é uma linguagem usada para descrever a apresentação de conteúdo escrito em uma marcação Como HTML.
+	\item \textbf{Gestão de utilizadores}: todas as operações realizadas por cada utilizador devem ser medidas pelas permissões que estes possuem. Nesta camada é verificado se um determinado utilizador viola ou não essas permissões. 
 	
-	\item \ac{JS} é a linguagem de programação para páginas da web.
-	\item \textbf{JQuery}: JQuery é uma biblioteca Javascript que simplifica a programação Javascript
+	\item \textbf{Geração de alarmes}: todos os alarmes são gerados conforme a verificação automática realizada a cada valor que chega ao sistema. 
+	\item \textbf{Cálculos estatísticos}: este componente da camada de lógica de negócio ganha especial relevância na altura em que se pretende determinar os valores médios, máximos e minimos de um conjunto de medições para um determinado intervalo de tempo. 
+	\item \textbf{Comunicação via \ac{API}}: este componente é fundamental para que se possa aceder, atualizar ou adicionar dados ao sistema de um modo simples.
 \end{itemize}
 
-
-
-
-
-
-
-
-
-\subsection{Camada de lógica de negócio}
-
-
-
-verificar se valor se encontra lido se encontra dentro dos settings e gerar alarme 
 
 
 \subsection{Camada de acesso a dados}
@@ -551,14 +548,12 @@ verificar se valor se encontra lido se encontra dentro dos settings e gerar alar
 Nesta camada deverão estar presentes as funcionalidades de criação, edição, remoção ou simples de visualização dos dados, sendo responsável pelas operações de persistência e consulta de dados solicitadas pela camada de lógica de negócio.
 
 
-
-
 \newpage
 \section{Arquitetura física}
 
 
 Enquanto que a arquitetura lógica se concentra nos diferentes níveis de abstração do sistema a arquitetura física foca-se na estrutura de alto nível.  
-Seguidamente são apresentados todos os componentes físicos, tanto  a nível de software com de hardware, que são fundamentais para ter um maior perceção do real funcionamento de todo o sistema. 
+Seguidamente são apresentados todos os componentes físicos, tanto  a nível de \textit{software} com de \textit{hardware}, que são fundamentais para ter um maior perceção do real funcionamento de todo o sistema. 
 A figura \ref{fisicablocos} representa genericamente os blocos principais do sistema proposto que seguidamente serão descritos. 
 
 
@@ -574,12 +569,13 @@ A figura \ref{fisicablocos} representa genericamente os blocos principais do sis
 \subsection{Sistema de informação}
 
 
-Segundo Laudon et al. \cite{Laudon1998}  um sistema de informação define-se como sendo uma inter-relação de múltiplos componente podendo estes ser equipamentos, telecomunicações, software, bases de dados e outras tecnologias de transformação de informação usadas para recolha, processamento, armazenamento e distribuição de informação que possibilita a tomada de decisões e controlo para uma determinada organização, ou até mesmo para a sociedade em geral, de modo a torná-la mais acessível e útil.
+Segundo \textit{Laudon et al.}\cite{Laudon1998} um sistema de informação define-se como sendo uma inter-relação de múltiplos componente podendo estes ser equipamentos, telecomunicações, \textit{software}, bases de dados e outras tecnologias de transformação de informação. Todos estes componentes permitem a recolha, processamento, armazenamento e distribuição de informação que possibilita a tomada de decisões e controlo para uma determinada organização, ou até mesmo para a sociedade, de modo a torná-la mais acessível e útil.
 
-Dada a elevada complexidade de um sistema de informação, é possivel identificar algumas funcionalidade comuns aos diversos sistema, são eles \cite{Turban1996}: 
+Dada a elevada complexidade de um sistema de informação, é possivel identificar algumas funcionalidade comuns aos diversos sistema existentes, são eles\cite{Turban1996}: 
 
 \begin{itemize}
-	\item \textbf{Recolha de dados}: sequência de tarefas que permitem a adição de novos dados ao sistema
+	\item \textbf{Recolha de dados}: sequência de tarefas que permitem a adição de novos dados ao sistema.
+	
 	\item \textbf{Organização e armazenamento de dados}: é imprescindível uma boa organização na estrutura de dados possibilitando uma fácil e rápida localização.
 	\item \textbf{Processamento de dados}: qualquer funcinalidade que permita a produção de resultados mais úteis do que os dados em bruto. 
 	 
@@ -591,7 +587,7 @@ Dada a elevada complexidade de um sistema de informação, é possivel identific
 
 
 
-A figura \ref{arquiteturasi} ilustra a arquitetura do sistema de informação incluindo especificamente a base de dados, \ac{API}, \textit{dashboard} e respetiva implementação do sistema. 
+A figura \ref{arquiteturasi} ilustra a arquitetura do sistema de informação incluindo especificamente a aplicação web (\textit{dashboard}), base de dados, \acs{API}   e respetiva implementação do sistema. 
 
 
 \begin{figure}[h]
@@ -608,7 +604,7 @@ A aplicação web é um componente essencial, enquadrando-se na camada de lógic
 
 Tal como vimos na secção do estado de arte, a tecnologia para o desenvolvimento web recaiu sobre a \textit{framework} Django, mais precisamente na versão 1.11 para python 2.7, sendo que como \ac{IDE} foi utilizada a verão 2016.3.3 do PyCharm.
 
-Dada a facilidade com que a framework django tem em manipular view e templates, optou-se que tanto o desenvolvimento frontend da aplicação web como obviamente backend seja desenvolvido em Django. Para além disso, optou-se por criar uma API RESt que permitisse a manipulação dos dados existentes na base de dados, sendo esta também desenvolvida paralelamente com a aplicação web. Seguidamente será explicada a sua arquitetura.   
+Dada a facilidade com que a framework django tem em manipular view e templates, optou-se que tanto o desenvolvimento frontend da aplicação web como obviamente backend seja desenvolvido utilizando esta framework. Para além disso, optou-se por criar uma API REST que permitisse a manipulação dos dados existentes na base de dados, sendo esta também desenvolvida paralelamente com a aplicação web. Seguidamente será explicada a sua arquitetura.   
 
 Uma das coisas mais interessantes no Django é sem dúvidas a existência de \ac{ORM}. Consiste numa técnica de desenvolvimento que permite modelar os dados através de classes em Python. Através dela, é possível gerar tabelas na base de dados e manipulá-las sem a necessidade de interagir diretamente com \ac{SQL} (embora também seja possível). Existiu necessidade de criar um script em \ac{SQL} que verifica os valores lido pelos sensores gerandam ou não um alarmes. Caso o valor lido esteja fora dos valores previsto então é gerado um alarme e o utilizador será notificado, no capitulo seguinte será descrita a sua implementação. 
 
@@ -653,7 +649,7 @@ Base de dados -> fazer ligação com API
 
 
 
-
+\newpage
 \subsubsection{\acs{API} \acs{REST}}
 
 
@@ -703,6 +699,10 @@ framework Django REST é um conjunto de ferramentas poderoso e flexível para a 
 
 
 
+
+
+
+
 Autenticação
 
 
@@ -712,7 +712,7 @@ Seguidamente será apresentada como foi criada a documentação desta API.
 \subsubsection{Documentação interativa}
 
 
-Para a geração automática da documentação da API utilizou-se o Swagger. Tal como descrito no site oficial desta framework \cite{SmartBearSoftware2017}, o Swagger é considerada a ferramenta de APIs mais popular e completa de todo o mundo permitindo facilmente o desenvolvimento do ciclo de vida de uma API, desde o design, documentação, testes e também implementação, tendo a grande vantagem de ser opensource. Neste contexto, apenas será utilizada como documentação, de modo a facilitar a sua interpretação da API criada. O swagger possui uma interface apelativa e intuitiva, 
+Para a geração automática da documentação da API utilizou-se o Swagger. Tal como descrito no site oficial desta framework \cite{SmartBearSoftware2017}, o Swagger é considerada a ferramenta de APIs mais popular e completa de todo o mundo permitindo facilmente o desenvolvimento do ciclo de vida de uma API, desde o design, documentação, testes e também implementação, tendo a grande vantagem de ser \textit{opensource}. Neste contexto, apenas será utilizada como documentação, de modo a facilitar a interpretação da API criada. O swagger possui uma interface apelativa e intuitiva, 
 permitindo interagir com a API e permitindo também que os seus utilizadores tenham uma ideia geral de como esta responde aos pedidos para diversos parâmetros e opções. 
 
 
@@ -782,7 +782,7 @@ Phonegap + angular js
 	\centering
 	\includegraphics[scale = 0.5]{esquemas/arquitetura-mobile.pdf}
 	\caption{Arquitetura do sistema de informação (dashboard e API)}
-	\label{arquiteturasi}
+	\label{arquiteturamobile}
 \end{figure}
 
 
@@ -800,22 +800,22 @@ De modo a facilitar a manipulação em javascript optou-se por utilizar a framew
 \subsection{Simulação em hardware}
 
 
-Após a desenvolvimento da API anteriormente descrita, pretendeu-se simular o sistema num contexto real. Para tal, planeou-se encontrar hardware que encaixasse no contexto deste projeto. Foram utilizados dois micro-controladores (Arduino e Raspberry Pi) e alguns sensores. Neste contexto, assume-se que o Arduino é considerado um \ac{SM} que possui um conjunto de sensores enquanto que o Raspberry Pi é um \ac{CM} que recebe os dados provenientes do \ac{SM} enviando-os para o servidor web.  
+Após a desenvolvimento da API, pretendeu-se simular o sistema num contexto real. Para tal, pretendeu-se encontrar hardware que encaixasse no contexto deste projeto. Foram utilizados dois micro-controladores (Arduino e Raspberry Pi) e alguns sensores. Para este cenário, assume-se que o Arduino é considerado um \acl{SM} que possui um conjunto de sensores enquanto que o Raspberry Pi é um \acl{CM} que recebe os dados provenientes do \acl{SM} enviando-os para o servidor.  
 
-Seguidamente, são apresentados os sensores utilizados bem como o tipo de comunicação. 
+Seguidamente, são apresentados os sensores utilizados bem como os tipos de comunicação. 
  
 
 \subsubsection{Sensores utilizados}
 
-Nesta secção serão apresentados os sensores utilizados na simulação e as suas principais características. Todos os sensores foram escolhidos tendo em conta o seu enquadramento no projeto e a sua disponibilidade no laboratório. Todos os sensores que se apresentam encontram-se ligados a um Arduino nano. \\
+Nesta secção serão apresentados os sensores utilizados na simulação e as suas principais características. Todos os sensores foram escolhidos tendo em conta o seu enquadramento no projeto e a sua disponibilidade em laboratório. Todos os sensores que se apresentam encontram-se ligados a um Arduino Nano, segundo o esquema apresentado no Anexo X. \\
 
-\newpage
+
 \textbf{Temperatura}
 
 
-Como sensor de temperatura foi utilizado um termístor do tipo \ac{NTC}. Como vimo anteriormente, um termístor é um semicondutor sensível à temperatura i.e. cujo o coeficiente de variação da resistência com a temperatura é negativa, ou seja, quando a temperatura sobe então consequentemente a resistência diminui. 
+Como sensor de temperatura foi utilizado um termístor do tipo \ac{NTC}. Como vimo na secção X, um termístor é um semicondutor sensível à temperatura i.e. cujo o coeficiente de variação da resistência com a temperatura é negativa, ou seja, quando a temperatura sobe então consequentemente a resistência diminui. 
 
-Na figura \ref{esquema-temp} encontra-se o esquema de ligação deste componente e na tabela \ref{table-temp} as propriedades principais. 
+Na figura \ref{esquema-temp} encontra-se o esquema de ligação deste componente e na tabela \ref{table-temp} as suas propriedades principais. 
 
 
 \begin{figure}[h]
@@ -832,7 +832,7 @@ Na figura \ref{esquema-temp} encontra-se o esquema de ligação deste componente
 	\end{minipage}
 \end{figure}
 
-
+\newpage
 
 \begin{table}[h]
 	\centering
@@ -851,10 +851,10 @@ Na figura \ref{esquema-temp} encontra-se o esquema de ligação deste componente
 \end{table}
 
 
-\newpage
+
 \textbf{Luminosidade}
 
-Para simular a luminosidade incidente foi utilizado um sensor do tipo foto-resistência. Este sensor, também conhecido como \ac{LDR}, não é mais do que uma resistência variável cujo o seu valor varia conforme a intensidade da luz que incide sobre ele i.e. à medida que a intensidade da luz aumenta, a sua resistência diminui. Este sensor tem múltiplas aplicações, entre as quais se destaca a monitorização solar, indicador da posição do sol (up/down), alarmes anti-roubo, alarme para abertura/fecho de portas entre outras. 
+Para simular a luminosidade incidente foi utilizado um sensor do tipo foto-resistência. Este sensor, também conhecido como \ac{LDR}, não é mais do que uma resistência variável cujo o seu valor varia conforme a intensidade da luz que incide sobre ele, isto é, à medida que a intensidade da luz aumenta, a sua resistência diminui. Este sensor tem múltiplas aplicações, entre as quais se destaca a monitorização solar, indicador da posição do sol (up/down), alarmes anti-roubo, alarme para abertura/fecho de portas entre outras. 
 
 Como vimos na secção X do capitulo do Estado de Arte é um sensor de baixo custo e bastante fácil de utilização. Na figura \ref{lum-esquema} encontra-se o esquema de ligação do componente e na tabela \ref{lum-cara} são apresentadas as principais características do sensor utilizado. 
 
@@ -883,10 +883,7 @@ Como vimos na secção X do capitulo do Estado de Arte é um sensor de baixo cus
 
 
 
-
-
-
-
+\newpage
 
 \begin{table}[h]
 	\centering
@@ -909,9 +906,9 @@ Como vimos na secção X do capitulo do Estado de Arte é um sensor de baixo cus
 \end{table}
 
 
-\newpage
 
-\textbf{Sensor de nível líquido}
+
+\textbf{Sensor para estado do nível líquido}
 
 Este sensor não é mais do que um interruptor que é ativo sempre que um determinado líquido ultrapassa o mesmo. Sempre que algum líquido atingir o pedaço de plástico este irá subir ativando assim o circuito. 
 Na figura \ref{esquem-liquido} encontra-se o esquema da ligação deste sensor.
@@ -931,10 +928,10 @@ Na figura \ref{esquem-liquido} encontra-se o esquema da ligação deste sensor.
 		\caption{Esquema eletrotécnico da ligação do sensor de nível líquido}
 		\label{esquem-liquido}
 	\end{minipage}
-\end{figure}
+\end{figure} 
 
 
-
+\newpage
 \textbf{Simulador de válvula para transferências de águas}
 
 Para a simulação de uma válvula que permitirá as transferência de água doce e salgada foi utilizado um simples \textit{led}. Este possibilita facilmente identificar através da ativação do \textit{led} se a válvula se encontra ativa ou não. 
@@ -955,8 +952,6 @@ Para a simulação de uma válvula que permitirá as transferência de água doc
 
 
 
-
-\newpage
 \subsubsection{Comunicação}
 
 Nesta secção, será apresentado o tipo de comunicação para este cenário de simulação. Pretendeu-se que cada um dos módulo ficassem isolados entre si, o que implicou o estudo e respetiva escolha de algumas tecnologias de comunicações sem fio. Neste caso, foram escolhidas as seguintes: 
@@ -972,7 +967,7 @@ O esquema da figura \ref{esquemcomm} pretende esquematizar os tipos de comunica�
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=\linewidth]{img/comm-blue/HW-geral.pdf}
-	\caption{Arquitetura lógica}
+	\caption{Comunicação entre componentes da simulação em hardware}
 	\label{esquemcomm}
 \end{figure}
 
@@ -1110,7 +1105,7 @@ Eis algumas das características principais do Raspberry Pi Camera Board V2:
 	\centering
 	\includegraphics[width=\linewidth]{esquemas/arquitetura-final.pdf}
 	\caption{Esquema relacional da estrutura da base de dados}
-	\label{esquemarelacional}
+	\label{componentesall}
 \end{figure}
 
 
