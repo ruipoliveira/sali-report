@@ -30,18 +30,17 @@ Database file #1: tese.bib
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 Warning--edition ordinal word "Natural Pr" may be too high (or improper) for conversion in overviewsal
 Warning--there is url but no urldate in Saini2014
-Warning--missing publisher in chambers
 Warning--empty journal in chenopodiaceae
 Warning--missing publisher in ferri
 Warning--there is url but no urldate in Silva2000
-Warning--there is url but no urldate in Ventura2011
+Warning--there is url but no urldate in Rubio-Casal2003
 Warning--empty journal in Filomena2009
+Warning--there is url but no urldate in Ventura2011
 Warning--there is url but no urldate in Wang2012
 Warning--empty journal in Evans2011a
 Warning--empty journal in Our2013
 Warning--there is url but no urldate in Rowley2007
 Warning--there is url but no urldate in Abreu2012
-Warning--there is url but no urldate in Requirementsengineering
 Warning--there is url but no urldate in Turban1996
 Warning--empty journal in Rodriguez2015
 Warning--there is url but no urldate in Rodriguez2015
@@ -49,47 +48,49 @@ Warning--empty author in temp-dta
 Warning--empty journal in temp-dta
 Warning--empty year in temp-dta
 Warning--there is url but no urldate in temp-dta
+Warning--empty journal in GuangzhouHCInformationTechnologyCo.2011
+Warning--there is url but no urldate in Kotsiantis2007
 
 Done.
-You've used 31 entries,
+You've used 35 entries,
             4106 wiz_defined-function locations,
-            1048 strings with 13814 characters,
-and the built_in function-call counts, 18084 in all, are:
-= -- 1451
-> -- 389
-< -- 117
-+ -- 202
-- -- 72
-* -- 894
-:= -- 2970
-add.period$ -- 60
-call.type$ -- 31
-change.case$ -- 35
-chr.to.int$ -- 261
-cite$ -- 52
-duplicate$ -- 1305
-empty$ -- 1475
-format.name$ -- 84
-if$ -- 4079
+            1075 strings with 14593 characters,
+and the built_in function-call counts, 20276 in all, are:
+= -- 1644
+> -- 421
+< -- 130
++ -- 220
+- -- 78
+* -- 1003
+:= -- 3350
+add.period$ -- 69
+call.type$ -- 35
+change.case$ -- 38
+chr.to.int$ -- 282
+cite$ -- 57
+duplicate$ -- 1476
+empty$ -- 1642
+format.name$ -- 91
+if$ -- 4568
 int.to.chr$ -- 0
-int.to.str$ -- 31
-missing$ -- 248
-newline$ -- 156
-num.names$ -- 35
-pop$ -- 633
+int.to.str$ -- 35
+missing$ -- 282
+newline$ -- 176
+num.names$ -- 37
+pop$ -- 717
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 4
-skip$ -- 1373
+skip$ -- 1540
 stack$ -- 0
-substring$ -- 615
-swap$ -- 973
-text.length$ -- 30
+substring$ -- 674
+swap$ -- 1099
+text.length$ -- 36
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 31
-warning$ -- 21
-while$ -- 82
-width$ -- 33
-write$ -- 336
-(There were 21 warnings)
+type$ -- 35
+warning$ -- 22
+while$ -- 90
+width$ -- 37
+write$ -- 382
+(There were 22 warnings)

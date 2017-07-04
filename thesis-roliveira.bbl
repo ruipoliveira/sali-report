@@ -21,6 +21,13 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{AdoKukic2016}
+\BIBentryALTinterwordspacing
+{Ado Kukic}, ``{Cookies vs Tokens: The Definitive Guide},'' 2016. [Online].
+  Available: \url{https://auth0.com/blog/cookies-vs-tokens-definitive-guide}
+  [Accessed: 2017-07-03]
+\BIBentrySTDinterwordspacing
+
 \bibitem{overviewsal}
 V.~Isca, A.~Seca, D.~Pinto, and A.~Silva, \emph{{An overview of Salicornia
   genus: the phytochemical and pharmacological profile}}, natural pr~ed.,
@@ -35,10 +42,6 @@ P.~T. Hiep, H.~Noi, V.~Nam, N.~H. Hoang, H.~Noi, and V.~Nam, ``{A Review of
   391--402, 2014. [Online]. Available:
   \url{http://dx.doi.org/10.14257/ijseia.2014.8.3.38}
 \BIBentrySTDinterwordspacing
-
-\bibitem{chambers}
-T.~Davidson, \emph{{Chambers twentieth century dictionary}}, {W. {\&} R. Ch},
-  Ed., London, 1903.
 
 \bibitem{JoaoSilva}
 \BIBentryALTinterwordspacing
@@ -63,12 +66,12 @@ M.~H.~A. Silva, ``{Aspectos morfol{\'{o}}gicos e ecofisiol{\'{o}}gicos de
   \url{http://ria.ua.pt/handle/10773/925}
 \BIBentrySTDinterwordspacing
 
-\bibitem{Davy2001}
-A.~J. Davy, G.~F. Bishop, and C.~S.~B. Costa, ``{Salicornia L. (Salicornia
-  pusilla J. Woods, S. ramosissima J. Woods, S. europaea L., S. obscura P.W.
-  Ball {\&} Tutin, S. nitens P.W. Ball {\&} Tutin, S. fragilis P.W. Ball {\&}
-  Tutin and S. dolichostachya Moss)},'' \emph{Journal of Ecology}, vol.~89,
-  no.~4, pp. 681--707, 2001.
+\bibitem{Figueroa1987}
+E.~Figueroa, J.~Jimenez-Nieva, J.~Carranza, and C.~{Gonzalez Vilches},
+  ``{Distribucion y Nutricion Mineral de Salicornia ramosissima J. Woods,
+  Salicornia europaea L. y Salicornia dolichostachya Moss. en el estuario de
+  los rios Odiel y Tinto (Huelva, SO Espa{\~{n}}a)},'' \emph{Limnetica},
+  vol.~3, no.~2, pp. 307--310, 1987.
 
 \bibitem{RaquelPinto}
 \BIBentryALTinterwordspacing
@@ -77,17 +80,31 @@ R.~Pinto, ``{Expresso | A planta que {\'{e}} uma alternativa ao sal: antes era
   \url{http://bit.ly/1PR7KAG} [Accessed: 2017-02-01]
 \BIBentrySTDinterwordspacing
 
-\bibitem{Figueroa1987}
-E.~Figueroa, J.~Jimenez-Nieva, J.~Carranza, and C.~{Gonzalez Vilches},
-  ``{Distribucion y Nutricion Mineral de Salicornia ramosissima J. Woods,
-  Salicornia europaea L. y Salicornia dolichostachya Moss. en el estuario de
-  los rios Odiel y Tinto (Huelva, SO Espa{\~{n}}a)},'' \emph{Limnetica},
-  vol.~3, no.~2, pp. 307--310, 1987.
+\bibitem{Davy2001}
+A.~J. Davy, G.~F. Bishop, and C.~S.~B. Costa, ``{Salicornia L. (Salicornia
+  pusilla J. Woods, S. ramosissima J. Woods, S. europaea L., S. obscura P.W.
+  Ball {\&} Tutin, S. nitens P.W. Ball {\&} Tutin, S. fragilis P.W. Ball {\&}
+  Tutin and S. dolichostachya Moss)},'' \emph{Journal of Ecology}, vol.~89,
+  no.~4, pp. 681--707, 2001.
 
 \bibitem{Silva2007}
 H.~Silva, G.~Caldeira, and H.~Freitas, ``{Salicornia ramosissima population
   dynamics and tolerance of salinity},'' \emph{Ecological Research}, vol.~22,
   no.~1, pp. 125--134, 2007.
+
+\bibitem{Rubio-Casal2003}
+\BIBentryALTinterwordspacing
+A.~Rubio-Casal, J.~Castillo, C.~Luque, and M.~Figueroa, ``{Influence of
+  salinity on germination and seeds viability of two primary colonizers of
+  Mediterranean salt pans},'' \emph{Journal of Arid Environments}, vol.~53,
+  no.~2, pp. 145--154, feb 2003. [Online]. Available:
+  \url{http://linkinghub.elsevier.com/retrieve/pii/S0140196302910426}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Filomena2009}
+M.~Filomena, D.~J. Raposo, R.~Manuel, S.~Costa, A.~Maria, and M.~Bernardo,
+  ``{Controlled atmosphere storage for the preservation of Salicornia
+  ramosissima},'' no. October 2016, 2009.
 
 \bibitem{Ventura2011}
 \BIBentryALTinterwordspacing
@@ -98,11 +115,6 @@ Y.~Ventura, W.~A. Wuddineh, M.~Myrzabayeva, Z.~Alikulov, I.~Khozin-Goldberg,
   Horticulturae}, vol. 128, no.~3, pp. 189--196, apr 2011. [Online]. Available:
   \url{http://linkinghub.elsevier.com/retrieve/pii/S0304423811000537}
 \BIBentrySTDinterwordspacing
-
-\bibitem{Filomena2009}
-M.~Filomena, D.~J. Raposo, R.~Manuel, S.~Costa, A.~Maria, and M.~Bernardo,
-  ``{Controlled atmosphere storage for the preservation of Salicornia
-  ramosissima},'' no. October 2016, 2009.
 
 \bibitem{Wang2012}
 \BIBentryALTinterwordspacing
@@ -158,14 +170,6 @@ A.~S. H.~G. Abreu, ``{Sistema de Monitoriza{\c{c}}{\~{a}}o de Estufas
   Available: \url{http://ria.ua.pt/handle/10773/10269}
 \BIBentrySTDinterwordspacing
 
-\bibitem{Requirementsengineering}
-\BIBentryALTinterwordspacing
-B.~Nuseibeh and S.~Easterbrook, ``{Requirements engineering},''
-  \emph{Proceedings of the conference on The future of Software engineering -
-  ICSE '00}, vol.~1, pp. 35--46, 2000. [Online]. Available:
-  \url{http://portal.acm.org/citation.cfm?doid=336512.336523}
-\BIBentrySTDinterwordspacing
-
 \bibitem{Laudon1998}
 Laudon, C.~Kenneth, Laudon, and P.~Jane, \emph{{Management Information Systems
   New Approaches to Organization {\&} Technology}}.\hskip 1em plus 0.5em minus
@@ -192,6 +196,12 @@ A.~Rodriguez, ``{RESTful Web services: The basics},'' no. February, pp. 1--11,
   2015. [Online]. Available:
   \url{https://pdfs.semanticscholar.org/ca66/561d3602f65aef1301145e4e2689681b1967.pdf
   http://www.ibm.com/developerworks/webservices/library/ws-restful/}
+\BIBentrySTDinterwordspacing
+
+\bibitem{tokenREST}
+\BIBentryALTinterwordspacing
+T.~Christie, ``{Django REST framework TokenAuthentication},'' 2016. [Online].
+  Available: \url{http://www.django-rest-framework.org} [Accessed: 2017-07-03]
 \BIBentrySTDinterwordspacing
 
 \bibitem{SmartBearSoftware2017}
@@ -223,10 +233,29 @@ L.~{LIDA OPTICAL{\&}ELECTRONIC CO.}, ``{Datasheet, CdS Photoconductive cells,
   2017-05-24]
 \BIBentrySTDinterwordspacing
 
+\bibitem{GuangzhouHCInformationTechnologyCo.2011}
+L.~{Guangzhou HC Information Technology Co .}, ``{HC06 Datasheet},'' no.~13,
+  pp. 1--17, 2011.
+
 \bibitem{Itseez}
 \BIBentryALTinterwordspacing
 Itseez, ``{About - OpenCV library}.'' [Online]. Available:
   \url{http://opencv.org/about.html} [Accessed: 2017-05-19]
+\BIBentrySTDinterwordspacing
+
+\bibitem{Kotsiantis2007}
+\BIBentryALTinterwordspacing
+H.~A. Razavi and T.~R. Kurfess, ``{Detection of Wheel and Workpiece
+  Contact/Release in Reciprocating Surface Grinding},'' \emph{Journal of
+  Manufacturing Science and Engineering}, vol. 125, no.~2, p. 394, 2003.
+  [Online]. Available:
+  \url{http://manufacturingscience.asmedigitalcollection.asme.org/article.aspx?articleid=1447160}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Nginx2017}
+\BIBentryALTinterwordspacing
+Nginx, ``{Welcome to NGINX Wiki! | NGINX},'' 2017. [Online]. Available:
+  \url{https://www.nginx.com/resources/wiki/} [Accessed: 2017-07-04]
 \BIBentrySTDinterwordspacing
 
 \end{thebibliography}

@@ -18,12 +18,12 @@ acordo com as suas funções, especificidades e respectiva arquitetura. É tamb�
 
 \section{Descrição global do sistema}
 
-Este sistema tem como objetivo a supervisão remota da produção de salicornia,  permitindo não só a monitorização dos dados adquiridos pelos sensores, como também da atuação remota de determinados comandos. Neste contexto, também será possível a aquisição de imagens que possibilitará a deteção de intrusos nas quintas onde se realiza a produção desta espécie.
+Este sistema tem como objetivo a supervisão remota da produção de Salicórnia, permitindo não só a monitorização dos dados adquiridos pelos sensores, como também da atuação remota de determinados comandos. Neste contexto, também será possível a aquisição de imagens que possibilitará a deteção de intrusos nas quintas onde se realiza a produção desta espécie.
 
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[scale=0.45]{esquemas/global_arquitetura.pdf}
+	\includegraphics[scale=0.5]{esquemas/global_arquitetura.pdf}
 	\caption{Ilustração principais componentes}
 	\label{componentesall}
 \end{figure}
@@ -33,7 +33,7 @@ Este sistema tem como objetivo a supervisão remota da produção de salicornia,
 O esquema da figura \ref{componentesall} ilustra de um modo geral todos os componentes e as diferentes plataformas com que o cliente pode interagir. 
 
 
-Como vimos no capítulo 3, uma plantação de  Salicórnia carece de um controlo relativamente fino de certos parâmetros ambientais sobretudo da salinidade do terreno onde ela cresce. A salinidade do terreno depende, por sua vez, das chuvas, da salinidade da água dos canais da ria. Nas quintas onde se cultiva salicórnia, a produção faz-se numa espécie de leiras limitadas por pequenos canais de irrigação. Esses canais podem ser cheios de água salgada proveniente dos esteiros que rodeiam a quinta. Essa operação implica a abertura de válvulas de admissão dessa água, medida do nível da maré nos canais, monitorização da qualidade e salinidade da água exterior.
+Como vimos no capítulo 3, uma plantação de  Salicórnia carece de um controlo relativamente fino de certos parâmetros ambientais sobretudo da salinidade do terreno onde ela cresce, que depende, das chuvas, da salinidade da água dos canais da ria, entre outros. Nas quintas onde se cultiva salicórnia, a produção faz-se numa espécie de leiras limitadas por pequenos canais de irrigação que podem ser cheios de água salgada proveniente dos esteiros que rodeiam a quinta. Esta operação implica a abertura de válvulas de admissão dessa água, medida do nível da maré nos canais, monitorização da qualidade e salinidade da água exterior.
 
 
 
@@ -45,7 +45,7 @@ Como vimos no capítulo 3, uma plantação de  Salicórnia carece de um controlo
 \end{figure}
 
 
-Tal como ilustrado na figura \ref{leira}, pretende-se que sejam colocados módulos com sensores (\acl{SM}) distribuídos estrategicamente por cada leira. Cada um desses módulos, irá comunicar com um módulo central (\acl{CM}) originando uma topologia de rede em estrela.  Por sua vez, cada um destes módulos centrais irá comunicar diretamente com o servidor que permitirá receber todos os dados adquiridos tanto pelos sensores como por atuadores, permitindo que estes sejam guardados numa base de dados especifica. Os atuadores, permitiram despoletar ações que autorizam a ativação ou desativação de bombas e/ou válvulas para transferências de águas de modo a melhorar as condições de cultivo da Salicornia. 
+Tal como ilustrado na figura \ref{leira}, pretende-se que sejam colocados módulos com sensores (\acl{SM}) distribuídos estrategicamente por cada leira. Cada um desses módulos, irá comunicar com um módulo central (\acl{CM}) originando uma topologia de rede em estrela.  Por sua vez, cada um destes módulos centrais irá comunicar diretamente com o servidor que permitirá receber todos os dados adquiridos tanto pelos sensores como por atuadores, permitindo que estes sejam guardados numa base de dados especifica. Os atuadores, permitirão despoletar ações que autorizam a ativação ou desativação de bombas e/ou válvulas para transferências de águas de modo a melhorar as condições de cultivo da Salicornia. 
 Pretende-se que os módulos centrais tenham acesso à camada protocolar \acs{TCP}/\acs{IP} (Internet) de modo a permitir a utilização da \acs{API} \acs{REST} via \ac{HTTP} desenvolvida para o efeito. 
 
 No que diz respeito às plataformas para interação com o cliente, pretende-se que exista uma \textit{dashboard} e uma aplicação \textit{mobile}. A dashboard disponibilizará  uma interface que apresenta as informações mais importante para o utilizador de forma apelativa, tornando mais fácil a sua interação e respetiva leitura, possibilitando ainda gerir todo o sistema e realizar operações de controlo remoto. Por outro lado, a aplicação \textit{mobile} permitirá apenas a monitorização do cultivo da Salicornia e receção de alertas quando estes ocorram.
@@ -104,9 +104,9 @@ Pretende-se que este módulo seja identificado por um determinado nome, possua u
 
 
 
-Um \acl{CM} consiste num micro-controlador responsável pela receção dos dados preveniente dos vários \textit{Sensor Modules}. Pretende-se que este módulo envie ou receba informações para os \acl{SM} quando solicitados pelo utilizador. Após a receção dos dados, estes são enviado para um servidor em \textit{cloud} através de uma API REST crida para o efeito. Sendo que o REST opera sobre HTTP, tal como vimos anteriormente, será necessário como requisito base deste componente o acesso à rede Internet via TCP/IP. 
+Um \acl{CM} consiste num micro-controlador responsável pela receção dos dados prevenientes dos vários \textit{Sensor Modules}. Pretende-se que este módulo envie ou receba informações para os \acl{SM} quando solicitados pelo utilizador. Após a receção dos dados, estes são enviados para um servidor em \textit{cloud} através de uma \ac{API} \ac{REST} criada para o efeito. Sendo que a tecnologia \ac{REST} opera sob o protocolo de comunicação \ac{HTTP}, este componente tem que necessariamente estar ligado à rede Internet via \ac{TCP}/\ac{IP}. 
 
-Pretende-se que este módulo possua alguma capacidade de processamento, uma vez que poderá ter vários \textit{Sensor Modules} a sí associados e com necessidade de constante envio e receção de dados.  Para além disso, pretende-se que o \acl{CM} seja identificado por um determinado nome, tenha um  módulo de comunicação que possibilite o envio de dados para um servidor e outros para comunicação com os diferentes \textit{Sensor Modules}. Tal como acontece com os \textit{Sensor Modules}, existe necessidade de acoplado um módulo \ac{GPS} que permita localizar o micro-controlador em caso de robo.
+Pretende-se que este módulo possua alguma capacidade de processamento, uma vez que poderá ter vários \textit{Sensor Modules} a si associados e com necessidade de constante envio e receção de dados.  Para além disso, pretende-se que o \acl{CM} seja identificado por um determinado nome, tenha um  módulo de comunicação que possibilite o envio de dados para um servidor e outros para comunicação com os diferentes \textit{Sensor Modules}. Tal como acontece com os \textit{Sensor Modules}, existe necessidade de acoplado um módulo \ac{GPS} que permita localizar o micro-controlador em caso de robo.
  
 
 
@@ -125,11 +125,11 @@ Pretende-se que este módulo possua alguma capacidade de processamento, uma vez 
 \section{Análise de requisitos}
 \label{sect:analise}
 
-Durante o desenvolvimento um \textit{software} pressupõe-se que os seus intervenientes sigam determinadas metodologia para que o seu sistema possa revolucionar a vida de um grupo em especifico ou até mesmo da sociedade. 
+Durante o desenvolvimento de \textit{software} pressupõe-se que os seus intervenientes sigam determinadas metodologias para que o seu sistema possa revolucionar a vida de um grupo em especifico ou até mesmo da sociedade. 
 
 
-O ciclo de vida do desenvolvimento de um software, também conhecido como \ac{SDLC}, é composto genericamente por quatro fases principais: conceção, projeto, criação e a implementação. Antes do \ac{SDLC}, o processo de desenvolvimento do \textit{software} foi tomado como atividade informal sem regras nem padrões formais. Este facto poderá originar vários problemas, tais como o atraso no desenvolvimento, aumento de custos e baixa qualidade do \textit{software} criado. Existem enumerados modelos e visões que propõe alguns padrões e etapas necessárias ao desenvolvimento de um sistema com qualidade.
-Na figura \ref{sdlcartic} encontram-se as várias etapas consideradas por \textit{Munish Kaur et al.}\cite{Saini2014} que seguidamente são descritas. 
+O ciclo de vida do desenvolvimento de um software, também conhecido como \ac{SDLC}, é composto genericamente por quatro fases principais: conceção, projeto, criação e a implementação. Antes do \ac{SDLC}, o processo de desenvolvimento do \textit{software} foi tomado como atividade informal sem regras nem padrões formais. Este facto poderá originar vários problemas, tais como o atraso no desenvolvimento, aumento de custos e baixa qualidade do \textit{software} criado. Existem enumerados modelos e visões que propõem alguns padrões e etapas necessárias ao desenvolvimento de um sistema com qualidade.
+Na figura \ref{sdlcartic} encontram-se as várias etapas consideradas por \textit{Munish Kaur et al.}\cite{Saini2014}.
 
 
 
@@ -146,14 +146,14 @@ Na figura \ref{sdlcartic} encontram-se as várias etapas consideradas por \texti
 
 
 \begin{itemize}
-	\item \textbf{Análise de viabilidade}: nesta fase é analisada a viabilidade do projeto, sendo analisados dados de entrada e saída, processamento necessário, análise de custos e planeamento do projeto. Nesta fase é incluída a viabilidade técnica em termos de \textit{software}, \textit{hardware} e pessoas qualificadas. 
+	\item \textbf{Análise de viabilidade}: nesta fase são analisados os dados de entrada e saída, processamento necessário, análise de custos e planeamento do projeto. Nesta fase é incluída a viabilidade técnica em termos de \textit{software}, \textit{hardware} e pessoas qualificadas. 
 	
-	\item \textbf{Analise e especificação de requisitos}: nesta fase são recolhidos e analisados os requisitos necessário para a elaboração do \textit{software}. Pretende-se que no final desta fase sejam conhecidos os vários requisitos do \textit{software} e seja também criado um documento que os especifique. 
+	\item \textbf{Análise e especificação de requisitos}: nesta fase são recolhidos e analisados os requisitos necessário para a elaboração do \textit{software}. Pretende-se que no final desta fase sejam conhecidos os vários requisitos do \textit{software} e seja também criado um documento que os especifique. 
 	
 	\item  \textbf{\textit{Designing}}: consiste na tradução dos requisitos especificado para uma estrutura lógica. Pretende-se que seja elaborado um documento de especificação do \textit{design}. 
 	
 	
-	\item  \textbf{\textit{Coding}}: o programação real é elaborada nesta fase. O documento de \textit{design} é traduzido para o código-fonte numa determinada linguagem de forma a que possa ser executado. 
+	\item  \textbf{\textit{Coding}}: a programação real é elaborada nesta fase. O documento de \textit{design} é traduzido para o código-fonte numa determinada linguagem de forma a que possa ser executado. 
 	
 	\item \textbf{Testes}: o código-fonte gerado na fase anterior é testado usando vários cenários de testes. São usadas várias técnicas de teste para avaliar a correção e validação do \textit{software}. 
 	
@@ -165,13 +165,13 @@ Na figura \ref{sdlcartic} encontram-se as várias etapas consideradas por \texti
 
 %http://www.sersc.org/journals/IJSEIA/vol8_no3_2014/38.pdf
 
-Após entender a descrição geral do sistema bem como todos os componentes envolvidos, segue a fase de efectuar o levantamento dos requisitos do sistema, levando-nos a entender o que o cliente deseja ou acredita precisar possibilitando a criação dos processos de negocio necessários ao sistema. Seguidamente serão apresentados os requisitos funcionais e não funcionais deste sistema. 
+Após o entendimento da descrição geral do sistema bem como todos os componentes envolvidos, segue a fase de efectuar o levantamento dos requisitos do sistema, levando-nos a entender o que o cliente deseja ou acredita precisar possibilitando a criação dos processos de negocio necessários ao sistema. Seguidamente serão apresentados os requisitos funcionais e não funcionais deste sistema. 
 
 
 \subsection{Requisitos funcionais}
 
 
-Os requisitos funcionais descrevem os critérios que devem ser usados para avaliar as funções especificas ou os comportamentos de um determinado sistema. Seguidamente são apresentados os requisitos funcionais propostos pelo cliente no contexto deste projeto para as duas plataformas disponíveis: web (\textit{dashboard}) e mobile. \\
+Os requisitos funcionais descrevem os critérios que devem ser usados para avaliar as funções especificas ou os comportamentos de um determinado sistema. Os requisitos funcionais que de seguida se apresentam são propostos pelo cliente no contexto deste projeto para as duas plataformas disponíveis: web (\textit{dashboard}) e mobile. \\
 
 
 \textbf{Aplicação web (\textit{dashboard})}
@@ -263,8 +263,7 @@ De modo a tornar o sistema genérico e \textit{standalone} foram impostos os seg
 \subsection{Requisitos não funcionais}
 
 
-Os requisitos não funcionais são todos os requisitos da aplicação relacionados com
-performance, escalabilidade, segurança, disponibilidade e usabilidade. Estes não são necessariamente pedidos pelo cliente, embora grande parte exista com devido 
+Os requisitos não funcionais são todos os requisitos da aplicação relacionados com performance, escalabilidade, segurança, disponibilidade e usabilidade. Estes não são necessariamente pedidos pelo cliente, embora grande parte exista com devido 
 
 
 \begin{itemize}
@@ -283,7 +282,7 @@ performance, escalabilidade, segurança, disponibilidade e usabilidade. Estes n�
 \end{itemize}
 
 
-
+\newpage
 \section{Modelação}
 
 Tal como vimos no inicio da secção \ref{sect:analise}, a conceção de uma arquitetura envolve o estudo e respetiva modelação dos componentes que são fundamentais para a realização da mesma, bem como a análise dos casos de uso e respetiva especificação, criação do modelo de dados, diagramas de fluxos, entre outros. Toda esta modelação será descrita neste secção permitindo entender melhor como emparelhar toda a estrutura pretendida. 
@@ -292,8 +291,7 @@ Tal como vimos no inicio da secção \ref{sect:analise}, a conceção de uma arq
 
 \subsection{Entidades envolvidas}
 
-
-No contexto do sistema descrito existem três entidades distintas que são importantes descrever: 
+As entidades envolvidas ou atores são os utilizadores do sistema, podendo ser humanos ou entidade máquina, que interagem com o sistema para executar uma determinada ação significativo. No contexto do sistema descrito existem três entidades distintas que são importantes descrever: 
 
 \begin{itemize}
 	
@@ -336,7 +334,7 @@ Seguidamente serão descritos cada um dos casos de uso para as duas plataformas.
 
 \newpage
 \begin{itemize}
-	\item \textbf{Login no sistema}: qualquer utilizador (general user, company user ou admin) poderá aceder ao sistema tendo para ir que possuir uma conta registada e validada no caso do user general. Após a validação das suas credenciais (username e password) o utilizador poderá aceder à pagina inicial da dashboard e a todo o seu conteúdo. Este caso de uso encontra-se disponível para os dois tipos de plataformas. 
+	\item \textbf{Login no sistema}: qualquer utilizador (general user, company user ou admin) poderá aceder ao sistema tendo para isso que possuir uma conta registada e validada no caso do general user. Após a validação das suas credenciais (username e password) o utilizador poderá aceder à pagina inicial da dashboard e a todo o seu conteúdo. Este caso de uso encontra-se disponível para os dois tipos de plataformas. 
 	
 	
 	\item \textbf{Logout no sistema}: qualquer utilizador (general user, company user ou admin) poderá sair da sistema tendo que para isso tenha que estar obrigatoriamente logado no sistema. Após o logout ser-lhe-á apresentado novamente a página de login. Este caso de uso encontra-se disponível para os dois tipos de plataformas. 
@@ -488,7 +486,7 @@ Nas tabelas \ref{tabeladb1} e \ref{tabeladb2} são descritos cada uma das entida
 \newpage
 \section{Arquitetura lógica}
 
-Nesta secção é apresentada uma arquitetura lógica do sistema, indicando as camadas que este deverá conter, especificando quais as relações de dependência que estas possuem entre si. Seguidamente, é explicado como implementar esta lógica com os respetivos componentes físicos. 
+Nesta secção é apresentada uma arquitetura lógica do sistema, indicando as camadas que contém, especificando quais as relações de dependência que estas possuem entre si. Seguidamente, é explicado como implementar esta lógica com os respetivos componentes físicos. 
 
 
 Normalmente este tipo de arquitetura é composto por três camadas com intenções diferentes: camada de apresentação, camada de lógica de negócio e camada de acesso a dados. Pretende-se que com a descrição desta arquitetura seja facilitada a manutenção, a portabilidade e a
@@ -506,30 +504,13 @@ escalabilidade, fatores importantes quando queremos partilhar funcionalidades e 
 
 
 
-\subsection{Camada de apresentação}
-
-
-A camada de apresentação é responsável pela comunicação entre os utilizadores e a aplicação, sendo ela web ou mobile, exibindo informações aos utilizadores, abrangendo uma interface que permite solicitações ao sistema. Esta camada tem uma relação de dependência com a camada de lógica de negócio e tira partido do acesso a serviços de informação externos, que fornecem diversas funcionalidades. 
-
-
-A interface do utilizador foi desenvolvida em  \ac{HTML} e \acs{CSS}, fazendo uso de jQuery e Javascript.
+A camada de apresentação é responsável pela comunicação entre os utilizadores e a aplicação, sendo ela \textit{web} ou \textit{mobile}, exibindo informações aos utilizadores, abrangendo uma interface que permite solicitações ao sistema. Esta camada tem uma relação de dependência com a camada de lógica de negócio e tira partido do acesso a serviços de informação externos, que fornecem diversas funcionalidades. A interface do utilizador foi desenvolvida em  \ac{HTML} e \acs{CSS}, fazendo uso de jQuery e Javascript.
 
 
 
 
 
-
-
-
-
-
-
-\subsection{Camada da lógica de negócio}
-
-É nesta camada que é realizado todo o processamento dos dados adquiridos pelos sensores ou introduzidos pelos utilizadores do sistema através da camada de apresentação. 
-
-
-Tal como apresentado na figura \ref{logicaarqu}, existem quatro sub-camadas principais, que enfatizam os principiais conceitos existentes na camada de negócio. 
+A camada de lógica de negócio diz respeito à camada onde é realizado todo o processamento dos dados adquiridos pelos sensores ou introduzidos pelos utilizadores do sistema através da camada de apresentação.  Tal como apresentado na figura \ref{logicaarqu}, existem quatro sub-camadas principais, que enfatizam os principiais conceitos existentes nesta camada, a seguir descritos.  
 
 
 \begin{itemize}
@@ -542,13 +523,9 @@ Tal como apresentado na figura \ref{logicaarqu}, existem quatro sub-camadas prin
 
 
 
-\subsection{Camada de acesso a dados}
+Relativamente à camada de acesso a dados, deverão estar presentes as funcionalidades de criação, edição, remoção ou simples de visualização dos dados, sendo responsável pelas operações de persistência e consulta de dados solicitadas pela camada de lógica de negócio.
 
 
-Nesta camada deverão estar presentes as funcionalidades de criação, edição, remoção ou simples de visualização dos dados, sendo responsável pelas operações de persistência e consulta de dados solicitadas pela camada de lógica de negócio.
-
-
-\newpage
 \section{Arquitetura física}
 
 
@@ -559,7 +536,7 @@ A figura \ref{fisicablocos} representa genericamente os blocos principais do sis
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.45]{esquemas/esquema-blocos.pdf}
+	\includegraphics[scale=0.41]{esquemas/esquema-blocos.pdf}
 	\caption{Arquitetura física (blocos)}
 	\label{fisicablocos}
 \end{figure}
@@ -593,32 +570,32 @@ A figura \ref{arquiteturasi} ilustra a arquitetura do sistema de informação in
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\linewidth]{esquemas/fisica-si.pdf}
-	\caption{Arquitetura do sistema de informação (dashboard e API)}
+	\caption{Arquitetura do sistema de informação (\textit{dashboard}, base de dados e API)}
 	\label{arquiteturasi}
 \end{figure}
+
 
 
 \subsubsection{Aplicação web}
 
 A aplicação web é um componente essencial, enquadrando-se na camada de lógica de negócio como também na camada de apresentação, permitindo a interação por parte do utilizador (\textit{frontend}) como também no processamento lógico (\textit{backend}).   
 
-Tal como vimos na secção do estado de arte, a tecnologia para o desenvolvimento web recaiu sobre a \textit{framework} Django, mais precisamente na versão 1.11 para python 2.7, sendo que como \ac{IDE} foi utilizada a verão 2016.3.3 do PyCharm.
+Tal como vimos na secção do Estado de Arte, a tecnologia para o desenvolvimento web recaiu sobre a \textit{framework} Django, mais precisamente na versão 1.11 para python 2.7, sendo que como \ac{IDE} foi utilizada a verão 2016.3.3 do PyCharm. Dada a facilidade com que esta \textit{framework} tem em manipular views e templates, optou-se que ambas as componentes (\textit{frontend}/\textit{backend}) fossem desenvolvidas recorrendo ao Django. Para além disso, optou-se por criar uma API REST que permitisse a manipulação dos dados existentes na base de dados, sendo esta também desenvolvida paralelamente com a aplicação web. Seguidamente será explicada a sua arquitetura.   
 
-Dada a facilidade com que a framework django tem em manipular view e templates, optou-se que tanto o desenvolvimento frontend da aplicação web como obviamente backend seja desenvolvido utilizando esta framework. Para além disso, optou-se por criar uma API REST que permitisse a manipulação dos dados existentes na base de dados, sendo esta também desenvolvida paralelamente com a aplicação web. Seguidamente será explicada a sua arquitetura.   
-
-Uma das coisas mais interessantes no Django é sem dúvidas a existência de \ac{ORM}. Consiste numa técnica de desenvolvimento que permite modelar os dados através de classes em Python. Através dela, é possível gerar tabelas na base de dados e manipulá-las sem a necessidade de interagir diretamente com \ac{SQL} (embora também seja possível). Existiu necessidade de criar um script em \ac{SQL} que verifica os valores lido pelos sensores gerandam ou não um alarmes. Caso o valor lido esteja fora dos valores previsto então é gerado um alarme e o utilizador será notificado, no capitulo seguinte será descrita a sua implementação. 
-
-A escolha do \ac{SGBD} recaiu sobre o PostgreSQL, mais concretamente na versão xxx. Como ferramenta gráfica para administração deste \ac{SGBD} foi utilizado o PgAdmin III\footnote{www.pgadmin.org/} na versão 1.22. Este software gráfico tem inúmeras funcionalidades desde a possibilidade de ligação a base de dados remotas até à adição, edição, remoção e  consultas em tabelas. Esta ferramenta é \textit{opensource} e encontra-se disponível para Windows e UNIX.
+Um dos pontos mais interessantes no Django é sem dúvida a existência de \ac{ORM}. Consiste numa técnica de desenvolvimento que permite modelar os dados através de classes em Python. Através dela, é possível gerar tabelas na base de dados e manipulá-las sem a necessidade de interagir diretamente com \ac{SQL} (embora também seja possível). A verificação dos valores lidos pelos sensores e possível geração de alarmes é averiguado por um \textit{trigger} desenvolvido em \ac{SQL}, no capitulo \ref{implementacao} será explicada a sua implementação.  
 
 
-No que diz respeito à camada de apresentação na plataforma web foram utilizadas as seguintes bibliotecas/frameworks: 
+Relativamente à escolha do \ac{SGBD} recaiu sobre o PostgreSQL, mais concretamente na versão xxx. Como ferramenta gráfica para administração deste \ac{SGBD} foi utilizado o PgAdmin III\footnote{www.pgadmin.org/} na versão 1.22. Este software gráfico tem inúmeras funcionalidades desde a possibilidade de ligação a base de dados remotas até à adição, edição, remoção e  consultas em tabelas. Esta ferramenta é \textit{opensource} e encontra-se disponível para Windows e UNIX. Como vimos no capitulo \ref{state}, este \ac{SGBD} permite uma grande facilidade de incorporação a um projeto em Django. 
+
+
+No que diz respeito à camada de apresentação na plataforma web foram utilizadas as seguintes bibliotecas/\textit{frameworks}: 
 
 \begin{itemize}
-	\item \textbf{\ac{HTML}+\ac{CSS}+\ac{JS}}: o ponto de partida para a criação da interface web assentou no template denominado por AdminLTE sendo este baseado em Bootstrap 3\footnote{http://getbootstrap.com/}. Neste template prevalecem as seguintes características:  design responsivo, interface leve e apelativa, existência de múltiplos plugins, compatibilidade entre navegadores entre outros. 
+	\item \textbf{\acs{HTML}, \acs{CSS} e \acs{JS}}: o ponto de partida para a criação da interface web assentou no template denominado por AdminLTE\footnote{https://adminlte.io/} sendo este baseado em Bootstrap 3\footnote{http://getbootstrap.com/}. Neste template prevalecem as seguintes características:  design responsivo, interface leve e apelativa, existência de múltiplos plugins, compatibilidade entre navegadores entre outros. 
 	
 	\item \textbf{Gravatar}: serviço que disponibiliza um avatar que esteja associado a endereços de email registado. O Gravatar disponibiliza uma API que pode ser utilizada nas mais diversas linguagens de programação\cite{gravatar}.
 	 
-	\item \textbf{\ac{API} Google Maps}: consiste num serviço de pesquisa e visualização de mapas e imagens de satélite. É usado na visualização da localização dos diferentes módulos. 
+	\item \textbf{\ac{API} Google Maps}: consiste num serviço de visualização de mapas e imagens de satélite, desenvolvido pela Google. É usado na visualização da localização dos módulos de sensores. 
 	
 	\item \textbf{ZingChart}: biblioteca em \ac{JS} que permite receber dados a apresentá-los em formato gráfico. Esta solução \textit{opensource} disponibiliza mais de 35 tipos e módulos de gráficos. 
 \end{itemize}
@@ -626,50 +603,13 @@ No que diz respeito à camada de apresentação na plataforma web foram utilizad
 
 
 
-Dada da facilidade com que o django tem em  com um SGBD, 
 
-
-
-Visualização modulos usados 
-
-
-
-
-Base de dados -> fazer ligação com API 
-
-
-
-
-
-
-
-
-
-
-
-
-
-\newpage
 \subsubsection{\acs{API} \acs{REST}}
 
 
-Os métodos desta API permitiram execuções funções do tipo \ac{REST}. A tecnologia \ac{REST} foi apresentada por Roy Fielding na Universidade de Califórnia no ano de 2000, cujo o titulo da sua dissertação era "Architectural Styles and the Design of Network-based Software Architectures". Roy estudou um conjunto de arquiteturas de software que usam a Web como uma plataforma para computação distribuída\cite{Rodriguez2015}. 
+Os métodos desta \ac{API} permitiram execuções funções do tipo \ac{REST}. A tecnologia \ac{REST} foi apresentada por Roy Fielding na Universidade de Califórnia no ano de 2000, cujo o titulo da sua dissertação era "Architectural Styles and the Design of Network-based Software Architectures". Roy estudou um conjunto de arquiteturas de software que usam a Web como uma plataforma para computação distribuída\cite{Rodriguez2015}. Esta tecnologia define um conjunto de princípios que possibilitam desenhar serviços web com base nos recursos do sistema, considerando a forma com os recursos são coordenados e transferidos através de \ac{HTTP} para vários clientes nas mais diversificadas linguagens. 
 
- 
- 
-Esta tecnologia define um conjunto de princípios...   
-
- 
-%%%mudar 
-Representational State Transfer (REST) define um conjunto de princípios de arquitetura para
-sistemas distribuídos, com os quais podemos desenhar serviços web com foco nos recursos de um
-sistema, incluindo a forma com os recursos são organizados e transferidos através de HTTP para
-vários clientes em diferentes linguagens
-
-
-
-
-Os métodos da API permitem executar as funções REST usando métodos HTTP explicitamentee. Assim, torna-se fundamental perceber estes métodos para ter um melhor conhecimento da API. Como tal, de seguida, são descritos os métodos mais importantes que dão suporte a cada uma das funções REST.
+Os métodos da API permitem executar as funções \ac{REST} usando métodos \ac{HTTP} explicitamentee. Assim, torna-se fundamental perceber estes métodos para ter um melhor conhecimento do funcionamento da \ac{API}. Seguidamente são descritos os métodos mais importantes que dão suporte a cada uma das funções \ac{REST}.
 
 
 \begin{itemize}
@@ -682,52 +622,83 @@ Os métodos da API permitem executar as funções REST usando métodos HTTP expl
 
 
 
+Como vimos no capítulo \ref{state}, a escolha da \textit{framework} para construção desta \ac{API} \ac{REST} recaiu sobre o \textit{Django REST framework}. Esta framework possui uma extensa documentação e um elevado apoio da comunidade que a utiliza, sendo uma das mais utilizadas e incorporadas em projetos Django. 
 
-
-
-Como vimos na secão X do estado da Arte, a escolha da framework para construção de uma \ac{API} \ac{REST} recaiu sobre o \textit{Django REST framework}
-
-
-
-Endpoints 
-
-
-
-
-framework Django REST é um conjunto de ferramentas poderoso e flexível para a construção de APIs Web.
-
-
-
-
-
-
-
-
-Autenticação
-
-
-Seguidamente será apresentada como foi criada a documentação desta API. 
-
-\newpage
-\subsubsection{Documentação interativa}
-
-
-Para a geração automática da documentação da API utilizou-se o Swagger. Tal como descrito no site oficial desta framework \cite{SmartBearSoftware2017}, o Swagger é considerada a ferramenta de APIs mais popular e completa de todo o mundo permitindo facilmente o desenvolvimento do ciclo de vida de uma API, desde o design, documentação, testes e também implementação, tendo a grande vantagem de ser \textit{opensource}. Neste contexto, apenas será utilizada como documentação, de modo a facilitar a interpretação da API criada. O swagger possui uma interface apelativa e intuitiva, 
-permitindo interagir com a API e permitindo também que os seus utilizadores tenham uma ideia geral de como esta responde aos pedidos para diversos parâmetros e opções. 
+Relativamente à autenticação desta \ac{API}, optou-se por utilizar um esquema de autenticação fundamentado no mecanismo de autenticação \ac{HTTP} baseado em \textit{tokens}\cite{tokenREST}. Neste mecanismo, o cliente primeiramente troca as suas credencias (username e password) por um token, seguidamente, em vez de enviar essas credenciais a cada requisição, o cliente apenas enviará o token inicialmente recebido, permitindo assim o acesso aos conteúdos pretendidos, com respetiva autenticação e autorização dos mesmos (figura \ref{autnetAPI}).
 
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\linewidth]{prints-web/api-doc.png}
-	\caption{Arquitetura do sistema de informação (dashboard e API)}
-	\label{docapi}
+	\includegraphics[scale=0.61]{esquemas/autenticacaohttpesquema.pdf}
+	\caption{Processo de autenticação em HTTP através de token (adaptado de \cite{AdoKukic2016})}
+	\label{autnetAPI}
 \end{figure}
+
+
+Resumidamente e com o objetivo de explicar o esquema da figura \ref{autnetAPI}, são enumerados os passos de autenticação em HTTP via token. 
+
+\begin{enumerate}
+	\item O cliente envia as credenciais para um servidor.
+	\item O servidor valida e autentica essas credenciais gerando consequentemente um token.
+	\item O servidor envia o token para o cliente.
+	\item O cliente guarda o token e este é enviado sempre que existe uma requisição através do cabeçalho do protocolo HTTP. 
+	\item O servidor, em cada requisição verifica se o token é válido ou não. Caso seja, o servidor aceita a requisição, caso contrário esta é rejeitada.
+	\item O servidor pode ter um endpoint que renova o token sempre que necessário. 
+\end{enumerate}
+
+
+
+
+Na tabela \ref{endpointsapi} encontram-se todos os endpoints e respectivas funções (POST/GET/PUT) a implementar. Seguidamente será descrito como foi implementada a documentação desta API.  
+
+
+\begin{table}[h]
+	\centering
+
+	\begin{tabular}{|l|l|l|l|l|}
+		\hline
+		\rowcolor[HTML]{C0C0C0} 
+		\multicolumn{1}{|c|}{\cellcolor[HTML]{C0C0C0}\textbf{Endpoints da API REST}} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}\textbf{POST}} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}\textbf{GET}} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}\textbf{PUT}} & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}\textbf{DELETE}} \\ \hline
+		/api/user/ & \checkmark & \checkmark &  &  \\ \hline
+		/api/user/\{pk\_or\_username\}/ &  & \checkmark & \checkmark & \checkmark \\ \hline
+		/api/smpercm/ &  & \checkmark &  &  \\ \hline
+		/api/smpercm/\{pk\_or\_name\_cm\} & \checkmark & \checkmark &  &  \\ \hline
+		/api/sm/ & \checkmark & \checkmark &  &  \\ \hline
+		/api/sm/\{pk\_or\_name\}/ &  & \checkmark & \checkmark & \checkmark \\ \hline
+		/api/sensortype/ & \checkmark & \checkmark &  &  \\ \hline
+		/api/sensortype/\{pk\_or\_name\} &  & \checkmark & \checkmark & \checkmark \\ \hline
+		/api/sensorpersm/\{id\_sm\_or\_name\_sm\} & \checkmark & \checkmark &  &  \\ \hline
+		/api/sensor/ &  & \checkmark &  &  \\ \hline
+		/api/sensor/\{pk\_or\_sensor\_type\} & \checkmark & \checkmark &  &  \\ \hline
+		/api/reading/\{id\_sensor\}/\{date\_start\}/\{date\_end\} & \checkmark & \checkmark &  &  \\ \hline
+		/api/communication/\{pk\_or\_name\}/ &  & \checkmark & \checkmark & \checkmark \\ \hline
+		/api/cm/ & \checkmark & \checkmark &  &  \\ \hline
+		/api/cm/\{pk\_or\_name\}/ &  & \checkmark & \checkmark & \checkmark \\ \hline
+		/api/alarmssettings/\{id\_sensor\} & \checkmark & \checkmark &  &  \\ \hline
+		/api/alarms\_sensor/\{id\_sensor\} & \checkmark & \checkmark &  &  \\ \hline
+		/api/alarms\_reading/\{id\_reading\} & \checkmark & \checkmark &  &  \\ \hline
+	\end{tabular}
+	\caption{Endpoints da API REST e respetivos métodos a implementar}
+	\label{endpointsapi}
+\end{table}
+
+
+
+
+
+
+\subsubsection{Documentação interativa}
+
+
+Para a geração automática da documentação da API utilizou-se o Swagger. Tal como descrito no site oficial desta framework\cite{SmartBearSoftware2017}, o Swagger é considerado a ferramenta de APIs mais popular e completa de todo o mundo permitindo facilmente o desenvolvimento do ciclo de vida de uma \ac{API}, desde o design, documentação, testes e também implementação, tendo a grande vantagem de ser \textit{opensource}. Neste contexto, apenas será utilizada como documentação, de modo a facilitar a interpretação da \ac{API} criada. O Swagger possui uma interface apelativa e intuitiva, permitindo interagir com a \ac{API} de modo que os seus utilizadores tenham uma ideia geral de como esta responde aos pedidos para diversos parâmetros e opções. 
+
+
 
 
 
 \subsubsection{Implementação do sistema}
 
-Para implementar (vulgarmente denominada por deployment) o projeto em Django e respetiva API foi-me fornecida uma máquina com um distribuição Linux (Ubuntu 14.04.5) com as seguintes características: 
+Para implementação do projeto anteriormente descrito e respetiva API, foi-me fornecida uma máquina com um distribuição Linux (Ubuntu 14.04.5) com as seguintes características: 
 
 \begin{itemize}
 	\item \ac{CPU}: Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz
@@ -737,11 +708,7 @@ Para implementar (vulgarmente denominada por deployment) o projeto em Django e r
 
 
 Para o processo de \textit{deployment} deste projeto optou-se pela utilização do servidor Apache juntamente com o pacote mod\_wsgi\footnote{https://modwsgi.readthedocs.io/en/develop/}. 
-Este pacote fornece uma \ac{WSGI} compatível para o alojamento de aplicações web em Python sob o servidor Apache. 
-
-O Apache é um servidor web opensource mais utilizado em todo o mundo .......
-
-\cite{TheApacheSoftwareFoundation2016}
+Este pacote fornece uma \ac{WSGI} compatível para o alojamento de aplicações web em Python sob o servidor \ac{HTTP} Apache. O Apache é um servidor web \textit{opensource} mais utilizado em todo o mundo\cite{TheApacheSoftwareFoundation2016}.
 
 
 
@@ -773,66 +740,66 @@ O Apache é um servidor web opensource mais utilizado em todo o mundo .......
 \subsubsection{Aplicação mobile}
 
 
-Mockup da aplicação em anexo 
-
-Phonegap + angular js
-
+Após a analise de requisitos da aplicação mobile, optou-se por elaborar um protótipo da aplicação mobile antes de proceder à sua real implementação. O \textit{mockup} da aplicação apresenta-se no Apêndice X. 
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale = 0.5]{esquemas/arquitetura-mobile.pdf}
-	\caption{Arquitetura do sistema de informação (dashboard e API)}
+	\caption{Arquitetura da aplicação mobile}
 	\label{arquiteturamobile}
 \end{figure}
 
 
-
-Tal como descrito na secção do estado de arte, para o desenvolvimento mobile optou-se pela utilização de um paradigma multi-plataforma, para tal, escolheu-se o PhoneGap juntamente com o Apache Cordova. 
-
+Tal como descrito no capitulo \ref{state}, para o desenvolvimento do aplicativo mobile optou-se pela utilização de um paradigma multi-plataforma, mais concretamente a \textit{framework} Phonegap. Esta framework utilizada a tecnologia Cordova da Apache que permite a integração com recursos nativos dos dispositivos. Através dela, é possivel desenvolver aplicações móveis utilizando simplesmente \ac{HTML}, \ac{CSS} e \ac{JS} sem a necessidade de depender de APIs específicas. De modo a facilitar a manipulação do \ac{JS} optou-se por utilizar a \textit{framework} AngularJS. Esta framework \textit{opensource} mantida pela google desde 20XX 
 
 
 
-De modo a facilitar a manipulação em javascript optou-se por utilizar a framework AngularJS. Esta framework opensource mantida pela google desde 20XX 
+VAMOS USAR ANGULAR 2
 
 
 
-\newpage
-\subsection{Simulação em hardware}
+
+Consumir a API REST 
+
+Consumir a API REST 
+Consumir a API REST 
 
 
-Após a desenvolvimento da API, pretendeu-se simular o sistema num contexto real. Para tal, pretendeu-se encontrar hardware que encaixasse no contexto deste projeto. Foram utilizados dois micro-controladores (Arduino e Raspberry Pi) e alguns sensores. Para este cenário, assume-se que o Arduino é considerado um \acl{SM} que possui um conjunto de sensores enquanto que o Raspberry Pi é um \acl{CM} que recebe os dados provenientes do \acl{SM} enviando-os para o servidor.  
+\subsection{Simulação em \textit{hardware}}
+
+
+Após a desenvolvimento da API, pretendeu-se simular o sistema num contexto real. Para tal, pretendeu-se encontrar hardware que encaixasse no contexto deste projeto. Foram utilizados dois micro-controladores (Arduino e Raspberry Pi 3) e alguns sensores. Para este cenário, assume-se que o Arduino é considerado um \acl{SM} que possui um conjunto de sensores enquanto que o Raspberry Pi 3 é um \acl{CM} que recebe os dados provenientes do \acl{SM} enviando-os para o servidor.  
 
 Seguidamente, são apresentados os sensores utilizados bem como os tipos de comunicação. 
  
-
+\newpage
 \subsubsection{Sensores utilizados}
 
-Nesta secção serão apresentados os sensores utilizados na simulação e as suas principais características. Todos os sensores foram escolhidos tendo em conta o seu enquadramento no projeto e a sua disponibilidade em laboratório. Todos os sensores que se apresentam encontram-se ligados a um Arduino Nano, segundo o esquema apresentado no Anexo X. \\
+Nesta secção serão apresentados os sensores utilizados na simulação e as suas principais características. Todos os sensores foram escolhidos tendo em conta o seu enquadramento no projeto e a sua disponibilidade em laboratório, sendo que serão ligados ao Arduino Nano. \\
 
 
 \textbf{Temperatura}
 
 
-Como sensor de temperatura foi utilizado um termístor do tipo \ac{NTC}. Como vimo na secção X, um termístor é um semicondutor sensível à temperatura i.e. cujo o coeficiente de variação da resistência com a temperatura é negativa, ou seja, quando a temperatura sobe então consequentemente a resistência diminui. 
-
-Na figura \ref{esquema-temp} encontra-se o esquema de ligação deste componente e na tabela \ref{table-temp} as suas propriedades principais. 
+Como sensor de temperatura foi utilizado um termístor do tipo \ac{NTC}. Como vimos no capítulo \ref{state}, um termístor é um semicondutor sensível à temperatura, ou seja, quando o coeficiente de variação da resistência com a temperatura é negativa, então a temperatura sobe e consequentemente a resistência diminui. Na figura \ref{esquema-temp} encontra-se o esquema de ligação deste componente e na tabela \ref{table-temp} as suas propriedades principais. 
 
 
 \begin{figure}[h]
 	\centering
 	\begin{minipage}[b]{0.4\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{img/hardware/temperatura.jpg}
-		\caption{TTC 104 NTC}
+		\caption{Sensor TTC 104 NTC}
 	\end{minipage}
 	\hfill
 	\begin{minipage}[b]{0.4\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{img/hardware/temp-esquema.pdf}
 		\caption{Esquema eletrotécnico da ligação do sensor de temperatura}
 		\label{esquema-temp}
 	\end{minipage}
 \end{figure}
 
-\newpage
 
 \begin{table}[h]
 	\centering
@@ -840,9 +807,9 @@ Na figura \ref{esquema-temp} encontra-se o esquema de ligação deste componente
 	\begin{tabular}{|
 			>{\columncolor[HTML]{C0C0C0}}l |l|} \hline
 		Dimensão & 5mm \\ \hline
-		Resistência & 100K $\Omega$  \\ \hline
-		Valor máximo & +125C \\ \hline
-		Valor mínimo & -30C \\ \hline
+		Resistência & 100 K$\Omega$  \\ \hline
+		Valor máximo & +125 $^{\circ}$C \\ \hline
+		Valor mínimo & -30 $^{\circ}$C \\ \hline
 		Nível de confiança & + - 10\% \\ \hline
 		Preço & 0.35 \euro/unidade \\ \hline
 	\end{tabular}
@@ -854,9 +821,7 @@ Na figura \ref{esquema-temp} encontra-se o esquema de ligação deste componente
 
 \textbf{Luminosidade}
 
-Para simular a luminosidade incidente foi utilizado um sensor do tipo foto-resistência. Este sensor, também conhecido como \ac{LDR}, não é mais do que uma resistência variável cujo o seu valor varia conforme a intensidade da luz que incide sobre ele, isto é, à medida que a intensidade da luz aumenta, a sua resistência diminui. Este sensor tem múltiplas aplicações, entre as quais se destaca a monitorização solar, indicador da posição do sol (up/down), alarmes anti-roubo, alarme para abertura/fecho de portas entre outras. 
-
-Como vimos na secção X do capitulo do Estado de Arte é um sensor de baixo custo e bastante fácil de utilização. Na figura \ref{lum-esquema} encontra-se o esquema de ligação do componente e na tabela \ref{lum-cara} são apresentadas as principais características do sensor utilizado. 
+Para simular a luminosidade incidente foi utilizado um sensor do tipo foto-resistência. Este sensor, também conhecido como \ac{LDR}, não é mais do que uma resistência variável cujo o seu valor varia conforme a intensidade da luz que incide sobre ele, isto é, à medida que a intensidade da luz aumenta, a sua resistência diminui. Este sensor tem múltiplas aplicações, entre as quais se destaca a monitorização solar, indicador da posição do sol (up/down), alarmes anti-roubo, alarme para abertura/fecho de portas entre outras. Como vimos no capítulo \ref{state} é um sensor de baixo custo e bastante fácil de utilização. Na figura \ref{lum-esquema} encontra-se o esquema de ligação do componente e na tabela \ref{lum-cara} são apresentadas as principais características do sensor utilizado. 
 
 
 
@@ -867,11 +832,13 @@ Como vimos na secção X do capitulo do Estado de Arte é um sensor de baixo cus
 \begin{figure}[h]
 	\centering
 	\begin{minipage}[b]{0.4\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{img/hardware/luminosidade.png}
 		\caption{Sensor foto-resistência GL5528}
 	\end{minipage}
 	\hfill
 	\begin{minipage}[b]{0.4\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{img/hardware/lumi_esquema.pdf}
 		\caption{Esquema eletrotécnico da ligação do sensor de luminosidade}
 		\label{lum-esquema}
@@ -883,7 +850,6 @@ Como vimos na secção X do capitulo do Estado de Arte é um sensor de baixo cus
 
 
 
-\newpage
 
 \begin{table}[h]
 	\centering
@@ -893,7 +859,7 @@ Como vimos na secção X do capitulo do Estado de Arte é um sensor de baixo cus
 		Diâmetro & 5mm \\ \hline
 		Tensão máxima & 150VDC \\ \hline
 		Potência máxima & 100mW \\ \hline
-		Tensão de operação & -30 C a 70 C \\ \hline
+		Tensão de operação & -30 $^{\circ}$C a 70 $^{\circ}$C \\ \hline
 		Espectro &540nm \\ \hline
 		Comprimento com terminais & 32mm \\ \hline
 		Resistência no escuro &1 M (Lux 0) \\ \hline
@@ -908,43 +874,46 @@ Como vimos na secção X do capitulo do Estado de Arte é um sensor de baixo cus
 
 
 
-\textbf{Sensor para estado do nível líquido}
+\textbf{Sensor para verificação do estado do nível de água}
 
-Este sensor não é mais do que um interruptor que é ativo sempre que um determinado líquido ultrapassa o mesmo. Sempre que algum líquido atingir o pedaço de plástico este irá subir ativando assim o circuito. 
-Na figura \ref{esquem-liquido} encontra-se o esquema da ligação deste sensor.
+Este sensor não é mais do que um interruptor que é ativo sempre que um determinado líquido ultrapassa o mesmo, isto é, sempre que algum líquido atingir o pedaço de plástico este irá subir ativando assim o circuito. Na figura \ref{esquem-liquido} encontra-se o esquema da ligação deste sensor.
 
-
+\newpage
 
 
 \begin{figure}[h]
 	\centering
 	\begin{minipage}[b]{0.4\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{img/hardware/liquido.JPG}
 		\caption{\textit{Water Level Switch Liquid Level Sensor Plastic Ball Float}}
 	\end{minipage}
 	\hfill
 	\begin{minipage}[b]{0.4\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{img/hardware/sw_esquema.pdf}
 		\caption{Esquema eletrotécnico da ligação do sensor de nível líquido}
 		\label{esquem-liquido}
 	\end{minipage}
-\end{figure} 
+\end{figure}
 
 
-\newpage
+
 \textbf{Simulador de válvula para transferências de águas}
 
-Para a simulação de uma válvula que permitirá as transferência de água doce e salgada foi utilizado um simples \textit{led}. Este possibilita facilmente identificar através da ativação do \textit{led} se a válvula se encontra ativa ou não. 
+Para a simulação de uma válvula que permitirá as transferência de água doce e/ou água salgada foi utilizado um \ac{LED}. Este possibilita facilmente identificar através da sua ativação se a válvula se encontra ativa ou não. 
 
 
 \begin{figure}[h]
 	\centering
 	\begin{minipage}[b]{0.4\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{img/hardware/led.jpg}
-		\caption{Led simples.}
+		\caption{Led}
 	\end{minipage}
 	\hfill
 	\begin{minipage}[b]{0.4\textwidth}
+		\centering
 		\includegraphics[width=\textwidth]{img/hardware/led_esquema.pdf}
 		\caption{Esquema eletrotécnico da ligação do led}
 	\end{minipage}
@@ -954,15 +923,15 @@ Para a simulação de uma válvula que permitirá as transferência de água doc
 
 \subsubsection{Comunicação}
 
-Nesta secção, será apresentado o tipo de comunicação para este cenário de simulação. Pretendeu-se que cada um dos módulo ficassem isolados entre si, o que implicou o estudo e respetiva escolha de algumas tecnologias de comunicações sem fio. Neste caso, foram escolhidas as seguintes: 
+Nesta secção, serão apresentados os tipos de comunicação para o cenário apresentado. Pretende-se que cada um dos módulo fique isolado entre si, o que implicou o estudo e respetiva escolha de algumas tecnologias de comunicações sem fio (secção XX do capítulo \ref{state}). Neste caso, foram escolhidas as seguintes: 
 
 \begin{itemize}
-	\item \textbf{Bluetooth}: utilizado para a comunicação entre o Arduino (\ac{SM}) e o Raspberry Pi 3 (\ac{CM}). No Arduino foi utilizado um módulo Bluetooth HC-06 e no Raspberry Pi 3 foi utilizado o seu próprio módulo interno. 
-	\item \textbf{Wifi}: utilizado para a comunicação entre o Raspberry Pi 3 (\ac{CM}) e o servidor. 
+	\item \textbf{Bluetooth}: utilizado para a comunicação entre o Arduino (\acl{SM}) e o Raspberry Pi 3 (\acl{CM}). No Arduino foi utilizado um módulo Bluetooth HC-06 e no Raspberry Pi 3 o seu próprio módulo interno. 
+	\item \textbf{Wi-Fi}: utilizado para a comunicação entre o Raspberry Pi 3 (\acl{CM}) e o servidor web. 
 \end{itemize}
 
 
-O esquema da figura \ref{esquemcomm} pretende esquematizar os tipos de comunicação envolvidos nesta simulação para cada um dos componentes. 
+O esquema da figura \ref{esquemcomm} pretende ilustrar os tipos de comunicação envolvidos nesta simulação para cada um dos componentes. 
 
 \begin{figure}[!htb]
 	\centering
@@ -974,52 +943,53 @@ O esquema da figura \ref{esquemcomm} pretende esquematizar os tipos de comunica�
 
 
 
-Módulo bluetooth HC-06
+\textbf{Módulo bluetooth HC-06}
 
 
 
-Este módulo bluetooth HC-05 oferece uma forma fácil e barata de comunicação com seu projeto Arduino. Diferente do modelo HC-06, suporta tanto o modo mestre como escravo, além de ter uma fácil configuração.
-
-Em sua placa existe um regulador de tensão e você poderá alimentar com 3.3 a 5v, bem como um LED que indica se o módulo está pareado com outro dispositivo. Possui alcance de até 10m.
-
-é mais uma forma simples e barata de enviar e receber informações remotamente.
+Este módulo bluetooth oferece uma forma simples e barata de enviar e receber informações remotamente. Neste módulo existe um \ac{LED} que indica se este se encontra emparelhado com algum dispositivo. Na figura \ref{comimageesquema} encontra-se o esquema de ligação deste módulo e na tabela \ref{cara-comm} são apresentadas as suas principais características.
 
 
-\newpage
+
 \begin{figure}[h]
 	\centering
 	\begin{minipage}[b]{0.4\textwidth}
-		\includegraphics[width=\textwidth]{img/hardware/bluetooth_zs-040.png}
-		\caption{Flower one.}
+		\centering
+		\includegraphics[width=0.7\textwidth]{img/hardware/bluetooth_zs-040.png}
+		\caption{Módulo bluetooth HC-06}
+		\label{comimage}
 	\end{minipage}
 	\hfill
-	\begin{minipage}[b]{0.4\textwidth}
-		\includegraphics[width=\textwidth]{img/comm-blue/electronic-sensors.pdf}
+	\begin{minipage}[b]{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.6\textwidth]{img/comm-blue/electronic-sensors.pdf}
 		\caption{Esquema eletrotécnico da ligação do módulo bluetooth}
+		\label{comimageesquema}
 	\end{minipage}
 \end{figure}
 
-
+\newpage
 
 \begin{table}[h]
 	\centering
 	
 	\begin{tabular}{|
-			>{\columncolor[HTML]{C0C0C0}}l |l|} \hline
-		Diâmetro & 5mm \\ \hline
-		
-		Protocolo Bluetooth& v2.0+EDR \\ \hline 
-		Frequência& 2,4GHz Banda ISM \\ \hline
-		Segurança& Autentificação e Encriptação \\ \hline
-		Tensão& 3,3v (2,7-4.2v) \\ \hline
-		Alcance& 10m \\ \hline
+			>{\columncolor[HTML]{C0C0C0}}l |l|} \hline		
+		Versão bluetooth& v2.0 com \ac{EDR}\\ \hline 
+		Frequência& 2,4GHz Banda \ac{ISM} \\ \hline
+		Segurança& Autentificação (PIN) e Encriptação  \\ \hline
+		Tensão& Aconselhada 3,3v (2,7v - 4.2v) \\ \hline
+		Alcance& 10 metros \\ \hline
 		Dimensões& 26,9 x 13 x 2,2mm \\ \hline
 		Peso& 9,6g \\ \hline
-		Preço&32\euro /unidade  \\ \hline
+		Temperatura (funcionamento)& -25C +75C \\ \hline 
+		
+		Preço&5.26 \euro /unidade  \\ \hline
 	\end{tabular}
-	\caption[Características do sensor GL5528]{Características do sensor GL5528 \cite{lum-data}}
-	\label{lum-cara}
+	\caption[Características do módulo bluetooth HC-06]{Características do módulo bluetooth HC-06 \cite{GuangzhouHCInformationTechnologyCo.2011}}
+	\label{cara-comm}
 \end{table}
+
 
 
 
@@ -1034,40 +1004,31 @@ Em sua placa existe um regulador de tensão e você poderá alimentar com 3.3 a 
 
 
 
-
-\newpage
-
 \section{Sistema de deteção de intrusos}
 
 
-No contexto desta dissertação houve necessidade de implementar um sistema de video-stream que permitisse detetar intrusos, maioritariamente pessoas ou animais de grande porte, que possam invadir as quintas onde se produz salicornia. Esta necessidade prende-se essencialmente com elevado custo do hardware do sistema de monitorização e também de eventuais instrumentos de elevado custo necessários ao cultivo desta espécie (e.g. geradores, maquinas elétricas para poda etc).
+No contexto desta dissertação houve necessidade de implementar um sistema de video-stream que permitisse detetar intrusos, maioritariamente pessoas ou animais de grande porte, que possam invadir as quintas onde se produz Salicórnia. Esta necessidade prende-se essencialmente com elevado custo do \textit{hardware} do sistema de monitorização e também de eventuais instrumentos de elevado custo necessários ao cultivo desta espécie, como por exemplo,  geradores, máquinas elétricas para poda, entre outros.
 
-Neste capitulo é descrita a tecnologia de processamento de imagem utilizada tal como o algoritmo disponibilizado pela mesma. Apresenta-se a implementação deste mecanismo e os testes necessários. 
+Neste secção é descrita a tecnologia de processamento de imagem utilizada tal como o material necessário e respetiva arquitetura. 
 
 
-\subsection{Biblioteca de processamento de imagem: OpenCV}
+\subsection{Biblioteca para processamento de imagem: OpenCV}
 
-O OpenCV, também conhecido por \textit{Open Source Computer Vision Library}, é uma biblioteca de software de visão por computador de código \textit{open source} (figura \ref{opencvlogo}). OpenCV foi construído para fornecer uma infra-estrutura comum para aplicações de visão computacional e para criar o uso da perceção da máquina nos produtos comerciais.
-
-A biblioteca possui mais de 2500 algoritmos otimizados, que inclui um conjunto abrangente de algoritmos clássicos e avançados de visão computacional e algoritmos de \textit{machine learning}. Esses algoritmos podem ser usados para detectar e reconhecer rostos, identificar objetos, classificar ações humanas em vídeos, detetar movimentos numa câmara, seguir um objetos em movimento, produzir nuvens de pontos 3D de câmaras estéreo, entre outros.
-OpenCV tem mais de 47 mil pessoas na comunidade de usuários e o número estimado de downloads superior a 7 milhões. A biblioteca é amplamente utilizada em empresas e grupos de pesquisa \cite{Itseez}.
-
-O OpenCV é usado principalmente em aplicações de visão em tempo real. Esta biblioteca tem interfaces nas mais diversas linguagens: C++, C, Python, Java e MATLAB, embora seja nativamente escrito em C. OpenCV tem suporte para Windows, Linux e Mac OS\cite{Itseez}. 
+O OpenCV, também conhecido por \textit{Open Source Computer Vision Library}, é uma biblioteca de \textit{software} de visão por computador de código \textit{open-source} (figura \ref{opencvlogo}). 
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[width=0.5\linewidth]{img/vision/opencv_logo.jpg}
+	\includegraphics[width=0.3\linewidth]{img/vision/opencv_logo.jpg}
 	\caption{Logótipo OpenCV}
 	\label{opencvlogo}
 \end{figure}
 
-
-\textbf{Conclusoes} 
-
-Desde logo a escolha da tecnologia para processamento de imagem recaiu sobre o opencv não apenas por ser uma biblioteca bastante popular e possuir bastantes algoritmos implementados mas também por eu próprio possuir já algum background e projetos desenvolvidos neste neste contexto.
+Esta biblioteca possui mais de 2500 algoritmos otimizados, que inclui um conjunto abrangente de algoritmos clássicos e avançados de visão computacional bem como algoritmos de \textit{machine learning}. Esses algoritmos podem ser utilizados para os mais diversos fins, como por exemplo, para detectar e reconhecer rostos, identificar objetos, classificar ações humanas em vídeos, detetar movimentos numa câmara, seguir um objetos em movimento, produzir nuvens de pontos 3D de câmaras estéreo, entre outros. Esta biblioteca é amplamente utilizada em empresas e grupos de investigação, tendo interfaces nas mais diversas linguagens: C++, C, Python, Java e MATLAB, embora seja nativamente escrita na linguagem C. OpenCV tem mais de 47 mil pessoas na sua comunidade e excede os 7 milhões de downloads, tendo suporto para Windows, Linux e Mac OS\cite{Itseez}.
 
 
-Pretendeu-se que este processamento fosse implementado em material já adquirido sem necessidade de gastos. Optou-se então por utilizar um \textit{Raspberry Pi} que juntamente com um \textit{Raspberry Pi camera module} (figura \ref{raspicam}) permitirá a aquisição de imagem e servirá também como \textit{controller module} ao sistema de aquisição de dados. 
+
+
+Desde logo, a escolha da tecnologia para processamento de imagem recaiu sobre o OpenCV não apenas por ser uma biblioteca bastante popular e possuir bastantes algoritmos implementados mas também por eu próprio possuir já algum \textit{background} e projetos desenvolvidos nesta área.  Pretendeu-se que este processamento fosse implementado em material já adquirido sem necessidade de gastos. Optou-se então por utilizar um \textit{Raspberry Pi 3} que juntamente com um \textit{Raspberry Pi camera module} (figura \ref{raspicam}) permitirá a aquisição de imagem e servirá também como \acl{CM} ao sistema de aquisição de dados. Na tabela \ref{cara-cam} apresentam-se algumas características deste módulo para o Raspberry Pi 3. 
 
 
 \begin{figure}[!htb]
@@ -1078,20 +1039,46 @@ Pretendeu-se que este processamento fosse implementado em material já adquirido
 \end{figure}
 
 
-Eis algumas das características principais do Raspberry Pi Camera Board V2:
-
-\begin{itemize}
-	\item lente de foco fixo on-board
-	\item 150 milímetros CSI cabo da câmara incluída
-	\item 8 megapixels do sensor com capacidade de resolução nativa de 3.280 imagens estáticas de pixels x 2464
-	\item Suporta 1080p30, 720p60 e 640x480p90 vídeo
-	\item Tamanho 25 milímetros x 23 milímetros x 9 mm
-	\item Peso pouco mais de 3 g
-	\item Liga-se à placa de framboesa Pi por meio de um cabo de fita curta (fornecido)
-	\item Camera v2 é compatível com a última versão do Raspbian, sistema operacional preferido do Raspberry Pi
-\end{itemize}
 
 
+\begin{table}[h]
+	\centering
+	
+	\begin{tabular}{|
+			>{\columncolor[HTML]{C0C0C0}}l |l|} \hline		
+		Sensor & 8 megapixels Sony IMX219 \\ \hline
+		Resolução de exibição & 1080p, 720p e 640x480p para vídeo \\ \hline
+		Ligação à placa& Cabo fita curta (branca) \\ \hline
+		Dimensões& 25 x 23 x 9 mm \\ \hline
+		Peso& aproximadamente 3 g \\ \hline
+		Compatibilidades& ultima versão do Raspbian \\ \hline
+		Preço& 26,67 \euro /unidade  \\ \hline
+	\end{tabular}
+	\caption[Características do módulo bluetooth HC-06]{Características do Raspberry Pi camera module}
+	\label{cara-cam}
+\end{table}
+
+
+
+
+
+
+
+
+Inicialmente, pretendeu-se explorar um algoritmo disponibilizado pelo OpenCV para a deteção de pessoas (corpo inteiro). Este algoritmo, juntamente com técnicas de \textit{machine learning}  permitem a deteção de pessoas numa determinada imagem e/ou vídeo. O \textit{machine learning} (em português aprendizagem automática) consiste num  método de análise de dados que automatiza o desenvolvimento de modelos analíticos, sendo usados algoritmos que aprendem interativamente a partir de dados recolhidos à priori\cite{Kotsiantis2007}. 
+
+Após a realização de vários testes a este algoritmo, pretendeu-se implementar um servidor de \textit{streaming} que possa ser incorporado na \textit{dashboard}. Para tal, optou-se por criar um aplicação em Flask (\textit{framework} abordada no capitulo \ref{state}) que permita a aquisição de vídeo proveniente da  \textit{Raspberry Pi camera module} e realização do respetivo processamento. Esta aplicação web foi implementada num \textit{Raspberry Pi 3} tendo sido necessário optar por um servidor web, neste caso o NGINX\footnote{https://www.nginx.com/resources/wiki/}. O NGINX é um servidor HTTP de alto desempenho e open-source. É conhecido pela sua alta performance, estabilidade, configuração simples e baixo consumo de recursos\cite{Nginx2017}. 
+
+Para comunicação entre o servidor web com a aplicação em Flask foi necessária a utilização de uma \ac{CGI} que permita gerir páginas dinâmicas, possibilitando ao navegador passar parâmetros para uma aplicação existente num servidor web. Optou-se por utilizar o uWSGI \footnote{https://uwsgi-docs.readthedocs.io}, sendo um dos mais populares. Na figura \ref{arquiteturavisao} encontra-se a arquitetura do sistema de deteção de intrusos e as respetivas tecnologias utilizadas.
+
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale = 0.5]{esquemas/videostream.pdf}
+	\caption{Arquitetura do sistema de video stream}
+	\label{arquiteturavisao}
+\end{figure}
 
 
 

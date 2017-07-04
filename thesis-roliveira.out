@@ -42,8 +42,8 @@
 \BOOKMARK [2][-]{subsection.3.7.1}{Zigbee}{section.3.7}% 42
 \BOOKMARK [2][-]{subsection.3.7.2}{LoRa}{section.3.7}% 43
 \BOOKMARK [2][-]{subsection.3.7.3}{Sigfox}{section.3.7}% 44
-\BOOKMARK [2][-]{subsection.3.7.4}{Bluetooth}{section.3.7}% 45
-\BOOKMARK [2][-]{subsection.3.7.5}{WiFi}{section.3.7}% 46
+\BOOKMARK [2][-]{subsection.3.7.4}{Bluetooth \(BLE\)}{section.3.7}% 45
+\BOOKMARK [2][-]{subsection.3.7.5}{Wi-Fi \(IEEE 802.11\)}{section.3.7}% 46
 \BOOKMARK [2][-]{subsection.3.7.6}{Compara\347\343o de tecnologias de comunica\347\343o}{section.3.7}% 47
 \BOOKMARK [1][-]{section.3.8}{Aplica\347\365es relacionadas}{chapter.3}% 48
 \BOOKMARK [2][-]{subsection.3.8.1}{Multi-monitoriza\347\343o de estufas agr\355colas }{section.3.8}% 49
@@ -62,59 +62,56 @@
 \BOOKMARK [2][-]{subsection.4.4.2}{Casos de uso}{section.4.4}% 62
 \BOOKMARK [2][-]{subsection.4.4.3}{Modelo de dados}{section.4.4}% 63
 \BOOKMARK [1][-]{section.4.5}{Arquitetura l\363gica}{chapter.4}% 64
-\BOOKMARK [2][-]{subsection.4.5.1}{Camada de apresenta\347\343o}{section.4.5}% 65
-\BOOKMARK [2][-]{subsection.4.5.2}{Camada da l\363gica de neg\363cio}{section.4.5}% 66
-\BOOKMARK [2][-]{subsection.4.5.3}{Camada de acesso a dados}{section.4.5}% 67
-\BOOKMARK [1][-]{section.4.6}{Arquitetura f\355sica}{chapter.4}% 68
-\BOOKMARK [2][-]{subsection.4.6.1}{Sistema de informa\347\343o}{section.4.6}% 69
-\BOOKMARK [3][-]{section*.41}{Aplica\347\343o web}{subsection.4.6.1}% 70
-\BOOKMARK [3][-]{section*.47}{API REST}{subsection.4.6.1}% 71
-\BOOKMARK [3][-]{section*.49}{Documenta\347\343o interativa}{subsection.4.6.1}% 72
-\BOOKMARK [3][-]{section*.51}{Implementa\347\343o do sistema}{subsection.4.6.1}% 73
-\BOOKMARK [3][-]{section*.55}{Aplica\347\343o mobile}{subsection.4.6.1}% 74
-\BOOKMARK [2][-]{subsection.4.6.2}{Simula\347\343o em hardware}{section.4.6}% 75
-\BOOKMARK [3][-]{section*.57}{Sensores utilizados}{subsection.4.6.2}% 76
-\BOOKMARK [3][-]{section*.66}{Comunica\347\343o}{subsection.4.6.2}% 77
-\BOOKMARK [1][-]{section.4.7}{Sistema de dete\347\343o de intrusos}{chapter.4}% 78
-\BOOKMARK [2][-]{subsection.4.7.1}{Biblioteca de processamento de imagem: OpenCV}{section.4.7}% 79
-\BOOKMARK [1][-]{section.4.8}{Diagrama de componentes}{chapter.4}% 80
-\BOOKMARK [1][-]{section.4.9}{Considera\347\365es finais}{chapter.4}% 81
-\BOOKMARK [0][-]{chapter.5}{Implementa\347\343o}{}% 82
-\BOOKMARK [1][-]{section.5.1}{Sistema de informa\347\343o}{chapter.5}% 83
-\BOOKMARK [2][-]{subsection.5.1.1}{API}{section.5.1}% 84
-\BOOKMARK [2][-]{subsection.5.1.2}{Aplica\347\343o web}{section.5.1}% 85
-\BOOKMARK [2][-]{subsection.5.1.3}{Aplica\347\343o mobile}{section.5.1}% 86
-\BOOKMARK [2][-]{subsection.5.1.4}{Deploy do projecto}{section.5.1}% 87
-\BOOKMARK [1][-]{section.5.2}{Simula\347\343o em hardware}{chapter.5}% 88
-\BOOKMARK [2][-]{subsection.5.2.1}{Arduino}{section.5.2}% 89
-\BOOKMARK [2][-]{subsection.5.2.2}{Sensores}{section.5.2}% 90
-\BOOKMARK [2][-]{subsection.5.2.3}{Comunica\347\343o}{section.5.2}% 91
-\BOOKMARK [3][-]{section*.73}{Raspberry Pi}{subsection.5.2.3}% 92
-\BOOKMARK [3][-]{section*.74}{Comunica\347\343o}{subsection.5.2.3}% 93
-\BOOKMARK [2][-]{subsection.5.2.4}{Considera\347\365es finais}{section.5.2}% 94
-\BOOKMARK [1][-]{section.5.3}{Sistema de dete\347\343o de intrusos}{chapter.5}% 95
-\BOOKMARK [2][-]{subsection.5.3.1}{Algoritmos de dete\347\343o de intrusos}{section.5.3}% 96
-\BOOKMARK [2][-]{subsection.5.3.2}{Testes}{section.5.3}% 97
-\BOOKMARK [2][-]{subsection.5.3.3}{Implementa\347\343o}{section.5.3}% 98
-\BOOKMARK [1][-]{section.5.4}{Considera\347\365es finais}{chapter.5}% 99
-\BOOKMARK [0][-]{chapter.6}{Resultados}{}% 100
-\BOOKMARK [1][-]{section.6.1}{Aplica\347\343o web}{chapter.6}% 101
-\BOOKMARK [1][-]{section.6.2}{Aplica\347\343o mobile}{chapter.6}% 102
-\BOOKMARK [1][-]{section.6.3}{Testes API}{chapter.6}% 103
-\BOOKMARK [1][-]{section.6.4}{Simula\347\343o em hardware}{chapter.6}% 104
-\BOOKMARK [1][-]{section.6.5}{Sistema de dete\347\343o de intrusos}{chapter.6}% 105
-\BOOKMARK [0][-]{chapter.7}{Conclus\343o e trabalho futuro}{}% 106
-\BOOKMARK [1][-]{section.7.1}{Conclus\343o}{chapter.7}% 107
-\BOOKMARK [1][-]{section.7.2}{Trabalho futuro}{chapter.7}% 108
-\BOOKMARK [1][-]{section.7.3}{Considera\347\365es finais}{chapter.7}% 109
-\BOOKMARK [0][-]{appendix.A}{Untitled appendix \043A}{}% 110
-\BOOKMARK [0][-]{appendix.B}{Mockups da aplica\347\343o mobile}{}% 111
-\BOOKMARK [0][-]{appendix.C}{Trigger SQL }{}% 112
-\BOOKMARK [0][-]{appendix.D}{Resultados processamento de imagem }{}% 113
-\BOOKMARK [1][-]{section.D.1}{Frame 1}{appendix.D}% 114
-\BOOKMARK [1][-]{section.D.2}{Frame 2}{appendix.D}% 115
-\BOOKMARK [1][-]{section.D.3}{Frame 3}{appendix.D}% 116
-\BOOKMARK [1][-]{section.D.4}{Frame 4}{appendix.D}% 117
-\BOOKMARK [0][-]{appendix.E}{Interface gr\341fica}{}% 118
-\BOOKMARK [0][-]{appendix.F}{Descri\347\343o formal dos casos de uso gerais}{}% 119
-\BOOKMARK [0][-]{appendix.G}{Interliga\347\343o de componentes}{}% 120
+\BOOKMARK [1][-]{section.4.6}{Arquitetura f\355sica}{chapter.4}% 65
+\BOOKMARK [2][-]{subsection.4.6.1}{Sistema de informa\347\343o}{section.4.6}% 66
+\BOOKMARK [3][-]{section*.44}{Aplica\347\343o web}{subsection.4.6.1}% 67
+\BOOKMARK [3][-]{section*.49}{API REST}{subsection.4.6.1}% 68
+\BOOKMARK [3][-]{section*.52}{Documenta\347\343o interativa}{subsection.4.6.1}% 69
+\BOOKMARK [3][-]{section*.53}{Implementa\347\343o do sistema}{subsection.4.6.1}% 70
+\BOOKMARK [3][-]{section*.57}{Aplica\347\343o mobile}{subsection.4.6.1}% 71
+\BOOKMARK [2][-]{subsection.4.6.2}{Simula\347\343o em hardware}{section.4.6}% 72
+\BOOKMARK [3][-]{section*.60}{Sensores utilizados}{subsection.4.6.2}% 73
+\BOOKMARK [3][-]{section*.70}{Comunica\347\343o}{subsection.4.6.2}% 74
+\BOOKMARK [1][-]{section.4.7}{Sistema de dete\347\343o de intrusos}{chapter.4}% 75
+\BOOKMARK [2][-]{subsection.4.7.1}{Biblioteca para processamento de imagem: OpenCV}{section.4.7}% 76
+\BOOKMARK [1][-]{section.4.8}{Diagrama de componentes}{chapter.4}% 77
+\BOOKMARK [1][-]{section.4.9}{Considera\347\365es finais}{chapter.4}% 78
+\BOOKMARK [0][-]{chapter.5}{Implementa\347\343o}{}% 79
+\BOOKMARK [1][-]{section.5.1}{Sistema de informa\347\343o}{chapter.5}% 80
+\BOOKMARK [2][-]{subsection.5.1.1}{API}{section.5.1}% 81
+\BOOKMARK [2][-]{subsection.5.1.2}{Aplica\347\343o web}{section.5.1}% 82
+\BOOKMARK [2][-]{subsection.5.1.3}{Aplica\347\343o mobile}{section.5.1}% 83
+\BOOKMARK [2][-]{subsection.5.1.4}{Deploy do projecto}{section.5.1}% 84
+\BOOKMARK [1][-]{section.5.2}{Simula\347\343o em hardware}{chapter.5}% 85
+\BOOKMARK [2][-]{subsection.5.2.1}{Arduino}{section.5.2}% 86
+\BOOKMARK [2][-]{subsection.5.2.2}{Sensores}{section.5.2}% 87
+\BOOKMARK [2][-]{subsection.5.2.3}{Comunica\347\343o}{section.5.2}% 88
+\BOOKMARK [3][-]{section*.83}{Raspberry Pi}{subsection.5.2.3}% 89
+\BOOKMARK [3][-]{section*.84}{Comunica\347\343o}{subsection.5.2.3}% 90
+\BOOKMARK [2][-]{subsection.5.2.4}{Considera\347\365es finais}{section.5.2}% 91
+\BOOKMARK [1][-]{section.5.3}{Sistema de dete\347\343o de intrusos}{chapter.5}% 92
+\BOOKMARK [2][-]{subsection.5.3.1}{Algoritmos de dete\347\343o de intrusos}{section.5.3}% 93
+\BOOKMARK [2][-]{subsection.5.3.2}{Testes}{section.5.3}% 94
+\BOOKMARK [2][-]{subsection.5.3.3}{Implementa\347\343o}{section.5.3}% 95
+\BOOKMARK [1][-]{section.5.4}{Considera\347\365es finais}{chapter.5}% 96
+\BOOKMARK [0][-]{chapter.6}{Resultados}{}% 97
+\BOOKMARK [1][-]{section.6.1}{Aplica\347\343o web}{chapter.6}% 98
+\BOOKMARK [1][-]{section.6.2}{Aplica\347\343o mobile}{chapter.6}% 99
+\BOOKMARK [1][-]{section.6.3}{Testes API}{chapter.6}% 100
+\BOOKMARK [1][-]{section.6.4}{Simula\347\343o em hardware}{chapter.6}% 101
+\BOOKMARK [1][-]{section.6.5}{Sistema de dete\347\343o de intrusos}{chapter.6}% 102
+\BOOKMARK [0][-]{chapter.7}{Conclus\343o e trabalho futuro}{}% 103
+\BOOKMARK [1][-]{section.7.1}{Conclus\343o}{chapter.7}% 104
+\BOOKMARK [1][-]{section.7.2}{Trabalho futuro}{chapter.7}% 105
+\BOOKMARK [1][-]{section.7.3}{Considera\347\365es finais}{chapter.7}% 106
+\BOOKMARK [0][-]{appendix.A}{Untitled appendix \043A}{}% 107
+\BOOKMARK [0][-]{appendix.B}{Mockups da aplica\347\343o mobile}{}% 108
+\BOOKMARK [0][-]{appendix.C}{Trigger SQL }{}% 109
+\BOOKMARK [0][-]{appendix.D}{Resultados processamento de imagem }{}% 110
+\BOOKMARK [1][-]{section.D.1}{Frame 1}{appendix.D}% 111
+\BOOKMARK [1][-]{section.D.2}{Frame 2}{appendix.D}% 112
+\BOOKMARK [1][-]{section.D.3}{Frame 3}{appendix.D}% 113
+\BOOKMARK [1][-]{section.D.4}{Frame 4}{appendix.D}% 114
+\BOOKMARK [0][-]{appendix.E}{Interface gr\341fica}{}% 115
+\BOOKMARK [0][-]{appendix.F}{Descri\347\343o formal dos casos de uso gerais}{}% 116
+\BOOKMARK [0][-]{appendix.G}{Interliga\347\343o de componentes}{}% 117
