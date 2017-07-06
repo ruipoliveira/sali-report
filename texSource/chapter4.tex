@@ -4,8 +4,7 @@
 
 
 Este capítulo tem como principal objetivo a descrição do sistema que resultou do trabalho prático
-desta dissertação. Para esse fim, cada elemento pertencente ao sistema é caracterizado de
-acordo com as suas funções, especificidades e respectiva arquitetura. É também descrito como os elementos interagem entre si. Para além disso, é apresentado todo o processo de modelação do sistema tendo por base os requisitos adquiridos pelo cliente. 
+desta dissertação. Para isso, cada elemento do sistema é caracterizado de acordo com as suas funções, especificidades e arquitetura, bem como a forma como os elementos interagem entre si. Para além disso, é apresentado todo o processo de modelação do sistema tendo por base os requisitos do cliente. 
 
 
 
@@ -18,19 +17,19 @@ acordo com as suas funções, especificidades e respectiva arquitetura. É tamb�
 
 \section{Descrição global do sistema}
 
-Este sistema tem como objetivo a supervisão remota da produção de Salicórnia, permitindo não só a monitorização dos dados adquiridos pelos sensores, como também da atuação remota de determinados comandos. Neste contexto, também será possível a aquisição de imagens que possibilitará a deteção de intrusos nas quintas onde se realiza a produção desta espécie.
+Este sistema tem como objetivo a supervisão remota da produção de Salicórnia, permitindo não só a monitorização dos dados adquiridos pelos sensores, como também da atuação remota de determinados comandos. Neste contexto, também será possível a aquisição de imagens que possibilitará a deteção de intrusos nas quintas onde se realiza a produção desta espécie. O esquema da figura \ref{componentesalla} ilustra de um modo geral todos os componentes e as diferentes plataformas com que o cliente pode interagir. 
 
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[scale=0.5]{esquemas/global_arquitetura.pdf}
-	\caption{Ilustração principais componentes}
-	\label{componentesall}
+	\includegraphics[scale=0.48]{esquemas/global_arquitetura.pdf}
+	\caption{Ilustração dos principais componentes do sistema}
+	\label{componentesalla}
 \end{figure}
 
 
 
-O esquema da figura \ref{componentesall} ilustra de um modo geral todos os componentes e as diferentes plataformas com que o cliente pode interagir. 
+
 
 
 Como vimos no capítulo 3, uma plantação de  Salicórnia carece de um controlo relativamente fino de certos parâmetros ambientais sobretudo da salinidade do terreno onde ela cresce, que depende, das chuvas, da salinidade da água dos canais da ria, entre outros. Nas quintas onde se cultiva salicórnia, a produção faz-se numa espécie de leiras limitadas por pequenos canais de irrigação que podem ser cheios de água salgada proveniente dos esteiros que rodeiam a quinta. Esta operação implica a abertura de válvulas de admissão dessa água, medida do nível da maré nos canais, monitorização da qualidade e salinidade da água exterior.
@@ -45,10 +44,10 @@ Como vimos no capítulo 3, uma plantação de  Salicórnia carece de um controlo
 \end{figure}
 
 
-Tal como ilustrado na figura \ref{leira}, pretende-se que sejam colocados módulos com sensores (\acl{SM}) distribuídos estrategicamente por cada leira. Cada um desses módulos, irá comunicar com um módulo central (\acl{CM}) originando uma topologia de rede em estrela.  Por sua vez, cada um destes módulos centrais irá comunicar diretamente com o servidor que permitirá receber todos os dados adquiridos tanto pelos sensores como por atuadores, permitindo que estes sejam guardados numa base de dados especifica. Os atuadores, permitirão despoletar ações que autorizam a ativação ou desativação de bombas e/ou válvulas para transferências de águas de modo a melhorar as condições de cultivo da Salicornia. 
-Pretende-se que os módulos centrais tenham acesso à camada protocolar \acs{TCP}/\acs{IP} (Internet) de modo a permitir a utilização da \acs{API} \acs{REST} via \ac{HTTP} desenvolvida para o efeito. 
+Tal como ilustrado na figura \ref{leira}, pretende-se que sejam colocados módulos com sensores distribuídos estrategicamente por cada leira. Cada um desses módulos, irá comunicar com um módulo central originando uma topologia de rede em estrela.  Por sua vez, cada um destes módulos centrais irá comunicar diretamente com o servidor que receberá todos os dados adquiridos tanto pelos sensores como por atuadores, permitindo que estes sejam guardados numa base de dados específica. Os atuadores, permitirão despoletar ações que autorizam a ativação ou desativação de bombas e/ou válvulas para transferências de águas de modo a melhorar as condições de cultivo da Salicornia. 
+Pretende-se que os módulos centrais tenham acesso à camada protocolar \acs{TCP}/\acs{IP} (Internet) de modo a conseguirem a utilização da \acs{API} \acs{REST} via \ac{HTTP} desenvolvida para o efeito. 
 
-No que diz respeito às plataformas para interação com o cliente, pretende-se que exista uma \textit{dashboard} e uma aplicação \textit{mobile}. A dashboard disponibilizará  uma interface que apresenta as informações mais importante para o utilizador de forma apelativa, tornando mais fácil a sua interação e respetiva leitura, possibilitando ainda gerir todo o sistema e realizar operações de controlo remoto. Por outro lado, a aplicação \textit{mobile} permitirá apenas a monitorização do cultivo da Salicornia e receção de alertas quando estes ocorram.
+No que diz respeito às plataformas de interação com o cliente, espera-se que exista uma \textit{dashboard} e uma aplicação \textit{mobile}. A \textit{dashboard} disponibilizará  uma interface que apresenta as informações mais importantes para o utilizador de forma apelativa, tornando mais fácil a sua interação e respetiva leitura, possibilitando ainda a gestão de todo o sistema e realização de operações de controlo remoto. Por outro lado, a aplicação \textit{mobile} deverá permitir apenas a monitorização do cultivo da Salicornia e receção de alertas quando estes ocorrem.
 
 
 
@@ -66,7 +65,7 @@ No contexto desta dissertação é necessário reter dois conceitos principais, 
 \end{itemize}
 
 
-O cenário da figura \ref{esquema1} ilustra três \textit{Sensor Modules} que comunicam com um \acl{CM}. Cada um desses \acl{SM} possui um conjunto especifico de sensores, podendo estes ser atuadores ou câmaras. Para a comunicação com o \acl{CM}, cada \acl{SM} possui determinado módulo de comunicação que permita a transferência dos dado adquiridos pelos sensores. Posteriormente, o \acl{CM} possui um determinado protocolo de comunicação (TPC/IP) que permita a utilização da API REST e respetivo envio ou atualização dos dados adquiridos pelo sistema. 
+O cenário da figura \ref{esquema1} ilustra três \textit{Sensor Modules} que comunicam com um \acl{CM}. Cada um desses \acl{SM} possui um conjunto específico de sensores, podendo estes ser atuadores ou câmaras. Para a comunicação com o \acl{CM}, cada \acl{SM} possui um determinado módulo de comunicação que permite a transferência dos dado adquiridos pelos sensores. Posteriormente, o \acl{CM} possui um determinado protocolo de comunicação (TPC/IP) que permite a utilização da \ac{API} e respetivo envio ou atualização dos dados adquiridos pelo sistema. 
 
 
 
@@ -91,7 +90,7 @@ Um \acl{SM} consiste num micro-controlador responsável pela aquisição de dado
 
 Tal como referido anteriormente, cada \acl{SM} terá que utilizar um determinado módulo de comunicação para possibilitar a transferência dos dados adquiridos para o módulo central. Para além disso, pretende-se que o \acl{SM} em condições extremas, possa tomar decisões de atuação, isto é, caso seja lido um valor fora do padrão e que seja necessário a ativação de um atuador, este deverá ser auto suficiente em tomar esta decisão, sem necessidade de intervenção do utilizador. 
 
-Pretende-se que este módulo seja identificado por um determinado nome, possua uma bateria que permita a sua mobilidade, tenha um ou vários módulos de comunicação acoplados que permitam comunicar com um módulo centrar, uma memoria e um módulo \ac{GPS} que permita aceder à sua localização, identificando-o em caso de furto. Para além disso, um \acl{SM} terá que possuir obrigatoriamente um ou vários sensores.
+Pretende-se que este módulo seja identificado por um determinado nome, possua uma bateria que permita a sua mobilidade, tenha um ou vários módulos de comunicação acoplados que permitam comunicar com um módulo centrar, uma memória e um módulo \ac{GPS} que permita aceder à sua localização, identificando-o em caso de furto. Para além disso, um \acl{SM} terá que possuir obrigatoriamente um ou vários sensores.
 
 
 
@@ -128,7 +127,7 @@ Pretende-se que este módulo possua alguma capacidade de processamento, uma vez 
 Durante o desenvolvimento de \textit{software} pressupõe-se que os seus intervenientes sigam determinadas metodologias para que o seu sistema possa revolucionar a vida de um grupo em especifico ou até mesmo da sociedade. 
 
 
-O ciclo de vida do desenvolvimento de um software, também conhecido como \ac{SDLC}, é composto genericamente por quatro fases principais: conceção, projeto, criação e a implementação. Antes do \ac{SDLC}, o processo de desenvolvimento do \textit{software} foi tomado como atividade informal sem regras nem padrões formais. Este facto poderá originar vários problemas, tais como o atraso no desenvolvimento, aumento de custos e baixa qualidade do \textit{software} criado. Existem enumerados modelos e visões que propõem alguns padrões e etapas necessárias ao desenvolvimento de um sistema com qualidade.
+O ciclo de vida do desenvolvimento de um software, também conhecido como \ac{SDLC}, é composto genericamente por quatro fases principais: conceção, projeto, criação e implementação. Antes do \ac{SDLC}, o processo de desenvolvimento do \textit{software} foi tomado como atividade informal sem regras nem padrões formais. Este facto poderá originar vários problemas, tais como o atraso no desenvolvimento, aumento de custos e baixa qualidade do \textit{software} criado. Existem inúmeros modelos e visões que propõem alguns padrões e etapas necessárias ao desenvolvimento de um sistema com qualidade.
 Na figura \ref{sdlcartic} encontram-se as várias etapas consideradas por \textit{Munish Kaur et al.}\cite{Saini2014}.
 
 
@@ -146,32 +145,32 @@ Na figura \ref{sdlcartic} encontram-se as várias etapas consideradas por \texti
 
 
 \begin{itemize}
-	\item \textbf{Análise de viabilidade}: nesta fase são analisados os dados de entrada e saída, processamento necessário, análise de custos e planeamento do projeto. Nesta fase é incluída a viabilidade técnica em termos de \textit{software}, \textit{hardware} e pessoas qualificadas. 
+	\item \textbf{Análise de viabilidade}: nesta fase são analisados os dados de entrada e saída, processamento necessário, análise de custos e planeamento do projeto. É ainda incluída a viabilidade técnica em termos de \textit{software}, \textit{hardware} e pessoas qualificadas. 
 	
-	\item \textbf{Análise e especificação de requisitos}: nesta fase são recolhidos e analisados os requisitos necessário para a elaboração do \textit{software}. Pretende-se que no final desta fase sejam conhecidos os vários requisitos do \textit{software} e seja também criado um documento que os especifique. 
+	\item \textbf{Análise e especificação de requisitos}: nesta fase são recolhidos e analisados os requisitos necessário para a elaboração do \textit{software}. No final, pretende-se que sejam conhecidos os vários requisitos do \textit{software} e seja também criado um documento que os especifique. 
 	
-	\item  \textbf{\textit{Designing}}: consiste na tradução dos requisitos especificado para uma estrutura lógica. Pretende-se que seja elaborado um documento de especificação do \textit{design}. 
+	\item  \textbf{\textit{Designing}}: consiste na tradução dos requisitos especificados para uma estrutura lógica. No final prevê-se que seja elaborado um documento de especificação do \textit{design}. 
 	
 	
 	\item  \textbf{\textit{Coding}}: a programação real é elaborada nesta fase. O documento de \textit{design} é traduzido para o código-fonte numa determinada linguagem de forma a que possa ser executado. 
 	
-	\item \textbf{Testes}: o código-fonte gerado na fase anterior é testado usando vários cenários de testes. São usadas várias técnicas de teste para avaliar a correção e validação do \textit{software}. 
+	\item \textbf{Testes}: o código-fonte gerado na fase anterior é testado usando vários cenários de testes. São usadas várias técnicas de teste para corrigir e avaliar o \textit{software}. 
 	
 	\item  \textbf{Implementação}: o \textit{software} desenvolvido é implementado para que possa ser disponibilizado ao utilizador para uso real. Pretende-se que o utilizado do sistema possa reportar erros ou problemas quando encontrados. 
 	
-	\item  \textbf{Manutenção}: o \textit{software} poderá sofrer alterações que possam solucionar problemas que tenham ocorrido. Esta fase é responsável pela pós-implementação e manutenção do \textit{software} para o seu bom funcionamento.
+	\item  \textbf{Manutenção}: o \textit{software} poderá sofrer alterações para solucionar problemas que tenham ocorrido. Esta fase é responsável pela pós-implementação e manutenção do \textit{software} para o seu bom funcionamento.
 	
 \end{itemize}
 
 %http://www.sersc.org/journals/IJSEIA/vol8_no3_2014/38.pdf
 
-Após o entendimento da descrição geral do sistema bem como todos os componentes envolvidos, segue a fase de efectuar o levantamento dos requisitos do sistema, levando-nos a entender o que o cliente deseja ou acredita precisar possibilitando a criação dos processos de negocio necessários ao sistema. Seguidamente serão apresentados os requisitos funcionais e não funcionais deste sistema. 
+Após o entendimento da descrição geral do sistema bem como todos os componentes envolvidos, segue a fase de efectuar o levantamento dos requisitos do sistema, levando-nos a entender o que o cliente deseja ou acredita precisar possibilitando a criação dos processos de negocio necessários ao sistema. Seguidamente apresentam-se os requisitos funcionais e não funcionais deste sistema. 
 
 
 \subsection{Requisitos funcionais}
 
 
-Os requisitos funcionais descrevem os critérios que devem ser usados para avaliar as funções especificas ou os comportamentos de um determinado sistema. Os requisitos funcionais que de seguida se apresentam são propostos pelo cliente no contexto deste projeto para as duas plataformas disponíveis: web (\textit{dashboard}) e mobile. \\
+Os requisitos funcionais descrevem os critérios que devem ser usados para avaliar as funções específicas ou os comportamentos de um determinado sistema. Os requisitos funcionais que de seguida se apresentam foram propostos pelo cliente no contexto deste projeto para as duas plataformas disponíveis: \textit{web} (\textit{dashboard}) e \textit{mobile}. \\
 
 
 \textbf{Aplicação web (\textit{dashboard})}
@@ -190,7 +189,7 @@ Os requisitos funcionais descrevem os critérios que devem ser usados para avali
 		
 	\item O sistema de permitir visualizar tabularmente (\textit{dataset}) os dados que cada sensor obtém. 
 	
-	\item Em cada uma das visualizações anteriormente descritas, pretende-se que seja possível efetuar uma filtragem por data.
+	\item Em cada uma das visualizações anteriormente descritas, deve ser possível efetuar uma filtragem por data.
 	
 	\item O sistema deverá permitir a exportação dos dados obtidos pelos sensores  em formato \ac{CSV}. 
 		
@@ -285,21 +284,21 @@ Os requisitos não funcionais são todos os requisitos da aplicação relacionad
 \newpage
 \section{Modelação}
 
-Tal como vimos no inicio da secção \ref{sect:analise}, a conceção de uma arquitetura envolve o estudo e respetiva modelação dos componentes que são fundamentais para a realização da mesma, bem como a análise dos casos de uso e respetiva especificação, criação do modelo de dados, diagramas de fluxos, entre outros. Toda esta modelação será descrita neste secção permitindo entender melhor como emparelhar toda a estrutura pretendida. 
+Tal como vimos no início da secção \ref{sect:analise}, a conceção de uma arquitetura envolve o estudo e respetiva modelação dos componentes que são fundamentais para a realização da mesma, bem como a análise dos casos de uso e respetiva especificação, criação do modelo de dados, diagramas de fluxos, entre outros. Toda esta modelação será descrita neste secção permitindo entender melhor como emparelhar toda a estrutura pretendida. 
 
 
 
 \subsection{Entidades envolvidas}
 
-As entidades envolvidas ou atores são os utilizadores do sistema, podendo ser humanos ou entidade máquina, que interagem com o sistema para executar uma determinada ação significativo. No contexto do sistema descrito existem três entidades distintas que são importantes descrever: 
+As entidades envolvidas ou atores são os utilizadores do sistema, podendo ser humanos ou entidade máquina, que interagem com o sistema para executar uma determinada ação significativa. No contexto do sistema descrito existem três entidades distintas que são importantes descrever: 
 
 \begin{itemize}
 	
-	\item \textbf{General user}: este ator poderá registar-se e associando-se a uma determinada empresa existente no sistema. Após a validação por parte da empresa, este utilizador poderá aceder à sua área reservada através da \textit{dashboard} ou da aplicação mobile. 
+	\item \textbf{\textit{General user}}: este ator poderá registar-se e associar-se a uma determinada empresa existente no sistema. Após a validação por parte da empresa, este utilizador poderá aceder à sua área reservada através da \textit{dashboard} ou da aplicação mobile. 
 	
-	\item \textbf{Company user}: este utilizador tem a possibilidade de gerir todos os \textit{general users} que se possam associar à sua empresa. Deste modo, este utilizador poderá validar ou remover os \textit{general users} que a si se associam. 
+	\item \textbf{\textit{Company user}}: este utilizador tem a possibilidade de gerir todos os \textit{general users} que se possam associar à sua empresa. Deste modo, este utilizador poderá validar ou remover os \textit{general users} que a si se associam. 
 	
-	\item \textbf{Administrador}: vulgarmente denominado por Admin. Pretende-se que apenas exista uma único administrador. Este ator tem a possibilidade de adicionar novas empresas ao sistema, isto é, criar novas utilizador com permissões especificas. 
+	\item \textbf{Administrador}: vulgarmente denominado por \textit{admin}. Pretende-se que apenas exista uma único administrador. Este ator tem a possibilidade de adicionar novas empresas ao sistema, isto é, criar novos utilizadores com permissões especificas. 
 	
 \end{itemize}
 
@@ -307,7 +306,6 @@ As entidades envolvidas ou atores são os utilizadores do sistema, podendo ser h
 
 
 \subsection{Casos de uso}
-
 
 Nas figuras \ref{usedash} e \ref{useMobile} encontram-se representados os esquemas dos casos de uso da \textit{dashboard} (denominada por \textit{saliDashboard}) e da aplicação \textit{mobile} (denominada por \textit{saliMobile}), respectivamente.
 Seguidamente serão descritos cada um dos casos de uso para as duas plataformas. De notar que todos os casos de uso na aplicação \textit{mobile} também se encontram disponíveis através da \textit{dashboard}. 
@@ -422,7 +420,7 @@ Depois da análise de requisitos desenhou-se um modelo de dados que permitisse m
 \end{figure}
 
 
-Nas tabelas \ref{tabeladb1} e \ref{tabeladb2} são descritos cada uma das entidades de dados existente neste sistema, evidenciando as chaves primária e estrangeiras de cada uma. 
+Nas tabelas \ref{tabeladb1} e \ref{tabeladb2} são descritos cada uma das entidades de dados existente neste sistema, evidenciando as chaves primárias e estrangeiras de cada uma. 
 
 
 
@@ -486,7 +484,7 @@ Nas tabelas \ref{tabeladb1} e \ref{tabeladb2} são descritos cada uma das entida
 \newpage
 \section{Arquitetura lógica}
 
-Nesta secção é apresentada uma arquitetura lógica do sistema, indicando as camadas que contém, especificando quais as relações de dependência que estas possuem entre si. Seguidamente, é explicado como implementar esta lógica com os respetivos componentes físicos. 
+Nesta secção é apresentada a arquitetura lógica do sistema, indicando as camadas que contém, especificando quais as relações de dependência que estas possuem entre si. Seguidamente, é explicado como implementar esta lógica com os respetivos componentes físicos. 
 
 
 Normalmente este tipo de arquitetura é composto por três camadas com intenções diferentes: camada de apresentação, camada de lógica de negócio e camada de acesso a dados. Pretende-se que com a descrição desta arquitetura seja facilitada a manutenção, a portabilidade e a
@@ -523,7 +521,7 @@ A camada de lógica de negócio diz respeito à camada onde é realizado todo o 
 
 
 
-Relativamente à camada de acesso a dados, deverão estar presentes as funcionalidades de criação, edição, remoção ou simples de visualização dos dados, sendo responsável pelas operações de persistência e consulta de dados solicitadas pela camada de lógica de negócio.
+Relativamente à camada de acesso a dados, deverão estar presentes as funcionalidades de criação, edição, remoção ou simples de visualização dos dados, sendo responsável pelas operações de persistência e consulta de dados solicitados pela camada de lógica de negócio.
 
 
 \section{Arquitetura física}
@@ -546,19 +544,19 @@ A figura \ref{fisicablocos} representa genericamente os blocos principais do sis
 \subsection{Sistema de informação}
 
 
-Segundo \textit{Laudon et al.}\cite{Laudon1998} um sistema de informação define-se como sendo uma inter-relação de múltiplos componente podendo estes ser equipamentos, telecomunicações, \textit{software}, bases de dados e outras tecnologias de transformação de informação. Todos estes componentes permitem a recolha, processamento, armazenamento e distribuição de informação que possibilita a tomada de decisões e controlo para uma determinada organização, ou até mesmo para a sociedade, de modo a torná-la mais acessível e útil.
+Segundo \textit{Laudon et al.}\cite{Laudon1998} um sistema de informação define-se como sendo uma inter-relação de múltiplos componentes podendo estes ser equipamentos, telecomunicações, \textit{software}, bases de dados e outras tecnologias de transformação de informação. Todos estes componentes permitem a recolha, processamento, armazenamento e distribuição de informação que possibilita a tomada de decisões e controlo para uma determinada organização, ou até mesmo para a sociedade, de modo a torná-la mais acessível e útil.
 
-Dada a elevada complexidade de um sistema de informação, é possivel identificar algumas funcionalidade comuns aos diversos sistema existentes, são eles\cite{Turban1996}: 
+Dada a elevada complexidade de um sistema de informação, é possivel identificar algumas funcionalidades comuns aos diversos sistema existentes, são elas\cite{Turban1996}: 
 
 \begin{itemize}
-	\item \textbf{Recolha de dados}: sequência de tarefas que permitem a adição de novos dados ao sistema.
+	\item \textbf{Recolha de dados}: sequência de tarefas que possibilitam a adição de novos dados ao sistema.
 	
 	\item \textbf{Organização e armazenamento de dados}: é imprescindível uma boa organização na estrutura de dados possibilitando uma fácil e rápida localização.
 	\item \textbf{Processamento de dados}: qualquer funcinalidade que permita a produção de resultados mais úteis do que os dados em bruto. 
 	 
 	\item \textbf{Distribuição de informação}: após o processamento de dados é fundamental a distribuição destes a quem precise deles.
 	
-	\item \textbf{Utilização da informação}: por si só, a informação não tem qualquer valor, a sua utilização em contexto adequado permite a extração de determinadas conclusões para que possam ser tomadas decisões.
+	\item \textbf{Utilização da informação}: por si só, a informação não tem qualquer valor, a sua utilização em contexto adequado possibilita a extração de determinadas conclusões para que possam ser tomadas decisões.
 	
 \end{itemize}
 
@@ -947,7 +945,7 @@ O esquema da figura \ref{esquemcomm} pretende ilustrar os tipos de comunicação
 
 
 
-Este módulo bluetooth oferece uma forma simples e barata de enviar e receber informações remotamente. Neste módulo existe um \ac{LED} que indica se este se encontra emparelhado com algum dispositivo. Na figura \ref{comimageesquema} encontra-se o esquema de ligação deste módulo e na tabela \ref{cara-comm} são apresentadas as suas principais características.
+Este módulo bluetooth oferece uma forma simples e com custo reduzido para enviar e receber informações remotamente. Neste módulo existe um \ac{LED} que indica se este se encontra emparelhado com algum dispositivo. Na figura \ref{comimageesquema} encontra-se o esquema de ligação deste módulo e na tabela \ref{cara-comm} são apresentadas as suas principais características.
 
 
 
@@ -1004,7 +1002,7 @@ Este módulo bluetooth oferece uma forma simples e barata de enviar e receber in
 
 
 
-\section{Sistema de deteção de intrusos}
+\subsection{Sistema de deteção de intrusos}
 
 
 No contexto desta dissertação houve necessidade de implementar um sistema de video-stream que permitisse detetar intrusos, maioritariamente pessoas ou animais de grande porte, que possam invadir as quintas onde se produz Salicórnia. Esta necessidade prende-se essencialmente com elevado custo do \textit{hardware} do sistema de monitorização e também de eventuais instrumentos de elevado custo necessários ao cultivo desta espécie, como por exemplo,  geradores, máquinas elétricas para poda, entre outros.
@@ -1012,7 +1010,7 @@ No contexto desta dissertação houve necessidade de implementar um sistema de v
 Neste secção é descrita a tecnologia de processamento de imagem utilizada tal como o material necessário e respetiva arquitetura. 
 
 
-\subsection{Biblioteca para processamento de imagem: OpenCV}
+\subsubsection{Biblioteca para processamento de imagem: OpenCV}
 
 O OpenCV, também conhecido por \textit{Open Source Computer Vision Library}, é uma biblioteca de \textit{software} de visão por computador de código \textit{open-source} (figura \ref{opencvlogo}). 
 
@@ -1088,10 +1086,12 @@ Para comunicação entre o servidor web com a aplicação em Flask foi necessár
 \newpage
 \section{Diagrama de componentes}
 
+Para o cenário de simulação em \textit{hardware} e respetivo sistema de informação, em que se inclui a \textit{dashboard}, a \ac{API}, aplicação mobile e sistema de deteção de intrusos, obtive o seguinte diagrama de componentes com as respetivas tecnologias utilizadas. 
+
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=\linewidth]{esquemas/arquitetura-final.pdf}
-	\caption{Esquema relacional da estrutura da base de dados}
+	\caption{Diagrama final de componentes do sistema}
 	\label{componentesall}
 \end{figure}
 

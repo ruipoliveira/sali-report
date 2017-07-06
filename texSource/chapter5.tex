@@ -4,23 +4,14 @@
 
 \chapter{Implementação}
 \label{implementacao}
-Neste capitulo será apresentado ....
-
-kkkkkkkkkDurante o desenvolvimento um software pressupõe-se que os seus intervenientes sigam determinadas metodologia para o seu programa possa revolucionar a vida de um grupo em especifico ou até mesmo da sociedade. 
-Durante o desenvolvimento um software pressupõe-se que os seus intervenientes sigam determinadas metodologia para o seu programa possa revolucionar a vida de um grupo em especifico ou até mesmo da sociedade. kkkkkkkkk
 
 
 
 
 
+Neste capítulo, são explicados os detalhes da implementação deste projeto, incluindo especificamente o projeto Django que inclui o sistema de informação com a aplicação web (frontend/backend) e API REST e também a aplicação mobile em Phonegap. Para além disso, é descrita a implementação da simulação em \textit{hardware} para o cenário descrito no capítulo anterior bem como o sistema de deteção de intrusos. 
 
-
-
-
-
-
-
-
+Segundo o ciclo de vida de um software, estabelecido por \textit{Munish Kaur et al.}\cite{Saini2014} que analisámos na secção X.X, este capitulo irá incluir, em parte, a fase de \textit{designing} mas sobretudo a fase de \textit{coding}. 
 
 
 
@@ -29,13 +20,115 @@ Durante o desenvolvimento um software pressupõe-se que os seus intervenientes s
 \section{Sistema de informação}
 
 
-trigger..
+Relativamente ao projeto Django, numa primeira fase procedeu-se à incorporação do \ac{SGBD} PostgreSQL através do psycopg2\footnote{http://initd.org/psycopg/docs/}. O psycopg2 consiste num adaptador entre o PostgreSQL com a linguagem de programação Python, que permite executar de formar eficiente qualquer \textit{script} em \ac{SQL}. É de notar que nesta fase inicial, encontram-se instalados algumas aplicações nativas do Django entre as quais, o  \texttt{django.contrib.auth} e  o \texttt{django.contrib.sessions}. Através delas é possivel verificar o total funcionamento da base de dados uma vez que permitem criar automática das tabelas associadas ao utilizadores, grupos, permissões e respetivos conteúdos, administração, sessões entres outros. Estas tabelas são fundamentais ao bom funcionamento do sistema uma vez que são consideradas no modelo de dados descrito na secção XX. 
+
+
+Posteriormente, procedeu-se à criação dos diferentes \texttt{Models} conforme a nomenclatura apresentada nas tabelas X e X da secção XX. O excerto de código seguinte pretende ilustrar a criação do \texttt{Model} associado à tabela que representa a estrutura \acl{SM}, com o respetivo identificador e atributos.  Após a criação de cada \texttt{Models} procedeu-se à migração dos dados para o \ac{SGBD} onde era possível verificar que as tabelas tinham sido criadas, através da utilização da ferramenta gráfica pgAdmin III. De modo a testar a estrutura criada, procedeu-se à introdução de dados através da zona administrativa do Django (figura X). Através dos dados introduzidos e descrevendo um cenário realista foi possível validar a estrutura e proceder à implementação da aplicação web e criação da \ac{API} \ac{REST}. 
+
+
+
+
+\begin{lstlisting}[
+language=Python,
+showspaces=false,
+basicstyle=\ttfamily,
+numbers=left,
+numberstyle=\tiny,
+commentstyle=\color{gray}
+]
+class SensorModule(models.Model):
+	id = models.AutoField(primary_key=True)
+	name = models.CharField(max_length=128)
+	seding_time = models.IntegerField()
+	status_sm = models.BooleanField(default=True)
+	baterry_sm = models.IntegerField()
+	localization_sm = models.CharField(max_length=128)
+		
+	def __str__(self):
+		return "#"str(self.id) + " name_"+str(self.name)
+
+
+\end{lstlisting}
+
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.4]{prints-web/admindjango.png}
+	\caption{Painel administrativo do Django }
+	\label{activt-autent}
+\end{figure}
+
+
+
+
+
+
+
+
+\subsection{Sistema de registo e autenticação}
+
+Primeiramente, procedeu-se à adaptação do template AdminLTE de modo a criar as páginas de autenticação e registo dos utilizadores. Como vimos anteriormente irão existir utilizadores distintos, uma vez que, de modo a identificá-los e a definir a sua permissões houve necessidade de criar grupos específicas. Foram então criados dois grupos:  \textit{company}, que identifica uma empresa e \textit{general}, que identificada um utilizador comum. O administrador do sistema é um utilizador que tem o estado de \textit{superuser} ativo, isto é, possui todas as permissões sem que estas lhe sejam atribuídas explicitamente.
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=\linewidth]{esquemas/activitydiagram-autenticacao.pdf}
+	\caption{Diagrama de atividades do processo de registo e autenticação}
+	\label{activt-autent}
+\end{figure}
+
+
+
+Como vimos anteriormente, o \textit{company user} apenas poderá ser adicionado ao sistema pelo admistrador, tendo este também permissões de gerir todos os utilizadores registados. Por outro lado, os \textit{company user} tem a possibilidade de validar os \textit{general user} que se associam à sua empresa, tendo posteriormente acesso aos dados/conteúdos da empresa. Após o registo de um novo \textit{general user} e validação por parte do \textit{company user}, existem notificações enviadas por email. Estas mensagens são enviadas recorrendo ao método \texttt{send\_mail()}\footnote{https://docs.djangoproject.com/en/1.11/topics/email/} existente nativamente no Django pelo pacote \texttt{django.core.mail}, sendo construido recorrendo ao módulo \texttt{smtplib}\footnote{Módulo que define objetos para sessões \ac{SMTP} https://docs.python.org/3/library/smtplib.html\#module-smtplib}. Na figura \ref{activt-autent} apresenta-se o diagrama de atividades que ilustra o processo de registo de um \textit{general user} que envolve o utilizador responsável pela empresa (company user). 
+
+
+
+
+
+
+
+\subsection{Geração de alarmes}
+
+No modelo de dados definido, cada sensor tem que ter obrigatoriamente associada uma tabela (AlarmsSettings) que permita definir o valor máximo e mínimo para o qual são gerados alarmes bem como as mensagens associadas para que o utilizador possa atuar.
+
+ 
+
+ 
+cada sensor tem settings 
+
+por cada leitura 
+gerar alarmes
+metodo verificação max min 
+SQL 
+stored procedure 
+Trigger
+
+forma mais eficaz: ??
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.5]{esquemas/diagramafluxoalarms.pdf}
+	\caption{Diagrama de fluxo para geração de alarmes}
+	\label{activt-autent}
+\end{figure}
+
+
+
+
+
+\subsection{Visualização dos dados e cálculos estatísticos}
+
+
 
 
 
 \subsection{\ac{API}}
 
-\subsection{Aplicação web}
+tabela token 
+
+
+
+
+\subsection{Documentação da \ac{API}}
 
 \begin{figure}[h]
 	\centering
@@ -46,12 +139,21 @@ trigger..
 
 
 
-\subsection{Aplicação mobile}
+
+
+\subsection{Aplicação web}
+
+gravatar 
+
+notificações https://docs.djangoproject.com/en/1.11/ref/contrib/messages/
+
 
 
 
 
 \subsection{\textit{Deploy} do projecto}
+
+\subsection{Aplicação mobile}
 
 
 https://jee-appy.blogspot.com.tr/2015/04/deploy-django-project-on-apache-using.html
@@ -74,7 +176,7 @@ Description:	Ubuntu 14.04.1 LTS
 
 
 \newpage
-\section{Simulação em hardware}
+\section{Simulação em \textit{hardware}}
 
 Nesta secção pretende-se explicar a implementação a nível de \textit{software} no contexto desta simulação para cada um dos micro-controladores. 
 
