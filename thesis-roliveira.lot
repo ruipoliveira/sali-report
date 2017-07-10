@@ -2,8 +2,8 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Caracter\IeC {\'\i }sticas do Arduino Nano\relax }}{17}{table.caption.24}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre vers\IeC {\~a}o 2 e 3 do Raspberry Pi\relax }}{18}{table.caption.27}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Caracter\IeC {\'\i }sticas do Arduino Nano\relax }}{17}{table.caption.25}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre vers\IeC {\~a}o 2 e 3 do Raspberry Pi\relax }}{18}{table.caption.28}
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {4.1}{\ignorespaces Especifica\IeC {\c c}\IeC {\~a}o das tabelas existentes no sistema \relax }}{39}{table.caption.41}
 \contentsline {table}{\numberline {4.2}{\ignorespaces Especifica\IeC {\c c}\IeC {\~a}o das tabelas existentes no sistema (continua\IeC {\c c}\IeC {\~a}o) \relax }}{40}{table.caption.42}
@@ -13,19 +13,18 @@
 \contentsline {table}{\numberline {4.6}{\ignorespaces Caracter\IeC {\'\i }sticas do m\IeC {\'o}dulo bluetooth HC-06}}{54}{table.caption.73}
 \contentsline {table}{\numberline {4.7}{\ignorespaces Caracter\IeC {\'\i }sticas do m\IeC {\'o}dulo bluetooth HC-06}}{55}{table.caption.79}
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Estrutura do ficheiro do tipo \ac {CSV} poss\IeC {\'\i }vel de exporta\IeC {\c c}\IeC {\~a}o\relax }}{64}{table.caption.87}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {B.1}{\ignorespaces Um nome qualquer\relax }}{81}{table.caption.91}
+\contentsline {table}{\numberline {B.1}{\ignorespaces Um nome qualquer\relax }}{87}{table.caption.94}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {D.1}{\ignorespaces Your caption here\relax }}{87}{table.D.1}
-\contentsline {table}{\numberline {D.2}{\ignorespaces Your caption here\relax }}{89}{table.D.2}
-\contentsline {table}{\numberline {D.3}{\ignorespaces Your caption here\relax }}{91}{table.D.3}
-\contentsline {table}{\numberline {D.4}{\ignorespaces Your caption here\relax }}{93}{table.D.4}
+\contentsline {table}{\numberline {D.1}{\ignorespaces Your caption here\relax }}{93}{table.D.1}
+\contentsline {table}{\numberline {D.2}{\ignorespaces Your caption here\relax }}{95}{table.D.2}
+\contentsline {table}{\numberline {D.3}{\ignorespaces Your caption here\relax }}{97}{table.D.3}
+\contentsline {table}{\numberline {D.4}{\ignorespaces Your caption here\relax }}{99}{table.D.4}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {F.1}{\ignorespaces Casos de utiliza\IeC {\c c}\IeC {\~a}o: Login/Logout\relax }}{97}{table.caption.98}
-\contentsline {table}{\numberline {F.2}{\ignorespaces Casos de utiliza\IeC {\c c}\IeC {\~a}o: Login/Logout\relax }}{97}{table.caption.99}
 \addvspace {10\p@ }

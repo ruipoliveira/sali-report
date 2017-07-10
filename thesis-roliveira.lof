@@ -1,21 +1,21 @@
 \select@language {portuguese}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Salicornia proveniente da ria de Aveiro\relax }}{1}{figure.caption.9}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Salicornia proveniente da ria de Aveiro\relax }}{1}{figure.caption.10}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Colora\IeC {\c c}\IeC {\~a}o da planta \textit {Salicornia ramosissima} na primavera (\IeC {\`a} esquerda) e no outono (\IeC {\`a} direita) (Fotografia por Jos\IeC {\'e} M. G. Pereira)\relax }}{6}{figure.caption.12}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Esquema representativo do ciclo de vida da \textit {Salicornia ramosissima}. A - semente inclu\IeC {\'\i }da no sedimento; B -jovens plantas e plantas senescentes do ano anterior; C - planta no estado vegetativo, caule carnudo e articulado; D - planta no estado de flora\IeC {\c c}\IeC {\~a}o; E - planta no estado senescente. (Fotografias por Helena Silva)\relax }}{6}{figure.caption.13}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Evolu\IeC {\c c}\IeC {\~a}o da internet em cinco fases}}{8}{figure.caption.16}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Pir\IeC {\^a}mide do conhecimento: modelo DIKW\relax }}{9}{figure.caption.19}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Colora\IeC {\c c}\IeC {\~a}o da planta \textit {Salicornia ramosissima} na primavera (\IeC {\`a} esquerda) e no outono (\IeC {\`a} direita) (Fotografia por Jos\IeC {\'e} M. G. Pereira)\relax }}{6}{figure.caption.13}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Esquema representativo do ciclo de vida da \textit {Salicornia ramosissima}. A - semente inclu\IeC {\'\i }da no sedimento; B -jovens plantas e plantas senescentes do ano anterior; C - planta no estado vegetativo, caule carnudo e articulado; D - planta no estado de flora\IeC {\c c}\IeC {\~a}o; E - planta no estado senescente. (Fotografias por Helena Silva)\relax }}{6}{figure.caption.14}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Evolu\IeC {\c c}\IeC {\~a}o da internet em cinco fases}}{8}{figure.caption.17}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Pir\IeC {\^a}mide do conhecimento: modelo DIKW\relax }}{9}{figure.caption.20}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Arduin Nano\relax }}{16}{figure.caption.23}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Identifica\IeC {\c c}\IeC {\~a}o dos pinos no Arduino Nano\relax }}{16}{figure.caption.23}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Raspberry Pi 3\relax }}{18}{figure.caption.26}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Identifica\IeC {\c c}\IeC {\~a}o dos principais componentes no Raspberry Pi 3 \relax }}{18}{figure.caption.26}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Arduin Nano\relax }}{16}{figure.caption.24}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Identifica\IeC {\c c}\IeC {\~a}o dos pinos no Arduino Nano\relax }}{16}{figure.caption.24}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Raspberry Pi 3\relax }}{18}{figure.caption.27}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Identifica\IeC {\c c}\IeC {\~a}o dos principais componentes no Raspberry Pi 3 \relax }}{18}{figure.caption.27}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Ilustra\IeC {\c c}\IeC {\~a}o dos principais componentes do sistema\relax }}{25}{figure.caption.28}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Ilustra\IeC {\c c}\IeC {\~a}o da distribui\IeC {\c c}\IeC {\~a}o dos m\IeC {\'o}dulos em duas leiras\relax }}{26}{figure.caption.29}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Esquema de componentes e respetiva comunica\IeC {\c c}\IeC {\~a}o entre tr\IeC {\^e}s \ac {SM} e um \ac {CM}\relax }}{27}{figure.caption.30}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Fase de desenvolvimento de um software }}{29}{figure.caption.36}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Ilustra\IeC {\c c}\IeC {\~a}o dos principais componentes do sistema\relax }}{25}{figure.caption.29}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Ilustra\IeC {\c c}\IeC {\~a}o da distribui\IeC {\c c}\IeC {\~a}o dos m\IeC {\'o}dulos em duas leiras\relax }}{26}{figure.caption.30}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Esquema de componentes e respetiva comunica\IeC {\c c}\IeC {\~a}o entre tr\IeC {\^e}s \ac {SM} e um \ac {CM}\relax }}{27}{figure.caption.31}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Fase de desenvolvimento de um software }}{29}{figure.caption.37}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Casos de uso para a aplica\IeC {\c c}\IeC {\~a}o web (dashboard) \relax }}{34}{figure.caption.38}
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Casos de uso para a aplica\IeC {\c c}\IeC {\~a}o mobile\relax }}{34}{figure.caption.39}
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Esquema relacional da estrutura da base de dados\relax }}{38}{figure.caption.40}
@@ -43,20 +43,20 @@
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Painel administrativo do Django \relax }}{60}{figure.caption.83}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Diagrama de atividades do processo de registo e autentica\IeC {\c c}\IeC {\~a}o\relax }}{61}{figure.caption.84}
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Diagrama de fluxo para gera\IeC {\c c}\IeC {\~a}o de alarmes\relax }}{62}{figure.caption.86}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Arquitetura do sistema de informa\IeC {\c c}\IeC {\~a}o (dashboard e API)\relax }}{63}{figure.caption.87}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Documenta\IeC {\c c}\IeC {\~a}o da API REST com a ferramenta Swagger\relax }}{66}{figure.caption.89}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {D.1}{\ignorespaces Pir\IeC {\^a}mide do conhecimento: modelo DIKW\relax }}{86}{figure.caption.92}
-\contentsline {figure}{\numberline {D.2}{\ignorespaces Pir\IeC {\^a}mide do conhecimento: modelo DIKW\relax }}{88}{figure.caption.93}
-\contentsline {figure}{\numberline {D.3}{\ignorespaces Pir\IeC {\^a}mide do conhecimento: modelo DIKW\relax }}{90}{figure.caption.94}
-\contentsline {figure}{\numberline {D.4}{\ignorespaces Pir\IeC {\^a}mide do conhecimento: modelo DIKW\relax }}{92}{figure.caption.95}
+\contentsline {figure}{\numberline {D.1}{\ignorespaces Pir\IeC {\^a}mide do conhecimento: modelo DIKW\relax }}{92}{figure.caption.95}
+\contentsline {figure}{\numberline {D.2}{\ignorespaces Pir\IeC {\^a}mide do conhecimento: modelo DIKW\relax }}{94}{figure.caption.96}
+\contentsline {figure}{\numberline {D.3}{\ignorespaces Pir\IeC {\^a}mide do conhecimento: modelo DIKW\relax }}{96}{figure.caption.97}
+\contentsline {figure}{\numberline {D.4}{\ignorespaces Pir\IeC {\^a}mide do conhecimento: modelo DIKW\relax }}{98}{figure.caption.98}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {E.1}{\ignorespaces Pir\IeC {\^a}mide do conhecimento: modelo DIKW\relax }}{95}{figure.caption.96}
-\contentsline {figure}{\numberline {E.2}{\ignorespaces Pir\IeC {\^a}mide do conhecimento: modelo DIKW\relax }}{96}{figure.caption.97}
+\contentsline {figure}{\numberline {E.1}{\ignorespaces Pir\IeC {\^a}mide do conhecimento: modelo DIKW\relax }}{101}{figure.caption.99}
+\contentsline {figure}{\numberline {E.2}{\ignorespaces Pir\IeC {\^a}mide do conhecimento: modelo DIKW\relax }}{102}{figure.caption.100}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {G.1}{\ignorespaces Pir\IeC {\^a}mide do conhecimento: modelo DIKW\relax }}{99}{figure.caption.100}
+\contentsline {figure}{\numberline {G.1}{\ignorespaces Pir\IeC {\^a}mide do conhecimento: modelo DIKW\relax }}{105}{figure.caption.101}
