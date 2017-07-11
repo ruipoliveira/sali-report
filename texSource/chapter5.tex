@@ -20,7 +20,7 @@ Segundo o ciclo de vida de um software, estabelecido por \textit{Munish Kaur et 
 \section{Sistema de informação}
 
 
-Relativamente ao projeto Django, numa primeira fase procedeu-se à incorporação do \ac{SGBD} PostgreSQL através do psycopg2\footnote{http://initd.org/psycopg/docs/}. O psycopg2 consiste num adaptador entre o PostgreSQL com a linguagem de programação Python, que permite executar de formar eficiente qualquer \textit{script} em \ac{SQL}. É de notar que nesta fase inicial, encontram-se instalados algumas aplicações nativas do Django entre as quais, o  \texttt{django.contrib.auth} e  o \texttt{django.contrib.sessions}. Através delas é possivel verificar o total funcionamento da base de dados uma vez que permitem criar automática das tabelas associadas ao utilizadores, grupos, permissões e respetivos conteúdos, administração, sessões entres outros. Estas tabelas são fundamentais ao bom funcionamento do sistema uma vez que são consideradas no modelo de dados descrito na secção XX. 
+Relativamente ao projeto Django, numa primeira fase procedeu-se à incorporação do \ac{SGBD} PostgreSQL através do psycopg2\footnote{http://initd.org/psycopg/docs/}. O psycopg2 consiste num adaptador entre o PostgreSQL com a linguagem de programação Python, que permite executar de formar eficiente qualquer \textit{script} em \ac{SQL}. É de notar que nesta fase inicial, encontram-se instalados algumas aplicações nativas do Django entre as quais, o  \texttt{django.contrib.auth} e  o \texttt{django.contrib.sessions}. Através delas é possivel verificar o total funcionamento da base de dados uma vez que permitem criar automática das tabelas associadas ao utilizadores, grupos, permissões e respetivos conteúdos, administração, sessões entres outros. Estas tabelas são fundamentais ao bom funcionamento do sistema, sendo consideradas no modelo de dados descrito na secção XX. 
 
 
 Posteriormente, procedeu-se à criação dos diferentes \texttt{Models} conforme a nomenclatura apresentada nas tabelas X e X da secção XX. O excerto de código seguinte pretende ilustrar a criação do \texttt{Model} associado à tabela que representa a estrutura \acl{SM}, com o respetivo identificador e atributos.  Após a criação de cada \texttt{Models} procedeu-se à migração dos dados para o \ac{SGBD} onde era possível verificar que as tabelas tinham sido criadas, através da utilização da ferramenta gráfica pgAdmin III. De modo a testar a estrutura criada, procedeu-se à introdução de dados através da zona administrativa do Django (figura \ref{admingdjango}). Através dos dados introduzidos e descrevendo um cenário realista foi possível validar a estrutura e proceder à implementação da aplicação web e criação da \ac{API} \ac{REST}. 
@@ -419,6 +419,9 @@ Para implementar o projeto Django juntamente com um servidor web Apache 2.0 num 
 
 
 
+\subsection{Considerações finais}
+
+
 
 
 
@@ -524,100 +527,144 @@ pq nao foi usado um sensor de salinidade? nao havia orçamento..
 
 
 
-No que toca ao desenvolvimento do sistema de deteção de intrusos, optou-se por utilizar o package picamera. Este pacote fornece  uma interface em Python (disponível para qualquer versão) para o módulo de câmara Raspberry Pi\footnote{http://picamera.readthedocs.io/en/release-1.13/}, permitindo uma fácil interação entre a aquisição da imagem e respetivo processamento. Neste contexto optou-se obviamente por utilizar a interface Python da biblioteca do OpenCV.
+No que toca ao desenvolvimento do sistema de deteção de intrusos, optou-se por utilizar o package \texttt{picamera}\footnote{http://picamera.readthedocs.io/en/release-1.13/} para aquisição da imagem proveniente do Raspberry Pi. Este pacote, fornece  uma interface em Python (disponível para qualquer versão) para o módulo de câmara Raspberry Pi, permitindo uma fácil interação entre a aquisição da imagem e respetivo processamento. Neste contexto optou-se obviamente por utilizar a interface Python da biblioteca do OpenCV.
 
 
 
-\subsection{Algoritmos de deteção de intrusos}
+\subsection{Algoritmo de deteção de intrusos}
 % artigo http://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf
 
-De modo a estudar alguns algoritmos de deteção de pessoas foram estudados alguns artigos neste contexto. 
 
+Para a implementação do algoritmo de deteção de intrusos comecei por estudar o módulo \texttt{peopledetect.py}\footnote{\url{https://github.com/npinto/opencv/blob/master/samples/python2/peopledetect.py}} disponível no repositório github do OpenCV. Este algoritmo permite detetar pessoas recorrendo a algoritmos específicos do OpenCV já treinados para o efeito, que serão descritos seguidamente. Complementarmente, foi analisado um artigo\cite{Dalal} que permitiu entender melhor a implementação apresentada, evidenciando o processo de deteção de características, algoritmos de treino (neste caso \ac{SVM}) e respetivos testes. No excerto de código seguinte encontra-se a implementação base fornecida pelo OpenCV para deteção de pessoas, que seguidamente será descrita. 
 
-Para a resolução deste problema foi efetuados 
-
-
-HOGDescriptor: classe que implementa um histograma de gradientes orientado ( [Dalal2005] ) detetor de objetos. 
-
+\begin{lstlisting}[
+language=Python,
+showspaces=false,
+basicstyle=\ttfamily,
+numbers=left,
+numberstyle=\tiny,
+commentstyle=\color{gray},
+basicstyle=\ttfamily\footnotesize
+]
 hog = cv2.HOGDescriptor()
-hog.setSVMDetector(cv2.HOGDescriptor\_getDefaultPeopleDetector())
+hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
 
-
-
-
-Usado biblioteca do opencv que permite detectar 
-HOGDescriptor
-
-
-Deteção de intrusos: 
-
-http://www.pyimagesearch.com/2015/11/09/pedestrian-detection-opencv/
-
-
-
-versão simplificada: http://www.pyimagesearch.com/2015/02/16/faster-non-maximum-suppression-python/
-
-
-
-Servidor em falsk 
-
-
-deploy 
-https://iotbytes.wordpress.com/python-flask-web-application-on-raspberry-pi-with-nginx-and-uwsgi/
-
-
-
-Dataset: %http://www.robots.ox.ac.uk/ActiveVision/Research/Projects/2009bbenfold_headpose/project.html
-
-
-é usado um detector HOG juntamente com um classificador linear SVM 
-
-
-
-
-
-parametros do método detectMultiScale do opencv 
+(rects, weights) = hog.detectMultiScale(img, winStride=(8,8), 
+	padding=(32,32), scale=1.05)
+\end{lstlisting}
+	
 
 \begin{itemize}
-	\item \texttt{img}: parâmetro obrigatório. 
-	\item \texttt{hitThreshold}: parâmetro opcional. 
-	\item \texttt{winStride}: parâmetro opcional. 
-	\item \texttt{padding}: parâmetro opcional.  Os valores típicos para preenchimento incluem  (8, 8) ,  (16, 16) ,  (24, 24) , e  (32, 32) .
+	\item \texttt{HOGDescriptor()}: esta classe implementa um histograma de gradientes orientados\cite{Dalal} que tem como objetivo a deteção de objetos.
+	
+	\item \texttt{setSVMDetector()}: permite define os coeficientes para um  classificador \ac{SVM} linear. O \ac{SVM} é um algoritmo de \textit{machine learning} usado para classificação e análise de regressões. 
 	
 	
-	\item \texttt{scale}: parâmetro opcional. 
-	\item \texttt{finalThreshold}: parâmetro opcional. 
-	\item \texttt{useMeanShiftGrouping}: parâmetro opcional. 
+	\item \texttt{getDefaultPeopleDetector()}: retorna um classificador pré-treinado para deteção de pessoas (para tamanho de janela padrão)\cite{featuredetection}. 
+	
+	
+	\item \texttt{detectMultiScale()}: permite detetar objetos de diferentes tamanhos. Este método possui vários parâmetros que permitem ajustar o tamanho de deteção de um determinado objeto, entre os quais destaco: 
+	
+\begin{itemize}
+	\item \texttt{winStride}: define o "tamanho do passo" na posição x e y da janela deslizante. Este parâmetro é opcional.
+	 
+	\item \texttt{padding}: este parâmetro é opcional e define o preenchimento. Consiste num tuplo que indica o número de pixels, na direção x e y, na qual a janela deslizante é "acolchoado" antes da extração do recurso HOG. os valores típicos para preenchimento são (8, 8),  (16, 16), (24, 24) e (32, 32).
+	
+	\item \texttt{scale}: este parâmetro controla o fator com que a imagem é redimensionada em cada camada da pirâmide de imagens, influenciando o número de níveis existentes. É um parâmetro opcional. 
+
+
+\begin{figure}[h]
+	\centering
+	\begin{minipage}[b]{0.49\textwidth}
+		\centering
+		\includegraphics[width=0.6\textwidth]{img/sliding_window_example-11.png}
+		\caption{Sensor TTC 104 NTC}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[b]{0.49\textwidth}
+		\centering
+		\includegraphics[width=0.6\textwidth]{img/pyramid.png}
+		\caption{Retirado de \cite{Rosebrock2015}}
+		\label{esquema-temp}
+	\end{minipage}
+\end{figure}
+
+
+
+	
+
+\end{itemize}
+	
+	 %% http://www.pyimagesearch.com/2015/11/16/hog-detectmultiscale-parameters-explained/
+	 
+	
 \end{itemize}
 
 
 
 
 
-Neste contexto apenas foram utilizados os seguintes parâmetros winStride, scale, padding. 
+
+
+
+
+
+
+
+
+
+%Deteção de intrusos: http://www.pyimagesearch.com/2015/11/09/pedestrian-detection-opencv/
+
+
+
+%versão simplificada: http://www.pyimagesearch.com/2015/02/16/faster-non-maximum-suppression-python/
+
+
+
+%Servidor em falsk 
+
+
+%deploy  https://iotbytes.wordpress.com/python-flask-web-application-on-raspberry-pi-with-nginx-and-uwsgi/
+
+
+
+%Dataset: %http://www.robots.ox.ac.uk/ActiveVision/Research/Projects/2009bbenfold_headpose/project.html
+
+
+
 
 
 
 \subsection{Testes}
 
-Foram considerados 4 frames de imagens .... e no apêndice X
+Pretende-se instalar uma câmara na quinta onde se produz salicornia, de modo a detectar grande parte da área existente, sobretudo onde existe os módulos sensoriais mas também algumas máquinas utilizadas no cultivo desta especie. Para tal, tenciona-se colocar uma câmara, numa primeira fase uma \textit{Raspberry Pi camera module}, mas posteriormente poderá ser substituída por uma câmara IP de maior qualidade. Esta câmara irá coloca-se no topo de um armazém existente virada para o centro da quinta a aproximadamente 3 metros de altura. 
 
+Com o objetivo de determinar quais os valores a atribuir aos parâmetros \texttt{winStride}, \texttt{padding} e \texttt{scale} foram realizados alguns testes com algumas imagens de um dataset onde seja possível detetar pessoas assumindo a mesma perspetiva, isto é, mesma altura e ângulo.  
 
+Foram considerados quatro frames de um dataset disponibilizado pela Universidade de Oxford utilizado para diferentes estudos a nível do desempenho em processamento de imagem envolvendo sistemas de vídeo vigilância, mais precisamente para detecção e tracking de pessoas\cite{imagProccdata}. O vídeo disponibilizado chama-se \texttt{TownCentreXVID.avi}. 
+
+Os resultados obtidos, isto é o tempo de processamento, numero de pessoas detetadas bem como as imagens consideradas encontram-se no anexo X. Foram considerados os seguintes valores possíveis para os parâmetros estudos: 
+
+\begin{itemize}
+	\item \texttt{winStride}: (2, 2), (4, 4), (8, 8)
+	
+	\item \texttt{padding}: (8,8), (16, 16), (24, 24)
+	
+	\item \texttt{scale}: 0.5, 1.0, 1.5 
+\end{itemize}
 
 
 \subsection{Implementação}
 
 
-%\subsection{Flask}
-
-Flask é considerada uma microframework web desenvolvida em Python e baseado nas bibliotecas WSGI Werkzeug e Jinja2. Escolhi esta microframework pois pretende-se que esta seja executada num microcontrolador com baixos recursos. Para além disso, considera-se ser de fácil aprendizagem relativamente ao Django (já abordado na capitulo XX) e com uma ótima documentação. 
+Após concluir quais os melhores valores a utilizar como parâmetros no método \linebreak \texttt{detectMultiScale()}  procedeu-se à criação de uma aplicação em Flask que possibilita o acesso à imagem capturada pelo módulo câmara e realização do respetivo processamento. Pretende-se que seja instalado um servidor web NGINX com o objetivo de ser incorporado na dashboard. 
 
 
+Caso sejam detetadas pessoas são gerados alarmes através da \ac{API} \ac{REST}. 
 
 
-%\subsection{Servidor web NGNIX}
 
-\section{Considerações finais}
+\subsection{Considerações finais}
 
 
 

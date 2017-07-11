@@ -28,6 +28,14 @@
   [Accessed: 2017-07-03]
 \BIBentrySTDinterwordspacing
 
+\bibitem{Rosebrock2015}
+\BIBentryALTinterwordspacing
+A.~Rosebrock, ``{HOG detectMultiScale parameters explained},'' 2015. [Online].
+  Available:
+  \url{http://www.pyimagesearch.com/2015/11/16/hog-detectmultiscale-parameters-explained/}
+  [Accessed: 2017-07-11]
+\BIBentrySTDinterwordspacing
+
 \bibitem{overviewsal}
 V.~Isca, A.~Seca, D.~Pinto, and A.~Silva, \emph{{An overview of Salicornia
   genus: the phytochemical and pharmacological profile}}, natural pr~ed.,
@@ -256,6 +264,29 @@ H.~A. Razavi and T.~R. Kurfess, ``{Detection of Wheel and Workpiece
 \BIBentryALTinterwordspacing
 Nginx, ``{Welcome to NGINX Wiki! | NGINX},'' 2017. [Online]. Available:
   \url{https://www.nginx.com/resources/wiki/} [Accessed: 2017-07-04]
+\BIBentrySTDinterwordspacing
+
+\bibitem{Dalal}
+\BIBentryALTinterwordspacing
+N.~Dalal and B.~Triggs, ``{Histograms of Oriented Gradients for Human
+  Detection},'' \emph{Proc. Int. Conf. Computer Vision and Pattern
+  Recognition}, pp. 886--893, 2005. [Online]. Available:
+  \url{http://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf}
+\BIBentrySTDinterwordspacing
+
+\bibitem{featuredetection}
+\BIBentryALTinterwordspacing
+``{Feature Detection — OpenCV 2.4.13.2 documentation [ONLINE]}.'' [Online].
+  Available:
+  \url{http://docs.opencv.org/2.4/modules/gpu/doc/object{\_}detection.html}
+  [Accessed: 2017-07-10]
+\BIBentrySTDinterwordspacing
+
+\bibitem{imagProccdata}
+\BIBentryALTinterwordspacing
+``{Coarse Gaze Estimation}.'' [Online]. Available:
+  \url{http://www.robots.ox.ac.uk/ActiveVision/Research/Projects/2009bbenfold{\_}headpose/project.html{\#}datasets}
+  [Accessed: 2017-07-11]
 \BIBentrySTDinterwordspacing
 
 \end{thebibliography}

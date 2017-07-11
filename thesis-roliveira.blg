@@ -50,47 +50,48 @@ Warning--empty year in temp-dta
 Warning--there is url but no urldate in temp-dta
 Warning--empty journal in GuangzhouHCInformationTechnologyCo.2011
 Warning--there is url but no urldate in Kotsiantis2007
+Warning--there is url but no urldate in Dalal
 
 Done.
-You've used 35 entries,
+You've used 39 entries,
             4106 wiz_defined-function locations,
-            1075 strings with 14593 characters,
-and the built_in function-call counts, 20276 in all, are:
-= -- 1644
-> -- 421
-< -- 130
-+ -- 220
-- -- 78
-* -- 1003
-:= -- 3350
-add.period$ -- 69
-call.type$ -- 35
-change.case$ -- 38
-chr.to.int$ -- 282
-cite$ -- 57
-duplicate$ -- 1476
-empty$ -- 1642
-format.name$ -- 91
-if$ -- 4568
+            1096 strings with 15293 characters,
+and the built_in function-call counts, 22064 in all, are:
+= -- 1781
+> -- 444
+< -- 139
++ -- 234
+- -- 81
+* -- 1085
+:= -- 3639
+add.period$ -- 77
+call.type$ -- 39
+change.case$ -- 42
+chr.to.int$ -- 306
+cite$ -- 62
+duplicate$ -- 1616
+empty$ -- 1808
+format.name$ -- 95
+if$ -- 4971
 int.to.chr$ -- 0
-int.to.str$ -- 35
-missing$ -- 282
-newline$ -- 176
-num.names$ -- 37
-pop$ -- 717
+int.to.str$ -- 39
+missing$ -- 308
+newline$ -- 196
+num.names$ -- 39
+pop$ -- 803
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 4
-skip$ -- 1540
+skip$ -- 1674
 stack$ -- 0
-substring$ -- 674
-swap$ -- 1099
-text.length$ -- 36
+substring$ -- 734
+swap$ -- 1186
+text.length$ -- 37
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 35
-warning$ -- 22
-while$ -- 90
-width$ -- 37
-write$ -- 382
-(There were 22 warnings)
+type$ -- 39
+warning$ -- 23
+while$ -- 96
+width$ -- 41
+write$ -- 420
+(There were 23 warnings)
