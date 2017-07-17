@@ -130,7 +130,7 @@ Na figura \ref{sdlcartic} encontram-se as várias etapas consideradas por \texti
 
 
 
-
+\newpage
 
 \begin{figure}[!htb]
 	\centering
@@ -264,7 +264,7 @@ Os requisitos não funcionais são todos os requisitos da aplicação relacionad
 
 
 \begin{itemize}
-	\item O sistema deverá executar em qualquer plataforma, tanto web como mobile. 
+	\item O sistema deverá executar em qualquer plataforma, tanto web como mobile. No caso de aplicação mobile pretende-se que esta seja executada em IoS e Android.  
 	
 	
 	\item A base de dados deve ser protegida para acesso apenas a utilizadores autorizados. 
@@ -279,7 +279,7 @@ Os requisitos não funcionais são todos os requisitos da aplicação relacionad
 \end{itemize}
 
 
-\newpage
+
 \section{Modelação}
 
 Tal como vimos no início da secção \ref{sect:analise}, a conceção de uma arquitetura envolve o estudo e respetiva modelação dos componentes que são fundamentais para a realização da mesma, bem como a análise dos casos de uso e respetiva especificação, criação do modelo de dados, diagramas de fluxos, entre outros. Toda esta modelação será descrita neste secção permitindo entender melhor como emparelhar toda a estrutura pretendida. 
@@ -307,7 +307,7 @@ As entidades envolvidas ou atores são os utilizadores do sistema, podendo ser h
 
 Nas figuras \ref{usedash} e \ref{useMobile} encontram-se representados os esquemas dos casos de uso da \textit{dashboard} (denominada por \textit{saliDashboard}) e da aplicação \textit{mobile} (denominada por \textit{saliMobile}), respectivamente.
 Seguidamente serão descritos cada um dos casos de uso para as duas plataformas. De notar que todos os casos de uso na aplicação \textit{mobile} também se encontram disponíveis através da \textit{dashboard}. 
-\newpage
+
 
 \begin{figure}[!htb]
 	\centering
@@ -317,6 +317,7 @@ Seguidamente serão descritos cada um dos casos de uso para as duas plataformas.
 \end{figure}
 
 
+\newpage
 
 \begin{figure}[!htb]
 	\centering
@@ -328,7 +329,7 @@ Seguidamente serão descritos cada um dos casos de uso para as duas plataformas.
 
 
 
-\newpage
+
 \begin{itemize}
 	\item \textbf{Login no sistema}: qualquer utilizador (general user, company user ou admin) poderá aceder ao sistema tendo para isso que possuir uma conta registada e validada no caso do general user. Após a validação das suas credenciais (username e password) o utilizador poderá aceder à pagina inicial da dashboard e a todo o seu conteúdo. Este caso de uso encontra-se disponível para os dois tipos de plataformas. 
 	
@@ -400,7 +401,7 @@ Seguidamente serão descritos cada um dos casos de uso para as duas plataformas.
 
 
 
-
+\newpage
 \subsection{Modelo de dados}
 
 Depois da análise de requisitos desenhou-se um modelo de dados que permitisse modelar todo o sistema descrito, obtendo-se assim o seguinte esquema relacional apresentado na figura \ref{esquemarelacional}.
@@ -531,7 +532,7 @@ A figura \ref{fisicablocos} representa genericamente os blocos principais do sis
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale=0.41]{esquemas/esquema-blocos.pdf}
+	\includegraphics[scale=0.51]{esquemas/esquema-blocos.pdf}
 	\caption{Arquitetura física (blocos)}
 	\label{fisicablocos}
 \end{figure}
@@ -562,12 +563,6 @@ Dada a elevada complexidade de um sistema de informação, é possivel identific
 A figura \ref{arquiteturasi} ilustra a arquitetura do sistema de informação incluindo especificamente a aplicação web (\textit{dashboard}), base de dados, \acs{API}   e respetiva implementação do sistema. 
 
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=\linewidth]{esquemas/fisica-si.pdf}
-	\caption{Arquitetura do sistema de informação (\textit{dashboard}, base de dados e API)}
-	\label{arquiteturasi}
-\end{figure}
 
 
 
@@ -577,7 +572,19 @@ A aplicação web é um componente essencial, enquadrando-se na camada de lógic
 
 Tal como vimos na secção do Estado de Arte, a tecnologia para o desenvolvimento web recaiu sobre a \textit{framework} Django, mais precisamente na versão 1.11 para python 2.7, sendo que como \ac{IDE} foi utilizada a verão 2016.3.3 do PyCharm. Dada a facilidade com que esta \textit{framework} tem em manipular views e templates, optou-se que ambas as componentes (\textit{frontend}/\textit{backend}) fossem desenvolvidas recorrendo ao Django. Para além disso, optou-se por criar uma API REST que permitisse a manipulação dos dados existentes na base de dados, sendo esta também desenvolvida paralelamente com a aplicação web. Seguidamente será explicada a sua arquitetura.   
 
-Um dos pontos mais interessantes no Django é sem dúvida a existência de \ac{ORM}. Consiste numa técnica de desenvolvimento que permite modelar os dados através de classes em Python. Através dela, é possível gerar tabelas na base de dados e manipulá-las sem a necessidade de interagir diretamente com \ac{SQL} (embora também seja possível). A verificação dos valores lidos pelos sensores e possível geração de alarmes é averiguado por um \textit{trigger} desenvolvido em \ac{SQL}, no capitulo \ref{implementacao} será explicada a sua implementação.  
+
+\newpage
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth]{esquemas/fisica-si.pdf}
+	\caption{Arquitetura do sistema de informação (\textit{dashboard}, base de dados e API)}
+	\label{arquiteturasi}
+\end{figure}
+
+
+
+
+Um dos pontos mais interessantes no Django é sem dúvida a existência de \linebreak \ac{ORM}. Consiste numa técnica de desenvolvimento que permite modelar os dados através de classes em Python. Através dela, é possível gerar tabelas na base de dados e manipulá-las sem a necessidade de interagir diretamente com \ac{SQL} (embora também seja possível). A verificação dos valores lidos pelos sensores e possível geração de alarmes é averiguado por um \textit{trigger} desenvolvido em \ac{SQL}, no capitulo \ref{implementacao} será explicada a sua implementação.  
 
 
 Relativamente à escolha do \ac{SGBD} recaiu sobre o PostgreSQL, mais concretamente na versão xxx. Como ferramenta gráfica para administração deste \ac{SGBD} foi utilizado o PgAdmin III\footnote{www.pgadmin.org/} na versão 1.22. Este software gráfico tem inúmeras funcionalidades desde a possibilidade de ligação a base de dados remotas até à adição, edição, remoção e  consultas em tabelas. Esta ferramenta é \textit{opensource} e encontra-se disponível para Windows e UNIX. Como vimos no capitulo \ref{state}, este \ac{SGBD} permite uma grande facilidade de incorporação a um projeto em Django. 
@@ -625,7 +632,7 @@ Relativamente à autenticação desta \ac{API}, optou-se por utilizar um esquema
 \begin{figure}[h]
 	\centering
 	\includegraphics[scale=0.61]{esquemas/autenticacaohttpesquema.pdf}
-	\caption{Processo de autenticação em HTTP através de token (adaptado de \cite{AdoKukic2016})}
+	\caption[Processo de autenticação em \ac{HTTP} através de token]{Processo de autenticação em \ac{HTTP} através de token (Adaptado de \cite{AdoKukic2016})}
 	\label{autnetAPI}
 \end{figure}
 
@@ -646,6 +653,8 @@ Resumidamente e com o objetivo de explicar o esquema da figura \ref{autnetAPI}, 
 
 Na tabela \ref{endpointsapi} encontram-se todos os endpoints e respectivas funções (POST/GET/PUT) a implementar. Seguidamente será descrito como foi implementada a documentação desta API.  
 
+
+\newpage
 
 \begin{table}[h]
 	\centering
@@ -770,7 +779,7 @@ Seguidamente, são apresentados os sensores utilizados bem como os tipos de comu
 \newpage
 \subsubsection{Sensores utilizados}
 
-Nesta secção serão apresentados os sensores utilizados na simulação e as suas principais características. Todos os sensores foram escolhidos tendo em conta o seu enquadramento no projeto e a sua disponibilidade em laboratório, sendo que serão ligados ao Arduino Nano. \\
+Nesta secção apresentam-se os sensores utilizados na simulação e as suas principais características. Todos os sensores foram escolhidos tendo em conta o seu enquadramento no projeto e a sua disponibilidade em laboratório, sendo que serão ligados ao Arduino Nano. \\
 
 
 \textbf{Temperatura}
@@ -814,7 +823,10 @@ Como sensor de temperatura foi utilizado um termístor do tipo \ac{NTC}. Como vi
 
 
 
+
 \textbf{Luminosidade}
+
+
 
 Para simular a luminosidade incidente foi utilizado um sensor do tipo foto-resistência. Este sensor, também conhecido como \ac{LDR}, não é mais do que uma resistência variável cujo o seu valor varia conforme a intensidade da luz que incide sobre ele, isto é, à medida que a intensidade da luz aumenta, a sua resistência diminui. Este sensor tem múltiplas aplicações, entre as quais se destaca a monitorização solar, indicador da posição do sol (up/down), alarmes anti-roubo, alarme para abertura/fecho de portas entre outras. Como vimos no capítulo \ref{state} é um sensor de baixo custo e bastante fácil de utilização. Na figura \ref{lum-esquema} encontra-se o esquema de ligação do componente e na tabela \ref{lum-cara} são apresentadas as principais características do sensor utilizado. 
 
@@ -918,7 +930,7 @@ Para a simulação de uma válvula que permitirá as transferência de água doc
 
 \subsubsection{Comunicação}
 
-Nesta secção, serão apresentados os tipos de comunicação para o cenário apresentado. Pretende-se que cada um dos módulo fique isolado entre si, o que implicou o estudo e respetiva escolha de algumas tecnologias de comunicações sem fio (secção XX do capítulo \ref{state}). Neste caso, foram escolhidas as seguintes: 
+Nesta secção, serão apresentados os tipos de comunicação para o cenário apresentado. Pretende-se que cada um dos módulo fique isolado entre si, o que implicou o estudo e respetiva escolha de algumas tecnologias de comunicações sem fios (secção XX do capítulo \ref{state}). Neste caso, foram escolhidas as seguintes: 
 
 \begin{itemize}
 	\item \textbf{Bluetooth}: utilizado para a comunicação entre o Arduino (\acl{SM}) e o Raspberry Pi 3 (\acl{CM}). No Arduino foi utilizado um módulo Bluetooth HC-06 e no Raspberry Pi 3 o seu próprio módulo interno. 
@@ -1002,9 +1014,9 @@ Este módulo bluetooth oferece uma forma simples e com custo reduzido para envia
 \subsection{Sistema de deteção de intrusos}
 
 
-No contexto desta dissertação houve necessidade de implementar um sistema de video-stream que permitisse detetar intrusos, maioritariamente pessoas ou animais de grande porte, que possam invadir as quintas onde se produz Salicórnia. Esta necessidade prende-se essencialmente com elevado custo do \textit{hardware} do sistema de monitorização e também de eventuais instrumentos de elevado custo necessários ao cultivo desta espécie, como por exemplo,  geradores, máquinas elétricas para poda, entre outros.
+No contexto desta dissertação existiu a necessidade de implementar um sistema de vídeo vigilância que permitisse detetar intrusos, maioritariamente pessoas ou animais de grande porte, que possam invadir as quintas onde se produz Salicórnia. Esta necessidade prende-se essencialmente com elevado custo do \textit{hardware} do sistema de monitorização e também de eventuais instrumentos de elevado custo necessários ao cultivo desta espécie, como por exemplo,  geradores, máquinas elétricas para poda, entre outros.
 
-Neste secção é descrita a tecnologia de processamento de imagem utilizada tal como o material necessário e respetiva arquitetura. 
+%Neste secção é descrita a tecnologia de processamento de imagem utilizada tal como o material necessário e respetiva arquitetura. 
 
 
 \subsubsection{Biblioteca para processamento de imagem: OpenCV}
@@ -1023,7 +1035,7 @@ Esta biblioteca possui mais de 2500 algoritmos otimizados, que inclui um conjunt
 
 
 
-Desde logo, a escolha da tecnologia para processamento de imagem recaiu sobre o OpenCV não apenas por ser uma biblioteca bastante popular e possuir bastantes algoritmos implementados mas também por eu próprio possuir já algum \textit{background} e projetos desenvolvidos nesta área.  Pretendeu-se que este processamento fosse implementado em material já adquirido sem necessidade de gastos. Optou-se então por utilizar um \textit{Raspberry Pi 3} que juntamente com um \textit{Raspberry Pi camera module} (figura \ref{raspicam}) permitirá a aquisição de imagem e servirá também como \acl{CM} ao sistema de aquisição de dados. Na tabela \ref{cara-cam} apresentam-se algumas características deste módulo para o Raspberry Pi 3. 
+Desde logo, a escolha da tecnologia para processamento de imagem recaiu sobre o OpenCV não apenas por ser uma biblioteca bastante popular e possuir bastantes algoritmos implementados mas também por eu próprio possuir já algum \textit{background} e projetos desenvolvidos nesta área.  Pretendia-se que este processamento fosse implementado em material já adquirido sem necessidade de gastos. Optou-se então por utilizar um \textit{Raspberry Pi 3} que juntamente com um \textit{Raspberry Pi camera module} (figura \ref{raspicam}) permitirá a aquisição de imagem e servirá também como \acl{CM} ao sistema de aquisição de dados. Na tabela \ref{cara-cam} apresentam-se algumas características deste módulo para o Raspberry Pi 3. 
 
 
 \begin{figure}[!htb]
@@ -1060,7 +1072,7 @@ Desde logo, a escolha da tecnologia para processamento de imagem recaiu sobre o 
 
 
 
-Inicialmente, pretendeu-se explorar um algoritmo disponibilizado pelo OpenCV para a deteção de pessoas (corpo inteiro). Este algoritmo, juntamente com técnicas de \textit{machine learning}  permitem a deteção de pessoas numa determinada imagem e/ou vídeo. O \textit{machine learning} (em português aprendizagem automática) consiste num  método de análise de dados que automatiza o desenvolvimento de modelos analíticos, sendo usados algoritmos que aprendem interativamente a partir de dados recolhidos à priori\cite{Kotsiantis2007}. 
+Inicialmente, explorou-se	 um algoritmo disponibilizado pelo OpenCV para a deteção de pessoas (corpo inteiro). Este algoritmo, juntamente com técnicas de \textit{machine learning}  permitem a deteção de pessoas numa determinada imagem e/ou vídeo. O \textit{machine learning} (em português aprendizagem automática) consiste num  método de análise de dados que automatiza o desenvolvimento de modelos analíticos, sendo usados algoritmos que aprendem interativamente a partir de dados recolhidos à priori\cite{Kotsiantis2007}. 
 
 Após a realização de vários testes a este algoritmo, pretendeu-se implementar um servidor de \textit{streaming} que possa ser incorporado na \textit{dashboard}. Para tal, optou-se por criar um aplicação em Flask (\textit{framework} abordada no capitulo \ref{state}) que permita a aquisição de vídeo proveniente da  \textit{Raspberry Pi camera module} e realização do respetivo processamento. Esta aplicação web foi implementada num \textit{Raspberry Pi 3} tendo sido necessário optar por um servidor web, neste caso o NGINX\footnote{https://www.nginx.com/resources/wiki/}. O NGINX é um servidor HTTP de alto desempenho e open-source. É conhecido pela sua alta performance, estabilidade, configuração simples e baixo consumo de recursos\cite{Nginx2017}. 
 

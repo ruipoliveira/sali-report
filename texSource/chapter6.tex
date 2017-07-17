@@ -1,16 +1,30 @@
-\chapter{Resultados}
+\chapter{Testes e resultados}
 
-Neste capitulo pretende-se..... 
+Neste capítulo são apresentados alguns testes a nível de funcionalidades em alguns componentes bem como a apresentação de um cenário de teste com o respetivo resultados. 
 
 
-\section{Testes na API REST}
 
-De modo a testar a API REST foram utilizadas duas ferramentas, sendo a primeira gráfica e a segunda para linhas de comandos: 
+
+\section{Testes funcionais}
+
+
+Nesta secção são apresentados alguns testes a nível de funcionalidades do sistema. Estes testes permitem averiguar se determinados blocos do sistema, que sejam possíveis de testar isoladamente, se encontram em total funcionamento. 
+
+\subsection{API REST}
+
+
+Após a criação da API REST foram utilizadas duas ferramentas, em que uma é gráfica e outra em linha de comandos, que permitiram testar e personalizar os cabeçalhos num pedido HTTP, sendo cada uma deles descrita de seguinda.
+
 
 \begin{itemize}
-	\item \textit{Advanced REST client} \footnote{\url{https://advancedrestclient.com/}}: consiste numa ferramenta gráfica que permite 
-	\item CURL: 
+	\item \textit{Advanced REST client}\footnote{\url{https://advancedrestclient.com/}}: consiste numa ferramenta gráfica (extensão para o Google Chrome) que permite auxiliar os programadores web na criação e testes de pedidos \ac{HTTP} personalizados. É o único cliente \ac{REST} que faz a conexão diretamente no \textit{socket}, fornecendo controlo total sobre os cabeçalhos de ligação e solicitações/resposta.
+	 
+	\item CURL\footnote{\url{https://curl.haxx.se/}}: consiste numa biblioteca (libcurl) e ferramenta de linha de comandos (cURL) para transferências de dados através do \ac{URL}. Esta ferramenta suporta uma variedade de protocolos comuns da Internet com por exemplo \ac{HTTP}, \ac{FTP}, \ac{SMTP} entre outros. 
 \end{itemize}
+
+
+Estas duas ferramentas permitiram testar e validar o funcionamento da API REST através da utilização dos métodos GET, PUT, POST e DELETE para cada endpoint, quando aplicado. De notar que para todos os testes foi necessário incorporar o campo \texttt{Authorization} possibilitando autenticar a utilização da API através de um token fornecido. A figura \ref{testgrap} e \ref{testterminal} permitem ilustrar um teste para o método GET no endpoint \texttt{api/sm} na ferramenta gráfica e na de linha de comandos, respectivamente. 
+
 
 
 
@@ -18,75 +32,106 @@ De modo a testar a API REST foram utilizadas duas ferramentas, sendo a primeira 
 
 \begin{figure}[h]
 	\centering
-	\begin{minipage}[b]{0.49\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{prints-web/API_teste1.png}
-		\caption{Sensor TTC 104 NTC}
-	\end{minipage}
-	\hfill
-	\begin{minipage}[b]{0.49\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{prints-web/API_teste1.png}
-		\caption{Retirado de \cite{Rosebrock2015}}
-		\label{esquema-temp}
-	\end{minipage}
+	\includegraphics[width=\linewidth]{prints-web/API_teste1.png}
+	\caption{Documentação da API REST com a ferramenta Swagger}
+	\label{docapi}
 \end{figure}
 
 
 
-O programa auxiliar de desenvolvedores da web para criar e testar solicitações HTTP personalizadas.
-Uma melhor ferramenta de teste da API!
-
-Economize seu tempo com a ferramenta de teste API mais fácil por aí. Sem formulários e scripts complicados. Fácil de usar, mas muito poderoso.
-
-O único cliente REST que faz a conexão diretamente no soquete, dando-lhe controle total sobre os cabeçalhos de conexão e solicitação / resposta.
-
-Nota: Você deve usar o certificado válido (para conexões seguras) para usar este aplicativo. Obtenha certificado SSL gratuito do http://www.crypt.org. Alternativamente, verifique "usar XHR" para desativar o soquete e usar a conexão regular do Chrome.
-Você pode configurar o proxy nas configurações do Chrome se tiver problemas para conectar a máquina remota.
-
-Para executar o aplicativo, vá para Nova guia, clique em "Aplicativos" na barra superior e encontre o ícone ARC. O aplicativo também se instala na pesquisa de aplicativos do sistema. No MacOS é comando + espaço, no Windows é um botão do Windows. Digite o nome do aplicativo para encontrar o aplicativo.
-
-O que há de novo:
-- Atualização de banco de dados. Agora, a história e os salvos serão muito mais rápidos
-- Request history explorer - quando você lembram um histórico / pedido salvo, você verá um histórico dos pedidos que mede para este ponto final
-- Novos conjuntos de cabeçalho - defina conjuntos de cabeçalho próprios e use-os com seus pedidos
-%- Editor de variáveis ​​e variáveis ​​- você pode definir suas próprias variáveis ​​e colocá-las no painel de solicitação
-
-Características:
-- Integrado com o Google Drive
-- Solicitações feitas em soquetes, o que lhe dá mais controle sobre cabeçalhos HTTP
-- Cabeçalhos HTTP e editor de carga útil
-- WebSockets!
-- ajuda no preenchimento de cabeçalhos HTTP (sugestão + conclusão do código)
-- adicionar lista de cabeçalhos como dados brutos ou via formulário
-- construa o corpo POST ou PUT através de entrada, formulário ou arquivo de envio bruto com solicitação
-- definir codificação de formulário personalizado
-- lembre-se da última solicitação (salve o estado atual do formulário e restaure na carga)
-- salvar (Ctrl + S) e abrir (Ctrl + O) formulários de solicitação salvos
-- história dos pedidos
-- importação / exportação de dados
-
-Informe problemas em https://github.com/jarrodek/ChromeRestClient/issues
-Política de privacidade: https://docs.google.com/document/d/1BzrKQ0NxFXuDIe2zMA-0SZBNU0P46MHr4GftZmoLUQU/edit?usp=sharing
 
 
 
-\section{Interface web}
+
+	\begin{lstlisting}[
+	showspaces=false,
+	basicstyle=\ttfamily,
+	numbers=left,
+	numberstyle=\tiny,
+	commentstyle=\color{gray},
+	basicstyle=\ttfamily\footnotesize
+	]
+	$ curl -X GET -H "Authorization: Token  79e546740afe1aa4fb8d09a897146763e9f1b835" http://192.168.160.20/api/cm/
+	[{"id":4,"name":"Rasp3","id_communication":{"id":5,"name":"wireless","path_or_number":"","image_path":"earth-grid.png"},"id_by_create":{"id":12,"username":"josesilva","first_name":"Jose","last_name":"silva","email":"ruipedrooliveira@ua.pt","last_login":"2017-07-12T15:34:01.669706Z","date_joined":"2017-05-29T16:07:33.102064Z"},"baterry_cm":100,"status_cm":true,"date_create":"2017-05-31T09:07:10.300203Z","memory":512,"localization_cm":"36.964,-122.015"}]
+	\end{lstlisting}
+	
+	
+	
+\subsection{Comunicação via bluettooth }
 
 
-A Web-based User Interface was created, which fully demonstrates the MDM capabilities
-and system management. The interface displays at all moments the alias and address of the
-current logged user.
-Through the UI it is possible to:
 
+\subsection{Deteção de intrusos}
+
+
+
+
+
+
+%\section{Interface web}
+
+
+A figura seguinte são apresentados os 
+
+
+Dashboard home
+
+Add novo cm e visualizacao dos existentens
+
+add novo sm e visualizar os associados a esse CM
+
+Visual graficamente e tabularmente os dados lidos... exportar por CSV; 
+
+
+
+
+
+\section{Cenário de teste}
+
+\begin{enumerate}
+	\item Criação de um \acl{CM} com apenas um \acl{SM}
+	
+	\item O \acl{SM} possui os seguintes sensores com as seguintes especificações: 
+	
+	\begin{enumerate}
+		\item Sensor de temperatura: 
+		\item Sensor de luminosidade: 
+		\item Nível do tanque de água doce: 
+		\item Bomba para transferência de água doce: 
+	\end{enumerate}
+	
+	\item Para o cenário apresentado, pretende-se que sejam enviados dados para o sistema durante 24 horas. 
+	
+	\item Os valores adquiridos pelos sensores são enviados para o sistema de 5 em 5 minutos nas primeiras 12 horas e de 10 em 10 minutos nas restantes. 
+
+	
+\end{enumerate}
+
+
+	
 \section{Interface mobile}
 
 
-
+receber notificações 
+aspeto final da app; gráficos 
 
 
 \section{Simulação em hardware}
 
 
+testar o envio de clomandos para modulo bluetooh e verificar resultados enviados... 
+
+vericar ativação de uma valvula quando 
+
+
+
 \section{Sistema de deteção de intrusos}
+
+- Exemplo em que os parametros testados funcionam bem e detectam pessoas numa imagem... desenhar rectangulos
+
+- incorporação streaming na dashboard 
+
+
+
+\section{Considerações finais}
 

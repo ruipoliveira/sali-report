@@ -28,11 +28,10 @@ Database file #1: tese.bib
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
-Warning--edition ordinal word "Natural Pr" may be too high (or improper) for conversion in overviewsal
-Warning--there is url but no urldate in Saini2014
 Warning--empty journal in chenopodiaceae
 Warning--missing publisher in ferri
 Warning--there is url but no urldate in Silva2000
+Warning--edition ordinal word "Natural Pr" may be too high (or improper) for conversion in overviewsal
 Warning--there is url but no urldate in Rubio-Casal2003
 Warning--empty journal in Filomena2009
 Warning--there is url but no urldate in Ventura2011
@@ -40,7 +39,27 @@ Warning--there is url but no urldate in Wang2012
 Warning--empty journal in Evans2011a
 Warning--empty journal in Our2013
 Warning--there is url but no urldate in Rowley2007
+Warning--there is url but no urldate in Lopez2009
+Warning--there is url but no urldate in Deacon2005
+Warning--missing publisher in Holovaty2009
+Warning--empty author in arduinonanouser
+Warning--empty journal in arduinonanouser
+Warning--empty year in arduinonanouser
+Warning--there is url but no urldate in arduinonanouser
+Warning--empty author in TemperatureSensors
+Warning--empty journal in TemperatureSensors
+Warning--empty year in TemperatureSensors
+Warning--there is url but no urldate in TemperatureSensors
+Warning--empty journal in Argus2010
+Warning--there is url but no urldate in Argus2010
+Warning--empty author in sall
+Warning--empty journal in sall
+Warning--empty year in sall
+Warning--there is url but no urldate in sall
+Warning--empty journal in Rahman2015
+Warning--there is url but no urldate in Rahman2015
 Warning--there is url but no urldate in Abreu2012
+Warning--there is url but no urldate in Saini2014
 Warning--there is url but no urldate in Turban1996
 Warning--empty journal in Rodriguez2015
 Warning--there is url but no urldate in Rodriguez2015
@@ -53,45 +72,45 @@ Warning--there is url but no urldate in Kotsiantis2007
 Warning--there is url but no urldate in Dalal
 
 Done.
-You've used 39 entries,
+You've used 57 entries,
             4106 wiz_defined-function locations,
-            1096 strings with 15293 characters,
-and the built_in function-call counts, 22064 in all, are:
-= -- 1781
-> -- 444
-< -- 139
-+ -- 234
-- -- 81
-* -- 1085
-:= -- 3639
-add.period$ -- 77
-call.type$ -- 39
-change.case$ -- 42
-chr.to.int$ -- 306
-cite$ -- 62
-duplicate$ -- 1616
-empty$ -- 1808
-format.name$ -- 95
-if$ -- 4971
+            1197 strings with 18009 characters,
+and the built_in function-call counts, 30139 in all, are:
+= -- 2412
+> -- 565
+< -- 171
++ -- 297
+- -- 103
+* -- 1483
+:= -- 5042
+add.period$ -- 112
+call.type$ -- 57
+change.case$ -- 59
+chr.to.int$ -- 381
+cite$ -- 99
+duplicate$ -- 2240
+empty$ -- 2537
+format.name$ -- 121
+if$ -- 6755
 int.to.chr$ -- 0
-int.to.str$ -- 39
-missing$ -- 308
-newline$ -- 196
-num.names$ -- 39
-pop$ -- 803
+int.to.str$ -- 57
+missing$ -- 429
+newline$ -- 284
+num.names$ -- 53
+pop$ -- 1168
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 4
-skip$ -- 1674
+skip$ -- 2279
 stack$ -- 0
-substring$ -- 734
-swap$ -- 1186
-text.length$ -- 37
+substring$ -- 923
+swap$ -- 1571
+text.length$ -- 44
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 39
-warning$ -- 23
-while$ -- 96
-width$ -- 41
-write$ -- 420
-(There were 23 warnings)
+type$ -- 57
+warning$ -- 42
+while$ -- 131
+width$ -- 59
+write$ -- 598
+(There were 42 warnings)

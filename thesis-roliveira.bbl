@@ -21,36 +21,6 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{AdoKukic2016}
-\BIBentryALTinterwordspacing
-{Ado Kukic}, ``{Cookies vs Tokens: The Definitive Guide},'' 2016. [Online].
-  Available: \url{https://auth0.com/blog/cookies-vs-tokens-definitive-guide}
-  [Accessed: 2017-07-03]
-\BIBentrySTDinterwordspacing
-
-\bibitem{Rosebrock2015}
-\BIBentryALTinterwordspacing
-A.~Rosebrock, ``{HOG detectMultiScale parameters explained},'' 2015. [Online].
-  Available:
-  \url{http://www.pyimagesearch.com/2015/11/16/hog-detectmultiscale-parameters-explained/}
-  [Accessed: 2017-07-11]
-\BIBentrySTDinterwordspacing
-
-\bibitem{overviewsal}
-V.~Isca, A.~Seca, D.~Pinto, and A.~Silva, \emph{{An overview of Salicornia
-  genus: the phytochemical and pharmacological profile}}, natural pr~ed.,
-  V.~Gupta, Ed.\hskip 1em plus 0.5em minus 0.4em\relax Daya Publishing House,
-  New Delhi, 2014.
-
-\bibitem{Saini2014}
-\BIBentryALTinterwordspacing
-P.~T. Hiep, H.~Noi, V.~Nam, N.~H. Hoang, H.~Noi, and V.~Nam, ``{A Review of
-  Open Source Software Development Life Cycle Models},'' \emph{International
-  Journal of Multmedia and Ubiquituous Engineering}, vol.~9, no.~5, pp.
-  391--402, 2014. [Online]. Available:
-  \url{http://dx.doi.org/10.14257/ijseia.2014.8.3.38}
-\BIBentrySTDinterwordspacing
-
 \bibitem{JoaoSilva}
 \BIBentryALTinterwordspacing
 {Jo{\~{a}}o Silva}, ``{Sal verde, National Geographic}.'' [Online]. Available:
@@ -73,6 +43,12 @@ M.~H.~A. Silva, ``{Aspectos morfol{\'{o}}gicos e ecofisiol{\'{o}}gicos de
   Universidade de Aveiro, 2000. [Online]. Available:
   \url{http://ria.ua.pt/handle/10773/925}
 \BIBentrySTDinterwordspacing
+
+\bibitem{overviewsal}
+V.~Isca, A.~Seca, D.~Pinto, and A.~Silva, \emph{{An overview of Salicornia
+  genus: the phytochemical and pharmacological profile}}, natural pr~ed.,
+  V.~Gupta, Ed.\hskip 1em plus 0.5em minus 0.4em\relax Daya Publishing House,
+  New Delhi, 2014.
 
 \bibitem{Figueroa1987}
 E.~Figueroa, J.~Jimenez-Nieva, J.~Carranza, and C.~{Gonzalez Vilches},
@@ -164,6 +140,19 @@ J.~Rowley, ``{The wisdom hierarchy: representations of the DIKW hierarchy},''
   [Online]. Available: \url{http://alturl.com/7qike}
 \BIBentrySTDinterwordspacing
 
+\bibitem{MySQL2011}
+\BIBentryALTinterwordspacing
+MySQL, ``{MySQL :: About MySQL},'' 2011. [Online]. Available:
+  \url{http://www.mysql.com/about/} [Accessed: 2017-07-13]
+\BIBentrySTDinterwordspacing
+
+\bibitem{linuxsqlserver}
+\BIBentryALTinterwordspacing
+``{SQL Server 2017 on Windows and Linux | Microsoft},'' 2017. [Online].
+  Available: \url{https://www.microsoft.com/en-us/sql-server/sql-server-2017}
+  [Accessed: 2017-07-17]
+\BIBentrySTDinterwordspacing
+
 \bibitem{ThePostgreSQLGlobalDevelopmentGroup2012}
 \BIBentryALTinterwordspacing
 {The PostgreSQL Global Development Group}, ``{PostgreSQL: About},'' 2012.
@@ -171,11 +160,127 @@ J.~Rowley, ``{The wisdom hierarchy: representations of the DIKW hierarchy},''
   http://www.postgresql.org/about/} [Accessed: 2017-05-29]
 \BIBentrySTDinterwordspacing
 
+\bibitem{DB-engines2016}
+\BIBentryALTinterwordspacing
+DB-Engines, ``{Historical Trend of the Popularity Ranking of Database
+  Management Systems},'' 2014. [Online]. Available:
+  \url{http://db-engines.com/en/ranking{\_}trend} [Accessed: 2017-07-13]
+\BIBentrySTDinterwordspacing
+
+\bibitem{Lopez2009}
+\BIBentryALTinterwordspacing
+I.~V. L{\'{o}}pez and G.~B. Guti{\'{e}}rrez, ``{El Benchmark TPC-H en MySQL y
+  PostgreSQL},'' \emph{Ingenieria.Lm.Uasnet.Mx}, pp. 1--7, 2009. [Online].
+  Available:
+  \url{http://ingenieria.lm.uasnet.mx/sitio/congreso/documentos/iso15.pdf}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Microsoft2016}
+\BIBentryALTinterwordspacing
+Microsoft, ``{ASP.NET Overview},'' p.~1, 2016. [Online]. Available:
+  \url{https://msdn.microsoft.com/en-us/library/4w3ex9c2.aspx} [Accessed:
+  2017-07-17]
+\BIBentrySTDinterwordspacing
+
+\bibitem{Flask2014}
+\BIBentryALTinterwordspacing
+Flask, ``{Welcome | Flask (A Python Microframework)},'' 2014. [Online].
+  Available: \url{http://flask.pocoo.org/} [Accessed: 2017-07-17]
+\BIBentrySTDinterwordspacing
+
+\bibitem{Deacon2005}
+\BIBentryALTinterwordspacing
+J.~Deacon, ``{Model-View-Controller (MVC) Architecture},'' \emph{JOHN DEACON
+  Computer Systems Development, Consulting {\&} Training}, pp. 1--6, 2009.
+  [Online]. Available: \url{http://www.jdl.co.uk/briefings/index.html{\#}mvc}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Index}
+\BIBentryALTinterwordspacing
+D.~S. Foundation, ``{Django Documentation},'' pp. 1--1172, 2012. [Online].
+  Available: \url{https://docs.djangoproject.com/en/1.3/} [Accessed:
+  2017-07-17]
+\BIBentrySTDinterwordspacing
+
+\bibitem{Holovaty2009}
+A.~Holovaty and J.~Kaplan-Moss, \emph{{The Definitive Guide to Django: Web
+  Development Done Right}}, 2009.
+
+\bibitem{Banzi2012}
+\BIBentryALTinterwordspacing
+M.~Banzi, D.~Cuartielles, T.~Igoe, G.~Martion, and D.~Mellis, ``{Arduino -
+  Introduction},'' 2012. [Online]. Available:
+  \url{http://arduino.cc/en/Guide/Introduction} [Accessed: 2017-05-25]
+\BIBentrySTDinterwordspacing
+
+\bibitem{arduinonanouser}
+\BIBentryALTinterwordspacing
+``{Arduino Nano - User Manual}.'' [Online]. Available:
+  \url{https://www.arduino.cc/en/uploads/Main/ArduinoNanoManual23.pdf}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Melorose2015}
+\BIBentryALTinterwordspacing
+J.~Melorose, R.~Perroy, and S.~Careas, ``{Arduino Nano},'' 2015. [Online].
+  Available: \url{http://www.farnell.com/datasheets/1682238.pdf} [Accessed:
+  2017-07-17]
+\BIBentrySTDinterwordspacing
+
+\bibitem{RaspberryPiFoundation2012}
+\BIBentryALTinterwordspacing
+{Raspberry Pi Foundation}, ``{Raspberry Pi Foundation - About Us},'' 2012.
+  [Online]. Available: \url{https://www.raspberrypi.org/about/} [Accessed:
+  2017-07-17]
+\BIBentrySTDinterwordspacing
+
+\bibitem{REOTEMPInstrumentCorporation}
+\BIBentryALTinterwordspacing
+{REOTEMP Instrument Corporation}, ``{Thermocouple-Thermocouples-What is a
+  thermocouple-Types of thermocouples}.'' [Online]. Available:
+  \url{http://www.thermocoupleinfo.com/index.htm} [Accessed: 2017-07-17]
+\BIBentrySTDinterwordspacing
+
+\bibitem{TemperatureSensors}
+\BIBentryALTinterwordspacing
+``{Temperature Sensors Watlow Educational Series}.'' [Online]. Available:
+  \url{https://kontrolotomasyon.files.wordpress.com/2016/10/dt{\_}temperaturesensors{\_}thewatlow{\_}25ekim2016.pdf}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Argus2010}
+\BIBentryALTinterwordspacing
+Argus, ``{Light and lighting contril in greenhouses},'' no. August, pp. 1--29,
+  2010. [Online]. Available:
+  \url{http://www.arguscontrols.com/resources/Light-and-Lighting-Control-in-Greenhouses.pdf}
+\BIBentrySTDinterwordspacing
+
+\bibitem{sall}
+\BIBentryALTinterwordspacing
+``{Salinity Sensor (Order Code SAL-BTA) Collecting Data with the Salinity
+  Sensor}.'' [Online]. Available:
+  \url{https://www.vernier.com/files/manuals/sal-bta.pdf}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Rahman2015}
+\BIBentryALTinterwordspacing
+A.~B.~A. Rahman, ``{Comparison of Internet of Things ( IoT ) Data Link
+  Protocols},'' pp. 1--21, 2015. [Online]. Available:
+  \url{http://www.cse.wustl.edu/{~}jain/cse570-15/index.html}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Abreu2012}
 \BIBentryALTinterwordspacing
 A.~S. H.~G. Abreu, ``{Sistema de Monitoriza{\c{c}}{\~{a}}o de Estufas
   Agr{\'{i}}colas},'' Ph.D. dissertation, University of Aveiro, 2012. [Online].
   Available: \url{http://ria.ua.pt/handle/10773/10269}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Saini2014}
+\BIBentryALTinterwordspacing
+P.~T. Hiep, H.~Noi, V.~Nam, N.~H. Hoang, H.~Noi, and V.~Nam, ``{A Review of
+  Open Source Software Development Life Cycle Models},'' \emph{International
+  Journal of Multmedia and Ubiquituous Engineering}, vol.~9, no.~5, pp.
+  391--402, 2014. [Online]. Available:
+  \url{http://dx.doi.org/10.14257/ijseia.2014.8.3.38}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Laudon1998}
@@ -210,6 +315,13 @@ A.~Rodriguez, ``{RESTful Web services: The basics},'' no. February, pp. 1--11,
 \BIBentryALTinterwordspacing
 T.~Christie, ``{Django REST framework TokenAuthentication},'' 2016. [Online].
   Available: \url{http://www.django-rest-framework.org} [Accessed: 2017-07-03]
+\BIBentrySTDinterwordspacing
+
+\bibitem{AdoKukic2016}
+\BIBentryALTinterwordspacing
+{Ado Kukic}, ``{Cookies vs Tokens: The Definitive Guide},'' 2016. [Online].
+  Available: \url{https://auth0.com/blog/cookies-vs-tokens-definitive-guide}
+  [Accessed: 2017-07-03]
 \BIBentrySTDinterwordspacing
 
 \bibitem{SmartBearSoftware2017}
@@ -280,6 +392,14 @@ N.~Dalal and B.~Triggs, ``{Histograms of Oriented Gradients for Human
   Available:
   \url{http://docs.opencv.org/2.4/modules/gpu/doc/object{\_}detection.html}
   [Accessed: 2017-07-10]
+\BIBentrySTDinterwordspacing
+
+\bibitem{Rosebrock2015}
+\BIBentryALTinterwordspacing
+A.~Rosebrock, ``{HOG detectMultiScale parameters explained},'' 2015. [Online].
+  Available:
+  \url{http://www.pyimagesearch.com/2015/11/16/hog-detectmultiscale-parameters-explained/}
+  [Accessed: 2017-07-11]
 \BIBentrySTDinterwordspacing
 
 \bibitem{imagProccdata}
