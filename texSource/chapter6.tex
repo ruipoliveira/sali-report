@@ -1,6 +1,6 @@
 \chapter{Testes e resultados}
 
-Neste capítulo são apresentados alguns testes a nível de funcionalidades em alguns componentes bem como a apresentação de um cenário de teste com o respetivo resultados. 
+Neste capítulo são apresentados alguns testes a nível de funcionalidades em alguns componentes bem como a apresentação de um cenário de teste com os respetivos resultados. 
 
 
 
@@ -13,7 +13,7 @@ Nesta secção são apresentados alguns testes a nível de funcionalidades do si
 \subsection{API REST}
 
 
-Após a criação da API REST foram utilizadas duas ferramentas, em que uma é gráfica e outra em linha de comandos, que permitiram testar e personalizar os cabeçalhos num pedido HTTP, sendo cada uma deles descrita de seguinda.
+Após a criação da API REST foram utilizadas duas ferramentas, uma gráfica e outra por linha de comandos, que permitiram testar e personalizar os cabeçalhos num pedido HTTP, sendo cada uma deles descrita de seguinda.
 
 
 \begin{itemize}
@@ -23,7 +23,7 @@ Após a criação da API REST foram utilizadas duas ferramentas, em que uma é g
 \end{itemize}
 
 
-Estas duas ferramentas permitiram testar e validar o funcionamento da API REST através da utilização dos métodos GET, PUT, POST e DELETE para cada endpoint, quando aplicado. De notar que para todos os testes foi necessário incorporar o campo \texttt{Authorization} possibilitando autenticar a utilização da API através de um token fornecido. A figura \ref{testgrap} e \ref{testterminal} permitem ilustrar um teste para o método GET no endpoint \texttt{api/sm} na ferramenta gráfica e na de linha de comandos, respectivamente. 
+Estas duas ferramentas permitiram testar e validar o funcionamento da API REST através da utilização dos métodos GET, PUT, POST e DELETE para cada endpoint, quando aplicado. De notar que para todos os testes foi necessário incorporar o campo \texttt{Authorization} possibilitando autenticar a utilização da API através de um token fornecido. A figura \ref{testgrap} e o excerto apresentado permitem ilustrar um teste para o método GET no endpoint \texttt{api/sm} através da ferramenta gráfica e na de linha de comandos, respectivamente. 
 
 
 
@@ -32,9 +32,9 @@ Estas duas ferramentas permitiram testar e validar o funcionamento da API REST a
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\linewidth]{prints-web/API_teste1.png}
+	\includegraphics[width=0.7\linewidth]{prints-web/API_teste1.png}
 	\caption{Documentação da API REST com a ferramenta Swagger}
-	\label{docapi}
+	\label{testgrap}
 \end{figure}
 
 
@@ -56,12 +56,69 @@ Estas duas ferramentas permitiram testar e validar o funcionamento da API REST a
 	\end{lstlisting}
 	
 	
-	
-\subsection{Comunicação via bluettooth }
+
+
+\subsection{Comunicação via Bluetooth }
+
+
+Para testar o módulo Bluetooth HC-06 foi utilizada a aplicação \textit{Bluetooth Terminal HC-05}. Através desta foi possível enviar os vários inputs descritos, ou seja,  os algarismos zero (0), um (1) e dois (2) e observar o seu resultado.  
+
+Caso seja enviado o 1 através da caixa de texto "Enter Command" ou através do botão "ON val" previamente criado, é ativado o LED. Por outro lado, caso seja enviado o 0,  o LED desliga-se. Isto mimetiza a abertura e o fecho de um válvula para transferência de águas nas leiras de produção de Salicórnia. Na situação de ser enviado o algarismo 2, o módulo Bluetooth encarrega-se de enviar a informação recolhida pelos sensores no formato descrito na secção \ref{arduinonanoard}. A figura \ref{bluetth05-res} demonstra a manipulação do estado do LED e respetiva resposta de confirmação (ON/OFF OK!), e por fim o envio dos valores lidos pelos sensores: temperatura a 28ºC, sensor do nível de água ativo, luminosidade a 60\% e a válvula ativa. Na figura \ref{comimageesquema} é possível observar o resultado após o envio do algarismo 1 com a ativação do LED (em E). Para além disso, é possível observar a ligação dos diferentes componentes na breadboard: o Arduino Nano (em A), módulo Bluetooth HC-06 (em B), sensor de luminosidade (em C) e o de temperatura (em D). 
+
+
+
+
+
+\begin{figure}[h]
+	\centering
+	\begin{minipage}[b]{0.49\textwidth}
+		\centering
+		\includegraphics[width=0.6\textwidth]{img/comm-blue/print-app-teste.png}
+		\caption{Resultado da interação com a aplicação \textit{Bluetooth Terminal HC-05}}
+		\label{bluetth05-res}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[b]{0.49\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{img/comm-blue/resultado_on_off.jpg}
+		\caption{\textit{Breadboard} com ligação dos diferentes componentes, destacando-se a ativação do \ac{LED}}
+		\label{comimageesquema}
+	\end{minipage}
+\end{figure}
 
 
 
 \subsection{Deteção de intrusos}
+
+
+Foram realizados alguns testes aos algoritmo apresentado, obtendo-se os seguintes resultados
+
+
+
+
+\begin{figure}[h]
+	\centering
+	\begin{minipage}[b]{0.49\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{img/vision/exemplos/frame1.jpg}
+		\caption{Imagem original (frame 1)}
+		\label{bluetth05-res}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[b]{0.49\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{img/vision/exemplos/result_frame1.jpg}
+		\caption{Resultado obtido (frame 1)}
+		\label{comimageesquema}
+	\end{minipage}
+\end{figure}
+
+
+
+winstride (4, 4)
+padding (8, 8)
+scale  1.1
+
 
 
 
@@ -106,6 +163,129 @@ Visual graficamente e tabularmente os dados lidos... exportar por CSV;
 
 	
 \end{enumerate}
+
+
+\newpage
+
+
+
+
+
+
+\begin{figure}[h]
+	\centering
+	\begin{minipage}[b]{0.49\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{1.png}
+		\caption{Imagem original (frame 1)}
+		\label{bluetth05-res}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[b]{0.49\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{2.png}
+		\caption{Resultado obtido (frame 1)}
+		\label{comimageesquema}
+	\end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[h]
+	\centering
+	\begin{minipage}[b]{0.49\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{1.png}
+		\caption{Imagem original (frame 1)}
+		\label{bluetth05-res}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[b]{0.49\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{2.png}
+		\caption{Resultado obtido (frame 1)}
+		\label{comimageesquema}
+	\end{minipage}
+\end{figure}
+
+
+\begin{figure}[h]
+	\centering
+	\begin{minipage}[b]{0.49\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{1.png}
+		\caption{Imagem original (frame 1)}
+		\label{bluetth05-res}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[b]{0.49\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{2.png}
+		\caption{Resultado obtido (frame 1)}
+		\label{comimageesquema}
+	\end{minipage}
+\end{figure}
+
+
+
+
+
+
+\newpage
+
+\begin{figure}[h]
+	\centering
+	\begin{minipage}[b]{0.49\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{1.png}
+		\caption{Imagem original (frame 1)}
+		\label{bluetth05-res}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[b]{0.49\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{2.png}
+		\caption{Resultado obtido (frame 1)}
+		\label{comimageesquema}
+	\end{minipage}
+\end{figure}
+
+
+
+\begin{figure}[h]
+	\centering
+	\begin{minipage}[b]{0.49\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{1.png}
+		\caption{Imagem original (frame 1)}
+		\label{bluetth05-res}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[b]{0.49\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{2.png}
+		\caption{Resultado obtido (frame 1)}
+		\label{comimageesquema}
+	\end{minipage}
+\end{figure}
+
+
+\begin{figure}[h]
+	\centering
+	\begin{minipage}[b]{0.49\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{1.png}
+		\caption{Imagem original (frame 1)}
+		\label{bluetth05-res}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[b]{0.49\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{2.png}
+		\caption{Resultado obtido (frame 1)}
+		\label{comimageesquema}
+	\end{minipage}
+\end{figure}
 
 
 	

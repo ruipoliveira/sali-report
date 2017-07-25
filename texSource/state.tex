@@ -2,7 +2,10 @@
 \label{state}
 
 
-Nesta capitulo, são apresentados os resultados da pesquisa bibliográfica sobre as ferramentas e funcionalidades que poderão estar presentes no sistema a desenvolver. Pretende-se apresentar de forma geral todas as tecnologias possíveis de utilização e respetiva comparação. 
+Neste capítulo, são apresentados os resultados da pesquisa bibliográfica sobre as ferramentas e funcionalidades que poderão estar presentes no sistema a desenvolver. Apresenta-se de forma geral todas as tecnologias possíveis de utilização e respetiva comparação. 
+
+
+
 
 
 
@@ -230,49 +233,100 @@ A escolha para desenvolvimento web recaiu sobre o Django uma vez que esta framew
 \section{Desenvolvimento mobile}
 
 
-http://bloomidea.com/blog/aplicacoes-nativas-vs-hibridas-qual-escolher-para-o-seu-projeto	
+Uma aplicação móvel, vulgarmente denominada por \textit{app mobile}, consiste num determinado \textit{software} utilizado para realizar funções especificas em dispositivos móveis, como \textit{smartphones} ou \textit{tablets}. Pretende-se que este tipo de \textit{software} permita ao seus utilizadores facilitar o desempenho de determinadas atividades à distância de um simples toque no seu dispositivo. 
+
+No que toca ao desenvolvimento de aplicações móveis, o programador pode recorrer a duas estratégias: desenvolvimento nativo ou multi-plataforma. Esta diferenciação centra-se na forma como o código é produzido, sendo seguidamente apresentadas algumas  vantagens e desvantagens de cada um. 
+
+
+%A base para esta diferenciação está na forma como o código é desenvolvido para a aplicação móvel. Aplicações nativas são desenvolvidas em específico para cada plataforma (iOS, Android ou Windows), com base no código particular a esse sistema operativo. Aplicações híbridas são apps desenvolvidas com tecnologia web, como é o HTML5, CSS e o JavaScript, que utilizam uma funcionalidade desses sistemas chamada WebView para apresentar o código web como uma aplicação responsiva para qualquer plataforma. Ambas apresentam vantagens e desvantagens, pelo que é essencial estar familiarizado com ambas antes de tomar a sua decisã
+
+
 
 \subsection{Plataformas nativas}
 
+Uma aplicação nativa é desenvolvida exclusivamente para ser utilizada por um dispositivo ou plataforma especifica, como é o caso do iOS, Android ou Windows Phone. Nestes casos, são usadas ferramentas e linguagens especificas suportadas pela plataforma, podendo interagir com as funcionalidade do sistema operativo ou aplicações existentes. Seguidamente são apresentadas algumas características de uma plataforma do tipo nativo\cite{Ibm2012a}. 
 
-uma aplicação móvel nativa é uma app que foi desenvolvida para ser utilizada numa plataforma ou dispositivo específico (iOS ou Android), usando as ferramentas e a linguagem de desenvolvimento correspondentes àquelas que o sistema em questão suporta. Uma app nativa pode assim interagir e tirar partido das funcionalidades do próprio sistema operativo e de outro software que esteja instalado nessa plataforma, o que faz desta opção uma excelente aposta.
+
+
+
+
+
 
 
 \begin{itemize}
-	\item \textbf{Performance}: 
-	\item \textbf{Desenvolvimento}: 
-	\item \textbf{Manutenção}: 
-	\item \textbf{Interface}: 
-	\item \textbf{Recursos disponíveis}: 
-	\item \textbf{\textit{Plug-ins}}: 
-	\item \textbf{Segurança}: 
-\end{itemize}
+	\item \textbf{Performance}: acarreta benefícios ao nível da performance, uma vez que as aplicações nativas são desenvolvidas em código especifico e otimizado; 
 
+	
+	
+	\item \textbf{Desenvolvimento}: tem que ser desenvolvido de raiz para cada dispositivo, exigindo um maior investimento de tempo. 
+	
+	\item \textbf{Interface}: podem ser utilizadas as funcionalidades da \ac{UI} dos plataformas em questão. 
+	
+	
+	\item \textbf{Recursos disponíveis}: apenas são disponibilizados os recursos de cada plataforma, existindo APIs que permitem o seu acesso. 
+	
+	
+
+	\item \textbf{\textit{Plug-ins}}: os plug-ins são específicos para cada plataforma, dificultando a sua integração para aplicações multi-plataforma. 
+	
+	
+	\item \textbf{Segurança}: recorre a APIs nativas, utilizando os protocolos de segurança conhecidos da plataforma. 
+	
+	
+\end{itemize}
 
 
 \subsection{Multi-plataforma}
 
-http://websocialdev.com/lista-de-frameworks-para-desenvolvimento-mobile/
+%http://websocialdev.com/lista-de-frameworks-para-desenvolvimento-mobile/
 
+
+Uma aplicação multi-plataforma ou híbrida, é desenvolvida utilizando tecnologias web, como por exemplo o \ac{HTML}, \ac{CSS} e \ac{JS}. Este tipo de aplicações utiliza uma funcionalidade denominada por WebView permitindo que o código web seja adaptado a uma aplicação responsiva para uma determinada plataforma. De seguida, são apresentadas algumas características desta estratégia de desenvolvimento\cite{Ibm2012a}. 
+
+
+
+
+
+
+% ftp://public.dhe.ibm.com/software/pdf/mobile-enterprise/WSW14182USEN.pdf
 
 \begin{itemize}
-	\item \textbf{Performance}: 
-	\item \textbf{Desenvolvimento}: 
-	\item \textbf{Manutenção}: 
-	\item \textbf{Interface}: 
-	\item \textbf{Recursos disponíveis}: 
-	\item \textbf{\textit{Plug-ins}}: 
-	\item \textbf{Segurança}: 
+	\item \textbf{Performance}: relativamente à performance, não são dados pontos positivos no que toca às aplicações híbridas, uma vez que estas usam  WebViews e outros plug-ins que permitem abstrair o acesso às APIs nativas. 
+
+	
+	\item \textbf{Desenvolvimento}: são utilizadas tecnologias web (\ac{HTML}, \ac{CSS} e \ac{JS}), sendo mais eficazes em termos de custo uma vez que permite reutilizar código para diferentes dispositivos. 
+	
+	
+	\item \textbf{Interface}: para aceder à mesma \ac{UI} do sistemas operativos é necessário utilizar plug-ins adicionais. 
+	
+	
+	\item \textbf{Recursos e Plug-ins}: existe muitos recursos disponíveis  para aplicações \linebreak multi-plataforma através de plug-ins, permitindo ter o mesmo efeito em todas as plataforma. Por outro lado, impõe-se a questão da performance. 
+
+	
+	\item \textbf{Segurança}: recorrem a plug-ins externos para garantir maior segurança podendo ser potencialmente mais vulneráveis.
+	
+	
 \end{itemize}
 
+Existem enumeras \textit{frameworks} para desenvolvimento multi-plataformas, entre as quais destaco três das mais utilizadas no mercado, Ionic, PhoneGap e Xmarin. 
 
+\begin{itemize}
+	\item \textbf{Ionic}: consiste numa ferramenta para desenvolvimento mobile, sendo constituído por outro conjunto de frameworks: Cordova (permite a integração de recursos nativo), AngularJS (criação da \textit{web app}) e Ionic Module e CLI (ferramenta e componentes disponibilizados pelo ionic)\cite{Ionic2016}. 
+	
+	\item \textbf{PhoneGap}: tal como o Ionic, consiste numa framework mobile que utilizada o Cordava da Apache para aceder aos recursos nativos do sistema. Vantagens desvantagens?? pq é melhor 
+	
+	\item \textbf{Xmarin}: permite o desenvolvimento mobile a partir do .NET Framework, utilizando C\#, possibilitando que o compilador gere código nativo disponível para qualquer tipo de plataforma. Uma das principais desvantagens do Xmarin prende-se com a necessidade de desenvolver a \ac{UI} para as plataformas necessárias. 
+\end{itemize}
+ 
 
 
 \subsection{Conclusões e solução adotada}
 
 
 
-Um vez que o cliente pretende uma solução mobile multiplataforma, isto é, possível de ser executada em IoS e Android optou-se por utilizar a framework Phonegap, sendo esta aconselhada pelo orientador Prof. Joaquim Sousa Pinto. 
+Um vez que o cliente pretende uma solução mobile multiplataforma, isto é, possível de ser executada em IoS e Android optou-se por utilizar a framework Phonegap. 
+
+
 
 Uma das principais desvantagens da utilização deste paradigma multiplataforma é o seu baixo desempenho na utilização de recursos do dispositivo. Uma que não será necessária essa utilização optou-se por utilizar a framework mencionada anteriormente. 
 
@@ -282,15 +336,37 @@ Uma das principais desvantagens da utilização deste paradigma multiplataforma 
 \section{REST Frameworks}
 
 
+Com o evolução da tecnologia, houve a necessidade que os programadores pudessem expor os seus serviços para que possam ser utilizados por outras entidades. Neste sentido, foram criados métodos que permitem a comunicação  entre diferentes sistemas, podendo estes estarem alojados em máquinas ou redes diferentes.   
+
+Para atingir este objetivo, existem atualmente algumas arquiteturas bastante populares, como é o caso do \ac{SOAP} e o \ac{REST}. 
+
+
+\begin{itemize}
+	\item \ac{SOAP}: consiste num protocolo aplicado a ambientes distribuídos e descentralizado. 
+	
+	formato standard formato obrigado XML
+	
+	
+	\item \ac{REST}: ...
+	
+	possibilidade de definir o formato das
+	mensagens a trocar, sendo normalmente utilizados os formatos JSON ou XML
+	
+	
+\end{itemize}
+
+Dada as vantagens enumeradas relativamente à tecnologia \ac{REST}, optou-se por a utilizar. Seguidamente serão apresentadas algumas frameworks bastante populares no desenvolvimento de APIs REST e a sua respetiva comparação. 
+
 
 
 \subsection{Django Rest Framework}
 
 
+O Django REST Framework é considerado pelos seus autores uma ferramenta poderosa e flexível para a construção de APIs Web \cite{restdjango},
 
 
 
-Django REST Framework é uma ferramenta considerada 'poderosa e flexível para a construção de APIs Web' [], que pode ser usada juntamente com a framework de desenvolvimento de aplicações Web Django, que quando integrada no desenvolvimento de um determinado \textit{backend} permite a implementação de serviços do tipo REST.
+ que pode ser usada juntamente com a framework de desenvolvimento de aplicações Web Django, que quando integrada no desenvolvimento de um determinado \textit{backend} permite a implementação de serviços do tipo REST.
 
 
 
@@ -310,15 +386,50 @@ Red Hat , Heroku , e Eventbrite .
 
 
 
-\subsection{Flask-RESTful}
 
 
 \subsection{Restlet}
 
 
 
+\subsection{Flask-RESTful}
+
+
+é mais simples e minimalista, permitindo desenvolver serviços REST de
+uma forma rápida e leve, possuindo apenas as funcionalidades mais básicas necessárias para o
+desenvolvimento deste tipo de serviços.
+
+
+
+
 \subsection{Conclusões e solução adotada}
 
+\ac{HATEOAS}
+
+\begin{table}[h]
+	\centering
+
+	\begin{tabular}{|
+			>{\columncolor[HTML]{EFEFEF}}l |l|l|l|}
+		\hline
+		& \cellcolor[HTML]{EFEFEF}\textbf{\begin{tabular}[c]{@{}l@{}}Django Rest\\ Framework\end{tabular}} & \cellcolor[HTML]{EFEFEF}\textbf{Restlet} & \cellcolor[HTML]{EFEFEF}\textbf{Flask-RESTful} \\ \hline
+		\textbf{Linguagem} & Python & Java & Python \\ \hline
+		\textbf{Serialização} & \begin{tabular}[c]{@{}l@{}}JSON, XML,\\ YAML, HTML\end{tabular} & \begin{tabular}[c]{@{}l@{}}JSON, XML,\\  CSV, YAML\end{tabular} & JSON \\ \hline
+		\textbf{Autenticação} & \begin{tabular}[c]{@{}l@{}}Básica, Token, Sessão, \\ OAuth, OAuth2.0\end{tabular} & \begin{tabular}[c]{@{}l@{}}Básica, Digest, \\ AmazonS3, OAuth2.0\end{tabular} & Não \\ \hline
+		\textbf{Cache} & Sim & Não & Não \\ \hline
+		\textbf{\acs{HATEOAS}} & Sim & Não & Não \\ \hline
+		\textbf{Documentação} & \begin{tabular}[c]{@{}l@{}}Intuitiva e simples\\ detalhada e com exemplos\end{tabular} & \begin{tabular}[c]{@{}l@{}}Bastante extensa\\ e detalhada\end{tabular} & \begin{tabular}[c]{@{}l@{}}Detalhada e com \\ alguns exemplos\end{tabular} \\ \hline
+	\end{tabular}
+		\caption{Comparação entre frameworks REST estudadas.}
+		\label{comp-rest}
+\end{table}
+
+
+Django REST Framework é aquela que
+apresenta um grau de maturidade maior, apresentando um grande conjunto de funcionalidades
+aos programadores, permitindo a utilização de boas práticas de desenvolvimento de serviços
+REST, aproveitando todas as vantagens da plataforma Django, nomeadamente o ORM definido
+pela própria plataforma, autenticação, gestão de base de dados, de rotas, entre outras.
 
 
 
@@ -338,23 +449,22 @@ documentação com swager
 
 
 
-
-
 \newpage
 \section{Microcontroladores}
 
 
 Um microcontrolador consiste numa solução integrada de um sistema computacional, num único dispositivo físico, sendo uma mistura de \textit{hardware} com \textit{software}. Possui vários módulos principais, um \ac{CPU} onde é realizado todo o processamento, as memórias de instrução e dados (\ac{RAM} e \ac{ROM}) e os portos de entrada e saída (\ac{I/O}), e ainda alguns periféricos (\textit{Timer}, \textit{Serial COM Port}). 
 
-Estes dispositivos são responsáveis pelo processamento de dados, tomada de decisões, controlo do funcionamento de alguns módulos, mostra e conversão da informação recolhida pelos sensores, entre outros. Com o objetivo de simular o sistema que será apresentado, serão utilizados dois microcontroladores bastante comuns no mercado, um Arduino Nano e um Raspberry Pi 3.  
+Estes dispositivos são responsáveis pelo processamento de dados, tomada de decisões, controlo do funcionamento de alguns módulos, visualização e conversão da informação recolhida pelos sensores, entre outros. Com o objetivo de simular este sistema, serão utilizados dois microcontroladores bastante comuns no mercado, um Arduino Nano e um Raspberry Pi 3.  
 
 
 \subsection{Arduino Nano}
 
 
-Como descrito no site oficial, um Arduino consiste numa plataforma \textit{open-source} de prototipagem eletrónica composta por \textit{hardware} e \textit{software} flexíveis e com elevada facilidade utilização. Esta plataforma é utilizada para projetos especialmente no contexto do \ac{IoT} e da robótica educativa, sendo possível de incorporar vários módulos, dependendo da tarefa que se quer que seja executada\cite{Banzi2012}. 
+Como descrito no site oficial, um Arduino consiste numa plataforma \textit{open-source} de prototipagem eletrónica composta por \textit{hardware} e \textit{software} flexíveis e com elevada facilidade de utilização. Esta plataforma é utilizada para projetos principalmente no contexto do \ac{IoT} e da robótica educativa, sendo possível incorporar vários módulos, dependendo da tarefa que se quer executar\cite{Banzi2012}. 
 
-Na figura \ref{ard2} e \ref{ard1} apresenta-se uma imagem do Arduino utilizado e a identificação dos diferentes pinos existentes, respectivamente. 
+O Arduino Nano possui um conjunto de pinos que podem ser programados para funcionarem como entradas ou saídas fazendo com que este  microcontrolador interaja com o exterior para os mais diversos fins. Para além dos pinos de \ac{I/O} existem pinos de alimentação que fornecem diversos valores de tensão que podem ser utilizados para transmitir energia elétrica aos diferentes componentes de um projeto\cite{Banzi2012}. Nas figuras \ref{ard2} e \ref{ard1} apresenta-se o Arduino utilizado e a identificação dos diferentes pinos existentes, respectivamente. Adicionalmente, na tabela \ref{caraarduino} encontram-se as principais características desta versão do Arduino.
+
 
 
 \begin{figure}[h]
@@ -376,10 +486,9 @@ Na figura \ref{ard2} e \ref{ard1} apresenta-se uma imagem do Arduino utilizado e
 
 
 
-O Arduino Nano possui um conjunto de pinos que podem ser programados para funcionarem como entradas ou saídas fazendo com que este  microcontrolador interaja com o meio externo para os mais diversos fins. Para além dos pinos de \ac{I/O} exitem pinos de alimentação que fornecem diversos valores de tensão que podem ser utilizados para transmitir energia elétrica aos diferentes componentes de um projeto\cite{Banzi2012}. Na tabela \ref{caraarduino} encontram-se as principais características desta versão do Arduino. 
 
 
-
+\newpage
 
 \begin{table}[h]
 	\centering
@@ -411,8 +520,9 @@ O Arduino Nano possui um conjunto de pinos que podem ser programados para funcio
 
 \subsection{Raspberry Pi 3}
 
-Um Raspberry Pi (figura \ref{rasp1}) comparativamente com outros dispositivos de igual dimensão é mais poderoso e já incorpora alguns periférico \ac{I/O}, tal como um computador normal. Tem o tamanho de um cartão de crédito que possui um conjunto de \textit{hardware} integrado que tal como Arduino possibilita uma interação com o meio exterior. Este dispositivo pode ser ligado a um monitor através da saída HDMI, possuindo ainda uma saída de áudio e várias portas \ac{USB}, tendo sido desenvolvido no Reino Unido pela \textit{Raspberry Pi Foundation}. Este microcontrolador é compatível com sistemas operativos baseados em GNU/Linux, sendo que no trabalho prático desta dissertação se encontra instalada a versão Raspbian\footnote{Distribuição Linux oficial do Raspberry Pi:  \url{https://www.raspberrypi.org/downloads/raspbian/}}\cite{RaspberryPiFoundation2012}. 
+Um Raspberry Pi (figura \ref{rasp1}) é mais poderoso do que outros dispositivos de igual dimensão e incorpora alguns periféricos \ac{I/O}, tal como um computador normal. Tem o tamanho de um cartão de crédito que possui um conjunto de \textit{hardware} integrado que tal como o Arduino, possibilita uma interação com o exterior. Este dispositivo, desenvolvido no Reino Unido pela \textit{Raspberry Pi Foundation}, pode ser ligado a um monitor através da saída HDMI, possuindo também uma saída de áudio e várias portas \ac{USB}. O Raspberry Pi é compatível com sistemas operativos baseados em GNU/Linux, sendo que no trabalho prático desta dissertação será utiliza a versão 3 do Raspberry Pi com a versão Raspbian\footnote{Distribuição Linux oficial do Raspberry Pi:  \url{https://www.raspberrypi.org/downloads/raspbian/}} instalada\cite{RaspberryPiFoundation2012}..
 
+ Na figura \ref{comprasp1} encontram-se os principais componentes da versão utilizada e na tabela \ref{comp23} é feita um comparação entre a versão 2 e 3 do Raspberry Pi, permitindo concluir que a versão utilizada é mais poderosa. 
 
 
 
@@ -435,10 +545,7 @@ Um Raspberry Pi (figura \ref{rasp1}) comparativamente com outros dispositivos de
 \end{figure}
 
 
-No trabalho prático desta dissertação será utilizada a versão 3 do Raspberry Pi, tendo este surgido em fevereiro de 2016. Na figura \ref{comprasp1} encontram-se os principais componentes desta versão. Seguidamente, na tabela \ref{comp23} é feita um comparação entre a versão 2 e 3 do Raspberry Pi. 
-
-
-
+\newpage
 
 \begin{table}[h]
 	\centering
@@ -471,21 +578,21 @@ No trabalho prático desta dissertação será utilizada a versão 3 do Raspberr
 \section{Sensores}
 
 
-Esta secção tem como objetivo fazer um estudo comparativo entre as diferentes tecnologias usadas para a medição dos vários parâmetros ambientais necessários ao controlo e monitorização da Salicórnia. Serão descritos alguns sensores de temperatura, luminosidade e salinidade. 
+Esta secção tem como objetivo fazer um estudo comparativo entre as diferentes tecnologias usadas para a medição dos vários parâmetros ambientais necessários ao controlo e monitorização da produção de Salicórnia. Serão descritos alguns sensores de temperatura, luminosidade e salinidade existentes no mercado. 
 
 
 
 \subsection{Sensor de temperatura }
-Existem vários tipos de sensores de temperatura baseados em princípios de funcionamento distintos.  
+Existem vários tipos de sensores de temperatura baseados em princípios de funcionamento distintos, nomeadamente os termopares, os termístores e os de circuito integrado. 
 
 \begin{itemize}
-	\item \textbf{Termopares}: são sensores de temperatura simples, robustos e de baixo custo, constituídos por duas partes diferentes de material condutor. Podem medir temperaturas entre os -200ºC e os 2315ºC, sendo usados em grande escala no meio industrial\cite{REOTEMPInstrumentCorporation}. 
+	\item \textbf{Termopares}: são sensores de temperatura simples, robustos e de baixo custo, constituídos por duas partes diferentes de material condutor. Podem medir temperaturas entre os -200ºC e os 2315ºC, sendo usados em grande escala\cite{REOTEMPInstrumentCorporation}. 
 	 
 	
-	\item \textbf{Termístor}: são sensores cuja resistência varia com a temperatura, sendo construídos a partir de materiais semicondutores. Um termístor detêm uma maior sensibilidade, pois a sua característica exponencial possibilita que uma pequena variação de temperatura traga uma grande variação na sua resistência, permitindo que a temperatura típica seja entre os -100ºC e os 300ºC. Estes sensores são frágeis, baratos e de reduzidas dimensões, sendo suscetíveis a problemas de auto aquecimento\cite{TemperatureSensors}.
+	\item \textbf{Termístor}: são sensores cuja resistência varia com a temperatura, sendo construídos a partir de materiais semicondutores. Um termístor detêm uma maior sensibilidade, pois uma pequena variação de temperatura provoca uma grande variação na sua resistência, permitindo que a temperatura típica seja entre os -100ºC e os 300ºC. Estes sensores são frágeis, baratos e de dimensões reduzidas, sendo suscetíveis a problemas de auto aquecimento\cite{TemperatureSensors}.
 	
 
-	\item \textbf{Circuito integrado}: são sensores construidos através de materiais semicondutores, o que possibilita que tenham uma gama de temperatura limitada, geralmente entre os -55ºC e os 150ºC. 	Estão disponíveis com saídas em tensão, ou corrente, linearmente proporcional à temperatura. 
+	\item \textbf{Circuito integrado}: são sensores construídos através de materiais semicondutores, o que possibilita que tenham uma gama de temperatura limitada, geralmente entre os -55ºC e os 150ºC. 	Estão disponíveis com saídas em tensão, ou corrente, linearmente proporcional à temperatura. 
 
 
 \end{itemize}
@@ -500,7 +607,7 @@ Existem vários tipos de sensores de temperatura baseados em princípios de func
 %O LDR (Light Dependent Resistor) é um componente cuja resistência varia de acordo com a intensidade da luz. Quanto mais luz incidir sobre o componente, menor a resistência. Este sensor de luminosidade pode ser utilizado em projetos com arduino e outros microcontroladores para alarmes, automação residencial, sensores de presença e etc.
 
 
-Existe uma variedade enorme de sensores de luminosidade/radição no mercado, contudo para monitorizar a luminosidade incidente numa planta é fundamental conhecer a radiação que é utilizada no processo de fotossíntese, denominada por \ac{PAR}. A figura \ref{grapFoto} ilustra que as plantas são mais sensíveis à luz azul e vermelha, estando essa radiação compreendida entre os  300nm e os 700nm. De seguida são apresentados alguns dos tipos de sensores mais comuns no mercado. 
+Existe uma enorme variedade de sensores de luminosidade/radiação no mercado, contudo para monitorizar a luminosidade incidente numa planta é fundamental conhecer a radiação que é utilizada no processo de fotossíntese, denominada por \ac{PAR}. A figura \ref{grapFoto} ilustra o espectro de absorção de luz pelas plantas. É possível ver que estas são mais sensíveis à luz azul e vermelha (300-700 nm).
 
 
 
@@ -509,32 +616,31 @@ Existe uma variedade enorme de sensores de luminosidade/radição no mercado, co
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.3]{img/plantagrap.png}
-	\caption[Sensibilidade luminosa nas plantas durante a fotossíntese)]{Sensibilidade luminosa nas plantas durante a fotossíntese (Retirado de \cite{Argus2010})}
+	\caption[Sensibilidade luminosa das plantas durante a fotossíntese)]{Sensibilidade luminosa nas plantas durante a fotossíntese (Retirado de \cite{Argus2010})}
 	\label{grapFoto}
 \end{figure}
 
-
-
+Alguns dos sensores de luminosidade/radição mais comuns no mercado são os sensores \ac{PAR}, os piranómetros e os sensores optoelectrónicos, descritos de seguida. 
 
 \begin{itemize}
-	\item \textbf{Sensores \ac{PAR}}: são desenhados especificamente para medir radiação fotosintética ativa, sendo indicados para medir a luz incidente numa planta. São sensores muito caros sendo utilizados maioritariamente na investigação hortícola. 
+	\item \textbf{Sensores \ac{PAR}}: são desenhados especificamente para medir a \ac{PAR}, sendo indicados para medir a luz incidente numa planta. Os custos associados a este tipo de sensores são elevados e por isso são utilizados maioritariamente na investigação hortícola. 
 	
 
 
 	
 	
 	
-	\item \textbf{Piranómetros}: estes sensores mede a radiação solar total (radiação ultravioleta, visível e infravermelha), devendo ser utilizados no exterior, sendo particularmente úteis em estações meteorológicas. Estes tipo de sensores são bastante dispendiosos, podendo ser mais caros dos que os sensores \ac{PAR}. 
+	\item \textbf{Piranómetros}: estes sensores medem a radiação solar total (radiação ultravioleta, visível e infravermelha), devendo ser utilizados no exterior. Este tipo de sensores é particularmente útil em estações meteorológicas. No entanto, são bastante dispendiosos, podendo ser mais caros dos que os sensores \ac{PAR}. 
 	
 	
 	
 	
-	\item \textbf{Sensores optoelectrónicos}: são dispositivos eletrónicos que se baseiam em fenómenos fotovoltaicos. Seguidamente são destacados três sensores deste tipo, possuindo um elevado desempenho quando afetado por ruído e uma elevada sensibilidade. São considerados os sensores de luminosidade mais económicos.  
+	\item \textbf{Sensores optoelectrónicos}: são dispositivos eletrónicos que se baseiam em fenómenos fotovoltaicos. Existem três sensores deste tipo, que possuem um elevado desempenho quando afetados pelo ruído e uma elevada sensibilidade. São considerados os sensores de luminosidade mais económicos.  
 	 
 		\begin{itemize}
 			\item \textbf{Fotodíodo}: pode ser visto como um díodo comum, gerando uma corrente ou tensão quando incide radiação sobre ele.
 			\item \textbf{Fototransístor}: é um transístor desenhado para receber luz, normalmente num módulo transparente.
-			\item \textbf{\ac{LDR}}: trata-se de um material semicondutor cuja resistência diminui com a incidência de luz. 
+			\item \textbf{\ac{LDR}}: trata-se de um material semicondutor cuja resistência diminui com a incidência de luz. Trata-se de um sensor económico e de fácil utilização. 
 		\end{itemize}
 	
 \end{itemize}
@@ -546,78 +652,69 @@ Existe uma variedade enorme de sensores de luminosidade/radição no mercado, co
 \subsection{Sensor de salinidade}
 
 
-Atualmente ainda não há disponível nenhum sensor que permite medir exatamente a salinidade, mas existem sensores que medem a condutividade elétrica num determinado meio, permitindo concluir o estado do meio relativamente à quantidade de sal existente. 
+Atualmente ainda não há disponível nenhum sensor que permite medir exatamente a salinidade. Contudo,existem sensores que medem a condutividade elétrica num determinado meio, permitindo concluir o estado do meio relativamente à quantidade de sal existente. 
 Um exemplo disso, é o sensor SAL-BTA da Vernier\cite{sall} que permite medir de forma fácil e precisa o teor de sal dissolvido numa solução aquosa.
 
 
 
 
 \section{Tecnologias de comunicação}
-
-Nesta secção serão apresentados alguns das tecnologias de comunicação mais utilizados em \textit{Internet of Things} que permite a troca de informações entre dispositivos. Serão abordados quatro tecnologias de comunicação:  
-
-
-
-
+\label{state-tecc}
+Nesta secção serão apresentadas algumas das tecnologias de comunicação sem fios mais utilizados em \textit{Internet of Things} que permitem a troca de informação entre dispositivos. Serão abordados quatro tecnologias bastante populares comunicação: Zigbee, Bluetooth, Wi-Fi e SigFox. Por fim, é realizada uma comparação entre as tecnologias estudadas. 
 
 
 
 \subsection{Zigbee}
 
-Zigbee designa um conjunto de especificações para a comunicação sem-fio entre dispositivos eletrônicos, com ênfase na baixa potência de operação, na baixa taxa de transmissão de dados e no baixo custo de implementação. Tal conjunto de especificações define camadas do modelo OSI subsequentes àquelas estabelecidas pelo padrão IEEE 802.15.4.
 
-
-
-
-
+Zigbee é um padrão de rede sem fios destinado a aplicações de controlo e sensores remotos, adequado para operações em ambientes isolados. Esta tecnologia é de curto alcance, baixa complexidade e consumo de energia, possuindo ainda uma taxa de dados baixa. Permite uma topologia de rede \textit{mesh} (malha) permitindo elevados níveis de fiabilidade e maior alcance de cobertura, fornecendo mais do que um caminho através da rede para qualquer ligação\cite{Rahman2015}. 	
 
 
 
 
 \subsection{Bluetooth (BLE)}
 
-Bluetooth é uma especificação de rede sem fio de âmbito pessoal (Wireless personal area networks – PANs) consideradas do tipo PAN ou mesmo WPAN
+
+Bluetooth (BLE) é uma marca característica da versão 4.0 do Bluetooth, sendo projetado para aplicações de baixa potência, utilizada em comunicações de curta distância. Esta tecnologia de comunicação bastante conhecida, consiste numa especificação de rede sem fio de âmbito pessoal, também conhecida por \ac{PANs}, sendo de baixo custo e consumo de energia. O Bluetooth surgiu com a intenção de eliminar o elevado número de cabos existentes na comunicação entre dispositivos, sendo que este padrão funciona na banda de frequência 2,4GHz, conhecida como banda \ac{ISM}\footnote{Faixa de frequência compartilhada por dispositivos, como forno micro-ondas e Wi-Fi}, disponível mundialmente sem a necessidade de licenças\cite{Bruno2002}\cite{BluetoothTM2001}. 
+
+
+%https://sigarra.up.pt/fcup/en/pub_geral.show_file?pi_gdoc_id=730816
+
+
 
 
 \subsection{Wi-Fi (IEEE 802.11)}
 
-rede sem fio IEEE 802.11, que também são conhecidas como redes Wi-Fi ou wireless, foram uma das grandes novidades tecnológicas dos últimos anos. Atuando na camada física, o 802.11 define uma série de padrões de transmissão e codificação para comunicações sem fio, sendo os mais comuns: FHSS (Frequency Hopping Spread Spectrun), DSSS (Direct Sequence Spread Spectrum) e OFDM (Orthogonal Frequency Division Multiplexing). Atualmente, é o padrão de fato em conectividade sem fio para redes locais. Como prova desse sucesso pode-se citar o crescente número de Hot Spots e o fato de a maioria dos computadores portáteis novos já saírem de fábrica equipados com interfaces IEEE 802.25. A Rede IEEE possui como principal característica transmitir sinal sem fio através de ondas!
 
+O Wi-Fi é uma tecnologia de recepção de transmissão de dados sem fios, baseado no \textit{standard} IEEE 802.11. Com o evoluir da tecnologia, têm surgido diferentes variações do mesmo \textit{standard}, sendo a variante 802.11g a mais comum. Seguidamente, são apresentadas as característica principais desta variante\cite{Paper2005}\cite{urlwifi}:
 
-
-
-
-
-
-
-
-Baseado no standard IEEE 802.11, o Wi-Fi é uma tecnologia de transmissão e receção de dados sem fios. Ao longo dos anos têm surgido diferentes variantes do mesmo standard, sendo
-a variante 802.11g a mais comum e aqui apresentada.
-Aprovada a Junho de 2003 , a variante Wi-Fi tem as seguintes características principais
-[82, 83]:
 
 \begin{itemize}
 	\item Banda de frequência de 2.4 GHz;
 	\item Taxa de bits máxima de 54 Mbps na camada física, transferência de dados máxima de 24.7 Mbps;
-	\item Topologia ponto-a-ponto (ad-hoc) e estrela (infraestrutura) suportadas;
+	\item Topologia em estrela (infraestrutura) e ponto-a-ponto (ad-hoc);
 	\item Vários mecanismos de encriptação e autenticação;
 \end{itemize}
 
 
 
 
-[82] IEEE 802.11g Wi-Fi Tutorial, Ian Poole, Radio Electronics. Visitado a Outubro de 2015.
-URL: http://www.radio-electronics.com/info/wireless/wi-fi/ieee-802-11g.php
-[83] The New Mainstream Wireless LAN Standard, Broadcom. Visitado a Outubro de 2015.
-%URL: http://www.dell.com/downloads/global/shared/broadcom_802_11_g.pdf
+
 
 
 \subsection{Sigfox}
 
-Uma empresa francesa que constrói redes sem fio para conectar objetos de baixa energia, como medidores de energia elétrica , smartwatches e máquinas de lavar, que precisam estar continuamente ligados e emitindo pequenas quantidades de dados. Sua tecnologia é voltada para a Internet das Coisas (IoT).
+
+A tecnologia Sigfox permite a comunicação sem fios entre dispositivos possuindo um baixo consumo de energia, utilizando a banda \ac{ISM}, tal como o Bluetooth. De acordo com o site oficial, o Sigfox é considerado um protocolo leve, permitindo trocas de pequenas mensagens possibilitando um consumo de bateria bastante reduzido\cite{sigfoxsite}. Esta tecnologia é totalmente virada para o \ac{IoT} devido ao seu baixo consumo. 
 
 
-\subsection{Comparação de tecnologias de comunicação}
+
+
+\subsection{Comparação entre tecnologias de comunicação}
+
+Na tabela \ref{com-tecn} é apresentada uma comparação entre algumas características das tecnologias anteriormente estudadas. 
+
+De acordo com os dados apresentados na tabela, concluímos que o Zigbee e o Sigfox são tecnologias de baixo consumo, contudo o alcance destas é inferior relativamente às tecnologias Bluetooth e Wi-Fi. 
 
 
 
@@ -637,14 +734,13 @@ Uma empresa francesa que constrói redes sem fio para conectar objetos de baixa 
 		\textbf{Bateria (duração)} & Meses-anos & Dias & Horas & 10/15 anos \\ \hline
 		
 	\end{tabular}
-	\caption{Comparação entre tecnologias de comunicação}
+	\caption[Comparação entre tecnologias de comunicação]{Comparação entre tecnologias de comunicação (Adaptado de \cite{Rahman2015})}
 	\label{com-tecn}
 \end{table}
 
 
 
 
-Artigo: \cite{Rahman2015}
 
 
 
@@ -657,36 +753,34 @@ Artigo: \cite{Rahman2015}
 
 
 \newpage
-\section{Aplicações relacionadas}
+%\section{Aplicações relacionadas}
 
 
 
-Seja para comparar, seja para replicar boas funcionalidades, ou seja para conseguir oferecer algo mais ao utilizador final, quando se pretende desenvolver uma determinada aplicação, e
-importante proceder a uma avaliação de aplicações da mesma área se encontram no mercado.
-Assim, são aqui abordadas algumas das aplicações relacionadas que são mais utilizadas ou que mais se aproximam daquilo que se pretende para a aplicação a desenvolver neste projeto,
-tendo em conta os diferentes sistemas operativos.
+%Seja para comparar, seja para replicar boas funcionalidades, ou seja para conseguir oferecer algo mais ao utilizador final, quando se pretende desenvolver uma determinada aplicação, e importante proceder a uma avaliação de aplicações da mesma área se encontram no mercado. 
+%Assim, são aqui abordadas algumas das aplicações relacionadas que são mais utilizadas ou que mais se aproximam daquilo que se pretende para a aplicação a desenvolver neste projeto, tendo em conta os diferentes sistemas operativos.
 
 
 
-\subsection{Multi-monitorização de estufas agrícolas }
+%\subsection{Multi-monitorização de estufas agrícolas }
 
-https://repositorio.ipcb.pt/bitstream/10400.11/949/1/Multimonitorizacao%20Estufa%20Agricola.PDF
+%https://repositorio.ipcb.pt/bitstream/10400.11/949/1/Multimonitorizacao%20Estufa%20Agricola.PDF
 
-\subsection{Agroopar}
+%\subsection{Agroopar}
 
-http://www.vidarural.pt/agroopar-os-custos-na-mao-do-agricultor/
+%http://www.vidarural.pt/agroopar-os-custos-na-mao-do-agricultor/
 
 
-\subsection{outras que vale a pena para comparacao..}
+%\subsection{outras que vale a pena para comparacao..}
 
 %\subsection{Sistema de Monitorização de Estufas Agrícolas}
 
 
-http://www.anje.pt/preview/perfil-coolfarm
+%http://www.anje.pt/preview/perfil-coolfarm
 
 
 
-\cite{Abreu2012}
+%\cite{Abreu2012}
 
 
 \newpage

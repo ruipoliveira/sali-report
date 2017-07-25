@@ -1,66 +1,77 @@
 \select@language {portuguese}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Salic\IeC {\'o}rnia na Ria de Aveiro (Fotografia por Jos\IeC {\'e} M. G. Pereira)\relax }}{1}{figure.caption.12}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Salic\IeC {\'o}rnia na Ria de Aveiro (Fotografia por Jos\IeC {\'e} M. G. Pereira)\relax }}{1}{figure.caption.14}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Colora\IeC {\c c}\IeC {\~a}o da planta \textit {Salicornia ramosissima} na primavera (\IeC {\`a} esquerda) e no outono (\IeC {\`a} direita) (Fotografia por Jos\IeC {\'e} M. G. Pereira)\relax }}{6}{figure.caption.14}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Esquema representativo do ciclo de vida da \textit {Salicornia ramosissima}.}}{6}{figure.caption.15}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Evolu\IeC {\c c}\IeC {\~a}o da internet em cinco fases}}{8}{figure.caption.18}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Pir\IeC {\^a}mide do conhecimento: modelo DIKW\relax }}{9}{figure.caption.21}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Colora\IeC {\c c}\IeC {\~a}o da planta \textit {Salicornia ramosissima} na primavera (\IeC {\`a} esquerda) e no outono (\IeC {\`a} direita) (Fotografia por Jos\IeC {\'e} M. G. Pereira)\relax }}{6}{figure.caption.15}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Esquema representativo do ciclo de vida da \textit {Salicornia ramosissima}.}}{6}{figure.caption.16}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Evolu\IeC {\c c}\IeC {\~a}o da internet em cinco fases}}{8}{figure.caption.19}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Pir\IeC {\^a}mide do conhecimento: modelo DIKW\relax }}{9}{figure.caption.22}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Arduino Nano\relax }}{19}{figure.caption.36}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Identifica\IeC {\c c}\IeC {\~a}o dos pinos num Arduino Nano}}{19}{figure.caption.36}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Raspberry Pi 3\relax }}{20}{figure.caption.40}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Principais componentes no Raspberry Pi 3 \relax }}{20}{figure.caption.40}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Sensibilidade luminosa nas plantas durante a fotoss\IeC {\'\i }ntese)}}{22}{figure.caption.43}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Arduino Nano\relax }}{20}{figure.caption.42}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Identifica\IeC {\c c}\IeC {\~a}o dos pinos num Arduino Nano}}{20}{figure.caption.42}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Raspberry Pi 3\relax }}{21}{figure.caption.45}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Principais componentes no Raspberry Pi 3 \relax }}{21}{figure.caption.45}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Sensibilidade luminosa das plantas durante a fotoss\IeC {\'\i }ntese)}}{23}{figure.caption.48}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Ilustra\IeC {\c c}\IeC {\~a}o dos principais componentes do sistema\relax }}{27}{figure.caption.46}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Ilustra\IeC {\c c}\IeC {\~a}o da distribui\IeC {\c c}\IeC {\~a}o dos m\IeC {\'o}dulos em duas leiras\relax }}{28}{figure.caption.47}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Esquema de componentes e respetiva comunica\IeC {\c c}\IeC {\~a}o entre tr\IeC {\^e}s \ac {SM} e um \ac {CM}\relax }}{29}{figure.caption.48}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Fase de desenvolvimento de um software }}{31}{figure.caption.54}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Casos de uso para a aplica\IeC {\c c}\IeC {\~a}o web (dashboard) \relax }}{35}{figure.caption.55}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Casos de uso para a aplica\IeC {\c c}\IeC {\~a}o mobile\relax }}{36}{figure.caption.56}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Esquema relacional da estrutura da base de dados\relax }}{39}{figure.caption.57}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Arquitetura l\IeC {\'o}gica\relax }}{42}{figure.caption.60}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Arquitetura f\IeC {\'\i }sica (blocos)\relax }}{43}{figure.caption.61}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Arquitetura do sistema de informa\IeC {\c c}\IeC {\~a}o (\textit {dashboard}, base de dados e API)\relax }}{45}{figure.caption.64}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Processo de autentica\IeC {\c c}\IeC {\~a}o em \ac {HTTP} atrav\IeC {\'e}s de token}}{47}{figure.caption.68}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Arquitetura da aplica\IeC {\c c}\IeC {\~a}o mobile\relax }}{49}{figure.caption.73}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Sensor TTC 104 NTC\relax }}{51}{figure.caption.76}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Esquema eletrot\IeC {\'e}cnico da liga\IeC {\c c}\IeC {\~a}o do sensor de temperatura\relax }}{51}{figure.caption.76}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Sensor foto-resist\IeC {\^e}ncia GL5528\relax }}{52}{figure.caption.78}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Esquema eletrot\IeC {\'e}cnico da liga\IeC {\c c}\IeC {\~a}o do sensor de luminosidade\relax }}{52}{figure.caption.78}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces \textit {Water Level Switch Liquid Level Sensor Plastic Ball Float}\relax }}{53}{figure.caption.80}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Esquema eletrot\IeC {\'e}cnico da liga\IeC {\c c}\IeC {\~a}o do sensor de n\IeC {\'\i }vel l\IeC {\'\i }quido\relax }}{53}{figure.caption.80}
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Led\relax }}{53}{figure.caption.81}
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Esquema eletrot\IeC {\'e}cnico da liga\IeC {\c c}\IeC {\~a}o do led\relax }}{53}{figure.caption.81}
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Comunica\IeC {\c c}\IeC {\~a}o entre componentes da simula\IeC {\c c}\IeC {\~a}o em hardware\relax }}{54}{figure.caption.83}
-\contentsline {figure}{\numberline {4.22}{\ignorespaces M\IeC {\'o}dulo bluetooth HC-06\relax }}{54}{figure.caption.84}
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Esquema eletrot\IeC {\'e}cnico da liga\IeC {\c c}\IeC {\~a}o do m\IeC {\'o}dulo bluetooth\relax }}{54}{figure.caption.84}
-\contentsline {figure}{\numberline {4.24}{\ignorespaces Log\IeC {\'o}tipo OpenCV\relax }}{55}{figure.caption.89}
-\contentsline {figure}{\numberline {4.25}{\ignorespaces Raspberry Pi Camera Board V2 8MP 1080p\relax }}{56}{figure.caption.90}
-\contentsline {figure}{\numberline {4.26}{\ignorespaces Arquitetura do sistema de video stream\relax }}{57}{figure.caption.93}
-\contentsline {figure}{\numberline {4.27}{\ignorespaces Diagrama final de componentes do sistema\relax }}{58}{figure.caption.94}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Ilustra\IeC {\c c}\IeC {\~a}o dos principais componentes do sistema\relax }}{27}{figure.caption.53}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Ilustra\IeC {\c c}\IeC {\~a}o da distribui\IeC {\c c}\IeC {\~a}o dos m\IeC {\'o}dulos em duas leiras\relax }}{28}{figure.caption.54}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Esquema de componentes e respetiva comunica\IeC {\c c}\IeC {\~a}o entre tr\IeC {\^e}s \ac {SM} e um \ac {CM}\relax }}{29}{figure.caption.55}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Fase de desenvolvimento de um software }}{31}{figure.caption.60}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Casos de uso para a aplica\IeC {\c c}\IeC {\~a}o web (dashboard) \relax }}{35}{figure.caption.61}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Casos de uso para a aplica\IeC {\c c}\IeC {\~a}o mobile\relax }}{36}{figure.caption.62}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Esquema relacional da estrutura da base de dados\relax }}{39}{figure.caption.63}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Arquitetura l\IeC {\'o}gica\relax }}{42}{figure.caption.66}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Arquitetura f\IeC {\'\i }sica (blocos)\relax }}{43}{figure.caption.67}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Arquitetura do sistema de informa\IeC {\c c}\IeC {\~a}o (\textit {dashboard}, base de dados e API)\relax }}{45}{figure.caption.70}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Processo de autentica\IeC {\c c}\IeC {\~a}o em \ac {HTTP} atrav\IeC {\'e}s de token}}{47}{figure.caption.74}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Arquitetura da aplica\IeC {\c c}\IeC {\~a}o mobile\relax }}{49}{figure.caption.79}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Sensor TTC 104 NTC\relax }}{50}{figure.caption.82}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Esquema eletrot\IeC {\'e}cnico da liga\IeC {\c c}\IeC {\~a}o do sensor de temperatura\relax }}{50}{figure.caption.82}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Sensor foto-resist\IeC {\^e}ncia GL5528\relax }}{51}{figure.caption.84}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Esquema eletrot\IeC {\'e}cnico da liga\IeC {\c c}\IeC {\~a}o do sensor de luminosidade\relax }}{51}{figure.caption.84}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces \textit {Water Level Switch Liquid Level Sensor Plastic Ball Float}\relax }}{52}{figure.caption.86}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Esquema eletrot\IeC {\'e}cnico da liga\IeC {\c c}\IeC {\~a}o do sensor de n\IeC {\'\i }vel l\IeC {\'\i }quido\relax }}{52}{figure.caption.86}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces \ac {LED}\relax }}{52}{figure.caption.87}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Esquema eletrot\IeC {\'e}cnico da liga\IeC {\c c}\IeC {\~a}o do \ac {LED}\relax }}{52}{figure.caption.87}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Comunica\IeC {\c c}\IeC {\~a}o entre componentes da simula\IeC {\c c}\IeC {\~a}o em \textit {hardware}\relax }}{53}{figure.caption.89}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces M\IeC {\'o}dulo Bluetooth HC-06\relax }}{54}{figure.caption.90}
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Esquema eletrot\IeC {\'e}cnico da liga\IeC {\c c}\IeC {\~a}o do m\IeC {\'o}dulo Bluetooth\relax }}{54}{figure.caption.90}
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Raspberry Pi Camera Board V2 8MP 1080p\relax }}{55}{figure.caption.94}
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Arquitetura do sistema de video stream\relax }}{56}{figure.caption.98}
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Diagrama final de componentes do sistema\relax }}{57}{figure.caption.99}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Painel administrativo do Django \relax }}{62}{figure.caption.95}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Diagrama de atividades do processo de registo e autentica\IeC {\c c}\IeC {\~a}o\relax }}{63}{figure.caption.96}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Diagrama de fluxo para gera\IeC {\c c}\IeC {\~a}o de alarmes\relax }}{64}{figure.caption.97}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Documenta\IeC {\c c}\IeC {\~a}o da API REST com a ferramenta Swagger\relax }}{68}{figure.caption.100}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Sensor TTC 104 NTC\relax }}{76}{figure.caption.105}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Piramide ..Retirado de}}{76}{figure.caption.105}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Painel administrativo do Django \relax }}{60}{figure.caption.100}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Diagrama de atividades do processo de registo e autentica\IeC {\c c}\IeC {\~a}o\relax }}{61}{figure.caption.101}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Diagrama de fluxo para gera\IeC {\c c}\IeC {\~a}o de alarmes\relax }}{62}{figure.caption.102}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Documenta\IeC {\c c}\IeC {\~a}o da API REST com a ferramenta Swagger\relax }}{66}{figure.caption.105}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Threads e ddd... implementacao \relax }}{72}{figure.caption.109}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Sensor TTC 104 NTC\relax }}{74}{figure.caption.111}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Piramide ..Retirado de}}{74}{figure.caption.111}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Documenta\IeC {\c c}\IeC {\~a}o da API REST com a ferramenta Swagger\relax }}{80}{figure.caption.107}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Documenta\IeC {\c c}\IeC {\~a}o da API REST com a ferramenta Swagger\relax }}{78}{figure.caption.113}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Resultado da intera\IeC {\c c}\IeC {\~a}o com a aplica\IeC {\c c}\IeC {\~a}o \textit {Bluetooth Terminal HC-05}\relax }}{79}{figure.caption.114}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces \textit {Breadboard} com liga\IeC {\c c}\IeC {\~a}o dos diferentes componentes, destacando-se a ativa\IeC {\c c}\IeC {\~a}o do \ac {LED}\relax }}{79}{figure.caption.114}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Imagem original (frame 1)\relax }}{79}{figure.caption.115}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Resultado obtido (frame 1)\relax }}{79}{figure.caption.115}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Imagem original (frame 1)\relax }}{81}{figure.caption.116}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Resultado obtido (frame 1)\relax }}{81}{figure.caption.116}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Imagem original (frame 1)\relax }}{81}{figure.caption.117}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Resultado obtido (frame 1)\relax }}{81}{figure.caption.117}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Imagem original (frame 1)\relax }}{81}{figure.caption.118}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Resultado obtido (frame 1)\relax }}{81}{figure.caption.118}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Imagem original (frame 1)\relax }}{82}{figure.caption.119}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Resultado obtido (frame 1)\relax }}{82}{figure.caption.119}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Imagem original (frame 1)\relax }}{82}{figure.caption.120}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Resultado obtido (frame 1)\relax }}{82}{figure.caption.120}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Imagem original (frame 1)\relax }}{82}{figure.caption.121}
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Resultado obtido (frame 1)\relax }}{82}{figure.caption.121}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {D.1}{\ignorespaces Frame 1 \relax }}{99}{figure.caption.110}
-\contentsline {figure}{\numberline {D.2}{\ignorespaces Frame 2 \relax }}{101}{figure.caption.111}
-\contentsline {figure}{\numberline {D.3}{\ignorespaces Frame 3 \relax }}{102}{figure.caption.112}
-\contentsline {figure}{\numberline {D.4}{\ignorespaces Frame 3 \relax }}{105}{figure.caption.113}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {E.1}{\ignorespaces Pir\IeC {\^a}mide do conhecimento: modelo DIKW\relax }}{107}{figure.caption.114}
-\contentsline {figure}{\numberline {E.2}{\ignorespaces Pir\IeC {\^a}mide do conhecimento: modelo DIKW\relax }}{108}{figure.caption.115}
+\contentsline {figure}{\numberline {D.1}{\ignorespaces Pir\IeC {\^a}mide do conhecimento: modelo DIKW\relax }}{101}{figure.caption.124}
+\contentsline {figure}{\numberline {D.2}{\ignorespaces Pir\IeC {\^a}mide do conhecimento: modelo DIKW\relax }}{102}{figure.caption.125}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {G.1}{\ignorespaces Pir\IeC {\^a}mide do conhecimento: modelo DIKW\relax }}{111}{figure.caption.116}
+\contentsline {figure}{\numberline {F.1}{\ignorespaces Prot\IeC {\'o}tipo de montagem de componentes eletrot\IeC {\'e}cnicos\relax }}{105}{figure.caption.126}

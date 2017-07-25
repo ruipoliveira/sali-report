@@ -206,6 +206,24 @@ D.~S. Foundation, ``{Django Documentation},'' pp. 1--1172, 2012. [Online].
 A.~Holovaty and J.~Kaplan-Moss, \emph{{The Definitive Guide to Django: Web
   Development Done Right}}, 2009.
 
+\bibitem{Ibm2012a}
+Ibm, ``{Native, web or hybrid mobile-app development},'' \emph{Thought
+  Leadership White Paper}, pp. 0--7, 2012.
+
+\bibitem{Ionic2016}
+\BIBentryALTinterwordspacing
+Ionic, ``{Welcome to Ionic - Ionic Framework},'' 2016. [Online]. Available:
+  \url{http://ionicframework.com/docs/guide/preface.html} [Accessed:
+  2017-07-19]
+\BIBentrySTDinterwordspacing
+
+\bibitem{restdjango}
+\BIBentryALTinterwordspacing
+A.~Holmes, ``{Reviewing Django REST Framework},'' 2014. [Online]. Available:
+  \url{http://blog.isotoma.com/2014/03/reviewing-django-rest-framework/}
+  [Accessed: 2017-07-20]
+\BIBentrySTDinterwordspacing
+
 \bibitem{Banzi2012}
 \BIBentryALTinterwordspacing
 M.~Banzi, D.~Cuartielles, T.~Igoe, G.~Martion, and D.~Mellis, ``{Arduino -
@@ -267,11 +285,40 @@ A.~B.~A. Rahman, ``{Comparison of Internet of Things ( IoT ) Data Link
   \url{http://www.cse.wustl.edu/{~}jain/cse570-15/index.html}
 \BIBentrySTDinterwordspacing
 
-\bibitem{Abreu2012}
+\bibitem{Bruno2002}
 \BIBentryALTinterwordspacing
-A.~S. H.~G. Abreu, ``{Sistema de Monitoriza{\c{c}}{\~{a}}o de Estufas
-  Agr{\'{i}}colas},'' Ph.D. dissertation, University of Aveiro, 2012. [Online].
-  Available: \url{http://ria.ua.pt/handle/10773/10269}
+R.~Bruno, M.~Conti, and E.~Gregori, ``{Bluetooth : Architecture , Protocols and
+  Scheduling Algorithms},'' \emph{Cluster Computing}, vol.~5, no.~2, pp.
+  117--131, 2002. [Online]. Available:
+  \url{http://link.springer.com/10.1023/A:1013989524865}
+\BIBentrySTDinterwordspacing
+
+\bibitem{BluetoothTM2001}
+\BIBentryALTinterwordspacing
+Bluetooth(TM), ``{Bluetooth Specification},'' \emph{Specification of the
+  Bluetooth System}, vol.~1, p. 1084, 2001. [Online]. Available:
+  \url{http://www.bluetooth.com}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Paper2005}
+\BIBentryALTinterwordspacing
+W.~Paper, ``{IEEE 802.11g The New Mainstream Wireless LAN Standard},'' 2005.
+  [Online]. Available: \url{http://www.broadcom.com/products/index}
+\BIBentrySTDinterwordspacing
+
+\bibitem{urlwifi}
+\BIBentryALTinterwordspacing
+``{IEEE 802.11g | Wi-Fi WLAN | Tutorial - Radio-Electronics.Com}.'' [Online].
+  Available:
+  \url{http://www.radio-electronics.com/info/wireless/wi-fi/ieee-802-11g.php}
+  [Accessed: 2017-07-18]
+\BIBentrySTDinterwordspacing
+
+\bibitem{sigfoxsite}
+\BIBentryALTinterwordspacing
+``{Sigfox Technology Overview | Sigfox}.'' [Online]. Available:
+  \url{https://www.sigfox.com/en/sigfox-iot-technology-overview} [Accessed:
+  2017-07-18]
 \BIBentrySTDinterwordspacing
 
 \bibitem{Saini2014}
@@ -363,19 +410,18 @@ Itseez, ``{About - OpenCV library}.'' [Online]. Available:
   \url{http://opencv.org/about.html} [Accessed: 2017-05-19]
 \BIBentrySTDinterwordspacing
 
-\bibitem{Kotsiantis2007}
+\bibitem{raspivid}
 \BIBentryALTinterwordspacing
-H.~A. Razavi and T.~R. Kurfess, ``{Detection of Wheel and Workpiece
-  Contact/Release in Reciprocating Surface Grinding},'' \emph{Journal of
-  Manufacturing Science and Engineering}, vol. 125, no.~2, p. 394, 2003.
-  [Online]. Available:
-  \url{http://manufacturingscience.asmedigitalcollection.asme.org/article.aspx?articleid=1447160}
+``{raspivid - Raspberry Pi Documentation}.'' [Online]. Available:
+  \url{https://www.raspberrypi.org/documentation/usage/camera/raspicam/raspivid.md}
+  [Accessed: 2017-07-25]
 \BIBentrySTDinterwordspacing
 
-\bibitem{Nginx2017}
+\bibitem{Parmar2012}
 \BIBentryALTinterwordspacing
-Nginx, ``{Welcome to NGINX Wiki! | NGINX},'' 2017. [Online]. Available:
-  \url{https://www.nginx.com/resources/wiki/} [Accessed: 2017-07-04]
+H.~Parmar and E.~M. Thornburgh, ``{Adobe's Real Time Messaging Protocol
+  Specification},'' pp. 1--52, 2012. [Online]. Available:
+  \url{http://www.adobe.com/devnet/rtmp.html}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Dalal}

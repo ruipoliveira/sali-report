@@ -2,32 +2,28 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces \textit {Ranking BD-Engines} para popularidade dos \ac {SGBD} estudados}}{13}{table.caption.25}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre MySQL, SQL Server e PostgreSQL\relax }}{13}{table.caption.26}
-\contentsline {table}{\numberline {3.3}{\ignorespaces Caracter\IeC {\'\i }sticas do Arduino Nano}}{20}{table.caption.37}
-\contentsline {table}{\numberline {3.4}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre vers\IeC {\~a}o 2 e 3 do Raspberry Pi\relax }}{21}{table.caption.41}
-\contentsline {table}{\numberline {3.5}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre tecnologias de comunica\IeC {\c c}\IeC {\~a}o\relax }}{24}{table.caption.45}
+\contentsline {table}{\numberline {3.1}{\ignorespaces \textit {Ranking BD-Engines} para popularidade dos \ac {SGBD} estudados}}{13}{table.caption.26}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre MySQL, SQL Server e PostgreSQL\relax }}{13}{table.caption.27}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre frameworks REST estudadas.\relax }}{19}{table.caption.37}
+\contentsline {table}{\numberline {3.4}{\ignorespaces Caracter\IeC {\'\i }sticas do Arduino Nano}}{21}{table.caption.43}
+\contentsline {table}{\numberline {3.5}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre vers\IeC {\~a}o 2 e 3 do Raspberry Pi\relax }}{22}{table.caption.46}
+\contentsline {table}{\numberline {3.6}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre tecnologias de comunica\IeC {\c c}\IeC {\~a}o}}{25}{table.caption.52}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Especifica\IeC {\c c}\IeC {\~a}o das tabelas existentes no sistema \relax }}{40}{table.caption.58}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Especifica\IeC {\c c}\IeC {\~a}o das tabelas existentes no sistema (continua\IeC {\c c}\IeC {\~a}o) \relax }}{41}{table.caption.59}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Endpoints da API REST e respetivos m\IeC {\'e}todos a implementar\relax }}{48}{table.caption.69}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Caracter\IeC {\'\i }sticas do sensor TTC 104}}{51}{table.caption.77}
-\contentsline {table}{\numberline {4.5}{\ignorespaces Caracter\IeC {\'\i }sticas do sensor GL5528}}{52}{table.caption.79}
-\contentsline {table}{\numberline {4.6}{\ignorespaces Caracter\IeC {\'\i }sticas do m\IeC {\'o}dulo bluetooth HC-06}}{55}{table.caption.85}
-\contentsline {table}{\numberline {4.7}{\ignorespaces Caracter\IeC {\'\i }sticas do m\IeC {\'o}dulo bluetooth HC-06}}{56}{table.caption.91}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Especifica\IeC {\c c}\IeC {\~a}o das tabelas existentes no sistema \relax }}{40}{table.caption.64}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Especifica\IeC {\c c}\IeC {\~a}o das tabelas existentes no sistema (continua\IeC {\c c}\IeC {\~a}o) \relax }}{41}{table.caption.65}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Endpoints da API REST e respetivos m\IeC {\'e}todos a implementar\relax }}{48}{table.caption.75}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Caracter\IeC {\'\i }sticas do sensor TTC 104}}{51}{table.caption.83}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Caracter\IeC {\'\i }sticas do sensor GL5528}}{51}{table.caption.85}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Caracter\IeC {\'\i }sticas do m\IeC {\'o}dulo bluetooth HC-06}}{54}{table.caption.91}
+\contentsline {table}{\numberline {4.7}{\ignorespaces Caracter\IeC {\'\i }sticas do m\IeC {\'o}dulo bluetooth HC-06}}{55}{table.caption.95}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Estrutura do ficheiro do tipo \ac {CSV} poss\IeC {\'\i }vel de exporta\IeC {\c c}\IeC {\~a}o\relax }}{66}{table.caption.98}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {B.1}{\ignorespaces Um nome qualquer\relax }}{95}{table.caption.109}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Estrutura do ficheiro do tipo \ac {CSV} poss\IeC {\'\i }vel de exporta\IeC {\c c}\IeC {\~a}o\relax }}{64}{table.caption.103}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {D.1}{\ignorespaces Your caption here\relax }}{100}{table.D.1}
-\contentsline {table}{\numberline {D.2}{\ignorespaces Your caption here\relax }}{102}{table.D.2}
-\contentsline {table}{\numberline {D.3}{\ignorespaces Your caption here\relax }}{103}{table.D.3}
-\contentsline {table}{\numberline {D.4}{\ignorespaces Your caption here\relax }}{104}{table.D.4}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {B.1}{\ignorespaces Um nome qualquer\relax }}{97}{table.caption.123}
+\addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

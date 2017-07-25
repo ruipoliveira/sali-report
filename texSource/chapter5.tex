@@ -430,73 +430,92 @@ Para implementar o projeto Django juntamente com um servidor web Apache 2.0 num 
 \newpage
 \section{Simulação em \textit{hardware}}
 
-Nesta secção pretende-se explicar a implementação a nível de \textit{software} no contexto desta simulação para cada um dos micro-controladores. 
+Nesta secção explica-se a implementação a nível de \textit{software} no contexto desta simulação para cada um dos microcontroladores. 
 
 
-\subsection{Arduino}
+\subsection{Arduino Nano}
+\label{arduinonanoard}
 
-No que diz respeito ao Arduino Nano (\acl{SM}), numa fase inicial,  procedeu-se à ligação dos diversos componentes  apresentados no capitulo anterior a uma \textit{breadboard} tal como se encontra apresentado no Anexo \ref{interlapd}. Para auxiliar o desenvolvimento de \textit{software} foi utilizada a versão 1.8.1 do \ac{IDE} do próprio Arduino\footnote{https://www.arduino.cc/en/Main/Software}. Seguidamente apresenta-se a implementação necessária a nível de sensores e de comunicação. 
+No que diz respeito ao Arduino Nano (\acl{SM}), numa fase inicial,  procedeu-se à ligação dos diversos componentes  apresentados na secção \ref{arq-hardw} a uma placa branca (\textit{breadboard}) tal como se apresentada no Anexo \ref{interlapd}. Para auxiliar o desenvolvimento de \textit{software} foi utilizada a versão 1.8.1 do \ac{IDE} do próprio Arduino\footnote{https://www.arduino.cc/en/Main/Software}. Seguidamente apresenta-se a implementação necessária a nível de sensores e de comunicação. 
 
-\subsection{Sensores}
+\subsubsection{Sensores}
 
 
-
-Foram desenvolvidos os seguintes métodos que permitem aceder aos valores lidos de cada um dos sensores. Para além disso, foi criado um método que permite alterar o estado da válvula para transferência de água. 
+Foram desenvolvidos os seguintes métodos que permitem aceder aos valores lidos de cada um dos sensores. Para além disso, foi criado um método que permite alterar o estado de ativação do \ac{LED}, permitindo simular o estado da válvula para transferência de águas. 
 
 \begin{itemize}
-	\item \texttt{int readTemperature(int port)}: é efetuada uma leitura no porto analógico e seguidamente realiazada uma conversão para para ºC (graus Celsius)
+	\item \texttt{int readTemperature(int port)}: é efetuada uma leitura no porto analógico e seguidamente realizada uma conversão para ºC (graus Celsius);
 	
-	\item \texttt{long readLuminosity(int port)}: 
+	\item \texttt{long readLuminosity(int port)}: é efetuada uma leitura ao porto analógico e posteriormente é realizada uma conversão para percentagem (\%); 
 	
-	\item \texttt{int readWaterValve(int port)}: é efetuada uma leitura no porto digital através do método \texttt{digitalRead}. 
+	\item \texttt{int readWaterValve(int port)}: é efetuada uma leitura no porto digital através do método \texttt{digitalRead} disponibilizado pelo Arduino.
 	
-	\item \texttt{int readWaterLevel(int port)}: é efetuada uma leitura no porto digital através do método \texttt{digitalRead}.
+	\item \texttt{int readWaterLevel(int port)}: é realizada uma leitura no porto digital através do método \texttt{digitalRead}.
 	
 	
 	\item \texttt{void setWaterValve(int port, int state)}: se a variável \texttt{state} for 1 então o porto é colocado a \texttt{HIGH} (1) através do método \texttt{digitalWrite}, caso contrário é colocado a \texttt{LOW} (0)
 	
 \end{itemize}
 
-Inicialmente procedeu-se à leitura de cada sensor de forma individual de modo a garantir o seu total funcionamento. Sempre que é feita um pedido de leitura dos sensores pelo \ac{CM} os valores são enviados com o seguinte formato: 
+Inicialmente procedeu-se à leitura de cada sensor de forma individual de modo a garantir o seu total funcionamento. Sempre que é enviado um pedido de leitura dos sensores pelo \acl{CM} os valores são enviados no formato apresentado em \ref{eq:someequation}.
 
 \begin{equation} 
 \label{eq:someequation}
 \texttt{<temperatura>;<nível\_água>;<luminosidade>;<estado\_válvula>}
 \end{equation}
 
-\subsection{Comunicação}
-
-
-Numa primeira fase procedeu-se à comunicação entre o \ac{SM} e \ac{CM} através de porta série. Seguidamente resolveu-se incorporar o módulo bluetooth de modo a tornar cada módulo independente. De módulo de interagir com o módulo bluetooth utilizou-se o package \texttt{SoftwareSerial.h} disponível no Arduino. Decidiu-se que caso o módulo bluetooth recebesse valores de 0 a 2 tinha diferentes comportamentos: 
-
-\begin{itemize}
-	\item \textbf{0}: ativação (ligar) da válvula; 
-	\item \textbf{1}: desativação (desligar) da válvula; 
-	\item \textbf{2}: recebe dados obtidos pelos sensores no formato definido em (\ref{eq:someequation})
-\end{itemize}
-
-Antes de proceder à implementação de envio e receção de dados por bluetooth no Raspberry Pi 3 optou-se por testar este mecanismo através de uma aplicação Android existente na \textit{Play Store} chamada de \textit{Bluetooth Terminal HC-05}\footnote{https://play.google.com/store/apps/details?id=project.bluetoothterminal}
-
-\subsubsection{Raspberry Pi}
-
-
 \subsubsection{Comunicação}
 
 
-Como é possível observar na figura \ref{esquemcomm}, para a comunicação no Raspberry Pi (\ac{CM}) entre o Arduino (\ac{SM}) foi utilizado o modulo interno de bluetooth 4.1 que este incorpora no seu hardware. Para tal, foi desenvolvido um \textit{script} em Python que permite o seguinte: 
+Numa primeira fase, procedeu-se à comunicação entre o \acl{SM} e \acl{CM} através de porta série. Seguidamente, optou-se por incorporar o módulo Bluetooth de modo a tornar os dois módulos independentes. Foi utilizado o  \textit{package} \texttt{SoftwareSerial.h} disponibilizado pelo Arduino, que permite interagir facilmente com o módulo de comunicação utilizado. Depois, decidiu-se quais os \textit{inputs} que o Arduino irá receber e que ações iria executar, concluindo-se que podiam ser recebidos valores entre 0 e 2. 
+
+
+\begin{itemize}
+	\item \textbf{0}: ativação do \ac{LED} (válvula para transferência de água)
+	\item \textbf{1}: desativação do \ac{LED} (válvula para transferência de água)
+	\item \textbf{2}: requisitar dados obtidos pelos sensores existentes no formato definido em \ref{eq:someequation}
+\end{itemize}
+
+Antes de proceder à implementação de envio e receção de dados por Bluetooth no Raspberry Pi 3, testou-se esta funcionalidade isoladamente. Para isso, utilizou-se uma aplicação existente na \textit{Play Store} denominada  de \textit{Bluetooth Terminal HC-05}\footnote{\url{https://play.google.com/store/apps/details?id=project.bluetoothterminal}}, que permitiu facilmente validar este mecanismo. Os resultados deste teste funcional serão apresentados no próximo capítulo. 
+
+
+
+\subsection{Raspberry Pi 3}
+
+Nesta simulação, o \acl{CM} recebe apenas os dados adquiridos por um \acl{SM}, e envia as ações que este terá que executar.  Para a comunicação entre os dois módulos, foi utilizado o módulo interno Bluetooth 4.1 disponível no hardware do Raspberry Pi 3. De modo a conseguir receber os dados adquiridos e enviá-los para o servidor através da \ac{API}, desenvolveu-se um \textit{script} em Python que permite o seguinte: 
 
 
 \begin{enumerate}
-	\item Verificar dispositivos bluetooth disponíveis
-	\item Estabelecer conexão com módulo HC-06 através de um socket para comunicação utilizando para isso o \textit{package} \texttt{socket} do python. 
-	\item Aceder à API para verificar estado da válvula de admissão de águas e enviá-lo através do socket utilizando o método \texttt{send()} 
-	\item No caso se ser enviado o digito 1 a válvula será aberta, enquanto que se for enviado o digito 2 a válvula é fechada. 
-	\item No caso de ser enviado o digito 2, o socket ficará à espera de receber os dados lidos pelos sensores, utilizando para isso o método \texttt{recv()}
-	\item Após receber os dados lidos, é efetuado algum processamento para que os dados sejam enviados através da API. 
-	\item Todos os pontos 3 a 6 são repetidos com um atraso igual ao seding time definido o sensor module na dashboard. 
+	\item Verificação dos dispositivos Bluetooth disponíveis. Para aceder a este recurso, foi utilizada uma extensão do Python denominada de \textit{pybluez}\footnote{\url{https://github.com/karulis/pybluez}}. 
+	
+	
+	\item Estabelecer uma ligação com módulo HC-06 através de um \textit{socket} de comunicação (variável global na figura \ref{threadscript}). Para tal, foi utilizado o \textit{package} \texttt{socket} disponibilizado pelo Python.
+	
+	\item Foram criados dois \textit{threads} que permitem realizar funcionalidades distintas (figura \ref{threadscript}): 
+	
+	\begin{itemize}
+		\item \textbf{Controlar estado da válvula}: permite aceder à \ac{API} de modo a verificar o estado do \ac{LED}  (válvula de admissão) e atualizá-lo sempre que necessário no \acl{SM}, através do método \texttt{send()}. No caso de ser enviado o dígito '1' o \ac{LED} será ligado (válvula aberta), enquanto que se for enviado o dígito '0' o  \ac{LED} será desligado (válvula fechada). 
+		
+		\item \textbf{Receção de dados}: no caso de ser enviado o  dígito '2', o \textit{socket} ficará a aguardar a receção dos dados lidos pelos sensores no formato definido, utilizando para isso o método \texttt{recv()}. Após a receção dos dados, é efetuado algum processamento para que estes possam ser enviado pela \ac{API}, com um atraso (\textit{seding time}) igual ao definido pelo utilizador na \textit{dashboard}. 
+		
+		
+	\end{itemize}
+	
+	
+
 \end{enumerate}
 
-Para permitir o acesso aos recursos do sistema Bluetooth foi utilizada uma extensão (\textit{package}) do Python denominado de \textit{pybluez}\footnote{https://github.com/karulis/pybluez}. 
+
+
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.6\linewidth]{esquemas/threads-python-script.pdf}
+	\caption{Threads e ddd... implementacao }
+	\label{threadscript}
+\end{figure}
+
 
 
 
@@ -504,15 +523,24 @@ Para permitir o acesso aos recursos do sistema Bluetooth foi utilizada uma exten
 \subsection{Considerações finais}
 
 
->1 fase testar coneccao arduino to rasp via porta serie; foi criado um script em python para processar info e enviar para o servidor através da API 
-
->2 fase : necessidade de tornar um módulo isolado sem necessidade de fio; foi testado um modulo wifi e bluetooth; 
-
->neste contexto modulo wifi nao!... pretende-se que os sensor moduels sejam de baixo custo e low power. foi utilizado um modulo bluetooth; foi testada a conexao da comm bluetooth através de uma client disponveil na google play bluetooth terminal HC-05 
+Simulou-se o sistema recorrendo a \textit{hardware} disponível em laboratório, tanto a nível de microcontroladores, sensores ou módulos de comunicação. No entanto, não houve oportunidade de testar nenhum sensor de salinidade apesar de ser bastante importante no contexto do projeto, uma vez que é um dos parâmetros principais necessários de monitorização no cultivo da Salicórnia.
 
 
-> 
-pq nao foi usado um sensor de salinidade? nao havia orçamento.. 
+Numa primeira fase, toda a comunicação foi realizada recorrendo ao método mais simples, por porta série. Todos os dados recebidos eram enviados para o servidor através da API criada para o efeito. Posteriormente, optou-se por isolar os módulos sem necessidade de cabos, utilizando para isso um módulo Bluetooth. 
+
+
+
+
+
+
+%>1 fase testar coneccao arduino to rasp via porta serie; foi criado um script em python para processar info e enviar para o servidor através da API 
+
+%>2 fase : necessidade de tornar um módulo isolado sem necessidade de fio; foi testado um modulo wifi e bluetooth; 
+
+%>neste contexto modulo wifi nao!... pretende-se que os sensor moduels sejam de baixo custo e low power. foi utilizado um modulo bluetooth; foi testada a conexao da comm bluetooth através de uma client disponveil na google play bluetooth terminal HC-05 
+
+
+%>  pq nao foi usado um sensor de salinidade? nao havia orçamento.. 
 
 
 
@@ -523,7 +551,28 @@ pq nao foi usado um sensor de salinidade? nao havia orçamento..
 
 
 \newpage
-\section{Sistema de deteção de intrusos}
+\section{Sistema de vídeo-vigilância }
+
+
+
+
+Tal como referido anteriormente, para o 
+
+
+
+raspivid
+
+
+
+Foi feito video stream com ffmpeg para o youtube 
+
+
+
+
+
+Para testar o algoritmo de opencv que a seguir se apresenta foi utilizado o
+
+............
 
 
 
@@ -637,6 +686,10 @@ hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
 
 
 
+
+apenas foi 
+
+
 \subsection{Testes}
 
 Pretende-se instalar uma câmara na quinta onde se produz salicornia, de modo a detectar grande parte da área existente, sobretudo onde existe os módulos sensoriais mas também algumas máquinas utilizadas no cultivo desta especie. Para tal, tenciona-se colocar uma câmara, numa primeira fase uma \textit{Raspberry Pi camera module}, mas posteriormente poderá ser substituída por uma câmara IP de maior qualidade. Esta câmara irá coloca-se no topo de um armazém existente virada para o centro da quinta a aproximadamente 3 metros de altura. 
@@ -667,6 +720,17 @@ Caso sejam detetadas pessoas são gerados alarmes através da \ac{API} \ac{REST}
 
 
 \subsection{Considerações finais}
+
+
+
+
+
+incorporar o processamento 
+
+utilizando a API do youtube para realizar o stream 
+
+e respetiva geração de alarmes através da API.  
+
 
 
 

@@ -4,7 +4,7 @@
 
 
 Este capítulo tem como principal objetivo a descrição do sistema que resultou do trabalho prático
-desta dissertação. Para isso, cada elemento do sistema é caracterizado de acordo com as suas funções, especificidades e arquitetura, bem como a forma como os elementos interagem entre si. Para além disso, é apresentado todo o processo de modelação do sistema tendo por base os requisitos do cliente. 
+desta dissertação. Cada elemento do sistema é caracterizado de acordo com as suas funções, especificidades e arquitetura, bem como a forma como os elementos interagem entre si. Para além disso, é apresentado todo o processo de modelação do sistema tendo por base os requisitos do cliente. 
 
 
 
@@ -17,7 +17,7 @@ desta dissertação. Para isso, cada elemento do sistema é caracterizado de aco
 
 \section{Descrição global do sistema}
 
-Este sistema tem como objetivo a supervisão remota da produção de Salicórnia, permitindo não só a monitorização dos dados adquiridos pelos sensores, como também da atuação remota de determinados comandos. Neste contexto, também será possível a aquisição de imagens que possibilitará a deteção de intrusos nas quintas onde se realiza a produção desta espécie. O esquema da figura \ref{componentesalla} ilustra de um modo geral todos os componentes e as diferentes plataformas com que o cliente pode interagir. 
+Este sistema tem como objetivo a supervisão remota da produção de Salicórnia, permitindo não só a monitorização dos dados adquiridos pelos sensores, como também da atuação remota de determinados comandos. Neste contexto, também é possível a aquisição de imagens que possibilita a deteção de intrusos nas quintas onde se realiza a produção desta espécie. O esquema da figura \ref{componentesalla} ilustra de um modo geral todos os componentes e as diferentes plataformas com que o cliente pode interagir. 
 
 
 \begin{figure}[!htb]
@@ -32,7 +32,7 @@ Este sistema tem como objetivo a supervisão remota da produção de Salicórnia
 
 
 
-Como vimos no capítulo 3, uma plantação de  Salicórnia carece de um controlo relativamente fino de certos parâmetros ambientais sobretudo da salinidade do terreno onde ela cresce, que depende, das chuvas, da salinidade da água dos canais da ria, entre outros. Nas quintas onde se cultiva salicórnia, a produção faz-se numa espécie de leiras limitadas por pequenos canais de irrigação que podem ser cheios de água salgada proveniente dos esteiros que rodeiam a quinta. Esta operação implica a abertura de válvulas de admissão dessa água, medida do nível da maré nos canais, monitorização da qualidade e salinidade da água exterior.
+Como vimos no capítulo 3, uma plantação de  Salicórnia carece de um controlo relativamente fino de certos parâmetros ambientais sobretudo da salinidade do terreno, que depende, das chuvas, da salinidade da água dos canais da ria, entre outros. Nas quintas onde se cultiva Salicórnia, a produção faz-se numa espécie de leiras limitadas por pequenos canais de irrigação que podem ser cheios de água salgada proveniente dos esteiros que rodeiam a quinta. Esta operação implica a abertura de válvulas de admissão de água, medida do nível da maré nos canais, monitorização da qualidade e salinidade da água exterior.
 
 
 
@@ -44,10 +44,10 @@ Como vimos no capítulo 3, uma plantação de  Salicórnia carece de um controlo
 \end{figure}
 
 
-Tal como ilustrado na figura \ref{leira}, pretende-se que sejam colocados módulos com sensores distribuídos estrategicamente por cada leira. Cada um desses módulos, irá comunicar com um módulo central originando uma topologia de rede em estrela.  Por sua vez, cada um destes módulos centrais irá comunicar diretamente com o servidor que receberá todos os dados adquiridos tanto pelos sensores como por atuadores, permitindo que estes sejam guardados numa base de dados específica. Os atuadores, permitirão despoletar ações que autorizam a ativação ou desativação de bombas e/ou válvulas para transferências de águas de modo a melhorar as condições de cultivo da Salicornia. 
-Pretende-se que os módulos centrais tenham acesso à camada protocolar \acs{TCP}/\acs{IP} (Internet) de modo a conseguirem a utilização da \acs{API} \acs{REST} via \ac{HTTP} desenvolvida para o efeito. 
+Tal como ilustrado na figura \ref{leira}, foram colocados módulos com sensores distribuídos estrategicamente por cada leira. Cada um desses módulos, irá comunicar com um módulo central originando uma topologia de rede em estrela.  Por sua vez, cada um destes módulos centrais irá comunicar diretamente com o servidor que receberá todos os dados adquiridos tanto pelos sensores como por atuadores, permitindo que estes sejam guardados numa base de dados específica. Os atuadores, permitirão despoletar ações que autorizam a ativação ou desativação de bombas e/ou válvulas para transferências de águas de modo a melhorar as condições de cultivo da Salicórnia. 
+Os módulos centrais têm acesso à camada protocolar \acs{TCP}/\acs{IP} (Internet) de modo a conseguirem a utilização da \acs{API} \acs{REST} via \ac{HTTP} desenvolvida para o efeito. 
 
-No que diz respeito às plataformas de interação com o cliente, espera-se que exista uma \textit{dashboard} e uma aplicação \textit{mobile}. A \textit{dashboard} disponibilizará  uma interface que apresenta as informações mais importantes para o utilizador de forma apelativa, tornando mais fácil a sua interação e respetiva leitura, possibilitando ainda a gestão de todo o sistema e realização de operações de controlo remoto. Por outro lado, a aplicação \textit{mobile} deverá permitir apenas a monitorização do cultivo da Salicornia e receção de alertas quando estes ocorrem.
+No que diz respeito às plataformas de interação com o cliente, existe uma \textit{dashboard} e uma aplicação \textit{mobile}. A \textit{dashboard} disponibiliza uma interface que apresenta as informações mais importantes para o utilizador de forma apelativa, tornando mais fácil a sua interação e respetiva leitura, possibilitando ainda a gestão de todo o sistema e realização de operações de controlo remoto. Por outro lado, a aplicação \textit{mobile} permite apenas a monitorização do cultivo da Salicórnia e receção de alertas quando estes ocorrem.
 
 
 
@@ -77,7 +77,7 @@ O cenário da figura \ref{esquema1} ilustra três \textit{Sensor Modules} que co
 \end{figure}
 
 
-Seguidamente serão especificados todos os detalhes de cada modulo, uma vez que serão considerados na modelação de todo o sistema. 
+Seguidamente serão especificados todos os detalhes de cada módulo, uma vez que serão considerados na modelação de todo o sistema. 
 
 
 
@@ -105,8 +105,9 @@ Pretende-se que este módulo seja identificado por um determinado nome, possua u
 
 Um \acl{CM} consiste num micro-controlador responsável pela receção dos dados prevenientes dos vários \textit{Sensor Modules}. Pretende-se que este módulo envie ou receba informações para os \acl{SM} quando solicitados pelo utilizador. Após a receção dos dados, estes são enviados para um servidor em \textit{cloud} através de uma \ac{API} \ac{REST} criada para o efeito. Sendo que a tecnologia \ac{REST} opera sob o protocolo de comunicação \ac{HTTP}, este componente tem que necessariamente estar ligado à rede Internet via \ac{TCP}/\ac{IP}. 
 
-Pretende-se que este módulo possua alguma capacidade de processamento, uma vez que poderá ter vários \textit{Sensor Modules} a si associados e com necessidade de constante envio e receção de dados.  Para além disso, pretende-se que o \acl{CM} seja identificado por um determinado nome, tenha um  módulo de comunicação que possibilite o envio de dados para um servidor e outros para comunicação com os diferentes \textit{Sensor Modules}. Tal como acontece com os \textit{Sensor Modules}, existe necessidade de acoplado um módulo \ac{GPS} que permita localizar o micro-controlador em caso de robo.
+É essencial que este módulo possua alguma capacidade de processamento, uma vez que poderá ter vários \textit{Sensor Modules} a si associados e com necessidade de constante envio e receção de dados.  Para além disso, pretende-se que o \acl{CM} seja identificado por um determinado nome, tenha um  módulo de comunicação que possibilite o envio de dados para um servidor e outros para comunicação com os diferentes \textit{Sensor Modules}. Tal como acontece com os \textit{Sensor Modules}, existe necessidade de acoplado um módulo \ac{GPS} que permita localizar o micro-controlador em caso de robo.
  
+
 
 
 
@@ -769,14 +770,18 @@ Consumir a API REST
 Consumir a API REST 
 
 
+
+
+\newpage
 \subsection{Simulação em \textit{hardware}}
+\label{arq-hardw}
 
 
-Após a desenvolvimento da API, pretendeu-se simular o sistema num contexto real. Para tal, pretendeu-se encontrar hardware que encaixasse no contexto deste projeto. Foram utilizados dois micro-controladores (Arduino e Raspberry Pi 3) e alguns sensores. Para este cenário, assume-se que o Arduino é considerado um \acl{SM} que possui um conjunto de sensores enquanto que o Raspberry Pi 3 é um \acl{CM} que recebe os dados provenientes do \acl{SM} enviando-os para o servidor.  
+Após a desenvolvimento da API, simulou-se o sistema num contexto real. Para tal, pretendia-se encontrar \textit{hardware} que encaixasse no contexto deste projeto. Foram utilizados dois microcontroladores (Arduino Nano e Raspberry Pi 3) e alguns sensores. Para este cenário, assume-se que o Arduino Nano é considerado um \acl{SM} que possui um conjunto de sensores enquanto que o Raspberry Pi 3 é um \acl{CM} que recebe os dados provenientes do \acl{SM} enviando-os para o servidor.  
 
 Seguidamente, são apresentados os sensores utilizados bem como os tipos de comunicação. 
  
-\newpage
+
 \subsubsection{Sensores utilizados}
 
 Nesta secção apresentam-se os sensores utilizados na simulação e as suas principais características. Todos os sensores foram escolhidos tendo em conta o seu enquadramento no projeto e a sua disponibilidade em laboratório, sendo que serão ligados ao Arduino Nano. \\
@@ -785,39 +790,42 @@ Nesta secção apresentam-se os sensores utilizados na simulação e as suas pri
 \textbf{Temperatura}
 
 
-Como sensor de temperatura foi utilizado um termístor do tipo \ac{NTC}. Como vimos no capítulo \ref{state}, um termístor é um semicondutor sensível à temperatura, ou seja, quando o coeficiente de variação da resistência com a temperatura é negativa, então a temperatura sobe e consequentemente a resistência diminui. Na figura \ref{esquema-temp} encontra-se o esquema de ligação deste componente e na tabela \ref{table-temp} as suas propriedades principais. 
+Como sensor de temperatura foi utilizado um termístor do tipo \ac{NTC}. Como vimos no capítulo \ref{state}, um termístor é um semicondutor sensível à temperatura, ou seja, quando o coeficiente de variação da resistência com a temperatura é negativa, então a temperatura sobe e consequentemente a resistência diminui. Na figura \ref{esquema-temp} encontra-se o esquema de ligação deste componente e na tabela \ref{table-temp} as suas propriedades principais\cite{temp-dta}. 
 
 
 \begin{figure}[h]
 	\centering
-	\begin{minipage}[b]{0.4\textwidth}
+	\begin{minipage}[b]{0.49\textwidth}
 		\centering
-		\includegraphics[width=\textwidth]{img/hardware/temperatura.jpg}
+		\includegraphics[width=0.6\textwidth]{img/hardware/temperatura.jpg}
 		\caption{Sensor TTC 104 NTC}
+		\label{temp_imag}
 	\end{minipage}
 	\hfill
-	\begin{minipage}[b]{0.4\textwidth}
+	\begin{minipage}[b]{0.49\textwidth}
 		\centering
-		\includegraphics[width=\textwidth]{img/hardware/temp-esquema.pdf}
+		\includegraphics[width=0.65\textwidth]{img/hardware/temp-esquema.pdf}
 		\caption{Esquema eletrotécnico da ligação do sensor de temperatura}
 		\label{esquema-temp}
 	\end{minipage}
 \end{figure}
 
 
+\newpage
+
 \begin{table}[h]
 	\centering
 	
 	\begin{tabular}{|
 			>{\columncolor[HTML]{C0C0C0}}l |l|} \hline
-		Dimensão & 5mm \\ \hline
-		Resistência & 100 K$\Omega$  \\ \hline
-		Valor máximo & +125 $^{\circ}$C \\ \hline
-		Valor mínimo & -30 $^{\circ}$C \\ \hline
-		Nível de confiança & + - 10\% \\ \hline
-		Preço & 0.35 \euro/unidade \\ \hline
+		\textbf{Dimensão} & 5mm \\ \hline
+		\textbf{Resistência} & 100 K$\Omega$  \\ \hline
+		\textbf{Valor máximo} & +125 $^{\circ}$C \\ \hline
+		\textbf{Valor mínimo} & -30 $^{\circ}$C \\ \hline
+		\textbf{Nível de confiança} & $\pm$ 10\% \\ \hline
+		\textbf{Preço} & 0.35 $\euro$/unidade \\ \hline
 	\end{tabular}
-	\caption[Características do sensor TTC 104]{Características do sensor TTC 104 \cite{temp-dta}}
+	\caption[Características do sensor TTC 104]{Características do sensor TTC 104 (Adaptado de \cite{temp-dta})}
 	\label{table-temp}
 \end{table}
 
@@ -828,7 +836,7 @@ Como sensor de temperatura foi utilizado um termístor do tipo \ac{NTC}. Como vi
 
 
 
-Para simular a luminosidade incidente foi utilizado um sensor do tipo foto-resistência. Este sensor, também conhecido como \ac{LDR}, não é mais do que uma resistência variável cujo o seu valor varia conforme a intensidade da luz que incide sobre ele, isto é, à medida que a intensidade da luz aumenta, a sua resistência diminui. Este sensor tem múltiplas aplicações, entre as quais se destaca a monitorização solar, indicador da posição do sol (up/down), alarmes anti-roubo, alarme para abertura/fecho de portas entre outras. Como vimos no capítulo \ref{state} é um sensor de baixo custo e bastante fácil de utilização. Na figura \ref{lum-esquema} encontra-se o esquema de ligação do componente e na tabela \ref{lum-cara} são apresentadas as principais características do sensor utilizado. 
+Para simular a luminosidade incidente foi utilizado um sensor do tipo foto-resistência, neste caso o GL5528 (figura \ref{cGL5528}). Este sensor, também conhecido como \ac{LDR}, não é mais do que uma resistência variável cujo o seu valor varia conforme a intensidade da luz que incide sobre ele, isto é, à medida que a intensidade da luz aumenta, a sua resistência diminui. Este sensor tem múltiplas aplicações, entre as quais se destaca a monitorização solar, indicador da posição do sol (\textit{up}/\textit{down}), alarmes anti-roubo, alarme para abertura/fecho de portas entre outras. Como vimos no capítulo \ref{state} é um sensor de baixo custo e de fácil utilização. Na figura \ref{lum-esquema} encontra-se o esquema de ligação do componente e na tabela \ref{lum-cara} são apresentadas as principais características do sensor utilizado. 
 
 
 
@@ -838,15 +846,16 @@ Para simular a luminosidade incidente foi utilizado um sensor do tipo foto-resis
 
 \begin{figure}[h]
 	\centering
-	\begin{minipage}[b]{0.4\textwidth}
+	\begin{minipage}[b]{0.49\textwidth}
 		\centering
-		\includegraphics[width=\textwidth]{img/hardware/luminosidade.png}
+		\includegraphics[width=0.5\textwidth]{img/hardware/luminosidade.png}
 		\caption{Sensor foto-resistência GL5528}
+		\label{cGL5528}
 	\end{minipage}
 	\hfill
-	\begin{minipage}[b]{0.4\textwidth}
+	\begin{minipage}[b]{0.49\textwidth}
 		\centering
-		\includegraphics[width=\textwidth]{img/hardware/lumi_esquema.pdf}
+		\includegraphics[width=0.65\textwidth]{img/hardware/lumi_esquema.pdf}
 		\caption{Esquema eletrotécnico da ligação do sensor de luminosidade}
 		\label{lum-esquema}
 	\end{minipage}
@@ -863,18 +872,17 @@ Para simular a luminosidade incidente foi utilizado um sensor do tipo foto-resis
 	
 	\begin{tabular}{|
 			>{\columncolor[HTML]{C0C0C0}}l |l|} \hline
-		Diâmetro & 5mm \\ \hline
-		Tensão máxima & 150VDC \\ \hline
-		Potência máxima & 100mW \\ \hline
-		Tensão de operação & -30 $^{\circ}$C a 70 $^{\circ}$C \\ \hline
-		Espectro &540nm \\ \hline
-		Comprimento com terminais & 32mm \\ \hline
-		Resistência no escuro &1 M (Lux 0) \\ \hline
-		Resistência na luz &10-20 Komega (Lux 10) \\ \hline
-		Material & Carbono \\ \hline
-		Preço & 0.22 \euro/unidade \\ \hline
+		\textbf{Diâmetro} & 5 mm \\ \hline
+		\textbf{Tensão máxima} & 150 VDC \\ \hline
+		\textbf{Potência máxima} & 100 mW \\ \hline
+		\textbf{Tensão de operação} & -30 $^{\circ}$C a 70 $^{\circ}$C \\ \hline
+		\textbf{Espectro} &540 nm \\ \hline
+		\textbf{Comprimento com terminais} & 32 mm \\ \hline
+		\textbf{Resistência na luz} &10-20 K$\Omega$ (Lux 10) \\ \hline
+		\textbf{Material} & Carbono \\ \hline
+		\textbf{Preço} & 0.22 \euro/unidade \\ \hline
 	\end{tabular}
-	\caption[Características do sensor GL5528]{Características do sensor GL5528 \cite{lum-data}}
+	\caption[Características do sensor GL5528]{Características do sensor GL5528 (Adaptado de \cite{lum-data})}
 	\label{lum-cara}
 \end{table}
 
@@ -883,22 +891,23 @@ Para simular a luminosidade incidente foi utilizado um sensor do tipo foto-resis
 
 \textbf{Sensor para verificação do estado do nível de água}
 
-Este sensor não é mais do que um interruptor que é ativo sempre que um determinado líquido ultrapassa o mesmo, isto é, sempre que algum líquido atingir o pedaço de plástico este irá subir ativando assim o circuito. Na figura \ref{esquem-liquido} encontra-se o esquema da ligação deste sensor.
+Este sensor, denominado por \textit{Water Level Switch Liquid Level Sensor Plastic Ball Float} (figura \ref{levelimg}),  não é mais do que um interruptor que é ativo sempre que um determinado líquido ultrapassa o mesmo, isto é, sempre que algum líquido atingir o pedaço de plástico este irá subir ativando assim o circuito. Na figura \ref{esquem-liquido} encontra-se o esquema da ligação deste sensor.
 
-\newpage
+
 
 
 \begin{figure}[h]
 	\centering
-	\begin{minipage}[b]{0.4\textwidth}
+	\begin{minipage}[b]{0.49\textwidth}
 		\centering
-		\includegraphics[width=0.8\textwidth]{img/hardware/liquido.JPG}
+		\includegraphics[width=0.5\textwidth]{img/hardware/liquido.JPG}
 		\caption{\textit{Water Level Switch Liquid Level Sensor Plastic Ball Float}}
+		\label{levelimg}
 	\end{minipage}
 	\hfill
-	\begin{minipage}[b]{0.4\textwidth}
+	\begin{minipage}[b]{0.49\textwidth}
 		\centering
-		\includegraphics[width=\textwidth]{img/hardware/sw_esquema.pdf}
+		\includegraphics[width=0.75\textwidth]{img/hardware/sw_esquema.pdf}
 		\caption{Esquema eletrotécnico da ligação do sensor de nível líquido}
 		\label{esquem-liquido}
 	\end{minipage}
@@ -908,21 +917,22 @@ Este sensor não é mais do que um interruptor que é ativo sempre que um determ
 
 \textbf{Simulador de válvula para transferências de águas}
 
-Para a simulação de uma válvula que permitirá as transferência de água doce e/ou água salgada foi utilizado um \ac{LED}. Este possibilita facilmente identificar através da sua ativação se a válvula se encontra ativa ou não. 
+Para a simulação de uma válvula que permitirá as transferência de água doce e/ou água salgada foi utilizado um \ac{LED}. Este possibilita facilmente identificar através da sua ativação se a válvula se encontra ativa ou não. Na figura \ref{ligacao} encontra-se o esquema de ligação deste componente. 
 
 
 \begin{figure}[h]
 	\centering
-	\begin{minipage}[b]{0.4\textwidth}
+	\begin{minipage}[b]{0.49\textwidth}
 		\centering
-		\includegraphics[width=\textwidth]{img/hardware/led.jpg}
-		\caption{Led}
+		\includegraphics[width=0.8\textwidth]{img/hardware/led.jpg}
+		\caption{\ac{LED}}
 	\end{minipage}
 	\hfill
-	\begin{minipage}[b]{0.4\textwidth}
+	\begin{minipage}[b]{0.49\textwidth}
 		\centering
-		\includegraphics[width=\textwidth]{img/hardware/led_esquema.pdf}
-		\caption{Esquema eletrotécnico da ligação do led}
+		\includegraphics[width=0.65\textwidth]{img/hardware/led_esquema.pdf}
+		\caption{Esquema eletrotécnico da ligação do \ac{LED}}
+		\label{ligacao}
 	\end{minipage}
 \end{figure}
 
@@ -930,70 +940,75 @@ Para a simulação de uma válvula que permitirá as transferência de água doc
 
 \subsubsection{Comunicação}
 
-Nesta secção, serão apresentados os tipos de comunicação para o cenário apresentado. Pretende-se que cada um dos módulo fique isolado entre si, o que implicou o estudo e respetiva escolha de algumas tecnologias de comunicações sem fios (secção XX do capítulo \ref{state}). Neste caso, foram escolhidas as seguintes: 
+Nesta secção, apresentam-se os tipos de comunicação para o cenário escolhido. Pretendia-se que cada um dos módulo fique isolado, o que implicou o estudo e respetiva escolha de algumas tecnologias de comunicações sem fios (secção \ref{state-tecc} do capítulo \ref{state}). 
+
+De acordo com o verificado na tabela \ref{com-tecn}, o Zigbee e o Sigfox apresentam características que melhor se adaptam ao conceito de \ac{IoT}. No entanto, para o contexto deste trabalho, privilegia-se o alcance das tecnologias Bluetooth e Wifi dado que, pretende-se tirar partido desta característica e distribuir os  \textit{Sensor Modules} pela máxima distancia possivel. Para além disso, estas eram as duas únicas tecnologias disponíveis no laboratório.
 
 \begin{itemize}
-	\item \textbf{Bluetooth}: utilizado para a comunicação entre o Arduino (\acl{SM}) e o Raspberry Pi 3 (\acl{CM}). No Arduino foi utilizado um módulo Bluetooth HC-06 e no Raspberry Pi 3 o seu próprio módulo interno. 
-	\item \textbf{Wi-Fi}: utilizado para a comunicação entre o Raspberry Pi 3 (\acl{CM}) e o servidor web. 
+	\item \textbf{Bluetooth}: utilizado para a comunicação entre o Arduino Nano e o Raspberry Pi 3. No Arduino, foi utilizado um módulo Bluetooth HC-06 e no caso do Raspberry Pi 3 foi utilizado o seu módulo interno (versão 4.1). 
+	\item \textbf{Wi-Fi}: utilizado para a comunicação entre o Raspberry Pi 3 e o servidor web, sendo utilizado o seu módulo interno (802.11.g). 
 \end{itemize}
 
 
-O esquema da figura \ref{esquemcomm} pretende ilustrar os tipos de comunicação envolvidos nesta simulação para cada um dos componentes. 
+O esquema da figura \ref{esquemcomm} ilustra os tipos de comunicação envolvidos nesta simulação para cada um dos componentes. 
 
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=\linewidth]{img/comm-blue/HW-geral.pdf}
-	\caption{Comunicação entre componentes da simulação em hardware}
+	\caption{Comunicação entre componentes da simulação em \textit{hardware}}
 	\label{esquemcomm}
 \end{figure}
 
 
 
 
-\textbf{Módulo bluetooth HC-06}
+\textbf{Módulo Bluetooth HC-06}
 
 
 
-Este módulo bluetooth oferece uma forma simples e com custo reduzido para enviar e receber informações remotamente. Neste módulo existe um \ac{LED} que indica se este se encontra emparelhado com algum dispositivo. Na figura \ref{comimageesquema} encontra-se o esquema de ligação deste módulo e na tabela \ref{cara-comm} são apresentadas as suas principais características.
+Este módulo Bluetooth oferece uma forma simples de envio e receção de informações remotamente, podendo ser adquirido a um custo reduzido. Este componente funciona apenas em modo \textit{slave}, isto é, apenas permite que outros dispositivos se liguem a si, mas não permite que ele próprio se ligue a outros. Para além disso, possui um \ac{LED} que permite indicar se algum dispositivo está emparelhado. É um dos módulos Bluetooth mais comuns no microcontrolador Arduino, possuindo um alcance máximo de aproximadamente 10 metros\cite{GuangzhouHCInformationTechnologyCo.2011}.
 
 
+Na figura \ref{comimageesquema} encontra-se o esquema de ligação deste módulo e na tabela \ref{cara-comm} são apresentadas as suas principais características.
+
+\newpage
 
 \begin{figure}[h]
 	\centering
-	\begin{minipage}[b]{0.4\textwidth}
+	\begin{minipage}[b]{0.49\textwidth}
 		\centering
-		\includegraphics[width=0.7\textwidth]{img/hardware/bluetooth_zs-040.png}
-		\caption{Módulo bluetooth HC-06}
+		\includegraphics[width=0.6\textwidth]{img/hardware/bluetooth_zs-040.png}
+		\caption{Módulo Bluetooth HC-06}
 		\label{comimage}
 	\end{minipage}
 	\hfill
-	\begin{minipage}[b]{0.5\textwidth}
+	\begin{minipage}[b]{0.49\textwidth}
 		\centering
 		\includegraphics[width=0.6\textwidth]{img/comm-blue/electronic-sensors.pdf}
-		\caption{Esquema eletrotécnico da ligação do módulo bluetooth}
+		\caption{Esquema eletrotécnico da ligação do módulo Bluetooth}
 		\label{comimageesquema}
 	\end{minipage}
 \end{figure}
 
-\newpage
+
 
 \begin{table}[h]
 	\centering
 	
 	\begin{tabular}{|
 			>{\columncolor[HTML]{C0C0C0}}l |l|} \hline		
-		Versão bluetooth& v2.0 com \ac{EDR}\\ \hline 
-		Frequência& 2,4GHz Banda \ac{ISM} \\ \hline
-		Segurança& Autentificação (PIN) e Encriptação  \\ \hline
-		Tensão& Aconselhada 3,3v (2,7v - 4.2v) \\ \hline
-		Alcance& 10 metros \\ \hline
-		Dimensões& 26,9 x 13 x 2,2mm \\ \hline
-		Peso& 9,6g \\ \hline
-		Temperatura (funcionamento)& -25C +75C \\ \hline 
+		\textbf{Versão Bluetooth}& v2.0 com \ac{EDR}\\ \hline 
+		\textbf{Frequência}& 2,4GHz Banda \ac{ISM} \\ \hline
+		\textbf{Segurança}& Autentificação (PIN) e Encriptação  \\ \hline
+		\textbf{Tensão}& Aconselhada 3,3v (2,7v - 4.2v) \\ \hline
+		\textbf{Alcance}& 10 metros \\ \hline
+		\textbf{Dimensões}& 26,9 x 13 x 2,2mm \\ \hline
+		\textbf{Peso}& 9,6g \\ \hline
+		\textbf{Temperatura (funcionamento)}& -25C +75C \\ \hline 
 		
-		Preço&5.26 \euro /unidade  \\ \hline
+		\textbf{Preço}&5.26 \euro /unidade  \\ \hline
 	\end{tabular}
-	\caption[Características do módulo bluetooth HC-06]{Características do módulo bluetooth HC-06 \cite{GuangzhouHCInformationTechnologyCo.2011}}
+	\caption[Características do módulo bluetooth HC-06]{Características do módulo bluetooth HC-06 (Adaptado de \cite{GuangzhouHCInformationTechnologyCo.2011})}
 	\label{cara-comm}
 \end{table}
 
@@ -1011,26 +1026,29 @@ Este módulo bluetooth oferece uma forma simples e com custo reduzido para envia
 
 
 
-\subsection{Sistema de deteção de intrusos}
+
+\subsection{Sistema de vídeo-vigilância }
 
 
-No contexto desta dissertação existiu a necessidade de implementar um sistema de vídeo vigilância que permitisse detetar intrusos, maioritariamente pessoas ou animais de grande porte, que possam invadir as quintas onde se produz Salicórnia. Esta necessidade prende-se essencialmente com elevado custo do \textit{hardware} do sistema de monitorização e também de eventuais instrumentos de elevado custo necessários ao cultivo desta espécie, como por exemplo,  geradores, máquinas elétricas para poda, entre outros.
+No contexto desta dissertação existiu a necessidade de implementar um sistema de vídeo vigilância que permitisse detetar intrusos, maioritariamente pessoas ou animais de grande porte, que possam invadir as quintas onde se produz Salicórnia. Esta necessidade prende-se essencialmente com elevado custo do \textit{hardware} do sistema de monitorização e também de eventuais instrumentos de elevado custo necessários ao cultivo desta espécie, como por exemplo,  geradores, máquinas elétricas para poda, entre outros. 
 
 %Neste secção é descrita a tecnologia de processamento de imagem utilizada tal como o material necessário e respetiva arquitetura. 
 
 
 \subsubsection{Biblioteca para processamento de imagem: OpenCV}
 
-O OpenCV, também conhecido por \textit{Open Source Computer Vision Library}, é uma biblioteca de \textit{software} de visão por computador de código \textit{open-source} (figura \ref{opencvlogo}). 
+O OpenCV, também conhecido por \textit{Open Source Computer Vision Library}, é uma biblioteca de \textit{software} de visão por computador de código \textit{open-source}. Esta biblioteca possui mais de 2500 algoritmos otimizados, que inclui um conjunto abrangente de algoritmos clássicos e avançados de visão computacional bem como algoritmos de \textit{machine learning}. Esses algoritmos podem ser utilizados para os mais diversos fins, como por exemplo, para detectar e reconhecer rostos, identificar objetos, classificar ações humanas em vídeos, detetar movimentos numa câmara, seguir um objetos em movimento, entre outros. Esta biblioteca é amplamente utilizada em empresas e grupos de investigação, tendo interfaces nas mais diversas linguagens: C++, C, Python, Java e MATLAB, embora seja nativamente escrita na linguagem C. OpenCV tem mais de 47 mil pessoas na sua comunidade e excede os 7 milhões de downloads, tendo suporto para Windows, Linux e Mac OS\cite{Itseez}.
 
-\begin{figure}[!htb]
-	\centering
-	\includegraphics[width=0.3\linewidth]{img/vision/opencv_logo.jpg}
-	\caption{Logótipo OpenCV}
-	\label{opencvlogo}
-\end{figure}
 
-Esta biblioteca possui mais de 2500 algoritmos otimizados, que inclui um conjunto abrangente de algoritmos clássicos e avançados de visão computacional bem como algoritmos de \textit{machine learning}. Esses algoritmos podem ser utilizados para os mais diversos fins, como por exemplo, para detectar e reconhecer rostos, identificar objetos, classificar ações humanas em vídeos, detetar movimentos numa câmara, seguir um objetos em movimento, produzir nuvens de pontos 3D de câmaras estéreo, entre outros. Esta biblioteca é amplamente utilizada em empresas e grupos de investigação, tendo interfaces nas mais diversas linguagens: C++, C, Python, Java e MATLAB, embora seja nativamente escrita na linguagem C. OpenCV tem mais de 47 mil pessoas na sua comunidade e excede os 7 milhões de downloads, tendo suporto para Windows, Linux e Mac OS\cite{Itseez}.
+
+%\begin{figure}[!htb]
+%	\centering
+%	\includegraphics[width=0.3\linewidth]{img/vision/opencv_logo.jpg}
+%	\caption{Logótipo OpenCV}
+%	\label{opencvlogo}
+%\end{figure}
+
+
 
 
 
@@ -1053,13 +1071,13 @@ Desde logo, a escolha da tecnologia para processamento de imagem recaiu sobre o 
 	
 	\begin{tabular}{|
 			>{\columncolor[HTML]{C0C0C0}}l |l|} \hline		
-		Sensor & 8 megapixels Sony IMX219 \\ \hline
-		Resolução de exibição & 1080p, 720p e 640x480p para vídeo \\ \hline
-		Ligação à placa& Cabo fita curta (branca) \\ \hline
-		Dimensões& 25 x 23 x 9 mm \\ \hline
-		Peso& aproximadamente 3 g \\ \hline
-		Compatibilidades& ultima versão do Raspbian \\ \hline
-		Preço& 26,67 \euro /unidade  \\ \hline
+		\textbf{Sensor} & 8 megapixels Sony IMX219 \\ \hline
+		\textbf{Resolução de exibição} & 1080p, 720p e 640x480p para vídeo \\ \hline
+		\textbf{Ligação à placa}& Cabo fita curta (branca) \\ \hline
+		\textbf{Dimensões}& 25 x 23 x 9 mm \\ \hline
+		\textbf{Peso}& aproximadamente 3 g \\ \hline
+		\textbf{Compatibilidades}& ultima versão do Raspbian \\ \hline
+		\textbf{Preço}& 26,67 \euro /unidade  \\ \hline
 	\end{tabular}
 	\caption[Características do módulo bluetooth HC-06]{Características do Raspberry Pi camera module}
 	\label{cara-cam}
@@ -1068,15 +1086,42 @@ Desde logo, a escolha da tecnologia para processamento de imagem recaiu sobre o 
 
 
 
+Inicialmente, após incorporar o \textit{Raspberry Pi camera module} no Raspberry Pi 3 através do \ac{CSI} (imagem X da secção XX), testou-se a captura de vídeo através do raspivid. Esta ferramenta de linha de comando, permite testar o funcionamento do módulo, e para além disso, definir em que formato será guardado o vídeo adquirido, bem como o seu comprimento e dimensões\cite{raspivid}. 
+
+
+Posteriormente, procedeu-se ao envio da imagem capturada, sem qualquer processamento, para o Youtube Live através da ferramenta FFMpeg. O Youtube Live permite que qualquer utilizador possa realizar \textit{streaming} de vídeo, 
+possibilitando escolher entre dois modos: alta latência e baixa latência, isto é, boa ou má qualidade. O Youtube Live utiliza o protocolo \ac{RTMP}, sendo este um servidor 
 
 
 
 
-Inicialmente, explorou-se	 um algoritmo disponibilizado pelo OpenCV para a deteção de pessoas (corpo inteiro). Este algoritmo, juntamente com técnicas de \textit{machine learning}  permitem a deteção de pessoas numa determinada imagem e/ou vídeo. O \textit{machine learning} (em português aprendizagem automática) consiste num  método de análise de dados que automatiza o desenvolvimento de modelos analíticos, sendo usados algoritmos que aprendem interativamente a partir de dados recolhidos à priori\cite{Kotsiantis2007}. 
 
-Após a realização de vários testes a este algoritmo, pretendeu-se implementar um servidor de \textit{streaming} que possa ser incorporado na \textit{dashboard}. Para tal, optou-se por criar um aplicação em Flask (\textit{framework} abordada no capitulo \ref{state}) que permita a aquisição de vídeo proveniente da  \textit{Raspberry Pi camera module} e realização do respetivo processamento. Esta aplicação web foi implementada num \textit{Raspberry Pi 3} tendo sido necessário optar por um servidor web, neste caso o NGINX\footnote{https://www.nginx.com/resources/wiki/}. O NGINX é um servidor HTTP de alto desempenho e open-source. É conhecido pela sua alta performance, estabilidade, configuração simples e baixo consumo de recursos\cite{Nginx2017}. 
 
-Para comunicação entre o servidor web com a aplicação em Flask foi necessária a utilização de uma \ac{CGI} que permita gerir páginas dinâmicas, possibilitando ao navegador passar parâmetros para uma aplicação existente num servidor web. Optou-se por utilizar o uWSGI \footnote{https://uwsgi-docs.readthedocs.io}, sendo um dos mais populares. Na figura \ref{arquiteturavisao} encontra-se a arquitetura do sistema de deteção de intrusos e as respetivas tecnologias utilizadas.
+Numa primeira fase, pretendeu-se adquirir a imagem proveniente da câmara e proceder à stream de video para o Youtube Live, através da ferramenta FFmpeg, sem qualquer processamento.  
+
+Youtube Live .....
+
+
+FFmpeg .... 
+
+
+Posteriormente, foram estudados alguns algoritmos de deteção de intrusos disponibilizados pelo OpenCV, que serão abordados no próximo capitulo. 
+
+
+
+
+
+
+
+
+
+
+
+%Inicialmente, explorou-se um algoritmo disponibilizado pelo OpenCV para a deteção de pessoas (corpo inteiro). Este algoritmo, juntamente com técnicas de \textit{machine learning}  permitem a deteção de pessoas numa determinada imagem e/ou vídeo. O \textit{machine learning} (em português aprendizagem automática) consiste num  método de análise de dados que automatiza o desenvolvimento de modelos analíticos, sendo usados algoritmos que aprendem interativamente a partir de dados recolhidos à priori\cite{Kotsiantis2007}. 
+
+%Após a realização de vários testes a este algoritmo, pretendeu-se implementar um servidor de \textit{streaming} que possa ser incorporado na \textit{dashboard}. Para tal, optou-se por criar um aplicação em Flask (\textit{framework} abordada no capitulo \ref{state}) que permita a aquisição de vídeo proveniente da  \textit{Raspberry Pi camera module} e realização do respetivo processamento. Esta aplicação web foi implementada num \textit{Raspberry Pi 3} tendo sido necessário optar por um servidor web, neste caso o NGINX\footnote{https://www.nginx.com/resources/wiki/}. O NGINX é um servidor HTTP de alto desempenho e open-source. É conhecido pela sua alta performance, estabilidade, configuração simples e baixo consumo de recursos\cite{Nginx2017}. 
+
+%Para comunicação entre o servidor web com a aplicação em Flask foi necessária a utilização de uma \ac{CGI} que permita gerir páginas dinâmicas, possibilitando ao navegador passar parâmetros para uma aplicação existente num servidor web. Optou-se por utilizar o uWSGI \footnote{https://uwsgi-docs.readthedocs.io}, sendo um dos mais populares. Na figura \ref{arquiteturavisao} encontra-se a arquitetura do sistema de deteção de intrusos e as respetivas tecnologias utilizadas.
 
 
 
@@ -1121,3 +1166,5 @@ Para o cenário de simulação em \textit{hardware} e respetivo sistema de infor
 
 
 \section{Considerações finais}
+
+

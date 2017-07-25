@@ -15,7 +15,6 @@ The style file: IEEEtran.bst
 A level-1 auxiliary file: texSource/appendix1.aux
 A level-1 auxiliary file: texSource/appendix2.aux
 A level-1 auxiliary file: texSource/appendix3.aux
-A level-1 auxiliary file: texSource/appendix4.aux
 A level-1 auxiliary file: texSource/appendix5.aux
 A level-1 auxiliary file: texSource/appendix6.aux
 A level-1 auxiliary file: texSource/appendix7.aux
@@ -58,7 +57,10 @@ Warning--empty year in sall
 Warning--there is url but no urldate in sall
 Warning--empty journal in Rahman2015
 Warning--there is url but no urldate in Rahman2015
-Warning--there is url but no urldate in Abreu2012
+Warning--there is url but no urldate in Bruno2002
+Warning--there is url but no urldate in BluetoothTM2001
+Warning--empty journal in Paper2005
+Warning--there is url but no urldate in Paper2005
 Warning--there is url but no urldate in Saini2014
 Warning--there is url but no urldate in Turban1996
 Warning--empty journal in Rodriguez2015
@@ -68,49 +70,50 @@ Warning--empty journal in temp-dta
 Warning--empty year in temp-dta
 Warning--there is url but no urldate in temp-dta
 Warning--empty journal in GuangzhouHCInformationTechnologyCo.2011
-Warning--there is url but no urldate in Kotsiantis2007
+Warning--empty journal in Parmar2012
+Warning--there is url but no urldate in Parmar2012
 Warning--there is url but no urldate in Dalal
 
 Done.
-You've used 57 entries,
+You've used 64 entries,
             4106 wiz_defined-function locations,
-            1197 strings with 18009 characters,
-and the built_in function-call counts, 30139 in all, are:
-= -- 2412
-> -- 565
-< -- 171
-+ -- 297
-- -- 103
-* -- 1483
-:= -- 5042
-add.period$ -- 112
-call.type$ -- 57
-change.case$ -- 59
-chr.to.int$ -- 381
-cite$ -- 99
-duplicate$ -- 2240
-empty$ -- 2537
-format.name$ -- 121
-if$ -- 6755
+            1230 strings with 18770 characters,
+and the built_in function-call counts, 33490 in all, are:
+= -- 2668
+> -- 610
+< -- 192
++ -- 323
+- -- 109
+* -- 1638
+:= -- 5579
+add.period$ -- 126
+call.type$ -- 64
+change.case$ -- 66
+chr.to.int$ -- 432
+cite$ -- 110
+duplicate$ -- 2506
+empty$ -- 2840
+format.name$ -- 128
+if$ -- 7512
 int.to.chr$ -- 0
-int.to.str$ -- 57
-missing$ -- 429
-newline$ -- 284
-num.names$ -- 53
-pop$ -- 1168
+int.to.str$ -- 64
+missing$ -- 474
+newline$ -- 317
+num.names$ -- 57
+pop$ -- 1311
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 4
-skip$ -- 2279
+skip$ -- 2530
 stack$ -- 0
-substring$ -- 923
-swap$ -- 1571
-text.length$ -- 44
+substring$ -- 1050
+swap$ -- 1740
+text.length$ -- 48
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 57
-warning$ -- 42
-while$ -- 131
-width$ -- 59
-write$ -- 598
-(There were 42 warnings)
+type$ -- 64
+warning$ -- 46
+while$ -- 147
+width$ -- 66
+write$ -- 663
+(There were 46 warnings)
