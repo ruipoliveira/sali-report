@@ -174,7 +174,7 @@ O Flask consiste numa micro-framework desenvolvida em Python baseado nas bibliot
 
 
 \subsection{Django}
-
+\label{django}
 
 A framework Django é uma ferramenta de desenvolvimento \textit{web} de alto nível desenvolvida na linguagem Python, possuindo uma arquitetura \ac{MVC}\cite{Deacon2005}, embora com algumas diferenças em relação a esta. No modelo \ac{MVC}, a componente \textit{Model} diz respeito à camada de acesso a dados, a \textit{View} à parte do sistema responsável pela escolha e apresentação da informação e o \textit{Controller} está encarregue de decidir que \textit{views} escolher (figura \ref{mvcdiag}). Os criadores do Django consideram a sua arquitetura com sendo \ac{MTV}\cite{Index}. 
 
@@ -212,7 +212,7 @@ De acordo com as descrições dos autores, esta ferramenta possui várias vantag
 
 
 \subsection{Conclusões e solução adotada}
-
+\label{django-conclusao}
 
 
 Uma vez que o cliente do sistema não pretende que existam gastos adicionais, optou-se por utilizar ferramentas \textit{open-source}. Esta opção permitiu desde logo excluir a tecnologia ASP.net. 
@@ -356,6 +356,7 @@ Dadas as vantagens inúmeras relativamente à tecnologia \ac{REST}, optou-se por
 \subsection{Django Rest Framework}
 
 
+
 O Django REST Framework é considerado pelos seus autores uma ferramenta poderosa e flexível para a construção de APIs Web\cite{restdjango}, sendo de fácil incorporação quando estamos perante um projeto desenvolvido com a framework Django. Esta ferramenta disponibiliza um conjunto de funcionalidade que permite estender as suas características de uma forma simples e intuitiva, tais como paginação de conteúdos e utilização de filtros, escolha dos formatos de dados, entre outras.
 
 
@@ -420,7 +421,7 @@ O Flask-RESTful é uma extensão para \textit{microframework} Flask. É consider
 Existem enumeras características que potenciam cada uma das ferramentas/frameworks enumeradas anteriormente, entre as quais destaco a \ac{HATEOAS}. Esta característica termina se a API é  navegável, isto é, a partir de um determinado recurso é possivel descobrir quais os recursos associados e respectiva informação dos mesmos. Na tabela \ref{comp-rest} apresenta-se uma comparação entre as ferramentas/frameworks discutidas anteriormente. 
 
 
-O Django REST Framework é a solução que apresenta uma maior maturidade, disponibilizando um conjunto de funções aos programadores, possibilitando boas práticas de desenvolvimento \ac{REST}, aproveitando as vantagens da \textit{framework} Django enumeradas anteriormente (secção XX). Para além disso, permite a autenticação da API, ou seja apenas os utilizadores devidamente autorizados têm acesso a esta.   
+O Django REST Framework é a solução que apresenta uma maior maturidade, disponibilizando um conjunto de funções aos programadores, possibilitando boas práticas de desenvolvimento \ac{REST}, aproveitando as vantagens da \textit{framework} Django enumeradas anteriormente (secção \ref{django}). Para além disso, permite a autenticação da API, ou seja apenas os utilizadores devidamente autorizados têm acesso a esta.   
 
 
 

@@ -1,12 +1,12 @@
 \BOOKMARK [0][-]{chapter*.1}{Lista de Figuras}{}% 1
-\BOOKMARK [0][-]{chapter*.4}{Lista de Tabelas}{}% 2
-\BOOKMARK [0][-]{section*.11}{Acr\363nimos}{}% 3
+\BOOKMARK [0][-]{chapter*.3}{Lista de Tabelas}{}% 2
+\BOOKMARK [0][-]{section*.10}{Acr\363nimos}{}% 3
 \BOOKMARK [0][-]{chapter.1}{Introdu\347\343o}{}% 4
 \BOOKMARK [1][-]{section.1.1}{Motiva\347\343o}{chapter.1}% 5
 \BOOKMARK [1][-]{section.1.2}{Objetivos}{chapter.1}% 6
 \BOOKMARK [1][-]{section.1.3}{Metodologia de trabalho}{chapter.1}% 7
 \BOOKMARK [1][-]{section.1.4}{Organiza\347\343o do documento}{chapter.1}% 8
-\BOOKMARK [0][-]{chapter.2}{O IoT no cultivo da Salic\363rnia}{}% 9
+\BOOKMARK [0][-]{chapter.2}{O Internet of Things no cultivo da Salic\363rnia}{}% 9
 \BOOKMARK [1][-]{section.2.1}{Caracter\355sticas da planta}{chapter.2}% 10
 \BOOKMARK [1][-]{section.2.2}{Condi\347\365es ideais de cultivo da Salic\363rnia}{chapter.2}% 11
 \BOOKMARK [1][-]{section.2.3}{Import\342ncia da planta}{chapter.2}% 12
@@ -69,7 +69,7 @@
 \BOOKMARK [2][-]{subsection.4.6.2}{Simula\347\343o em hardware}{section.4.6}% 69
 \BOOKMARK [3][-]{section*.83}{Sensores utilizados}{subsection.4.6.2}% 70
 \BOOKMARK [3][-]{section*.91}{Comunica\347\343o}{subsection.4.6.2}% 71
-\BOOKMARK [2][-]{subsection.4.6.3}{Sistema de v\355deo-vigil\342ncia }{section.4.6}% 72
+\BOOKMARK [2][-]{subsection.4.6.3}{Sistema de videovigil\342ncia }{section.4.6}% 72
 \BOOKMARK [3][-]{section*.96}{Biblioteca para processamento de imagem: OpenCV}{subsection.4.6.3}% 73
 \BOOKMARK [1][-]{section.4.7}{Diagrama de componentes}{chapter.4}% 74
 \BOOKMARK [1][-]{section.4.8}{Considera\347\365es finais}{chapter.4}% 75
@@ -84,24 +84,22 @@
 \BOOKMARK [2][-]{subsection.5.1.7}{Deploy do projecto}{section.5.1}% 84
 \BOOKMARK [1][-]{section.5.2}{Simula\347\343o em hardware}{chapter.5}% 85
 \BOOKMARK [2][-]{subsection.5.2.1}{Arduino Nano}{section.5.2}% 86
-\BOOKMARK [3][-]{section*.109}{Sensores}{subsection.5.2.1}% 87
-\BOOKMARK [3][-]{section*.110}{Comunica\347\343o}{subsection.5.2.1}% 88
-\BOOKMARK [2][-]{subsection.5.2.2}{Raspberry Pi 3}{section.5.2}% 89
-\BOOKMARK [1][-]{section.5.3}{Sistema de v\355deo-vigil\342ncia}{chapter.5}% 90
-\BOOKMARK [2][-]{subsection.5.3.1}{Algoritmo de dete\347\343o de intrusos}{section.5.3}% 91
-\BOOKMARK [1][-]{section.5.4}{Considera\347\365es finais}{chapter.5}% 92
-\BOOKMARK [0][-]{chapter.6}{Testes e resultados}{}% 93
-\BOOKMARK [1][-]{section.6.1}{Testes funcionais}{chapter.6}% 94
-\BOOKMARK [2][-]{subsection.6.1.1}{API REST}{section.6.1}% 95
-\BOOKMARK [2][-]{subsection.6.1.2}{Comunica\347\343o via Bluetooth }{section.6.1}% 96
-\BOOKMARK [2][-]{subsection.6.1.3}{Dete\347\343o de intrusos}{section.6.1}% 97
-\BOOKMARK [1][-]{section.6.2}{Resultados}{chapter.6}% 98
-\BOOKMARK [1][-]{section.6.3}{Considera\347\365es finais}{chapter.6}% 99
-\BOOKMARK [0][-]{chapter.7}{Conclus\365es e trabalho futuro}{}% 100
-\BOOKMARK [1][-]{section.7.1}{Conclus\365es}{chapter.7}% 101
-\BOOKMARK [1][-]{section.7.2}{Problemas encontrados}{chapter.7}% 102
-\BOOKMARK [1][-]{section.7.3}{Trabalho futuro}{chapter.7}% 103
-\BOOKMARK [0][-]{appendix.A}{Application Programming Interface REST}{}% 104
-\BOOKMARK [0][-]{appendix.B}{Mockup da aplica\347\343o mobile}{}% 105
-\BOOKMARK [0][-]{appendix.C}{Implementa\347\343o do trigger SQL }{}% 106
-\BOOKMARK [0][-]{appendix.D}{Interliga\347\343o de componentes}{}% 107
+\BOOKMARK [2][-]{subsection.5.2.2}{Raspberry Pi 3}{section.5.2}% 87
+\BOOKMARK [1][-]{section.5.3}{Sistema de videovigil\342ncia}{chapter.5}% 88
+\BOOKMARK [2][-]{subsection.5.3.1}{Algoritmo de dete\347\343o de intrusos}{section.5.3}% 89
+\BOOKMARK [1][-]{section.5.4}{Considera\347\365es finais}{chapter.5}% 90
+\BOOKMARK [0][-]{chapter.6}{Testes e resultados}{}% 91
+\BOOKMARK [1][-]{section.6.1}{Testes funcionais}{chapter.6}% 92
+\BOOKMARK [2][-]{subsection.6.1.1}{API REST}{section.6.1}% 93
+\BOOKMARK [2][-]{subsection.6.1.2}{Comunica\347\343o via Bluetooth }{section.6.1}% 94
+\BOOKMARK [2][-]{subsection.6.1.3}{Dete\347\343o de intrusos}{section.6.1}% 95
+\BOOKMARK [1][-]{section.6.2}{Resultados}{chapter.6}% 96
+\BOOKMARK [1][-]{section.6.3}{Considera\347\365es finais}{chapter.6}% 97
+\BOOKMARK [0][-]{chapter.7}{Conclus\365es e trabalho futuro}{}% 98
+\BOOKMARK [1][-]{section.7.1}{Conclus\365es}{chapter.7}% 99
+\BOOKMARK [1][-]{section.7.2}{Problemas encontrados}{chapter.7}% 100
+\BOOKMARK [1][-]{section.7.3}{Trabalho futuro}{chapter.7}% 101
+\BOOKMARK [0][-]{appendix.A}{Application Programming Interface REST}{}% 102
+\BOOKMARK [0][-]{appendix.B}{Mockup da aplica\347\343o mobile}{}% 103
+\BOOKMARK [0][-]{appendix.C}{Implementa\347\343o do trigger SQL }{}% 104
+\BOOKMARK [0][-]{appendix.D}{Interliga\347\343o de componentes}{}% 105

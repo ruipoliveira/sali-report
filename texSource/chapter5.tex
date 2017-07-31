@@ -20,10 +20,10 @@ Segundo o ciclo de vida de um software, estabelecido por \textit{Munish Kaur et 
 \section{Sistema de informação}
 
 
-Relativamente ao projeto Django, numa primeira fase procedeu-se à incorporação do \ac{SGBD} PostgreSQL através do psycopg2\footnote{http://initd.org/psycopg/docs/}. O psycopg2 consiste num adaptador entre o PostgreSQL com a linguagem de programação Python, que permite executar de formar eficiente qualquer \textit{script} em \ac{SQL}. É de notar que nesta fase inicial, encontram-se instalados algumas aplicações nativas do Django entre as quais, o  \texttt{django.contrib.auth} e  o \texttt{django.contrib.sessions}. Através delas é possivel verificar o total funcionamento da base de dados uma vez que permitem criar automática das tabelas associadas ao utilizadores, grupos, permissões e respetivos conteúdos, administração, sessões entres outros. Estas tabelas são fundamentais ao bom funcionamento do sistema, sendo consideradas no modelo de dados descrito na secção XX. 
+Relativamente ao projeto Django, numa primeira fase procedeu-se à incorporação do \ac{SGBD} PostgreSQL através do psycopg2\footnote{http://initd.org/psycopg/docs/}. O psycopg2 consiste num adaptador entre o PostgreSQL com a linguagem de programação Python, que permite executar de formar eficiente qualquer \textit{script} em \ac{SQL}. É de notar que nesta fase inicial, encontram-se instalados algumas aplicações nativas do Django entre as quais, o  \texttt{django.contrib.auth} e  o \texttt{django.contrib.sessions}. Através delas é possivel verificar o total funcionamento da base de dados uma vez que permitem criar automática das tabelas associadas ao utilizadores, grupos, permissões e respetivos conteúdos, administração, sessões entres outros. Estas tabelas são fundamentais ao bom funcionamento do sistema, sendo consideradas no modelo de dados descrito na secção \ref{modelocap}. 
 
 
-Posteriormente, procedeu-se à criação dos diferentes \texttt{Models} conforme a nomenclatura apresentada nas tabelas X e X da secção XX. O excerto de código seguinte pretende ilustrar a criação do \texttt{Model} associado à tabela que representa a estrutura \acl{SM}, com o respetivo identificador e atributos.  Após a criação de cada \texttt{Models} procedeu-se à migração dos dados para o \ac{SGBD} onde era possível verificar que as tabelas tinham sido criadas, através da utilização da ferramenta gráfica pgAdmin III. De modo a testar a estrutura criada, procedeu-se à introdução de dados através da zona administrativa do Django (figura \ref{admingdjango}). Através dos dados introduzidos e descrevendo um cenário realista foi possível validar a estrutura e proceder à implementação da aplicação web e criação da \ac{API} \ac{REST}. 
+Posteriormente, procedeu-se à criação dos diferentes \texttt{Models} conforme a nomenclatura apresentada nas tabelas \ref{tabeladb1} e \ref{tabeladb1} da secção \ref{modelocap}. O excerto de código seguinte pretende ilustrar a criação do \texttt{Model} associado à tabela que representa a estrutura \acl{SM}, com o respetivo identificador e atributos.  Após a criação de cada \texttt{Models} procedeu-se à migração dos dados para o \ac{SGBD} onde era possível verificar que as tabelas tinham sido criadas, através da utilização da ferramenta gráfica pgAdmin III. De modo a testar a estrutura criada, procedeu-se à introdução de dados através da zona administrativa do Django (figura \ref{admingdjango}). Através dos dados introduzidos e descrevendo um cenário realista foi possível validar a estrutura e proceder à implementação da aplicação web e criação da \ac{API} \ac{REST}. 
 
 
 
@@ -92,7 +92,7 @@ Como vimos anteriormente, o \textit{company user} apenas poderá ser adicionado 
 
 No modelo de dados definido, cada sensor tem que ter obrigatoriamente associada uma entrada na tabela \texttt{AlarmsSettings} que permite definir o valor máximo e mínimo para o qual são gerados alarmes bem como as mensagens associadas que permitem informar o utilizador. 
 
-A geração de alarmes é condicionada pela comparação do valor lido pelos sensores com o valor máximo e mínimo definidos para o sensor em questão. Uma vez que é necessária esta verificação para cada leitura, decidiu-se criar um \textit{trigger} em \ac{SQL} que execute este procedimento, sendo este executado a nível da \ac{SGBD} tornando o processo mais eficiente. Um \textit{trigger} permite que uma determinada sequência de comandos sejam executadas sempre que um determinado evento ocorre, neste caso uma adição. No anexo X encontra-se um \textit{stored procedure} (função) que implementa a sequência de comandos bem como a implementação do \textit{trigger} na linguagem \ac{SQL}. Na figura \ref{fluxoSP} encontra-se um diagrama de fluxo que permite ilustrar a lógica do \textit{stored procedure}. 
+A geração de alarmes é condicionada pela comparação do valor lido pelos sensores com o valor máximo e mínimo definidos para o sensor em questão. Uma vez que é necessária esta verificação para cada leitura, decidiu-se criar um \textit{trigger} em \ac{SQL} que execute este procedimento, sendo este executado a nível da \ac{SGBD} tornando o processo mais eficiente. Um \textit{trigger} permite que uma determinada sequência de comandos sejam executadas sempre que um determinado evento ocorre, neste caso uma adição. No anexo \ref{triggerSQLImpe} encontra-se um \textit{stored procedure} (função) que implementa a sequência de comandos bem como a implementação do \textit{trigger} na linguagem \ac{SQL}. Na figura \ref{fluxoSP} encontra-se um diagrama de fluxo que permite ilustrar a lógica do \textit{stored procedure}. 
 
 
 
@@ -217,7 +217,7 @@ url(r'^api/cm/(?P<pk_or_name>[-\w]+)/$',views.ControllerModule_param.as_view()
 
 
 
-Como descrito anteriormente, a autenticação desta API usa um método de autenticação via token. Para tal, foi necessário a instalar a aplicação \texttt{'rest\_framework.authtoken'} que fornece a estrutura \texttt{Token}, possibilitando a criação e modificação do token quando pretendido. Para que a autenticação seja possível é necessário incluir no módulo de configuração do Django o método pretendido, neste caso \texttt{'rest\_framework.authentication.TokenAuthentication'}
+Como descrito anteriormente, a autenticação desta API usa um método de autenticação via token. Para tal, foi necessário a instalar a aplicação \texttt{'rest\_framework.authtoken'} que fornece a estrutura \texttt{Token}, possibilitando a criação e modificação do token quando pretendido. Para que a autenticação seja possível é necessário incluir no módulo de configuração do Django o método pretendido, neste caso  \ \texttt{'rest\_framework.TokenAuthentication'}.
 
 No anexo \ref{espcifAPIREST} encontram-se as especificações de cada \textit{endpoint} existente nesta API REST.
 
@@ -276,10 +276,9 @@ A interface gráfica da plataforma permite ainda que o utilizador comum possa:
 
 
 
-gravatar 
 
 
-Sempre que o utilizador executa uma determinada ação na plataforma este é notificado informando-o se a ação foi bem sucedida ou não. A implementação deste mecanismo recorre à estrutura de mensagens\footnote{\url{https://docs.djangoproject.com/en/1.11/ref/contrib/messages/}} do Django, também conhecida por mensagens de flash. 
+Sempre que o utilizador executa uma determinada ação na plataforma este é notificado informando-o se a ação foi bem sucedida ou não. A implementação deste mecanismo recorre à estrutura de mensagens\footnote{\url{https://docs.djangoproject.com/en/1.11/ref/contrib/messages/}} do Django, também conhecida por mensagens de \textit{flash}. 
 
 
 
@@ -437,8 +436,6 @@ Nesta secção explica-se a implementação a nível de \textit{software} no con
 
 No que diz respeito ao Arduino Nano (\acl{SM}), numa fase inicial,  procedeu-se à ligação dos diversos componentes  apresentados na secção \ref{arq-hardw} a uma placa branca (\textit{breadboard}) tal como se apresentada no Anexo \ref{interlapd}. Para auxiliar o desenvolvimento de \textit{software} foi utilizada a versão 1.8.1 do \ac{IDE} do próprio Arduino\footnote{https://www.arduino.cc/en/Main/Software}. Seguidamente apresenta-se a implementação necessária a nível de sensores e de comunicação. 
 
-\subsubsection{Sensores}
-
 
 Foram desenvolvidos os seguintes métodos que permitem aceder aos valores lidos de cada um dos sensores. Para além disso, foi criado um método que permite alterar o estado de ativação do \ac{LED}, permitindo simular o estado da válvula para transferência de águas. 
 
@@ -463,7 +460,6 @@ Inicialmente procedeu-se à leitura de cada sensor de forma individual de modo a
 \texttt{<temperatura>;<nível\_água>;<luminosidade>;<estado\_válvula>}
 \end{equation}
 
-\subsubsection{Comunicação}
 
 
 Numa primeira fase, procedeu-se à comunicação entre o \acl{SM} e \acl{CM} através de porta série. Seguidamente, optou-se por incorporar o módulo Bluetooth de modo a tornar os dois módulos independentes. Foi utilizado o  \textit{package} \texttt{SoftwareSerial.h} disponibilizado pelo Arduino, que permite interagir facilmente com o módulo de comunicação utilizado. Depois, decidiu-se quais os \textit{inputs} que o Arduino irá receber e que ações iria executar, concluindo-se que podiam ser recebidos valores entre 0 e 2. 
@@ -541,10 +537,10 @@ Nesta simulação, o \acl{CM} recebe apenas os dados adquiridos por um \acl{SM},
 
 
 
-\section{Sistema de vídeo-vigilância}
+\section{Sistema de videovigilância}
 
 
-Tal como descrito na secção XX do capitulo X, foram utilizadas as ferramentas ffmpeg e raspivid para envio de vídeo sem qualquer tipo de processamento para o servidor \ac{RTMP} do Youtube. Para tal, foi executado o seguinte comando no terminal do Raspberry Pi 3, sendo possível observar o resultado na conta do Youtube.
+Tal como descrito na secção \ref{videoviarqut}, foram utilizadas as ferramentas ffmpeg e raspivid para envio de vídeo sem qualquer tipo de processamento para o servidor \ac{RTMP} do Youtube. Para tal, foi executado o seguinte comando no terminal do Raspberry Pi 3, sendo possível observar o resultado na conta do Youtube.
 
 
 \begin{lstlisting}[
@@ -600,6 +596,7 @@ Seguidamente será explicado um algoritmo de deteção de intrusos disponibiliza
 
 
 \subsection{Algoritmo de deteção de intrusos}
+\label{algdetecao}
 % artigo http://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf
 
 
@@ -668,7 +665,7 @@ hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
 
 
 
-O algoritmo apresentado permite a deteção de intrusos (humanos), quando estes surgem em vídeos ou imagens. Pretende-se incorporar este algoritmo no sistema de vídeo-vigilância (Youtube Live), possibilitando a deteção de indivíduos quando estes são capturados pela câmara, gerando alarmes para a plataforma. Para incorporar o algoritmo apresentado com o Youtube Live é necessário entender o mecanismo de \textit{streaming} disponibilizado pela \ac{API} do YouTube Live Streaming\footnote{\url{https://developers.google.com/youtube/v3/live/getting-started}}.  
+O algoritmo apresentado permite a deteção de intrusos (humanos), quando estes surgem em vídeos ou imagens. Pretende-se incorporar este algoritmo no sistema de videovigilância (Youtube Live), possibilitando a deteção de indivíduos quando estes são capturados pela câmara, gerando alarmes para a plataforma. Para incorporar o algoritmo apresentado com o Youtube Live é necessário entender o mecanismo de \textit{streaming} disponibilizado pela \ac{API} do YouTube Live Streaming\footnote{\url{https://developers.google.com/youtube/v3/live/getting-started}}.  
 
 
 Como vimos anteriormente, existem vários parâmetros para o método \linebreak \texttt{detectMultiScale()}, possibilitando ajustar o tamanho da deteção. Dependendo da disposição exata da câmara é possível ajustar estes parâmetros permitindo uma deteção o mais eficaz possível. No próximo capítulo serão apresentados alguns exemplos em que é possível testar o algoritmo apresentado.  
@@ -713,7 +710,7 @@ Pretende-se instalar uma câmara na quinta onde se produz salicornia, de modo a 
 
 Com o objetivo de determinar quais os valores a atribuir aos parâmetros \texttt{winStride}, \texttt{padding} e \texttt{scale} foram realizados alguns testes com algumas imagens de um dataset onde seja possível detetar pessoas assumindo a mesma perspetiva, isto é, mesma altura e ângulo.  
 
-Foram considerados quatro frames de um dataset disponibilizado pela Universidade de Oxford utilizado para diferentes estudos a nível do desempenho em processamento de imagem envolvendo sistemas de vídeo vigilância, mais precisamente para detecção e tracking de pessoas\cite{imagProccdata}. O vídeo disponibilizado chama-se \texttt{TownCentreXVID.avi}. 
+Foram considerados quatro frames de um dataset disponibilizado pela Universidade de Oxford utilizado para diferentes estudos a nível do desempenho em processamento de imagem envolvendo sistemas de videovigilância, mais precisamente para detecção e tracking de pessoas\cite{imagProccdata}. O vídeo disponibilizado chama-se \texttt{TownCentreXVID.avi}. 
 
 Os resultados obtidos, isto é o tempo de processamento, numero de pessoas detetadas bem como as imagens consideradas encontram-se no anexo X. Foram considerados os seguintes valores possíveis para os parâmetros estudos: 
 
@@ -755,7 +752,7 @@ Neste capítulo foram apresentadas algumas soluções de implementação que ach
 	
 	\item \textbf{Simulação em \textit{hardware}}: simulou-se o sistema recorrendo a \textit{hardware} disponível em laboratório, tanto a nível de microcontroladores, sensores ou módulos de comunicação. No entanto, não houve possibilidade de testar nenhum sensor de salinidade apesar de ser bastante importante no contexto do projeto, uma vez que é um dos parâmetros principais necessários de monitorização no cultivo da Salicórnia. Relativamente à comunicação desta simulação, numa primeira fase, toda a comunicação entre o \acl{CM} e \acl{SM} foi realizada através de porta série (cabo físico), posteriormente optou-se por utilizar um tecnologia de comunicação sem fios. 
 	 
-	\item \textbf{Sistema de vídeo-vigilância}: relativamente ao sistema de video-vigilância foi possivel testar o serviço do Youtube Live para este cenário, ficando a falta a incorporação do algoritmo de deteção com a API do Youtube Live. 
+	\item \textbf{Sistema de videovigilância}: relativamente ao sistema de video-vigilância foi possivel testar o serviço do Youtube Live para este cenário, ficando a falta a incorporação do algoritmo de deteção com a API do Youtube Live. 
 	
 
 	

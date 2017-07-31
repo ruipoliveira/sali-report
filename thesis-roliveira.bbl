@@ -454,6 +454,13 @@ FFmpeg, ``{About FFmpeg},'' 2015. [Online]. Available:
   \url{https://www.ffmpeg.org/about.html} [Accessed: 2017-07-25]
 \BIBentrySTDinterwordspacing
 
+\bibitem{streamlive}
+\BIBentryALTinterwordspacing
+``{Stream Live with Raspberry Pi Camera}.'' [Online]. Available:
+  \url{https://www.digikey.com/en/maker/blogs/streaming-live-to-youtube-and-facebook-using-raspberry-pi-camera/969a7932d47d42a79ba72c81da4d9b66}
+  [Accessed: 2017-07-29]
+\BIBentrySTDinterwordspacing
+
 \bibitem{Dalal}
 \BIBentryALTinterwordspacing
 N.~Dalal and B.~Triggs, ``{Histograms of Oriented Gradients for Human

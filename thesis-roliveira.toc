@@ -1,13 +1,13 @@
 \select@language {portuguese}
 \contentsline {chapter}{Lista de Figuras}{v}{chapter*.1}
-\contentsline {chapter}{Lista de Tabelas}{ix}{chapter*.4}
-\contentsline {chapter}{Acr\IeC {\'o}nimos}{xi}{section*.11}
+\contentsline {chapter}{Lista de Tabelas}{ix}{chapter*.3}
+\contentsline {chapter}{Acr\IeC {\'o}nimos}{xi}{section*.10}
 \contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Motiva\IeC {\c c}\IeC {\~a}o}{2}{section.1.1}
 \contentsline {section}{\numberline {1.2}Objetivos}{2}{section.1.2}
 \contentsline {section}{\numberline {1.3}Metodologia de trabalho}{3}{section.1.3}
 \contentsline {section}{\numberline {1.4}Organiza\IeC {\c c}\IeC {\~a}o do documento}{4}{section.1.4}
-\contentsline {chapter}{\numberline {2}O \ac {IoT} no cultivo da Salic\IeC {\'o}rnia}{7}{chapter.2}
+\contentsline {chapter}{\numberline {2}O \acl {IoT} no cultivo da Salic\IeC {\'o}rnia}{7}{chapter.2}
 \contentsline {section}{\numberline {2.1}Caracter\IeC {\'\i }sticas da planta}{7}{section.2.1}
 \contentsline {section}{\numberline {2.2}Condi\IeC {\c c}\IeC {\~o}es ideais de cultivo da Salic\IeC {\'o}rnia}{8}{section.2.2}
 \contentsline {section}{\numberline {2.3}Import\IeC {\^a}ncia da planta}{9}{section.2.3}
@@ -53,7 +53,7 @@
 \contentsline {subsection}{\numberline {4.2.1}\acl {SM}}{31}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}\acl {CM}}{32}{subsection.4.2.2}
 \contentsline {section}{\numberline {4.3}An\IeC {\'a}lise de requisitos}{32}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Requisitos funcionais}{32}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.1}Requisitos funcionais}{33}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Requisitos n\IeC {\~a}o funcionais}{34}{subsection.4.3.2}
 \contentsline {section}{\numberline {4.4}Modela\IeC {\c c}\IeC {\~a}o}{35}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Entidades envolvidas}{35}{subsection.4.4.1}
@@ -70,7 +70,7 @@
 \contentsline {subsection}{\numberline {4.6.2}Simula\IeC {\c c}\IeC {\~a}o em \textit {hardware}}{51}{subsection.4.6.2}
 \contentsline {subsubsection}{Sensores utilizados}{51}{section*.83}
 \contentsline {subsubsection}{Comunica\IeC {\c c}\IeC {\~a}o}{53}{section*.91}
-\contentsline {subsection}{\numberline {4.6.3}Sistema de v\IeC {\'\i }deo-vigil\IeC {\^a}ncia }{55}{subsection.4.6.3}
+\contentsline {subsection}{\numberline {4.6.3}Sistema de videovigil\IeC {\^a}ncia }{55}{subsection.4.6.3}
 \contentsline {subsubsection}{Biblioteca para processamento de imagem: OpenCV}{55}{section*.96}
 \contentsline {section}{\numberline {4.7}Diagrama de componentes}{57}{section.4.7}
 \contentsline {section}{\numberline {4.8}Considera\IeC {\c c}\IeC {\~o}es finais}{58}{section.4.8}
@@ -85,10 +85,8 @@
 \contentsline {subsection}{\numberline {5.1.7}\textit {Deploy} do projecto}{67}{subsection.5.1.7}
 \contentsline {section}{\numberline {5.2}Simula\IeC {\c c}\IeC {\~a}o em \textit {hardware}}{69}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Arduino Nano}{69}{subsection.5.2.1}
-\contentsline {subsubsection}{Sensores}{69}{section*.109}
-\contentsline {subsubsection}{Comunica\IeC {\c c}\IeC {\~a}o}{70}{section*.110}
 \contentsline {subsection}{\numberline {5.2.2}Raspberry Pi 3}{70}{subsection.5.2.2}
-\contentsline {section}{\numberline {5.3}Sistema de v\IeC {\'\i }deo-vigil\IeC {\^a}ncia}{71}{section.5.3}
+\contentsline {section}{\numberline {5.3}Sistema de videovigil\IeC {\^a}ncia}{71}{section.5.3}
 \contentsline {subsection}{\numberline {5.3.1}Algoritmo de dete\IeC {\c c}\IeC {\~a}o de intrusos}{72}{subsection.5.3.1}
 \contentsline {section}{\numberline {5.4}Considera\IeC {\c c}\IeC {\~o}es finais}{74}{section.5.4}
 \contentsline {chapter}{\numberline {6}Testes e resultados}{75}{chapter.6}

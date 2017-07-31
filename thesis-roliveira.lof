@@ -1,6 +1,6 @@
 \select@language {portuguese}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Fase de desenvolvimento de um software }}{3}{figure.caption.13}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Fases de desenvolvimento de um \textit {software} }}{3}{figure.caption.13}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Colora\IeC {\c c}\IeC {\~a}o da planta \textit {Salicornia ramosissima} na primavera (\IeC {\`a} esquerda) e no outono (\IeC {\`a} direita) (Fotografia por Jos\IeC {\'e} M. G. Pereira)\relax }}{8}{figure.caption.15}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Esquema representativo do ciclo de vida da \textit {Salicornia ramosissima}.}}{8}{figure.caption.16}
@@ -43,39 +43,39 @@
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Diagrama de atividades do processo de registo e autentica\IeC {\c c}\IeC {\~a}o\relax }}{61}{figure.caption.104}
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Diagrama de fluxo para gera\IeC {\c c}\IeC {\~a}o de alarmes\relax }}{62}{figure.caption.105}
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Documenta\IeC {\c c}\IeC {\~a}o da API REST com a ferramenta Swagger\relax }}{65}{figure.caption.107}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Implementa\IeC {\c c}\IeC {\~a}o do script para o \ac {CM} \relax }}{71}{figure.caption.111}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Resultado no Youtube Live ao executar as ferramentas raspivid e ffmpeg \relax }}{72}{figure.caption.112}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Exemplo da aplica\IeC {\c c}\IeC {\~a}o do par\IeC {\^a}metros \texttt {winStride} \relax }}{73}{figure.caption.114}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Pir\IeC {\^a}mide de imagens para diferentes \texttt {scale}\relax }}{73}{figure.caption.114}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Implementa\IeC {\c c}\IeC {\~a}o do script para o \ac {CM} \relax }}{71}{figure.caption.109}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Resultado no Youtube Live ao executar as ferramentas raspivid e ffmpeg \relax }}{72}{figure.caption.110}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Exemplo da aplica\IeC {\c c}\IeC {\~a}o do par\IeC {\^a}metros \texttt {winStride} \relax }}{73}{figure.caption.112}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Pir\IeC {\^a}mide de imagens para diferentes \texttt {scale}\relax }}{73}{figure.caption.112}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Documenta\IeC {\c c}\IeC {\~a}o da API REST com a ferramenta Swagger\relax }}{76}{figure.caption.116}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Resultado da intera\IeC {\c c}\IeC {\~a}o com a aplica\IeC {\c c}\IeC {\~a}o \textit {Bluetooth Terminal HC-05}\relax }}{77}{figure.caption.117}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces \textit {Breadboard} com liga\IeC {\c c}\IeC {\~a}o dos diferentes componentes, destacando-se a ativa\IeC {\c c}\IeC {\~a}o do \ac {LED}\relax }}{77}{figure.caption.117}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Imagem original (frame 1)}}{77}{figure.caption.118}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Resultado obtido (frame 1)}}{77}{figure.caption.118}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Imagem original (frame 2)}}{78}{figure.caption.119}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Resultado obtido (frame 2)}}{78}{figure.caption.119}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Imagem original (frame 3)}}{78}{figure.caption.120}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Resultado obtido (frame 3)}}{78}{figure.caption.120}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Interface para novo registo, destacando o \textit {feedback} dado ao utilizador\relax }}{79}{figure.caption.121}
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Interface para valida\IeC {\c c}\IeC {\~a}o de utilizadores, em \IeC {\'e} vis\IeC {\'\i }vel o \textit {feedback} ap\IeC {\'o}s valida\IeC {\c c}\IeC {\~a}o\relax }}{79}{figure.caption.121}
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Interface para visualizar sensores\relax }}{79}{figure.caption.122}
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Interface para adicionar sensores\relax }}{79}{figure.caption.122}
-\contentsline {figure}{\numberline {6.14}{\ignorespaces Visualiza\IeC {\c c}\IeC {\~a}o dos \textit {Sensor Modules} associado a um \acl {CM} \relax }}{79}{figure.caption.123}
-\contentsline {figure}{\numberline {6.15}{\ignorespaces Interface para adi\IeC {\c c}\IeC {\~a}o de um novo \acl {SM} \relax }}{79}{figure.caption.123}
-\contentsline {figure}{\numberline {6.16}{\ignorespaces Visualiza\IeC {\c c}\IeC {\~a}o de dados destacando a filtragem por data\relax }}{80}{figure.caption.124}
-\contentsline {figure}{\numberline {6.17}{\ignorespaces Visualiza\IeC {\c c}\IeC {\~a}o tabular de dados, destacando a exporta\IeC {\c c}\IeC {\~a}o para \acs {CSV}\relax }}{80}{figure.caption.124}
-\contentsline {figure}{\numberline {6.18}{\ignorespaces Visualiza\IeC {\c c}\IeC {\~a}o gr\IeC {\'a}fica dos dados adquiridos por um sensor de luminosidade durante quatro dias, destacando os valores m\IeC {\'a}ximos, m\IeC {\'\i }nimos e m\IeC {\'e}dios\relax }}{80}{figure.caption.125}
-\contentsline {figure}{\numberline {6.19}{\ignorespaces Processo de atua\IeC {\c c}\IeC {\~a}o remota}}{81}{figure.caption.126}
-\contentsline {figure}{\numberline {6.20}{\ignorespaces Resultado do processo de atua\IeC {\c c}\IeC {\~a}o remota\relax }}{81}{figure.caption.126}
-\contentsline {figure}{\numberline {6.21}{\ignorespaces Interface principal ap\IeC {\'o}s \textit {login} (dashboard)\relax }}{81}{figure.caption.127}
-\contentsline {figure}{\numberline {6.22}{\ignorespaces Sistema de v\IeC {\'\i }deo-vigil\IeC {\^a}ncia incorporado na \textit {dashboard}\relax }}{82}{figure.caption.128}
-\contentsline {figure}{\numberline {6.23}{\ignorespaces Resultado do processo de atua\IeC {\c c}\IeC {\~a}o remota\relax }}{82}{figure.caption.129}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Documenta\IeC {\c c}\IeC {\~a}o da API REST com a ferramenta Swagger\relax }}{76}{figure.caption.114}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Resultado da intera\IeC {\c c}\IeC {\~a}o com a aplica\IeC {\c c}\IeC {\~a}o \textit {Bluetooth Terminal HC-05}\relax }}{77}{figure.caption.115}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces \textit {Breadboard} com liga\IeC {\c c}\IeC {\~a}o dos diferentes componentes, destacando-se a ativa\IeC {\c c}\IeC {\~a}o do \ac {LED}\relax }}{77}{figure.caption.115}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Imagem original (frame 1)}}{77}{figure.caption.116}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Resultado obtido (frame 1)}}{77}{figure.caption.116}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Imagem original (frame 2)}}{78}{figure.caption.117}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Resultado obtido (frame 2)}}{78}{figure.caption.117}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Imagem original (frame 3)}}{78}{figure.caption.118}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Resultado obtido (frame 3)}}{78}{figure.caption.118}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Interface para novo registo, destacando o \textit {feedback} dado ao utilizador\relax }}{79}{figure.caption.119}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Interface para valida\IeC {\c c}\IeC {\~a}o de utilizadores, com \textit {feedback} ap\IeC {\'o}s valida\IeC {\c c}\IeC {\~a}o\relax }}{79}{figure.caption.119}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Interface para visualizar sensores\relax }}{79}{figure.caption.120}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Interface para adicionar sensores\relax }}{79}{figure.caption.120}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Visualiza\IeC {\c c}\IeC {\~a}o dos \textit {Sensor Modules} associado a um \acl {CM} \relax }}{79}{figure.caption.121}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Interface para adi\IeC {\c c}\IeC {\~a}o de um novo \acl {SM} \relax }}{79}{figure.caption.121}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Visualiza\IeC {\c c}\IeC {\~a}o de dados destacando a filtragem por data\relax }}{80}{figure.caption.122}
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Visualiza\IeC {\c c}\IeC {\~a}o tabular de dados, destacando a exporta\IeC {\c c}\IeC {\~a}o para \acs {CSV}\relax }}{80}{figure.caption.122}
+\contentsline {figure}{\numberline {6.18}{\ignorespaces Visualiza\IeC {\c c}\IeC {\~a}o gr\IeC {\'a}fica dos dados adquiridos por um sensor de luminosidade durante quatro dias, destacando os valores m\IeC {\'a}ximos, m\IeC {\'\i }nimos e m\IeC {\'e}dios\relax }}{80}{figure.caption.123}
+\contentsline {figure}{\numberline {6.19}{\ignorespaces Processo de atua\IeC {\c c}\IeC {\~a}o remota}}{81}{figure.caption.124}
+\contentsline {figure}{\numberline {6.20}{\ignorespaces Resultado do processo de atua\IeC {\c c}\IeC {\~a}o remota\relax }}{81}{figure.caption.124}
+\contentsline {figure}{\numberline {6.21}{\ignorespaces Interface principal ap\IeC {\'o}s \textit {login} (dashboard)\relax }}{81}{figure.caption.125}
+\contentsline {figure}{\numberline {6.22}{\ignorespaces Sistema de videovigil\IeC {\^a}ncia incorporado na \textit {dashboard}\relax }}{82}{figure.caption.126}
+\contentsline {figure}{\numberline {6.23}{\ignorespaces Resultado do processo de atua\IeC {\c c}\IeC {\~a}o remota\relax }}{82}{figure.caption.127}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Esquema resumo do trabalho desenvolvido\relax }}{85}{figure.caption.130}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Mockup aplica\IeC {\c c}\IeC {\~a}o mobile\relax }}{97}{figure.caption.133}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Esquema resumo do trabalho desenvolvido\relax }}{85}{figure.caption.128}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {D.1}{\ignorespaces Prot\IeC {\'o}tipo de montagem de componentes eletrot\IeC {\'e}cnicos\relax }}{101}{figure.caption.134}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Mockup aplica\IeC {\c c}\IeC {\~a}o mobile\relax }}{97}{figure.caption.131}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {D.1}{\ignorespaces Prot\IeC {\'o}tipo de montagem de componentes eletrot\IeC {\'e}cnicos\relax }}{101}{figure.caption.132}
