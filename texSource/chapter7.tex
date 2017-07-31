@@ -1,48 +1,63 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{Conclusão e trabalho futuro}
+\chapter{Conclusões e trabalho futuro}
 
 
-\section{Conclusão}
+\section{Conclusões}
 
 
-projeto sem financiamento por nao foram utilizados sensores de salinidade: 
+
+O objetivo deste trabalho era desenhar e desenvolver um sistema de informação que permitisse a recolha de dados provenientes de um sistema de sensores para monitorizar e controlar o cultivo da Salicórnia. O trabalho prático desta dissertação foi elaborado tendo por base este objetivo geral e pode-se afirmar que este foi cumprido com sucesso. Este sistema disponibiliza uma plataforma web que permite aos utilizadores consultar os dados obtidos pelos sensores e atuar remotamente permitindo melhorar as condições de cultivo. Para além disso, é disponibilizada uma \ac{API} que permite o acesso a serviços do sistema, possibilitando a criação de novas aplicações. Para simular este cenário, foi criado um protótipo de \textit{hardware} para testar o quadro pretendido. Adicionalmente, foi criado um sistema de vídeo-vigilância para incorporar nas quintas onde se faz a produção desta planta. Todas estas funcionalidades vão de encontro aos objetivos específicos apresentados na secção \ref{objectivos}, à exceção da incorporação do sistema de vídeo-vigilância com o algoritmo de deteção de intrusos. Contudo, este algoritmo foi apresentado e testado para alguns cenários. 
+
+Toda a modelação do sistema vai de encontro aos requisitos inicialmente especificados pelo cliente, bem como aos definidos durante o desenvolvimento deste trabalho. Desta forma, é permitido que o sistema seja genérico e passível de ser aplicado a qualquer cenário, seguindo a arquitetura definida. Adicionalmente aos objetivos desta dissertação, planeou-se a arquitetura e criou-se um mockup de uma aplicação mobile, estando esta prevista pelos requisitos do cliente. 
 
 
-justificar o falta fazer
-se é estável pode ser usado como porto de partida para 
-
-O que podia ser feito: testes de usabilidade, medir tempos de resposta do web site; 
 
 
+\section{Problemas encontrados}
+
+
+Durante o desenvolvimento e implementação deste sistema surgiram alguns problemas, tanto pontuais e de correção simples, como
+problemas estruturais, que levaram a algumas mudanças. Alguns dos problemas estruturais estão relacionados com o modelo de dados, em que foram adicionados novos campos às tabelas existentes, quer para o suporte de novas funcionalidades, quer para aumentar o comportamento dinâmico do sistema.
+
+Tal como dito anteriormente, não foi possível incorporar o sistema de vídeo-vigilância com o algoritmo de deteção de intrusos, sendo que se pretendia utilizar a \ac{API} do Youtube. Esta utilização não foi possível devido à dificuldade da API e à falta de documentação. 
+
+
+Um outro obstáculo na realização deste trabalho, foi o facto de o projeto não ser financiado por parte do cliente, impossibilitando assim, a compra de um sensor de salinidade, sendo este um dos parâmetros mais importante de monitorizar no controlo do cultivo da Salicórnia. Para além disso, pretendia-se adquirir uma câmara de maior qualidade e outra térmica, permitindo a deteção de intrusos durante a noite. 
+
+
+
+
+%projeto sem financiamento por nao foram utilizados sensores de salinidade: 
+
+
+%justificar o falta fazer se é estável pode ser usado como porto de partida para 
+
+%O que podia ser feito: testes de usabilidade, medir tempos de resposta do web site; \\
 
 
 
 \section{Trabalho futuro}
 
 
-utilizar um sensor de salinidade para o cenário e implementar
 
-geração de alarmes nao ser com base se um determinado valor sai do range mas sim por existir 
-
-fazer soldadura dos componentes 
+Como trabalho futuro, propõe-se realizar alguns testes de usabilidade à aplicação web desenvolvida, permitindo verificar o grau de facilidade/dificuldade deste \textit{software}. 
 
 
 
-teste de usabilidade à interface gráfica e mobile 
 
 
-
-cuidado com os adjectivos na escrita, isto é suposto ser um documento crítico de engenharia, não é para vender um produto\\
-
-
-Que novidades é que trás e que limitações
-
-
-O que fazia de outra forma...?
+registo automatico dos módulo através de QR por exemplo\\
 
 
 
 
 
 
-\section{Considerações finais}
+
+
+
+
+
+
+
+ 

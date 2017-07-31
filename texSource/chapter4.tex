@@ -123,47 +123,10 @@ Um \acl{CM} consiste num micro-controlador responsável pela receção dos dados
 \section{Análise de requisitos}
 \label{sect:analise}
 
-Durante o desenvolvimento de \textit{software} pressupõe-se que os seus intervenientes sigam determinadas metodologias para que o seu sistema possa revolucionar a vida de um grupo em especifico ou até mesmo da sociedade. 
-
-
-O ciclo de vida do desenvolvimento de um software, também conhecido como \ac{SDLC}, é composto genericamente por quatro fases principais: conceção, projeto, criação e implementação. Antes do \ac{SDLC}, o processo de desenvolvimento do \textit{software} foi tomado como atividade informal sem regras nem padrões formais. Este facto poderá originar vários problemas, tais como o atraso no desenvolvimento, aumento de custos e baixa qualidade do \textit{software} criado. Existem inúmeros modelos e visões que propõem alguns padrões e etapas necessárias ao desenvolvimento de um sistema com qualidade.
-Na figura \ref{sdlcartic} encontram-se as várias etapas consideradas por \textit{Munish Kaur et al.}\cite{Saini2014}.
-
-
-
-\newpage
-
-\begin{figure}[!htb]
-	\centering
-	\includegraphics[scale=0.6]{esquemas/desenvolvimentoSW.pdf}
-	\caption[Fase de desenvolvimento de um software ]{Fase de desenvolvimento de um software (Adaptado de \cite{Saini2014})}
-	\label{sdlcartic}
-\end{figure}
-
-
-
-
-\begin{itemize}
-	\item \textbf{Análise de viabilidade}: nesta fase são analisados os dados de entrada e saída, processamento necessário, análise de custos e planeamento do projeto. É ainda incluída a viabilidade técnica em termos de \textit{software}, \textit{hardware} e pessoas qualificadas. 
-	
-	\item \textbf{Análise e especificação de requisitos}: nesta fase são recolhidos e analisados os requisitos necessário para a elaboração do \textit{software}. No final, pretende-se que sejam conhecidos os vários requisitos do \textit{software} e seja também criado um documento que os especifique. 
-	
-	\item  \textbf{\textit{Designing}}: consiste na tradução dos requisitos especificados para uma estrutura lógica. No final prevê-se que seja elaborado um documento de especificação do \textit{design}. 
-	
-	
-	\item  \textbf{\textit{Coding}}: a programação real é elaborada nesta fase. O documento de \textit{design} é traduzido para o código-fonte numa determinada linguagem de forma a que possa ser executado. 
-	
-	\item \textbf{Testes}: o código-fonte gerado na fase anterior é testado usando vários cenários de testes. São usadas várias técnicas de teste para corrigir e avaliar o \textit{software}. 
-	
-	\item  \textbf{Implementação}: o \textit{software} desenvolvido é implementado para que possa ser disponibilizado ao utilizador para uso real. Pretende-se que o utilizado do sistema possa reportar erros ou problemas quando encontrados. 
-	
-	\item  \textbf{Manutenção}: o \textit{software} poderá sofrer alterações para solucionar problemas que tenham ocorrido. Esta fase é responsável pela pós-implementação e manutenção do \textit{software} para o seu bom funcionamento.
-	
-\end{itemize}
 
 %http://www.sersc.org/journals/IJSEIA/vol8_no3_2014/38.pdf
 
-Após o entendimento da descrição geral do sistema bem como todos os componentes envolvidos, segue a fase de efectuar o levantamento dos requisitos do sistema, levando-nos a entender o que o cliente deseja ou acredita precisar possibilitando a criação dos processos de negocio necessários ao sistema. Seguidamente apresentam-se os requisitos funcionais e não funcionais deste sistema. 
+Após o entendimento da descrição geral do sistema bem como todos os componentes envolvidos, segue a fase de efectuar o levantamento dos requisitos do sistema, levando-nos a entender o que o cliente deseja possibilitando a criação dos processos de negocio necessários ao sistema. Seguidamente apresentam-se os requisitos funcionais e não funcionais deste sistema. Relativamente à metodologia apresenta na secção \ref{method}, esta etapa refere-se às duas primeiras fases: Análise da viabilidade e Análise e especificação de requisitos. 
 
 
 \subsection{Requisitos funcionais}
@@ -197,7 +160,7 @@ Os requisitos funcionais descrevem os critérios que devem ser usados para avali
 \end{itemize}
 
 
-De modo a tornar o sistema genérico e \textit{standalone} foram impostos os seguintes requisitos adicionais: 
+De modo a tornar o sistema genérico foram impostos os seguintes requisitos adicionais: 
 
 
 \begin{itemize}
@@ -309,6 +272,7 @@ As entidades envolvidas ou atores são os utilizadores do sistema, podendo ser h
 Nas figuras \ref{usedash} e \ref{useMobile} encontram-se representados os esquemas dos casos de uso da \textit{dashboard} (denominada por \textit{saliDashboard}) e da aplicação \textit{mobile} (denominada por \textit{saliMobile}), respectivamente.
 Seguidamente serão descritos cada um dos casos de uso para as duas plataformas. De notar que todos os casos de uso na aplicação \textit{mobile} também se encontram disponíveis através da \textit{dashboard}. 
 
+\newpage
 
 \begin{figure}[!htb]
 	\centering
@@ -318,7 +282,7 @@ Seguidamente serão descritos cada um dos casos de uso para as duas plataformas.
 \end{figure}
 
 
-\newpage
+
 
 \begin{figure}[!htb]
 	\centering
@@ -330,6 +294,7 @@ Seguidamente serão descritos cada um dos casos de uso para as duas plataformas.
 
 
 
+\newpage
 
 \begin{itemize}
 	\item \textbf{Login no sistema}: qualquer utilizador (general user, company user ou admin) poderá aceder ao sistema tendo para isso que possuir uma conta registada e validada no caso do general user. Após a validação das suas credenciais (username e password) o utilizador poderá aceder à pagina inicial da dashboard e a todo o seu conteúdo. Este caso de uso encontra-se disponível para os dois tipos de plataformas. 
@@ -357,13 +322,9 @@ Seguidamente serão descritos cada um dos casos de uso para as duas plataformas.
 	\item \textbf{Receber notificações (gerar alarmes)}: sempre que um valor lido por um determinado sensor sai fora do limite imposto (valor máximo e valor mínimo) é gerado um alarme para o utilizador de modo a que este possa intervir. Este caso de uso encontra-se disponível para os dois tipos de plataformas. 
 	
 	
-	\item \textbf{Visualizar gráficamente os dados lidos pelos sensores}: 
+	\item \textbf{Visualizar gráficamente os dados lidos pelos sensores}: o utilizador poderá interagir com as duas plataformas a fim de visualizar gráficamente os dados lidos pelos diferentes tipos de sensores existes, tendo a possibilidade de selecionar as datas de inicio e fim da consulta. 
 	
-	
-	Este caso de uso encontra-se disponível para os dois tipos de plataformas. 
-	
-	
-	\item Visualizar tabularmente os dados lidos pelos sensor
+	\item \textbf{Visualizar tabularmente os dados lidos pelos sensor}: analogamente ao caso de uso anterior, o utilizador poderá neste caso visulizar tabularmente os dados obtidos, tendo também a possibilidade de selecionar as datas de início e fim da consulta.  
 	
 	\item \textbf{Exportar dados lidos por um sensor module}: qualquer \textit{general user} ou \textit{company user} poderá exportar os dados lido pelos sensores para um ficheiro do tipo \ac{CSV} para uma data especificada.
 	
@@ -419,7 +380,7 @@ Depois da análise de requisitos desenhou-se um modelo de dados que permitisse m
 \end{figure}
 
 
-Nas tabelas \ref{tabeladb1} e \ref{tabeladb2} são descritos cada uma das entidades de dados existente neste sistema, evidenciando as chaves primárias e estrangeiras de cada uma. 
+Nas tabelas \ref{tabeladb1} e \ref{tabeladb2} são descritas cada uma das entidades de dados existente neste sistema, evidenciando as chaves primárias e estrangeiras de cada uma. 
 
 
 
@@ -439,7 +400,7 @@ Nas tabelas \ref{tabeladb1} e \ref{tabeladb2} são descritos cada uma das entida
 		\textbf{Group} & id (auto-incrementado) & N/A & \begin{tabular}[c]{@{}l@{}}Possui todos os grupos \\ existentes: general user,\\ company user e admin\end{tabular} \\ \hline
 		\textbf{UserGroups} & id (auto-incrementado) & user\_id group\_id & \begin{tabular}[c]{@{}l@{}}Permite associar um \\ utilizador a um\\  determinado grupo\end{tabular} \\ \hline
 		\textbf{Permisson} & id (auto-incrementado) & N/A & \begin{tabular}[c]{@{}l@{}}Possui todas as permissões \\ existentes (escrita, leitura,\\  delete...)\end{tabular} \\ \hline
-		\textbf{GroupPermisson} & id (auto-incrementado) & group\_id permission\_id & \begin{tabular}[c]{@{}l@{}}Associa a cada groupo \\ determinadas permissões\end{tabular} \\ \hline
+		\textbf{GroupPermisson} & id (auto-incrementado) & group\_id permission\_id & \begin{tabular}[c]{@{}l@{}}Associa a cada grupo \\ determinadas permissões\end{tabular} \\ \hline
 		\textbf{UserPerCompany} & id (auto-incrementado) & company\_id general\_user\_id & \begin{tabular}[c]{@{}l@{}}Associa cada general user\\  a um company user\end{tabular} \\ \hline
 		\textbf{CommunicationType} & id (auto-incrementado) & N/A & \begin{tabular}[c]{@{}l@{}}Identifica cada um dos tipos \\ de comunicação inseridos \\ no sistema\end{tabular} \\ \hline
 		\textbf{ControllerModule} & id (auto-incrementado) & N/A & \begin{tabular}[c]{@{}l@{}}Identifica cada um dos \\ controller module \\ inseridos no sistema\end{tabular} \\ \hline
@@ -585,10 +546,10 @@ Tal como vimos na secção do Estado de Arte, a tecnologia para o desenvolviment
 
 
 
-Um dos pontos mais interessantes no Django é sem dúvida a existência de \linebreak \ac{ORM}. Consiste numa técnica de desenvolvimento que permite modelar os dados através de classes em Python. Através dela, é possível gerar tabelas na base de dados e manipulá-las sem a necessidade de interagir diretamente com \ac{SQL} (embora também seja possível). A verificação dos valores lidos pelos sensores e possível geração de alarmes é averiguado por um \textit{trigger} desenvolvido em \ac{SQL}, no capitulo \ref{implementacao} será explicada a sua implementação.  
+Como descrito na secção XX, o Django permite modelar os dados através de classes, possibilitando gerar tabelas na base de dados de uma forma quase direta, sem recorrer ao \ac{SQL}. A verificação dos valores lidos pelos sensores e possível geração de alarmes é averiguado por um \textit{trigger} desenvolvido em \ac{SQL}, no capitulo \ref{implementacao} será explicada a sua implementação.  
 
 
-Relativamente à escolha do \ac{SGBD} recaiu sobre o PostgreSQL, mais concretamente na versão xxx. Como ferramenta gráfica para administração deste \ac{SGBD} foi utilizado o PgAdmin III\footnote{www.pgadmin.org/} na versão 1.22. Este software gráfico tem inúmeras funcionalidades desde a possibilidade de ligação a base de dados remotas até à adição, edição, remoção e  consultas em tabelas. Esta ferramenta é \textit{opensource} e encontra-se disponível para Windows e UNIX. Como vimos no capitulo \ref{state}, este \ac{SGBD} permite uma grande facilidade de incorporação a um projeto em Django. 
+Relativamente à escolha do \ac{SGBD} recaiu sobre o PostgreSQL, mais concretamente na versão 9.3.16. Como ferramenta gráfica para administração deste \ac{SGBD} foi utilizado o PgAdmin III\footnote{www.pgadmin.org/} na versão 1.22. Este software gráfico tem inúmeras funcionalidades desde a possibilidade de ligação a base de dados remotas até à adição, edição, remoção e  consultas em tabelas. Esta ferramenta é \textit{opensource} e encontra-se disponível para Windows e UNIX. Como vimos no capitulo \ref{state}, este \ac{SGBD} permite uma grande facilidade de incorporação a um projeto em Django. 
 
 
 No que diz respeito à camada de apresentação na plataforma web foram utilizadas as seguintes bibliotecas/\textit{frameworks}: 
@@ -610,7 +571,7 @@ No que diz respeito à camada de apresentação na plataforma web foram utilizad
 \subsubsection{\acs{API} \acs{REST}}
 
 
-Os métodos desta \ac{API} permitiram execuções funções do tipo \ac{REST}. A tecnologia \ac{REST} foi apresentada por Roy Fielding na Universidade de Califórnia no ano de 2000, cujo o titulo da sua dissertação era "Architectural Styles and the Design of Network-based Software Architectures". Roy estudou um conjunto de arquiteturas de software que usam a Web como uma plataforma para computação distribuída\cite{Rodriguez2015}. Esta tecnologia define um conjunto de princípios que possibilitam desenhar serviços web com base nos recursos do sistema, considerando a forma com os recursos são coordenados e transferidos através de \ac{HTTP} para vários clientes nas mais diversificadas linguagens. 
+Os métodos desta \ac{API} permitiram execuções funções do tipo \ac{REST}. A tecnologia \ac{REST} foi apresentada por Roy Fielding na Universidade de Califórnia no ano de 2000, cujo o titulo da sua dissertação era "Architectural Styles and the Design of Network-based Software Architectures". Roy estudou um conjunto de arquiteturas de software que usam a Web como uma plataforma para computação distribuída\cite{restpaper}. Esta tecnologia define um conjunto de princípios que possibilitam desenhar serviços web com base nos recursos do sistema, considerando a forma com os recursos são coordenados e transferidos através de \ac{HTTP} para vários clientes nas mais diversificadas linguagens. 
 
 Os métodos da API permitem executar as funções \ac{REST} usando métodos \ac{HTTP} explicitamentee. Assim, torna-se fundamental perceber estes métodos para ter um melhor conhecimento do funcionamento da \ac{API}. Seguidamente são descritos os métodos mais importantes que dão suporte a cada uma das funções \ac{REST}.
 
@@ -703,7 +664,7 @@ Para a geração automática da documentação da API utilizou-se o Swagger. Tal
 
 \subsubsection{Implementação do sistema}
 
-Para implementação do projeto anteriormente descrito e respetiva API, foi-me fornecida uma máquina com um distribuição Linux (Ubuntu 14.04.5) com as seguintes características: 
+Para implementação do projeto anteriormente descrito e respetiva API, tive à disposição uma máquina virtual com uma distribuição Linux (Ubuntu 14.04.5) com as seguintes características: 
 
 \begin{itemize}
 	\item \ac{CPU}: Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz
@@ -712,7 +673,7 @@ Para implementação do projeto anteriormente descrito e respetiva API, foi-me f
 \end{itemize}
 
 
-Para o processo de \textit{deployment} deste projeto optou-se pela utilização do servidor Apache juntamente com o pacote mod\_wsgi\footnote{https://modwsgi.readthedocs.io/en/develop/}. 
+Para o processo de \textit{deployment} do projeto optou-se pela utilização do servidor Apache juntamente com o pacote mod\_wsgi\footnote{https://modwsgi.readthedocs.io/en/develop/}. 
 Este pacote fornece uma \ac{WSGI} compatível para o alojamento de aplicações web em Python sob o servidor \ac{HTTP} Apache. O Apache é um servidor web \textit{opensource} mais utilizado em todo o mundo\cite{TheApacheSoftwareFoundation2016}.
 
 
@@ -745,7 +706,7 @@ Este pacote fornece uma \ac{WSGI} compatível para o alojamento de aplicações 
 \subsubsection{Aplicação mobile}
 
 
-Após a analise de requisitos da aplicação mobile, optou-se por elaborar um protótipo da aplicação mobile antes de proceder à sua real implementação. O \textit{mockup} da aplicação apresenta-se no Apêndice X. 
+Após a analise de requisitos da aplicação mobile, optou-se por elaborar um protótipo da aplicação mobile antes de proceder à sua real implementação. O \textit{mockup} da aplicação apresenta-se no Apêndice \ref{Mockup}. 
 
 \begin{figure}[h]
 	\centering
@@ -755,20 +716,7 @@ Após a analise de requisitos da aplicação mobile, optou-se por elaborar um pr
 \end{figure}
 
 
-Tal como descrito no capitulo \ref{state}, para o desenvolvimento do aplicativo mobile optou-se pela utilização de um paradigma multi-plataforma, mais concretamente a \textit{framework} Phonegap. Esta framework utilizada a tecnologia Cordova da Apache que permite a integração com recursos nativos dos dispositivos. Através dela, é possivel desenvolver aplicações móveis utilizando simplesmente \ac{HTML}, \ac{CSS} e \ac{JS} sem a necessidade de depender de APIs específicas. De modo a facilitar a manipulação do \ac{JS} optou-se por utilizar a \textit{framework} AngularJS. Esta framework \textit{opensource} mantida pela google desde 20XX 
-
-
-
-VAMOS USAR ANGULAR 2
-
-
-
-
-Consumir a API REST 
-
-Consumir a API REST 
-Consumir a API REST 
-
+Tal como descrito no capítulo \ref{state} (Estado da Arte), para o desenvolvimento da plataforma mobile optou-se pela utilização de um paradigma multi-plataforma, mais concretamente a \textit{framework} Phonegap. Esta framework utilizada a tecnologia Cordova da Apache que permite a integração com recursos nativos dos dispositivos. Através dela, é possivel desenvolver aplicações móveis utilizando simplesmente \ac{HTML}, \ac{CSS} e \ac{JS} sem a necessidade de depender de APIs específicas. De modo a facilitar a manipulação do \ac{JS} optou-se por utilizar a \textit{framework} AngularJS. Esta biblioteca \textit{open source} mantida pela Google desde 2010, permite abstrair a manipulação do \ac{DOM} e segue uma arquitetura \ac{MVC}\cite{Google2015}. 
 
 
 
@@ -942,7 +890,7 @@ Para a simulação de uma válvula que permitirá as transferência de água doc
 
 Nesta secção, apresentam-se os tipos de comunicação para o cenário escolhido. Pretendia-se que cada um dos módulo fique isolado, o que implicou o estudo e respetiva escolha de algumas tecnologias de comunicações sem fios (secção \ref{state-tecc} do capítulo \ref{state}). 
 
-De acordo com o verificado na tabela \ref{com-tecn}, o Zigbee e o Sigfox apresentam características que melhor se adaptam ao conceito de \ac{IoT}. No entanto, para o contexto deste trabalho, privilegia-se o alcance das tecnologias Bluetooth e Wifi dado que, pretende-se tirar partido desta característica e distribuir os  \textit{Sensor Modules} pela máxima distancia possivel. Para além disso, estas eram as duas únicas tecnologias disponíveis no laboratório.
+De acordo com o verificado na tabela \ref{com-tecn}, o Zigbee e o Sigfox apresentam características que melhor se adaptam ao universo do \ac{IoT}. No entanto, para o contexto deste trabalho, privilegia-se o alcance das tecnologias Bluetooth e Wifi dado que, pretende-se tirar partido desta característica e distribuir os  \textit{Sensor Modules} pela máxima distância possivel. Para além disso, estas eram as duas únicas tecnologias disponíveis no laboratório.
 
 \begin{itemize}
 	\item \textbf{Bluetooth}: utilizado para a comunicação entre o Arduino Nano e o Raspberry Pi 3. No Arduino, foi utilizado um módulo Bluetooth HC-06 e no caso do Raspberry Pi 3 foi utilizado o seu módulo interno (versão 4.1). 
@@ -1089,27 +1037,12 @@ Desde logo, a escolha da tecnologia para processamento de imagem recaiu sobre o 
 Inicialmente, após incorporar o \textit{Raspberry Pi camera module} no Raspberry Pi 3 através do \ac{CSI} (imagem X da secção XX), testou-se a captura de vídeo através do raspivid. Esta ferramenta de linha de comando, permite testar o funcionamento do módulo, e para além disso, definir em que formato será guardado o vídeo adquirido, bem como o seu comprimento e dimensões\cite{raspivid}. 
 
 
-Posteriormente, procedeu-se ao envio da imagem capturada, sem qualquer processamento, para o Youtube Live através da ferramenta FFMpeg. O Youtube Live permite que qualquer utilizador possa realizar \textit{streaming} de vídeo, 
-possibilitando escolher entre dois modos: alta latência e baixa latência, isto é, boa ou má qualidade. O Youtube Live utiliza o protocolo \ac{RTMP}, sendo este um servidor 
+Posteriormente, procedeu-se ao envio da imagem capturada, sem qualquer processamento, para o Youtube Live através da ferramenta FFMpeg. O Youtube Live permite que qualquer utilizador possa realizar \textit{streaming} de vídeo, possibilitando escolher entre dois modos: alta latência e baixa latência, isto é, boa ou má qualidade. Uma das grandes vantagens desta ferramenta é manter a stream transmitida permitindo consultá-la no momento desejado. O Youtube Live utiliza o protocolo \ac{RTMP}, pertencente à camada protocolar TCP/IP, mantendo uma conexão persistente com um servidor que permite a comunicação em tempo real de vídeo ou áudio. Por outro lado, o FFMpeg é uma ferramenta líder, capaz de codificar ou descodificar qualquer tipo de conteúdo, possibilitando a criação ou conversão de \textit{stream} de vídeo/áudio em qualquer formato. É uma ferramenta \textit{open-source} sendo que a sua interação é concretizada através de linha de comandos\cite{FFmpeg2015}. 
 
 
 
 
-
-
-Numa primeira fase, pretendeu-se adquirir a imagem proveniente da câmara e proceder à stream de video para o Youtube Live, através da ferramenta FFmpeg, sem qualquer processamento.  
-
-Youtube Live .....
-
-
-FFmpeg .... 
-
-
-Posteriormente, foram estudados alguns algoritmos de deteção de intrusos disponibilizados pelo OpenCV, que serão abordados no próximo capitulo. 
-
-
-
-
+Na figura \ref{arquiteturavisao} encontra-se a arquitetura do sistema de vídeo-vigilância anteriormente descrito. No próximo capitulo será apresentado o algoritmo de deteção de intrusos disponibilizado pela ferramenta OpenCV. 
 
 
 
@@ -1137,10 +1070,17 @@ Posteriormente, foram estudados alguns algoritmos de deteção de intrusos dispo
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newpage
+
+
 \section{Diagrama de componentes}
 
-Para o cenário de simulação em \textit{hardware} e respetivo sistema de informação, em que se inclui a \textit{dashboard}, a \ac{API}, aplicação mobile e sistema de deteção de intrusos, obtive o seguinte diagrama de componentes com as respetivas tecnologias utilizadas. 
+Para o cenário de simulação em \textit{hardware} e respetivo sistema de informação, em que se inclui a \textit{dashboard}, a \ac{API}, aplicação mobile e sistema de vídeo-vigilância, obteve-se o seguinte diagrama de componentes (figura \ref{componentesall}) com as respetivas tecnologias utilizadas. 
+
+No que toca à comunicação entre os diferentes componentes, esta baseia-se essencialmente na API REST que foi criada, embora no caso do sistema de video vigilância seja utilizado um serviço externo (Youtube Live). Por fim, a comunicação entre \acl{CM} e o \acl{SM} no cenário de simulação é usado Bluetooth. 
+
+
+
+\newpage
 
 \begin{figure}[!htb]
 	\centering
@@ -1155,16 +1095,14 @@ Para o cenário de simulação em \textit{hardware} e respetivo sistema de infor
 
 
 
-
-\newpage
-
-
-
-
-
-
-
-
 \section{Considerações finais}
+
+
+Neste capítulo é projetada toda a arquitetura do sistema, tendo por base os requisitos do cliente e respetiva modelação. Para além disso, a arquitetura anteriormente apresenta foi concebida tendo como garantia que poderia ser adaptada a quaisquer outros cenários distintos do apresentado. Esta arquitetura é apoiada através da exposição de diagramas de arquitetura, casos de uso e modelo de dados. 
+
+
+
+
+
 
 

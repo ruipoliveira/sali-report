@@ -12,7 +12,7 @@ Neste capítulo, são apresentados os resultados da pesquisa bibliográfica sobr
 \section{Conceitos tecnológicos}
 
 
-Nesta secção são apresentados alguns conceitos tecnologias utilizados em toda a dissertação. Com o objetivo de não os repetir, estes serão descritos apenas aqui. 
+Nesta secção são apresentados alguns conceitos tecnológicos utilizados em toda a dissertação. Com o objetivo de não os repetir, estes serão descritos apenas de seguida. 
 
 \begin{itemize}
 	\item \ac{HTML}: consiste numa linguagem de marcação que permite estruturar uma página web. 
@@ -139,9 +139,9 @@ A tabela \ref{comp-sqgbdcar} permite comparar algumas das características dos \
 No que toca ao desenvolvimento web do sistema, permitindo que este seja adaptado ao cliente/empresa conforme as suas necessidades, poderão ser adotadas duas estratégias distintas: 
 
 \begin{itemize}
-	\item Por manipulação local utilizando \ac{JS} que interage com o \ac{DOM}. Exemplo de \textit{frameworks}: Angular.JS, Angular 2, React.JS, Vue.JS
+	\item Por manipulação local utilizando \ac{JS} que interage com o \ac{DOM}. Exemplo de \textit{frameworks}: Angular.JS, Angular 2, React.JS, Vue.JS; 
 	
-	\item Por acesso ao servidor que servirá conteúdos criados em função dos pedidos do cliente. Exemplo de \textit{frameworks}: ASP.net, Django, Flask, Play, Spring
+	\item Por acesso ao servidor que servirá conteúdos criados em função dos pedidos do cliente. Exemplo de \textit{frameworks}: ASP.net, Django, Flask, Play, Spring. 
 	
 \end{itemize}
 
@@ -160,17 +160,17 @@ ASP.net é uma tecnologia de \textit{scripting} que corre do lado do servidor, p
 \subsection{Flask}
 
 
-O Flask consiste numa micro-framework desenvolvida em Python baseado nas bibliotecas \ac{WSGI} Werkzeug e Jinja2\footnote{\url{http://jinja.pocoo.org/}}. Esta framework disponibiliza um  modelo simples para desenvolvimento web, um vez que permite economizar bastante tempo na sua conceção. De seguida, são apresentadas algumas das suas principais características\cite{Flask2014}. 
+O Flask consiste numa micro-framework desenvolvida em Python baseado nas bibliotecas \ac{WSGI} Werkzeug e Jinja2\footnote{\url{http://jinja.pocoo.org/}}. Esta framework disponibiliza um  modelo simples para desenvolvimento web, um vez que permite economizar bastante tempo na sua conceção. O Pinterest e LinkedIn são exemplos de aplicações que utilizam esta micro-framwork. De seguida, são apresentadas algumas das suas principais características\cite{Flask2014}. 
 
 
 \begin{itemize}
-	\item Possui um servidor para desenvolvimento e \textit{degub}
-	\item Suporta testes unitários nativamente 
-	\item Usa modelos da biblioteca Jinja2
-	\item Suporta \textit{cookies} seguros (sessões do lado do cliente)
-	\item Compatível com a primeira versão do \ac{WSGI}
-	\item Baseado em unicode
-	\item Extensa documentação 
+	\item Possui um servidor para desenvolvimento e \textit{degub}; 
+	\item Suporta testes unitários nativamente; 
+	\item Usa modelos da biblioteca Jinja2; 
+	\item Suporta \textit{cookies} seguros (sessões do lado do cliente); 
+	\item Compatível com a primeira versão do \ac{WSGI}; 
+	\item Baseado em unicode; 
+	\item Possui uma extensa documentação.
 \end{itemize}
 
 
@@ -179,7 +179,7 @@ O Flask consiste numa micro-framework desenvolvida em Python baseado nas bibliot
 \subsection{Django}
 
 
-A framework Django consiste numa ferramenta de desenvolvimento web de alto nível desenvolvida na linguagem Python, possuindo uma arquitetura \ac{MVC}\cite{Deacon2005}, embora com algumas diferenças em relação a esta. No modelo \ac{MVC}, a componente \textit{Model} diz respeito à camada de acesso a dados, a \textit{View} à parte do sistema responsável pela escolha e apresentação da informação e o \textit{Controller} está encarregue de decidir que \textit{views} escolher. Os criadores do Django consideram a sua arquitetura com sendo \ac{MTV}\cite{Index}. 
+A framework Django consiste numa ferramenta de desenvolvimento web de alto nível desenvolvida na linguagem Python, possuindo uma arquitetura \ac{MVC}\cite{Deacon2005}, embora com algumas diferenças em relação a esta. No modelo \ac{MVC}, a componente \textit{Model} diz respeito à camada de acesso a dados, a \textit{View} à parte do sistema responsável pela escolha e apresentação da informação e o \textit{Controller} está encarregue de decidir que \textit{views} escolher (figura \ref{mvcdiag}). Os criadores do Django consideram a sua arquitetura com sendo \ac{MTV}\cite{Index}. 
 
 \begin{itemize}
 	\item \textit{Model}: é responsável por manipular, valiar, aceder e relacionar os dados. É considerada a fonte única e definitiva de informação (dados), possuindo os campos essenciais e os comportamentos sobre estes. Geralmente, cada \textit{Model} mapeia uma única tabela na base de dados. 
@@ -187,23 +187,29 @@ A framework Django consiste numa ferramenta de desenvolvimento web de alto níve
 	
 	\item \textit{Template}: é responsável pela apresentação dos dados. 
 
-	\item \textit{View}: é responsável pela lógica de negócio e respetiva manipulação, acedendo ao Model e encaminhando o pretendido para o Template. 
+	\item \textit{View}: é responsável pela lógica de negócio e respetiva manipulação, acedendo aos \textit{Models} e encaminhando o pretendido para os \textit{Templates}. 
 	
 \end{itemize}
 
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.7]{esquemas/MVC-diagram.pdf}
+	\caption[]{Modelo \ac{MVC} (Adaptado de \cite{Sugrue2013})}
+	\label{mvcdiag}
+\end{figure}
 
 
-De acordo com as descrições dos autores, esta ferramenta possui as seguintes vantagens\cite{Index}: 
+Um dos pontos mais interessantes no Django é sem dúvida a existência de \linebreak \ac{ORM}. Consiste numa técnica de desenvolvimento que permite modelar os dados através de classes em Python. Através dela, é possível gerar tabelas na base de dados e manipulá-las sem a necessidade de interagir diretamente com \ac{SQL} (embora também seja possível).
+
+De acordo com as descrições dos autores, esta ferramenta possui várias vantagens, entre as quais destaco, uma boa documentação, facilidade, rapidez no desenvolvimento e respetivo \textit{deployment}. Para além disso, é bastante estável e escalável\cite{Index}. 
 
 
-\begin{itemize}
-	\item Boa documentação;
-	\item Facilidade e rapidez de desenvolvimento e \textit{deployment};
-	\item Escalabilidade;
-	\item Estabilidade.
 
-\end{itemize}
 
+
+
+
+%aos programadores, permitindo a utilização de boas práticas de desenvolvimento de serviços REST, aproveitando todas as vantagens da plataforma Django, nomeadamente o ORM definido pela própria plataforma, autenticação, gestão de base de dados, de rotas, entre outras.
 
 
 
@@ -342,46 +348,31 @@ Para atingir este objetivo, existem atualmente algumas arquiteturas bastante pop
 
 
 \begin{itemize}
-	\item \ac{SOAP}: consiste num protocolo aplicado a ambientes distribuídos e descentralizado. 
-	
-	formato standard formato obrigado XML
+	\item \textbf{\ac{SOAP}}: consiste num protocolo aplicado a ambientes distribuídos e descentralizado, isto é, permite que dois processos possam comunicar estando a ser executados em máquinas ou redes diferentes\cite{Kang2015}. A comunicação entre os diferentes componentes é realizada com base em mensagens \ac{XML} (formato standard), enviadas entre os intervenientes através \ac{HTTP}.
 	
 	
-	\item \ac{REST}: ...
-	
-	possibilidade de definir o formato das
-	mensagens a trocar, sendo normalmente utilizados os formatos JSON ou XML
+	\item \textbf{\ac{REST}}: é considerada uma alternativa à arquitetura \ac{SOAP}, sendo menos formal relativamente a esta. Usa o protocolo \ac{HTTP} como modo de funcionamento, tendo a possibilidade de definir o formato das mensagens a trocar, sendo normalmente utilizados os formatos \ac{JSON} ou \ac{XML}. Tem como grande vantagem a facilidade de implementação, escalabilidade, maior performance na execução e sem complexidade dos \textit{web-services} tradicionais \ac{restpaper}. 
 	
 	
 \end{itemize}
 
-Dada as vantagens enumeradas relativamente à tecnologia \ac{REST}, optou-se por a utilizar. Seguidamente serão apresentadas algumas frameworks bastante populares no desenvolvimento de APIs REST e a sua respetiva comparação. 
+Dada as vantagens enumeradas relativamente à tecnologia \ac{REST}, optou-se por a utilizar. Seguidamente serão apresentadas algumas \textit{frameworks} bastante populares no desenvolvimento de APIs \ac{REST} e a sua respetiva comparação. 
 
 
 
 \subsection{Django Rest Framework}
 
 
-O Django REST Framework é considerado pelos seus autores uma ferramenta poderosa e flexível para a construção de APIs Web \cite{restdjango},
+O Django REST Framework é considerado pelos seus autores uma ferramenta poderosa e flexível para a construção de APIs Web\cite{restdjango}, sendo de fácil incorporação quando estamos perante um projeto desenvolvido com a framework Django. Esta ferramenta disponibiliza um conjunto de funcionalidade que permite estender as suas características de uma forma simples e intuitiva, tais como paginação de conteúdos e utilização de filtros, escolha dos formatos de dados, entre outras.
+
+
+Uma das vantagens desta framework é a capacidade de construção do serviço através de vistas baseadas em classes, permitindo de um modo quase automático fazer a construção da API através dos modelos disponíveis, não sendo necessário para implementar a lógica de cada um dos \textit{endpoints}\footnote{Endereço ou ponto de conexão a um serviço web} disponibilizados, existindo a possibilidade de personalizar a lógica de negócio das rotas. Além do mais, esta \textit{framework} disponibiliza uma extensa documentação bem detalhada e explicativa, possuindo ainda uma grande comunidade que a apoia. 
 
 
 
- que pode ser usada juntamente com a framework de desenvolvimento de aplicações Web Django, que quando integrada no desenvolvimento de um determinado \textit{backend} permite a implementação de serviços do tipo REST.
 
 
 
-A API navegável Web é uma vitória usabilidade enorme para os desenvolvedores.
-
-Políticas de autenticação , incluindo pacotes para OAuth1a e OAuth2 .
-
-Serialização que suporta tanto ORM e não ORM fontes de dados.
-
-Customizável todo o caminho - basta usar vistas regulares baseadas na função , se você não  precisar dos mais poderosos recursos .
-
-Extensa documentação , e grande apoio da comunidade .
-
-Utilizado e confiável por empresas internacionalmente reconhecidas, incluindo Mozilla , 
-Red Hat , Heroku , e Eventbrite .
 
 
 
@@ -390,21 +381,30 @@ Red Hat , Heroku , e Eventbrite .
 
 \subsection{Restlet}
 
+O Restlet consiste numa framework de desenvolvimento \ac{REST} \textit{open source} para a linguagem Java, disponível para a implementação de servidores como de clientes, através da mesma \ac{API}, reduzindo assim a curva de aprendizagem dos diferentes componentes do sistema. 
+
+Esta solução possui um mecanismo de extensões que permite incluir bibliotecas de Java externa com o objetivo de suportar propriedades das bases de dados, templates, segurança , e até outros tipos de serialização de conteúdos. Esta framework tem suporte para autenticação através de diversos métodos como autenticação básica \ac{HTTP}, Amazon S3, OAuth2.0.
+
+ 
+
+
+
 
 
 \subsection{Flask-RESTful}
 
-
-é mais simples e minimalista, permitindo desenvolver serviços REST de
-uma forma rápida e leve, possuindo apenas as funcionalidades mais básicas necessárias para o
-desenvolvimento deste tipo de serviços.
+O Flask-RESTful é uma extensão para \textit{microframework} Flask. É considerada simples e de fácil utilização, permitindo o desenvolvimento de serviços de forma rápida e leve através da linguagem Python. É ideal para o desenvolvimento de serviços simples e extensíveis, sem necessidade de configurações acrescidas de \ac{ORM}, administração,  autenticação, entre outros\cite{Flask-RESTful2017}.  Adicionalmente, esta extensão permite abstrair as tarefas relativas ao protocolo \ac{HTTP}. No entanto, o seu desenvolvimento é independente da lógica de negócio do serviço, possibilitando ao seu criador a liberdade de implementar o serviço tendo em conta as suas preferências e necessidades.  
 
 
 
 
 \subsection{Conclusões e solução adotada}
 
-\ac{HATEOAS}
+
+
+
+
+
 
 \begin{table}[h]
 	\centering
@@ -424,16 +424,10 @@ desenvolvimento deste tipo de serviços.
 		\label{comp-rest}
 \end{table}
 
-
-Django REST Framework é aquela que
-apresenta um grau de maturidade maior, apresentando um grande conjunto de funcionalidades
-aos programadores, permitindo a utilização de boas práticas de desenvolvimento de serviços
-REST, aproveitando todas as vantagens da plataforma Django, nomeadamente o ORM definido
-pela própria plataforma, autenticação, gestão de base de dados, de rotas, entre outras.
+Existem enumeras características que potenciam cada uma das ferramentas/frameworks enumeradas anteriormente, entre as quais destaco a \ac{HATEOAS}. Esta característica termina se a API é  navegável, isto é, a partir de um determinado recurso é possivel descobrir quais os recursos associados e respectiva informação dos mesmos. Na tabela \ref{comp-rest} apresenta-se uma comparação entre as ferramentas/frameworks discutidas anteriormente. 
 
 
-
-com autenticação via token 
+O Django REST Framework é a solução que apresenta uma maior maturidade, disponibilizando um conjunto de funções aos programadores, possibilitando boas práticas de desenvolvimento \ac{REST}, aproveitando as vantagens da \textit{framework} Django enumeradas anteriormente (secção XX). Para além disso, permite a autenticação da API, ou seja apenas os utilizadores devidamente autorizados têm acesso a esta.   
 
 
 
@@ -441,15 +435,8 @@ com autenticação via token
 
 
 
-app mobile
-microcontroladores -> controller modulers 
 
 
-documentação com swager 
-
-
-
-\newpage
 \section{Microcontroladores}
 
 
@@ -466,7 +453,7 @@ Como descrito no site oficial, um Arduino consiste numa plataforma \textit{open-
 O Arduino Nano possui um conjunto de pinos que podem ser programados para funcionarem como entradas ou saídas fazendo com que este  microcontrolador interaja com o exterior para os mais diversos fins. Para além dos pinos de \ac{I/O} existem pinos de alimentação que fornecem diversos valores de tensão que podem ser utilizados para transmitir energia elétrica aos diferentes componentes de um projeto\cite{Banzi2012}. Nas figuras \ref{ard2} e \ref{ard1} apresenta-se o Arduino utilizado e a identificação dos diferentes pinos existentes, respectivamente. Adicionalmente, na tabela \ref{caraarduino} encontram-se as principais características desta versão do Arduino.
 
 
-
+\newpage
 \begin{figure}[h]
 	\centering
 	\begin{minipage}[b]{0.49\textwidth}
@@ -487,8 +474,6 @@ O Arduino Nano possui um conjunto de pinos que podem ser programados para funcio
 
 
 
-
-\newpage
 
 \begin{table}[h]
 	\centering
@@ -545,7 +530,7 @@ Um Raspberry Pi (figura \ref{rasp1}) é mais poderoso do que outros dispositivos
 \end{figure}
 
 
-\newpage
+
 
 \begin{table}[h]
 	\centering
@@ -660,7 +645,7 @@ Um exemplo disso, é o sensor SAL-BTA da Vernier\cite{sall} que permite medir de
 
 \section{Tecnologias de comunicação}
 \label{state-tecc}
-Nesta secção serão apresentadas algumas das tecnologias de comunicação sem fios mais utilizados em \textit{Internet of Things} que permitem a troca de informação entre dispositivos. Serão abordados quatro tecnologias bastante populares comunicação: Zigbee, Bluetooth, Wi-Fi e SigFox. Por fim, é realizada uma comparação entre as tecnologias estudadas. 
+Nesta secção serão apresentadas algumas das tecnologias de comunicação sem fios mais utilizados em \textit{Internet of Things} que permitem a troca de informação entre dispositivos. Serão abordados quatro tecnologias bastante populares atualmente: Zigbee, Bluetooth, Wi-Fi e SigFox. Por fim, é realizada uma comparação entre as tecnologias estudadas. 
 
 
 
@@ -751,8 +736,6 @@ De acordo com os dados apresentados na tabela, concluímos que o Zigbee e o Sigf
 
 
 
-
-\newpage
 %\section{Aplicações relacionadas}
 
 

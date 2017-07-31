@@ -9,9 +9,9 @@
 
 
 
-Neste capítulo, são explicados os detalhes da implementação deste projeto, incluindo especificamente o projeto Django que inclui o sistema de informação com a aplicação web (frontend/backend) e API REST e também a aplicação mobile em Phonegap. Para além disso, é descrita a implementação da simulação em \textit{hardware} para o cenário descrito no capítulo anterior bem como o sistema de deteção de intrusos. 
+Neste capítulo, são explicados os detalhes da implementação deste projeto, incluindo especificamente o projeto Django que inclui o sistema de informação com a aplicação web (\textit{frontend}/\textit{backend}) e API REST. Para além disso, é descrita a implementação da simulação em \textit{hardware} para o cenário descrito no capítulo anterior bem como o sistema de video-vigilância para deteção de intrusos. 
 
-Segundo o ciclo de vida de um software, estabelecido por \textit{Munish Kaur et al.}\cite{Saini2014} que analisámos na secção X.X, este capitulo irá incluir, em parte, a fase de \textit{designing} mas sobretudo a fase de \textit{coding}. 
+Segundo o ciclo de vida de um software, estabelecido por \textit{Munish Kaur et al.}\cite{Saini2014} que analisámos na secção \ref{method}, este capítulo irá incluir, em parte, a fase de \textit{designing} mas sobretudo a fase de \textit{coding}. 
 
 
 
@@ -105,17 +105,17 @@ A geração de alarmes é condicionada pela comparação do valor lido pelos sen
 
 
 
-Seguidamente são apresentadas algumas alternativas à implementação apresentada, pretendendo que estas sejam mais eficientes e igualmente competitivas às apresentadas pelas soluções apresentadas em XX. 
-
-\begin{itemize}
-	\item Análise do valor médio de cinco medições e respetivo desvio padrão 
-	\item Análise dos dados, também conhecida por data analist......... falta desenvolver data mining  
-\end{itemize}
+%\begin{itemize}
+%	\item Análise do valor médio de cinco medições e respetivo desvio padrão 
+%	\item Análise dos dados, também conhecida por data analist......... falta desenvolver data mining  
+%\end{itemize}
 
 
 O utilizador através da \textit{dashboard} e da aplicação \textit{mobile} poderá analisar os alarmes gerados bem como se o valor lido excede ou não atingiu o valor pretendido. Para além disso, é apresentada a mensagem pré-definida para que o utilizador possa tomar uma decisão.   
 
 
+
+\newpage
 \subsection{Visualização dos dados e cálculos estatísticos}
 
 O cliente do sistema ao aceder à \textit{dashboard} e pretender visualizar os detalhes de um determinado \acl{CM} ser-lhe-á apresentada uma lista de todos os \textit{Sensor Modules} que este possui. Juntamente com esta lista são apresentadas as caraterísticas principais de cada um, destacando os sensores existentes, o intervalo de tempo em que são enviadas dados, percentagem de bateria, coordenadas da localização do módulo e tipos de comunicação com o \acl{CM}. Complementarmente são apresentados quatro botões com icons sugestivos que permite realizar tarefas distintas.  
@@ -136,6 +136,7 @@ No que toca à visualização gráfica toda a representação foi concebida reco
 
 Por fim, relativamente à visualização tabular os dados são apresentados em três campos distintas que representam o tipo de sensor, data e hora da leitura, valor lido e a escala. A tabela contém paginação sendo que é possível escolher o número de entradas que serão apresentadas (10, 25, 50 ou 100). Complementarmente, existe uma caixa de texto que permite ao cliente pesquisar pelos campos apresentados, para além disso é possível ordenar alfabeticamente ou numericamente esses. O cliente também poderá exportar os dados apresentados num ficheiro do tipo \ac{CSV} com a estrutura apresentada na tabela \ref{exportcsv}. Para a implementação desta funcionalidade foram utilizados os métodos \texttt{writer} e \texttt{writerow()} disponíveis no pacote csv do Python.  
 
+\newpage
 
 \begin{table}[h]
 	\centering
@@ -229,11 +230,11 @@ No anexo \ref{espcifAPIREST} encontram-se as especificações de cada \textit{en
 
 Para a utilização da documentação interativa da API REST foi utilizada a ferramenta Swagger. Para a sua utilização é necessário incluir a aplicação \texttt{'rest\_framework\_swagger'} no ficheiro \texttt{settings.py} do Django e seguindamente definir o \ac{URL} que lhe permitirá o acesso. Na figura \ref{docapi} encontra-se um exemplo ao consultar a documentação desta API. 
 
-\newpage
+
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\linewidth]{prints-web/api-doc.png}
+	\includegraphics[width=0.64\linewidth]{prints-web/api-doc.png}
 	\caption{Documentação da API REST com a ferramenta Swagger}
 	\label{docapi}
 \end{figure}
@@ -416,18 +417,16 @@ Para implementar o projeto Django juntamente com um servidor web Apache 2.0 num 
 
 
 
-\subsection{Aplicação mobile}
-
-
-
-
-\subsection{Considerações finais}
+%\subsection{Aplicação mobile}
 
 
 
 
 
-\newpage
+
+
+
+
 \section{Simulação em \textit{hardware}}
 
 Nesta secção explica-se a implementação a nível de \textit{software} no contexto desta simulação para cada um dos microcontroladores. 
@@ -511,22 +510,14 @@ Nesta simulação, o \acl{CM} recebe apenas os dados adquiridos por um \acl{SM},
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.6\linewidth]{esquemas/threads-python-script.pdf}
-	\caption{Threads e ddd... implementacao }
+	\includegraphics[width=0.67\linewidth]{esquemas/threads-python-script.pdf}
+	\caption{Implementação do script para o \ac{CM} }
 	\label{threadscript}
 \end{figure}
 
 
 
 
-
-\subsection{Considerações finais}
-
-
-Simulou-se o sistema recorrendo a \textit{hardware} disponível em laboratório, tanto a nível de microcontroladores, sensores ou módulos de comunicação. No entanto, não houve oportunidade de testar nenhum sensor de salinidade apesar de ser bastante importante no contexto do projeto, uma vez que é um dos parâmetros principais necessários de monitorização no cultivo da Salicórnia.
-
-
-Numa primeira fase, toda a comunicação foi realizada recorrendo ao método mais simples, por porta série. Todos os dados recebidos eram enviados para o servidor através da API criada para o efeito. Posteriormente, optou-se por isolar os módulos sem necessidade de cabos, utilizando para isso um módulo Bluetooth. 
 
 
 
@@ -550,36 +541,62 @@ Numa primeira fase, toda a comunicação foi realizada recorrendo ao método mai
 
 
 
-\newpage
-\section{Sistema de vídeo-vigilância }
+\section{Sistema de vídeo-vigilância}
 
 
+Tal como descrito na secção XX do capitulo X, foram utilizadas as ferramentas ffmpeg e raspivid para envio de vídeo sem qualquer tipo de processamento para o servidor \ac{RTMP} do Youtube. Para tal, foi executado o seguinte comando no terminal do Raspberry Pi 3, sendo possível observar o resultado na conta do Youtube.
 
 
-Tal como referido anteriormente, para o 
+\begin{lstlisting}[
+language=Python,
+showspaces=false,
+basicstyle=\ttfamily,
+numbers=left,
+numberstyle=\tiny,
+commentstyle=\color{gray},
+basicstyle=\ttfamily\footnotesize]
+raspivid -o - -t 0 -vf -hf -fps 30 -b 6000000 | ffmpeg -re -ar 44100 -ac 2 -acodec pcm_s16le -f s16le -ac 2 -i /dev/zero -f h264 -i - -vcodec copy -acodec aac -ab 128k -g 50 -strict experimental -f flv rtmp://a.rtmp.youtube.com/live2/ux4a-v8x7-3yws-635b
 
-
-
-raspivid
-
-
-
-Foi feito video stream com ffmpeg para o youtube 
-
-
-
-
-
-Para testar o algoritmo de opencv que a seguir se apresenta foi utilizado o
-
-............
+\end{lstlisting}
 
 
 
 
 
-No que toca ao desenvolvimento do sistema de deteção de intrusos, optou-se por utilizar o package \texttt{picamera}\footnote{http://picamera.readthedocs.io/en/release-1.13/} para aquisição da imagem proveniente do Raspberry Pi. Este pacote, fornece  uma interface em Python (disponível para qualquer versão) para o módulo de câmara Raspberry Pi, permitindo uma fácil interação entre a aquisição da imagem e respetivo processamento. Neste contexto optou-se obviamente por utilizar a interface Python da biblioteca do OpenCV.
 
+Seguidamente, são descritos alguns dos parâmetros mais importantes presentes no comando anterior\cite{streamlive}. 
+
+\begin{itemize}
+	\item \texttt{-o -}: grava o vídeo para que possa ser utilizado pelo ffmpeg 
+	
+	\item \texttt{-t 0}: grava e transmite o vídeo até que seja parado manualmente; 
+	
+	\item \texttt{-vf -hf}: inverte a imagem (horizontal/vertical) para permitir uma correta visualização. 
+	
+	\item \texttt{-fps 30 }: define o numero de frames por segundo, neste caso 30. 
+	
+	\item \texttt{-ar 44100 -ac 2 -acodec pcm\_s16le -f s16le -ac 2 -i /dev/zero}: adiciona um canal de áudio preenchido a zeros, uma vez que o YouTube rejeita fluxos sem um canal de áudio.
+	
+	\item \texttt{-f h264}: diz ao ffmpeg que irá receber entrada h264 ( padrão para compressão de vídeo) 
+	
+\end{itemize}
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\linewidth]{prints-web/api-doc.png}
+	\caption{Resultado no Youtube Live ao executar as ferramentas raspivid  e ffmpeg }
+	\label{docapi}
+\end{figure}
+
+
+
+
+Para além do descrito anteriormente, foi criado um \textit{script} em python que permite a aquisição de imagem proveniente do Raspberry Pi através do package \texttt{picamera}\footnote{http://picamera.readthedocs.io/en/release-1.13/}. Este pacote, fornece  uma interface em Python (disponível para qualquer versão) para o módulo de câmara Raspberry Pi, permitindo uma fácil interação entre a aquisição da imagem e respetivo processamento.
+Seguidamente será explicado um algoritmo de deteção de intrusos disponibilizado pelo OpenCV. 
+
+
+ 
 
 
 \subsection{Algoritmo de deteção de intrusos}
@@ -614,46 +631,47 @@ hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
 	\item \texttt{getDefaultPeopleDetector()}: retorna um classificador pré-treinado para deteção de pessoas (para tamanho de janela padrão)\cite{featuredetection}. 
 	
 	
-	\item \texttt{detectMultiScale()}: permite detetar objetos de diferentes tamanhos. Este método possui vários parâmetros que permitem ajustar o tamanho de deteção de um determinado objeto, entre os quais destaco: 
+	\item \texttt{detectMultiScale()}: permite detetar objetos de diferentes tamanhos. Este método possui vários parâmetros que permitem ajustar o tamanho de deteção de um determinado objeto, como por exemplo o \texttt{winStride}, \texttt{padding} ou a \texttt{scale}. 
 	
 \begin{itemize}
-	\item \texttt{winStride}: define o "tamanho do passo" na posição x e y da janela deslizante. Este parâmetro é opcional.
+	\item \texttt{winStride}: define o "tamanho do passo" na posição x e y de uma janela deslizante (figura \ref{winStride}). Este parâmetro é opcional.
 	 
-	\item \texttt{padding}: este parâmetro é opcional e define o preenchimento. Consiste num tuplo que indica o número de pixels, na direção x e y, na qual a janela deslizante é "acolchoado" antes da extração do recurso HOG. os valores típicos para preenchimento são (8, 8),  (16, 16), (24, 24) e (32, 32).
+	\item \texttt{padding}: este parâmetro é opcional e define o preenchimento. Consiste num tuplo que indica o número de pixels, na direção x e y, tal como o \texttt{winStride}. Os valores típicos são (8, 8),  (16, 16), (24, 24) e (32, 32).
 	
-	\item \texttt{scale}: este parâmetro controla o fator com que a imagem é redimensionada em cada camada da pirâmide de imagens, influenciando o número de níveis existentes. É um parâmetro opcional. 
+	\item \texttt{scale}: este parâmetro controla o fator com que a imagem é redimensionada em cada camada da pirâmide de imagens (figura \ref{scale}), influenciando o número de níveis existentes . É um parâmetro opcional. 
+
+\end{itemize}
+	
+	 %% http://www.pyimagesearch.com/2015/11/16/hog-detectmultiscale-parameters-explained/
+	 
+\end{itemize}
 
 
 \begin{figure}[h]
 	\centering
 	\begin{minipage}[b]{0.49\textwidth}
 		\centering
-		\includegraphics[width=0.6\textwidth]{img/sliding_window_example-11.png}
-		\caption{Sensor TTC 104 NTC}
+		\includegraphics[width=0.4\textwidth]{img/sliding_window_example-11.png}
+		\caption{Exemplo da aplicação do parâmetros \texttt{winStride} }
+		\label{winStride}
 	\end{minipage}
 	\hfill
 	\begin{minipage}[b]{0.49\textwidth}
 		\centering
-		\includegraphics[width=0.6\textwidth]{img/pyramid.png}
-		\caption[Piramide ..Retirado de]{ \cite{Rosebrock2015}}
-		\label{esquema-temp}
+		\includegraphics[width=0.5\textwidth]{img/pyramid.png}
+		\caption{Pirâmide de imagens para diferentes \texttt{scale}}
+		\label{scale}
 	\end{minipage}
+	
 \end{figure}
 
 
 
-	
 
-\end{itemize}
-	
-	 %% http://www.pyimagesearch.com/2015/11/16/hog-detectmultiscale-parameters-explained/
-	 
-	
-\end{itemize}
+O algoritmo apresentado permite a deteção de intrusos (humanos), quando estes surgem em vídeos ou imagens. Pretende-se incorporar este algoritmo no sistema de vídeo-vigilância (Youtube Live), possibilitando a deteção de indivíduos quando estes são capturados pela câmara, gerando alarmes para a plataforma. Para incorporar o algoritmo apresentado com o Youtube Live é necessário entender o mecanismo de \textit{streaming} disponibilizado pela \ac{API} do YouTube Live Streaming\footnote{\url{https://developers.google.com/youtube/v3/live/getting-started}}.  
 
 
-
-
+Como vimos anteriormente, existem vários parâmetros para o método \linebreak \texttt{detectMultiScale()}, possibilitando ajustar o tamanho da deteção. Dependendo da disposição exata da câmara é possível ajustar estes parâmetros permitindo uma deteção o mais eficaz possível. No próximo capítulo serão apresentados alguns exemplos em que é possível testar o algoritmo apresentado.  
 
 
 
@@ -686,8 +704,7 @@ hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
 
 
 
-
-apenas foi 
+\iffalse
 
 
 \subsection{Testes}
@@ -716,21 +733,33 @@ Após concluir quais os melhores valores a utilizar como parâmetros no método 
 
 
 Caso sejam detetadas pessoas são gerados alarmes através da \ac{API} \ac{REST}. 
-
-
-
-\subsection{Considerações finais}
-
+\fi
 
 
 
 
-incorporar o processamento 
 
-utilizando a API do youtube para realizar o stream 
 
-e respetiva geração de alarmes através da API.  
 
+\section{Considerações finais}
+
+Neste capítulo foram apresentadas algumas soluções de implementação que achei serem mais relevantes. Seguidamente encontram-se algumas conclusões finais da implementação de cada componente e no próximo capitulo serão mostrados os testes e resultados. 
+
+
+
+\begin{itemize}
+	
+	\item \textbf{Sistema de informação}: após a modulação do sistema de informação foi possível implementar-lo de forma a permitir ilustrar o cenário pretendido, embora também seja possível adaptado-lo a outros quadros. O sistema disponibiliza uma interface web intuitiva e apelativa, sendo que toda a comunicação com os componentes de hardware seja realizada através da API REST. Esta API permite a criação de novos cliente com base no sistema, um exemplo disso é a aplicação mobile que infelizmente não houve tempo de ser desenvolvida, sendo apenas apresentado um \textit{mockup} desta. 
+	
+	  
+	
+	\item \textbf{Simulação em \textit{hardware}}: simulou-se o sistema recorrendo a \textit{hardware} disponível em laboratório, tanto a nível de microcontroladores, sensores ou módulos de comunicação. No entanto, não houve possibilidade de testar nenhum sensor de salinidade apesar de ser bastante importante no contexto do projeto, uma vez que é um dos parâmetros principais necessários de monitorização no cultivo da Salicórnia. Relativamente à comunicação desta simulação, numa primeira fase, toda a comunicação entre o \acl{CM} e \acl{SM} foi realizada através de porta série (cabo físico), posteriormente optou-se por utilizar um tecnologia de comunicação sem fios. 
+	 
+	\item \textbf{Sistema de vídeo-vigilância}: relativamente ao sistema de video-vigilância foi possivel testar o serviço do Youtube Live para este cenário, ficando a falta a incorporação do algoritmo de deteção com a API do Youtube Live. 
+	
+
+	
+\end{itemize}
 
 
 

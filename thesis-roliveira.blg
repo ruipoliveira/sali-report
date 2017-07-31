@@ -24,9 +24,15 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: tese.bib
+Warning--I didn't find a database entry for "streamlive"
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty author and editor in desingprocess
+Warning--missing publisher in desingprocess
+Warning--empty year in desingprocess
+Warning--there is url but no urldate in desingprocess
+Warning--there is url but no urldate in Saini2014
 Warning--empty journal in chenopodiaceae
 Warning--missing publisher in ferri
 Warning--there is url but no urldate in Silva2000
@@ -40,7 +46,9 @@ Warning--empty journal in Our2013
 Warning--there is url but no urldate in Rowley2007
 Warning--there is url but no urldate in Lopez2009
 Warning--there is url but no urldate in Deacon2005
+Warning--missing publisher in Sugrue2013
 Warning--missing publisher in Holovaty2009
+Warning--there is url but no urldate in Kang2015
 Warning--empty author in arduinonanouser
 Warning--empty journal in arduinonanouser
 Warning--empty year in arduinonanouser
@@ -61,59 +69,56 @@ Warning--there is url but no urldate in Bruno2002
 Warning--there is url but no urldate in BluetoothTM2001
 Warning--empty journal in Paper2005
 Warning--there is url but no urldate in Paper2005
-Warning--there is url but no urldate in Saini2014
 Warning--there is url but no urldate in Turban1996
-Warning--empty journal in Rodriguez2015
-Warning--there is url but no urldate in Rodriguez2015
+Warning--empty journal in restpaper
+Warning--there is url but no urldate in restpaper
 Warning--empty author in temp-dta
 Warning--empty journal in temp-dta
 Warning--empty year in temp-dta
 Warning--there is url but no urldate in temp-dta
 Warning--empty journal in GuangzhouHCInformationTechnologyCo.2011
-Warning--empty journal in Parmar2012
-Warning--there is url but no urldate in Parmar2012
 Warning--there is url but no urldate in Dalal
 
 Done.
-You've used 64 entries,
+You've used 67 entries,
             4106 wiz_defined-function locations,
-            1230 strings with 18770 characters,
-and the built_in function-call counts, 33490 in all, are:
-= -- 2668
-> -- 610
-< -- 192
-+ -- 323
-- -- 109
-* -- 1638
-:= -- 5579
-add.period$ -- 126
-call.type$ -- 64
-change.case$ -- 66
-chr.to.int$ -- 432
-cite$ -- 110
-duplicate$ -- 2506
-empty$ -- 2840
-format.name$ -- 128
-if$ -- 7512
+            1244 strings with 19220 characters,
+and the built_in function-call counts, 34286 in all, are:
+= -- 2723
+> -- 621
+< -- 185
++ -- 328
+- -- 113
+* -- 1670
+:= -- 5744
+add.period$ -- 130
+call.type$ -- 67
+change.case$ -- 67
+chr.to.int$ -- 417
+cite$ -- 117
+duplicate$ -- 2574
+empty$ -- 2948
+format.name$ -- 132
+if$ -- 7686
 int.to.chr$ -- 0
-int.to.str$ -- 64
-missing$ -- 474
-newline$ -- 317
-num.names$ -- 57
-pop$ -- 1311
+int.to.str$ -- 67
+missing$ -- 488
+newline$ -- 330
+num.names$ -- 60
+pop$ -- 1358
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 4
-skip$ -- 2530
+skip$ -- 2603
 stack$ -- 0
-substring$ -- 1050
-swap$ -- 1740
-text.length$ -- 48
+substring$ -- 1017
+swap$ -- 1764
+text.length$ -- 46
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 64
-warning$ -- 46
-while$ -- 147
-width$ -- 66
-write$ -- 663
-(There were 46 warnings)
+type$ -- 67
+warning$ -- 50
+while$ -- 146
+width$ -- 69
+write$ -- 689
+(There were 51 warnings)

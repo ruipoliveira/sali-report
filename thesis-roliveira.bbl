@@ -21,6 +21,21 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{desingprocess}
+\BIBentryALTinterwordspacing
+\emph{{The Engineering Design Process}}. [Online]. Available:
+  \url{https://www.sciencebuddies.org/engineering-design-process/engineering-design-process-steps.shtml}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Saini2014}
+\BIBentryALTinterwordspacing
+P.~T. Hiep, H.~Noi, V.~Nam, N.~H. Hoang, H.~Noi, and V.~Nam, ``{A Review of
+  Open Source Software Development Life Cycle Models},'' \emph{International
+  Journal of Multmedia and Ubiquituous Engineering}, vol.~9, no.~5, pp.
+  391--402, 2014. [Online]. Available:
+  \url{http://dx.doi.org/10.14257/ijseia.2014.8.3.38}
+\BIBentrySTDinterwordspacing
+
 \bibitem{JoaoSilva}
 \BIBentryALTinterwordspacing
 {Jo{\~{a}}o Silva}, ``{Sal verde, National Geographic}.'' [Online]. Available:
@@ -202,6 +217,9 @@ D.~S. Foundation, ``{Django Documentation},'' pp. 1--1172, 2012. [Online].
   2017-07-17]
 \BIBentrySTDinterwordspacing
 
+\bibitem{Sugrue2013}
+J.~Sugrue, \emph{{Beginning Backbone.js}}, 2013.
+
 \bibitem{Holovaty2009}
 A.~Holovaty and J.~Kaplan-Moss, \emph{{The Definitive Guide to Django: Web
   Development Done Right}}, 2009.
@@ -217,11 +235,27 @@ Ionic, ``{Welcome to Ionic - Ionic Framework},'' 2016. [Online]. Available:
   2017-07-19]
 \BIBentrySTDinterwordspacing
 
+\bibitem{Kang2015}
+\BIBentryALTinterwordspacing
+I.~S. Kang, R.~Morais, and W.~Santos, ``{Padr{\~{a}}o TISS: Um Estudo de Caso
+  sobre o uso de web services para o seu desenvolvimento},'' \emph{12th
+  CONTECSI International Conference on Information Systems and Technology
+  Management}, pp. 1--17, 2015. [Online]. Available:
+  \url{http://www.contecsi.fea.usp.br/envio/index.php/contecsi/12CONTECSI/paper/view/2185}
+\BIBentrySTDinterwordspacing
+
 \bibitem{restdjango}
 \BIBentryALTinterwordspacing
 A.~Holmes, ``{Reviewing Django REST Framework},'' 2014. [Online]. Available:
   \url{http://blog.isotoma.com/2014/03/reviewing-django-rest-framework/}
   [Accessed: 2017-07-20]
+\BIBentrySTDinterwordspacing
+
+\bibitem{Flask-RESTful2017}
+\BIBentryALTinterwordspacing
+Flask-RESTful, ``{Flask-RESTful — Flask-RESTful 0.2.1 documentation},'' 2017.
+  [Online]. Available: \url{http://flask-restful-cn.readthedocs.io/en/0.3.5/}
+  [Accessed: 2017-07-29]
 \BIBentrySTDinterwordspacing
 
 \bibitem{Banzi2012}
@@ -321,15 +355,6 @@ W.~Paper, ``{IEEE 802.11g The New Mainstream Wireless LAN Standard},'' 2005.
   2017-07-18]
 \BIBentrySTDinterwordspacing
 
-\bibitem{Saini2014}
-\BIBentryALTinterwordspacing
-P.~T. Hiep, H.~Noi, V.~Nam, N.~H. Hoang, H.~Noi, and V.~Nam, ``{A Review of
-  Open Source Software Development Life Cycle Models},'' \emph{International
-  Journal of Multmedia and Ubiquituous Engineering}, vol.~9, no.~5, pp.
-  391--402, 2014. [Online]. Available:
-  \url{http://dx.doi.org/10.14257/ijseia.2014.8.3.38}
-\BIBentrySTDinterwordspacing
-
 \bibitem{Laudon1998}
 Laudon, C.~Kenneth, Laudon, and P.~Jane, \emph{{Management Information Systems
   New Approaches to Organization {\&} Technology}}.\hskip 1em plus 0.5em minus
@@ -350,12 +375,12 @@ E.~Turban, \emph{{Information technology for management : improving quality and
   [Accessed: 2017-06-10]
 \BIBentrySTDinterwordspacing
 
-\bibitem{Rodriguez2015}
+\bibitem{restpaper}
 \BIBentryALTinterwordspacing
-A.~Rodriguez, ``{RESTful Web services: The basics},'' no. February, pp. 1--11,
-  2015. [Online]. Available:
-  \url{https://pdfs.semanticscholar.org/ca66/561d3602f65aef1301145e4e2689681b1967.pdf
-  http://www.ibm.com/developerworks/webservices/library/ws-restful/}
+R.~T. Fielding, ``{UNIVERSITY OF CALIFORNIA, IRVINE Architectural Styles and
+  the Design of Network-based Software Architectures},'' 2000. [Online].
+  Available:
+  \url{http://jpkc.fudan.edu.cn/picture/article/216/35/4b/22598d594e3d93239700ce79bce1/7ed3ec2a-03c2-49cb-8bf8-5a90ea42f523.pdf}
 \BIBentrySTDinterwordspacing
 
 \bibitem{tokenREST}
@@ -383,6 +408,12 @@ T.~Christie, ``{Django REST framework TokenAuthentication},'' 2016. [Online].
 {The Apache Software Foundation}, ``{Foundation Project},'' 2016. [Online].
   Available: \url{https://www.apache.org/foundation/
   http://apache.org/foundation/} [Accessed: 2017-06-12]
+\BIBentrySTDinterwordspacing
+
+\bibitem{Google2015}
+\BIBentryALTinterwordspacing
+Google, ``{AngularJS — Superheroic JavaScript MVW Framework},'' 2015.
+  [Online]. Available: \url{https://angularjs.org/} [Accessed: 2017-07-29]
 \BIBentrySTDinterwordspacing
 
 \bibitem{temp-dta}
@@ -417,11 +448,10 @@ Itseez, ``{About - OpenCV library}.'' [Online]. Available:
   [Accessed: 2017-07-25]
 \BIBentrySTDinterwordspacing
 
-\bibitem{Parmar2012}
+\bibitem{FFmpeg2015}
 \BIBentryALTinterwordspacing
-H.~Parmar and E.~M. Thornburgh, ``{Adobe's Real Time Messaging Protocol
-  Specification},'' pp. 1--52, 2012. [Online]. Available:
-  \url{http://www.adobe.com/devnet/rtmp.html}
+FFmpeg, ``{About FFmpeg},'' 2015. [Online]. Available:
+  \url{https://www.ffmpeg.org/about.html} [Accessed: 2017-07-25]
 \BIBentrySTDinterwordspacing
 
 \bibitem{Dalal}
@@ -438,21 +468,6 @@ N.~Dalal and B.~Triggs, ``{Histograms of Oriented Gradients for Human
   Available:
   \url{http://docs.opencv.org/2.4/modules/gpu/doc/object{\_}detection.html}
   [Accessed: 2017-07-10]
-\BIBentrySTDinterwordspacing
-
-\bibitem{Rosebrock2015}
-\BIBentryALTinterwordspacing
-A.~Rosebrock, ``{HOG detectMultiScale parameters explained},'' 2015. [Online].
-  Available:
-  \url{http://www.pyimagesearch.com/2015/11/16/hog-detectmultiscale-parameters-explained/}
-  [Accessed: 2017-07-11]
-\BIBentrySTDinterwordspacing
-
-\bibitem{imagProccdata}
-\BIBentryALTinterwordspacing
-``{Coarse Gaze Estimation}.'' [Online]. Available:
-  \url{http://www.robots.ox.ac.uk/ActiveVision/Research/Projects/2009bbenfold{\_}headpose/project.html{\#}datasets}
-  [Accessed: 2017-07-11]
 \BIBentrySTDinterwordspacing
 
 \end{thebibliography}
