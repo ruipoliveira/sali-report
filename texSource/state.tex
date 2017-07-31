@@ -2,11 +2,8 @@
 \label{state}
 
 
-Neste capítulo, são apresentados os resultados da pesquisa bibliográfica sobre as ferramentas e funcionalidades que poderão estar presentes no sistema a desenvolver. Apresenta-se de forma geral todas as tecnologias possíveis de utilização e respetiva comparação. 
-
-
-
-
+Neste capítulo, são apresentados os resultados da pesquisa bibliográfica sobre as ferramentas tecnológicas que poderão ser utilizadas no decorrer do trabalho pratico desta dissertação. Serão apresentadas algumas das tecnologias mais populares e realizada uma comparação entres estas. Por fim, será apresentada e descrito motivo pela qual será utilizada. 
+ 
 
 
 \section{Conceitos tecnológicos}
@@ -22,7 +19,7 @@ Nesta secção são apresentados alguns conceitos tecnológicos utilizados em to
 	\item Python: é uma  linguagem de programação de alto nível, possuindo os seguintes paradigmas:  orientação a objetos, programação imperativa, programação funcional. 
 	
 	
-	\item \ac{API}: consiste numa interface de programação de aplicações, isto é, disponibiliza um conjunto de funções especificas que permitem ao programador aceder a determinadas funcionalidades.  
+	\item \ac{API}: consiste numa interface de programação de aplicações, isto é, disponibiliza um conjunto de funções específicas que permitem ao programador aceder a determinadas funcionalidades.  
 	
 	\item Web Service: é um tipo de \ac{API} que trabalha com \ac{HTTP},
 	ou \ac{SMTP}.
@@ -34,13 +31,13 @@ Nesta secção são apresentados alguns conceitos tecnológicos utilizados em to
 
 \section{\acl{SGBD}}
 
-Um \acl{SGBD} (\acs{SGBD}) consiste num \textit{software} ou conjunto de \textit{softwares} responsáveis pela manipulação de uma base de dados, permitindo a realização de um conjunto enorme de operações, como por exemplo, operações básicas de manipulação de registos e respectiva visualização, operações estatísticas e respetivos relatórios, automatização de funcionalidades entre outros. Seguidamente são apresentados três \ac{SGBD} e a sua respetiva comparação. 
+Um \acl{SGBD} (\acs{SGBD}) consiste num \textit{software} ou conjunto de \textit{softwares} responsáveis pela manipulação de uma base de dados, permitindo a realização de um conjunto enorme de operações, como por exemplo, operações básicas de manipulação de registos e respectiva visualização, operações estatísticas e respetivos relatórios, automatização de funcionalidades entre outros. Seguidamente são apresentados três \ac{SGBD} mais populares e a sua respetiva comparação. 
 
 
 \subsection{MySQL}
 
 
-O MySQL é considerado o \ac{SGBD} \textit{open source} mais popular de todo o mundo, sendo líder em aplicações baseadas na web, incluindo o Facebook, Twitter, YouTube, Yahoo! e muitos outros. Está comprovado que possui um elevado desempenho, fiabilidade e facilidade de utilização\cite{MySQL2011}.	
+O MySQL é considerado o \ac{SGBD} \textit{open source} mais popular do mundo, sendo líder em aplicações baseadas na web, incluindo o Facebook, Twitter, YouTube, Yahoo! e muitos outros. Está comprovado que possui um elevado desempenho, fiabilidade e facilidade de utilização\cite{MySQL2011}.	
 
 
 
@@ -49,14 +46,14 @@ O MySQL é considerado o \ac{SGBD} \textit{open source} mais popular de todo o m
 
 \subsection{SQL Server}
 
-O SQL Server é um \ac{SGBD} desenvolvido pela Microsft com bastante popularidade, tendo suporto para as seguintes linguagens de programação C++, PHP, Java, \ac{JS}, Python entre outras. A ultima versão deste \ac{SGBD} é o SQL Server 2016, estando também disponível para ambiente Linux\cite{linuxsqlserver}.
+O SQL Server é um \ac{SGBD} desenvolvido pela Microsft com bastante popularidade, tendo suporto para as seguintes linguagens de programação: C++, PHP, Java, \ac{JS}, Python entre outras. A última versão deste \ac{SGBD} é o SQL Server 2016, que também está disponível para ambientes Linux\cite{linuxsqlserver}.
 
 
 
 
 \subsection{PostgreSQL}
 
-O PostgreSQL é um sistema de gestão de base de dados do tipo objeto-relacional uma vez que permite um modelo de dados orientado a objetos, isto é, possibilita a manipulação de objetos, classes e heranças diretamente no esquemas da base de dados. Segundo o site oficial do PostgreSQL este é considerado um \ac{SGBD} bastante poderoso e com desenvolvimento \textit{open sources}\cite{ThePostgreSQLGlobalDevelopmentGroup2012}. 
+O PostgreSQL é um \ac{SGBD} do tipo objeto-relacional uma vez que permite um modelo de dados orientado a objetos, isto é, possibilita a manipulação de objetos, classes e heranças diretamente no esquemas da base de dados. Segundo o site oficial do PostgreSQL este é considerado um \ac{SGBD} bastante poderoso e com desenvolvimento \textit{open sources}\cite{ThePostgreSQLGlobalDevelopmentGroup2012}. 
 
 
 %Ele tem mais de 15 anos de desenvolvimento ativo e uma arquitetura comprovada que ela ganhou uma forte reputação de confiabilidade, integridade de dados e correção. Ele roda em todos os principais sistemas operacionais, incluindo Linux, UNIX (AIX, BSD, HP-UX, SGI IRIX, MacOS, Solaris, Tru64), e Windows. É totalmente compatível com ACID, tem suporte completo para chaves estrangeiras, junções views, triggers e procedimentos armazenados (em várias línguas). Ele inclui mais SQL: 2008 tipos de dados, incluindo INTEGER, NUMERIC, BOOLEAN, CHAR, VARCHAR, DATE, INTERVALO e TIMESTAMP. Ele também suporta o armazenamento de grandes objetos binários, incluindo imagens, sons ou vídeo. Ele tem interfaces de programação nativas para C / C ++, Java, .Net, Perl, Python, Ruby, Tcl, ODBC, entre outros, e documentação
@@ -68,9 +65,9 @@ O PostgreSQL é um sistema de gestão de base de dados do tipo objeto-relacional
 
 
 
-A tabela \ref{Ranking-engines2016} encontra-se a classifica atribuída pela \textit{Ranking DB-Engines} para os \ac{SGBD} estudados de acordo com a sua popularidade, nos meses de Julho de 2017, Junho de 2017 e Julho de 2016\cite{DB-engines2016}. O MySQL é considerado o mais popular dos estudados, posteriormente o SQL Server e por fim o PostgreSQL. 
+A tabela \ref{Ranking-engines2016} encontra-se a classificação atribuída pela \textit{Ranking DB-Engines} para os \ac{SGBD} estudados de acordo com a sua popularidade, nos meses de Julho e Junho de 2017 e Julho de 2016\cite{DB-engines2016}. O MySQL é considerado o mais popular dos estudados, seguindo-se o SQL Server e por fim o PostgreSQL. 
 
-Uma vez que o cliente deste sistema pretende que sejam utilizadas tecnologias sem qualquer custo adicional, excluiu-se  desde logo o SQL Server da Microsoft. Restam então duas tecnologias estudadas: PostgreSQL e MySQL. Relatvivamente aos requisitos não funcionais do sistema, estes serão abordados mais à frente nesta dissertação. 
+Uma vez que o cliente que solicitou este sistema pretende que sejam utilizadas tecnologias sem qualquer custo adicional (será mais à frente referido nos requisitos não funcionais), excluiu-se  desde logo o SQL Server da Microsoft. Restam então duas tecnologias estudadas: PostgreSQL e MySQL.
 
 
 
@@ -105,7 +102,7 @@ Uma vez que o cliente deste sistema pretende que sejam utilizadas tecnologias se
 
 
 Embora as diferenças entre estes os dois SGBD não sejam significativas, podemos também ter em consideração a performance. Para tal, foram realizados alguns estudos que pretendem comparar estas duas ferramentas usando a benchmark TPC-H\footnote{\url{http://www.tpc.org/tpch/}}, expondo que a performance do PostgreSQL é ligeiramente superior à do MySQL na maioria das queries\cite{Lopez2009}. %rever ref.  
-A tabela \ref{comp-sqgbdcar} permite comparar algumas das características dos \ac{SGBD} estudados. 
+A tabela \ref{comp-sqgbdcar} permite comparar algumas das características dos \ac{SGBD} estudados, permitindo concluir que todas usam o modelo relacional mas apenas o MySQL e o PostgreSQL são \textit{open-source}.
 
 
 
@@ -136,7 +133,7 @@ A tabela \ref{comp-sqgbdcar} permite comparar algumas das características dos \
 
 
 
-No que toca ao desenvolvimento web do sistema, permitindo que este seja adaptado ao cliente/empresa conforme as suas necessidades, poderão ser adotadas duas estratégias distintas: 
+No que diz respeito ao desenvolvimento \textit{web} do sistema, permitindo que este seja adaptado ao cliente/empresa conforme as suas necessidades, poderão ser adotadas duas estratégias distintas: 
 
 \begin{itemize}
 	\item Por manipulação local utilizando \ac{JS} que interage com o \ac{DOM}. Exemplo de \textit{frameworks}: Angular.JS, Angular 2, React.JS, Vue.JS; 
@@ -154,13 +151,13 @@ De modo a facilitar o desenvolvimento do sistema, optou-se que tanto  a nível d
 \subsection{ASP.net}
 
 
-ASP.net é uma tecnologia de \textit{scripting} que corre do lado do servidor, permitindo colocar numa página web, \textit{scripts} que irão ser executados por um determinado servidor. A sigla \acs{ASP} significa \acl{ASP}. Uma aplicação desenvolvida nesta tecnologia corre num servidor de Internet da Microsft, conhecido por \ac{IIS}, podendo ser desenvolvido recorrendo à linguagem C\# ou Microsoft Visual Basic. Esta tecnologia oferece três modelos para a criação de aplicações web, ASP.NET \textit{Web Forms}, ASP.NET \ac{MVC}, e ASP.NET \textit{Web Pages}, podendo ser criadas aplicações web estáveis e maduras com qualquer um deles\cite{Microsoft2016}. 
+ASP.net é uma tecnologia de \textit{scripting} que corre do lado do servidor, permitindo colocar numa página web, \textit{scripts} que irão ser executados por um determinado servidor. Uma aplicação desenvolvida nesta tecnologia corre num servidor de Internet da Microsft, conhecido por \ac{IIS}, podendo ser desenvolvido recorrendo à linguagem C\# ou Microsoft Visual Basic. Esta tecnologia oferece três modelos para a criação de aplicações web, ASP.NET \textit{Web Forms}, ASP.NET \ac{MVC}, e ASP.NET \textit{Web Pages}, podendo ser criadas aplicações web estáveis e maduras com qualquer um deles\cite{Microsoft2016}. 
 
 
 \subsection{Flask}
 
 
-O Flask consiste numa micro-framework desenvolvida em Python baseado nas bibliotecas \ac{WSGI} Werkzeug e Jinja2\footnote{\url{http://jinja.pocoo.org/}}. Esta framework disponibiliza um  modelo simples para desenvolvimento web, um vez que permite economizar bastante tempo na sua conceção. O Pinterest e LinkedIn são exemplos de aplicações que utilizam esta micro-framwork. De seguida, são apresentadas algumas das suas principais características\cite{Flask2014}. 
+O Flask consiste numa micro-framework desenvolvida em Python baseado nas bibliotecas \ac{WSGI} Werkzeug e Jinja2\footnote{\url{http://jinja.pocoo.org/}}. Esta framework disponibiliza um  modelo simples para desenvolvimento web, um vez que permite economizar bastante tempo na sua conceção. O Pinterest e LinkedIn são exemplos de aplicações que utilizam esta micro-framwork. As suas características principais são\cite{Flask2014}:  
 
 
 \begin{itemize}
@@ -179,7 +176,7 @@ O Flask consiste numa micro-framework desenvolvida em Python baseado nas bibliot
 \subsection{Django}
 
 
-A framework Django consiste numa ferramenta de desenvolvimento web de alto nível desenvolvida na linguagem Python, possuindo uma arquitetura \ac{MVC}\cite{Deacon2005}, embora com algumas diferenças em relação a esta. No modelo \ac{MVC}, a componente \textit{Model} diz respeito à camada de acesso a dados, a \textit{View} à parte do sistema responsável pela escolha e apresentação da informação e o \textit{Controller} está encarregue de decidir que \textit{views} escolher (figura \ref{mvcdiag}). Os criadores do Django consideram a sua arquitetura com sendo \ac{MTV}\cite{Index}. 
+A framework Django é uma ferramenta de desenvolvimento \textit{web} de alto nível desenvolvida na linguagem Python, possuindo uma arquitetura \ac{MVC}\cite{Deacon2005}, embora com algumas diferenças em relação a esta. No modelo \ac{MVC}, a componente \textit{Model} diz respeito à camada de acesso a dados, a \textit{View} à parte do sistema responsável pela escolha e apresentação da informação e o \textit{Controller} está encarregue de decidir que \textit{views} escolher (figura \ref{mvcdiag}). Os criadores do Django consideram a sua arquitetura com sendo \ac{MTV}\cite{Index}. 
 
 \begin{itemize}
 	\item \textit{Model}: é responsável por manipular, valiar, aceder e relacionar os dados. É considerada a fonte única e definitiva de informação (dados), possuindo os campos essenciais e os comportamentos sobre estes. Geralmente, cada \textit{Model} mapeia uma única tabela na base de dados. 
@@ -218,7 +215,7 @@ De acordo com as descrições dos autores, esta ferramenta possui várias vantag
 
 
 
-Uma vez que o cliente do sistema não pretende que existam gasto adicionais, optou-se por utilizar ferramentas \textit{open-source} que permitiu desde logo excluir a tecnologia ASP.net. 
+Uma vez que o cliente do sistema não pretende que existam gastos adicionais, optou-se por utilizar ferramentas \textit{open-source}. Esta opção permitiu desde logo excluir a tecnologia ASP.net. 
 
 
 A escolha para desenvolvimento web recaiu sobre o Django uma vez que esta framework recomenda a utilização do PostgreSQL, indicando que permite alcançar um bom equilíbrio entre custo, características, rapidez e estabilidade\cite{Holovaty2009}. 
@@ -239,9 +236,9 @@ A escolha para desenvolvimento web recaiu sobre o Django uma vez que esta framew
 \section{Desenvolvimento mobile}
 
 
-Uma aplicação móvel, vulgarmente denominada por \textit{app mobile}, consiste num determinado \textit{software} utilizado para realizar funções especificas em dispositivos móveis, como \textit{smartphones} ou \textit{tablets}. Pretende-se que este tipo de \textit{software} permita ao seus utilizadores facilitar o desempenho de determinadas atividades à distância de um simples toque no seu dispositivo. 
+Uma aplicação móvel, vulgarmente denominada por \textit{app mobile}, consiste num determinado \textit{software} utilizado para realizar funções especificas em dispositivos móveis, como \textit{smartphones} ou \textit{tablets}. Este tipo de \textit{software} permite aos seus utilizadores facilitar o desempenho de determinadas atividades à distância de um simples toque no seu dispositivo. 
 
-No que toca ao desenvolvimento de aplicações móveis, o programador pode recorrer a duas estratégias: desenvolvimento nativo ou multi-plataforma. Esta diferenciação centra-se na forma como o código é produzido, sendo seguidamente apresentadas algumas  vantagens e desvantagens de cada um. 
+Relativamente ao desenvolvimento de aplicações móveis, o programador pode recorrer a duas estratégias: desenvolvimento nativo ou multi-plataforma. Esta diferenciação centra-se na forma como o código é produzido, sendo seguidamente apresentadas algumas  vantagens e desvantagens de cada um. 
 
 
 %A base para esta diferenciação está na forma como o código é desenvolvido para a aplicação móvel. Aplicações nativas são desenvolvidas em específico para cada plataforma (iOS, Android ou Windows), com base no código particular a esse sistema operativo. Aplicações híbridas são apps desenvolvidas com tecnologia web, como é o HTML5, CSS e o JavaScript, que utilizam uma funcionalidade desses sistemas chamada WebView para apresentar o código web como uma aplicação responsiva para qualquer plataforma. Ambas apresentam vantagens e desvantagens, pelo que é essencial estar familiarizado com ambas antes de tomar a sua decisã
@@ -250,7 +247,7 @@ No que toca ao desenvolvimento de aplicações móveis, o programador pode recor
 
 \subsection{Plataformas nativas}
 
-Uma aplicação nativa é desenvolvida exclusivamente para ser utilizada por um dispositivo ou plataforma especifica, como é o caso do iOS, Android ou Windows Phone. Nestes casos, são usadas ferramentas e linguagens especificas suportadas pela plataforma, podendo interagir com as funcionalidade do sistema operativo ou aplicações existentes. Seguidamente são apresentadas algumas características de uma plataforma do tipo nativo\cite{Ibm2012a}. 
+Uma aplicação nativa é desenvolvida exclusivamente para ser utilizada por um dispositivo ou plataforma específica, como é o caso do iOS, Android ou Windows Phone. Nestes casos, são usadas ferramentas e linguagens específica suportadas pela plataforma, podendo interagir com as funcionalidade do sistema operativo ou aplicações existentes. Seguidamente são apresentadas algumas características de uma plataforma do tipo nativo\cite{Ibm2012a}. 
 
 
 
@@ -260,7 +257,7 @@ Uma aplicação nativa é desenvolvida exclusivamente para ser utilizada por um 
 
 
 \begin{itemize}
-	\item \textbf{Performance}: acarreta benefícios ao nível da performance, uma vez que as aplicações nativas são desenvolvidas em código especifico e otimizado; 
+	\item \textbf{Performance}: acarreta benefícios ao nível da performance, uma vez que as aplicações nativas são desenvolvidas em código específico e otimizado; 
 
 	
 	
@@ -314,7 +311,7 @@ Uma aplicação multi-plataforma ou híbrida, é desenvolvida utilizando tecnolo
 	
 \end{itemize}
 
-Existem enumeras \textit{frameworks} para desenvolvimento multi-plataformas, entre as quais destaco três das mais utilizadas no mercado, Ionic, PhoneGap e Xmarin. 
+Existem inúmeras \textit{frameworks} para desenvolvimento multi-plataformas, entre as quais destaco as três mais utilizadas no mercado: Ionic, PhoneGap e Xmarin. 
 
 \begin{itemize}
 	\item \textbf{Ionic}: consiste numa ferramenta para desenvolvimento mobile, sendo constituído por outro conjunto de frameworks: Cordova (permite a integração de recursos nativo), AngularJS (criação da \textit{web app}) e Ionic Module e CLI (ferramenta e componentes disponibilizados pelo ionic)\cite{Ionic2016}. 
@@ -330,11 +327,7 @@ Existem enumeras \textit{frameworks} para desenvolvimento multi-plataformas, ent
 
 
 
-Um vez que o cliente pretende uma solução mobile multiplataforma, isto é, possível de ser executada em IoS e Android optou-se por utilizar a framework Phonegap. 
-
-
-
-Uma das principais desvantagens da utilização deste paradigma multiplataforma é o seu baixo desempenho na utilização de recursos do dispositivo. Uma que não será necessária essa utilização optou-se por utilizar a framework mencionada anteriormente. 
+Um vez que o cliente pretende uma solução mobile multiplataforma, isto é, possível de ser executada em IoS e Android optou-se por utilizar a \textit{framework} Phonegap.  Uma das principais desvantagens da utilização deste paradigma multiplataforma é o seu baixo desempenho na utilização de recursos do dispositivo. Uma vez que não será necessária essa utilização optou-se por utilizar a \textit{framework} mencionada anteriormente. 
 
 
 
@@ -342,7 +335,7 @@ Uma das principais desvantagens da utilização deste paradigma multiplataforma 
 \section{REST Frameworks}
 
 
-Com o evolução da tecnologia, houve a necessidade que os programadores pudessem expor os seus serviços para que possam ser utilizados por outras entidades. Neste sentido, foram criados métodos que permitem a comunicação  entre diferentes sistemas, podendo estes estarem alojados em máquinas ou redes diferentes.   
+Com o evolução da tecnologia, houve a necessidade dos programadores exporem os seus serviços para serem utilizados por outras entidades. Neste sentido, foram criados métodos que permitem a comunicação  entre diferentes sistemas, podendo estes serem alojados em máquinas ou redes diferentes.   
 
 Para atingir este objetivo, existem atualmente algumas arquiteturas bastante populares, como é o caso do \ac{SOAP} e o \ac{REST}. 
 
@@ -356,7 +349,7 @@ Para atingir este objetivo, existem atualmente algumas arquiteturas bastante pop
 	
 \end{itemize}
 
-Dada as vantagens enumeradas relativamente à tecnologia \ac{REST}, optou-se por a utilizar. Seguidamente serão apresentadas algumas \textit{frameworks} bastante populares no desenvolvimento de APIs \ac{REST} e a sua respetiva comparação. 
+Dadas as vantagens inúmeras relativamente à tecnologia \ac{REST}, optou-se por utilizá-la. Seguidamente serão apresentadas algumas \textit{frameworks} bastante populares no desenvolvimento de APIs \ac{REST} e a sua respetiva comparação. 
 
 
 

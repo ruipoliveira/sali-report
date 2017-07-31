@@ -1,6 +1,6 @@
 \BOOKMARK [0][-]{chapter*.1}{Lista de Figuras}{}% 1
 \BOOKMARK [0][-]{chapter*.4}{Lista de Tabelas}{}% 2
-\BOOKMARK [0][-]{section*.12}{Acr\363nimos}{}% 3
+\BOOKMARK [0][-]{section*.11}{Acr\363nimos}{}% 3
 \BOOKMARK [0][-]{chapter.1}{Introdu\347\343o}{}% 4
 \BOOKMARK [1][-]{section.1.1}{Motiva\347\343o}{chapter.1}% 5
 \BOOKMARK [1][-]{section.1.2}{Objetivos}{chapter.1}% 6
@@ -103,5 +103,5 @@
 \BOOKMARK [1][-]{section.7.3}{Trabalho futuro}{chapter.7}% 103
 \BOOKMARK [0][-]{appendix.A}{Application Programming Interface REST}{}% 104
 \BOOKMARK [0][-]{appendix.B}{Mockup da aplica\347\343o mobile}{}% 105
-\BOOKMARK [0][-]{appendix.C}{Trigger SQL }{}% 106
+\BOOKMARK [0][-]{appendix.C}{Implementa\347\343o do trigger SQL }{}% 106
 \BOOKMARK [0][-]{appendix.D}{Interliga\347\343o de componentes}{}% 107

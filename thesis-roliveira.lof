@@ -1,9 +1,9 @@
 \select@language {portuguese}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Fase de desenvolvimento de um software }}{3}{figure.caption.14}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Fase de desenvolvimento de um software }}{3}{figure.caption.13}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Colora\IeC {\c c}\IeC {\~a}o da planta \textit {Salicornia ramosissima} na primavera (\IeC {\`a} esquerda) e no outono (\IeC {\`a} direita) (Fotografia por Jos\IeC {\'e} M. G. Pereira)\relax }}{8}{figure.caption.16}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Esquema representativo do ciclo de vida da \textit {Salicornia ramosissima}.}}{8}{figure.caption.17}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Colora\IeC {\c c}\IeC {\~a}o da planta \textit {Salicornia ramosissima} na primavera (\IeC {\`a} esquerda) e no outono (\IeC {\`a} direita) (Fotografia por Jos\IeC {\'e} M. G. Pereira)\relax }}{8}{figure.caption.15}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Esquema representativo do ciclo de vida da \textit {Salicornia ramosissima}.}}{8}{figure.caption.16}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Evolu\IeC {\c c}\IeC {\~a}o da internet em cinco fases}}{10}{figure.caption.20}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Pir\IeC {\^a}mide do conhecimento: modelo DIKW\relax }}{11}{figure.caption.23}
 \addvspace {10\p@ }
@@ -22,7 +22,7 @@
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Arquitetura l\IeC {\'o}gica\relax }}{43}{figure.caption.71}
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Arquitetura f\IeC {\'\i }sica (blocos)\relax }}{44}{figure.caption.72}
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Arquitetura do sistema de informa\IeC {\c c}\IeC {\~a}o (\textit {dashboard}, base de dados e API)\relax }}{46}{figure.caption.75}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Processo de autentica\IeC {\c c}\IeC {\~a}o em \ac {HTTP} atrav\IeC {\'e}s de token}}{48}{figure.caption.77}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Processo de autentica\IeC {\c c}\IeC {\~a}o em \acs {HTTP} atrav\IeC {\'e}s de token}}{48}{figure.caption.77}
 \contentsline {figure}{\numberline {4.11}{\ignorespaces Arquitetura da aplica\IeC {\c c}\IeC {\~a}o mobile\relax }}{50}{figure.caption.82}
 \contentsline {figure}{\numberline {4.12}{\ignorespaces Sensor TTC 104 NTC\relax }}{51}{figure.caption.85}
 \contentsline {figure}{\numberline {4.13}{\ignorespaces Esquema eletrot\IeC {\'e}cnico da liga\IeC {\c c}\IeC {\~a}o do sensor de temperatura\relax }}{51}{figure.caption.85}
@@ -51,12 +51,12 @@
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Documenta\IeC {\c c}\IeC {\~a}o da API REST com a ferramenta Swagger\relax }}{76}{figure.caption.116}
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Resultado da intera\IeC {\c c}\IeC {\~a}o com a aplica\IeC {\c c}\IeC {\~a}o \textit {Bluetooth Terminal HC-05}\relax }}{77}{figure.caption.117}
 \contentsline {figure}{\numberline {6.3}{\ignorespaces \textit {Breadboard} com liga\IeC {\c c}\IeC {\~a}o dos diferentes componentes, destacando-se a ativa\IeC {\c c}\IeC {\~a}o do \ac {LED}\relax }}{77}{figure.caption.117}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Imagem original (frame 1) \newline \newline \relax }}{77}{figure.caption.118}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Resultado obtido (frame 1) em que winstride = (4, 4), padding = (8, 8) e scale = 1.1\relax }}{77}{figure.caption.118}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Imagem original (frame 2) \newline \newline \relax }}{78}{figure.caption.119}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Resultado obtido (frame 2) em que winstride = (4,4), padding = (24,24) e scale = 1.3 \relax }}{78}{figure.caption.119}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Imagem original (frame 3) \newline \newline \relax }}{78}{figure.caption.120}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Resultado obtido (frame 3) em que winstride = (4,4), padding = 8,8) e scale = 0.7\relax }}{78}{figure.caption.120}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Imagem original (frame 1)}}{77}{figure.caption.118}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Resultado obtido (frame 1)}}{77}{figure.caption.118}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Imagem original (frame 2)}}{78}{figure.caption.119}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Resultado obtido (frame 2)}}{78}{figure.caption.119}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Imagem original (frame 3)}}{78}{figure.caption.120}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Resultado obtido (frame 3)}}{78}{figure.caption.120}
 \contentsline {figure}{\numberline {6.10}{\ignorespaces Interface para novo registo, destacando o \textit {feedback} dado ao utilizador\relax }}{79}{figure.caption.121}
 \contentsline {figure}{\numberline {6.11}{\ignorespaces Interface para valida\IeC {\c c}\IeC {\~a}o de utilizadores, em \IeC {\'e} vis\IeC {\'\i }vel o \textit {feedback} ap\IeC {\'o}s valida\IeC {\c c}\IeC {\~a}o\relax }}{79}{figure.caption.121}
 \contentsline {figure}{\numberline {6.12}{\ignorespaces Interface para visualizar sensores\relax }}{79}{figure.caption.122}
@@ -64,16 +64,18 @@
 \contentsline {figure}{\numberline {6.14}{\ignorespaces Visualiza\IeC {\c c}\IeC {\~a}o dos \textit {Sensor Modules} associado a um \acl {CM} \relax }}{79}{figure.caption.123}
 \contentsline {figure}{\numberline {6.15}{\ignorespaces Interface para adi\IeC {\c c}\IeC {\~a}o de um novo \acl {SM} \relax }}{79}{figure.caption.123}
 \contentsline {figure}{\numberline {6.16}{\ignorespaces Visualiza\IeC {\c c}\IeC {\~a}o de dados destacando a filtragem por data\relax }}{80}{figure.caption.124}
-\contentsline {figure}{\numberline {6.17}{\ignorespaces Visualiza\IeC {\c c}\IeC {\~a}o tabular de dados, destacando a exporta\IeC {\c c}\IeC {\~a}o para \ac {CSV}\relax }}{80}{figure.caption.124}
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Visualiza\IeC {\c c}\IeC {\~a}o tabular de dados, destacando a exporta\IeC {\c c}\IeC {\~a}o para \acs {CSV}\relax }}{80}{figure.caption.124}
 \contentsline {figure}{\numberline {6.18}{\ignorespaces Visualiza\IeC {\c c}\IeC {\~a}o gr\IeC {\'a}fica dos dados adquiridos por um sensor de luminosidade durante quatro dias, destacando os valores m\IeC {\'a}ximos, m\IeC {\'\i }nimos e m\IeC {\'e}dios\relax }}{80}{figure.caption.125}
-\contentsline {figure}{\numberline {6.19}{\ignorespaces Processo de atua\IeC {\c c}\IeC {\~a}o remota \newline \relax }}{81}{figure.caption.126}
+\contentsline {figure}{\numberline {6.19}{\ignorespaces Processo de atua\IeC {\c c}\IeC {\~a}o remota}}{81}{figure.caption.126}
 \contentsline {figure}{\numberline {6.20}{\ignorespaces Resultado do processo de atua\IeC {\c c}\IeC {\~a}o remota\relax }}{81}{figure.caption.126}
 \contentsline {figure}{\numberline {6.21}{\ignorespaces Interface principal ap\IeC {\'o}s \textit {login} (dashboard)\relax }}{81}{figure.caption.127}
-\contentsline {figure}{\numberline {6.22}{\ignorespaces Sistema de video vigil\IeC {\^a}ncia incorporado na dashboard\relax }}{82}{figure.caption.128}
+\contentsline {figure}{\numberline {6.22}{\ignorespaces Sistema de v\IeC {\'\i }deo-vigil\IeC {\^a}ncia incorporado na \textit {dashboard}\relax }}{82}{figure.caption.128}
+\contentsline {figure}{\numberline {6.23}{\ignorespaces Resultado do processo de atua\IeC {\c c}\IeC {\~a}o remota\relax }}{82}{figure.caption.129}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Esquema resumo do trabalho desenvolvido\relax }}{85}{figure.caption.130}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Mockup aplica\IeC {\c c}\IeC {\~a}o mobile\relax }}{97}{figure.caption.133}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Mockup aplica\IeC {\c c}\IeC {\~a}o mobile\relax }}{95}{figure.caption.131}
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {D.1}{\ignorespaces Prot\IeC {\'o}tipo de montagem de componentes eletrot\IeC {\'e}cnicos\relax }}{99}{figure.caption.132}
+\contentsline {figure}{\numberline {D.1}{\ignorespaces Prot\IeC {\'o}tipo de montagem de componentes eletrot\IeC {\'e}cnicos\relax }}{101}{figure.caption.134}
