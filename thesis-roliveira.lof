@@ -57,23 +57,23 @@
 \contentsline {figure}{\numberline {6.7}{\ignorespaces Resultado obtido (frame 2) em que winstride = (4,4), padding = (24,24) e scale = 1.3 \relax }}{78}{figure.caption.119}
 \contentsline {figure}{\numberline {6.8}{\ignorespaces Imagem original (frame 3) \newline \newline \relax }}{78}{figure.caption.120}
 \contentsline {figure}{\numberline {6.9}{\ignorespaces Resultado obtido (frame 3) em que winstride = (4,4), padding = 8,8) e scale = 0.7\relax }}{78}{figure.caption.120}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Interface para novo registo\relax }}{79}{figure.caption.121}
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Interface para \textit {login} do utilizador\relax }}{79}{figure.caption.121}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Interface para novo registo, destacando o \textit {feedback} dado ao utilizador\relax }}{79}{figure.caption.121}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Interface para valida\IeC {\c c}\IeC {\~a}o de utilizadores, em \IeC {\'e} vis\IeC {\'\i }vel o \textit {feedback} ap\IeC {\'o}s valida\IeC {\c c}\IeC {\~a}o\relax }}{79}{figure.caption.121}
 \contentsline {figure}{\numberline {6.12}{\ignorespaces Interface para visualizar sensores\relax }}{79}{figure.caption.122}
-\contentsline {figure}{\numberline {6.13}{\ignorespaces Interface para adicionar sensor\relax }}{79}{figure.caption.122}
-\contentsline {figure}{\numberline {6.14}{\ignorespaces Imagem original (frame 1)\relax }}{79}{figure.caption.123}
-\contentsline {figure}{\numberline {6.15}{\ignorespaces Resultado obtido (frame 1)\relax }}{79}{figure.caption.123}
-\contentsline {figure}{\numberline {6.16}{\ignorespaces Imagem original (frame 1)\relax }}{80}{figure.caption.124}
-\contentsline {figure}{\numberline {6.17}{\ignorespaces Resultado obtido (frame 1)\relax }}{80}{figure.caption.124}
-\contentsline {figure}{\numberline {6.18}{\ignorespaces Documenta\IeC {\c c}\IeC {\~a}o da API REST com a ferramenta Swagger\relax }}{80}{figure.caption.125}
-\contentsline {figure}{\numberline {6.19}{\ignorespaces Imagem original (frame 1)\relax }}{81}{figure.caption.126}
-\contentsline {figure}{\numberline {6.20}{\ignorespaces Resultado obtido (frame 1)\relax }}{81}{figure.caption.126}
-\contentsline {figure}{\numberline {6.21}{\ignorespaces Documenta\IeC {\c c}\IeC {\~a}o da API REST com a ferramenta Swagger\relax }}{81}{figure.caption.127}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Interface para adicionar sensores\relax }}{79}{figure.caption.122}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Visualiza\IeC {\c c}\IeC {\~a}o dos \textit {Sensor Modules} associado a um \acl {CM} \relax }}{79}{figure.caption.123}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Interface para adi\IeC {\c c}\IeC {\~a}o de um novo \acl {SM} \relax }}{79}{figure.caption.123}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Visualiza\IeC {\c c}\IeC {\~a}o de dados destacando a filtragem por data\relax }}{80}{figure.caption.124}
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Visualiza\IeC {\c c}\IeC {\~a}o tabular de dados, destacando a exporta\IeC {\c c}\IeC {\~a}o para \ac {CSV}\relax }}{80}{figure.caption.124}
+\contentsline {figure}{\numberline {6.18}{\ignorespaces Visualiza\IeC {\c c}\IeC {\~a}o gr\IeC {\'a}fica dos dados adquiridos por um sensor de luminosidade durante quatro dias, destacando os valores m\IeC {\'a}ximos, m\IeC {\'\i }nimos e m\IeC {\'e}dios\relax }}{80}{figure.caption.125}
+\contentsline {figure}{\numberline {6.19}{\ignorespaces Processo de atua\IeC {\c c}\IeC {\~a}o remota \newline \relax }}{81}{figure.caption.126}
+\contentsline {figure}{\numberline {6.20}{\ignorespaces Resultado do processo de atua\IeC {\c c}\IeC {\~a}o remota\relax }}{81}{figure.caption.126}
+\contentsline {figure}{\numberline {6.21}{\ignorespaces Interface principal ap\IeC {\'o}s \textit {login} (dashboard)\relax }}{81}{figure.caption.127}
 \contentsline {figure}{\numberline {6.22}{\ignorespaces Sistema de video vigil\IeC {\^a}ncia incorporado na dashboard\relax }}{82}{figure.caption.128}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Mockup aplica\IeC {\c c}\IeC {\~a}o mobile\relax }}{95}{figure.caption.130}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Mockup aplica\IeC {\c c}\IeC {\~a}o mobile\relax }}{95}{figure.caption.131}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {D.1}{\ignorespaces Prot\IeC {\'o}tipo de montagem de componentes eletrot\IeC {\'e}cnicos\relax }}{99}{figure.caption.131}
+\contentsline {figure}{\numberline {D.1}{\ignorespaces Prot\IeC {\'o}tipo de montagem de componentes eletrot\IeC {\'e}cnicos\relax }}{99}{figure.caption.132}
