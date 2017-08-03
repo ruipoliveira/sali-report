@@ -1,30 +1,25 @@
 \chapter{\acl{API} \acs{REST}}
 \label{espcifAPIREST}
 
-// falta descrever... 
+Seguidamente encontram-se descritos cada um dos \textit{endpoint} da \ac{API} \ac{REST} desenvolvida.  
 
 \begin{itemize}
 	\item /api/user/
 		\begin{itemize}
 			\item Métodos disponíveis: POST, GET
-			\item Descrição: 
+			\item Descrição: retorna os utilizadores registados no sistema, distinguindo o seu id, username, primeiro e ultimo nome, email, data do registo e do ultimo acesso. É também indicado o tipo de utilizador a que se refere. 
 		\end{itemize}
 
-	\item /api/user/
-		\begin{itemize}
-			\item Métodos disponíveis: 
-			\item Descrição: 
-		\end{itemize}
 	
 	\item /api/user/\{pk\_or\_username\}/
 		\begin{itemize}
-			\item Métodos disponíveis: 
-			\item Descrição: 
+			\item Métodos disponíveis: GET, PUT, DELETE
+			\item Descrição: permite aplicar os métodos a um determinado utilizador registado no sistema, sendo este identificado pelo seu identificador ou pelo username. É retornado o primeiro e ultimo nome, email, data do registo e do ultimo acesso.
 		\end{itemize}
 		
 	\item /api/smpercm/
 	\begin{itemize}
-		\item Métodos disponíveis: 
+		\item Métodos disponíveis: GET
 		\item Descrição: 
 	\end{itemize}
 	
@@ -32,105 +27,105 @@
 	
 	\item /api/smpercm/\{pk\_or\_name\_cm\}
 	\begin{itemize}
-		\item Métodos disponíveis: 
+		\item Métodos disponíveis: GET, POST
 		\item Descrição: 
 	\end{itemize}
 	
 	
 	\item /api/sm/
 	\begin{itemize}
-		\item Métodos disponíveis: 
+		\item Métodos disponíveis: GET, POST
 		\item Descrição: 
 	\end{itemize}
 	
 	
 	\item /api/sm/\{pk\_or\_name\}/
 	\begin{itemize}
-		\item Métodos disponíveis: 
+		\item Métodos disponíveis: GET, PUT, DELETE
 		\item Descrição: 
 	\end{itemize}
 	
 	
 	\item /api/sensortype/
 	\begin{itemize}
-		\item Métodos disponíveis: 
+		\item Métodos disponíveis: GET, POST
 		\item Descrição: 
 	\end{itemize}
 	
 	
 	\item /api/sensortype/\{pk\_or\_name\}
 	\begin{itemize}
-		\item Métodos disponíveis: 
+		\item Métodos disponíveis: GET, PUT, DELETE
 		\item Descrição: 
 	\end{itemize}
 	
 	
 	\item /api/sensorpersm/\{id\_sm\_or\_name\_sm\}
 	\begin{itemize}
-		\item Métodos disponíveis: 
+		\item Métodos disponíveis: GET, POST
 		\item Descrição: 
 	\end{itemize}
 	
 	
 	\item /api/sensor/
 	\begin{itemize}
-		\item Métodos disponíveis: 
+		\item Métodos disponíveis: GET
 		\item Descrição: 
 	\end{itemize}
 	
 	
 	\item /api/sensor/\{pk\_or\_sensor\_type\}
 	\begin{itemize}
-		\item Métodos disponíveis: 
+		\item Métodos disponíveis: GET, POST
 		\item Descrição: 
 	\end{itemize}
 	
 	
 	\item /api/reading/{id\_sensor}/\{date\_start\}/\{date\_end\}
 	\begin{itemize}
-		\item Métodos disponíveis: 
+		\item Métodos disponíveis: GET, POST
 		\item Descrição: 
 	\end{itemize}
 	
 	
 	\item /api/communication/\{pk\_or\_name\}
 	\begin{itemize}
-		\item Métodos disponíveis: 
+		\item Métodos disponíveis: GET, PUT, DELETE
 		\item Descrição: 
 	\end{itemize}
 	
 	
 	\item /api/cm/
 	\begin{itemize}
-		\item Métodos disponíveis: 
+		\item Métodos disponíveis: GET, POST
 		\item Descrição: 
 	\end{itemize}
 	
 	
 	\item /api/cm/\{pk\_or\_name\}
 	\begin{itemize}
-		\item Métodos disponíveis: 
+		\item Métodos disponíveis: GET, PUT, DELETE
 		\item Descrição: 
 	\end{itemize}
 	
 	
 	\item /api/alarmssettings/\{id\_sensor\}
 	\begin{itemize}
-		\item Métodos disponíveis: 
+		\item Métodos disponíveis: GET, POST
 		\item Descrição: 
 	\end{itemize}
 	
 	
 	\item /api/alarms\_sensor/\{id\_sensor\}
 	\begin{itemize}
-		\item Métodos disponíveis: 
+		\item Métodos disponíveis: GET, POST
 		\item Descrição: 
 	\end{itemize}
 	
 	
 	\item /api/alarms\_reading/\{id\_reading\}
 	\begin{itemize}
-		\item Métodos disponíveis: 
+		\item Métodos disponíveis:  GET, POST
 		\item Descrição: 
 	\end{itemize}
 	
