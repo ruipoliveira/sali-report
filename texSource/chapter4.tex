@@ -57,7 +57,7 @@ No que diz respeito às plataformas de interação com o cliente, existe uma \te
 No contexto desta dissertação é necessário reter dois conceitos principais, são eles: 
 
 \begin{itemize}
-	\item \textbf{\acl{SM} (SM):} consiste num módulo responsável pela aquisição de dados provenientes dos mais diversos tipos de sensores. 
+	\item \textbf{\acl{SM} (SM):} consiste num módulo responsável pela aquisição de dados provenientes dos mais diversos tipos de sensores; 
 	
 	
 	\item \textbf{\acl{CM} (CM):} consiste num módulo responsável pela receção dos dados/estados dos sensores do \acl{SM} e respetivo envio para a \textit{cloud}.  
@@ -85,12 +85,12 @@ Seguidamente serão especificados todos os detalhes de cada módulo, uma vez que
 
 
 
-Um \acl{SM} consiste num microcontrolador responsável pela aquisição de dados provenientes dos mais diversos tipos de sensores, podendo estes ser atuadores ou câmaras. No caso de se tratar de um atuador, isto é, válvulas, bombas, contadores, pás ou cancelas, apenas serão lidos valores binários. Caso se trate de uma câmara, todo o processamento é feito internamente nesta, sendo que o sistema apenas irá receber o IP da mesma. 
+Um \acl{SM} consiste num microcontrolador responsável pela aquisição de dados provenientes dos mais diversos tipos de sensores, podendo estes ser atuadores ou câmaras. No caso de se tratar de um atuador, isto é, válvulas, bombas, contadores, pás ou cancelas, apenas serão lidos valores binários. Caso se trate de uma câmara, todo o processamento é feito internamente nesta, sendo que o sistema apenas irá receber o \ac{IP} da mesma ou um \ac{URL} para um servidor de \ac{RTMP}.  
 
 
 Tal como referido anteriormente, cada \acl{SM} terá que utilizar um determinado módulo de comunicação para possibilitar a transferência dos dados adquiridos para o módulo central. Para além disso, pretende-se que o \acl{SM} em condições extremas, possa tomar decisões de atuação, isto é, caso seja lido um valor fora do padrão e que seja necessário a ativação de um atuador, este deverá ser auto suficiente em tomar esta decisão, sem necessidade de intervenção do utilizador. 
 
-Pretende-se que este módulo seja identificado por um determinado nome, possua uma bateria que permita a sua mobilidade, tenha um ou vários módulos de comunicação acoplados que permitam comunicar com um módulo centrar. Terá uma determinada memória e um módulo \ac{GPS} que permita aceder à sua localização, identificando-o em caso de furto. Para além disso, um \acl{SM} terá que possuir obrigatoriamente um ou vários sensores.
+Pretende-se que este módulo seja identificado por um determinado nome, possua uma bateria que permita a sua mobilidade, tenha um ou vários módulos de comunicação acoplados que permitam comunicar com um módulo centrar. Tenha uma determinada memória e um módulo \ac{GPS} que permita aceder à sua localização, identificando-o em caso de furto. Para além disso, um \acl{SM} terá que possuir obrigatoriamente um ou vários sensores.
 
 
 
@@ -300,7 +300,7 @@ Seguidamente serão descritos cada um dos casos de uso para as duas plataformas.
 \newpage
 
 \begin{itemize}
-	\item \textbf{Login no sistema}: qualquer utilizador (\textit{general user}, \textit{company user} ou \textit{admin}) poderá aceder ao sistema tendo para isso que possuir uma conta registada e validada no caso de ser um \textit{general user}. Após a validação das suas credenciais (\textit{username} e \textit{password}) o utilizador poderá aceder à pagina inicial da \textit{dashboard} e a todo o seu conteúdo. Este caso de uso encontra-se disponível para os dois tipos de plataformas; 
+	\item \textbf{Login no sistema}: qualquer utilizador (\textit{general user}, \textit{company user} ou \textit{admin}) poderá aceder ao sistema tendo para isso que possuir uma conta registada e validada no caso de ser um \textit{general user}. Após a validação das suas credenciais (\textit{username} e \textit{password}) o utilizador poderá aceder à página inicial da \textit{dashboard} e a todo o seu conteúdo. Este caso de uso encontra-se disponível para os dois tipos de plataformas; 
 	
 	
 	\item \textbf{Logout no sistema}: qualquer utilizador (\textit{general user}, \textit{company user} ou \textit{admin}) poderá sair da sistema tendo que para isso que estar obrigatoriamente logado no sistema. Após o \textit{logout} ser-lhe-á apresentado novamente a página de \textit{login}. Este caso de uso encontra-se disponível para os dois tipos de plataformas; 
@@ -409,7 +409,7 @@ Nas tabelas \ref{tabeladb1} e \ref{tabeladb2} são descritas cada uma das entida
 		\textbf{CommunicationType} & id (auto-incrementado) & N/A & \begin{tabular}[c]{@{}l@{}}Identifica cada um dos tipos \\ de comunicação inseridos \\ no sistema\end{tabular} \\ \hline
 		\textbf{ControllerModule} & id (auto-incrementado) & N/A & \begin{tabular}[c]{@{}l@{}}Identifica cada um dos \\ \acl{CM} \\ inseridos no sistema\end{tabular} \\ \hline
 	\end{tabular}
-	\caption{Especificação das tabelas existentes no sistema }
+	\caption{Especificação das tabelas da base de dados existentes no sistema }
 	\label{tabeladb1}
 \end{table}
 
@@ -437,7 +437,7 @@ Nas tabelas \ref{tabeladb1} e \ref{tabeladb2} são descritas cada uma das entida
 		\textbf{Reading} & id (auto-incrementado) & sensor\_id & \begin{tabular}[c]{@{}l@{}}Permite guardar as leituras de \\ um determinado sensor\end{tabular} \\ \hline
 		\textbf{Alarms} & id (auto-incrementado) & reading\_id & \begin{tabular}[c]{@{}l@{}}Armazena os alarmes que são  \\ gerados, associados a uma leitura\end{tabular} \\ \hline
 	\end{tabular}
-	\caption{Especificação das tabelas existentes no sistema (continuação) }
+	\caption{Especificação das tabelas  da base de dados existentes no sistema (continuação) }
 	\label{tabeladb2}
 \end{table}
 
@@ -466,7 +466,7 @@ escalabilidade, fatores importantes quando queremos partilhar funcionalidades e 
 
 
 
-A camada de apresentação é responsável pela comunicação entre os utilizadores e a aplicação, sendo ela \textit{web} ou \textit{mobile}, exibindo informações aos utilizadores, abrangendo uma interface que permite solicitações ao sistema. Esta camada tem uma relação de dependência com a camada de lógica de negócio e tira partido do acesso a serviços de informação externos, que fornecem diversas funcionalidades. A interface do utilizador foi desenvolvida em  \ac{HTML} e \acs{CSS}, fazendo uso de jQuery e Javascript.
+A camada de apresentação é responsável pela comunicação entre os utilizadores e a aplicação, sendo ela \textit{web} ou \textit{mobile}, exibindo informações aos utilizadores, abrangendo uma interface que permite solicitações ao sistema. Esta camada tem uma relação de dependência com a camada de lógica de negócio e tira partido do acesso a serviços de informação externos, que fornecem diversas funcionalidades. A interface do utilizador foi desenvolvida em  \ac{HTML} e \acs{CSS}, fazendo uso de jQuery e \ac{JS}.
 
 
 
@@ -557,7 +557,7 @@ Como descrito na secção \ref{django}, o Django permite modelar os dados atrav�
 Relativamente à escolha do \ac{SGBD} recaiu sobre o PostgreSQL, mais concretamente na versão 9.3.16. Como ferramenta gráfica para administração deste \ac{SGBD} foi utilizado o PgAdmin III\footnote{\url{www.pgadmin.org/}} na versão 1.22. Este \textit{software} com interface gráfica tem inúmeras funcionalidades desde a possibilidade de ligação a base de dados remotas até à adição, edição, remoção e  consultas em tabelas. Esta ferramenta é \textit{open-source} e encontra-se disponível para Windows e UNIX. Como vimos no capítulo \ref{state}, este \ac{SGBD} permite uma grande facilidade de incorporação a um projeto Django. 
 
 
-No que diz respeito à camada de apresentação na plataforma \textit{web} foram utilizadas as seguintes bibliotecas/\textit{frameworks}: 
+No que diz respeito à camada de apresentação na plataforma \textit{web} foram utilizadas as seguintes linguagens/bibliotecas/\textit{frameworks}: 
 
 \begin{itemize}
 	\item \textbf{\acs{HTML}, \acs{CSS} e \acs{JS}}: o ponto de partida para a criação da interface \textit{web} assentou no \textit{template} denominado por AdminLTE\footnote{\url{https://adminlte.io/}} sendo este baseado em Bootstrap 3\footnote{\url{http://getbootstrap.com/}}. Neste \textit{template} prevalecem as seguintes características:  \textit{design} responsivo, interface leve e apelativa, existência de múltiplos \textit{plugins}, compatibilidade entre navegadores entre outros. 
@@ -895,7 +895,7 @@ Para a simulação de uma válvula que permitirá a transferência de água doce
 
 Nesta secção, apresentam-se os tipos de comunicação para o cenário escolhido. Pretendia-se que cada um dos módulo fique isolado, o que implicou o estudo e respetiva escolha de algumas tecnologias de comunicações sem fios (secção \ref{state-tecc} do capítulo \ref{state}). 
 
-De acordo com o verificado na tabela \ref{com-tecn}, o Zigbee e o Sigfox apresentam características que melhor se adaptam ao universo do \ac{IoT}. No entanto, para o contexto deste trabalho, privilegia-se o alcance das tecnologias Bluetooth e Wifi dado que, pretende-se tirar partido desta característica e distribuir os  \textit{Sensor Modules} pela máxima distância possível. Para além disso, estas eram as duas únicas tecnologias disponíveis no laboratório.
+De acordo com o verificado na tabela \ref{com-tecn}, o Zigbee e o Sigfox apresentam características que melhor se adaptam ao universo do \ac{IoT}. No entanto, para o contexto deste trabalho, privilegia-se o alcance das tecnologias Bluetooth e Wi-Fi dado que, pretende-se tirar partido desta característica e distribuir os  \textit{Sensor Modules} pela máxima distância possível. Para além disso, estas eram as duas únicas tecnologias disponíveis no laboratório.
 
 \begin{itemize}
 	\item \textbf{Bluetooth}: utilizado para a comunicação entre o Arduino Nano e o Raspberry Pi 3. No Arduino, foi utilizado um módulo Bluetooth HC-06 e no caso do Raspberry Pi 3 foi utilizado o seu módulo interno (versão 4.1). 
@@ -919,7 +919,7 @@ O esquema da figura \ref{esquemcomm} ilustra os tipos de comunicação envolvido
 
 
 
-Este módulo Bluetooth oferece uma forma simples de envio e receção de informações remotamente, podendo ser adquirido a um custo reduzido. Este componente funciona apenas em modo \textit{slave}, isto é, apenas permite que outros dispositivos se liguem a si, mas não permite que ele próprio se ligue a outros. Para além disso, possui um \ac{LED} que permite indicar se algum dispositivo está emparelhado. É um dos módulos Bluetooth mais comuns no microcontrolador Arduino, possuindo um alcance máximo de aproximadamente 10 metros\cite{GuangzhouHCInformationTechnologyCo.2011}.
+Este módulo Bluetooth oferece uma forma simples de envio e receção de informações remotamente, podendo ser adquirido a um custo reduzido. Este componente funciona apenas em modo \textit{slave}, isto é, apenas permite que outros dispositivos se liguem a si, mas não permite que ele próprio se ligue a outros. Para além disso, possui um \ac{LED} que permite indicar se algum dispositivo está emparelhado. É um dos módulos Bluetooth mais comuns para o microcontrolador Arduino, possuindo um alcance máximo de aproximadamente 10 metros\cite{GuangzhouHCInformationTechnologyCo.2011}.
 
 
 Na figura \ref{comimageesquema} encontra-se o esquema de ligação deste módulo e na tabela \ref{cara-comm} são apresentadas as suas principais características.

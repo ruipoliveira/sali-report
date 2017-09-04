@@ -6,7 +6,7 @@
 
 
 
-O objetivo deste trabalho era desenhar e desenvolver um sistema de informação que permitisse a recolha de dados provenientes de um sistema de sensores para monitorizar e controlar o cultivo da Salicórnia. O trabalho prático desta dissertação foi elaborado tendo por base este objetivo geral e pode-se afirmar que este foi cumprido com sucesso. Este sistema disponibiliza uma plataforma web que permite aos utilizadores consultar os dados obtidos pelos sensores e atuar remotamente permitindo melhorar as condições de cultivo. Para além disso, é disponibilizada uma \ac{API} que permite o acesso a serviços do sistema, possibilitando a criação de novas aplicações. Para simular e testar o quadro pretendido, foi criado um protótipo de \textit{hardware}. Adicionalmente, foi criado um sistema de videovigilância para incorporar nas quintas onde se faz a produção desta planta. Todas estas funcionalidades vão de encontro aos objetivos específicos apresentados na secção \ref{objectivos}, à exceção da incorporação do sistema de videovigilância com o algoritmo de deteção de intrusos. Contudo, este algoritmo foi apresentado e testado para alguns cenários, permitindo concluir que os parâmetros utilizados dependem do ângulo da posição da câmara.  Na figura \ref{resumo} encontra-se um esquema que permite resumir todo o trabalho realizado nesta dissertação. 
+O objetivo deste trabalho consistiu em desenhar e desenvolver um sistema de informação que permitisse o armazenamento dos dados provenientes de um sistema de sensores para monitorizar e controlar o cultivo da Salicórnia. O trabalho prático desta dissertação foi elaborado tendo por base este objetivo geral e pode-se afirmar que este foi cumprido com sucesso. Este sistema disponibiliza uma plataforma \textit{web} que permite aos utilizadores consultar os dados obtidos pelos sensores e atuar remotamente permitindo melhorar as condições de cultivo. Para além disso, é disponibilizada uma \ac{API} que permite o acesso a serviços do sistema, possibilitando a criação de novas aplicações. Para simular e testar o quadro pretendido, foi criado um protótipo de \textit{hardware}. Adicionalmente, foi criado um sistema de videovigilância para incorporar nas quintas onde se faz a produção desta planta. Todas estas funcionalidades vão de encontro aos objetivos específicos apresentados na secção \ref{objectivos}, à exceção da incorporação do sistema de videovigilância com o algoritmo de deteção de intrusos. Contudo, este algoritmo foi apresentado e testado para alguns cenários, permitindo concluir que os parâmetros utilizados dependem do ângulo e da posição da câmara.  Na figura \ref{resumo} encontra-se um esquema que permite resumir todo o trabalho realizado nesta dissertação. 
 
 \begin{figure}[h]
 	\centering
@@ -30,12 +30,10 @@ O sistema de informação criado poderá ser utilizado como ponto de partida par
 Durante o desenvolvimento e implementação deste sistema surgiram alguns problemas, tanto pontuais e de correção simples, como
 problemas estruturais, que levaram a algumas mudanças. Alguns dos problemas estruturais estão relacionados com o modelo de dados, em que foram adicionados novos campos às tabelas existentes, quer para o suporte de novas funcionalidades, quer para aumentar o comportamento dinâmico do sistema.
 
-Tal como referido anteriormente, não foi possível incorporar o sistema de videovigilância com o algoritmo de deteção de intrusos, sendo que para tal, pretendia-se utilizar a \ac{API} do Youtube. Esta utilização não foi possível devido à reduzida documentação da API que dificultou a sua implementação. Para além disso, existem poucos conteúdos disponíveis na Internet sobre este tema. 
 
+Tal como referido anteriormente, não foi possível incorporar o sistema de videovigilância com o algoritmo de deteção de intrusos, sendo que para tal, pretendia-se utilizar a \ac{API} do Youtube. Esta utilização não foi possível devido à reduzida documentação da API que dificultou a sua implementação. Para além disso, existem poucos exemplos que permitem entender eficazmente a utilização da API. 
 
-
-
-Um outro obstáculo na realização deste trabalho, foi o facto de o projeto não ser financiado por parte do cliente, impossibilitando assim, a compra de um sensor de salinidade, sendo este um dos parâmetros mais importante de monitorizar no controlo do cultivo da Salicórnia. Adicionalmente, pretendia-se adquirir uma câmara de maior qualidade e outra térmica(infravermelhos), permitindo a deteção de intrusos durante a noite. 
+Um outro obstáculo na realização deste trabalho, foi o facto de o projeto não ser financiado por parte do cliente, impossibilitando assim, a compra de um sensor de salinidade(condutividade), sendo este um dos parâmetros mais importante de monitorizar no controlo do cultivo da Salicórnia. Adicionalmente, pretendia-se adquirir uma câmara de maior qualidade e outra térmica (infravermelhos), permitindo a deteção de intrusos durante a noite. 
 
 
 
@@ -53,7 +51,7 @@ Um outro obstáculo na realização deste trabalho, foi o facto de o projeto nã
 
 
 
-Como trabalho futuro, propõe-se realizar alguns testes de usabilidade à aplicação web desenvolvida para verificar o grau de facilidade/dificuldade deste \textit{software}. Outra situação que poderia ser interessante pretende-se com automatizar o registo dos módulos através da leitura de um código \ac{QR} por um aplicação \textit{mobile} criada para o efeito. Por fim, pretende-se criar um circuito impresso do protótipo de \textit{hardware} desenvolvido. 
+Como trabalho futuro, propõe-se realizar alguns testes de usabilidade à aplicação \textit{web} permitindo verificar o grau de facilidade/dificuldade de utilização deste \textit{software}. Outra situação que poderia ser interessante pretende-se com automatizar o registo dos módulos através da leitura de um código \ac{QR} por um aplicação \textit{mobile} criada para o efeito. Por fim, pretende-se criar um circuito impresso do protótipo de \textit{hardware} desenvolvido. 
 
 
 

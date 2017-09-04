@@ -11,7 +11,7 @@
 
 Neste capítulo, são explicados os detalhes da implementação deste projeto, incluindo especificamente o projeto Django que inclui o sistema de informação com a aplicação web (\textit{frontend}/\textit{backend}) e API REST. Para além disso, é descrita a implementação da simulação em \textit{hardware} para o cenário descrito no capítulo anterior bem como o sistema de videovigilância para deteção de intrusos. 
 
-Segundo o ciclo de vida de um \textit{software}, estabelecido por \textit{Munish Kaur et al.}\cite{Saini2014} que analisámos na secção \ref{method}, este capítulo irá incluir, em parte, a fase de \textit{designing} mas sobretudo a fase de \textit{coding}. 
+Segundo o ciclo de vida de um \textit{software}, estabelecido por \textit{Munish Kaur et al.}\cite{Saini2014} que se apresentou na secção \ref{method}, este capítulo irá incluir, em parte, a fase de \textit{designing} mas sobretudo a fase de \textit{coding}. 
 
 
 
@@ -23,7 +23,7 @@ Segundo o ciclo de vida de um \textit{software}, estabelecido por \textit{Munish
 Relativamente ao projeto Django, numa primeira fase procedeu-se à incorporação do \ac{SGBD} PostgreSQL através do psycopg2\footnote{\url{http://initd.org/psycopg/docs/}}. O psycopg2 consiste num adaptador entre o PostgreSQL com a linguagem de programação Python, que permite executar de forma eficiente qualquer \textit{script} em \ac{SQL}. É de notar que nesta fase inicial, encontram-se instaladas algumas aplicações nativas do Django entre as quais, o  \texttt{django.contrib.auth} e  o \texttt{django.contrib.sessions}. Através delas é possível verificar o total funcionamento da base de dados uma vez que permitem criar automática das tabelas associadas ao utilizadores, grupos, permissões e respetivos conteúdos, administração, sessões entres outros. Estas tabelas são fundamentais ao bom funcionamento do sistema, sendo consideradas no modelo de dados descrito na secção \ref{modelocap}. 
 
 
-Posteriormente, procedeu-se à criação dos diferentes \texttt{Models} conforme a nomenclatura apresentada nas tabelas \ref{tabeladb1} e \ref{tabeladb1} da secção \ref{modelocap}. O excerto de código seguinte pretende ilustrar a criação de um \texttt{Model} associado à tabela que representa a estrutura \acl{SM}, com o respetivo identificador e atributos.  Após a criação de cada \texttt{Models} procedeu-se à migração dos dados para o \ac{SGBD} onde era possível verificar que as tabelas tinham sido criadas, através da utilização da ferramenta gráfica pgAdmin III. De modo a testar a estrutura criada, procedeu-se à introdução de dados através da zona administrativa do Django (figura \ref{admingdjango}). Através dos dados introduzidos e descrevendo um cenário realista foi possível validar a estrutura e proceder à implementação da aplicação \textit{web} e criação da \ac{API} \ac{REST}. 
+Posteriormente, procedeu-se à criação dos diferentes \texttt{Models} conforme a nomenclatura apresentada nas tabelas \ref{tabeladb1} e \ref{tabeladb1} da secção \ref{modelocap}. O excerto de código seguinte pretende exemplificar a criação de um \texttt{Model} associado à tabela que representa a estrutura \acl{SM}, com o respetivo identificador e atributos.  Após a criação de cada \texttt{Model} procedeu-se à migração dos dados para o \ac{SGBD} onde foi possível verificar que as tabelas tinham sido criadas, através da utilização da ferramenta gráfica pgAdmin III. De modo a testar a estrutura criada, procedeu-se à introdução de dados através da zona administrativa do Django (figura \ref{admingdjango}). Através dos dados introduzidos e descrevendo um cenário realista foi possível validar a estrutura e proceder à implementação da aplicação \textit{web} e criação da \ac{API} \ac{REST}. 
 
 
 
@@ -68,7 +68,7 @@ class SensorModule(models.Model):
 
 \subsection{Sistema de registo e autenticação}
 
-Primeiramente, procedeu-se à adaptação do \textit{template} AdminLTE de modo a criar as páginas de autenticação e registo dos utilizadores. Como vimos anteriormente irão existir utilizadores distintos, asim de modo a identificá-los e a definir a sua permissões houve necessidade de criar grupos específicas. Foram então criados dois grupos:  \textit{company}, que identifica uma empresa e \textit{general}, que identificada um utilizador comum. O administrador do sistema é um utilizador que tem o estado de \textit{superuser} ativo, isto é, possui todas as permissões sem que estas lhe sejam atribuídas explicitamente.
+Primeiramente, procedeu-se à adaptação do \textit{template} AdminLTE de modo a criar as páginas de autenticação e registo dos utilizadores. Como vimos anteriormente irão existir utilizadores distintos, assim de modo a identificá-los e a definir as suas permissões houve necessidade de criar grupos específicas. Foram então criados dois grupos:  \textit{company}, que identifica uma empresa e \textit{general}, que identificada um utilizador comum. O administrador do sistema é um utilizador que tem o estado de \textit{superuser} ativo, isto é, possui todas as permissões sem que estas lhe sejam atribuídas explicitamente.
 
 
 \begin{figure}[!htb]
@@ -92,7 +92,7 @@ Como vimos anteriormente, o \textit{company user} apenas poderá ser adicionado 
 
 No modelo de dados definido, cada sensor tem que ter obrigatoriamente associado uma entrada na tabela \texttt{AlarmsSettings} que permite definir o valor máximo e mínimo para o qual são gerados alarmes bem como as mensagens de notificação associadas enviadas ao utilizador. 
 
-A geração de alarmes é condicionada pela comparação do valor lido pelos sensores com o valor máximo e mínimo definidos para o sensor em questão. Uma vez que é necessária esta verificação para cada leitura, decidiu-se criar um \textit{trigger} em \ac{SQL} que execute este procedimento, sendo este executado a nível da \ac{SGBD} tornando o processo mais eficiente. Um \textit{trigger} permite que uma determinada sequência de comandos sejam executadas sempre que um determinado evento ocorre, neste caso uma adição. No Apêndice \ref{triggerSQLImpe} encontra-se um \textit{stored procedure} (função) que implementa a sequência de comandos bem como a implementação do \textit{trigger} na linguagem \ac{SQL}. Na figura \ref{fluxoSP} encontra-se um diagrama de fluxo que permite ilustrar a lógica do \textit{stored procedure}. 
+A geração de alarmes é condicionada pela comparação do valor lido pelos sensores com o valor máximo e mínimo definidos para o sensor em questão. Uma vez que é necessária esta verificação para cada leitura, decidiu-se criar um \textit{trigger} em \ac{SQL} que execute este procedimento, sendo este executado a nível da \ac{SGBD} tornando o processo mais eficiente. Um \textit{trigger} permite que uma determinada sequência de comandos sejam executadas sempre que um determinado evento ocorre, neste caso uma adição. No Apêndice \ref{triggerSQLImpe} encontra-se um \textit{stored procedure} (função) que implementa a sequência de comandos bem como a implementação do \textit{trigger} na linguagem \ac{SQL}. Na figura \ref{fluxoSP} encontra-se um diagrama de fluxo que permite ilustrar a lógica do \textit{stored procedure} implementado. 
 
 
 
@@ -122,16 +122,16 @@ O cliente do sistema ao aceder à \textit{dashboard} e visualizar os detalhes de
 
 \begin{itemize}
 	\item \faEdit \space (editar): possibilita editar as características enumeradas anteriormente para cada \acl{SM}. 
-	\item \faTrash \space (remove): permite remover um determinado \acl{SM} de um \ac{CM}. 
-	\item \faBarChart \faCogs \space (visualização gráfica e atuação remota): é possível visualizar graficamente os dados lidos pelos diferentes sensores existentes num \acl{SM} bem como atuar remotamente num determinado atuador. 
-	\item \faDatabase \space (visualização tabular): disponibilizada em vista tabular uma visualização dos dados lidos pelos sensores bem como a respetiva exportação em ficheiro \ac{CSV}. 
+	\item \faTrash \space (remove): permite remover um determinado \acl{SM} de um \acl{CM}. 
+	\item \faBarChart \faCogs \space (visualização gráfica e atuação remota): é possível visualizar graficamente os dados obtidos pelos diferentes sensores existentes num \acl{SM} bem como atuar remotamente num determinado atuador. 
+	\item \faDatabase \space (visualização tabular): disponibilizada em vista tabular uma visualização dos dados obtidos pelos sensores bem como a respetiva exportação para um ficheiro \ac{CSV}. 
 \end{itemize}
 
 
 Em ambas as visualizações anteriormente descritas é possível obter uma filtragem por data para os dados obtidos dos sensores de cada \acl{SM}. Esta filtragem pode ser efetuada através de sete formas diferentes: do dia, do dia anterior, dos últimos sete dias, dos últimos trinta dias, deste mês, do último mês e selecionando a data de início e de fim especificamente. 
 
 
-No que toca à visualização gráfica toda a representação foi concebida recorrendo à biblioteca ZingChart em \ac{JS}, sendo que toda a manipulação de dados é realizada a nível de \textit{backend} e posteriormente apresentada através dos \textit{templates} do Django. Esta biblioteca permite que o cliente possa guardar os gráficos obtidos em formato de imagem (PNG, JPEG ou PDF).  A análise estatística para o intervalo de data considerado permitirá ao cliente visualizar o valor máximo lido, o valor mínimo lido bem como o valor médio, sendo também todo o processamento realizado a nível de \textit{backend}. Para além disso, a página de visualização gráfica também possibilitará a ativação/desativação remota dos atuadores existentes no terreno. 
+No que toca à visualização gráfica toda a representação foi concebida recorrendo à biblioteca ZingChart em \ac{JS}, sendo que toda a manipulação de dados é realizada a nível de \textit{backend} e posteriormente apresentada através dos \textit{templates} do Django. Esta biblioteca permite ainda que o cliente possa guardar os gráficos obtidos em formato de imagem (PNG, JPEG ou PDF).  A análise estatística para o intervalo de data considerado permitirá ao cliente visualizar o valor máximo lido, o valor mínimo lido bem como o valor médio, sendo também todo o processamento realizado a nível de \textit{backend}. Para além disso, a página de visualização gráfica também possibilitará a ativação/desativação remota dos atuadores existentes no terreno. 
 
 
 Por fim, relativamente à visualização tabular os dados são apresentados em três campos distintas que representam o tipo de sensor, data e hora da leitura, valor lido e a escala. A tabela contém paginação sendo que é possível escolher o número de entradas que serão apresentadas (10, 25, 50 ou 100). Complementarmente, existe uma caixa de texto que permite ao cliente pesquisar pelos campos apresentados, para além disso é possível ordenar alfabeticamente ou numericamente esses. O cliente também poderá exportar os dados apresentados num ficheiro do tipo \ac{CSV} com a estrutura apresentada na tabela \ref{exportcsv}. Para a implementação desta funcionalidade foram utilizados os métodos \texttt{writer} e \texttt{writerow()} disponíveis no pacote \texttt{csv} do Python.  

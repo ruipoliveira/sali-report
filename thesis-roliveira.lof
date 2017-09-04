@@ -7,15 +7,15 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Evolu\IeC {\c c}\IeC {\~a}o da Internet em cinco fases}}{10}{figure.caption.21}
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Pir\IeC {\^a}mide do conhecimento: modelo DIKW\relax }}{11}{figure.caption.23}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Arduino Nano\relax }}{23}{figure.caption.47}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Identifica\IeC {\c c}\IeC {\~a}o dos diferentes pinos num Arduino Nano}}{23}{figure.caption.47}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Raspberry Pi 3\relax }}{24}{figure.caption.50}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Principais componentes de um Raspberry Pi 3 \relax }}{24}{figure.caption.50}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Sensibilidade luminosa das plantas durante a fotoss\IeC {\'\i }ntese}}{25}{figure.caption.53}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Arduino Nano\relax }}{23}{figure.caption.46}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Identifica\IeC {\c c}\IeC {\~a}o dos diferentes pinos num Arduino Nano}}{23}{figure.caption.46}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Raspberry Pi 3\relax }}{24}{figure.caption.49}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Principais componentes de um Raspberry Pi 3 \relax }}{24}{figure.caption.49}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Sensibilidade luminosa das plantas durante a fotoss\IeC {\'\i }ntese}}{25}{figure.caption.52}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Ilustra\IeC {\c c}\IeC {\~a}o dos principais componentes do sistema\relax }}{29}{figure.caption.58}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Ilustra\IeC {\c c}\IeC {\~a}o da distribui\IeC {\c c}\IeC {\~a}o dos m\IeC {\'o}dulos em duas leiras\relax }}{30}{figure.caption.59}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Esquema de componentes e respetiva comunica\IeC {\c c}\IeC {\~a}o entre tr\IeC {\^e}s \ac {SM} e um \ac {CM}\relax }}{31}{figure.caption.62}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Ilustra\IeC {\c c}\IeC {\~a}o dos principais componentes do sistema\relax }}{29}{figure.caption.57}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Ilustra\IeC {\c c}\IeC {\~a}o da distribui\IeC {\c c}\IeC {\~a}o dos m\IeC {\'o}dulos em duas leiras\relax }}{30}{figure.caption.58}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Esquema de componentes e respetiva comunica\IeC {\c c}\IeC {\~a}o entre tr\IeC {\^e}s \ac {SM} e um \ac {CM}\relax }}{31}{figure.caption.61}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Casos de uso para a aplica\IeC {\c c}\IeC {\~a}o \textit {web} (\textit {dashboard}) \relax }}{36}{figure.caption.65}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Casos de uso para a aplica\IeC {\c c}\IeC {\~a}o \textit {mobile}\relax }}{37}{figure.caption.66}
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Esquema relacional da estrutura da base de dados\relax }}{40}{figure.caption.67}
@@ -36,11 +36,11 @@
 \contentsline {figure}{\numberline {4.21}{\ignorespaces M\IeC {\'o}dulo Bluetooth HC-06\relax }}{55}{figure.caption.94}
 \contentsline {figure}{\numberline {4.22}{\ignorespaces Esquema eletr\IeC {\'o}nico da liga\IeC {\c c}\IeC {\~a}o do m\IeC {\'o}dulo Bluetooth\relax }}{55}{figure.caption.94}
 \contentsline {figure}{\numberline {4.23}{\ignorespaces Raspberry Pi Camera Board V2 8MP 1080p\relax }}{56}{figure.caption.98}
-\contentsline {figure}{\numberline {4.24}{\ignorespaces Arquitetura do sistema de videovigil\IeC {\^a}ncia e dete\IeC {\c c}\IeC {\~a}o de intrusos \relax }}{57}{figure.caption.102}
-\contentsline {figure}{\numberline {4.25}{\ignorespaces Diagrama final de componentes do sistema\relax }}{58}{figure.caption.103}
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Arquitetura do sistema de videovigil\IeC {\^a}ncia e dete\IeC {\c c}\IeC {\~a}o de intrusos \relax }}{57}{figure.caption.101}
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Diagrama final de componentes do sistema\relax }}{58}{figure.caption.102}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Painel administrativo da \textit {framework} Django \relax }}{60}{figure.caption.104}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Diagrama de atividades do processo de registo e autentica\IeC {\c c}\IeC {\~a}o\relax }}{61}{figure.caption.105}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Painel administrativo da \textit {framework} Django \relax }}{60}{figure.caption.103}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Diagrama de atividades do processo de registo e autentica\IeC {\c c}\IeC {\~a}o\relax }}{61}{figure.caption.104}
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Diagrama de fluxo para gera\IeC {\c c}\IeC {\~a}o de alarmes\relax }}{62}{figure.caption.106}
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Documenta\IeC {\c c}\IeC {\~a}o da API REST com a ferramenta Swagger\relax }}{65}{figure.caption.108}
 \contentsline {figure}{\numberline {5.5}{\ignorespaces L\IeC {\'o}gica de implementa\IeC {\c c}\IeC {\~a}o do \textit {script} para o \acl {CM} \relax }}{71}{figure.caption.110}
@@ -50,11 +50,11 @@
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Resultado da utiliza\IeC {\c c}\IeC {\~a}o da ferramenta \textit {Advanced REST client}\relax }}{76}{figure.caption.114}
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Resultado da intera\IeC {\c c}\IeC {\~a}o com a aplica\IeC {\c c}\IeC {\~a}o \textit {Bluetooth Terminal HC-05}\relax }}{77}{figure.caption.115}
 \contentsline {figure}{\numberline {6.3}{\ignorespaces \textit {Breadboard} com liga\IeC {\c c}\IeC {\~a}o dos diferentes componentes, destacando-se a ativa\IeC {\c c}\IeC {\~a}o do \ac {LED}\relax }}{77}{figure.caption.115}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Imagem original (frame 1)}}{77}{figure.caption.116}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Resultado obtido (frame 1)}}{77}{figure.caption.116}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Imagem original (frame 2)}}{78}{figure.caption.117}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Imagem original (frame1)}}{77}{figure.caption.116}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Resultado obtido (frame1)}}{77}{figure.caption.116}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Imagem original (frame2)}}{78}{figure.caption.117}
 \contentsline {figure}{\numberline {6.7}{\ignorespaces Resultado obtido (frame 2)}}{78}{figure.caption.117}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Imagem original (frame 3)}}{78}{figure.caption.118}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Imagem original (frame3)}}{78}{figure.caption.118}
 \contentsline {figure}{\numberline {6.9}{\ignorespaces Resultado obtido (frame 3)}}{78}{figure.caption.118}
 \contentsline {figure}{\numberline {6.10}{\ignorespaces Interface para novo registo, destacando o \textit {feedback} dado ao utilizador\relax }}{79}{figure.caption.119}
 \contentsline {figure}{\numberline {6.11}{\ignorespaces Interface para valida\IeC {\c c}\IeC {\~a}o de utilizadores, com \textit {feedback} ap\IeC {\'o}s valida\IeC {\c c}\IeC {\~a}o\relax }}{79}{figure.caption.119}

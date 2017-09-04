@@ -9,21 +9,19 @@ Neste capítulo, são apresentados os resultados da pesquisa bibliográfica sobr
 \section{Conceitos tecnológicos}
 
 
-Nesta secção são apresentados alguns conceitos tecnológicos utilizados em toda a dissertação. 
+Nesta secção são apresentados alguns conceitos tecnológicos ou ferramentas utilizadas em toda a dissertação. 
 
 \begin{itemize}
-	\item \ac{HTML}: consiste numa linguagem de marcação que permite estruturar uma página \textit{web}. 
-	\item \ac{CSS}: permite personalizar os componentes existentes \ac{HTML}, isto é, personalizá-los com uma determinada cor, espaçamento ou fonte. 
-	\item \ac{JS}: é uma linguagem de programação interpretada. Foi utilizada inicialmente para a criação de aplicações do lado do cliente, sendo que atualmente, já é bastante utilizada do lado do servidor. 
+	\item \ac{HTML}: consiste numa linguagem de marcação que permite estruturar uma página \textit{web}; 
 	
-	\item Python: é uma  linguagem de programação de alto nível, possuindo os seguintes paradigmas:  orientação a objetos, programação imperativa, programação funcional. 
+	\item \ac{CSS}: permite personalizar os componentes existentes no \linebreak \ac{HTML}, por exemplo, personalizá-los com uma determinada cor,  espaçamento ou fonte;  
+	
+	\item \ac{JS}: é uma linguagem de programação interpretada. Foi utilizada inicialmente para a criação de aplicações do lado do cliente, sendo que atualmente, já é bastante utilizada do lado do servidor, como por exemplo o node.js; 
+	
+	\item Python: é uma  linguagem de programação de alto nível, possuindo os seguintes paradigmas:  orientação a objetos, programação imperativa, programação funcional;  
 	
 	
 	\item \ac{API}: consiste numa interface de programação de aplicações, isto é, disponibiliza um conjunto de funções específicas que permitem ao programador aceder a determinadas funcionalidades de um sistema.  
-	
-	\item Web Service: é um tipo de \ac{API} que trabalha com o protocolo \ac{HTTP},
-	ou \ac{SMTP}.
-	
 	
 \end{itemize}
 
@@ -99,7 +97,7 @@ Na tabela \ref{Ranking-engines2016} encontra-se a classificação atribuída pel
 
 
 
-Embora as diferenças entre estes os dois SGBD não sejam significativas, podemos também ter em consideração a performance. Para tal, foram realizados alguns estudos que pretendem comparar estas duas ferramentas usando a benchmark TPC-H\footnote{\url{http://www.tpc.org/tpch/}}, expondo que a performance do PostgreSQL é ligeiramente superior à do MySQL na maioria das queries\cite{Lopez2009}. %rever ref.  
+Embora as diferenças entre estes os dois SGBD não sejam significativas, podemos também ter em consideração a performance. Para tal, foram realizados alguns estudos que pretendem comparar estas duas ferramentas usando a \textit{benchmark} TPC-H\footnote{\url{http://www.tpc.org/tpch/}}, expondo que a performance do PostgreSQL é ligeiramente superior à do MySQL na maioria das \textit{queries}\cite{Lopez2009}. %rever ref.  
 A tabela \ref{comp-sqgbdcar} permite comparar algumas das características dos \ac{SGBD} estudados, possibilitando concluir que todas usam o modelo relacional mas apenas o MySQL e o PostgreSQL são \textit{open-source}.
 
 
@@ -109,17 +107,17 @@ A tabela \ref{comp-sqgbdcar} permite comparar algumas das características dos \
 	\centering
 
 	\begin{tabular}{|
-			>{\columncolor[HTML]{EFEFEF}}c |c|c|c|}
+			>{\columncolor[HTML]{EFEFEF}}l |l|l|l|}
 		\hline
 		& \cellcolor[HTML]{EFEFEF}\textbf{MySQL} & \cellcolor[HTML]{EFEFEF}\textbf{SQL Server} & \cellcolor[HTML]{EFEFEF}\textbf{PostgreSQL} \\ \hline
-		\textbf{Modelo} & \multicolumn{3}{c|}{Relacional} \\ \hline
-		\textbf{Desenvolvido} & Oracle & Microsoft & \begin{tabular}[c]{@{}c@{}}PostgreSQL\\ Global Development Group\end{tabular} \\ \hline
+		\textbf{Modelo} & \multicolumn{3}{l|}{Relacional} \\ \hline
+		\textbf{Desenvolvido} & Oracle & Microsoft & \begin{tabular}[l]{@{}l@{}}PostgreSQL\\ Global Development Group\end{tabular} \\ \hline
 		\textbf{Lançamento} & 1995 & 1989 & 1989 \\ \hline
 		\textbf{Implementação} & C e C++ & C++ & C \\ \hline
 		\textbf{Licença} & Open-source & Comercial & Open-source \\ \hline
-		\textbf{Versão atual} & \begin{tabular}[c]{@{}c@{}}5.7.18\\ Abril 2017\end{tabular} & \begin{tabular}[c]{@{}c@{}}SQL Server 2016\\ Junho 2016\end{tabular} & \begin{tabular}[c]{@{}c@{}}9.6.3\\ Maio 2017\end{tabular} \\ \hline
-		\textbf{Triggers} & \multicolumn{3}{c|}{Suporta} \\ \hline
-		\textbf{\begin{tabular}[c]{@{}c@{}}Stored Procedures\\ e Functions\end{tabular}} & \multicolumn{3}{c|}{Suporta} \\ \hline
+		\textbf{Versão atual} & \begin{tabular}[l]{@{}l@{}}5.7.18\\ Abril 2017\end{tabular} & \begin{tabular}[l]{@{}l@{}}SQL Server 2016\\ Junho 2016\end{tabular} & \begin{tabular}[l]{@{}l@{}}9.6.3\\ Maio 2017\end{tabular} \\ \hline
+		\textbf{Triggers} & \multicolumn{3}{l|}{Suporta} \\ \hline
+		\textbf{\begin{tabular}[l]{@{}l@{}}Stored Procedures\\ e Functions\end{tabular}} & \multicolumn{3}{l|}{Suporta} \\ \hline
 	\end{tabular}
 	\caption{Comparação entre MySQL, SQL Server e PostgreSQL}
 	\label{comp-sqgbdcar}
@@ -149,13 +147,13 @@ De modo a facilitar o desenvolvimento do sistema, optou-se que tanto  a nível d
 \subsection{ASP.net}
 
 
-ASP.net é uma tecnologia de \textit{scripting} que corre do lado do servidor, permitindo colocar numa página \textit{web}, \textit{scripts} que irão ser executados por um determinado servidor. Uma aplicação desenvolvida nesta tecnologia é executada num servidor de Internet da Microsoft, conhecido por \ac{IIS}, que pode ser desenvolvido recorrendo à linguagem C\# ou Microsoft Visual Basic. Esta tecnologia oferece três modelos para a criação de aplicações \textit{web}, ASP.NET \textit{Web Forms}, ASP.NET \ac{MVC}, e ASP.NET \textit{Web Pages}, podendo ser criadas aplicações \textit{web} estáveis e maduras com qualquer um deles\cite{Microsoft2016}. 
+ASP.net é uma tecnologia de \textit{scripting} que corre do lado do servidor, permitindo colocar numa página \textit{web}, \textit{scripts} que irão ser executados por um determinado servidor. Uma aplicação desenvolvida nesta tecnologia é executada num servidor de Internet da Microsoft, conhecido por \ac{IIS}, que pode ser desenvolvida recorrendo à linguagem C\# ou Microsoft Visual Basic. Esta tecnologia oferece três modelos para a criação de aplicações \textit{web}, ASP.NET \textit{Web Forms}, ASP.NET \ac{MVC}, e ASP.NET \textit{Web Pages}, podendo ser criadas aplicações \textit{web} estáveis e maduras com qualquer um deles\cite{Microsoft2016}. 
 
 
 \subsection{Flask}
 
 
-O Flask consiste numa \textit{micro-framewor}k desenvolvida em Python baseada nas bibliotecas \ac{WSGI} Werkzeug e Jinja2\footnote{\url{http://jinja.pocoo.org/}}. Esta \textit{framework} disponibiliza um  modelo simples para desenvolvimento \textit{web}, um vez que permite economizar bastante tempo na sua conceção. O Pinterest e LinkedIn são exemplos de aplicações que utilizam esta \textit{micro-framework}. As suas características principais são\cite{Flask2014}:  
+O Flask consiste numa \textit{micro-framewor}k desenvolvida em Python baseada nas bibliotecas \ac{WSGI} Werkzeug e Jinja2\footnote{\url{http://jinja.pocoo.org/} (motor de modelos mais utilizado em Python)}. Esta \textit{framework} disponibiliza um  modelo simples para desenvolvimento \textit{web}, uma vez que permite economizar bastante tempo na sua conceção. O Pinterest e LinkedIn são exemplos de aplicações que utilizam esta \textit{micro-framework}. As suas características principais são\cite{Flask2014}:  
 
 
 \begin{itemize}
@@ -301,7 +299,7 @@ Uma aplicação multi-plataforma ou híbrida, é desenvolvida utilizando tecnolo
 	\item \textbf{Interface}: para aceder à mesma \ac{UI} do sistemas operativos é necessário utilizar \textit{plug-ins} adicionais. 
 	
 	
-	\item \textbf{Recursos e \textit{Plug-ins}}: existe muitos recursos disponíveis  para aplicações \linebreak multi-plataforma através de \textit{plug-ins}, permitindo ter o mesmo efeito em todas as plataforma. Por outro lado, impõe-se a questão da performance. 
+	\item \textbf{Recursos e \textit{Plug-ins}}: existe muitos recursos disponíveis  para aplicações \linebreak multi-plataforma através de \textit{plug-ins}, permitindo ter o mesmo efeito em todas as plataformas. Por outro lado, impõe-se a questão da performance. 
 
 	
 	\item \textbf{Segurança}: recorrem a \textit{plug-ins} externos para garantir maior segurança podendo ser potencialmente mais vulneráveis.
@@ -312,7 +310,7 @@ Uma aplicação multi-plataforma ou híbrida, é desenvolvida utilizando tecnolo
 Existem inúmeras \textit{frameworks} para desenvolvimento multi-plataformas, entre as quais destaco as três mais utilizadas no mercado: Ionic, PhoneGap e Xmarin. 
 
 \begin{itemize}
-	\item \textbf{Ionic}: consiste numa ferramenta para desenvolvimento \textit{mobile}, sendo constituído por outro conjunto de \textit{frameworks}: Cordova (permite a integração de recursos nativo), AngularJS (criação da \textit{web app}) e Ionic Module e CLI (ferramenta e componentes disponibilizados pelo ionic)\cite{Ionic2016}. 
+	\item \textbf{Ionic}: consiste numa ferramenta para desenvolvimento \textit{mobile}, sendo constituído por outro conjunto de \textit{frameworks}: Cordova (permite a integração de recursos nativos), AngularJS (criação da \textit{web app}) e Ionic Module e CLI (ferramenta e componentes disponibilizados pelo Ionic)\cite{Ionic2016}. 
 	
 	\item \textbf{PhoneGap}: tal como o Ionic, consiste numa \textit{framework} mobile que utiliza o Cordava da Apache para aceder aos recursos nativos do sistema. É uma \textit{framework} \textit{open-source}, tendo compatibilidade com outras ferramentas. 
 	
@@ -325,7 +323,7 @@ Existem inúmeras \textit{frameworks} para desenvolvimento multi-plataformas, en
 
 
 
-Um vez que o cliente pretende uma solução mobile multiplataforma, isto é, possível de ser executada em iOS e Android optou-se por utilizar a \textit{framework} Phonegap.  Uma das principais desvantagens da utilização deste paradigma multiplataforma é o seu baixo desempenho na utilização de recursos do dispositivo. Uma vez que não será necessária essa utilização optou-se por utilizar a \textit{framework} mencionada anteriormente. 
+Um vez que o cliente pretende uma solução \textit{mobile} multi-plataforma, isto é, possível de ser executada em iOS e Android optou-se por utilizar a \textit{framework} Phonegap.  Uma das principais desvantagens da utilização deste paradigma multi-plataforma é o seu baixo desempenho na utilização de recursos do dispositivo. Uma vez que não será necessária essa utilização optou-se por utilizar a \textit{framework} mencionada anteriormente. 
 
 
 
@@ -333,16 +331,14 @@ Um vez que o cliente pretende uma solução mobile multiplataforma, isto é, pos
 \section{REST \textit{Frameworks}}
 
 
-Com o evolução da tecnologia, houve a necessidade dos programadores exporem os seus serviços para serem utilizados por outras entidades. Neste sentido, foram criados métodos que permitem a comunicação  entre diferentes sistemas, podendo estes serem alojados em máquinas ou redes diferentes.   
-
-Para atingir este objetivo, existem atualmente algumas arquiteturas bastante populares, como é o caso do \ac{SOAP} e o \ac{REST}. 
+Com o evolução da tecnologia, houve a necessidade dos programadores exporem os seus serviços para serem utilizados por outras entidades. Neste sentido, foram criados métodos que permitem a comunicação  entre diferentes sistemas, podendo estes serem alojados em máquinas ou redes diferentes. Para atingir este objetivo, existem atualmente algumas arquiteturas bastante populares, como é o caso do \ac{SOAP} e o \ac{REST}. 
 
 
 \begin{itemize}
 	\item \textbf{\ac{SOAP}}: consiste num protocolo aplicado a ambientes distribuídos e descentralizado, isto é, permite que dois processos possam comunicar estando a ser executados em máquinas ou redes diferentes\cite{Kang2015}. A comunicação entre os diferentes componentes é realizada com base em mensagens \ac{XML} (formato \textit{standard}), enviadas entre os intervenientes através \ac{HTTP}.
 	
 	
-	\item \textbf{\ac{REST}}: é considerada uma alternativa à arquitetura \ac{SOAP}, sendo menos formal relativamente a esta. Usa o protocolo \ac{HTTP} como modo de funcionamento, tendo a possibilidade de definir o formato das mensagens a trocar, sendo normalmente utilizados os formatos \ac{JSON} ou \ac{XML}. Tem como grande vantagem a facilidade de implementação, escalabilidade, maior performance na execução e sem complexidade dos \textit{web-services} tradicionais \cite{restpaper}. 
+	\item \textbf{\ac{REST}}: é considerada uma alternativa à arquitetura \ac{SOAP}, sendo menos formal relativamente a esta. Usa o protocolo \ac{HTTP} como modo de funcionamento, tendo a possibilidade de definir o formato das mensagens a trocar, sendo normalmente utilizados os formatos \ac{JSON} ou \ac{XML}. Tem como grande vantagem a facilidade de implementação, escalabilidade, maior performance na execução e sem a complexidade dos \textit{web-services} tradicionais \cite{restpaper}. 
 	
 	
 \end{itemize}
@@ -500,7 +496,7 @@ O Arduino Nano possui um conjunto de pinos que podem ser programados para funcio
 
 Um Raspberry Pi (figura \ref{rasp1}) é mais poderoso do que outros dispositivos de igual dimensão e incorpora alguns periféricos \ac{I/O}, tal como um computador normal. Tem o tamanho de um cartão de crédito que possui um conjunto de \textit{hardware} integrado que tal como o Arduino, possibilita uma interação com o exterior. Este dispositivo, desenvolvido no Reino Unido pela \textit{Raspberry Pi Foundation}, pode ser ligado a um monitor através da saída HDMI, possuindo também uma saída de áudio e várias portas \ac{USB}. O Raspberry Pi é compatível com sistemas operativos baseados em GNU/Linux, sendo que no trabalho prático desta dissertação será utiliza a versão 3 do Raspberry Pi com a versão Raspbian\footnote{Distribuição Linux oficial do Raspberry Pi:  \url{https://www.raspberrypi.org/downloads/raspbian/}} instalada\cite{RaspberryPiFoundation2012}.
 
- Na figura \ref{comprasp1} encontram-se os principais componentes da versão utilizada e na tabela \ref{comp23} é feita um comparação entre a versão 2 e 3 do Raspberry Pi, permitindo concluir que a versão utilizada é mais poderosa. 
+ Na figura \ref{comprasp1} encontram-se os principais componentes da versão utilizada e na tabela \ref{comp23} é feita uma comparação entre a versão 2 e 3 do Raspberry Pi, permitindo concluir que a versão utilizada é mais poderosa. 
 
 
 
@@ -564,10 +560,10 @@ Esta secção tem como objetivo fazer um estudo comparativo entre as diferentes 
 Existem vários tipos de sensores de temperatura baseados em princípios de funcionamento distintos, nomeadamente os termopares, os termístores e os de circuito integrado. 
 
 \begin{itemize}
-	\item \textbf{Termopares}: são sensores de temperatura simples, robustos e de baixo custo, constituídos por duas partes diferentes de material condutor. Podem medir temperaturas entre os -200ºC e os 2315ºC, sendo usados em grande escala\cite{REOTEMPInstrumentCorporation}. 
+	\item \textbf{Termopares}: são sensores de temperatura simples, robustos e de baixo custo, constituídos por duas partes diferentes de material condutor. Podem medir temperaturas entre os -200ºC e os 2315ºC, sendo usados em grande escala\cite{REOTEMPInstrumentCorporation}; 
 	 
 	
-	\item \textbf{Termístor}: são sensores cuja resistência varia com a temperatura, sendo construídos a partir de materiais semicondutores. Um termístor detêm uma maior sensibilidade, pois uma pequena variação de temperatura provoca uma grande variação na sua resistência, permitindo que a temperatura típica seja entre os -100ºC e os 300ºC. Estes sensores são frágeis, baratos e de dimensões reduzidas, sendo suscetíveis a problemas de auto aquecimento\cite{TemperatureSensors}.
+	\item \textbf{Termístor}: são sensores cuja resistência varia com a temperatura, sendo construídos a partir de materiais semicondutores. Um termístor detêm uma maior sensibilidade, pois uma pequena variação de temperatura provoca uma grande variação na sua resistência, permitindo que a temperatura típica seja entre os -100ºC e os 300ºC. Estes sensores são frágeis, baratos e de dimensões reduzidas, sendo suscetíveis a problemas de auto aquecimento\cite{TemperatureSensors};
 	
 
 	\item \textbf{Circuito integrado}: são sensores construídos através de materiais semicondutores, o que possibilita que tenham uma gama de temperatura limitada, geralmente entre os -55ºC e os 150ºC. 	Estão disponíveis com saídas em tensão, ou corrente, linearmente proporcional à temperatura. 
@@ -601,14 +597,14 @@ Existe uma enorme variedade de sensores de luminosidade/radiação no mercado, c
 Alguns dos sensores de luminosidade/radição mais comuns no mercado são os sensores \ac{PAR}, os piranómetros e os sensores optoelectrónicos, descritos de seguida. 
 
 \begin{itemize}
-	\item \textbf{Sensores \ac{PAR}}: são desenhados especificamente para medir a \ac{PAR}, sendo indicados para medir a luz incidente numa planta. Os custos associados a este tipo de sensores são elevados e por isso são utilizados maioritariamente na investigação hortícola. 
+	\item \textbf{Sensores \ac{PAR}}: são desenhados especificamente para medir a \ac{PAR}, sendo indicados para medir a luz incidente numa planta. Os custos associados a este tipo de sensores são elevados e por isso são utilizados maioritariamente na investigação hortícola; 
 	
 
 
 	
 	
 	
-	\item \textbf{Piranómetros}: estes sensores medem a radiação solar total (radiação ultravioleta, visível e infravermelha), devendo ser utilizados no exterior. Este tipo de sensores é particularmente útil em estações meteorológicas. No entanto, são bastante dispendiosos, podendo ser mais caros dos que os sensores \ac{PAR}. 
+	\item \textbf{Piranómetros}: estes sensores medem a radiação solar total (radiação ultravioleta, visível e infravermelha), devendo ser utilizados no exterior. Este tipo de sensores é particularmente útil em estações meteorológicas. No entanto, são bastante dispendiosos, podendo ser mais caros dos que os sensores \ac{PAR}; 
 	
 	
 	
@@ -616,8 +612,8 @@ Alguns dos sensores de luminosidade/radição mais comuns no mercado são os sen
 	\item \textbf{Sensores optoelectrónicos}: são dispositivos eletrónicos que se baseiam em fenómenos fotovoltaicos. Existem três sensores deste tipo, que possuem um elevado desempenho quando afetados pelo ruído e uma elevada sensibilidade. São considerados os sensores de luminosidade mais económicos.  
 	 
 		\begin{itemize}
-			\item \textbf{Fotodíodo}: pode ser visto como um díodo comum, gerando uma corrente ou tensão quando incide radiação sobre ele.
-			\item \textbf{Fototransístor}: é um transístor desenhado para receber luz, normalmente num módulo transparente.
+			\item \textbf{Fotodíodo}: pode ser visto como um díodo comum, gerando uma corrente ou tensão quando incide radiação sobre ele; 
+			\item \textbf{Fototransístor}: é um transístor desenhado para receber luz, normalmente num módulo transparente; 
 			\item \textbf{\ac{LDR}}: trata-se de um material semicondutor cuja resistência diminui com a incidência de luz. É um sensor económico e de fácil utilização. 
 		\end{itemize}
 	
