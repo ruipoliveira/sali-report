@@ -1,6 +1,6 @@
 \select@language {portuguese}
 \contentsline {chapter}{Lista de Figuras}{v}{chapter*.1}
-\contentsline {chapter}{Lista de Tabelas}{ix}{chapter*.3}
+\contentsline {chapter}{Lista de Tabelas}{ix}{chapter*.2}
 \contentsline {chapter}{Acr\IeC {\'o}nimos}{xi}{section*.10}
 \contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Motiva\IeC {\c c}\IeC {\~a}o}{2}{section.1.1}
@@ -20,16 +20,16 @@
 \contentsline {subsection}{\numberline {3.2.2}SQL Server}{14}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}PostgreSQL}{14}{subsection.3.2.3}
 \contentsline {subsection}{\numberline {3.2.4}Compara\IeC {\c c}\IeC {\~a}o e solu\IeC {\c c}\IeC {\~a}o adotada}{14}{subsection.3.2.4}
-\contentsline {section}{\numberline {3.3}Desenvolvimento web}{15}{section.3.3}
+\contentsline {section}{\numberline {3.3}Desenvolvimento \textit {web}}{15}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}ASP.net}{16}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Flask}{16}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}Django}{16}{subsection.3.3.3}
 \contentsline {subsection}{\numberline {3.3.4}Conclus\IeC {\~o}es e solu\IeC {\c c}\IeC {\~a}o adotada}{17}{subsection.3.3.4}
-\contentsline {section}{\numberline {3.4}Desenvolvimento mobile}{18}{section.3.4}
+\contentsline {section}{\numberline {3.4}Desenvolvimento \textit {mobile}}{18}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Plataformas nativas}{18}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}Multi-plataforma}{18}{subsection.3.4.2}
 \contentsline {subsection}{\numberline {3.4.3}Conclus\IeC {\~o}es e solu\IeC {\c c}\IeC {\~a}o adotada}{19}{subsection.3.4.3}
-\contentsline {section}{\numberline {3.5}REST Frameworks}{20}{section.3.5}
+\contentsline {section}{\numberline {3.5}REST \textit {Frameworks}}{20}{section.3.5}
 \contentsline {subsection}{\numberline {3.5.1}Django Rest Framework}{20}{subsection.3.5.1}
 \contentsline {subsection}{\numberline {3.5.2}Restlet}{21}{subsection.3.5.2}
 \contentsline {subsection}{\numberline {3.5.3}Flask-RESTful}{21}{subsection.3.5.3}
@@ -49,7 +49,7 @@
 \contentsline {subsection}{\numberline {3.8.5}Compara\IeC {\c c}\IeC {\~a}o entre tecnologias de comunica\IeC {\c c}\IeC {\~a}o}{27}{subsection.3.8.5}
 \contentsline {chapter}{\numberline {4}Sistema de controlo e monitoriza\IeC {\c c}\IeC {\~a}o: arquitetura e modela\IeC {\c c}\IeC {\~a}o}{29}{chapter.4}
 \contentsline {section}{\numberline {4.1}Descri\IeC {\c c}\IeC {\~a}o global do sistema}{29}{section.4.1}
-\contentsline {section}{\numberline {4.2}Componentes}{30}{section.4.2}
+\contentsline {section}{\numberline {4.2}Componentes}{31}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}\acl {SM}}{31}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}\acl {CM}}{32}{subsection.4.2.2}
 \contentsline {section}{\numberline {4.3}An\IeC {\'a}lise de requisitos}{32}{section.4.3}
@@ -57,21 +57,21 @@
 \contentsline {subsection}{\numberline {4.3.2}Requisitos n\IeC {\~a}o funcionais}{34}{subsection.4.3.2}
 \contentsline {section}{\numberline {4.4}Modela\IeC {\c c}\IeC {\~a}o}{35}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Entidades envolvidas}{35}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Casos de uso}{35}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.2}Casos de uso}{36}{subsection.4.4.2}
 \contentsline {subsection}{\numberline {4.4.3}Modelo de dados}{40}{subsection.4.4.3}
 \contentsline {section}{\numberline {4.5}Arquitetura l\IeC {\'o}gica}{43}{section.4.5}
 \contentsline {section}{\numberline {4.6}Arquitetura f\IeC {\'\i }sica}{44}{section.4.6}
 \contentsline {subsection}{\numberline {4.6.1}Sistema de informa\IeC {\c c}\IeC {\~a}o}{45}{subsection.4.6.1}
-\contentsline {subsubsection}{Aplica\IeC {\c c}\IeC {\~a}o web}{45}{section*.73}
-\contentsline {subsubsection}{\acs {API} \acs {REST}}{47}{section*.76}
-\contentsline {subsubsection}{Documenta\IeC {\c c}\IeC {\~a}o interativa}{49}{section*.79}
-\contentsline {subsubsection}{Implementa\IeC {\c c}\IeC {\~a}o do sistema}{49}{section*.80}
-\contentsline {subsubsection}{Aplica\IeC {\c c}\IeC {\~a}o mobile}{50}{section*.81}
+\contentsline {subsubsection}{Aplica\IeC {\c c}\IeC {\~a}o web}{45}{section*.74}
+\contentsline {subsubsection}{\acs {API} \acs {REST}}{47}{section*.77}
+\contentsline {subsubsection}{Documenta\IeC {\c c}\IeC {\~a}o interativa}{49}{section*.80}
+\contentsline {subsubsection}{Implementa\IeC {\c c}\IeC {\~a}o do sistema}{49}{section*.81}
+\contentsline {subsubsection}{Aplica\IeC {\c c}\IeC {\~a}o mobile}{50}{section*.82}
 \contentsline {subsection}{\numberline {4.6.2}Simula\IeC {\c c}\IeC {\~a}o em \textit {hardware}}{51}{subsection.4.6.2}
-\contentsline {subsubsection}{Sensores utilizados}{51}{section*.83}
-\contentsline {subsubsection}{Comunica\IeC {\c c}\IeC {\~a}o}{53}{section*.91}
+\contentsline {subsubsection}{Sensores utilizados}{51}{section*.84}
+\contentsline {subsubsection}{Comunica\IeC {\c c}\IeC {\~a}o}{53}{section*.92}
 \contentsline {subsection}{\numberline {4.6.3}Sistema de videovigil\IeC {\^a}ncia }{55}{subsection.4.6.3}
-\contentsline {subsubsection}{Biblioteca para processamento de imagem: OpenCV}{55}{section*.96}
+\contentsline {subsubsection}{Biblioteca para processamento de imagem: OpenCV}{55}{section*.97}
 \contentsline {section}{\numberline {4.7}Diagrama de componentes}{57}{section.4.7}
 \contentsline {section}{\numberline {4.8}Considera\IeC {\c c}\IeC {\~o}es finais}{58}{section.4.8}
 \contentsline {chapter}{\numberline {5}Implementa\IeC {\c c}\IeC {\~a}o}{59}{chapter.5}
@@ -79,9 +79,9 @@
 \contentsline {subsection}{\numberline {5.1.1}Sistema de registo e autentica\IeC {\c c}\IeC {\~a}o}{60}{subsection.5.1.1}
 \contentsline {subsection}{\numberline {5.1.2}Gera\IeC {\c c}\IeC {\~a}o de alarmes}{62}{subsection.5.1.2}
 \contentsline {subsection}{\numberline {5.1.3}Visualiza\IeC {\c c}\IeC {\~a}o dos dados e c\IeC {\'a}lculos estat\IeC {\'\i }sticos}{63}{subsection.5.1.3}
-\contentsline {subsection}{\numberline {5.1.4}\ac {API}}{64}{subsection.5.1.4}
-\contentsline {subsection}{\numberline {5.1.5}Documenta\IeC {\c c}\IeC {\~a}o da \ac {API}}{65}{subsection.5.1.5}
-\contentsline {subsection}{\numberline {5.1.6}Aplica\IeC {\c c}\IeC {\~a}o web}{66}{subsection.5.1.6}
+\contentsline {subsection}{\numberline {5.1.4}API}{64}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.5}Documenta\IeC {\c c}\IeC {\~a}o da API}{65}{subsection.5.1.5}
+\contentsline {subsection}{\numberline {5.1.6}Aplica\IeC {\c c}\IeC {\~a}o \textit {web}}{66}{subsection.5.1.6}
 \contentsline {subsection}{\numberline {5.1.7}\textit {Deploy} do projecto}{67}{subsection.5.1.7}
 \contentsline {section}{\numberline {5.2}Simula\IeC {\c c}\IeC {\~a}o em \textit {hardware}}{69}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Arduino Nano}{69}{subsection.5.2.1}
@@ -100,7 +100,7 @@
 \contentsline {section}{\numberline {7.1}Conclus\IeC {\~o}es}{85}{section.7.1}
 \contentsline {section}{\numberline {7.2}Problemas encontrados}{86}{section.7.2}
 \contentsline {section}{\numberline {7.3}Trabalho futuro}{86}{section.7.3}
-\contentsline {chapter}{\numberline {A}\acl {API} \acs {REST}}{93}{appendix.A}
-\contentsline {chapter}{\numberline {B}\textit {Mockup} da aplica\IeC {\c c}\IeC {\~a}o \textit {mobile}}{97}{appendix.B}
-\contentsline {chapter}{\numberline {C}Implementa\IeC {\c c}\IeC {\~a}o do \textit {trigger} \acs {SQL} }{99}{appendix.C}
+\contentsline {chapter}{\numberline {A}\textit {Mockup} da aplica\IeC {\c c}\IeC {\~a}o \textit {mobile}}{93}{appendix.A}
+\contentsline {chapter}{\numberline {B}Implementa\IeC {\c c}\IeC {\~a}o do \textit {trigger} \acs {SQL} }{95}{appendix.B}
+\contentsline {chapter}{\numberline {C}\acl {API} \acs {REST}}{97}{appendix.C}
 \contentsline {chapter}{\numberline {D}Interliga\IeC {\c c}\IeC {\~a}o de componentes}{101}{appendix.D}

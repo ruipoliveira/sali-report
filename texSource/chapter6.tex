@@ -14,13 +14,13 @@ Após a criação da API REST foram utilizadas duas ferramentas, uma gráfica e 
 
 
 \begin{itemize}
-	\item \textit{Advanced REST client}\footnote{\url{https://advancedrestclient.com/}}: consiste numa ferramenta gráfica (extensão para o Google Chrome) que permite auxiliar os programadores web na criação e testes de pedidos \ac{HTTP} personalizados. É o único cliente \ac{REST} que faz a conexão diretamente no \textit{socket}, fornecendo controlo total sobre os cabeçalhos de ligação e solicitações/resposta.
+	\item \textit{Advanced REST client}\footnote{\url{https://advancedrestclient.com/}}: consiste numa ferramenta gráfica (extensão para o Google Chrome) que permite auxiliar os programadores \textit{web} na criação e testes de pedidos \ac{HTTP} personalizados. É o único cliente \ac{REST} que faz a conexão diretamente no \textit{socket}, fornecendo controlo total sobre os cabeçalhos de ligação e solicitações/resposta.
 	 
 	\item CURL\footnote{\url{https://curl.haxx.se/}}: é uma biblioteca (libcurl) e ferramenta de linha de comandos (cURL) para transferências de dados através do \ac{URL}. Esta ferramenta suporta uma variedade de protocolos comuns da Internet com por exemplo \ac{HTTP}, \ac{FTP}, \ac{SMTP} entre outros. 
 \end{itemize}
 
 
-Estas duas ferramentas permitiram testar e validar o funcionamento da API REST através da utilização dos métodos GET, PUT, POST e DELETE para cada endpoint, quando aplicado. De notar que para todos os testes foi necessário incorporar o campo \texttt{Authorization} para autenticar a utilização da API através de um token fornecido. A figura \ref{testgrap} e o comando abaixo apresentado permitem ilustrar um teste para o método GET no endpoint \texttt{api/sm} através da ferramenta gráfica e na de linha de comandos, respetivamente. 
+Estas duas ferramentas permitiram testar e validar o funcionamento da API REST através da utilização dos métodos GET, PUT, POST e DELETE para cada \textit{endpoint}, quando aplicado. De notar que para todos os testes foi necessário incorporar o campo \texttt{Authorization} para autenticar a utilização da API através de um \textit{token} fornecido. A figura \ref{testgrap} e o comando abaixo apresentado permitem ilustrar um teste para o método GET no \textit{endpoint} \texttt{api/sm} através da ferramenta gráfica e na de linha de comandos, respetivamente. 
 
 
 
@@ -30,7 +30,7 @@ Estas duas ferramentas permitiram testar e validar o funcionamento da API REST a
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\linewidth]{prints-web/API_teste1.png}
-	\caption{Documentação da API REST com a ferramenta Swagger}
+	\caption{Resultado da utilização da ferramenta \textit{Advanced REST client}}
 	\label{testgrap}
 \end{figure}
 
@@ -60,7 +60,7 @@ Estas duas ferramentas permitiram testar e validar o funcionamento da API REST a
 
 Para testar o módulo Bluetooth HC-06 foi utilizada a aplicação \textit{Bluetooth Terminal HC-05}. Esta tornou possível enviar os vários inputs descritos, ou seja,  os algarismos zero (0), um (1) e dois (2) e observar o seu resultado.  
 
-Caso seja enviado o 1 através da caixa de texto "Enter Command" ou através do botão "ON val" previamente criado, é ativado o LED. Por outro lado, caso seja enviado o 0,  o LED desliga-se. Isto mimetiza a abertura e o fecho de um válvula para transferência de águas nas leiras de produção de Salicórnia, respetivamente enviando 1 e 0. Na situação de ser enviado o algarismo 2, o módulo Bluetooth encarrega-se de enviar a informação recolhida pelos sensores no formato descrito na secção \ref{arduinonanoard}. A figura \ref{bluetth05-res} demonstra a manipulação do estado do LED e respetiva resposta de confirmação (ON/OFF OK!), e por fim o envio dos valores lidos pelos sensores: temperatura a 28ºC, sensor do nível de água ativo, luminosidade a 60\% e a válvula ativa. Na figura \ref{comimageesquema} é possível observar o resultado após o envio do algarismo 1 com a ativação do LED (em E). Para além disso, é possível observar a ligação dos diferentes componentes na breadboard: o Arduino Nano (em A), módulo Bluetooth HC-06 (em B), sensor de luminosidade (em C) e o de temperatura (em D). 
+Caso seja enviado o 1 através da caixa de texto "Enter Command" ou através do botão "ON val" previamente criado, é ativado o LED. Por outro lado, caso seja enviado o 0,  o LED desliga-se. Isto mimetiza a abertura e o fecho de um válvula para transferência de águas nas leiras de produção de Salicórnia, respetivamente enviando 1 e 0. Na situação de ser enviado o algarismo 2, o módulo Bluetooth encarrega-se de enviar a informação recolhida pelos sensores no formato descrito na secção \ref{arduinonanoard}. A figura \ref{bluetth05-res} demonstra a manipulação do estado do LED e respetiva resposta de confirmação (ON/OFF OK!), e por fim o envio dos valores lidos pelos sensores: temperatura a 28ºC, sensor do nível de água ativo, luminosidade a 60\% e a válvula ativa. Na figura \ref{comimageesquema} é possível observar o resultado após o envio do algarismo 1 com a ativação do \ac{LED} (E da figura \ref{comimageesquema}). Para além disso, é possível observar a ligação dos diferentes componentes na \textit{breadboard}: o Arduino Nano (A da figura \ref{comimageesquema}), módulo Bluetooth HC-06 (B da figura \ref{comimageesquema}), sensor de luminosidade (C da figura \ref{comimageesquema}) e o de temperatura (D da figura \ref{comimageesquema}). 
 
 
 
@@ -105,7 +105,7 @@ Relativamente ao algoritmo de deteção de intrusos, este foi testado em três c
 		\centering
 		\includegraphics[width=0.9\textwidth]{img/vision/exemplos/result_frame1.jpg}
 		\caption[Resultado obtido (frame 1)]{Resultado obtido (frame 1) em que  winstride = (4, 4), padding = (8, 8) e scale = 1.1}
-		\label{comimageesquema}
+		\label{comimage1esquema}
 	\end{minipage}
 \end{figure}
 
@@ -126,7 +126,7 @@ Relativamente ao algoritmo de deteção de intrusos, este foi testado em três c
 		\centering
 		\includegraphics[width=0.9\textwidth]{img/vision/exemplos/result_frame2.jpg}
 		\caption[Resultado obtido (frame 2)]{Resultado obtido (frame 2) em que winstride = (4,4), padding = (24,24) e scale = 1.3 }
-		\label{comimageesquema}
+		\label{comimagees1quema}
 	\end{minipage}
 \end{figure}
 
@@ -143,7 +143,7 @@ Relativamente ao algoritmo de deteção de intrusos, este foi testado em três c
 		\centering
 		\includegraphics[width=\textwidth]{img/vision/exemplos/result_frame3.jpg}
 		\caption[Resultado obtido (frame 3)]{Resultado obtido (frame 3) em que winstride = (4,4), padding = 8,8) e scale = 0.7}
-		\label{comimageesquema}
+		\label{comimageesqu1ema}
 	\end{minipage}
 \end{figure}
 
@@ -185,7 +185,7 @@ Nesta secção são apresentados os principais resultados obtidos no que toca ao
 \end{figure}
 
 
-Na figura \ref{novouser} é apresentada a interface web para o registo de um novo utilizador no sistema. Este ao registar-se terá que escolher a empresa a que se associa, sendo esta notificada por email da existência de um novo utilizador. A empresa terá que aceder à sua área privada para validar ou remover o utilizador associado (figura \ref{validateuser}).
+Na figura \ref{novouser} é apresentada a interface \textit{web} para o registo de um novo utilizador no sistema. Este ao registar-se terá que escolher a empresa a que se associa, sendo esta notificada por email da existência de um novo utilizador. A empresa terá que aceder à sua área privada para validar ou remover o utilizador associado (figura \ref{validateuser}).
 
 
 
@@ -217,7 +217,7 @@ A figura \ref{view-sensorall} apresenta a página que permite verificar todos os
 	\begin{minipage}[b]{0.49\textwidth}
 		\centering
 		\includegraphics[width=\textwidth]{prints-web/sm_show.png}
-		\caption{Visualização dos \textit{Sensor Modules} associado a um \acl{CM} }
+		\caption{Visualização dos \textit{Sensor Modules} associados a um \acl{CM} }
 		\label{view-sm}
 	\end{minipage}
 	\hfill
@@ -262,7 +262,7 @@ Na figura \ref{view-sm} é possível observar os \textit{Sensor Modules} associa
 
 
 
-Na figura \ref{view_grap_data} é apresentada a interface de visualização gráfica dos dados adquiridos pelos diferentes sensores de um \acl{SM} ou por outros componentes existentes, isto é, atuação remota ou sistema videovigilânciaa. Nesta figura é destacada a filtragem por data, a atuação remota e o botão "Dataset View" que permite visualizar os dados em formato tabular (figura \ref{view_tab_data}). Estes dados são passíveis de serem ordenados pelos diferentes campos bem como exportados para um ficheiro \ac{CSV} através de botão existente. 
+Na figura \ref{view_grap_data} é apresentada a interface de visualização gráfica dos dados adquiridos pelos diferentes sensores de um \acl{SM} ou por outros componentes existentes, isto é, atuação remota ou sistema videovigilância. Nesta figura é destacada a filtragem por data, a atuação remota e o botão "Dataset View" que permite visualizar os dados em formato tabular (figura \ref{view_tab_data}). Estes dados são passíveis de serem ordenados pelos diferentes campos bem como exportados para um ficheiro \ac{CSV} através de botão existente. 
 
 
 Por fim, na figura \ref{grafico_humidade} é apresentado o resultado dos dados adquiridos para o sensor de luminosidade durante quatro dias. Na mesma interface é possível observar o número de leituras efetuadas nesta data, o valor máximo e mínimo medido e o valor médio. Os valores 5, 20, 130 e 250 permitem definir o número de leituras apresentadas no gráfico. 
@@ -292,7 +292,7 @@ Na figura \ref{process_remota} é possível observar o processo de atuação rem
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.9\linewidth]{prints-web/dashboard1.png}
-	\caption{Interface principal após \textit{login} (dashboard)}
+	\caption{Interface principal após \textit{login} (\textit{dashboard})}
 	\label{ddashboard}
 \end{figure}
 
@@ -325,14 +325,14 @@ Na figura \ref{ddashboard} é apresentada a \textit{dashboard} do sistema após 
 		\centering
 		\includegraphics[width=0.55\textwidth]{img/mobileprint2.png}
 	\end{minipage}
-	\caption{Resultado do processo de atuação remota}
+	\caption{Resultado da interface responsiva da plataforma \textit{web}}
 			\label{responsiveinterface}
 \end{figure}
 
 
 \newpage
 
-Na figura \ref{vigilancia} é apresentada a incorporação do sistema de videovigilância na plataforma web do sistema. Por fim, na figura \ref{responsiveinterface} é apresentado o acesso à plataforma \textit{web} através de um dispositivo \textit{mobile}, sendo possível constatar o seu \textit{design} totalmente responsivo, permitindo utilizar esta interface como ponto de partida para criação da aplicação mobile planeada. 
+Na figura \ref{vigilancia} é apresentada a incorporação do sistema de videovigilância na plataforma \textit{web} do sistema. Por fim, na figura \ref{responsiveinterface} é apresentado o acesso à plataforma \textit{web} através de um dispositivo \textit{mobile}, sendo possível constatar o seu \textit{design} totalmente responsivo, permitindo utilizar esta interface como ponto de partida para criação da aplicação mobile planeada. 
 
 
 

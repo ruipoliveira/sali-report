@@ -9,9 +9,9 @@
 
 
 
-Neste capítulo, são explicados os detalhes da implementação deste projeto, incluindo especificamente o projeto Django que inclui o sistema de informação com a aplicação web (\textit{frontend}/\textit{backend}) e API REST. Para além disso, é descrita a implementação da simulação em \textit{hardware} para o cenário descrito no capítulo anterior bem como o sistema de video-vigilância para deteção de intrusos. 
+Neste capítulo, são explicados os detalhes da implementação deste projeto, incluindo especificamente o projeto Django que inclui o sistema de informação com a aplicação web (\textit{frontend}/\textit{backend}) e API REST. Para além disso, é descrita a implementação da simulação em \textit{hardware} para o cenário descrito no capítulo anterior bem como o sistema de videovigilância para deteção de intrusos. 
 
-Segundo o ciclo de vida de um software, estabelecido por \textit{Munish Kaur et al.}\cite{Saini2014} que analisámos na secção \ref{method}, este capítulo irá incluir, em parte, a fase de \textit{designing} mas sobretudo a fase de \textit{coding}. 
+Segundo o ciclo de vida de um \textit{software}, estabelecido por \textit{Munish Kaur et al.}\cite{Saini2014} que analisámos na secção \ref{method}, este capítulo irá incluir, em parte, a fase de \textit{designing} mas sobretudo a fase de \textit{coding}. 
 
 
 
@@ -20,10 +20,10 @@ Segundo o ciclo de vida de um software, estabelecido por \textit{Munish Kaur et 
 \section{Sistema de informação}
 
 
-Relativamente ao projeto Django, numa primeira fase procedeu-se à incorporação do \ac{SGBD} PostgreSQL através do psycopg2\footnote{http://initd.org/psycopg/docs/}. O psycopg2 consiste num adaptador entre o PostgreSQL com a linguagem de programação Python, que permite executar de formar eficiente qualquer \textit{script} em \ac{SQL}. É de notar que nesta fase inicial, encontram-se instalados algumas aplicações nativas do Django entre as quais, o  \texttt{django.contrib.auth} e  o \texttt{django.contrib.sessions}. Através delas é possivel verificar o total funcionamento da base de dados uma vez que permitem criar automática das tabelas associadas ao utilizadores, grupos, permissões e respetivos conteúdos, administração, sessões entres outros. Estas tabelas são fundamentais ao bom funcionamento do sistema, sendo consideradas no modelo de dados descrito na secção \ref{modelocap}. 
+Relativamente ao projeto Django, numa primeira fase procedeu-se à incorporação do \ac{SGBD} PostgreSQL através do psycopg2\footnote{\url{http://initd.org/psycopg/docs/}}. O psycopg2 consiste num adaptador entre o PostgreSQL com a linguagem de programação Python, que permite executar de forma eficiente qualquer \textit{script} em \ac{SQL}. É de notar que nesta fase inicial, encontram-se instaladas algumas aplicações nativas do Django entre as quais, o  \texttt{django.contrib.auth} e  o \texttt{django.contrib.sessions}. Através delas é possível verificar o total funcionamento da base de dados uma vez que permitem criar automática das tabelas associadas ao utilizadores, grupos, permissões e respetivos conteúdos, administração, sessões entres outros. Estas tabelas são fundamentais ao bom funcionamento do sistema, sendo consideradas no modelo de dados descrito na secção \ref{modelocap}. 
 
 
-Posteriormente, procedeu-se à criação dos diferentes \texttt{Models} conforme a nomenclatura apresentada nas tabelas \ref{tabeladb1} e \ref{tabeladb1} da secção \ref{modelocap}. O excerto de código seguinte pretende ilustrar a criação do \texttt{Model} associado à tabela que representa a estrutura \acl{SM}, com o respetivo identificador e atributos.  Após a criação de cada \texttt{Models} procedeu-se à migração dos dados para o \ac{SGBD} onde era possível verificar que as tabelas tinham sido criadas, através da utilização da ferramenta gráfica pgAdmin III. De modo a testar a estrutura criada, procedeu-se à introdução de dados através da zona administrativa do Django (figura \ref{admingdjango}). Através dos dados introduzidos e descrevendo um cenário realista foi possível validar a estrutura e proceder à implementação da aplicação web e criação da \ac{API} \ac{REST}. 
+Posteriormente, procedeu-se à criação dos diferentes \texttt{Models} conforme a nomenclatura apresentada nas tabelas \ref{tabeladb1} e \ref{tabeladb1} da secção \ref{modelocap}. O excerto de código seguinte pretende ilustrar a criação de um \texttt{Model} associado à tabela que representa a estrutura \acl{SM}, com o respetivo identificador e atributos.  Após a criação de cada \texttt{Models} procedeu-se à migração dos dados para o \ac{SGBD} onde era possível verificar que as tabelas tinham sido criadas, através da utilização da ferramenta gráfica pgAdmin III. De modo a testar a estrutura criada, procedeu-se à introdução de dados através da zona administrativa do Django (figura \ref{admingdjango}). Através dos dados introduzidos e descrevendo um cenário realista foi possível validar a estrutura e proceder à implementação da aplicação \textit{web} e criação da \ac{API} \ac{REST}. 
 
 
 
@@ -55,7 +55,7 @@ class SensorModule(models.Model):
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.4]{prints-web/admindjango.png}
-	\caption{Painel administrativo do Django }
+	\caption{Painel administrativo da \textit{framework} Django }
 	\label{admingdjango}
 \end{figure}
 
@@ -68,7 +68,7 @@ class SensorModule(models.Model):
 
 \subsection{Sistema de registo e autenticação}
 
-Primeiramente, procedeu-se à adaptação do template AdminLTE de modo a criar as páginas de autenticação e registo dos utilizadores. Como vimos anteriormente irão existir utilizadores distintos, uma vez que, de modo a identificá-los e a definir a sua permissões houve necessidade de criar grupos específicas. Foram então criados dois grupos:  \textit{company}, que identifica uma empresa e \textit{general}, que identificada um utilizador comum. O administrador do sistema é um utilizador que tem o estado de \textit{superuser} ativo, isto é, possui todas as permissões sem que estas lhe sejam atribuídas explicitamente.
+Primeiramente, procedeu-se à adaptação do \textit{template} AdminLTE de modo a criar as páginas de autenticação e registo dos utilizadores. Como vimos anteriormente irão existir utilizadores distintos, asim de modo a identificá-los e a definir a sua permissões houve necessidade de criar grupos específicas. Foram então criados dois grupos:  \textit{company}, que identifica uma empresa e \textit{general}, que identificada um utilizador comum. O administrador do sistema é um utilizador que tem o estado de \textit{superuser} ativo, isto é, possui todas as permissões sem que estas lhe sejam atribuídas explicitamente.
 
 
 \begin{figure}[!htb]
@@ -79,7 +79,7 @@ Primeiramente, procedeu-se à adaptação do template AdminLTE de modo a criar a
 \end{figure}
 
 
-Como vimos anteriormente, o \textit{company user} apenas poderá ser adicionado ao sistema pelo admistrador, tendo este também permissões de gerir todos os utilizadores registados. Por outro lado, os \textit{company user} tem a possibilidade de validar os \textit{general user} que se associam à sua empresa, tendo posteriormente acesso aos dados/conteúdos da empresa. Após o registo de um novo \textit{general user} e a validação por parte do \textit{company user}, existem notificações que são enviadas via email. Estas mensagens são enviadas recorrendo ao método \texttt{send\_mail}\footnote{https://docs.djangoproject.com/en/1.11/topics/email/} existente nativamente no Django pelo pacote \texttt{django.core.mail}, sendo construido através do módulo \texttt{smtplib}\footnote{Módulo que define objetos para sessões \ac{SMTP} https://docs.python.org/3/library/smtplib.html\#module-smtplib}. Na figura \ref{activt-autent} apresenta-se o diagrama de atividades que ilustra o processo de registo de um \textit{general user} que envolve o utilizador responsável pela empresa (company user). 
+Como vimos anteriormente, o \textit{company user} apenas poderá ser adicionado ao sistema pelo admistrador, tendo este também permissões de gerir todos os utilizadores registados. Por outro lado, os \textit{company user} tem a possibilidade de validar os \textit{general user} que se associam à sua empresa, tendo posteriormente acesso aos dados/conteúdos desta. Após o registo de um novo \textit{general user} e a validação por parte do \textit{company user}, existem notificações que são enviadas via email. Estas mensagens são enviadas recorrendo ao método \texttt{send\_mail}\footnote{\url{https://docs.djangoproject.com/en/1.11/topics/email/}} existente nativamente no Django pelo pacote \texttt{django.core.mail}, sendo construido através do módulo \texttt{smtplib}\footnote{Módulo que define objetos para sessões \ac{SMTP} \url{https://docs.python.org/3/library/smtplib.html\#module-smtplib}}. Na figura \ref{activt-autent} apresenta-se o diagrama de atividades que ilustra o processo de registo de um \textit{general user} que envolve o utilizador responsável pela empresa (\textit{company user}). 
 
 
 
@@ -90,9 +90,9 @@ Como vimos anteriormente, o \textit{company user} apenas poderá ser adicionado 
 
 \subsection{Geração de alarmes}
 
-No modelo de dados definido, cada sensor tem que ter obrigatoriamente associada uma entrada na tabela \texttt{AlarmsSettings} que permite definir o valor máximo e mínimo para o qual são gerados alarmes bem como as mensagens associadas que permitem informar o utilizador. 
+No modelo de dados definido, cada sensor tem que ter obrigatoriamente associado uma entrada na tabela \texttt{AlarmsSettings} que permite definir o valor máximo e mínimo para o qual são gerados alarmes bem como as mensagens de notificação associadas enviadas ao utilizador. 
 
-A geração de alarmes é condicionada pela comparação do valor lido pelos sensores com o valor máximo e mínimo definidos para o sensor em questão. Uma vez que é necessária esta verificação para cada leitura, decidiu-se criar um \textit{trigger} em \ac{SQL} que execute este procedimento, sendo este executado a nível da \ac{SGBD} tornando o processo mais eficiente. Um \textit{trigger} permite que uma determinada sequência de comandos sejam executadas sempre que um determinado evento ocorre, neste caso uma adição. No anexo \ref{triggerSQLImpe} encontra-se um \textit{stored procedure} (função) que implementa a sequência de comandos bem como a implementação do \textit{trigger} na linguagem \ac{SQL}. Na figura \ref{fluxoSP} encontra-se um diagrama de fluxo que permite ilustrar a lógica do \textit{stored procedure}. 
+A geração de alarmes é condicionada pela comparação do valor lido pelos sensores com o valor máximo e mínimo definidos para o sensor em questão. Uma vez que é necessária esta verificação para cada leitura, decidiu-se criar um \textit{trigger} em \ac{SQL} que execute este procedimento, sendo este executado a nível da \ac{SGBD} tornando o processo mais eficiente. Um \textit{trigger} permite que uma determinada sequência de comandos sejam executadas sempre que um determinado evento ocorre, neste caso uma adição. No Apêndice \ref{triggerSQLImpe} encontra-se um \textit{stored procedure} (função) que implementa a sequência de comandos bem como a implementação do \textit{trigger} na linguagem \ac{SQL}. Na figura \ref{fluxoSP} encontra-se um diagrama de fluxo que permite ilustrar a lógica do \textit{stored procedure}. 
 
 
 
@@ -111,32 +111,31 @@ A geração de alarmes é condicionada pela comparação do valor lido pelos sen
 %\end{itemize}
 
 
-O utilizador através da \textit{dashboard} e da aplicação \textit{mobile} poderá analisar os alarmes gerados bem como se o valor lido excede ou não atingiu o valor pretendido. Para além disso, é apresentada a mensagem pré-definida para que o utilizador possa tomar uma decisão.   
+O utilizador através da \textit{dashboard} e da aplicação \textit{mobile} poderá analisar os alarmes gerados bem como se o valor lido excede ou não atingiu o valor minimo ou máximo, respetivamente. Para além disso, é apresentada a mensagem pré-definida (notificação) para que o utilizador possa tomar uma decisão.   
 
 
 
 \newpage
 \subsection{Visualização dos dados e cálculos estatísticos}
 
-O cliente do sistema ao aceder à \textit{dashboard} e pretender visualizar os detalhes de um determinado \acl{CM} ser-lhe-á apresentada uma lista de todos os \textit{Sensor Modules} que este possui. Juntamente com esta lista são apresentadas as caraterísticas principais de cada um, destacando os sensores existentes, o intervalo de tempo em que são enviadas dados, percentagem de bateria, coordenadas da localização do módulo e tipos de comunicação com o \acl{CM}. Complementarmente são apresentados quatro botões com icons sugestivos que permite realizar tarefas distintas.  
+O cliente do sistema ao aceder à \textit{dashboard} e visualizar os detalhes de um determinado \acl{CM} ser-lhe-á apresentada uma lista de todos os \textit{Sensor Modules} que este possui. Juntamente com esta lista são apresentadas as caraterísticas principais de cada um, destacando os sensores existentes, o intervalo de tempo em que são enviadas dados, percentagem de bateria, coordenadas da localização do módulo e tipos de comunicação com o \acl{CM}. Complementarmente são apresentados quatro botões com icons ilustrativos que permitem realizar tarefas distintas.  
 
 \begin{itemize}
 	\item \faEdit \space (editar): possibilita editar as características enumeradas anteriormente para cada \acl{SM}. 
-	\item \faTrash \space (remove): permite remover o \acl{SM} do \ac{CM}. 
-	\item \faBarChart \space (visualização gráfica): é possível visualizar graficamente os dados lidos pelos diferentes sensores existentes no \acl{SM}. 
-	\item \faDatabase \space (visualização tabular): faculta em vista tabular uma visualização dos dados lidos pelos sensores bem como a respetiva exportação em ficheiro \ac{CSV}. 
+	\item \faTrash \space (remove): permite remover um determinado \acl{SM} de um \ac{CM}. 
+	\item \faBarChart \faCogs \space (visualização gráfica e atuação remota): é possível visualizar graficamente os dados lidos pelos diferentes sensores existentes num \acl{SM} bem como atuar remotamente num determinado atuador. 
+	\item \faDatabase \space (visualização tabular): disponibilizada em vista tabular uma visualização dos dados lidos pelos sensores bem como a respetiva exportação em ficheiro \ac{CSV}. 
 \end{itemize}
 
 
-Em ambas as visualizações anteriormente descritas é possivel obter uma filtragem por data para os dados obtidos dos sensores de cada \acl{SM}. Esta filtragem pode ser efetuada através de sete formas diferentes: do dia, do dia anterior, dos últimos sete dias, dos últimos trinta dias, deste mês, do ultimo mês e selecionando a data de inicio e de fim especificamente. 
+Em ambas as visualizações anteriormente descritas é possível obter uma filtragem por data para os dados obtidos dos sensores de cada \acl{SM}. Esta filtragem pode ser efetuada através de sete formas diferentes: do dia, do dia anterior, dos últimos sete dias, dos últimos trinta dias, deste mês, do último mês e selecionando a data de início e de fim especificamente. 
 
 
-No que toca à visualização gráfica toda a representação foi concebida recorrendo à biblioteca ZingChart em \ac{JS}, sendo que toda a manipulação de dados é realizada a nível de \textit{backend} e posteriormente apresentada através dos \textit{templates} do Django. A análise estatística para o intervalo de data considerado permitirá ao cliente obter o valor máximo lido, o valor mínimo lido bem como o valor médio, sendo também todo o processamento realizado a nível de \textit{backend}. Para além disso, esta página também possibilitará a ativação/desativação remota dos atuadores existentes no terreno. 
+No que toca à visualização gráfica toda a representação foi concebida recorrendo à biblioteca ZingChart em \ac{JS}, sendo que toda a manipulação de dados é realizada a nível de \textit{backend} e posteriormente apresentada através dos \textit{templates} do Django. Esta biblioteca permite que o cliente possa guardar os gráficos obtidos em formato de imagem (PNG, JPEG ou PDF).  A análise estatística para o intervalo de data considerado permitirá ao cliente visualizar o valor máximo lido, o valor mínimo lido bem como o valor médio, sendo também todo o processamento realizado a nível de \textit{backend}. Para além disso, a página de visualização gráfica também possibilitará a ativação/desativação remota dos atuadores existentes no terreno. 
 
 
-Por fim, relativamente à visualização tabular os dados são apresentados em três campos distintas que representam o tipo de sensor, data e hora da leitura, valor lido e a escala. A tabela contém paginação sendo que é possível escolher o número de entradas que serão apresentadas (10, 25, 50 ou 100). Complementarmente, existe uma caixa de texto que permite ao cliente pesquisar pelos campos apresentados, para além disso é possível ordenar alfabeticamente ou numericamente esses. O cliente também poderá exportar os dados apresentados num ficheiro do tipo \ac{CSV} com a estrutura apresentada na tabela \ref{exportcsv}. Para a implementação desta funcionalidade foram utilizados os métodos \texttt{writer} e \texttt{writerow()} disponíveis no pacote csv do Python.  
+Por fim, relativamente à visualização tabular os dados são apresentados em três campos distintas que representam o tipo de sensor, data e hora da leitura, valor lido e a escala. A tabela contém paginação sendo que é possível escolher o número de entradas que serão apresentadas (10, 25, 50 ou 100). Complementarmente, existe uma caixa de texto que permite ao cliente pesquisar pelos campos apresentados, para além disso é possível ordenar alfabeticamente ou numericamente esses. O cliente também poderá exportar os dados apresentados num ficheiro do tipo \ac{CSV} com a estrutura apresentada na tabela \ref{exportcsv}. Para a implementação desta funcionalidade foram utilizados os métodos \texttt{writer} e \texttt{writerow()} disponíveis no pacote \texttt{csv} do Python.  
 
-\newpage
 
 \begin{table}[h]
 	\centering
@@ -148,28 +147,28 @@ Por fim, relativamente à visualização tabular os dados são apresentados em t
 		580 & Temperature & C & 2017-05-31 09:33:15.451236+00:00 & 25 \\ \hline
 		581 & Water level & 0/1 & 2017-05-31 09:33:15.505198+00:00 & 1 \\ \hline
 	\end{tabular}
-	\caption{Estrutura do ficheiro do tipo \ac{CSV} possível de exportação}
+	\caption{Estrutura do ficheiro do tipo \acs{CSV} possível de exportação}
 	\label{exportcsv}
 \end{table}
 
 
 
 
-\subsection{\ac{API}}
+\subsection{API}
 
 
-Tal como referido no capítulo anterior, para a implementação desta API do tipo REST foi utilizado o \textit{Django REST framework}. Para tal, instalou-se a aplicação \texttt{'rest\_framework'} no ficheiro de configuração do projeto Django, em \texttt{settings.py}. Para iniciar esta implementação procedeu-se à realização do \textit{quickstart} disponível no site oficial da framework. 
+Tal como referido no capítulo anterior, para a implementação desta API do tipo REST foi utilizado o \textit{Django REST framework}. Para tal, instalou-se a aplicação \texttt{'rest\_framework'} no ficheiro de configuração do projeto Django, em \texttt{settings.py}. Para iniciar esta implementação procedeu-se à realização do \textit{quickstart} disponível no site oficial da \textit{framework}. 
 
-Primeiramente, procedeu-se à criação de um novo módulo \texttt{serializers.py} onde foram instanciadas todas as classes serializáveis\footnote{Consiste num processo de tradução de uma estruturas de dados ou de um objeto que pode ser armazenado (num arquivo ou buffer de memória) e reconstruido posteriormente  } para cada \texttt{Model} existente bem como  para os campos a considerar que possam ser usados na representação dos dados em formato \ac{JSON}. De seguida, desenvolveu-se o módulo \texttt{apiViews.py} onde são implementadas todas as classes baseadas na \texttt{APIView}. A classe \texttt{APIView} é uma subclasse da \texttt{View} (abordada no capítulo \ref{state}) tendo algumas diferenças: 
+Primeiramente, procedeu-se à criação de um novo módulo \texttt{serializers.py} onde foram instanciadas todas as classes serializáveis\footnote{Consiste num processo de tradução de uma estruturas de dados ou de um objeto que pode ser armazenado (num arquivo ou \textit{buffer} de memória) e reconstruido posteriormente.  } para cada \texttt{Model} existente bem como  para os campos a considerar que possam ser usados na representação dos dados em formato \ac{JSON} ou \ac{XML}. De seguida, desenvolveu-se o módulo \texttt{apiViews.py} onde são implementadas todas as classes baseadas na \texttt{APIView}. A classe \texttt{APIView} é uma subclasse da \texttt{View} (abordada no capítulo \ref{state}) tendo algumas diferenças: 
 
 \begin{itemize}
-	\item Na classe \texttt{View} são retornados objetos do tipo \texttt{HttpRequest} ou \texttt{HttpResponse}, enquanto que na \texttt{APIView} são objeto \texttt{Request} e \texttt{Response}.
-	\item A classe \texttt{APIView} permite a implementação dos seguintes métodos \ac{HTTP}: 	\texttt{get()}, \texttt{post()}, \texttt{put()} e \texttt{delete()},
-	\item Através da classe  \texttt{APIView} podem ser implementadas várias políticas da \ac{API} 
+	\item Na classe \texttt{View} são retornados objetos do tipo \texttt{HttpRequest} ou \texttt{HttpResponse}, enquanto que na \texttt{APIView} são objeto do tipo \texttt{Request} e \texttt{Response}; 
+	\item A classe \texttt{APIView} permite a implementação dos seguintes métodos \ac{HTTP}: 	\texttt{get()}, \texttt{post()}, \texttt{put()} e \texttt{delete()}; 
+	\item Através da classe  \texttt{APIView} podem ser implementadas várias políticas da \ac{API}. 
 \end{itemize}
 
  
-A titulo de exemplo, o excerto de código seguinte encontra-se a implementação do \textit{endpoint} \texttt{api/cm/\{pk\_or\_name\}} com o método GET
+A título de exemplo, o excerto de código seguinte encontra-se a implementação do \textit{endpoint} \texttt{api/cm/\{pk\_or\_name\}} para o método GET. 
 
 \begin{lstlisting}[
 language=Python,
@@ -217,7 +216,7 @@ url(r'^api/cm/(?P<pk_or_name>[-\w]+)/$',views.ControllerModule_param.as_view()
 
 
 
-Como descrito anteriormente, a autenticação desta API usa um método de autenticação via token. Para tal, foi necessário a instalar a aplicação \texttt{'rest\_framework.authtoken'} que fornece a estrutura \texttt{Token}, possibilitando a criação e modificação do token quando pretendido. Para que a autenticação seja possível é necessário incluir no módulo de configuração do Django o método pretendido, neste caso  \ \texttt{'rest\_framework.TokenAuthentication'}.
+Como descrito anteriormente, a autenticação desta API usa um método de autenticação via \textit{token}. Para tal, foi necessário a instalar a aplicação \texttt{'rest\_framework.authtoken'} que fornece a estrutura \texttt{Token}, possibilitando a criação e modificação do \textit{token} quando pretendido. Para que a autenticação seja possível é necessário incluir no módulo de configuração do Django o método pretendido, neste caso  \ \texttt{'rest\_framework.TokenAuthentication'}.
 
 No anexo \ref{espcifAPIREST} encontram-se as especificações de cada \textit{endpoint} existente nesta API REST.
 
@@ -226,31 +225,31 @@ No anexo \ref{espcifAPIREST} encontram-se as especificações de cada \textit{en
 
 
 
-\subsection{Documentação da \ac{API}}
+\subsection{Documentação da API}
 
-Para a utilização da documentação interativa da API REST foi utilizada a ferramenta Swagger. Para a sua utilização é necessário incluir a aplicação \texttt{'rest\_framework\_swagger'} no ficheiro \texttt{settings.py} do Django e seguindamente definir o \ac{URL} que lhe permitirá o acesso. Na figura \ref{docapi} encontra-se um exemplo ao consultar a documentação desta API. 
+Para a utilização da documentação interativa da API REST foi utilizada a ferramenta Swagger. Para a sua utilização foi necessário incluir a aplicação \texttt{'rest\_framework\_swagger'} no ficheiro \texttt{settings.py} do Django e seguindamente definir o \ac{URL} que lhe permitirá o acesso. Na figura \ref{docapi} encontra-se um exemplo ao consultar a documentação desta API. 
 
 
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.64\linewidth]{prints-web/api-doc.png}
+	\includegraphics[width=0.51\linewidth]{prints-web/api-doc.png}
 	\caption{Documentação da API REST com a ferramenta Swagger}
 	\label{docapi}
 \end{figure}
 
 
-\subsection{Aplicação web}
+\subsection{Aplicação \textit{web}}
 
-O utilizador da dashboard após autenticar-se ser-lhe-à apresentado todos os \textit{Controller Modules} a que tem acesso bem como as seguintes informações para cada um:
+O utilizador da \textit{dashboard} após fazer a autenticação ser-lhe-à apresentado todos os \textit{Controller Modules} a que tem acesso bem como as seguintes informações para cada um:
 
 
 \begin{itemize}
 	\item Mapa onde é possível localizar todos os módulos associados a um \acl{CM}; 
 	
-	\item Alarmes gerados pelos sensores que os \textit{Sensor Modules} possuem; 
+	\item Alarmes gerados pelos sensores que os \textit{Sensor Modules} possuem e respetivas notificações; 
 	
-	\item Últimos valores lidos pelo sensores dos \textit{Sensor Modules}; 
+	\item Últimos valores lidos pelo sensores dos \textit{Sensor Modules}.
 \end{itemize} 
 
 
@@ -258,19 +257,19 @@ O utilizador da dashboard após autenticar-se ser-lhe-à apresentado todos os \t
 Cada um dos mapas interativo permitirá localizar o \acl{CM} bem como os \textit{Sensor Modules} a si associados, sendo estes identificados por marcadores\footnote{Um marcador identifica uma localização no mapa. \\ \url{https://developers.google.com/maps/documentation/javascript/markers?hl=pt-br}} de diferentes cores, no caso do \acl{CM}, a vermelho e nos \textit{Sensor Modules}, a azul. A implementação destes mapas recorre à \ac{API} do Google Maps em \ac{JS}, permitindo receber a localização dos módulos em coordenadas \ac{GPS}. Ao clicar sob um determinado marcador este irá direcionar o utilizador para a página de detalhes do módulo em questão. 
 
 
-Quando ocorre um  alarmes, o utilizador poderá verifica o motivo pelo qual este foi gerado, consultar a mensagem resultante bem como valor lido, tendo ainda a possibilidade de verificar/validar o alarme para que este não seja mais apresentado em destaque. Para além disso, o utilizador ao aceder à dashboard ser-lhe-ão apresentados os últimos valores lidos por cada sensor distribuídos por cada \acl{SM}. Adicionalmente, na página principal da plataforma são apresentados alguns valores estatísticos da mesma: numero de utilizadores registados, numero de \textit{Sensor Modules}, numero de \textit{Controller Modules} e numero de leituras que já foram recolhidas pelos diferentes sensores. 
+Quando ocorre um  alarme, o utilizador poderá verificar o motivo pelo qual este foi gerado, consultar a mensagem resultante bem como valor lido, tendo ainda a possibilidade de verificar/validar o alarme para que este não seja mais apresentado em destaque. Para além disso, o utilizador ao aceder à \textit{dashboard} ser-lhe-ão apresentados os últimos valores lidos por cada sensor distribuídos por cada \acl{SM}. Adicionalmente, na página principal da plataforma são apresentados alguns valores estatísticos da mesma: número de utilizadores registados, número de \textit{Sensor Modules}, número de \textit{Controller Modules} e número de leituras que já foram recolhidas pelos diferentes sensores. 
 
 
 A interface gráfica da plataforma permite ainda que o utilizador comum possa: 
 
 \begin{itemize}
-	\item Aceder à página de perfil que permite alterar as suas informações básicas e a password mas também consultar o token de autenticação na API. 
+	\item Aceder à página de perfil possibilitando ao utilizador alterar as suas informações básicas e redefinir a sua \textit{passaword}. Para além disso, também pode consultar o \textit{token} de autenticação para a  \ac{API}; 
 	
-	\item Consultar, adicionar ou editar os detalhes dos \textit{Controller Modules} e dos \textit{Sensor Modules}
+	\item Consultar, adicionar ou editar os detalhes dos \textit{Controller Modules} e dos \textit{Sensor Modules}; 
 	
-	\item Adicionar e respetiva consulta dos tipos de sensores e comunicação existentes
+	\item Adicionar e consulta dos tipos de sensores e comunicações existentes; 
 	
-	\item Alterar o avatar existente através da ferramenta \textit{Gravatar} disponivel em \url{http://pt.gravatar.com/} 
+	\item Alterar o avatar existente através da ferramenta \textit{Gravatar} disponível em \url{http://pt.gravatar.com/}. 
 \end{itemize}
 
 
@@ -285,7 +284,7 @@ Sempre que o utilizador executa uma determinada ação na plataforma este é not
 
 \subsection{\textit{Deploy} do projecto}
 
-Para implementar o projeto Django juntamente com um servidor web Apache 2.0 num \ac{VPS} Linux (Ubuntu 14.X), foram seguidos os seguintes passos: 
+Para implementar o projeto Django juntamente com o servidor \textit{web} Apache 2.0 num \ac{VPS} Linux (Ubuntu 14.X), foram seguidos os seguintes passos: 
 
 
 %https://jee-appy.blogspot.com.tr/2015/04/deploy-django-project-on-apache-using.html
@@ -434,13 +433,13 @@ Nesta secção explica-se a implementação a nível de \textit{software} no con
 \subsection{Arduino Nano}
 \label{arduinonanoard}
 
-No que diz respeito ao Arduino Nano (\acl{SM}), numa fase inicial,  procedeu-se à ligação dos diversos componentes  apresentados na secção \ref{arq-hardw} a uma placa branca (\textit{breadboard}) tal como se apresentada no Anexo \ref{interlapd}. Para auxiliar o desenvolvimento de \textit{software} foi utilizada a versão 1.8.1 do \ac{IDE} do próprio Arduino\footnote{https://www.arduino.cc/en/Main/Software}. Seguidamente apresenta-se a implementação necessária a nível de sensores e de comunicação. 
+No que diz respeito ao Arduino Nano (\acl{SM}), numa fase inicial,  procedeu-se à ligação dos diversos componentes  apresentados na secção \ref{arq-hardw} a uma placa branca (\textit{breadboard}) tal como se apresentada no Anexo \ref{interlapd}. Para auxiliar o desenvolvimento de \textit{software} foi utilizada a versão 1.8.1 do \ac{IDE} do próprio Arduino\footnote{\url{https://www.arduino.cc/en/Main/Software}}. Seguidamente apresenta-se a implementação necessária a nível de sensores e de comunicação. 
 
 
 Foram desenvolvidos os seguintes métodos que permitem aceder aos valores lidos de cada um dos sensores. Para além disso, foi criado um método que permite alterar o estado de ativação do \ac{LED}, permitindo simular o estado da válvula para transferência de águas. 
 
 \begin{itemize}
-	\item \texttt{int readTemperature(int port)}: é efetuada uma leitura no porto analógico e seguidamente realizada uma conversão para ºC (graus Celsius);
+	\item \texttt{int readTemperature(int port)}: é efetuada uma leitura no porto analógico através do método \texttt{analogRead} e seguidamente realizada uma conversão para ºC (graus Celsius);
 	
 	\item \texttt{long readLuminosity(int port)}: é efetuada uma leitura ao porto analógico e posteriormente é realizada uma conversão para percentagem (\%); 
 	
@@ -462,13 +461,13 @@ Inicialmente procedeu-se à leitura de cada sensor de forma individual de modo a
 
 
 
-Numa primeira fase, procedeu-se à comunicação entre o \acl{SM} e \acl{CM} através de porta série. Seguidamente, optou-se por incorporar o módulo Bluetooth de modo a tornar os dois módulos independentes. Foi utilizado o  \textit{package} \texttt{SoftwareSerial.h} disponibilizado pelo Arduino, que permite interagir facilmente com o módulo de comunicação utilizado. Depois, decidiu-se quais os \textit{inputs} que o Arduino irá receber e que ações iria executar, concluindo-se que podiam ser recebidos valores entre 0 e 2. 
+Numa primeira fase, procedeu-se à comunicação entre o \acl{SM} e \acl{CM} através de porta série. Seguidamente, optou-se por incorporar o módulo Bluetooth de modo a tornar os dois módulos independentes. Foi utilizado o  \textit{package} \texttt{SoftwareSerial.h} disponibilizado pelo Arduino, que permite interagir facilmente com o módulo de comunicação utilizado. Posteriormente, decidiu-se quais os \textit{inputs} que o Arduino irá receber e que ações iria executar, concluindo-se que podiam ser recebidos valores entre 0 e 2. 
 
 
 \begin{itemize}
-	\item \textbf{0}: ativação do \ac{LED} (válvula para transferência de água)
-	\item \textbf{1}: desativação do \ac{LED} (válvula para transferência de água)
-	\item \textbf{2}: requisitar dados obtidos pelos sensores existentes no formato definido em \ref{eq:someequation}
+	\item \textbf{0}: ativação do \ac{LED} (válvula para transferência de água); 
+	\item \textbf{1}: desativação do \ac{LED} (válvula para transferência de água); 
+	\item \textbf{2}: requisitar dados obtidos pelos sensores existentes no formato definido em \ref{eq:someequation}. 
 \end{itemize}
 
 Antes de proceder à implementação de envio e receção de dados por Bluetooth no Raspberry Pi 3, testou-se esta funcionalidade isoladamente. Para isso, utilizou-se uma aplicação existente na \textit{Play Store} denominada  de \textit{Bluetooth Terminal HC-05}\footnote{\url{https://play.google.com/store/apps/details?id=project.bluetoothterminal}}, que permitiu facilmente validar este mecanismo. Os resultados deste teste funcional serão apresentados no próximo capítulo. 
@@ -477,7 +476,7 @@ Antes de proceder à implementação de envio e receção de dados por Bluetooth
 
 \subsection{Raspberry Pi 3}
 
-Nesta simulação, o \acl{CM} recebe apenas os dados adquiridos por um \acl{SM}, e envia as ações que este terá que executar.  Para a comunicação entre os dois módulos, foi utilizado o módulo interno Bluetooth 4.1 disponível no hardware do Raspberry Pi 3. De modo a conseguir receber os dados adquiridos e enviá-los para o servidor através da \ac{API}, desenvolveu-se um \textit{script} em Python que permite o seguinte: 
+Nesta simulação, o \acl{CM} recebe apenas os dados adquiridos por um \acl{SM}, e envia as ações que este terá que executar.  Para a comunicação entre os dois módulos, foi utilizado o módulo interno Bluetooth 4.1 disponível no \textit{hardware} do Raspberry Pi 3. De modo a conseguir receber os dados adquiridos e enviá-los para o servidor através da \ac{API}, desenvolveu-se um \textit{script} em Python que permite o seguinte: 
 
 
 \begin{enumerate}
@@ -507,7 +506,7 @@ Nesta simulação, o \acl{CM} recebe apenas os dados adquiridos por um \acl{SM},
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.67\linewidth]{esquemas/threads-python-script.pdf}
-	\caption{Implementação do script para o \ac{CM} }
+	\caption{Lógica de implementação do \textit{script} para o \acl{CM} }
 	\label{threadscript}
 \end{figure}
 
@@ -540,7 +539,7 @@ Nesta simulação, o \acl{CM} recebe apenas os dados adquiridos por um \acl{SM},
 \section{Sistema de videovigilância}
 
 
-Tal como descrito na secção \ref{videoviarqut}, foram utilizadas as ferramentas ffmpeg e raspivid para envio de vídeo sem qualquer tipo de processamento para o servidor \ac{RTMP} do Youtube. Para tal, foi executado o seguinte comando no terminal do Raspberry Pi 3, sendo possível observar o resultado na conta do Youtube.
+Tal como descrito na secção \ref{videoviarqut}, foram utilizadas as ferramentas FFMpeg e raspivid para envio de vídeo sem qualquer tipo de processamento para o servidor \ac{RTMP} do Youtube. Para tal, foi executado o seguinte comando no terminal do Raspberry Pi 3, sendo possível observar o resultado na conta do Youtube.
 
 
 \begin{lstlisting}[
@@ -563,32 +562,26 @@ raspivid -o - -t 0 -vf -hf -fps 30 -b 6000000 | ffmpeg -re -ar 44100 -ac 2 -acod
 Seguidamente, são descritos alguns dos parâmetros mais importantes presentes no comando anterior\cite{streamlive}. 
 
 \begin{itemize}
-	\item \texttt{-o -}: grava o vídeo para que possa ser utilizado pelo ffmpeg 
+	\item \texttt{-o -}: grava o vídeo para que possa ser utilizado pelo FFMpeg; 
 	
 	\item \texttt{-t 0}: grava e transmite o vídeo até que seja parado manualmente; 
 	
-	\item \texttt{-vf -hf}: inverte a imagem (horizontal/vertical) para permitir uma correta visualização. 
+	\item \texttt{-vf -hf}: inverte a imagem (horizontal/vertical) para permitir uma correta visualização; 
 	
 	\item \texttt{-fps 30 }: define o numero de frames por segundo, neste caso 30. 
 	
-	\item \texttt{-ar 44100 -ac 2 -acodec pcm\_s16le -f s16le -ac 2 -i /dev/zero}: adiciona um canal de áudio preenchido a zeros, uma vez que o YouTube rejeita fluxos sem um canal de áudio.
+	\item \texttt{-ar 44100 -ac 2 -acodec pcm\_s16le -f s16le -ac 2 -i /dev/zero}: adiciona um canal de áudio preenchido a zeros, uma vez que o YouTube rejeita fluxos sem um canal de áudio; 
 	
-	\item \texttt{-f h264}: diz ao ffmpeg que irá receber entrada h264 ( padrão para compressão de vídeo) 
+	\item \texttt{-f h264}: diz ao FFMpeg que irá receber entrada h264 ( padrão para compressão de vídeo). 
 	
 \end{itemize}
 
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.8\linewidth]{prints-web/api-doc.png}
-	\caption{Resultado no Youtube Live ao executar as ferramentas raspivid  e ffmpeg }
-	\label{docapi}
-\end{figure}
 
 
 
 
-Para além do descrito anteriormente, foi criado um \textit{script} em python que permite a aquisição de imagem proveniente do Raspberry Pi através do package \texttt{picamera}\footnote{http://picamera.readthedocs.io/en/release-1.13/}. Este pacote, fornece  uma interface em Python (disponível para qualquer versão) para o módulo de câmara Raspberry Pi, permitindo uma fácil interação entre a aquisição da imagem e respetivo processamento.
+Para além do descrito anteriormente, foi criado um \textit{script} em python que permite a aquisição de imagem proveniente do Raspberry Pi através do package \texttt{picamera}\footnote{\url{http://picamera.readthedocs.io/en/release-1.13/}}. Este pacote, fornece  uma interface em Python (disponível para qualquer versão) para o módulo de câmara Raspberry Pi, permitindo uma fácil interação entre a aquisição da imagem e respetivo processamento.
 Seguidamente será explicado um algoritmo de deteção de intrusos disponibilizado pelo OpenCV. 
 
 
@@ -620,22 +613,22 @@ hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
 	
 
 \begin{itemize}
-	\item \texttt{HOGDescriptor()}: esta classe implementa um histograma de gradientes orientados\cite{Dalal} que tem como objetivo a deteção de objetos.
+	\item \texttt{HOGDescriptor()}: esta classe implementa um histograma de gradientes orientados\cite{Dalal} que tem como objetivo a deteção de objetos; 
 	
-	\item \texttt{setSVMDetector()}: permite define os coeficientes para um  classificador \ac{SVM} linear. O \ac{SVM} é um algoritmo de \textit{machine learning} usado para classificação e análise de regressões. 
-	
-	
-	\item \texttt{getDefaultPeopleDetector()}: retorna um classificador pré-treinado para deteção de pessoas (para tamanho de janela padrão)\cite{featuredetection}. 
+	\item \texttt{setSVMDetector()}: permite define os coeficientes para um  classificador \ac{SVM} linear. O \ac{SVM} é um algoritmo de \textit{machine learning} usado para classificação e análise de regressões; 
 	
 	
-	\item \texttt{detectMultiScale()}: permite detetar objetos de diferentes tamanhos. Este método possui vários parâmetros que permitem ajustar o tamanho de deteção de um determinado objeto, como por exemplo o \texttt{winStride}, \texttt{padding} ou a \texttt{scale}. 
+	\item \texttt{getDefaultPeopleDetector()}: retorna um classificador pré-treinado para deteção de pessoas (para tamanho de janela padrão)\cite{featuredetection}; 
+	
+	
+	\item \texttt{detectMultiScale()}: permite detetar objetos de diferentes tamanhos. Este método possui vários parâmetros que permitem ajustar o tamanho de deteção de um determinado objeto, como por exemplo o \texttt{winStride}, \texttt{padding} ou a \texttt{scale}; 
 	
 \begin{itemize}
-	\item \texttt{winStride}: define o "tamanho do passo" na posição x e y de uma janela deslizante (figura \ref{winStride}). Este parâmetro é opcional.
+	\item \texttt{winStride}: define o "tamanho do passo" na posição x e y de uma janela deslizante (figura \ref{winStride}). Este parâmetro é opcional;
 	 
-	\item \texttt{padding}: este parâmetro é opcional e define o preenchimento. Consiste num tuplo que indica o número de pixels, na direção x e y, tal como o \texttt{winStride}. Os valores típicos são (8, 8),  (16, 16), (24, 24) e (32, 32).
+	\item \texttt{padding}: este parâmetro é opcional e define o preenchimento. Consiste num tuplo que indica o número de pixels, na direção x e y, tal como o \texttt{winStride}. Os valores típicos são (8, 8),  (16, 16), (24, 24) e (32, 32);
 	
-	\item \texttt{scale}: este parâmetro controla o fator com que a imagem é redimensionada em cada camada da pirâmide de imagens (figura \ref{scale}), influenciando o número de níveis existentes . É um parâmetro opcional. 
+	\item \texttt{scale}: este parâmetro controla o fator com que a imagem é redimensionada em cada camada da pirâmide de imagens (figura \ref{scale}), influenciando o número de níveis existentes. É um parâmetro opcional. 
 
 \end{itemize}
 	
@@ -649,7 +642,7 @@ hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
 	\begin{minipage}[b]{0.49\textwidth}
 		\centering
 		\includegraphics[width=0.4\textwidth]{img/sliding_window_example-11.png}
-		\caption{Exemplo da aplicação do parâmetros \texttt{winStride} }
+		\caption{Exemplo da aplicação do parâmetro \texttt{winStride} }
 		\label{winStride}
 	\end{minipage}
 	\hfill
@@ -668,7 +661,7 @@ hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
 O algoritmo apresentado permite a deteção de intrusos (humanos), quando estes surgem em vídeos ou imagens. Pretende-se incorporar este algoritmo no sistema de videovigilância (Youtube Live), possibilitando a deteção de indivíduos quando estes são capturados pela câmara, gerando alarmes para a plataforma. Para incorporar o algoritmo apresentado com o Youtube Live é necessário entender o mecanismo de \textit{streaming} disponibilizado pela \ac{API} do YouTube Live Streaming\footnote{\url{https://developers.google.com/youtube/v3/live/getting-started}}.  
 
 
-Como vimos anteriormente, existem vários parâmetros para o método \linebreak \texttt{detectMultiScale()}, possibilitando ajustar o tamanho da deteção. Dependendo da disposição exata da câmara é possível ajustar estes parâmetros permitindo uma deteção o mais eficaz possível. No próximo capítulo serão apresentados alguns exemplos em que é possível testar o algoritmo apresentado.  
+Como vimos anteriormente, existem vários parâmetros para o método \linebreak \texttt{detectMultiScale()}, que permitem ajustar o tamanho da deteção. Dependendo da disposição exata da câmara é possível ajustar estes parâmetros permitindo uma deteção o mais eficaz possível. No próximo capítulo serão apresentados alguns exemplos em que é possível testar o algoritmo apresentado.  
 
 
 
@@ -740,19 +733,19 @@ Caso sejam detetadas pessoas são gerados alarmes através da \ac{API} \ac{REST}
 
 \section{Considerações finais}
 
-Neste capítulo foram apresentadas algumas soluções de implementação que achei serem mais relevantes. Seguidamente encontram-se algumas conclusões finais da implementação de cada componente e no próximo capitulo serão mostrados os testes e resultados. 
+Neste capítulo foram apresentadas algumas soluções de implementação que achei serem mais relevantes. Seguidamente encontram-se algumas conclusões finais da implementação de cada componente e no próximo capítulo serão mostrados os testes e resultados. 
 
 
 
 \begin{itemize}
 	
-	\item \textbf{Sistema de informação}: após a modulação do sistema de informação foi possível implementar-lo de forma a permitir ilustrar o cenário pretendido, embora também seja possível adaptado-lo a outros quadros. O sistema disponibiliza uma interface web intuitiva e apelativa, sendo que toda a comunicação com os componentes de hardware seja realizada através da API REST. Esta API permite a criação de novos cliente com base no sistema, um exemplo disso é a aplicação mobile que infelizmente não houve tempo de ser desenvolvida, sendo apenas apresentado um \textit{mockup} desta. 
+	\item \textbf{Sistema de informação}: após a modulação do sistema de informação foi possível implementá-lo de forma a permitir ilustrar o cenário pretendido, embora também seja possível adaptá-lo a outros quadros. O sistema disponibiliza uma interface \textit{web} intuitiva e apelativa, sendo que toda a comunicação com os componentes de \textit{hardware} seja realizada através da \ac{API} \ac{REST}. Esta \ac{API} permite a criação de novos cliente com base no sistema, um exemplo disso é a aplicação \textit{mobile} que infelizmente não houve tempo para ser desenvolvida, sendo apenas apresentado um \textit{mockup} desta. 
 	
 	  
 	
-	\item \textbf{Simulação em \textit{hardware}}: simulou-se o sistema recorrendo a \textit{hardware} disponível em laboratório, tanto a nível de microcontroladores, sensores ou módulos de comunicação. No entanto, não houve possibilidade de testar nenhum sensor de salinidade apesar de ser bastante importante no contexto do projeto, uma vez que é um dos parâmetros principais necessários de monitorização no cultivo da Salicórnia. Relativamente à comunicação desta simulação, numa primeira fase, toda a comunicação entre o \acl{CM} e \acl{SM} foi realizada através de porta série (cabo físico), posteriormente optou-se por utilizar um tecnologia de comunicação sem fios. 
+	\item \textbf{Simulação em \textit{hardware}}: simulou-se o sistema recorrendo a \textit{hardware} disponível em laboratório, tanto a nível de microcontroladores, sensores ou módulos de comunicação. No entanto, não houve possibilidade de testar nenhum sensor de salinidade apesar de ser bastante importante no contexto do projeto, uma vez que é um dos parâmetros principais necessários de monitorização no cultivo da Salicórnia. Relativamente à comunicação desta simulação, numa primeira fase, toda a comunicação entre o \acl{CM} e \acl{SM} foi realizada através de porta série (cabo físico), posteriormente optou-se por utilizar uma tecnologia de comunicação sem fios. 
 	 
-	\item \textbf{Sistema de videovigilância}: relativamente ao sistema de video-vigilância foi possivel testar o serviço do Youtube Live para este cenário, ficando a falta a incorporação do algoritmo de deteção com a API do Youtube Live. 
+	\item \textbf{Sistema de videovigilância}: relativamente ao sistema de videovigilância foi possível testar o serviço do Youtube Live para este cenário, ficando a falta a incorporação do algoritmo de deteção com a API do Youtube Live. 
 	
 
 	

@@ -1,132 +1,134 @@
 \chapter{\acl{API} \acs{REST}}
 \label{espcifAPIREST}
 
-Seguidamente encontram-se descritos cada um dos \textit{endpoint} da \ac{API} \ac{REST} desenvolvida.  
+Seguidamente encontram-se descritos cada um dos \textit{endpoint} da \ac{API} \ac{REST} desenvolvida e os métodos que este permite. 
 
 \begin{itemize}
 	\item /api/user/
 		\begin{itemize}
-			\item Métodos disponíveis: POST, GET
-			\item Descrição: retorna os utilizadores registados no sistema, distinguindo o seu id, username, primeiro e ultimo nome, email, data do registo e do ultimo acesso. É também indicado o tipo de utilizador a que se refere. 
+			\item\textbf{Métodos disponíveis}: POST, GET
+			\item \textbf{Descrição}: retorna os utilizadores registados no sistema, distinguindo o seu id, username, primeiro e ultimo nome, email, data do registo e do último acesso. É também indicado o tipo de utilizador a que se refere. 
 		\end{itemize}
 
 	
 	\item /api/user/\{pk\_or\_username\}/
 		\begin{itemize}
-			\item Métodos disponíveis: GET, PUT, DELETE
-			\item Descrição: permite aplicar os métodos a um determinado utilizador registado no sistema, sendo este identificado pelo seu identificador ou pelo username. É retornado o primeiro e ultimo nome, email, data do registo e do ultimo acesso.
+			\item \textbf{Métodos disponíveis}: GET, PUT, DELETE
+			\item \textbf{Descrição}: permite aplicar os métodos a um determinado utilizador registado no sistema, sendo este identificado pelo seu identificador ou pelo username. É retornado o primeiro e último nome, email, data do registo e do último acesso.
 		\end{itemize}
 		
 	\item /api/smpercm/
 	\begin{itemize}
-		\item Métodos disponíveis: GET
-		\item Descrição: 
+		\item \textbf{Métodos disponíveis}: GET
+		\item \textbf{Descrição}: permite visualizar todos os \textit{Sensor Modules} que os \textit{Controller Modules} possuem.  
 	\end{itemize}
 	
-	
+	\newpage
 	
 	\item /api/smpercm/\{pk\_or\_name\_cm\}
 	\begin{itemize}
-		\item Métodos disponíveis: GET, POST
-		\item Descrição: 
+		\item \textbf{Métodos disponíveis}: GET, POST
+		\item \textbf{Descrição}: permite visualizar todos os \textit{Sensor Modules} que um determinado \acl{CM} possui, sendo este identificado por um nome ou pelo seu id no sistema. É também possível adicionar um novo \acl{SM} ao \acl{CM} em questão. 
 	\end{itemize}
 	
 	
 	\item /api/sm/
 	\begin{itemize}
-		\item Métodos disponíveis: GET, POST
-		\item Descrição: 
+		\item \textbf{Métodos disponíveis}: GET, POST
+		\item \textbf{Descrição}: são apresentadas todas as características dos \textit{Sensor Modules} existentes no sistema. Permite ainda adicionar um novo \acl{SM}. 
 	\end{itemize}
 	
 	
 	\item /api/sm/\{pk\_or\_name\}/
 	\begin{itemize}
-		\item Métodos disponíveis: GET, PUT, DELETE
-		\item Descrição: 
+		\item \textbf{Métodos disponíveis}: GET, PUT, DELETE
+		\item \textbf{Descrição}: são apresentadas todas as características de um \acl{SM}, sendo este identificado pelo seu nome ou pelo seu id. É possível atualizar as suas características ou eliminar o \acl{SM}. 
 	\end{itemize}
 	
 	
 	\item /api/sensortype/
 	\begin{itemize}
-		\item Métodos disponíveis: GET, POST
-		\item Descrição: 
+		\item \textbf{Métodos disponíveis}: GET, POST
+		\item \textbf{Descrição}: são apresentados todos os tipos de sensores existentes no sistema e os seus respetivos atributos. Permite também adicionar novos tipos de sensores ao sistema.
 	\end{itemize}
 	
 	
 	\item /api/sensortype/\{pk\_or\_name\}
 	\begin{itemize}
-		\item Métodos disponíveis: GET, PUT, DELETE
-		\item Descrição: 
+		\item\textbf{ Métodos disponíveis}: GET, PUT, DELETE
+		\item \textbf{Descrição}: são apresentadas as características de um tipo de sensor existente, sendo este identificado por um nome ou id. É possível atualizar ou eliminar este tipo de sensor. 
+		
 	\end{itemize}
 	
 	
 	\item /api/sensorpersm/\{id\_sm\_or\_name\_sm\}
 	\begin{itemize}
-		\item Métodos disponíveis: GET, POST
-		\item Descrição: 
+		\item \textbf{Métodos disponíveis}: GET, POST
+		\item \textbf{Descrição}: são apresentados todos os sensores existentes num determinado \acl{SM}, sendo este identificado por um nome ou id. É possível adicionar novos sensores a um \acl{SM}. 
 	\end{itemize}
 	
+	\newpage
 	
 	\item /api/sensor/
 	\begin{itemize}
-		\item Métodos disponíveis: GET
-		\item Descrição: 
+		\item \textbf{Métodos disponíveis}: GET
+		\item \textbf{Descrição}: são retornados todos os sensores registados no sistema. 
 	\end{itemize}
 	
 	
 	\item /api/sensor/\{pk\_or\_sensor\_type\}
 	\begin{itemize}
-		\item Métodos disponíveis: GET, POST
-		\item Descrição: 
+		\item \textbf{Métodos disponíveis}: GET, POST
+		\item \textbf{Descrição}: são retornados as características de um sensor, sendo este identificado pelo tipo de sensor ou id. 
 	\end{itemize}
 	
 	
 	\item /api/reading/{id\_sensor}/\{date\_start\}/\{date\_end\}
 	\begin{itemize}
-		\item Métodos disponíveis: GET, POST
-		\item Descrição: 
+		\item \textbf{Métodos disponíveis}: GET, POST
+		\item \textbf{Descrição}: são apresentados todas as leituras de um determinado sensor, identificado por um id, sendo possível definir a data de início e fim das leituras apresentadas. É também possível adicionar novas leituras ao sistema. 
 	\end{itemize}
 	
 	
 	\item /api/communication/\{pk\_or\_name\}
 	\begin{itemize}
-		\item Métodos disponíveis: GET, PUT, DELETE
-		\item Descrição: 
+		\item \textbf{Métodos disponíveis}: GET, PUT, DELETE
+		\item \textbf{Descrição}: são retornados todos os tipos de comunicação, sendo estes identificados pelo seu nome ou id. Para além disso, é possível atualizar os seus dados ou eliminá-lo. 
 	\end{itemize}
 	
 	
 	\item /api/cm/
 	\begin{itemize}
-		\item Métodos disponíveis: GET, POST
-		\item Descrição: 
+		\item \textbf{Métodos disponíveis}: GET, POST
+		\item \textbf{Descrição}: são retornados todos os \textit{Controller Modules} existentes no sistema. Para além disso, é possível adicionar um novo \acl{CM}. 
 	\end{itemize}
 	
 	
 	\item /api/cm/\{pk\_or\_name\}
 	\begin{itemize}
-		\item Métodos disponíveis: GET, PUT, DELETE
-		\item Descrição: 
+		\item \textbf{Métodos disponíveis}: GET, PUT, DELETE
+		\item \textbf{Descrição}: são retornadas as características de um determinado \acl{CM}, sendo este identificado pelo seu nome ou id. É possível atualizar os seus dados ou eliminá-lo. 
 	\end{itemize}
 	
 	
 	\item /api/alarmssettings/\{id\_sensor\}
 	\begin{itemize}
-		\item Métodos disponíveis: GET, POST
-		\item Descrição: 
+		\item \textbf{Métodos disponíveis}: GET, POST
+		\item \textbf{Descrição}: são apresentadas as configurações de alarmes para um determinado sensor, sendo este identificado pelo seu id. 
 	\end{itemize}
 	
 	
 	\item /api/alarms\_sensor/\{id\_sensor\}
 	\begin{itemize}
-		\item Métodos disponíveis: GET, POST
-		\item Descrição: 
+		\item \textbf{Métodos disponíveis}: GET, POST
+		\item \textbf{Descrição}: são apresentados todos os alarmes gerados para um determinado sensor, sendo este identificado pelo seu id. 
 	\end{itemize}
 	
 	
 	\item /api/alarms\_reading/\{id\_reading\}
 	\begin{itemize}
-		\item Métodos disponíveis:  GET, POST
-		\item Descrição: 
+		\item \textbf{Métodos disponíveis}:  GET, POST
+		\item \textbf{Descrição}: permite verificar se uma determinada leitura, identificada pelo seu id, foi ou não alvo de um alarme. 
 	\end{itemize}
 	
 	
