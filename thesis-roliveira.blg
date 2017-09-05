@@ -12,9 +12,9 @@ A level-1 auxiliary file: texSource/chapter6_1.aux
 A level-1 auxiliary file: texSource/chapter6.aux
 A level-1 auxiliary file: texSource/chapter7.aux
 The style file: IEEEtran.bst
-A level-1 auxiliary file: texSource/appendix1.aux
 A level-1 auxiliary file: texSource/appendix2.aux
 A level-1 auxiliary file: texSource/appendix3.aux
+A level-1 auxiliary file: texSource/appendix1.aux
 A level-1 auxiliary file: texSource/appendix5.aux
 A level-1 auxiliary file: texSource/appendix6.aux
 A level-1 auxiliary file: texSource/appendix7.aux
@@ -48,6 +48,8 @@ Warning--there is url but no urldate in Deacon2005
 Warning--missing publisher in Sugrue2013
 Warning--missing publisher in Holovaty2009
 Warning--there is url but no urldate in Kang2015
+Warning--empty journal in restpaper
+Warning--there is url but no urldate in restpaper
 Warning--empty author in arduinonanouser
 Warning--empty journal in arduinonanouser
 Warning--empty year in arduinonanouser
@@ -69,8 +71,6 @@ Warning--there is url but no urldate in BluetoothTM2001
 Warning--empty journal in Paper2005
 Warning--there is url but no urldate in Paper2005
 Warning--there is url but no urldate in Turban1996
-Warning--empty journal in restpaper
-Warning--there is url but no urldate in restpaper
 Warning--empty author in temp-dta
 Warning--empty journal in temp-dta
 Warning--empty year in temp-dta
@@ -79,45 +79,45 @@ Warning--empty journal in GuangzhouHCInformationTechnologyCo.2011
 Warning--there is url but no urldate in Dalal
 
 Done.
-You've used 68 entries,
+You've used 67 entries,
             4106 wiz_defined-function locations,
-            1246 strings with 19394 characters,
-and the built_in function-call counts, 34566 in all, are:
-= -- 2739
-> -- 622
-< -- 185
-+ -- 329
-- -- 113
-* -- 1682
-:= -- 5788
-add.period$ -- 132
-call.type$ -- 68
-change.case$ -- 68
-chr.to.int$ -- 417
-cite$ -- 118
-duplicate$ -- 2601
-empty$ -- 2982
-format.name$ -- 132
-if$ -- 7748
+            1239 strings with 19032 characters,
+and the built_in function-call counts, 33628 in all, are:
+= -- 2657
+> -- 601
+< -- 174
++ -- 317
+- -- 110
+* -- 1635
+:= -- 5650
+add.period$ -- 130
+call.type$ -- 67
+change.case$ -- 67
+chr.to.int$ -- 393
+cite$ -- 117
+duplicate$ -- 2537
+empty$ -- 2918
+format.name$ -- 128
+if$ -- 7529
 int.to.chr$ -- 0
-int.to.str$ -- 68
-missing$ -- 494
-newline$ -- 335
-num.names$ -- 60
-pop$ -- 1382
+int.to.str$ -- 67
+missing$ -- 484
+newline$ -- 332
+num.names$ -- 59
+pop$ -- 1364
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 4
-skip$ -- 2623
+skip$ -- 2550
 stack$ -- 0
-substring$ -- 1018
-swap$ -- 1775
-text.length$ -- 46
+substring$ -- 961
+swap$ -- 1715
+text.length$ -- 43
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 68
+type$ -- 67
 warning$ -- 50
-while$ -- 146
-width$ -- 70
-write$ -- 697
+while$ -- 141
+width$ -- 69
+write$ -- 686
 (There were 50 warnings)

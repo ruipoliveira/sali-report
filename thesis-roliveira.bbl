@@ -79,13 +79,6 @@ R.~Pinto, ``{Expresso | A planta que {\'{e}} uma alternativa ao sal: antes era
   \url{http://bit.ly/1PR7KAG} [Accessed: 2017-02-01]
 \BIBentrySTDinterwordspacing
 
-\bibitem{Davy2001}
-A.~J. Davy, G.~F. Bishop, and C.~S.~B. Costa, ``{Salicornia L. (Salicornia
-  pusilla J. Woods, S. ramosissima J. Woods, S. europaea L., S. obscura P.W.
-  Ball {\&} Tutin, S. nitens P.W. Ball {\&} Tutin, S. fragilis P.W. Ball {\&}
-  Tutin and S. dolichostachya Moss)},'' \emph{Journal of Ecology}, vol.~89,
-  no.~4, pp. 681--707, 2001.
-
 \bibitem{Silva2007}
 H.~Silva, G.~Caldeira, and H.~Freitas, ``{Salicornia ramosissima population
   dynamics and tolerance of salinity},'' \emph{Ecological Research}, vol.~22,
@@ -121,8 +114,7 @@ Q.~Z. Wang, X.~F. Liu, Y.~Shan, F.~Q. Guan, Y.~Chen, X.~Y. Wang, M.~Wang, and
   X.~Feng, ``{Two new nortriterpenoid saponins from Salicornia bigelovii Torr.
   and their cytotoxic activity},'' \emph{Fitoterapia}, vol.~83, no.~4, pp.
   742--749, jun 2012. [Online]. Available:
-  \url{http://www.ncbi.nlm.nih.gov/pubmed/22414316
-  http://linkinghub.elsevier.com/retrieve/pii/S0367326X12000640}
+  \url{http://www.ncbi.nlm.nih.gov/pubmed/22414316}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Evans2011a}
@@ -171,15 +163,16 @@ MySQL, ``{MySQL :: About MySQL},'' 2011. [Online]. Available:
 \bibitem{ThePostgreSQLGlobalDevelopmentGroup2012}
 \BIBentryALTinterwordspacing
 {The PostgreSQL Global Development Group}, ``{PostgreSQL: About},'' 2012.
-  [Online]. Available: \url{https://www.postgresql.org/about/
-  http://www.postgresql.org/about/} [Accessed: 2017-05-29]
+  [Online]. Available: \url{https://www.postgresql.org/about/} [Accessed:
+  2017-05-29]
 \BIBentrySTDinterwordspacing
 
 \bibitem{DB-engines2016}
 \BIBentryALTinterwordspacing
 DB-Engines, ``{Historical Trend of the Popularity Ranking of Database
   Management Systems},'' 2014. [Online]. Available:
-  \url{http://db-engines.com/en/ranking{\_}trend} [Accessed: 2017-07-13]
+  \url{http://db-engines.com/en/ranking{\%}7B{\%}5C{\_}{\%}7Dtrend} [Accessed:
+  2017-07-13]
 \BIBentrySTDinterwordspacing
 
 \bibitem{Lopez2009}
@@ -207,7 +200,8 @@ Flask, ``{Welcome | Flask (A Python Microframework)},'' 2014. [Online].
 \BIBentryALTinterwordspacing
 J.~Deacon, ``{Model-View-Controller (MVC) Architecture},'' \emph{JOHN DEACON
   Computer Systems Development, Consulting {\&} Training}, pp. 1--6, 2009.
-  [Online]. Available: \url{http://www.jdl.co.uk/briefings/index.html{\#}mvc}
+  [Online]. Available:
+  \url{http://www.jdl.co.uk/briefings/index.html{\%}5C{\#}mvc}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Index}
@@ -242,6 +236,14 @@ I.~S. Kang, R.~Morais, and W.~Santos, ``{Padr{\~{a}}o TISS: Um Estudo de Caso
   CONTECSI International Conference on Information Systems and Technology
   Management}, pp. 1--17, 2015. [Online]. Available:
   \url{http://www.contecsi.fea.usp.br/envio/index.php/contecsi/12CONTECSI/paper/view/2185}
+\BIBentrySTDinterwordspacing
+
+\bibitem{restpaper}
+\BIBentryALTinterwordspacing
+R.~T. Fielding, ``{UNIVERSITY OF CALIFORNIA, IRVINE Architectural Styles and
+  the Design of Network-based Software Architectures},'' 2000. [Online].
+  Available:
+  \url{http://jpkc.fudan.edu.cn/picture/article/216/35/4b/22598d594e3d93239700ce79bce1/7ed3ec2a-03c2-49cb-8bf8-5a90ea42f523.pdf}
 \BIBentrySTDinterwordspacing
 
 \bibitem{restdjango}
@@ -295,7 +297,7 @@ J.~Melorose, R.~Perroy, and S.~Careas, ``{Arduino Nano},'' 2015. [Online].
 \bibitem{TemperatureSensors}
 \BIBentryALTinterwordspacing
 ``{Temperature Sensors Watlow Educational Series}.'' [Online]. Available:
-  \url{https://kontrolotomasyon.files.wordpress.com/2016/10/dt{\_}temperaturesensors{\_}thewatlow{\_}25ekim2016.pdf}
+  \url{https://kontrolotomasyon.files.wordpress.com/2016/10/dt{\_}temperaturesensors{\%}5C{\_}thewatlow{\%}5C{\_}25ekim2016.pdf}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Argus2010}
@@ -373,14 +375,6 @@ E.~Turban, \emph{{Information technology for management : improving quality and
 ``{Gravatar - Globally Recognized Avatars}.'' [Online]. Available:
   \url{http://pt.gravatar.com/site/implement https://secure.gravatar.com/}
   [Accessed: 2017-06-10]
-\BIBentrySTDinterwordspacing
-
-\bibitem{restpaper}
-\BIBentryALTinterwordspacing
-R.~T. Fielding, ``{UNIVERSITY OF CALIFORNIA, IRVINE Architectural Styles and
-  the Design of Network-based Software Architectures},'' 2000. [Online].
-  Available:
-  \url{http://jpkc.fudan.edu.cn/picture/article/216/35/4b/22598d594e3d93239700ce79bce1/7ed3ec2a-03c2-49cb-8bf8-5a90ea42f523.pdf}
 \BIBentrySTDinterwordspacing
 
 \bibitem{tokenREST}
