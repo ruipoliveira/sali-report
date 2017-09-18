@@ -6,7 +6,7 @@
 
 #### [Template LaTeX in code.ua.pt](https://code.ua.pt/projects/latex-ua/repository/revisions/master/show/LyX) 
 
-##Repositories
+## Repositories
 
 * [report (pdf) ](https://github.com/ruipoliveira)
 * [dashboard + API](https://github.com/ruipoliveira)
@@ -14,5 +14,5 @@
 * [video surveillance with detection](https://github.com/ruipoliveira)
 
 
-##Author
+## Author
 * Rui Oliveira (ruipedrooliveira@ua.pt)
