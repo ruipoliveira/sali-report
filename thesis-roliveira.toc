@@ -1,6 +1,6 @@
 \select@language {portuguese}
 \contentsline {chapter}{Lista de Figuras}{v}{chapter*.1}
-\contentsline {chapter}{Lista de Tabelas}{ix}{chapter*.4}
+\contentsline {chapter}{Lista de Tabelas}{ix}{chapter*.2}
 \contentsline {chapter}{Acr\IeC {\'o}nimos}{xi}{section*.10}
 \contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Motiva\IeC {\c c}\IeC {\~a}o}{2}{section.1.1}
@@ -48,59 +48,60 @@
 \contentsline {subsection}{\numberline {3.8.4}Sigfox}{27}{subsection.3.8.4}
 \contentsline {subsection}{\numberline {3.8.5}Compara\IeC {\c c}\IeC {\~a}o entre tecnologias de comunica\IeC {\c c}\IeC {\~a}o}{27}{subsection.3.8.5}
 \contentsline {chapter}{\numberline {4}Sistema de controlo e monitoriza\IeC {\c c}\IeC {\~a}o: arquitetura e modela\IeC {\c c}\IeC {\~a}o}{29}{chapter.4}
-\contentsline {section}{\numberline {4.1}Descri\IeC {\c c}\IeC {\~a}o global do sistema}{29}{section.4.1}
-\contentsline {section}{\numberline {4.2}Componentes}{31}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}\acl {SM}}{31}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}\acl {CM}}{32}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}An\IeC {\'a}lise de requisitos}{32}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Requisitos funcionais}{33}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Requisitos n\IeC {\~a}o funcionais}{35}{subsection.4.3.2}
-\contentsline {section}{\numberline {4.4}Modela\IeC {\c c}\IeC {\~a}o}{35}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Entidades envolvidas}{35}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Casos de uso}{36}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Modelo de dados}{40}{subsection.4.4.3}
-\contentsline {section}{\numberline {4.5}Arquitetura l\IeC {\'o}gica}{43}{section.4.5}
-\contentsline {section}{\numberline {4.6}Arquitetura f\IeC {\'\i }sica}{44}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Sistema de informa\IeC {\c c}\IeC {\~a}o}{45}{subsection.4.6.1}
-\contentsline {subsubsection}{Aplica\IeC {\c c}\IeC {\~a}o web}{45}{section*.74}
-\contentsline {subsubsection}{\acs {API} \acs {REST}}{47}{section*.77}
-\contentsline {subsubsection}{Documenta\IeC {\c c}\IeC {\~a}o interativa}{49}{section*.80}
-\contentsline {subsubsection}{Implementa\IeC {\c c}\IeC {\~a}o do sistema}{49}{section*.81}
-\contentsline {subsubsection}{Aplica\IeC {\c c}\IeC {\~a}o mobile}{50}{section*.82}
-\contentsline {subsection}{\numberline {4.6.2}Simula\IeC {\c c}\IeC {\~a}o em \textit {hardware}}{51}{subsection.4.6.2}
-\contentsline {subsubsection}{Sensores utilizados}{51}{section*.84}
-\contentsline {subsubsection}{Comunica\IeC {\c c}\IeC {\~a}o}{53}{section*.92}
-\contentsline {subsection}{\numberline {4.6.3}Sistema de videovigil\IeC {\^a}ncia }{55}{subsection.4.6.3}
-\contentsline {subsubsection}{Biblioteca para processamento de imagem: OpenCV}{55}{section*.97}
-\contentsline {section}{\numberline {4.7}Diagrama de componentes}{57}{section.4.7}
-\contentsline {section}{\numberline {4.8}Considera\IeC {\c c}\IeC {\~o}es finais}{58}{section.4.8}
-\contentsline {chapter}{\numberline {5}Implementa\IeC {\c c}\IeC {\~a}o}{59}{chapter.5}
-\contentsline {section}{\numberline {5.1}Sistema de informa\IeC {\c c}\IeC {\~a}o}{59}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Sistema de registo e autentica\IeC {\c c}\IeC {\~a}o}{60}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Gera\IeC {\c c}\IeC {\~a}o de alarmes}{62}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Visualiza\IeC {\c c}\IeC {\~a}o dos dados e c\IeC {\'a}lculos estat\IeC {\'\i }sticos}{63}{subsection.5.1.3}
-\contentsline {subsection}{\numberline {5.1.4}API}{64}{subsection.5.1.4}
-\contentsline {subsection}{\numberline {5.1.5}Documenta\IeC {\c c}\IeC {\~a}o da API}{65}{subsection.5.1.5}
-\contentsline {subsection}{\numberline {5.1.6}Aplica\IeC {\c c}\IeC {\~a}o \textit {web}}{66}{subsection.5.1.6}
-\contentsline {subsection}{\numberline {5.1.7}\textit {Deploy} do projecto}{67}{subsection.5.1.7}
-\contentsline {section}{\numberline {5.2}Simula\IeC {\c c}\IeC {\~a}o em \textit {hardware}}{69}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Arduino Nano}{69}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Raspberry Pi 3}{70}{subsection.5.2.2}
-\contentsline {section}{\numberline {5.3}Sistema de videovigil\IeC {\^a}ncia}{71}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Algoritmo de dete\IeC {\c c}\IeC {\~a}o de intrusos}{72}{subsection.5.3.1}
-\contentsline {section}{\numberline {5.4}Considera\IeC {\c c}\IeC {\~o}es finais}{74}{section.5.4}
-\contentsline {chapter}{\numberline {6}Testes e resultados}{75}{chapter.6}
-\contentsline {section}{\numberline {6.1}Testes funcionais}{75}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}\ac {API} \ac {REST}}{75}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Comunica\IeC {\c c}\IeC {\~a}o via Bluetooth }{76}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}Dete\IeC {\c c}\IeC {\~a}o de intrusos}{77}{subsection.6.1.3}
-\contentsline {section}{\numberline {6.2}Resultados}{78}{section.6.2}
-\contentsline {section}{\numberline {6.3}Considera\IeC {\c c}\IeC {\~o}es finais}{83}{section.6.3}
-\contentsline {chapter}{\numberline {7}Conclus\IeC {\~o}es e trabalho futuro}{85}{chapter.7}
-\contentsline {section}{\numberline {7.1}Conclus\IeC {\~o}es}{85}{section.7.1}
-\contentsline {section}{\numberline {7.2}Problemas encontrados}{86}{section.7.2}
-\contentsline {section}{\numberline {7.3}Trabalho futuro}{86}{section.7.3}
-\contentsline {chapter}{\numberline {A}\textit {Mockup} da aplica\IeC {\c c}\IeC {\~a}o \textit {mobile}}{93}{appendix.A}
-\contentsline {chapter}{\numberline {B}Implementa\IeC {\c c}\IeC {\~a}o do \textit {trigger} \acs {SQL} }{95}{appendix.B}
-\contentsline {chapter}{\numberline {C}\acl {API} \acs {REST}}{97}{appendix.C}
-\contentsline {chapter}{\numberline {D}Interliga\IeC {\c c}\IeC {\~a}o de componentes}{101}{appendix.D}
+\contentsline {section}{\numberline {4.1}An\IeC {\'a}lise de requisitos}{30}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Requisitos funcionais}{30}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Requisitos n\IeC {\~a}o funcionais}{32}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Descri\IeC {\c c}\IeC {\~a}o global do sistema}{33}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Componentes}{34}{subsection.4.2.1}
+\contentsline {subsubsection}{\acl {SM}}{34}{section*.63}
+\contentsline {subsubsection}{\acl {CM}}{35}{section*.66}
+\contentsline {section}{\numberline {4.3}Modela\IeC {\c c}\IeC {\~a}o}{36}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Entidades envolvidas}{36}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Casos de uso}{36}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Modelo de dados}{41}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}Arquitetura l\IeC {\'o}gica}{44}{section.4.4}
+\contentsline {section}{\numberline {4.5}Arquitetura f\IeC {\'\i }sica}{45}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Sistema de informa\IeC {\c c}\IeC {\~a}o}{45}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Aplica\IeC {\c c}\IeC {\~a}o web}{46}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}\acs {API} \acs {REST}}{48}{subsection.4.5.3}
+\contentsline {subsection}{\numberline {4.5.4}Documenta\IeC {\c c}\IeC {\~a}o interativa}{50}{subsection.4.5.4}
+\contentsline {subsection}{\numberline {4.5.5}Implementa\IeC {\c c}\IeC {\~a}o do sistema}{50}{subsection.4.5.5}
+\contentsline {subsection}{\numberline {4.5.6}Aplica\IeC {\c c}\IeC {\~a}o mobile}{51}{subsection.4.5.6}
+\contentsline {subsection}{\numberline {4.5.7}Simula\IeC {\c c}\IeC {\~a}o em \textit {hardware}}{52}{subsection.4.5.7}
+\contentsline {subsubsection}{Sensores utilizados}{52}{section*.81}
+\contentsline {subsubsection}{Comunica\IeC {\c c}\IeC {\~a}o}{54}{section*.89}
+\contentsline {subsection}{\numberline {4.5.8}Sistema de videovigil\IeC {\^a}ncia }{56}{subsection.4.5.8}
+\contentsline {subsubsection}{Biblioteca para processamento de imagem: OpenCV}{56}{section*.94}
+\contentsline {section}{\numberline {4.6}Diagrama de componentes}{58}{section.4.6}
+\contentsline {section}{\numberline {4.7}Considera\IeC {\c c}\IeC {\~o}es finais}{59}{section.4.7}
+\contentsline {chapter}{\numberline {5}Implementa\IeC {\c c}\IeC {\~a}o}{61}{chapter.5}
+\contentsline {section}{\numberline {5.1}Sistema de informa\IeC {\c c}\IeC {\~a}o}{61}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Sistema de registo e autentica\IeC {\c c}\IeC {\~a}o}{62}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Gera\IeC {\c c}\IeC {\~a}o de alarmes}{64}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Visualiza\IeC {\c c}\IeC {\~a}o dos dados e c\IeC {\'a}lculos estat\IeC {\'\i }sticos}{65}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}API}{66}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.5}Documenta\IeC {\c c}\IeC {\~a}o da API}{67}{subsection.5.1.5}
+\contentsline {subsection}{\numberline {5.1.6}Aplica\IeC {\c c}\IeC {\~a}o \textit {web}}{68}{subsection.5.1.6}
+\contentsline {subsection}{\numberline {5.1.7}\textit {Deploy} do projecto}{69}{subsection.5.1.7}
+\contentsline {section}{\numberline {5.2}Simula\IeC {\c c}\IeC {\~a}o em \textit {hardware}}{72}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Arduino Nano}{72}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Raspberry Pi 3}{73}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}Sistema de videovigil\IeC {\^a}ncia}{74}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Utiliza\IeC {\c c}\IeC {\~a}o do algoritmo de dete\IeC {\c c}\IeC {\~a}o de intrusos}{75}{subsection.5.3.1}
+\contentsline {section}{\numberline {5.4}Considera\IeC {\c c}\IeC {\~o}es finais}{76}{section.5.4}
+\contentsline {chapter}{\numberline {6}Testes e resultados}{79}{chapter.6}
+\contentsline {section}{\numberline {6.1}Testes funcionais}{79}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}API REST}{79}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Comunica\IeC {\c c}\IeC {\~a}o via Bluetooth }{80}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Dete\IeC {\c c}\IeC {\~a}o de intrusos}{81}{subsection.6.1.3}
+\contentsline {section}{\numberline {6.2}Resultados}{82}{section.6.2}
+\contentsline {section}{\numberline {6.3}Considera\IeC {\c c}\IeC {\~o}es finais}{86}{section.6.3}
+\contentsline {chapter}{\numberline {7}Conclus\IeC {\~o}es e trabalho futuro}{89}{chapter.7}
+\contentsline {section}{\numberline {7.1}Conclus\IeC {\~o}es}{89}{section.7.1}
+\contentsline {section}{\numberline {7.2}Problemas encontrados}{90}{section.7.2}
+\contentsline {section}{\numberline {7.3}Trabalho futuro}{90}{section.7.3}
+\contentsline {chapter}{\numberline {A}\textit {Mockup} da aplica\IeC {\c c}\IeC {\~a}o \textit {mobile}}{97}{appendix.A}
+\contentsline {chapter}{\numberline {B}Implementa\IeC {\c c}\IeC {\~a}o do \textit {trigger} \acs {SQL} }{99}{appendix.B}
+\contentsline {chapter}{\numberline {C}\acl {API} \acs {REST}}{101}{appendix.C}
+\contentsline {chapter}{\numberline {D}Interliga\IeC {\c c}\IeC {\~a}o de componentes}{105}{appendix.D}
+\contentsline {chapter}{\numberline {E}Packages utilizados}{107}{appendix.E}

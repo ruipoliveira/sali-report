@@ -23,8 +23,9 @@
 
 \bibitem{desingprocess}
 \BIBentryALTinterwordspacing
-\emph{{The Engineering Design Process}}. [Online]. Available:
+``{The Engineering Design Process}.'' [Online]. Available:
   \url{https://www.sciencebuddies.org/engineering-design-process/engineering-design-process-steps.shtml}
+  [Accessed: 2017-07-27]
 \BIBentrySTDinterwordspacing
 
 \bibitem{Saini2014}
@@ -204,15 +205,15 @@ J.~Deacon, ``{Model-View-Controller (MVC) Architecture},'' \emph{JOHN DEACON
   \url{http://www.jdl.co.uk/briefings/index.html{\%}5C{\#}mvc}
 \BIBentrySTDinterwordspacing
 
+\bibitem{Sugrue2013}
+J.~Sugrue, \emph{{Beginning Backbone.js}}, 2013.
+
 \bibitem{Index}
 \BIBentryALTinterwordspacing
 D.~S. Foundation, ``{Django Documentation},'' pp. 1--1172, 2012. [Online].
   Available: \url{https://docs.djangoproject.com/en/1.3/} [Accessed:
   2017-07-17]
 \BIBentrySTDinterwordspacing
-
-\bibitem{Sugrue2013}
-J.~Sugrue, \emph{{Beginning Backbone.js}}, 2013.
 
 \bibitem{Holovaty2009}
 A.~Holovaty and J.~Kaplan-Moss, \emph{{The Definitive Guide to Django: Web
@@ -368,6 +369,12 @@ E.~Turban, \emph{{Information technology for management : improving quality and
   productivity}}.\hskip 1em plus 0.5em minus 0.4em\relax Wiley, 1996. [Online].
   Available:
   \url{https://books.google.pt/books?id=FqxzQgAACAAJ{\&}redir{\_}esc=y{\&}hl=pt-PT}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Josuttis2001}
+\BIBentryALTinterwordspacing
+N.~Josuttis, ``{Designing a 3-Tier-Architecture},'' \emph{Design}, 2001.
+  [Online]. Available: \url{http://www.josuttis.com}
 \BIBentrySTDinterwordspacing
 
 \bibitem{gravatar}

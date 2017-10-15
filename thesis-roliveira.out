@@ -1,5 +1,5 @@
 \BOOKMARK [0][-]{chapter*.1}{Lista de Figuras}{}% 1
-\BOOKMARK [0][-]{chapter*.4}{Lista de Tabelas}{}% 2
+\BOOKMARK [0][-]{chapter*.2}{Lista de Tabelas}{}% 2
 \BOOKMARK [0][-]{section*.10}{Acr\363nimos}{}% 3
 \BOOKMARK [0][-]{chapter.1}{Introdu\347\343o}{}% 4
 \BOOKMARK [1][-]{section.1.1}{Motiva\347\343o}{chapter.1}% 5
@@ -47,32 +47,32 @@
 \BOOKMARK [2][-]{subsection.3.8.4}{Sigfox}{section.3.8}% 47
 \BOOKMARK [2][-]{subsection.3.8.5}{Compara\347\343o entre tecnologias de comunica\347\343o}{section.3.8}% 48
 \BOOKMARK [0][-]{chapter.4}{Sistema de controlo e monitoriza\347\343o: arquitetura e modela\347\343o}{}% 49
-\BOOKMARK [1][-]{section.4.1}{Descri\347\343o global do sistema}{chapter.4}% 50
-\BOOKMARK [1][-]{section.4.2}{Componentes}{chapter.4}% 51
-\BOOKMARK [2][-]{subsection.4.2.1}{Sensor Module}{section.4.2}% 52
-\BOOKMARK [2][-]{subsection.4.2.2}{Controller Module}{section.4.2}% 53
-\BOOKMARK [1][-]{section.4.3}{An\341lise de requisitos}{chapter.4}% 54
-\BOOKMARK [2][-]{subsection.4.3.1}{Requisitos funcionais}{section.4.3}% 55
-\BOOKMARK [2][-]{subsection.4.3.2}{Requisitos n\343o funcionais}{section.4.3}% 56
-\BOOKMARK [1][-]{section.4.4}{Modela\347\343o}{chapter.4}% 57
-\BOOKMARK [2][-]{subsection.4.4.1}{Entidades envolvidas}{section.4.4}% 58
-\BOOKMARK [2][-]{subsection.4.4.2}{Casos de uso}{section.4.4}% 59
-\BOOKMARK [2][-]{subsection.4.4.3}{Modelo de dados}{section.4.4}% 60
-\BOOKMARK [1][-]{section.4.5}{Arquitetura l\363gica}{chapter.4}% 61
-\BOOKMARK [1][-]{section.4.6}{Arquitetura f\355sica}{chapter.4}% 62
-\BOOKMARK [2][-]{subsection.4.6.1}{Sistema de informa\347\343o}{section.4.6}% 63
-\BOOKMARK [3][-]{section*.74}{Aplica\347\343o web}{subsection.4.6.1}% 64
-\BOOKMARK [3][-]{section*.77}{API REST}{subsection.4.6.1}% 65
-\BOOKMARK [3][-]{section*.80}{Documenta\347\343o interativa}{subsection.4.6.1}% 66
-\BOOKMARK [3][-]{section*.81}{Implementa\347\343o do sistema}{subsection.4.6.1}% 67
-\BOOKMARK [3][-]{section*.82}{Aplica\347\343o mobile}{subsection.4.6.1}% 68
-\BOOKMARK [2][-]{subsection.4.6.2}{Simula\347\343o em hardware}{section.4.6}% 69
-\BOOKMARK [3][-]{section*.84}{Sensores utilizados}{subsection.4.6.2}% 70
-\BOOKMARK [3][-]{section*.92}{Comunica\347\343o}{subsection.4.6.2}% 71
-\BOOKMARK [2][-]{subsection.4.6.3}{Sistema de videovigil\342ncia }{section.4.6}% 72
-\BOOKMARK [3][-]{section*.97}{Biblioteca para processamento de imagem: OpenCV}{subsection.4.6.3}% 73
-\BOOKMARK [1][-]{section.4.7}{Diagrama de componentes}{chapter.4}% 74
-\BOOKMARK [1][-]{section.4.8}{Considera\347\365es finais}{chapter.4}% 75
+\BOOKMARK [1][-]{section.4.1}{An\341lise de requisitos}{chapter.4}% 50
+\BOOKMARK [2][-]{subsection.4.1.1}{Requisitos funcionais}{section.4.1}% 51
+\BOOKMARK [2][-]{subsection.4.1.2}{Requisitos n\343o funcionais}{section.4.1}% 52
+\BOOKMARK [1][-]{section.4.2}{Descri\347\343o global do sistema}{chapter.4}% 53
+\BOOKMARK [2][-]{subsection.4.2.1}{Componentes}{section.4.2}% 54
+\BOOKMARK [3][-]{section*.63}{Sensor Module}{subsection.4.2.1}% 55
+\BOOKMARK [3][-]{section*.66}{Controller Module}{subsection.4.2.1}% 56
+\BOOKMARK [1][-]{section.4.3}{Modela\347\343o}{chapter.4}% 57
+\BOOKMARK [2][-]{subsection.4.3.1}{Entidades envolvidas}{section.4.3}% 58
+\BOOKMARK [2][-]{subsection.4.3.2}{Casos de uso}{section.4.3}% 59
+\BOOKMARK [2][-]{subsection.4.3.3}{Modelo de dados}{section.4.3}% 60
+\BOOKMARK [1][-]{section.4.4}{Arquitetura l\363gica}{chapter.4}% 61
+\BOOKMARK [1][-]{section.4.5}{Arquitetura f\355sica}{chapter.4}% 62
+\BOOKMARK [2][-]{subsection.4.5.1}{Sistema de informa\347\343o}{section.4.5}% 63
+\BOOKMARK [2][-]{subsection.4.5.2}{Aplica\347\343o web}{section.4.5}% 64
+\BOOKMARK [2][-]{subsection.4.5.3}{API REST}{section.4.5}% 65
+\BOOKMARK [2][-]{subsection.4.5.4}{Documenta\347\343o interativa}{section.4.5}% 66
+\BOOKMARK [2][-]{subsection.4.5.5}{Implementa\347\343o do sistema}{section.4.5}% 67
+\BOOKMARK [2][-]{subsection.4.5.6}{Aplica\347\343o mobile}{section.4.5}% 68
+\BOOKMARK [2][-]{subsection.4.5.7}{Simula\347\343o em hardware}{section.4.5}% 69
+\BOOKMARK [3][-]{section*.81}{Sensores utilizados}{subsection.4.5.7}% 70
+\BOOKMARK [3][-]{section*.89}{Comunica\347\343o}{subsection.4.5.7}% 71
+\BOOKMARK [2][-]{subsection.4.5.8}{Sistema de videovigil\342ncia }{section.4.5}% 72
+\BOOKMARK [3][-]{section*.94}{Biblioteca para processamento de imagem: OpenCV}{subsection.4.5.8}% 73
+\BOOKMARK [1][-]{section.4.6}{Diagrama de componentes}{chapter.4}% 74
+\BOOKMARK [1][-]{section.4.7}{Considera\347\365es finais}{chapter.4}% 75
 \BOOKMARK [0][-]{chapter.5}{Implementa\347\343o}{}% 76
 \BOOKMARK [1][-]{section.5.1}{Sistema de informa\347\343o}{chapter.5}% 77
 \BOOKMARK [2][-]{subsection.5.1.1}{Sistema de registo e autentica\347\343o}{section.5.1}% 78
@@ -86,7 +86,7 @@
 \BOOKMARK [2][-]{subsection.5.2.1}{Arduino Nano}{section.5.2}% 86
 \BOOKMARK [2][-]{subsection.5.2.2}{Raspberry Pi 3}{section.5.2}% 87
 \BOOKMARK [1][-]{section.5.3}{Sistema de videovigil\342ncia}{chapter.5}% 88
-\BOOKMARK [2][-]{subsection.5.3.1}{Algoritmo de dete\347\343o de intrusos}{section.5.3}% 89
+\BOOKMARK [2][-]{subsection.5.3.1}{Utiliza\347\343o do algoritmo de dete\347\343o de intrusos}{section.5.3}% 89
 \BOOKMARK [1][-]{section.5.4}{Considera\347\365es finais}{chapter.5}% 90
 \BOOKMARK [0][-]{chapter.6}{Testes e resultados}{}% 91
 \BOOKMARK [1][-]{section.6.1}{Testes funcionais}{chapter.6}% 92
@@ -103,3 +103,4 @@
 \BOOKMARK [0][-]{appendix.B}{Implementa\347\343o do trigger SQL }{}% 103
 \BOOKMARK [0][-]{appendix.C}{Application Programming Interface REST}{}% 104
 \BOOKMARK [0][-]{appendix.D}{Interliga\347\343o de componentes}{}% 105
+\BOOKMARK [0][-]{appendix.E}{Packages utilizados}{}% 106

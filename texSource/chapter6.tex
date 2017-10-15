@@ -1,20 +1,20 @@
 \chapter{Testes e resultados}
 
-
+Neste capitulo são apresentados alguns testes funcionais ao sistema bem como 
 
 \section{Testes funcionais}
 
 
-Nesta secção são apresentados alguns testes a nível de funcionalidades do sistema. Estes testes permitem averiguar se determinados blocos, que sejam possíveis de testar isoladamente, se encontram em total funcionamento. 
+Nesta secção são apresentados alguns testes a nível de funcionalidades do sistema. Estes testes permitem averiguar se determinados blocos, que sejam possíveis de testar isoladamente, se encontram em total funcionamento. Todos os testes apresentados são manuais. 
 
-\subsection{\ac{API} \ac{REST}}
+\subsection{API REST}
 
 
-Após a criação da API REST foram utilizadas duas ferramentas, uma gráfica e outra por linha de comandos, que permitiram testar e personalizar os cabeçalhos num pedido HTTP, sendo cada uma delas descrita de seguida.
+Após a criação da \ac{API} \ac{REST} foram utilizadas duas ferramentas, uma gráfica e outra por linha de comandos, que permitiram testar e personalizar os cabeçalhos num pedido HTTP, sendo cada uma delas descrita de seguida.
 
 
 \begin{itemize}
-	\item \textit{Advanced REST client}\footnote{\url{https://advancedrestclient.com/}}: consiste numa ferramenta gráfica (extensão para o Google Chrome) que permite auxiliar os programadores \textit{web} na criação e testes de pedidos \ac{HTTP} personalizados. É o único cliente \ac{REST} que faz a conexão diretamente no \textit{socket}, fornecendo controlo total sobre os cabeçalhos de ligação e solicitações/resposta.
+	\item \textit{Advanced REST client}\footnote{\url{https://advancedrestclient.com/}}: consiste numa ferramenta gráfica (extensão para o Google Chrome) que permite auxiliar os programadores \textit{web} na criação e testes de pedidos \ac{HTTP} personalizados. Tal como o Postman\footnote{\url{www.getpostman.com}}, é um cliente \ac{REST} que faz a conexão diretamente no \textit{socket}, fornecendo controlo total sobre os cabeçalhos de ligação e solicitações/resposta.
 	 
 	\item CURL\footnote{\url{https://curl.haxx.se/}}: é uma biblioteca (libcurl) e ferramenta de linha de comandos (cURL) para transferências de dados através do \ac{URL}. Esta ferramenta suporta uma variedade de protocolos comuns da Internet com por exemplo \ac{HTTP}, \ac{FTP}, \ac{SMTP} entre outros. 
 \end{itemize}
@@ -60,7 +60,7 @@ Estas duas ferramentas permitiram testar e validar o funcionamento da API REST a
 
 Para testar o módulo Bluetooth HC-06 foi utilizada a aplicação \textit{Bluetooth Terminal HC-05}. Esta possibilitou enviar vários \textit{inputs} descritos, ou seja,  os algarismos zero (0), um (1) e dois (2) e observar o seu resultado.  
 
-Caso seja enviado o 1 através da caixa de texto "Enter Command" ou através do botão "ON val" previamente criado, é ativado o \ac{LED}. Por outro lado, caso seja enviado o 0,  o \ac{LED} desliga-se. Isto mimetiza a abertura e o fecho de um válvula para transferência de águas nas leiras de produção de Salicórnia, respetivamente enviando 1 e 0. Na situação de ser enviado o algarismo 2, o módulo Bluetooth encarrega-se de enviar a informação recolhida pelos sensores no formato descrito na secção \ref{arduinonanoard}. A figura \ref{bluetth05-res} demonstra a manipulação do estado da válvula (\ac{LED}) e respetiva resposta de confirmação (ON/OFF OK!), e por fim o envio dos valores lidos pelos sensores: temperatura a 28ºC, sensor do nível de água ativo, luminosidade a 60\% e a válvula ativa. Na figura \ref{comimageesquema} é possível observar o resultado após o envio do algarismo 1 com a ativação do \ac{LED} (E da figura \ref{comimageesquema}). Para além disso, é possível observar a ligação dos diferentes componentes na \textit{breadboard}: o Arduino Nano (A da figura \ref{comimageesquema}), módulo Bluetooth HC-06 (B da figura \ref{comimageesquema}), sensor de luminosidade (C da figura \ref{comimageesquema}) e o de temperatura (D da figura \ref{comimageesquema}). 
+Caso seja enviado o 1 através da caixa de texto "Enter Command" ou através do botão "ON val" previamente criado, é ativado o \ac{LED}. Por outro lado, caso seja enviado o 0,  o \ac{LED} desliga-se. Isto mimetiza a abertura e o fecho de um válvula para transferência de águas nas leiras de produção de Salicórnia. Na situação de ser enviado o algarismo 2, o módulo Bluetooth encarrega-se de enviar a informação recolhida pelos sensores no formato descrito na secção \ref{arduinonanoard}. A figura \ref{bluetth05-res} demonstra a manipulação do estado da válvula (\ac{LED}) e respetiva resposta de confirmação (ON/OFF OK!), e por fim o envio dos valores lidos pelos sensores: temperatura a 28ºC, sensor do nível de água ativo, luminosidade a 60\% e a válvula ativa. Na figura \ref{comimageesquema} é possível observar o resultado após o envio do algarismo 1 com a ativação do \ac{LED} (E da figura \ref{comimageesquema}). Para além disso, é possível observar a ligação dos diferentes componentes na \textit{breadboard}: o Arduino Nano (A da figura \ref{comimageesquema}), módulo Bluetooth HC-06 (B da figura \ref{comimageesquema}), sensor de luminosidade (C da figura \ref{comimageesquema}) e o de temperatura (D da figura \ref{comimageesquema}). 
 
 
 \begin{figure}[h]
@@ -84,7 +84,7 @@ Caso seja enviado o 1 através da caixa de texto "Enter Command" ou através do 
 
 \subsection{Deteção de intrusos}
 
-Relativamente ao algoritmo de deteção de intrusos, este foi testado em três cenários distintos, representados nas figuras abaixo (frame1, frame2 e frame3). É possível averiguar que em nenhum deles os valores atribuídos aos parâmetros referidos na secção \ref{algdetecao} são totalmente iguais.
+Relativamente ao algoritmo de deteção de intrusos, este foi testado em três cenários distintos, representados nas figuras abaixo (frame1, frame2 e frame3). É possível constatar que em nenhum deles os valores atribuídos aos parâmetros referidos na secção \ref{algdetecao} são totalmente iguais.
 
 
 
@@ -146,11 +146,11 @@ Relativamente ao algoritmo de deteção de intrusos, este foi testado em três c
 
 
 
-Como podemos ver, para os três casos de teste não existe nenhum conjunto de parâmetros que satisfaça todos os cenários, o que torna impossível saber quais serão usados no contexto da câmara de videovigilância, uma vez que depende da localização e do ângulo da mesma no terreno. 
+Como podemos ver, para os três casos de teste não existe nenhum conjunto de parâmetros que satisfaça todos os cenários, o que torna impossível saber quais os que deverão ser usados no contexto da câmara de videovigilância, uma vez que dependem da localização e do ângulo da mesma no terreno. 
 
 \section{Resultados}
 
-Nesta secção são apresentados os principais resultados obtidos no que toca ao trabalho prático desta dissertação. É apresentado o sistema de registo dos utilizadores e respetiva validação por parte da empresa, a adição de um novo tipo de sensor na \textit{dashboard} bem como a adição de um novo \acl{SM}. Para além disso, é mostrado o resultado do envio contínuo de dados para o cenário de simulação em \textit{hardware} apresentado. Por fim, é apresentado o mecanismo de atuação remota numa válvula e o respetivo resultado obtido. 
+Nesta secção mostram-se os principais resultados obtidos no trabalho prático desta dissertação. É apresentado o sistema de registo dos utilizadores e respetiva validação por parte da empresa, a adição de um novo tipo de sensor na \textit{dashboard} bem como a adição de um novo \acl{SM}. Para além disso, é mostrado o resultado do envio contínuo de dados para o cenário de simulação em \textit{hardware} apresentado. Por fim, é apresentado o mecanismo de atuação remota numa válvula e o respetivo resultado obtido. 
 
 
 
@@ -179,7 +179,7 @@ Nesta secção são apresentados os principais resultados obtidos no que toca ao
 \end{figure}
 
 
-Na figura \ref{novouser} é apresentada a interface \textit{web} para o registo de um novo utilizador no sistema. Este ao registar-se terá que escolher a empresa a que se associa, sendo esta notificada por email da existência de um novo utilizador. A empresa terá que aceder à sua área privada para validar ou remover o utilizador associado (figura \ref{validateuser}).
+Na figura \ref{novouser} é apresentada a interface \textit{web} para o registo de um novo utilizador no sistema. Este, ao registar-se, terá que escolher a empresa a que se associa, sendo esta notificada por email da existência de um novo utilizador. A empresa terá que aceder à sua área reservada para validar ou remover o utilizador associado (figura \ref{validateuser}).
 
 
 
@@ -201,7 +201,7 @@ Na figura \ref{novouser} é apresentada a interface \textit{web} para o registo 
 \end{figure}
 
 
-A figura \ref{view-sensorall} apresenta a página que permite verificar todos os tipos de sensores existentes no sistema, por outro lado, a figura \ref{add-sensorall} exemplifica a adição de um sensor de salinidade com a especificação das suas características. Este dois passos são análogos ao processo de visualização e adição de tipos de comunicação.
+A figura \ref{view-sensorall} apresenta a página que permite verificar todos os tipos de sensores existentes no sistema. A figura \ref{add-sensorall} exemplifica a adição de um sensor de salinidade com a especificação das suas características. Este dois passos são análogos ao processo de visualização e adição de tipos de comunicação.
 
 
 
@@ -225,7 +225,7 @@ A figura \ref{view-sensorall} apresenta a página que permite verificar todos os
 
 
 
-Na figura \ref{view-sm} é possível observar os \textit{Sensor Modules} associados ao \acl{CM} denominado por Raspi. São visíveis todas as características de cada \acl{SM}, bem como os botões que permitem a adição, edição, remoção ou visualização dos dados adquiridos. Por outro lado, na figura \ref{add-sm} é apresentada a interface para adição de um novo \acl{SM} e respetivos \textit{feedbacks} para o utilizador. O processo de visualização e adição de um \acl{CM} é idêntico. 
+Na figura \ref{view-sm} é possível observar os \textit{Sensor Modules} associados ao \acl{CM} denominado por Raspi. São visíveis todas as características de cada \acl{SM}, bem como os botões que permitem a adição, edição, remoção ou visualização dos dados adquiridos. Na figura \ref{add-sm} é apresentada a interface para adição de um novo \acl{SM} e respetivos \textit{feedbacks} para o utilizador. O processo de visualização e adição de um \acl{CM} é idêntico. 
 
 
 \begin{figure}[h]
@@ -256,10 +256,10 @@ Na figura \ref{view-sm} é possível observar os \textit{Sensor Modules} associa
 
 
 
-Na figura \ref{view_grap_data} é apresentada a interface de visualização gráfica dos dados adquiridos pelos diferentes sensores de um \acl{SM} ou por outros componentes existentes, isto é, atuação remota ou sistema videovigilância. Nesta figura é destacada a filtragem por data, a atuação remota e o botão "Dataset View" que permite visualizar os dados em formato tabular (figura \ref{view_tab_data}). Estes dados são passíveis de serem ordenados pelos diferentes campos bem como a sua exportação para um ficheiro do tipo \ac{CSV} através de um botão existente. 
+Na figura \ref{view_grap_data} é apresentada a interface de visualização gráfica dos dados adquiridos pelos diferentes sensores de um \acl{SM} ou por outros componentes existentes, isto é, atuação remota ou sistema videovigilância. Nesta figura é destacada a filtragem por data, a atuação remota e o botão ``Dataset View'' que permite visualizar os dados em formato tabular (figura \ref{view_tab_data}). Estes dados são passíveis de serem ordenados pelos diferentes campos bem como a sua exportação para um ficheiro do tipo \ac{CSV} através de um botão existente. 
 
 
-Seguidamente, na figura \ref{grafico_humidade} é apresentado o resultado dos dados adquiridos para o sensor de luminosidade durante quatro dias, sendo que eram recebidos dados dos sensores de 5 em 5 minutos. Na mesma interface é possível observar o número de leituras efetuadas nesta data, o valor máximo e mínimo medido e o valor médio. Os valores 5, 20, 130 e 250 são botões que permitem alterar o numero de leituras apresentadas no gráfico. 
+Seguidamente, na figura \ref{grafico_humidade} é apresentado o resultado dos dados adquiridos para o sensor de luminosidade durante quatro dias. Os dados eram recebido dos sensores de 5 em 5 minutos. Na mesma interface é possível observar o número de leituras efetuadas nesta data, o valor máximo e mínimo medido e o valor médio. Os valores 5, 20, 130 e 250 são botões que permitem alterar o numero de leituras apresentadas no gráfico. 
  
 
 \begin{figure}[h]
@@ -284,14 +284,14 @@ Na figura \ref{process_remota} é possível observar o processo de atuação rem
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.9\linewidth]{prints-web/dashboard1.png}
+	\includegraphics[width=\linewidth]{prints-web/dashboard1.png}
 	\caption{Interface principal após \textit{login} (\textit{dashboard})}
 	\label{ddashboard}
 \end{figure}
 
 
 
-Na figura \ref{ddashboard} é apresentada a \textit{dashboard} do sistema após a validação bem sucedida das credenciais do utilizador. Nesta página são apresentados alguns dados estatísticos relacionadas com o sistema, como por exemplo, o número de utilizadores registado, números de \textit{Controller Modules} e \textit{Sensor Modules} e número total de valores obtidos pelos sensores no sistema. Para cada \acl{CM} é apresentado um mapa onde é possível localizar cada um dos módulos identificados através de um marcador de diferentes cores (a vermelho no caso do \acl{CM} e a azul nos \textit{Sensor Modules}). No separador "Alarms" é possível consultar todos os alarmes ocorridos destacando o valor que gerou o alarme bem como a mensagem gerada. É possível verificar o alarme para que este não volte a ser apresentado. No separador "arduinoNano", são apresentados os últimos valores obtidos pelos sensores deste módulo. 
+Na figura \ref{ddashboard} é apresentada a \textit{dashboard} do sistema após a validação bem sucedida das credenciais do utilizador. Nesta página são apresentados alguns dados estatísticos relacionadas com o sistema, como por exemplo, o número de utilizadores registado, números de \textit{Controller Modules} e \textit{Sensor Modules} e número total de valores obtidos pelos sensores no sistema. Para cada \acl{CM} é apresentado um mapa onde é possível localizar cada um dos módulos identificados através de um marcador de diferentes cores (a vermelho no caso do \acl{CM} e a azul nos \textit{Sensor Modules}). No separador ``Alarms''  é possível consultar todos os alarmes ocorridos destacando o valor que gerou o alarme bem como a mensagem gerada. É possível ocultar o alarme para que este não volte a ser apresentado. No separador ``arduinoNano'', são apresentados os últimos valores obtidos pelos sensores deste módulo. 
 
 
 \begin{figure}[h]
@@ -325,7 +325,7 @@ Na figura \ref{ddashboard} é apresentada a \textit{dashboard} do sistema após 
 
 \newpage
 
-Na figura \ref{vigilancia} é apresentada a incorporação do sistema de videovigilância na plataforma \textit{web} do sistema. Por fim, na figura \ref{responsiveinterface} é apresentado o acesso à \textit{dashboard} através de um dispositivo \textit{mobile}, sendo possível constatar o seu \textit{design} totalmente responsivo, permitindo utilizar esta interface como ponto de partida para criação da aplicação \textit{mobile} planeada. 
+Na figura \ref{vigilancia} é apresentada a incorporação do sistema de videovigilância na plataforma \textit{web} do sistema. Por fim, na figura \ref{responsiveinterface} é apresentado o acesso à \textit{dashboard} através de um dispositivo \textit{mobile} (através de um \textit{browser}), sendo possível constatar o seu \textit{design} totalmente responsivo, permitindo utilizar esta interface como ponto de partida para criação da aplicação \textit{mobile} planeada. 
 
 
 
@@ -334,6 +334,6 @@ Na figura \ref{vigilancia} é apresentada a incorporação do sistema de videovi
 
 
 
-Neste capítulo são apresentados alguns dos testes funcionais a alguns módulos do sistema, bem como os resultados dos diferentes componentes do sistema integrados.  A plataforma desenvolvida permite que o seu utilizador possa consultar os alarmes gerados e verificar a evolução dos dados lidos pelos diferentes sensores. Complementarmente o utilizador poderá atuar remotamente em atuadores de forma a melhorar as condições de cultivo da Salicórnia. Adicionalmente, este sistema disponibiliza uma API que permite a criação de novas aplicações. De forma a simular este cenário, foi criado um protótipo em \textit{hardware} com diferentes sensores e microcontroladores, utilizando protocolos de comunicação sem fios. Por fim, foi criado um sistema de videovigilância e testado um algoritmo de deteção de intrusos. 
+Neste capítulo foram apresentados alguns dos testes funcionais a alguns módulos do sistema, bem como os resultados dos diferentes componentes do sistema integrados.  A plataforma desenvolvida permite que o seu utilizador possa consultar os alarmes gerados e verificar a evolução dos dados lidos pelos diferentes sensores. Complementarmente, o utilizador poderá atuar remotamente em válvulas/motores/comportas de forma a melhorar as condições de cultivo da Salicórnia. Adicionalmente, este sistema disponibiliza uma API que permite a criação de novas aplicações. De forma a simular este cenário, foi criado um protótipo em \textit{hardware} com diferentes sensores e microcontroladores, utilizando protocolos de comunicação sem fios. Por fim, foi criado um sistema de videovigilância e testado um algoritmo de deteção de intrusos. 
 
 

@@ -132,7 +132,7 @@ A tabela \ref{comp-sqgbdcar} permite comparar algumas das características dos \
 No que diz respeito ao desenvolvimento \textit{web} do sistema, permitindo que este seja adaptado ao cliente/empresa conforme as suas necessidades, poderão ser adotadas duas estratégias distintas: 
 
 \begin{itemize}
-	\item Por manipulação local utilizando \ac{JS} que interage com o \ac{DOM}. Exemplo de \textit{frameworks}: Angular.JS, Angular 2, React.JS, Vue.JS; 
+	\item Por manipulação local utilizando \ac{JS} que interage com o \ac{DOM}. Exemplo de \textit{frameworks}: Angular 2, React.JS, Vue.JS; 
 	
 	\item Por acesso ao servidor que servirá conteúdos criados em função dos pedidos do cliente. Exemplo de \textit{frameworks}: ASP.net, Django, Flask, Play, Spring. 
 	
@@ -172,7 +172,18 @@ O Flask consiste numa \textit{micro-framewor}k desenvolvida em Python baseada na
 \subsection{Django}
 \label{django}
 
-A \textit{framework} Django é uma ferramenta de desenvolvimento \textit{web} de alto nível desenvolvida na linguagem Python, que possui uma arquitetura \ac{MVC}\cite{Deacon2005}, embora com algumas diferenças em relação a esta. No modelo \ac{MVC}, a componente \textit{Model} diz respeito à camada de acesso a dados, a \textit{View} à parte do sistema responsável pela escolha e apresentação da informação e o \textit{Controller} está encarregue de decidir que \textit{views} escolher (figura \ref{mvcdiag}). Os criadores do Django consideram a sua arquitetura com sendo \ac{MTV}\cite{Index}. 
+A \textit{framework} Django é uma ferramenta de desenvolvimento \textit{web} de alto nível desenvolvida na linguagem Python, que possui uma arquitetura \ac{MVC}\cite{Deacon2005}, embora com algumas diferenças em relação a esta. No modelo \ac{MVC}, a componente \textit{Model} diz respeito à camada de acesso a dados, a \textit{View} à parte do sistema responsável pela escolha e apresentação da informação e o \textit{Controller} está encarregue de decidir que \textit{views} escolher (figura \ref{mvcdiag}). 
+
+\newpage
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[scale=0.7]{esquemas/MVC-diagram.pdf}
+	\caption[]{Modelo \ac{MVC} (Adaptado de \cite{Sugrue2013})}
+	\label{mvcdiag}
+\end{figure}
+
+Os criadores do Django consideram a sua arquitetura com sendo \ac{MTV}\cite{Index}. 
 
 \begin{itemize}
 	\item \textit{Model}: é responsável por manipular, valiar, aceder e relacionar os dados. É considerada a fonte única e definitiva de informação (dados), possuindo os campos essenciais e os comportamentos sobre estes. Geralmente, cada \textit{Model} mapeia uma única tabela na base de dados;
@@ -184,12 +195,7 @@ A \textit{framework} Django é uma ferramenta de desenvolvimento \textit{web} de
 	
 \end{itemize}
 
-\begin{figure}[!htb]
-	\centering
-	\includegraphics[scale=0.7]{esquemas/MVC-diagram.pdf}
-	\caption[]{Modelo \ac{MVC} (Adaptado de \cite{Sugrue2013})}
-	\label{mvcdiag}
-\end{figure}
+
 
 
 Um dos pontos mais interessantes no Django é sem dúvida a existência de \linebreak \ac{ORM}. Consiste numa técnica de desenvolvimento que permite modelar os dados através de classes em Python. Através dela, é possível gerar tabelas na base de dados e manipulá-las sem a necessidade de interagir diretamente com \ac{SQL} (embora também seja possível).
@@ -243,7 +249,7 @@ Relativamente ao desenvolvimento de aplicações móveis, o programador pode rec
 
 \subsection{Plataformas nativas}
 
-Uma aplicação nativa é desenvolvida exclusivamente para ser utilizada por um dispositivo ou plataforma específica, como é o caso do iOS, Android ou Windows Phone. Nestes casos, são usadas ferramentas e linguagens específica suportadas pela plataforma, podendo interagir com as funcionalidade do sistema operativo ou aplicações existentes. Seguidamente são apresentadas algumas características de uma plataforma do tipo nativo\cite{Ibm2012a}. 
+Uma aplicação nativa é desenvolvida exclusivamente para ser utilizada por um dispositivo ou plataforma específica, como é o caso do iOS, Android, Windows Phone entre outras. Nestes casos, são usadas ferramentas e linguagens específicas suportadas pela plataforma, podendo interagir com as funcionalidade do sistema operativo ou aplicações existentes. Seguidamente são apresentadas algumas características de uma aplicação do tipo nativo\cite{Ibm2012a}. 
 
 
 
@@ -351,7 +357,7 @@ Dadas as vantagens enumeradas relativamente à tecnologia \ac{REST}, optou-se po
 
 
 
-O Django REST Framework é considerado pelos seus autores uma ferramenta poderosa e flexível para a construção de APIs Web\cite{restdjango}, sendo de fácil incorporação quando estamos perante um projeto desenvolvido com a \textit{framework} Django. Esta ferramenta disponibiliza um conjunto de funcionalidade que permite estender as suas características de uma forma simples e intuitiva, tais como paginação de conteúdos e utilização de filtros, escolha dos formatos de dados, entre outras.
+O Django REST Framework é considerado pelos seus autores uma ferramenta poderosa e flexível para a construção de APIs Web\cite{restdjango}, sendo de fácil incorporação quando estamos perante um projeto desenvolvido com a \textit{framework} Django. Esta ferramenta disponibiliza um conjunto de funcionalidades que permitem estender as suas características de uma forma simples e intuitiva, tais como paginação de conteúdos e utilização de filtros, escolha dos formatos de dados, entre outras.
 
 
 Uma das vantagens desta \textit{framework} é a capacidade de construção do serviço através de vistas baseadas em classes, permitindo de um modo quase automático fazer a construção da API através dos modelos disponíveis, não sendo necessário para implementar a lógica de cada um dos \textit{endpoints}\footnote{Endereço ou ponto de conexão a um serviço web} disponibilizados, existindo a possibilidade de personalizar a lógica de negócio das rotas. Além do mais, esta \textit{framework} disponibiliza uma extensa documentação bem detalhada e explicativa, possuindo ainda uma grande comunidade que a apoia. 
@@ -412,7 +418,7 @@ O Flask-RESTful é uma extensão para \textit{microframework} Flask. É consider
 		\label{comp-rest}
 \end{table}
 
-Existem inúmeras características que potenciam cada uma das ferramentas/\textit{frameworks} abordadas anteriormente, entre as quais destaco a \ac{HATEOAS}. Esta característica determina se a API é  navegável, isto é, a partir de um determinado recurso é possível descobrir quais os recursos associados e a sua respetiva informação. Na tabela \ref{comp-rest} apresenta-se uma comparação entre as ferramentas/\textit{frameworks} discutidas anteriormente. 
+Existem inúmeras características que potenciam cada uma das ferramentas/\textit{frameworks} abordadas anteriormente, entre as quais destaco a \ac{HATEOAS}. Esta característica determina se a API é  navegável, isto é, se a partir de um determinado recurso é possível descobrir quais os recursos associados e a sua respetiva informação. Na tabela \ref{comp-rest} apresenta-se uma comparação entre as ferramentas/\textit{frameworks} discutidas anteriormente. 
 
 
 O Django REST Framework é a solução que apresenta uma maior maturidade, disponibilizando um conjunto de funções aos programadores, possibilitando boas práticas de desenvolvimento \ac{REST}, aproveitando as vantagens da \textit{framework} Django enumeradas anteriormente (secção \ref{django}). Para além disso, permite a autenticação da API, possibilitando que apenas alguns utilizadores tenham acesso aos serviços. 

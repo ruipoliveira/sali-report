@@ -4,9 +4,11 @@
 
 
 Este capítulo tem como principal objetivo a descrição do sistema que resultou do trabalho prático
-desta dissertação. Cada elemento do sistema é caracterizado de acordo com as suas funções, especificidades e arquitetura, bem como a forma como os elementos interagem entre si. Para além disso, é apresentado todo o processo de modelação do sistema tendo por base os requisitos do cliente. 
+desta dissertação. Cada elemento do sistema é caracterizado de acordo com as suas funções, especificidades e arquitetura, bem como a forma como os elementos interagem entre si. Para além disso, é apresentado todo o processo de modelação do sistema tendo por base os requisitos do cliente.
 
+ 
 
+INTERLIGAÇÃO ENTRE ISTO...
 
 %Dashboard - 
 
@@ -14,107 +16,26 @@ desta dissertação. Cada elemento do sistema é caracterizado de acordo com as 
 % Mockups - Design que a plataforma deverá apresentar no fim do seu desenvolvimento.
 
 
-
-\section{Descrição global do sistema}
-
-Este sistema tem como objetivo a supervisão remota da produção de Salicórnia, permitindo não só a monitorização dos dados adquiridos pelos sensores, como também da atuação remota de determinados comandos. Neste contexto, também é possível a aquisição de imagens que possibilita a deteção de intrusos nas quintas onde se realiza a produção desta espécie. O esquema da figura \ref{componentesalla} ilustra de um modo geral todos os componentes e as diferentes plataformas com que o cliente pode interagir. 
-
-
-\begin{figure}[!htb]
-	\centering
-	\includegraphics[width=\linewidth]{esquemas/global_arquitetura.pdf}
-	\caption{Ilustração dos principais componentes do sistema}
-	\label{componentesalla}
-\end{figure}
+%\section{title}
 
 
 
+Segundo \textit{Laudon et al.}\cite{Laudon1998}, um sistema de informação define-se como sendo uma inter-relação de múltiplos componentes podendo estes ser equipamentos, telecomunicações, \textit{software}, bases de dados e outras tecnologias de transformação de informação. Todos estes componentes permitem a recolha, processamento, armazenamento e distribuição de informação que possibilita a tomada de decisões e controlo para uma determinada organização, ou até mesmo para a sociedade, de modo a torná-la mais acessível e útil.
 
-
-
-Como vimos no capítulo 3, uma plantação de  Salicórnia carece de um controlo relativamente fino de certos parâmetros ambientais sobretudo da salinidade do terreno, que depende, das chuvas, da salinidade da água dos canais da ria, entre outros. Nas quintas onde se cultiva Salicórnia, a produção faz-se numa espécie de leiras limitadas por pequenos canais de irrigação que podem ser cheios de água salgada proveniente dos esteiros que rodeiam a quinta. Esta operação implica a abertura de válvulas de admissão de água, medida do nível da maré nos canais, monitorização da qualidade e salinidade da água exterior.
-
-
-
-\begin{figure}[!htb]
-	\centering
-	\includegraphics[width=\linewidth]{esquemas/leiras-comm-geral.pdf}
-	\caption{Ilustração da distribuição dos módulos em duas leiras}
-	\label{leira}
-\end{figure}
-
-
-Tal como ilustrado na figura \ref{leira}, foram colocados módulos com sensores distribuídos estrategicamente por cada leira. Cada um desses módulos, irá comunicar com um módulo central originando uma topologia de rede em estrela.  Por sua vez, cada um destes módulos centrais irá comunicar diretamente com o servidor que receberá todos os dados adquiridos tanto pelos sensores como por atuadores, permitindo que estes sejam guardados numa base de dados específica. Os atuadores, permitirão despoletar ações que autorizam a ativação ou desativação de bombas e/ou válvulas para transferências de água de modo a melhorar as condições de cultivo da Salicórnia. 
-Os módulos centrais têm acesso à camada protocolar \ac{TCP}/\ac{IP} (Internet) para possibilitar a utilização da \acs{API} \acs{REST} desenvolvida para o efeito. 
-
-No que diz respeito às plataformas de interação com o cliente, existe uma \textit{dashboard} (plataforma \textit{web}) e uma aplicação \textit{mobile}. A \textit{dashboard} disponibiliza uma interface que apresenta as informações mais importantes para o utilizador de forma apelativa, tornando mais fácil a sua interação e respetiva leitura, possibilitando ainda a gestão de todo o sistema e realização de operações de controlo remoto. Por outro lado, a aplicação \textit{mobile} permite apenas a monitorização do cultivo da Salicórnia e receção de alertas quando estes ocorrem.
-
-
-
-
-\section{Componentes}
-
-No contexto desta dissertação é necessário reter dois conceitos principais, são eles: 
+Dada a elevada complexidade de um sistema de informação, é possível identificar algumas funcionalidades comuns aos diversos sistema existentes, são elas\cite{Turban1996}: 
 
 \begin{itemize}
-	\item \textbf{\acl{SM} (SM):} consiste num módulo responsável pela aquisição de dados provenientes dos mais diversos tipos de sensores; 
+	\item \textbf{Recolha de dados}: sequência de tarefas que possibilitam a adição de novos dados ao sistema;
 	
+	\item \textbf{Organização e armazenamento de dados}: é imprescindível uma boa organização da estrutura de dados possibilitando uma fácil e rápida localização;
 	
-	\item \textbf{\acl{CM} (CM):} consiste num módulo responsável pela receção dos dados/estados dos sensores do \acl{SM} e respetivo envio para a \textit{cloud}.  
+	\item \textbf{Processamento de dados}: qualquer funcionalidade que permita a produção de resultados mais úteis do que os dados em bruto; 
+	
+	\item \textbf{Distribuição de informação}: após o processamento de dados é fundamental a distribuição destes a quem precise deles; 
+	
+	\item \textbf{Utilização da informação}: por si só, a informação não tem qualquer valor, a sua utilização em contexto adequado possibilita a extração de determinadas conclusões para que possam ser tomadas decisões.
 	
 \end{itemize}
-
-
-O cenário da figura \ref{esquema1} ilustra três \textit{Sensor Modules} que comunicam com um \acl{CM}. Cada um desses \acl{SM} possui um conjunto específico de sensores, podendo estes ser atuadores ou câmaras. Para a comunicação com o \acl{CM}, cada \acl{SM} possui um determinado módulo de comunicação que permite a transferência dos dados adquiridos pelos sensores. Posteriormente, o \acl{CM} possui também um determinado módulo de comunicação (\acs{TCP}/\acs{IP}) que permite a utilização da \ac{API} e respetivo envio ou atualização dos dados adquiridos pelo sistema. 
-
-
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=\linewidth]{esquemas/general-electronic-modules.pdf}
-	\caption{Esquema de componentes e respetiva comunicação entre três \ac{SM} e um \ac{CM}}
-	\label{esquema1}
-\end{figure}
-
-
-Seguidamente serão especificados todos os detalhes de cada módulo, uma vez que serão considerados na modelação de todo o sistema. 
-
-
-
-\subsection{\acl{SM}}
-
-
-
-Um \acl{SM} consiste num microcontrolador responsável pela aquisição de dados provenientes dos mais diversos tipos de sensores, podendo estes ser atuadores ou câmaras. No caso de se tratar de um atuador, isto é, válvulas, bombas, contadores, pás ou cancelas, apenas serão lidos valores binários. Caso se trate de uma câmara, todo o processamento é feito internamente nesta, sendo que o sistema apenas irá receber o \ac{IP} da mesma ou um \ac{URL} para um servidor de \ac{RTMP}.  
-
-
-Tal como referido anteriormente, cada \acl{SM} terá que utilizar um determinado módulo de comunicação para possibilitar a transferência dos dados adquiridos para o módulo central. Para além disso, pretende-se que o \acl{SM} em condições extremas, possa tomar decisões de atuação, isto é, caso seja lido um valor fora do padrão e que seja necessário a ativação de um atuador, este deverá ser auto suficiente em tomar esta decisão, sem necessidade de intervenção do utilizador. 
-
-Pretende-se que este módulo seja identificado por um determinado nome, possua uma bateria que permita a sua mobilidade, tenha um ou vários módulos de comunicação acoplados que permitam comunicar com um módulo centrar. Tenha uma determinada memória e um módulo \ac{GPS} que permita aceder à sua localização, identificando-o em caso de furto. Para além disso, um \acl{SM} terá que possuir obrigatoriamente um ou vários sensores.
-
-
-
-
-
-
-
-
-\subsection{\acl{CM}}
-
-
-
-Um \acl{CM} consiste num microcontrolador responsável pela receção dos dados prevenientes dos vários \textit{Sensor Modules}. Pretende-se que este módulo envie ou receba informações para os \acl{SM} quando solicitados pelo utilizador. Após a receção dos dados, estes são enviados para um servidor em \textit{cloud} através de uma \ac{API} criada para o efeito. Como a tecnologia \ac{REST} opera sob o protocolo de comunicação \ac{HTTP}, este componente tem que necessariamente estar ligado à rede Internet (\ac{TCP}/\ac{IP}). 
-
-É essencial que este módulo possua alguma capacidade de processamento, uma vez que poderá ter vários \textit{Sensor Modules} a si associados e com necessidade de constante envio e receção de dados.  Para além disso, pretende-se que o \acl{CM} seja identificado por um determinado nome, tenha um  módulo de comunicação que possibilite o envio de dados para um servidor e outros para comunicação com os diferentes \textit{Sensor Modules}. Tal como acontece com os \textit{Sensor Modules}, existe necessidade de acoplado um módulo \ac{GPS} que permita localizar o microcontrolador em caso de robo.
- 
-
-
-
-
-
-
-%\section{Design funcional}
-
 
 
 
@@ -144,17 +65,17 @@ Os requisitos funcionais descrevem os critérios que devem ser usados para avali
 	\item A interface do sistema deve permitir que o utilizador, seja ele qual for, saia ou faça \textit{logout} no sistema;
 	
 	\item O \textit{dashboard} deverá permitir que qualquer utilizador possa recuperar a sua chave de acesso ao sistema (\textit{password});
-
+	
 	\item O sistema deve permitir que o utilizador possa adicionar e/ou gerir um ou vários módulos de sensores; 
 	
 	\item A aplicação \textit{web} deve permitir visualizar graficamente os dados que cada sensor obtém; 
-		
+	
 	\item O sistema deve permitir visualizar tabularmente (\textit{dataset}) os dados que cada sensor obtém;  
 	
 	\item Em cada uma das visualizações anteriormente descritas, deve ser possível efetuar uma filtragem por data;
 	
 	\item O sistema deverá permitir a exportação dos dados obtidos pelos sensores  em formato \ac{CSV}; 
-		
+	
 	\item O sistema deve ter a capacidade de gerar alarmes quando algum valor lido pelos sensores esteja fora do previsto.
 	
 \end{itemize}
@@ -177,19 +98,20 @@ De modo a tornar o sistema genérico foram impostos os seguintes requisitos adic
 		
 		\item Tipos de comunicação;
 		
-		\item \acl{CM} com as respetivas especificações e características;
 		
-		\item Tipo de comunicação a um \acl{CM} que possibilite a sua comunicação como o servidor; 
+		%\item \acl{CM} com as respetivas especificações e características;
 		
-		\item  \textit{Sensor Modules} a um determinado \acl{CM} com as suas respetivas especificações e características; 
+		%\item Tipo de comunicação a um \acl{CM} que possibilite a sua comunicação como o servidor; 
 		
-		\item Um ou vários tipos de comunicação a um \acl{SM} que permita a sua comunicação com um \acl{CM}; 
+		%\item  \textit{Sensor Modules} a um determinado \acl{CM} com as suas respetivas especificações e características; 
+		
+		%\item Um ou vários tipos de comunicação a um \acl{SM} que permita a sua comunicação com um \acl{CM}; 
 		
 		
-		\item Um ou vários sensores a um \acl{SM} em que cada sensor poderá ser de um determinado tipo.
+		%\item Um ou vários sensores a um \acl{SM} em que cada sensor poderá ser de um determinado tipo.
 	\end{itemize}
 	
-		
+	
 	\item O sistema deverá disponibilizar uma \ac{API} que permita a criação de novas aplicações com base nesta;
 	
 	\item Consultar a documentação da \ac{API} de modo interativo;
@@ -199,7 +121,7 @@ De modo a tornar o sistema genérico foram impostos os seguintes requisitos adic
 	\item Alterar configurações base do utilizador (primeiro nome, último nome, email, etc.).
 	
 \end{itemize}
-	
+
 
 
 \textbf{Aplicação \textit{mobile}}
@@ -232,21 +154,129 @@ Os requisitos não funcionais são todos os requisitos da aplicação relacionad
 	
 	
 	\item A base de dados deve ser protegida para acesso apenas a utilizadores autorizados; 
-		
+	
 	
 	\item O sistema deverá disponibilizar uma \ac{API} para que possam ser criados novos produtos com base neste;  
 	
 	\item Deverá ser usada, na medida do possível, tecnologias sem qualquer custo para o cliente (\textit{open-source}); 
 	
 	\item Pretende-se que o sistema possa ser adaptado a qualquer outro contexto, não sendo especificamente restrito ao contexto da produção da Salicórnia.  
-		
+	
 \end{itemize}
+
+
+
+\newpage
+
+\section{Descrição global do sistema}
+
+Este sistema tem como objetivo a supervisão remota da produção de Salicórnia, permitindo não só a monitorização dos dados adquiridos pelos sensores, como também da atuação remota de determinados comandos. Neste contexto, também é possível a aquisição de imagens que possibilitam a deteção de intrusos nas quintas onde se realiza a produção desta espécie. O esquema da figura \ref{componentesalla} ilustra, de um modo geral, todos os componentes e as diferentes plataformas com que o cliente pode interagir. 
+
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=\linewidth]{esquemas/global_arquitetura.pdf}
+	\caption{Ilustração dos principais componentes do sistema}
+	\label{componentesalla}
+\end{figure}
+
+
+
+
+
+
+Como vimos no capítulo 3, uma plantação de  Salicórnia carece de um controlo relativamente fino de certos parâmetros ambientais sobretudo da salinidade do terreno, que depende, das chuvas, da salinidade da água dos canais da ria, entre outros. Nas quintas onde se cultiva Salicórnia, a produção faz-se numa espécie de leiras limitadas por pequenos canais de irrigação que podem ser cheios de água salgada proveniente dos esteiros que rodeiam a quinta. Esta operação implica a abertura de válvulas de admissão de água, medida do nível da maré nos canais, monitorização da qualidade e salinidade da água exterior.
+
+
+
+\begin{figure}[!htb]
+	\centering
+	\includegraphics[width=\linewidth]{esquemas/leiras-comm-geral.pdf}
+	\caption{Ilustração da distribuição dos módulos em duas leiras}
+	\label{leira}
+\end{figure}
+
+
+Tal como ilustrado na figura \ref{leira}, foram colocados módulos com sensores (SM) distribuídos estrategicamente por cada leira. Cada um desses módulos, irá comunicar com um módulo central (CM) originando uma topologia de rede em estrela.  Por sua vez, cada um destes módulos centrais irá comunicar diretamente com o servidor que receberá todos os dados adquiridos tanto pelos sensores como por atuadores, permitindo que estes sejam guardados numa base de dados específica. Os atuadores, permitirão despoletar ações que autorizam a ativação ou desativação de bombas e/ou válvulas para transferências de água de modo a melhorar as condições de cultivo da Salicórnia. 
+Os módulos centrais têm acesso à camada protocolar \ac{TCP}/\ac{IP} (Internet) para possibilitar a utilização da \acs{API} \acs{REST} desenvolvida para o efeito. 
+
+No que diz respeito às plataformas de interação com o cliente, existe uma \textit{dashboard} (plataforma \textit{web}) e uma aplicação \textit{mobile}. A \textit{dashboard} disponibiliza uma interface que apresenta as informações mais importantes para o utilizador de forma apelativa, tornando mais fácil a sua interação e respetiva leitura, possibilitando ainda a gestão de todo o sistema e realização de operações de controlo remoto. Por outro lado, a aplicação \textit{mobile} permite apenas a monitorização do cultivo da Salicórnia e receção de alertas quando estes ocorrem.
+
+
+
+
+\subsection{Componentes}
+
+No contexto desta dissertação é necessário reter dois conceitos principais, são eles: 
+
+\begin{itemize}
+	\item \textbf{\acl{SM} (SM):} consiste num módulo responsável pela aquisição de dados provenientes dos mais diversos tipos de sensores; 
+	
+	
+	\item \textbf{\acl{CM} (CM):} consiste num módulo responsável pela receção dos dados/estados dos sensores do \acl{SM} e respetivo envio para a \textit{cloud}.  
+	
+\end{itemize}
+
+
+O cenário da figura \ref{esquema1} ilustra três \textit{Sensor Modules} que comunicam com um \acl{CM}. Cada um desses \acl{SM} possui um conjunto específico de sensores, podendo estes ser atuadores ou câmaras. Para a comunicação com o \acl{CM}, cada \acl{SM} possui um determinado módulo de comunicação que permite a transferência dos dados adquiridos pelos sensores. Posteriormente, o \acl{CM} possui também um determinado módulo de comunicação (\acs{TCP}/\acs{IP}) que permite a utilização da \ac{API} e respetivo envio ou atualização dos dados adquiridos pelo sistema. 
+
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\linewidth]{esquemas/general-electronic-modules.pdf}
+	\caption{Esquema de componentes e respetiva comunicação entre três \ac{SM} e um \ac{CM}}
+	\label{esquema1}
+\end{figure}
+
+
+Seguidamente serão especificados todos os detalhes de cada módulo, uma vez que serão considerados na modelação de todo o sistema. 
+
+
+
+\subsubsection{\acl{SM}}
+
+
+
+Um \acl{SM} consiste num microcontrolador responsável pela aquisição de dados provenientes dos mais diversos tipos de sensores, podendo estes ser atuadores ou câmaras. No caso de se tratar de um atuador, isto é, válvulas, bombas, contadores, pás ou cancelas, apenas serão lidos valores binários. Caso se trate de uma câmara, todo o processamento é feito internamente nesta, sendo que o sistema apenas irá receber o \ac{IP} da mesma ou um \ac{URL} para um servidor de \ac{RTMP}.  
+
+
+Tal como referido anteriormente, cada \acl{SM} terá que utilizar um determinado módulo de comunicação para possibilitar a transferência dos dados adquiridos para o módulo central. Para além disso, pretende-se que o \acl{SM} em condições extremas, possa tomar decisões de atuação, isto é, caso seja lido um valor fora do padrão e que seja necessário a ativação de um atuador, este deverá ser auto suficiente em tomar esta decisão, sem necessidade de intervenção do utilizador. 
+
+Pretende-se que este módulo seja identificado por um determinado nome, possua uma bateria que permita a sua mobilidade, tenha um ou vários módulos de comunicação acoplados que permitam comunicar com um módulo centrar. Tenha uma determinada memória e um módulo \ac{GPS} que permita aceder à sua localização, identificando-o em caso de furto. Para além disso, um \acl{SM} terá que possuir obrigatoriamente um ou vários sensores.
+
+
+
+
+
+
+
+
+\subsubsection{\acl{CM}}
+
+
+
+Um \acl{CM} consiste num microcontrolador responsável pela receção dos dados prevenientes dos vários \textit{Sensor Modules}. Pretende-se que este módulo envie ou receba informações para os \acl{SM} quando solicitados pelo utilizador. Após a receção dos dados, estes são enviados para um servidor em \textit{cloud} através de uma \ac{API} criada para o efeito. Como a tecnologia \ac{REST} opera sob o protocolo de comunicação \ac{HTTP}, este componente tem que necessariamente estar ligado à rede Internet (\ac{TCP}/\ac{IP}). 
+
+É essencial que este módulo possua alguma capacidade de processamento, uma vez que poderá ter vários \textit{Sensor Modules} a si associados e com necessidade de constante envio e receção de dados.  Para além disso, pretende-se que o \acl{CM} seja identificado por um determinado nome, tenha um  módulo de comunicação que possibilite o envio de dados para um servidor e outros para comunicação com os diferentes \textit{Sensor Modules}. Tal como acontece com os \textit{Sensor Modules}, existe necessidade de acoplado um módulo \ac{GPS} que permita localizar o microcontrolador em caso de robo.
+ 
+
+
+
+
+
+
+%\section{Design funcional}
+
+
+
+
 
 
 
 \section{Modelação}
 
-Tal como vimos no início da secção \ref{sect:analise}, a conceção de uma arquitetura envolve o estudo e respetiva modelação dos componentes que são fundamentais para a realização da mesma, bem como a análise dos casos de uso e respetiva especificação, criação do modelo de dados, diagramas de fluxos, entre outros. Toda esta modelação será descrita neste secção permitindo entender melhor como emparelhar toda a estrutura pretendida. Relativamente à metodologia apresenta na secção \ref{method}, esta etapa refere-se à fase de \textit{Designing}. 
+Tal como vimos no início da secção \ref{sect:analise}, a conceção de uma arquitetura envolve o estudo e respetiva modelação dos componentes de \textit{software} e \textit{hardware} que são fundamentais para a realização da mesma, bem como a análise dos casos de uso e respetiva especificação, criação do modelo de dados, diagramas de fluxos, entre outros. Toda esta modelação será descrita neste secção permitindo entender melhor como emparelhar toda a estrutura pretendida. Relativamente à metodologia apresenta na secção \ref{method}, esta etapa refere-se à fase de \textit{Designing} (figura \ref{sdlcartic}). 
 
 
 
@@ -370,7 +400,7 @@ Seguidamente serão descritos cada um dos casos de uso para as duas plataformas.
 \subsection{Modelo de dados}
 \label{modelocap}
 
-Depois da análise dos requisitos desenhou-se um modelo de dados que permitisse modelar todo o sistema descrito, obtendo-se assim o seguinte esquema relacional apresentado na figura \ref{esquemarelacional}.
+Depois da análise dos requisitos desenhou-se um modelo de dados que permitisse suportar todo o sistema descrito, obtendo-se assim o seguinte esquema relacional apresentado na figura \ref{esquemarelacional}.
 
 
 
@@ -448,10 +478,10 @@ Nas tabelas \ref{tabeladb1} e \ref{tabeladb2} são descritas cada uma das entida
 \newpage
 \section{Arquitetura lógica}
 
-Nesta secção é apresentada a arquitetura lógica do sistema, indicando as camadas que contém, especificando quais as relações de dependência que estas possuem entre si. Seguidamente, é explicado como implementar esta lógica com os respetivos componentes físicos. 
+Nesta secção é apresentada a arquitetura lógica do sistema, indicando as camadas que contém e especificando quais as relações de dependência que estas possuem entre si. Seguidamente, é explicado como implementar esta lógica com os respetivos componentes físicos. 
 
 
-Normalmente este tipo de arquitetura é composto por três camadas com intenções diferentes: camada de apresentação, camada de lógica de negócio e camada de acesso a dados. Pretende-se que com a descrição desta arquitetura seja facilitada a manutenção, a portabilidade e a
+Normalmente, este tipo de arquitetura é composto por três camadas (\textit{3 Tier})\cite{Josuttis2001} com funções diferentes: camada de apresentação, camada de lógica de negócio e camada de acesso a dados. Pretende-se que com a descrição desta arquitetura seja facilitada a manutenção, a portabilidade e a
 escalabilidade, fatores importantes quando queremos partilhar funcionalidades e informação entre aplicações de diferentes tipos.
 
 
@@ -472,7 +502,7 @@ A camada de apresentação é responsável pela comunicação entre os utilizado
 
 
 
-A camada de lógica de negócio diz respeito à camada onde é realizado todo o processamento dos dados adquiridos pelos sensores ou introduzidos pelos utilizadores do sistema através da camada de apresentação.  Tal como apresentado na figura \ref{logicaarqu}, existem quatro sub-camadas principais, que enfatizam os principiais conceitos existentes nesta camada, a seguir descritos.  
+A camada de lógica é onde é realizado todo o processamento dos dados adquiridos pelos sensores ou introduzidos pelos utilizadores do sistema através da camada de apresentação.  Tal como apresentado na figura \ref{logicaarqu}, existem quatro sub-camadas principais, que enfatizam os principiais conceitos existentes nesta camada, a seguir descritos.  
 
 
 \begin{itemize}
@@ -508,23 +538,6 @@ A figura \ref{fisicablocos} representa genericamente os blocos principais do sis
 \subsection{Sistema de informação}
 
 
-Segundo \textit{Laudon et al.}\cite{Laudon1998}, um sistema de informação define-se como sendo uma inter-relação de múltiplos componentes podendo estes ser equipamentos, telecomunicações, \textit{software}, bases de dados e outras tecnologias de transformação de informação. Todos estes componentes permitem a recolha, processamento, armazenamento e distribuição de informação que possibilita a tomada de decisões e controlo para uma determinada organização, ou até mesmo para a sociedade, de modo a torná-la mais acessível e útil.
-
-Dada a elevada complexidade de um sistema de informação, é possível identificar algumas funcionalidades comuns aos diversos sistema existentes, são elas\cite{Turban1996}: 
-
-\begin{itemize}
-	\item \textbf{Recolha de dados}: sequência de tarefas que possibilitam a adição de novos dados ao sistema;
-	
-	\item \textbf{Organização e armazenamento de dados}: é imprescindível uma boa organização da estrutura de dados possibilitando uma fácil e rápida localização;
-	
-	\item \textbf{Processamento de dados}: qualquer funcionalidade que permita a produção de resultados mais úteis do que os dados em bruto; 
-	 
-	\item \textbf{Distribuição de informação}: após o processamento de dados é fundamental a distribuição destes a quem precise deles; 
-	
-	\item \textbf{Utilização da informação}: por si só, a informação não tem qualquer valor, a sua utilização em contexto adequado possibilita a extração de determinadas conclusões para que possam ser tomadas decisões.
-	
-\end{itemize}
-
 
 
 A figura \ref{arquiteturasi} ilustra a arquitetura do sistema de informação incluindo especificamente a aplicação web (\textit{dashboard}), base de dados, \acs{API}   e respetiva implementação do sistema. 
@@ -533,7 +546,7 @@ A figura \ref{arquiteturasi} ilustra a arquitetura do sistema de informação in
 
 
 
-\subsubsection{Aplicação web}
+\subsection{Aplicação web}
 
 A aplicação \textit{web} é um componente essencial, enquadrando-se tanto na camada de lógica de negócio como também na camada de apresentação, permitindo a interação por parte do utilizador (\textit{frontend}) como também no processamento lógico (\textit{backend}).   
 
@@ -551,7 +564,7 @@ Tal como vimos na secção \ref{django-conclusao} do Estado de Arte, a tecnologi
 
 
 
-Como descrito na secção \ref{django}, o Django permite modelar os dados através de classes, possibilitando gerar tabelas na base de dados de uma forma quase direta, sem recorrer ao \ac{SQL}. A verificação dos valores lidos pelos sensores e possível geração de alarmes é averiguado por um \textit{trigger} desenvolvido em \ac{SQL}, no capítulo \ref{implementacao} será explicada a sua implementação.  
+Como descrito na secção \ref{django}, o Django permite modelar os dados através de classes, possibilitando gerar tabelas na base de dados de uma forma quase direta, sem recorrer ao \ac{SQL}. A verificação dos valores lidos pelos sensores e possível geração de alarmes é averiguado por um \textit{trigger} desenvolvido em \ac{SQL}. No capítulo \ref{implementacao} será explicada a sua implementação.  
 
 
 Relativamente à escolha do \ac{SGBD} recaiu sobre o PostgreSQL, mais concretamente na versão 9.3.16. Como ferramenta gráfica para administração deste \ac{SGBD} foi utilizado o PgAdmin III\footnote{\url{www.pgadmin.org/}} na versão 1.22. Este \textit{software} com interface gráfica tem inúmeras funcionalidades desde a possibilidade de ligação a base de dados remotas até à adição, edição, remoção e  consultas em tabelas. Esta ferramenta é \textit{open-source} e encontra-se disponível para Windows e UNIX. Como vimos no capítulo \ref{state}, este \ac{SGBD} permite uma grande facilidade de incorporação a um projeto Django. 
@@ -573,7 +586,7 @@ No que diz respeito à camada de apresentação na plataforma \textit{web} foram
 
 
 
-\subsubsection{\acs{API} \acs{REST}}
+\subsection{\acs{API} \acs{REST}}
 
 
 Os métodos desta \ac{API} permitiram executar funções do tipo \ac{REST}. A tecnologia \ac{REST} foi apresentada por Roy Fielding na Universidade de Califórnia no ano de 2000, cujo o titulo da sua dissertação era "Architectural Styles and the Design of Network-based Software Architectures". Roy estudou um conjunto de arquiteturas de \textit{software} que usam a \textit{web} como uma plataforma para computação distribuída\cite{restpaper}. Esta tecnologia define um conjunto de princípios que possibilitam desenhar serviços \textit{web} com base nos recursos do sistema, considerando a forma com os recursos são coordenados e transferidos através de \ac{HTTP} para vários clientes nas mais diversificadas linguagens. 
@@ -593,7 +606,7 @@ Os métodos da API permitem executar as funções \ac{REST} usando métodos \ac{
 
 Como vimos no capítulo \ref{state}, a escolha da \textit{framework} para construção desta \ac{API} \ac{REST} recaiu sobre o \textit{Django REST framework}. Esta ferramenta possui uma extensa documentação e um elevado apoio da comunidade que a utiliza, sendo uma das mais utilizadas e incorporadas em projetos Django. 
 
-Relativamente à autenticação desta \ac{API}, optou-se por utilizar um esquema de autenticação fundamentado no mecanismo de autenticação \ac{HTTP} baseado em \textit{tokens}\cite{tokenREST}. Neste mecanismo, o cliente primeiramente troca as suas credencias (\textit{username} e \textit{password}) por um \textit{token}, seguidamente, em vez de enviar essas credenciais a cada requisição, o cliente apenas enviará o \textit{token} inicialmente recebido, permitindo assim o acesso aos conteúdos pretendidos, com respetiva autenticação e autorização dos mesmos (figura \ref{autnetAPI}).
+Relativamente à autenticação desta \ac{API}, optou-se por utilizar um esquema de autenticação suportado no mecanismo de autenticação \ac{HTTP} baseado em \textit{tokens}\cite{tokenREST}. Neste mecanismo, o cliente primeiramente troca as suas credencias (\textit{username} e \textit{password}) por um \textit{token}, seguidamente, em vez de enviar essas credenciais a cada requisição, o cliente apenas enviará o \textit{token} inicialmente recebido, permitindo assim o acesso aos conteúdos pretendidos, com respetiva autenticação e autorização dos mesmos (figura \ref{autnetAPI}).
 
 
 \begin{figure}[h]
@@ -658,7 +671,7 @@ Na tabela \ref{endpointsapi} encontram-se todos os \textit{endpoints} e respetiv
 
 
 
-\subsubsection{Documentação interativa}
+\subsection{Documentação interativa}
 
 
 Para a geração automática da documentação da \ac{API} utilizou-se o Swagger. Tal como descrito no site oficial desta \textit{framework}\cite{SmartBearSoftware2017}, o Swagger é considerado a ferramenta de APIs mais popular e completa de todo o mundo permitindo facilmente o desenvolvimento do ciclo de vida de uma \ac{API}, desde o \textit{design}, documentação, testes e também implementação, tendo a grande vantagem de ser \textit{open-source}. Neste contexto, apenas será utilizada como documentação, de modo a facilitar a interpretação da \ac{API} criada. O Swagger possui uma interface apelativa e intuitiva, permitindo interagir com a \ac{API} de modo que os seus utilizadores tenham uma ideia geral de como esta responde aos pedidos para diversos parâmetros e opções. 
@@ -667,7 +680,7 @@ Para a geração automática da documentação da \ac{API} utilizou-se o Swagger
 
 
 
-\subsubsection{Implementação do sistema}
+\subsection{Implementação do sistema}
 
 Para implementação do projeto anteriormente descrito e respetiva API, foi-me disponibilizada uma máquina virtual com uma distribuição Linux (Ubuntu 14.04.5) com as seguintes características: 
 
@@ -708,7 +721,7 @@ Este pacote fornece uma \ac{WSGI} compatível para o alojamento de aplicações 
 
 
 
-\subsubsection{Aplicação mobile}
+\subsection{Aplicação mobile}
 
 
 Após a análise de requisitos da aplicação \textit{mobile}, optou-se por elaborar um protótipo desta antes de proceder à sua real implementação. O \textit{mockup} da aplicação apresenta-se no Apêndice \ref{Mockup}. 
@@ -730,9 +743,9 @@ Tal como descrito no capítulo \ref{state} (Estado da Arte), para o desenvolvime
 \label{arq-hardw}
 
 
-Após o desenvolvimento da \ac{API}, simulou-se o sistema num contexto real. Para tal, pretendia-se encontrar \textit{hardware} que encaixa-se no contexto deste projeto. Foram utilizados dois microcontroladores (Arduino Nano e Raspberry Pi 3) e alguns sensores. Para este cenário, assume-se que o Arduino Nano é considerado um \acl{SM} que possui um conjunto de sensores enquanto que o Raspberry Pi 3 é um \acl{CM} que recebe os dados provenientes do \acl{SM} enviando-os para o servidor.  
+Após o desenvolvimento da \ac{API}, simulou-se o sistema num contexto real. Para tal, pretendia-se encontrar \textit{hardware} que encaixasse no contexto deste projeto. Foram utilizados dois microcontroladores (Arduino Nano e Raspberry Pi 3) e alguns sensores. Para este cenário, assume-se que o Arduino Nano é considerado um \acl{SM} que possui um conjunto de sensores e atuadores enquanto que o Raspberry Pi 3 é um \acl{CM} que recebe os dados provenientes do \acl{SM} enviando-os para o servidor através da API.  
 
-Seguidamente, são apresentados os sensores utilizados bem como os tipos de comunicação. 
+Seguidamente, são apresentados os sensores bem como os tipos de comunicação utilizados. 
  
 
 \subsubsection{Sensores utilizados}
@@ -895,7 +908,7 @@ Para a simulação de uma válvula que permitirá a transferência de água doce
 
 Nesta secção, apresentam-se os tipos de comunicação para o cenário escolhido. Pretendia-se que cada um dos módulo fique isolado, o que implicou o estudo e respetiva escolha de algumas tecnologias de comunicações sem fios (secção \ref{state-tecc} do capítulo \ref{state}). 
 
-De acordo com o verificado na tabela \ref{com-tecn}, o Zigbee e o Sigfox apresentam características que melhor se adaptam ao universo do \ac{IoT}. No entanto, para o contexto deste trabalho, privilegia-se o alcance das tecnologias Bluetooth e Wi-Fi dado que, pretende-se tirar partido desta característica e distribuir os  \textit{Sensor Modules} pela máxima distância possível. Para além disso, estas eram as duas únicas tecnologias disponíveis no laboratório.
+De acordo com o verificado na tabela \ref{com-tecn}, o Zigbee e o Sigfox apresentam características que se adaptam melhor ao universo do \ac{IoT}. No entanto, para o contexto deste trabalho, privilegia-se o alcance das tecnologias Bluetooth e Wi-Fi dado que, pretende-se tirar partido desta característica e distribuir os  \textit{Sensor Modules} pela máxima distância possível. Para além disso, estas eram as duas únicas tecnologias disponíveis no laboratório.
 
 \begin{itemize}
 	\item \textbf{Bluetooth}: utilizado para a comunicação entre o Arduino Nano e o Raspberry Pi 3. No Arduino, foi utilizado um módulo Bluetooth HC-06 e no caso do Raspberry Pi 3 foi utilizado o seu módulo interno (versão 4.1). 
@@ -984,14 +997,14 @@ Na figura \ref{comimageesquema} encontra-se o esquema de ligação deste módulo
 \label{videoviarqut}
 
 
-No contexto desta dissertação surgiu a necessidade de implementar um sistema de videovigilância que permitisse detetar intrusos, maioritariamente pessoas ou animais de grande porte, que possam invadir as quintas onde se produz Salicórnia. Esta necessidade prende-se essencialmente com elevado custo do \textit{hardware} do sistema de monitorização e também de eventuais instrumentos de elevado custo necessários ao cultivo desta espécie, como por exemplo,  geradores, máquinas elétricas para poda, entre outros. 
+No contexto desta dissertação surgiu a necessidade de implementar um sistema de videovigilância que permitisse detetar intrusos, maioritariamente pessoas ou animais de grande porte, que possam invadir as quintas onde se produz Salicórnia. Esta necessidade prende-se essencialmente com o elevado custo do \textit{hardware} do sistema de monitorização e também de eventuais instrumentos de elevado custo necessários ao cultivo desta espécie, como por exemplo,  geradores, máquinas elétricas para poda, entre outros. 
 
 %Neste secção é descrita a tecnologia de processamento de imagem utilizada tal como o material necessário e respetiva arquitetura. 
 
 
 \subsubsection{Biblioteca para processamento de imagem: OpenCV}
 
-O OpenCV, também conhecido por \textit{Open Source Computer Vision Library}, é uma biblioteca de \textit{software} de visão por computador de código \textit{open-source}. Esta biblioteca possui mais de 2500 algoritmos otimizados, que inclui um conjunto abrangente de algoritmos clássicos e avançados de visão computacional bem como algoritmos de \textit{machine learning}. Esses algoritmos podem ser utilizados para os mais diversos fins, como por exemplo, para detetar e reconhecer rostos, identificar objetos, classificar ações humanas em vídeos, detetar movimentos numa câmara, seguir um objetos em movimento, entre outros. Esta biblioteca é amplamente utilizada em empresas e grupos de investigação, tendo interfaces nas mais diversas linguagens: C++, C, Python, Java e MATLAB, embora seja nativamente escrita na linguagem C. OpenCV tem mais de 47 mil pessoas na sua comunidade e excede os 7 milhões de \textit{downloads}, tendo suporto para Windows, Linux e Mac OS\cite{Itseez}.
+O OpenCV, também conhecido por \textit{Open Source Computer Vision Library}, é uma biblioteca de \textit{software} de visão por computador de código \textit{open-source}. Esta biblioteca possui mais de 2500 algoritmos otimizados, que inclui um conjunto abrangente de algoritmos clássicos e avançados de visão computacional bem como algoritmos de \textit{machine learning}. Esses algoritmos podem ser utilizados para os mais diversos fins, como por exemplo, para detetar e reconhecer rostos, identificar objetos, classificar ações humanas em vídeos, detetar movimentos numa câmara, seguir um objetos em movimento, entre outros. Esta biblioteca é amplamente utilizada em empresas e grupos de investigação, tendo interfaces nas mais diversas linguagens: C++, C, Python, Java e MATLAB, embora seja nativamente escrita na linguagem C. OpenCV tem mais de 47 mil pessoas na sua comunidade e excede os 7 milhões de \textit{downloads}, tendo suporte para Windows, Linux e Mac OS\cite{Itseez}.
 
 
 
@@ -1104,7 +1117,7 @@ No que toca à comunicação entre os diferentes componentes, esta baseia-se ess
 \section{Considerações finais}
 
 
-Neste capítulo é projetada toda a arquitetura do sistema, tendo por base os requisitos do cliente e respetiva modelação. Para além disso, a arquitetura anteriormente apresenta foi concebida tendo como garantia que poderia ser adaptada a quaisquer outros cenários distintos do apresentado. Esta arquitetura é apoiada através da exposição de diagramas de arquitetura, casos de uso e modelo de dados. 
+Neste capítulo foi projetada toda a arquitetura do sistema, tendo por base os requisitos do cliente e respetiva a modelação. Para além disso, a arquitetura anteriormente apresenta foi concebida tendo como garantia que poderia ser adaptada a quaisquer outros cenários distintos do apresentado. Esta arquitetura é apoiada através da exposição de diagramas de arquitetura, casos de uso e modelo de dados. 
 
 
 

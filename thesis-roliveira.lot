@@ -9,15 +9,16 @@
 \contentsline {table}{\numberline {3.5}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre algumas caracter\IeC {\'\i }sticas da vers\IeC {\~a}o 2 e 3 do Raspberry Pi\relax }}{24}{table.caption.50}
 \contentsline {table}{\numberline {3.6}{\ignorespaces Compara\IeC {\c c}\IeC {\~a}o entre as tecnologias de comunica\IeC {\c c}\IeC {\~a}o abordadas}}{28}{table.caption.56}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Especifica\IeC {\c c}\IeC {\~a}o das tabelas da base de dados existentes no sistema \relax }}{41}{table.caption.70}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Especifica\IeC {\c c}\IeC {\~a}o das tabelas da base de dados existentes no sistema (continua\IeC {\c c}\IeC {\~a}o) \relax }}{42}{table.caption.71}
-\contentsline {table}{\numberline {4.3}{\ignorespaces \textit {Endpoints} da \ac {API} \ac {REST} e respetivos m\IeC {\'e}todos a implementar\relax }}{49}{table.caption.79}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Caracter\IeC {\'\i }sticas do sensor TTC 104}}{52}{table.caption.87}
-\contentsline {table}{\numberline {4.5}{\ignorespaces Caracter\IeC {\'\i }sticas do sensor GL5528}}{52}{table.caption.89}
-\contentsline {table}{\numberline {4.6}{\ignorespaces Caracter\IeC {\'\i }sticas do m\IeC {\'o}dulo bluetooth HC-06}}{55}{table.caption.95}
-\contentsline {table}{\numberline {4.7}{\ignorespaces Caracter\IeC {\'\i }sticas do m\IeC {\'o}dulo bluetooth HC-06}}{56}{table.caption.99}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Especifica\IeC {\c c}\IeC {\~a}o das tabelas da base de dados existentes no sistema \relax }}{42}{table.caption.72}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Especifica\IeC {\c c}\IeC {\~a}o das tabelas da base de dados existentes no sistema (continua\IeC {\c c}\IeC {\~a}o) \relax }}{43}{table.caption.73}
+\contentsline {table}{\numberline {4.3}{\ignorespaces \textit {Endpoints} da \ac {API} \ac {REST} e respetivos m\IeC {\'e}todos a implementar\relax }}{50}{table.caption.79}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Caracter\IeC {\'\i }sticas do sensor TTC 104}}{53}{table.caption.84}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Caracter\IeC {\'\i }sticas do sensor GL5528}}{53}{table.caption.86}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Caracter\IeC {\'\i }sticas do m\IeC {\'o}dulo bluetooth HC-06}}{56}{table.caption.92}
+\contentsline {table}{\numberline {4.7}{\ignorespaces Caracter\IeC {\'\i }sticas do m\IeC {\'o}dulo bluetooth HC-06}}{57}{table.caption.96}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Estrutura do ficheiro do tipo \acs {CSV} poss\IeC {\'\i }vel de exporta\IeC {\c c}\IeC {\~a}o\relax }}{64}{table.caption.107}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Estrutura do ficheiro do tipo \acs {CSV} poss\IeC {\'\i }vel de exporta\IeC {\c c}\IeC {\~a}o\relax }}{66}{table.caption.104}
+\addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
