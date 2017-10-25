@@ -2,7 +2,7 @@
 \label{state}
 
 
-Neste capítulo, são apresentados os resultados da pesquisa bibliográfica sobre as ferramentas tecnológicas que poderão ser utilizadas no decorrer do trabalho prático desta dissertação. Serão apresentadas algumas das tecnologias mais populares e realizada uma comparação entre estas. Por fim, será apresentado e descrito motivo pelo qual serão utilizadas. 
+Neste capítulo, são apresentados os resultados da pesquisa bibliográfica sobre as ferramentas tecnológicas que poderão ser utilizadas no decorrer do trabalho prático desta dissertação. Serão apresentadas algumas das tecnologias mais populares e realizada uma comparação entre estas. Por fim, será apresentado e descrito o motivo pelo qual serão utilizadas. 
  
 
 
@@ -16,7 +16,7 @@ Nesta secção são apresentados alguns conceitos tecnológicos ou ferramentas u
 	
 	\item \ac{CSS}: permite personalizar os componentes existentes no \linebreak \ac{HTML}, por exemplo, personalizá-los com uma determinada cor,  espaçamento ou fonte;  
 	
-	\item \ac{JS}: é uma linguagem de programação interpretada. Foi utilizada inicialmente para a criação de aplicações do lado do cliente, sendo que atualmente, já é bastante utilizada do lado do servidor, como por exemplo o node.js; 
+	\item \ac{JS}: é uma linguagem de programação interpretada. Foi utilizada inicialmente para a criação de aplicações do lado do cliente, sendo que atualmente, já é bastante utilizada do lado do servidor, como por exemplo o Node.js; 
 	
 	\item Python: é uma  linguagem de programação de alto nível, possuindo os seguintes paradigmas:  orientação a objetos, programação imperativa, programação funcional;  
 	
@@ -35,7 +35,9 @@ Um \acl{SGBD} (\acs{SGBD}) consiste num \textit{software} ou conjunto de \textit
 \subsection{MySQL}
 
 
-O MySQL é considerado o \ac{SGBD} \textit{open-source} mais popular do mundo, sendo líder em aplicações baseadas na \textit{web}, tais como o Facebook, Twitter, YouTube, Yahoo! e muitos outros. Está comprovado que possui um elevado desempenho, fiabilidade e facilidade de utilização\cite{MySQL2011}.	
+O MySQL é considerado o \ac{SGBD} mais popular, que utiliza a linguagem de consulta estruturada \ac{SQL} como interface. Este \ac{SGBD} é líder em aplicações baseadas na \textit{web}, tais como o Facebook, Twitter, YouTube, Yahoo! entre outros. O sucesso do MySQL é em grande parte devido à facilidade de  integração com a linguagem PHP, sendo que também possibilita a interação com outras linguagens, como por exemplo, Java, C/C++, C\#, Visual Basic, Python, ASP, entre outras. Possui um elevado desempenho, fiabilidade e facilidade de utilização\cite{MySQL2011}\cite{why-msql}.	
+
+
 
 
 
@@ -51,7 +53,7 @@ O SQL Server é um \ac{SGBD} desenvolvido pela Microsft com bastante popularidad
 
 \subsection{PostgreSQL}
 
-O PostgreSQL é um \ac{SGBD} do tipo objeto-relacional uma vez que permite um modelo de dados orientado a objetos, isto é, possibilita a manipulação de objetos, classes e heranças diretamente no esquemas da base de dados. Segundo o site oficial do PostgreSQL este é considerado um \ac{SGBD} bastante poderoso e com desenvolvimento \textit{open-source}\cite{ThePostgreSQLGlobalDevelopmentGroup2012}. 
+O PostgreSQL é um \ac{SGBD} livre do tipo objeto-relacional uma vez que permite um modelo de dados orientado a objetos, isto é, possibilita a manipulação de objetos, classes e heranças diretamente no esquemas da base de dados. Segundo o site oficial do PostgreSQL este é considerado um \ac{SGBD} bastante poderoso e com desenvolvimento \textit{open-source}\cite{ThePostgreSQLGlobalDevelopmentGroup2012}. 
 
 
 %Ele tem mais de 15 anos de desenvolvimento ativo e uma arquitetura comprovada que ela ganhou uma forte reputação de confiabilidade, integridade de dados e correção. Ele roda em todos os principais sistemas operacionais, incluindo Linux, UNIX (AIX, BSD, HP-UX, SGI IRIX, MacOS, Solaris, Tru64), e Windows. É totalmente compatível com ACID, tem suporte completo para chaves estrangeiras, junções views, triggers e procedimentos armazenados (em várias línguas). Ele inclui mais SQL: 2008 tipos de dados, incluindo INTEGER, NUMERIC, BOOLEAN, CHAR, VARCHAR, DATE, INTERVALO e TIMESTAMP. Ele também suporta o armazenamento de grandes objetos binários, incluindo imagens, sons ou vídeo. Ele tem interfaces de programação nativas para C / C ++, Java, .Net, Perl, Python, Ruby, Tcl, ODBC, entre outros, e documentação
@@ -102,27 +104,28 @@ A tabela \ref{comp-sqgbdcar} permite comparar algumas das características dos \
 
 
 
-
 \begin{table}[h]
 	\centering
 
-	\begin{tabular}{|
-			>{\columncolor[HTML]{EFEFEF}}l |l|l|l|}
-		\hline
-		& \cellcolor[HTML]{EFEFEF}\textbf{MySQL} & \cellcolor[HTML]{EFEFEF}\textbf{SQL Server} & \cellcolor[HTML]{EFEFEF}\textbf{PostgreSQL} \\ \hline
-		\textbf{Modelo} & \multicolumn{3}{l|}{Relacional} \\ \hline
-		\textbf{Desenvolvido} & Oracle & Microsoft & \begin{tabular}[l]{@{}l@{}}PostgreSQL\\ Global Development Group\end{tabular} \\ \hline
-		\textbf{Lançamento} & 1995 & 1989 & 1989 \\ \hline
-		\textbf{Implementação} & C e C++ & C++ & C \\ \hline
-		\textbf{Licença} & Open-source & Comercial & Open-source \\ \hline
-		\textbf{Versão atual} & \begin{tabular}[l]{@{}l@{}}5.7.18\\ Abril 2017\end{tabular} & \begin{tabular}[l]{@{}l@{}}SQL Server 2016\\ Junho 2016\end{tabular} & \begin{tabular}[l]{@{}l@{}}9.6.3\\ Maio 2017\end{tabular} \\ \hline
-		\textbf{Triggers} & \multicolumn{3}{l|}{Suporta} \\ \hline
-		\textbf{\begin{tabular}[l]{@{}l@{}}Stored Procedures\\ e Functions\end{tabular}} & \multicolumn{3}{l|}{Suporta} \\ \hline
-	\end{tabular}
+\begin{tabular}{|
+		>{\columncolor[HTML]{EFEFEF}}l |l|l|l|}
+	\hline
+	& \cellcolor[HTML]{EFEFEF}\textbf{MySQL} & \cellcolor[HTML]{EFEFEF}\textbf{SQL Server} & \cellcolor[HTML]{EFEFEF}\textbf{PostgreSQL} \\ \hline
+	\textbf{Modelo} & \multicolumn{3}{l|}{Relacional} \\ \hline
+	\textbf{Desenvolvido} & Oracle & Microsoft & \begin{tabular}[c]{@{}l@{}}PostgreSQL\\ Global Development Group\end{tabular} \\ \hline
+	\textbf{Lançamento} & 1995 & 1989 & 1989 \\ \hline
+	\textbf{Implementação} & C e C++ & C++ & C \\ \hline
+	\textbf{Licença} & \begin{tabular}[c]{@{}l@{}}Open-source/\\ Comercial\end{tabular} & Comercial & Open-source \\ \hline
+	\textbf{Versão atual} & \begin{tabular}[c]{@{}l@{}}5.7.18\\ Abril 2017\end{tabular} & \begin{tabular}[c]{@{}l@{}}SQL Server 2016\\ Junho 2016\end{tabular} & \begin{tabular}[c]{@{}l@{}}9.6.3\\ Maio 2017\end{tabular} \\ \hline
+	\textbf{Triggers} & \multicolumn{3}{l|}{Suporta} \\ \hline
+	\begin{tabular}[c]{@{}l@{}}\textbf{Stored Procedures}\\\textbf{ e Functions}\end{tabular} & \multicolumn{3}{l|}{Suporta} \\ \hline
+	\textbf{\acs{ACID}}\footnotemark & \multicolumn{3}{l|}{Suporta} \\ \hline
+\end{tabular}
 	\caption{Comparação entre MySQL, SQL Server e PostgreSQL}
 	\label{comp-sqgbdcar}
 \end{table}
 
+\footnotetext{Conjunto de propriedades de transações em base de dados: Atomicidade, Consistência, Isolamento e Durabilidade}
 
 
 \section{Desenvolvimento \textit{web}}
@@ -174,7 +177,7 @@ O Flask consiste numa \textit{micro-framewor}k desenvolvida em Python baseada na
 
 A \textit{framework} Django é uma ferramenta de desenvolvimento \textit{web} de alto nível desenvolvida na linguagem Python, que possui uma arquitetura \ac{MVC}\cite{Deacon2005}, embora com algumas diferenças em relação a esta. No modelo \ac{MVC}, a componente \textit{Model} diz respeito à camada de acesso a dados, a \textit{View} à parte do sistema responsável pela escolha e apresentação da informação e o \textit{Controller} está encarregue de decidir que \textit{views} escolher (figura \ref{mvcdiag}). 
 
-\newpage
+
 
 \begin{figure}[!htb]
 	\centering
@@ -229,12 +232,6 @@ A escolha para desenvolvimento \textit{web} recaiu sobre o Django uma vez que es
 
 
 
-
-
-
-
-
-\newpage
 \section{Desenvolvimento \textit{mobile}}
 
 
@@ -299,13 +296,13 @@ Uma aplicação multi-plataforma ou híbrida, é desenvolvida utilizando tecnolo
 	\item \textbf{Performance}: relativamente à performance, não são dados pontos positivos no que toca às aplicações híbridas, uma vez que estas usam  WebViews e outros \textit{plug-ins} que permitem abstrair o acesso às APIs nativas. 
 
 	
-	\item \textbf{Desenvolvimento}: são utilizadas tecnologias \textit{web} (\ac{HTML}, \ac{CSS} e \ac{JS}), sendo mais eficazes em termos de custo uma vez que permite reutilizar código para diferentes dispositivos. 
+	\item \textbf{Desenvolvimento}: são utilizadas tecnologias \textit{web} (\ac{HTML}, \ac{CSS} e \ac{JS}), sendo mais eficazes em termos de custo uma vez que permite reutilizar código para diferentes tipos de dispositivos. 
 	
 	
-	\item \textbf{Interface}: para aceder à mesma \ac{UI} do sistemas operativos é necessário utilizar \textit{plug-ins} adicionais. 
+	\item \textbf{Interface}: para aceder à mesma \ac{UI} do dispositivo, é necessário utilizar \textit{plug-ins} adicionais. 
 	
 	
-	\item \textbf{Recursos e \textit{Plug-ins}}: existe muitos recursos disponíveis  para aplicações \linebreak multi-plataforma através de \textit{plug-ins}, permitindo ter o mesmo efeito em todas as plataformas. Por outro lado, impõe-se a questão da performance. 
+	\item \textbf{Recursos e \textit{Plug-ins}}: existem muitos recursos disponíveis para aplicações \linebreak multi-plataforma através de \textit{plug-ins}, permitindo ter o mesmo efeito em todas as plataformas. Por outro lado, impõe-se a questão da performance. 
 
 	
 	\item \textbf{Segurança}: recorrem a \textit{plug-ins} externos para garantir maior segurança podendo ser potencialmente mais vulneráveis.
@@ -313,7 +310,7 @@ Uma aplicação multi-plataforma ou híbrida, é desenvolvida utilizando tecnolo
 	
 \end{itemize}
 
-Existem inúmeras \textit{frameworks} para desenvolvimento multi-plataformas, entre as quais destaco as três mais utilizadas no mercado: Ionic, PhoneGap e Xmarin. 
+Existem inúmeras \textit{frameworks} para desenvolvimento multi-plataforma, entre as quais destaco as três mais utilizadas no mercado: Ionic, PhoneGap e Xmarin. 
 
 \begin{itemize}
 	\item \textbf{Ionic}: consiste numa ferramenta para desenvolvimento \textit{mobile}, sendo constituído por outro conjunto de \textit{frameworks}: Cordova (permite a integração de recursos nativos), AngularJS (criação da \textit{web app}) e Ionic Module e CLI (ferramenta e componentes disponibilizados pelo Ionic)\cite{Ionic2016}. 
@@ -333,7 +330,7 @@ Um vez que o cliente pretende uma solução \textit{mobile} multi-plataforma, is
 
 
 
-\newpage
+
 \section{REST \textit{Frameworks}}
 
 
@@ -395,6 +392,11 @@ O Flask-RESTful é uma extensão para \textit{microframework} Flask. É consider
 \subsection{Conclusões e solução adotada}
 
 
+Existem inúmeras características que potenciam cada uma das ferramentas/\textit{frameworks} abordadas anteriormente, entre as quais destaco a \ac{HATEOAS}. Esta característica determina se a API é  navegável, isto é, se a partir de um determinado recurso é possível descobrir quais os recursos associados e a sua respetiva informação. Na tabela \ref{comp-rest} apresenta-se uma comparação entre as ferramentas/\textit{frameworks} discutidas anteriormente. 
+
+
+O Django REST Framework é a solução que apresenta uma maior maturidade, disponibilizando um conjunto de funções aos programadores, possibilitando boas práticas de desenvolvimento \ac{REST}, aproveitando as vantagens da \textit{framework} Django enumeradas anteriormente (secção \ref{django}). Para além disso, permite a autenticação da API, possibilitando que apenas alguns utilizadores tenham acesso aos serviços. 
+
 
 
 
@@ -418,11 +420,6 @@ O Flask-RESTful é uma extensão para \textit{microframework} Flask. É consider
 		\label{comp-rest}
 \end{table}
 
-Existem inúmeras características que potenciam cada uma das ferramentas/\textit{frameworks} abordadas anteriormente, entre as quais destaco a \ac{HATEOAS}. Esta característica determina se a API é  navegável, isto é, se a partir de um determinado recurso é possível descobrir quais os recursos associados e a sua respetiva informação. Na tabela \ref{comp-rest} apresenta-se uma comparação entre as ferramentas/\textit{frameworks} discutidas anteriormente. 
-
-
-O Django REST Framework é a solução que apresenta uma maior maturidade, disponibilizando um conjunto de funções aos programadores, possibilitando boas práticas de desenvolvimento \ac{REST}, aproveitando as vantagens da \textit{framework} Django enumeradas anteriormente (secção \ref{django}). Para além disso, permite a autenticação da API, possibilitando que apenas alguns utilizadores tenham acesso aos serviços. 
-
 
 
 
@@ -434,8 +431,7 @@ O Django REST Framework é a solução que apresenta uma maior maturidade, dispo
 
 \section{Microcontroladores}
 
-
-Um microcontrolador consiste numa solução integrada de um sistema computacional, num único dispositivo físico, sendo uma mistura de \textit{hardware} com \textit{software}. Possui vários módulos principais, um \ac{CPU} onde é realizado todo o processamento, as memórias de instrução e dados (\ac{RAM} e \ac{ROM}) e os portos de entrada e saída (\ac{I/O}), e ainda alguns periféricos (\textit{Timer}, \textit{Serial COM Port}). 
+Uma vez que se pretende simular o cenário de monitorização e controlo da produção de Salicórnia num contexto real, houve necessidade de se conhecer melhor alguns microcontroladores. Um microcontrolador consiste numa solução integrada de um sistema computacional, num único dispositivo físico, sendo uma mistura de \textit{hardware} com \textit{software}. Possui vários módulos principais, um \ac{CPU} onde é realizado todo o processamento, as memórias de instrução e dados (\ac{RAM} e \ac{ROM}) e os portos de entrada e saída (\ac{I/O}), e ainda alguns periféricos (\textit{Timer}, \textit{Serial COM Port})\cite{microcontrollers}. 
 
 Estes dispositivos são responsáveis pelo processamento de dados, tomada de decisões, controlo do funcionamento de alguns módulos, visualização e conversão da informação recolhida pelos sensores, entre outros. Com o objetivo de simular este sistema, serão utilizados dois microcontroladores bastante comuns no mercado, um Arduino Nano e um Raspberry Pi 3.  
 
@@ -443,12 +439,11 @@ Estes dispositivos são responsáveis pelo processamento de dados, tomada de dec
 \subsection{Arduino Nano}
 
 
-Como descrito no site oficial, um Arduino consiste numa plataforma \textit{open-source} de prototipagem eletrónica composta por \textit{hardware} e \textit{software} flexíveis e com elevada facilidade de utilização. Esta plataforma é utilizada para projetos principalmente no contexto do \ac{IoT} e da robótica educativa, sendo possível incorporar vários módulos, dependendo da tarefa que se quer executar\cite{Banzi2012}. 
+Como descrito no site oficial\cite{Banzi2012}, um Arduino consiste numa plataforma \textit{open-source} de prototipagem eletrónica composta por \textit{hardware} e \textit{software} flexíveis e com elevada facilidade de utilização. Esta plataforma é utilizada para projetos principalmente no contexto do \ac{IoT} e da robótica educativa, sendo possível incorporar vários módulos, dependendo da tarefa que se quer executar. 
 
-O Arduino Nano possui um conjunto de pinos que podem ser programados para funcionarem como entradas ou saídas fazendo com que este  microcontrolador interaja com o exterior para os mais diversos fins. Para além dos pinos de \ac{I/O} existem pinos de alimentação que fornecem diversos valores de tensão que podem ser utilizados para transmitir energia elétrica aos diferentes componentes de um projeto\cite{Banzi2012}. Nas figuras \ref{ard2} e \ref{ard1} apresenta-se o Arduino utilizado e a identificação dos diferentes pinos existentes, respetivamente. Adicionalmente, na tabela \ref{caraarduino} encontram-se as principais características desta versão do Arduino.
+O Arduino Nano\cite{Banzi2012} possui um conjunto de pinos que podem ser programados para funcionarem como entradas ou saídas fazendo com que este  microcontrolador interaja com o exterior para os mais diversos fins. Para além dos pinos de \ac{I/O} existem pinos de alimentação que fornecem diversos valores de tensão que podem ser utilizados para transmitir energia elétrica aos diferentes componentes de um projeto. Nas figuras \ref{ard2} e \ref{ard1} apresenta-se o Arduino utilizado e a identificação dos diferentes pinos existentes, respetivamente. Adicionalmente, na tabela \ref{caraarduino} encontram-se as principais características desta versão do Arduino.
 
 
-\newpage
 \begin{figure}[h]
 	\centering
 	\begin{minipage}[b]{0.49\textwidth}
@@ -488,19 +483,20 @@ O Arduino Nano possui um conjunto de pinos que podem ser programados para funcio
 		\textbf{Dimensões} & 45 x 18mm \\ \hline
 		\textbf{\ac{LED} interno} & Pino digital 13 \\ \hline
 		\textbf{Ligação \ac{USB}} & Ligação ao computador e alimentação \\ \hline
+		\textbf{Preço base} & 12,90 \euro \footnotemark  \\ \hline
 	\end{tabular}
 	\caption[Características principais do Arduino Nano]{Características principais do Arduino Nano (Adaptado de \cite{Melorose2015})}
 	\label{caraarduino}
 \end{table}
 
-
+\footnotetext{Valor na loja online electrofun \url{www.electrofun.pt}} 
 
 
 
 
 \subsection{Raspberry Pi 3}
 
-Um Raspberry Pi (figura \ref{rasp1}) é mais poderoso do que outros dispositivos de igual dimensão e incorpora alguns periféricos \ac{I/O}, tal como um computador normal. Tem o tamanho de um cartão de crédito que possui um conjunto de \textit{hardware} integrado que tal como o Arduino, possibilita uma interação com o exterior. Este dispositivo, desenvolvido no Reino Unido pela \textit{Raspberry Pi Foundation}, pode ser ligado a um monitor através da saída HDMI, possuindo também uma saída de áudio e várias portas \ac{USB}. O Raspberry Pi é compatível com sistemas operativos baseados em GNU/Linux, sendo que no trabalho prático desta dissertação será utiliza a versão 3 do Raspberry Pi com a versão Raspbian\footnote{Distribuição Linux oficial do Raspberry Pi:  \url{https://www.raspberrypi.org/downloads/raspbian/}} instalada\cite{RaspberryPiFoundation2012}.
+Um Raspberry Pi (figura \ref{rasp1}) é mais poderoso do que outros dispositivos de igual dimensão e incorpora alguns periféricos \ac{I/O}, tal como um computador normal. Tem o tamanho de um cartão de crédito e possui um conjunto de \textit{hardware} integrado que, tal como o Arduino, possibilita uma interação com o exterior. Este dispositivo, desenvolvido no Reino Unido pela \textit{Raspberry Pi Foundation}, pode ser ligado a um monitor através da saída HDMI, possuindo também uma saída de áudio e várias portas \ac{USB}. O Raspberry Pi é compatível com sistemas operativos baseados em GNU/Linux ou Windows. No trabalho prático desta dissertação será utiliza a versão 3 do Raspberry Pi com a versão Raspbian\footnote{Distribuição Linux oficial do Raspberry Pi:  \url{https://www.raspberrypi.org/downloads/raspbian/}} instalada\cite{RaspberryPiFoundation2012}.
 
  Na figura \ref{comprasp1} encontram-se os principais componentes da versão utilizada e na tabela \ref{comp23} é feita uma comparação entre a versão 2 e 3 do Raspberry Pi, permitindo concluir que a versão utilizada é mais poderosa. 
 
@@ -542,6 +538,8 @@ Um Raspberry Pi (figura \ref{rasp1}) é mais poderoso do que outros dispositivos
 		\textbf{Porta Ethernet} & Sim & Sim \\ \hline
 		\textbf{Wifi} & Incorporado (versão 802.11n) & Não \\ \hline
 		\textbf{Bluetooth LE} & Incorporado (versão 4.1) & Não \\ \hline
+		\textbf{Preço base}\footnotemark & 30,19 \euro & 44,90 \euro  \\ \hline
+		
 	\end{tabular}
 	\caption{Comparação entre algumas características da versão 2 e 3 do Raspberry Pi}
 	\label{comp23}
@@ -549,7 +547,7 @@ Um Raspberry Pi (figura \ref{rasp1}) é mais poderoso do que outros dispositivos
 
 
 
-
+\footnotetext{Valor na loja online electrofun \url{www.electrofun.pt}}
 
 
 
@@ -569,7 +567,7 @@ Existem vários tipos de sensores de temperatura baseados em princípios de func
 	\item \textbf{Termopares}: são sensores de temperatura simples, robustos e de baixo custo, constituídos por duas partes diferentes de material condutor. Podem medir temperaturas entre os -200ºC e os 2315ºC, sendo usados em grande escala\cite{REOTEMPInstrumentCorporation}; 
 	 
 	
-	\item \textbf{Termístor}: são sensores cuja resistência varia com a temperatura, sendo construídos a partir de materiais semicondutores. Um termístor detêm uma maior sensibilidade, pois uma pequena variação de temperatura provoca uma grande variação na sua resistência, permitindo que a temperatura típica seja entre os -100ºC e os 300ºC. Estes sensores são frágeis, baratos e de dimensões reduzidas, sendo suscetíveis a problemas de auto aquecimento\cite{TemperatureSensors};
+	\item \textbf{Termístor}: são sensores cuja resistência varia com a temperatura, sendo construídos a partir de materiais semicondutores. Um sensor deste tipo têm uma grande sensibilidade, ou seja, uma pequena variação de temperatura provoca uma grande variação na sua resistência. A gama de valores de um termistor está entre os -100ºC e os 300ºC. Estes sensores são frágeis, baratos e de dimensões reduzidas, sendo suscetíveis a problemas de auto aquecimento\cite{TemperatureSensors};
 	
 
 	\item \textbf{Circuito integrado}: são sensores construídos através de materiais semicondutores, o que possibilita que tenham uma gama de temperatura limitada, geralmente entre os -55ºC e os 150ºC. 	Estão disponíveis com saídas em tensão, ou corrente, linearmente proporcional à temperatura. 
@@ -595,7 +593,7 @@ Existe uma enorme variedade de sensores de luminosidade/radiação no mercado, c
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[scale=0.3]{img/plantagrap.png}
+	\includegraphics[scale=0.28]{img/plantagrap.png}
 	\caption[Sensibilidade luminosa das plantas durante a fotossíntese]{Sensibilidade luminosa nas plantas durante a fotossíntese (Retirado de \cite{Argus2010})}
 	\label{grapFoto}
 \end{figure}
@@ -615,7 +613,7 @@ Alguns dos sensores de luminosidade/radição mais comuns no mercado são os sen
 	
 	
 	
-	\item \textbf{Sensores optoelectrónicos}: são dispositivos eletrónicos que se baseiam em fenómenos fotovoltaicos. Existem três sensores deste tipo, que possuem um elevado desempenho quando afetados pelo ruído e uma elevada sensibilidade. São considerados os sensores de luminosidade mais económicos.  
+	\item \textbf{Sensores optoelectrónicos}: são dispositivos eletrónicos que se baseiam em fenómenos fotovoltaicos. Existem três sensores deste tipo, que possuem um elevado desempenho quando afetados pelo ruído. São considerados os sensores de luminosidade mais económicos.  
 	 
 		\begin{itemize}
 			\item \textbf{Fotodíodo}: pode ser visto como um díodo comum, gerando uma corrente ou tensão quando incide radiação sobre ele; 
@@ -633,7 +631,7 @@ Alguns dos sensores de luminosidade/radição mais comuns no mercado são os sen
 
 
 Atualmente ainda não se encontra disponível nenhum sensor que permita medir exatamente a salinidade. Contudo, existem sensores que medem a condutividade elétrica num determinado meio, permitindo concluir o estado do meio relativamente à quantidade de sal existente. 
-Um exemplo disso, é o sensor SAL-BTA da Vernier\cite{sall} que permite medir de forma fácil e precisa o teor de sal dissolvido numa solução aquosa.
+Um exemplo disso, é o \textit{Smart Water Sensors} da Libelium\cite{World2014}  e o sensor SAL-BTA da Vernier\cite{sall}, que permitem medir de forma fácil e precisa o teor de sal dissolvido numa solução aquosa.
 
 
 
@@ -644,18 +642,14 @@ Nesta secção serão apresentadas algumas das tecnologias de comunicação sem 
 
 
 
-\subsection{Zigbee}
-
-
-Zigbee é um padrão de rede sem fios destinado a aplicações de controlo e sensores remotos, adequado para operações em ambientes isolados. Esta tecnologia é de curto alcance, baixa complexidade e consumo de energia, possuindo ainda uma baixa taxa de dados. Permite uma topologia de rede \textit{mesh} (malha) permitindo elevados níveis de fiabilidade e maior alcance de cobertura, fornecendo mais do que um caminho através da rede para qualquer ligação\cite{Rahman2015}. 	
+	
 
 
 
 
-\subsection{Bluetooth (BLE)}
+\subsection{Bluetooth}
 
-
-Bluetooth (BLE) é uma marca característica da versão 4.0 do Bluetooth, sendo projetado para aplicações de baixa potência, utilizada em comunicações de curta distância. Esta tecnologia de comunicação bastante conhecida, consiste numa especificação de rede sem fios de âmbito pessoal, também conhecida por \ac{PANs}, sendo de baixo custo e consumo de energia. O Bluetooth surgiu com a intenção de eliminar o elevado número de cabos existentes na comunicação entre dispositivos, sendo que este padrão funciona na banda de frequência 2,4GHz, conhecida como banda \ac{ISM}\footnote{Faixa de frequência compartilhada por dispositivos, como forno micro-ondas e Wi-Fi}, disponível mundialmente sem a necessidade de licenças\cite{Bruno2002}\cite{BluetoothTM2001}. 
+O Bluetooth surgiu com a intenção de eliminar o elevado número de cabos existentes na comunicação entre dispositivos, sendo que este padrão funciona na banda de frequência 2,4GHz, conhecida como banda \ac{ISM}\footnote{Faixa de frequência compartilhada por dispositivos, como forno micro-ondas e Wi-Fi}, disponível mundialmente sem a necessidade de licenças. O \ac{BLE} é uma marca característica da versão 4.0 do Bluetooth, sendo projetado para aplicações de baixa potência, utilizada em comunicações de curta distância. Esta tecnologia de comunicação bastante conhecida, consiste numa especificação de rede sem fios de âmbito pessoal, também conhecida por \ac{PANs}, sendo de baixo custo e consumo de energia\cite{Bruno2002}\cite{BluetoothTM2001}.
 
 
 %https://sigarra.up.pt/fcup/en/pub_geral.show_file?pi_gdoc_id=730816
@@ -678,6 +672,16 @@ O Wi-Fi é uma tecnologia de recepção de transmissão de dados sem fios, basea
 
 
 
+\subsection{Zigbee}
+
+
+Zigbee é um padrão de rede sem fios destinado a aplicações de controlo e sensores remotos, adequado para operações em ambientes isolados. Esta tecnologia é de curto alcance, baixa complexidade e consumo de energia, possuindo ainda uma baixa taxa de dados. Permite uma topologia de rede \textit{mesh} (malha) permitindo elevados níveis de fiabilidade e maior alcance de cobertura, fornecendo mais do que um caminho através da rede para qualquer ligação\cite{Rahman2015}. 
+
+
+\subsection{LoRa}
+
+\ac{LoRa} é um tipo de comunicação sem fios bastante utilizado no universo do \ac{IoT}, desenvolvido pela empresa Semtech. Esta tecnologia tem um alcance de mais de 15 quilómetros, e uma ca	pacidade de até 1 milhão de nós. Em termos de segurança, o protocolo LoRa possui mecanismos de validação e autenticação dos nós da rede e de encriptação dos dados transmitidos\cite{LinkLabs2015}\cite{Semtech2017}. 
+
 
 
 
@@ -685,14 +689,14 @@ O Wi-Fi é uma tecnologia de recepção de transmissão de dados sem fios, basea
 \subsection{Sigfox}
 
 
-A tecnologia Sigfox permite a comunicação sem fios entre dispositivos possuindo um baixo consumo de energia, utilizando a banda \ac{ISM}, tal como o Bluetooth. De acordo com o site oficial, o Sigfox é considerado um protocolo leve, permitindo trocas de pequenas mensagens possibilitando um consumo de bateria bastante reduzido\cite{sigfoxsite}. Esta tecnologia é totalmente virada para o \ac{IoT} devido ao seu baixo consumo. 
+A tecnologia Sigfox permite a comunicação sem fios entre dispositivos possuindo um baixo consumo de energia, utilizando a banda \ac{ISM}, tal como o Bluetooth. De acordo com o site oficial, o Sigfox é considerado um protocolo leve, permitindo trocas de pequenas mensagens possibilitando um consumo de bateria bastante reduzido. Esta tecnologia tem o seguinte limite diário de mensagens: 4 em \textit{DownLink} (nó para a estação) e 140 em \textit{UpLink} (estação para o nó)\cite{sigfoxsite}. Esta tecnologia é totalmente virada para o \ac{IoT} devido ao seu baixo consumo. 
 
 
 
 
 \subsection{Comparação entre tecnologias de comunicação}
 
-Na tabela \ref{com-tecn} é apresentada uma comparação entre algumas características das tecnologias anteriormente estudadas. De acordo com os dados apresentados na tabela, concluímos que o Zigbee e o Sigfox são tecnologias de baixo consumo, contudo o alcance destas é inferior relativamente às tecnologias Bluetooth e Wi-Fi. 
+Na tabela \ref{com-tecn} é apresentada uma comparação entre algumas características das tecnologias anteriormente estudadas. De acordo com os dados apresentados na tabela, concluímos que o Zigbee, LoRa e Sigfox são tecnologias de baixo consumo, sendo por isso totalmente inseridas no universo do \ac{IoT}. Contudo, o alcance do Zigbee é bastante inferior relativamente aos restantes. 
 
 
 
@@ -701,26 +705,19 @@ Na tabela \ref{com-tecn} é apresentada uma comparação entre algumas caracter�
 	\centering
 
 	\begin{tabular}{|
-			>{\columncolor[HTML]{EFEFEF}}l |l|l|l|l|}
+			>{\columncolor[HTML]{EFEFEF}}l |l|l|l|l|l|}
 		\hline
-		& \cellcolor[HTML]{EFEFEF}\textbf{Zigbee} & \cellcolor[HTML]{EFEFEF}\textbf{Bluetooth} & \cellcolor[HTML]{EFEFEF}\textbf{Wi-fi} & \cellcolor[HTML]{EFEFEF}\textbf{Sigfox} \\ \hline
-		\textbf{IEEE} & 802.15.4 & 802.15.1 & 802.11n & N/A \\ \hline
-		\textbf{Banda de frequência} & \begin{tabular}[c]{@{}l@{}}868/915 MHz\\ 2.4 GHz\end{tabular} & 2,4-5,5 GHz & 2,4-5 GHz & \begin{tabular}[c]{@{}l@{}}800 Hz\\ (europa)\end{tabular} \\ \hline
-		\textbf{Topologia da rede} & Mesh & Estrela & Estrela & P2P \\ \hline
-		\textbf{Energia (consumo)} & Muito baixo & Baixo & Médio & Muito baixo \\ \hline
-		\textbf{Alcance} & 10m & aprox. 50m & 100m & \begin{tabular}[c]{@{}l@{}}Rural: 10-15m\\ Urbano: 3-5m\end{tabular} \\ \hline
-		\textbf{Bateria (duração)} & Meses-anos & Dias & Horas & 10/15 anos \\ \hline
-		
+		& \cellcolor[HTML]{EFEFEF}\textbf{\begin{tabular}[c]{@{}l@{}}Bluetooth\\ (802.15.1)\end{tabular}} & \cellcolor[HTML]{EFEFEF}\textbf{\begin{tabular}[c]{@{}l@{}}Wi-fi\\ (802.11n)\end{tabular}} & \cellcolor[HTML]{EFEFEF}\textbf{\begin{tabular}[c]{@{}l@{}}Zigbee\\ (802.15.4)\end{tabular}} & \cellcolor[HTML]{EFEFEF}\textbf{LoRa} & \cellcolor[HTML]{EFEFEF}\textbf{Sigfox} \\ \hline
+		\textbf{\begin{tabular}[c]{@{}l@{}}Banda de \\ frequência\end{tabular}} & \begin{tabular}[c]{@{}l@{}}2,4-5,5\\ GHz\end{tabular} & \begin{tabular}[c]{@{}l@{}}2,4-5\\ GHz\end{tabular} & \begin{tabular}[c]{@{}l@{}}868/915\\ MHz\end{tabular} & \begin{tabular}[c]{@{}l@{}}867-869\\ MHz\end{tabular} & \begin{tabular}[c]{@{}l@{}}800 MHz\\ (europa)\end{tabular} \\ \hline
+		\textbf{\begin{tabular}[c]{@{}l@{}}Topologia\\ da rede\end{tabular}} & Estrela & Estrela & Mesh & Estrela & Estrela \\ \hline
+		\textbf{\begin{tabular}[c]{@{}l@{}}Energia\\ (consumo)\end{tabular}} & Baixo & Médio & \begin{tabular}[c]{@{}l@{}}Muito\\ baixo\end{tabular} & Muito baixo & Muito baixo \\ \hline
+		\textbf{Alcance} & $\sim$50m & 100m & 10m & \begin{tabular}[c]{@{}l@{}}Rural:\\ 15-20km\\ Urbano:\\ 2-5km\end{tabular} & \begin{tabular}[c]{@{}l@{}}Rural:\\ 30-50km\\ Urbano:\\ 3-10km\end{tabular} \\ \hline
+		\textbf{\begin{tabular}[c]{@{}l@{}}Bateria\\ (duração)\end{tabular}} & Dias & Horas & \begin{tabular}[c]{@{}l@{}}Meses\\ -anos\end{tabular} & 20 anos & 10/15 anos \\ \hline
+		\textbf{\begin{tabular}[c]{@{}l@{}}Tamanho\\ das\\ mensagens\end{tabular}} & 33 bytes & \begin{tabular}[c]{@{}l@{}}Variável\\ (0 a 2304\\ bytes)\end{tabular} & 128 bytes & \begin{tabular}[c]{@{}l@{}}Variável\\ (2 a 255\\ bytes)\end{tabular} & 12 bytes \\ \hline
 	\end{tabular}
-	\caption[Comparação entre as tecnologias de comunicação abordadas]{Comparação entre as tecnologias de comunicação abordadas (Adaptado de \cite{Rahman2015})}
-	\label{com-tecn}
+		\caption[Comparação entre as tecnologias de comunicação abordadas]{Comparação entre as tecnologias de comunicação abordadas (Adaptado de \cite{Rahman2015})}
+		\label{com-tecn}
 \end{table}
-
-
-
-
-
-
 
 %\subsection{Módulo bluetooth}
 

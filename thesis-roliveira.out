@@ -41,66 +41,68 @@
 \BOOKMARK [2][-]{subsection.3.7.2}{Sensor de luminosidade }{section.3.7}% 41
 \BOOKMARK [2][-]{subsection.3.7.3}{Sensor de salinidade}{section.3.7}% 42
 \BOOKMARK [1][-]{section.3.8}{Tecnologias de comunica\347\343o}{chapter.3}% 43
-\BOOKMARK [2][-]{subsection.3.8.1}{Zigbee}{section.3.8}% 44
-\BOOKMARK [2][-]{subsection.3.8.2}{Bluetooth \(BLE\)}{section.3.8}% 45
-\BOOKMARK [2][-]{subsection.3.8.3}{Wi-Fi \(IEEE 802.11\)}{section.3.8}% 46
-\BOOKMARK [2][-]{subsection.3.8.4}{Sigfox}{section.3.8}% 47
-\BOOKMARK [2][-]{subsection.3.8.5}{Compara\347\343o entre tecnologias de comunica\347\343o}{section.3.8}% 48
-\BOOKMARK [0][-]{chapter.4}{Sistema de controlo e monitoriza\347\343o: arquitetura e modela\347\343o}{}% 49
-\BOOKMARK [1][-]{section.4.1}{An\341lise de requisitos}{chapter.4}% 50
-\BOOKMARK [2][-]{subsection.4.1.1}{Requisitos funcionais}{section.4.1}% 51
-\BOOKMARK [2][-]{subsection.4.1.2}{Requisitos n\343o funcionais}{section.4.1}% 52
-\BOOKMARK [1][-]{section.4.2}{Descri\347\343o global do sistema}{chapter.4}% 53
-\BOOKMARK [2][-]{subsection.4.2.1}{Componentes}{section.4.2}% 54
-\BOOKMARK [3][-]{section*.63}{Sensor Module}{subsection.4.2.1}% 55
-\BOOKMARK [3][-]{section*.66}{Controller Module}{subsection.4.2.1}% 56
-\BOOKMARK [1][-]{section.4.3}{Modela\347\343o}{chapter.4}% 57
-\BOOKMARK [2][-]{subsection.4.3.1}{Entidades envolvidas}{section.4.3}% 58
-\BOOKMARK [2][-]{subsection.4.3.2}{Casos de uso}{section.4.3}% 59
-\BOOKMARK [2][-]{subsection.4.3.3}{Modelo de dados}{section.4.3}% 60
-\BOOKMARK [1][-]{section.4.4}{Arquitetura l\363gica}{chapter.4}% 61
-\BOOKMARK [1][-]{section.4.5}{Arquitetura f\355sica}{chapter.4}% 62
-\BOOKMARK [2][-]{subsection.4.5.1}{Sistema de informa\347\343o}{section.4.5}% 63
-\BOOKMARK [2][-]{subsection.4.5.2}{Aplica\347\343o web}{section.4.5}% 64
-\BOOKMARK [2][-]{subsection.4.5.3}{API REST}{section.4.5}% 65
-\BOOKMARK [2][-]{subsection.4.5.4}{Documenta\347\343o interativa}{section.4.5}% 66
-\BOOKMARK [2][-]{subsection.4.5.5}{Implementa\347\343o do sistema}{section.4.5}% 67
-\BOOKMARK [2][-]{subsection.4.5.6}{Aplica\347\343o mobile}{section.4.5}% 68
-\BOOKMARK [2][-]{subsection.4.5.7}{Simula\347\343o em hardware}{section.4.5}% 69
-\BOOKMARK [3][-]{section*.81}{Sensores utilizados}{subsection.4.5.7}% 70
-\BOOKMARK [3][-]{section*.89}{Comunica\347\343o}{subsection.4.5.7}% 71
-\BOOKMARK [2][-]{subsection.4.5.8}{Sistema de videovigil\342ncia }{section.4.5}% 72
-\BOOKMARK [3][-]{section*.94}{Biblioteca para processamento de imagem: OpenCV}{subsection.4.5.8}% 73
-\BOOKMARK [1][-]{section.4.6}{Diagrama de componentes}{chapter.4}% 74
-\BOOKMARK [1][-]{section.4.7}{Considera\347\365es finais}{chapter.4}% 75
-\BOOKMARK [0][-]{chapter.5}{Implementa\347\343o}{}% 76
-\BOOKMARK [1][-]{section.5.1}{Sistema de informa\347\343o}{chapter.5}% 77
-\BOOKMARK [2][-]{subsection.5.1.1}{Sistema de registo e autentica\347\343o}{section.5.1}% 78
-\BOOKMARK [2][-]{subsection.5.1.2}{Gera\347\343o de alarmes}{section.5.1}% 79
-\BOOKMARK [2][-]{subsection.5.1.3}{Visualiza\347\343o dos dados e c\341lculos estat\355sticos}{section.5.1}% 80
-\BOOKMARK [2][-]{subsection.5.1.4}{API}{section.5.1}% 81
-\BOOKMARK [2][-]{subsection.5.1.5}{Documenta\347\343o da API}{section.5.1}% 82
-\BOOKMARK [2][-]{subsection.5.1.6}{Aplica\347\343o web}{section.5.1}% 83
-\BOOKMARK [2][-]{subsection.5.1.7}{Deploy do projecto}{section.5.1}% 84
-\BOOKMARK [1][-]{section.5.2}{Simula\347\343o em hardware}{chapter.5}% 85
-\BOOKMARK [2][-]{subsection.5.2.1}{Arduino Nano}{section.5.2}% 86
-\BOOKMARK [2][-]{subsection.5.2.2}{Raspberry Pi 3}{section.5.2}% 87
-\BOOKMARK [1][-]{section.5.3}{Sistema de videovigil\342ncia}{chapter.5}% 88
-\BOOKMARK [2][-]{subsection.5.3.1}{Utiliza\347\343o do algoritmo de dete\347\343o de intrusos}{section.5.3}% 89
-\BOOKMARK [1][-]{section.5.4}{Considera\347\365es finais}{chapter.5}% 90
-\BOOKMARK [0][-]{chapter.6}{Testes e resultados}{}% 91
-\BOOKMARK [1][-]{section.6.1}{Testes funcionais}{chapter.6}% 92
-\BOOKMARK [2][-]{subsection.6.1.1}{API REST}{section.6.1}% 93
-\BOOKMARK [2][-]{subsection.6.1.2}{Comunica\347\343o via Bluetooth }{section.6.1}% 94
-\BOOKMARK [2][-]{subsection.6.1.3}{Dete\347\343o de intrusos}{section.6.1}% 95
-\BOOKMARK [1][-]{section.6.2}{Resultados}{chapter.6}% 96
-\BOOKMARK [1][-]{section.6.3}{Considera\347\365es finais}{chapter.6}% 97
-\BOOKMARK [0][-]{chapter.7}{Conclus\365es e trabalho futuro}{}% 98
-\BOOKMARK [1][-]{section.7.1}{Conclus\365es}{chapter.7}% 99
-\BOOKMARK [1][-]{section.7.2}{Problemas encontrados}{chapter.7}% 100
-\BOOKMARK [1][-]{section.7.3}{Trabalho futuro}{chapter.7}% 101
-\BOOKMARK [0][-]{appendix.A}{Mockup da aplica\347\343o mobile}{}% 102
-\BOOKMARK [0][-]{appendix.B}{Implementa\347\343o do trigger SQL }{}% 103
-\BOOKMARK [0][-]{appendix.C}{Application Programming Interface REST}{}% 104
-\BOOKMARK [0][-]{appendix.D}{Interliga\347\343o de componentes}{}% 105
-\BOOKMARK [0][-]{appendix.E}{Packages utilizados}{}% 106
+\BOOKMARK [2][-]{subsection.3.8.1}{Bluetooth}{section.3.8}% 44
+\BOOKMARK [2][-]{subsection.3.8.2}{Wi-Fi \(IEEE 802.11\)}{section.3.8}% 45
+\BOOKMARK [2][-]{subsection.3.8.3}{Zigbee}{section.3.8}% 46
+\BOOKMARK [2][-]{subsection.3.8.4}{LoRa}{section.3.8}% 47
+\BOOKMARK [2][-]{subsection.3.8.5}{Sigfox}{section.3.8}% 48
+\BOOKMARK [2][-]{subsection.3.8.6}{Compara\347\343o entre tecnologias de comunica\347\343o}{section.3.8}% 49
+\BOOKMARK [0][-]{chapter.4}{Sistema de controlo e monitoriza\347\343o: arquitetura e modela\347\343o}{}% 50
+\BOOKMARK [1][-]{section.4.1}{An\341lise de requisitos}{chapter.4}% 51
+\BOOKMARK [2][-]{subsection.4.1.1}{Requisitos funcionais}{section.4.1}% 52
+\BOOKMARK [2][-]{subsection.4.1.2}{Requisitos n\343o funcionais}{section.4.1}% 53
+\BOOKMARK [1][-]{section.4.2}{Descri\347\343o global do sistema}{chapter.4}% 54
+\BOOKMARK [2][-]{subsection.4.2.1}{Componentes}{section.4.2}% 55
+\BOOKMARK [3][-]{section*.65}{Sensor Module}{subsection.4.2.1}% 56
+\BOOKMARK [3][-]{section*.68}{Controller Module}{subsection.4.2.1}% 57
+\BOOKMARK [1][-]{section.4.3}{Modela\347\343o}{chapter.4}% 58
+\BOOKMARK [2][-]{subsection.4.3.1}{Entidades envolvidas}{section.4.3}% 59
+\BOOKMARK [2][-]{subsection.4.3.2}{Casos de uso}{section.4.3}% 60
+\BOOKMARK [2][-]{subsection.4.3.3}{Modelo de dados}{section.4.3}% 61
+\BOOKMARK [1][-]{section.4.4}{Arquitetura l\363gica}{chapter.4}% 62
+\BOOKMARK [1][-]{section.4.5}{Arquitetura f\355sica}{chapter.4}% 63
+\BOOKMARK [2][-]{subsection.4.5.1}{Sistema de informa\347\343o}{section.4.5}% 64
+\BOOKMARK [2][-]{subsection.4.5.2}{Aplica\347\343o web}{section.4.5}% 65
+\BOOKMARK [2][-]{subsection.4.5.3}{API REST}{section.4.5}% 66
+\BOOKMARK [2][-]{subsection.4.5.4}{Documenta\347\343o interativa}{section.4.5}% 67
+\BOOKMARK [2][-]{subsection.4.5.5}{Implementa\347\343o do sistema}{section.4.5}% 68
+\BOOKMARK [2][-]{subsection.4.5.6}{Aplica\347\343o mobile}{section.4.5}% 69
+\BOOKMARK [2][-]{subsection.4.5.7}{Simula\347\343o em hardware}{section.4.5}% 70
+\BOOKMARK [3][-]{section*.83}{Sensores utilizados}{subsection.4.5.7}% 71
+\BOOKMARK [3][-]{section*.91}{Comunica\347\343o}{subsection.4.5.7}% 72
+\BOOKMARK [2][-]{subsection.4.5.8}{Sistema de videovigil\342ncia }{section.4.5}% 73
+\BOOKMARK [3][-]{section*.100}{Biblioteca para processamento de imagem: OpenCV}{subsection.4.5.8}% 74
+\BOOKMARK [3][-]{section*.101}{Streaming de v\355deo: Youtube Live}{subsection.4.5.8}% 75
+\BOOKMARK [1][-]{section.4.6}{Diagrama de componentes}{chapter.4}% 76
+\BOOKMARK [1][-]{section.4.7}{Considera\347\365es finais}{chapter.4}% 77
+\BOOKMARK [0][-]{chapter.5}{Implementa\347\343o}{}% 78
+\BOOKMARK [1][-]{section.5.1}{Sistema de informa\347\343o}{chapter.5}% 79
+\BOOKMARK [2][-]{subsection.5.1.1}{Sistema de registo e autentica\347\343o}{section.5.1}% 80
+\BOOKMARK [2][-]{subsection.5.1.2}{Gera\347\343o de alarmes}{section.5.1}% 81
+\BOOKMARK [2][-]{subsection.5.1.3}{Visualiza\347\343o dos dados e c\341lculos estat\355sticos}{section.5.1}% 82
+\BOOKMARK [2][-]{subsection.5.1.4}{API}{section.5.1}% 83
+\BOOKMARK [2][-]{subsection.5.1.5}{Documenta\347\343o da API}{section.5.1}% 84
+\BOOKMARK [2][-]{subsection.5.1.6}{Aplica\347\343o web}{section.5.1}% 85
+\BOOKMARK [2][-]{subsection.5.1.7}{Deploy do projecto}{section.5.1}% 86
+\BOOKMARK [1][-]{section.5.2}{Simula\347\343o em hardware}{chapter.5}% 87
+\BOOKMARK [2][-]{subsection.5.2.1}{Arduino Nano}{section.5.2}% 88
+\BOOKMARK [2][-]{subsection.5.2.2}{Raspberry Pi 3}{section.5.2}% 89
+\BOOKMARK [1][-]{section.5.3}{Sistema de videovigil\342ncia}{chapter.5}% 90
+\BOOKMARK [2][-]{subsection.5.3.1}{Utiliza\347\343o do algoritmo de dete\347\343o de intrusos}{section.5.3}% 91
+\BOOKMARK [1][-]{section.5.4}{Considera\347\365es finais}{chapter.5}% 92
+\BOOKMARK [0][-]{chapter.6}{Testes e resultados}{}% 93
+\BOOKMARK [1][-]{section.6.1}{Testes funcionais}{chapter.6}% 94
+\BOOKMARK [2][-]{subsection.6.1.1}{API REST}{section.6.1}% 95
+\BOOKMARK [2][-]{subsection.6.1.2}{Comunica\347\343o via Bluetooth }{section.6.1}% 96
+\BOOKMARK [2][-]{subsection.6.1.3}{Dete\347\343o de intrusos}{section.6.1}% 97
+\BOOKMARK [1][-]{section.6.2}{Resultados}{chapter.6}% 98
+\BOOKMARK [1][-]{section.6.3}{Considera\347\365es finais}{chapter.6}% 99
+\BOOKMARK [0][-]{chapter.7}{Conclus\365es e trabalho futuro}{}% 100
+\BOOKMARK [1][-]{section.7.1}{Conclus\365es}{chapter.7}% 101
+\BOOKMARK [1][-]{section.7.2}{Problemas encontrados}{chapter.7}% 102
+\BOOKMARK [1][-]{section.7.3}{Trabalho futuro}{chapter.7}% 103
+\BOOKMARK [0][-]{appendix.A}{Mockup da aplica\347\343o mobile}{}% 104
+\BOOKMARK [0][-]{appendix.B}{Implementa\347\343o do trigger SQL }{}% 105
+\BOOKMARK [0][-]{appendix.C}{Application Programming Interface REST}{}% 106
+\BOOKMARK [0][-]{appendix.D}{Interliga\347\343o de componentes}{}% 107
+\BOOKMARK [0][-]{appendix.E}{Packages utilizados}{}% 108

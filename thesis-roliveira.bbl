@@ -21,6 +21,24 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{Ventura2011}
+\BIBentryALTinterwordspacing
+Y.~Ventura, W.~A. Wuddineh, M.~Myrzabayeva, Z.~Alikulov, I.~Khozin-Goldberg,
+  M.~Shpigel, T.~M. Samocha, and M.~Sagi, ``{Effect of seawater concentration
+  on the productivity and nutritional value of annual Salicornia and perennial
+  Sarcocornia halophytes as leafy vegetable crops},'' \emph{Scientia
+  Horticulturae}, vol. 128, no.~3, pp. 189--196, apr 2011. [Online]. Available:
+  \url{http://linkinghub.elsevier.com/retrieve/pii/S0304423811000537}
+\BIBentrySTDinterwordspacing
+
+\bibitem{jnsalic}
+\BIBentryALTinterwordspacing
+``{Salic{\'{o}}rnia, o sal em forma de planta saud{\'{a}}vel}.'' [Online].
+  Available:
+  \url{https://www.jn.pt/nacional/interior/salicornia-o-sal-em-forma-de-planta-saudavel-5728423.html}
+  [Accessed: 2017-10-16]
+\BIBentrySTDinterwordspacing
+
 \bibitem{desingprocess}
 \BIBentryALTinterwordspacing
 ``{The Engineering Design Process}.'' [Online]. Available:
@@ -99,16 +117,6 @@ M.~Filomena, D.~J. Raposo, R.~Manuel, S.~Costa, A.~Maria, and M.~Bernardo,
   ``{Controlled atmosphere storage for the preservation of Salicornia
   ramosissima},'' no. October 2016, 2009.
 
-\bibitem{Ventura2011}
-\BIBentryALTinterwordspacing
-Y.~Ventura, W.~A. Wuddineh, M.~Myrzabayeva, Z.~Alikulov, I.~Khozin-Goldberg,
-  M.~Shpigel, T.~M. Samocha, and M.~Sagi, ``{Effect of seawater concentration
-  on the productivity and nutritional value of annual Salicornia and perennial
-  Sarcocornia halophytes as leafy vegetable crops},'' \emph{Scientia
-  Horticulturae}, vol. 128, no.~3, pp. 189--196, apr 2011. [Online]. Available:
-  \url{http://linkinghub.elsevier.com/retrieve/pii/S0304423811000537}
-\BIBentrySTDinterwordspacing
-
 \bibitem{Wang2012}
 \BIBentryALTinterwordspacing
 Q.~Z. Wang, X.~F. Liu, Y.~Shan, F.~Q. Guan, Y.~Chen, X.~Y. Wang, M.~Wang, and
@@ -152,6 +160,12 @@ J.~Rowley, ``{The wisdom hierarchy: representations of the DIKW hierarchy},''
 \BIBentryALTinterwordspacing
 MySQL, ``{MySQL :: About MySQL},'' 2011. [Online]. Available:
   \url{http://www.mysql.com/about/} [Accessed: 2017-07-13]
+\BIBentrySTDinterwordspacing
+
+\bibitem{why-msql}
+\BIBentryALTinterwordspacing
+``{MySQL :: Why MySQL?}'' [Online]. Available:
+  \url{http://www.mysql.com/why-mysql/} [Accessed: 2017-10-24]
 \BIBentrySTDinterwordspacing
 
 \bibitem{linuxsqlserver}
@@ -261,6 +275,13 @@ Flask-RESTful, ``{Flask-RESTful — Flask-RESTful 0.2.1 documentation},'' 2017.
   [Accessed: 2017-07-29]
 \BIBentrySTDinterwordspacing
 
+\bibitem{microcontrollers}
+\BIBentryALTinterwordspacing
+G.~Gridling and B.~Weiss, ``{Introduction to Microcontrollers},'' 2007.
+  [Online]. Available:
+  \url{https://ti.tuwien.ac.at/ecs/teaching/courses/mclu/theory-material/Microcontroller.pdf}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Banzi2012}
 \BIBentryALTinterwordspacing
 M.~Banzi, D.~Cuartielles, T.~Igoe, G.~Martion, and D.~Mellis, ``{Arduino -
@@ -308,18 +329,20 @@ Argus, ``{Light and lighting contril in greenhouses},'' no. August, pp. 1--29,
   \url{http://www.arguscontrols.com/resources/Light-and-Lighting-Control-in-Greenhouses.pdf}
 \BIBentrySTDinterwordspacing
 
+\bibitem{World2014}
+\BIBentryALTinterwordspacing
+L.~World, ``{Libelium World › Libelium World : Smart Water Sensors to monitor
+  water quality in rivers , lakes and the sea},'' pp. 1--3, 2014. [Online].
+  Available:
+  \url{http://www.libelium.com/smart-water-sensors-to-monitor-water-quality-in-rivers-lakes-and-the-sea/}
+  [Accessed: 2017-10-24]
+\BIBentrySTDinterwordspacing
+
 \bibitem{sall}
 \BIBentryALTinterwordspacing
 ``{Salinity Sensor (Order Code SAL-BTA) Collecting Data with the Salinity
   Sensor}.'' [Online]. Available:
   \url{https://www.vernier.com/files/manuals/sal-bta.pdf}
-\BIBentrySTDinterwordspacing
-
-\bibitem{Rahman2015}
-\BIBentryALTinterwordspacing
-A.~B.~A. Rahman, ``{Comparison of Internet of Things ( IoT ) Data Link
-  Protocols},'' pp. 1--21, 2015. [Online]. Available:
-  \url{http://www.cse.wustl.edu/{~}jain/cse570-15/index.html}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Bruno2002}
@@ -349,6 +372,26 @@ W.~Paper, ``{IEEE 802.11g The New Mainstream Wireless LAN Standard},'' 2005.
   Available:
   \url{http://www.radio-electronics.com/info/wireless/wi-fi/ieee-802-11g.php}
   [Accessed: 2017-07-18]
+\BIBentrySTDinterwordspacing
+
+\bibitem{Rahman2015}
+\BIBentryALTinterwordspacing
+A.~B.~A. Rahman, ``{Comparison of Internet of Things ( IoT ) Data Link
+  Protocols},'' pp. 1--21, 2015. [Online]. Available:
+  \url{http://www.cse.wustl.edu/{~}jain/cse570-15/index.html}
+\BIBentrySTDinterwordspacing
+
+\bibitem{LinkLabs2015}
+\BIBentryALTinterwordspacing
+{Link Labs}, ``{What is LoRaWAN},'' 2015. [Online]. Available:
+  \url{http://www.link-labs.com/what-is-lorawan/} [Accessed: 2017-10-25]
+\BIBentrySTDinterwordspacing
+
+\bibitem{Semtech2017}
+\BIBentryALTinterwordspacing
+Semtech, ``{What Is LoRa? | Semtech},'' p.~1, 2017. [Online]. Available:
+  \url{http://www.semtech.com/wireless-rf/internet-of-things/what-is-lora/}
+  [Accessed: 2017-10-25]
 \BIBentrySTDinterwordspacing
 
 \bibitem{sigfoxsite}
@@ -436,17 +479,17 @@ L.~{LIDA OPTICAL{\&}ELECTRONIC CO.}, ``{Datasheet, CdS Photoconductive cells,
 L.~{Guangzhou HC Information Technology Co .}, ``{HC06 Datasheet},'' no.~13,
   pp. 1--17, 2011.
 
-\bibitem{Itseez}
-\BIBentryALTinterwordspacing
-Itseez, ``{About - OpenCV library}.'' [Online]. Available:
-  \url{http://opencv.org/about.html} [Accessed: 2017-05-19]
-\BIBentrySTDinterwordspacing
-
 \bibitem{raspivid}
 \BIBentryALTinterwordspacing
 ``{raspivid - Raspberry Pi Documentation}.'' [Online]. Available:
   \url{https://www.raspberrypi.org/documentation/usage/camera/raspicam/raspivid.md}
   [Accessed: 2017-07-25]
+\BIBentrySTDinterwordspacing
+
+\bibitem{Itseez}
+\BIBentryALTinterwordspacing
+Itseez, ``{About - OpenCV library}.'' [Online]. Available:
+  \url{http://opencv.org/about.html} [Accessed: 2017-05-19]
 \BIBentrySTDinterwordspacing
 
 \bibitem{FFmpeg2015}

@@ -28,6 +28,7 @@ Database file #1: tese.bib
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--there is url but no urldate in Ventura2011
 Warning--there is url but no urldate in Saini2014
 Warning--empty journal in chenopodiaceae
 Warning--missing publisher in ferri
@@ -35,7 +36,6 @@ Warning--there is url but no urldate in Silva2000
 Warning--edition ordinal word "Natural Pr" may be too high (or improper) for conversion in overviewsal
 Warning--there is url but no urldate in Rubio-Casal2003
 Warning--empty journal in Filomena2009
-Warning--there is url but no urldate in Ventura2011
 Warning--there is url but no urldate in Wang2012
 Warning--empty journal in Evans2011a
 Warning--empty journal in Our2013
@@ -47,6 +47,8 @@ Warning--missing publisher in Holovaty2009
 Warning--there is url but no urldate in Kang2015
 Warning--empty journal in restpaper
 Warning--there is url but no urldate in restpaper
+Warning--empty journal in microcontrollers
+Warning--there is url but no urldate in microcontrollers
 Warning--empty author in arduinonanouser
 Warning--empty journal in arduinonanouser
 Warning--empty year in arduinonanouser
@@ -61,12 +63,12 @@ Warning--empty author in sall
 Warning--empty journal in sall
 Warning--empty year in sall
 Warning--there is url but no urldate in sall
-Warning--empty journal in Rahman2015
-Warning--there is url but no urldate in Rahman2015
 Warning--there is url but no urldate in Bruno2002
 Warning--there is url but no urldate in BluetoothTM2001
 Warning--empty journal in Paper2005
 Warning--there is url but no urldate in Paper2005
+Warning--empty journal in Rahman2015
+Warning--there is url but no urldate in Rahman2015
 Warning--there is url but no urldate in Turban1996
 Warning--there is url but no urldate in Josuttis2001
 Warning--empty author in temp-dta
@@ -77,45 +79,45 @@ Warning--empty journal in GuangzhouHCInformationTechnologyCo.2011
 Warning--there is url but no urldate in Dalal
 
 Done.
-You've used 68 entries,
+You've used 74 entries,
             4106 wiz_defined-function locations,
-            1247 strings with 19168 characters,
-and the built_in function-call counts, 34041 in all, are:
-= -- 2693
-> -- 605
-< -- 174
-+ -- 319
-- -- 111
-* -- 1650
-:= -- 5733
-add.period$ -- 133
-call.type$ -- 68
-change.case$ -- 69
-chr.to.int$ -- 393
-cite$ -- 115
-duplicate$ -- 2577
-empty$ -- 2954
-format.name$ -- 129
-if$ -- 7618
+            1277 strings with 20069 characters,
+and the built_in function-call counts, 36426 in all, are:
+= -- 2876
+> -- 632
+< -- 180
++ -- 333
+- -- 116
+* -- 1759
+:= -- 6151
+add.period$ -- 145
+call.type$ -- 74
+change.case$ -- 75
+chr.to.int$ -- 405
+cite$ -- 123
+duplicate$ -- 2772
+empty$ -- 3183
+format.name$ -- 135
+if$ -- 8145
 int.to.chr$ -- 0
-int.to.str$ -- 68
-missing$ -- 493
-newline$ -- 337
-num.names$ -- 60
-pop$ -- 1390
+int.to.str$ -- 74
+missing$ -- 534
+newline$ -- 367
+num.names$ -- 64
+pop$ -- 1523
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 4
-skip$ -- 2577
+skip$ -- 2755
 stack$ -- 0
-substring$ -- 963
-swap$ -- 1735
-text.length$ -- 43
+substring$ -- 999
+swap$ -- 1846
+text.length$ -- 45
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 68
-warning$ -- 47
-while$ -- 142
-width$ -- 70
-write$ -- 697
-(There were 47 warnings)
+type$ -- 74
+warning$ -- 49
+while$ -- 151
+width$ -- 76
+write$ -- 755
+(There were 49 warnings)

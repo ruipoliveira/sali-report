@@ -20,7 +20,7 @@ Segundo o ciclo de vida de um \textit{software}, estabelecido por \textit{Munish
 \section{Sistema de informação}
 
 
-Relativamente ao projeto Django, numa primeira fase procedeu-se à incorporação do \ac{SGBD} PostgreSQL através do psycopg2\footnote{\url{http://initd.org/psycopg/docs/}}. O psycopg2 consiste num adaptador entre o PostgreSQL com a linguagem de programação Python, que permite executar de forma eficiente qualquer \textit{script} em \ac{SQL}. É de notar que nesta fase inicial, encontram-se instaladas algumas aplicações nativas do Django entre as quais, o  \texttt{django.contrib.auth} e  o \texttt{django.contrib.sessions}. Através delas é possível verificar o total funcionamento da base de dados uma vez que permitem a criação automática das tabelas associadas ao utilizadores, grupos, permissões e respetivos conteúdos, administração, sessões entres outros. Estas tabelas são fundamentais ao bom funcionamento do sistema, sendo consideradas no modelo de dados descrito na secção \ref{modelocap}. 
+Relativamente ao projeto Django, numa primeira fase procedeu-se à incorporação do \ac{SGBD} PostgreSQL através do psycopg2\footnote{\url{http://initd.org/psycopg/docs/}}. O psycopg2 consiste num adaptador entre o PostgreSQL com a linguagem de programação Python, que permite executar de forma eficiente qualquer \textit{script} em \ac{SQL}. É de notar que nesta fase inicial, encontram-se instaladas algumas aplicações nativas do Django entre as quais, o  \texttt{django.contrib.auth} e  o \texttt{django.contrib.sessions}. Através delas é possível verificar o total funcionamento da base de dados uma vez que permitem a criação automática das tabelas associadas aos utilizadores, grupos, permissões e respetivos conteúdos, administração, sessões entres outros. Estas tabelas são fundamentais ao bom funcionamento do sistema, sendo consideradas no modelo de dados descrito na secção \ref{modelocap}. 
 
 
 Posteriormente, procedeu-se à criação dos diferentes \texttt{Models} conforme a nomenclatura apresentada nas tabelas \ref{tabeladb1} e \ref{tabeladb2} da secção \ref{modelocap}. O excerto de código seguinte pretende exemplificar a criação de um \texttt{Model} associado à tabela que representa a estrutura \acl{SM}, com o respetivo identificador e atributos.  Após a criação de cada \texttt{Model} procedeu-se à migração dos dados para o \ac{SGBD} onde foi possível verificar que as tabelas tinham sido criadas, através da utilização da ferramenta gráfica pgAdmin III. De modo a testar a estrutura criada, procedeu-se à introdução de dados através da zona administrativa do Django (figura \ref{admingdjango}). Através dos dados introduzidos e descrevendo um cenário realista foi possível validar a estrutura e proceder à implementação da aplicação \textit{web} e criação da \ac{API} \ac{REST}. 
@@ -111,7 +111,7 @@ A geração de alarmes é condicionada pela comparação do valor lido pelos sen
 %\end{itemize}
 
 
-O utilizador através da \textit{dashboard} e da aplicação \textit{mobile} poderá analisar os alarmes gerados bem como se os valores lidos pelos sensores se encontram dentro dos intervalo previamente definidos. Para além disso, é apresentada a mensagem pré-definida (notificação) para que o utilizador possa tomar uma decisão.   
+O utilizador através da \textit{dashboard} e da aplicação \textit{mobile} poderá analisar os alarmes gerados bem como se os valores lidos pelos sensores se encontram dentro do intervalo previamente definidos. Para além disso, é apresentada a mensagem pré-definida (notificação) para que o utilizador possa tomar uma decisão.   
 
 
 
@@ -229,7 +229,7 @@ No anexo \ref{espcifAPIREST} encontram-se as especificações de cada \textit{en
 
 Para a utilização da documentação interativa da API REST foi utilizada a ferramenta Swagger. Para a sua utilização foi necessário incluir a aplicação \texttt{'rest\_framework\_swagger'} no ficheiro \texttt{settings.py} do Django e seguindamente definir o \ac{URL} que lhe permitirá o acesso. Na figura \ref{docapi} encontra-se um exemplo ao consultar a documentação desta API. 
 
-
+\newpage
 
 \begin{figure}[h]
 	\centering
@@ -238,7 +238,6 @@ Para a utilização da documentação interativa da API REST foi utilizada a fer
 	\label{docapi}
 \end{figure}
 
-\newpage
 
 \subsection{Aplicação \textit{web}}
 
@@ -424,7 +423,6 @@ Para implementar o projeto Django juntamente com o servidor \textit{web} Apache 
 
 
 
-\newpage
 
 \section{Simulação em \textit{hardware}}
 
@@ -491,7 +489,7 @@ Nesta simulação, o \acl{CM} recebe apenas os dados adquiridos por um \acl{SM},
 	\begin{itemize}
 		\item \textbf{Controlar estado da válvula}: permite aceder à \ac{API} de modo a verificar o estado do \ac{LED}  (válvula de admissão) e atualizá-lo sempre que necessário no \acl{SM}, através do método \texttt{send()}. No caso de ser enviado o dígito '1' o \ac{LED} será ligado (válvula aberta), enquanto que se for enviado o dígito '0' o  \ac{LED} será desligado (válvula fechada). 
 		
-		\item \textbf{Receção de dados}: no caso de ser enviado o  dígito '2', o \textit{socket} ficará a aguardar a receção dos dados lidos pelos sensores no formato definido, utilizando para isso o método \texttt{recv()}. Após a receção dos dados, é efetuado algum processamento para que estes possam ser enviado pela \ac{API}, com um atraso (\textit{seding time}) igual ao definido pelo utilizador na \textit{dashboard}. 
+		\item \textbf{Receção de dados}: no caso de ser enviado o  dígito '2', o \textit{socket} ficará a aguardar a receção dos dados lidos pelos sensores no formato definido, utilizando para isso o método \texttt{recv()}. Após a receção dos dados, é efetuado algum processamento para que estes possam ser enviado para o servidor através da \ac{API} REST. Os dados são enviados a um intervalo (\textit{seding time}) igual  ao definido pelo utilizador na \textit{dashboard}.
 		
 		
 	\end{itemize}
@@ -594,7 +592,7 @@ Seguidamente será explicado a utilização de um algoritmo de deteção de intr
 % artigo http://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf
 
 
-Para a implementação do algoritmo de deteção de intrusos estudou-se o módulo \texttt{peopledetect.py}\footnote{\url{https://github.com/npinto/opencv/blob/master/samples/python2/peopledetect.py}} disponível no repositório github do OpenCV. Este algoritmo permite detetar pessoas recorrendo a algoritmos específicos do OpenCV já treinados para o efeito, que serão descritos seguidamente. Complementarmente, foi analisado um artigo\cite{Dalal} que permitiu entender melhor a implementação apresentada, evidenciando o processo de deteção de características, algoritmos de treino (neste caso \ac{SVM}) e respetivos testes. No excerto de código seguinte encontra-se a implementação base fornecida pelo OpenCV para deteção de pessoas, que seguidamente será descrita. 
+Para a implementação do algoritmo de deteção de intrusos estudou-se o módulo \linebreak \texttt{peopledetect.py}\footnote{\url{https://github.com/npinto/opencv/blob/master/samples/python2/peopledetect.py}} disponível no repositório github do OpenCV. Este algoritmo permite detetar pessoas recorrendo a algoritmos específicos do OpenCV já treinados para o efeito, que serão descritos seguidamente. Complementarmente, foi analisado um artigo\cite{Dalal} que permitiu entender melhor a implementação apresentada, evidenciando o processo de deteção de características, algoritmos de treino (neste caso \ac{SVM}) e respetivos testes. No excerto de código seguinte encontra-se a implementação base fornecida pelo OpenCV para deteção de pessoas, que seguidamente será descrita. 
 
 \begin{lstlisting}[
 language=Python,

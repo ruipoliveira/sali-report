@@ -1,6 +1,6 @@
 \chapter{Testes e resultados}
 
-Neste capitulo são apresentados alguns testes funcionais ao sistema bem como 
+Neste capítulo são apresentados alguns testes funcionais ao sistema, bem como os resultados obtidos dos diferentes componentes do trabalho prático desta dissertação. 
 
 \section{Testes funcionais}
 
@@ -91,16 +91,16 @@ Relativamente ao algoritmo de deteção de intrusos, este foi testado em três c
 
 \begin{figure}[h]
 	\centering
-	\begin{minipage}[b]{0.49\textwidth}
+	\begin{minipage}[b]{0.4\textwidth}
 		\centering
-		\includegraphics[width=0.9\textwidth]{img/vision/exemplos/frame1.jpg}
+		\includegraphics[width=\textwidth]{img/vision/exemplos/frame1.jpg}
 		\caption[Imagem original (frame1)]{Imagem original (frame1) \newline \newline}
 		\label{bluetth05-res}
 	\end{minipage}
 	\hfill
-	\begin{minipage}[b]{0.49\textwidth}
+	\begin{minipage}[b]{0.4\textwidth}
 		\centering
-		\includegraphics[width=0.9\textwidth]{img/vision/exemplos/result_frame1.jpg}
+		\includegraphics[width=\textwidth]{img/vision/exemplos/result_frame1.jpg}
 		\caption[Resultado obtido (frame1)]{Resultado obtido (frame1) em que  winstride = (4, 4), padding = (8, 8) e scale = 1.1}
 		\label{comimage1esquema}
 	\end{minipage}
@@ -114,18 +114,20 @@ Relativamente ao algoritmo de deteção de intrusos, este foi testado em três c
 	\centering
 	\begin{minipage}[b]{0.49\textwidth}
 		\centering
-		\includegraphics[width=0.9\textwidth]{img/vision/exemplos/frame2.jpg}
+		\includegraphics[width=\textwidth]{img/vision/exemplos/frame2.jpg}
 		\caption[Imagem original (frame2)]{Imagem original (frame2) \newline \newline}
 		\label{bluetth05-res}
 	\end{minipage}
 	\hfill
 	\begin{minipage}[b]{0.49\textwidth}
 		\centering
-		\includegraphics[width=0.9\textwidth]{img/vision/exemplos/result_frame2.jpg}
+		\includegraphics[width=\textwidth]{img/vision/exemplos/result_frame2.jpg}
 		\caption[Resultado obtido (frame 2)]{Resultado obtido (frame 2) em que winstride = (4,4), padding = (24,24) e scale = 1.3 }
 		\label{comimagees1quema}
 	\end{minipage}
 \end{figure}
+
+
 
 \begin{figure}[h]
 	\centering
@@ -148,6 +150,10 @@ Relativamente ao algoritmo de deteção de intrusos, este foi testado em três c
 
 Como podemos ver, para os três casos de teste não existe nenhum conjunto de parâmetros que satisfaça todos os cenários, o que torna impossível saber quais os que deverão ser usados no contexto da câmara de videovigilância, uma vez que dependem da localização e do ângulo da mesma no terreno. 
 
+
+
+
+
 \section{Resultados}
 
 Nesta secção mostram-se os principais resultados obtidos no trabalho prático desta dissertação. É apresentado o sistema de registo dos utilizadores e respetiva validação por parte da empresa, a adição de um novo tipo de sensor na \textit{dashboard} bem como a adição de um novo \acl{SM}. Para além disso, é mostrado o resultado do envio contínuo de dados para o cenário de simulação em \textit{hardware} apresentado. Por fim, é apresentado o mecanismo de atuação remota numa válvula e o respetivo resultado obtido. 
@@ -163,41 +169,48 @@ Nesta secção mostram-se os principais resultados obtidos no trabalho prático 
 
 \begin{figure}[h]
 	\centering
-	\begin{minipage}[b]{0.495\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{prints-web/register.png}
+
+		\includegraphics[width=0.9\textwidth]{prints-web/register.png}
 		\caption{Interface para novo registo, destacando o \textit{feedback} dado ao utilizador}
 		\label{novouser}
-	\end{minipage}
-	\hfill
-	\begin{minipage}[b]{0.495\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{prints-web/validate_company.png}
-		\caption{Interface para validação de utilizadores, com \textit{feedback} após validação}
-		\label{validateuser}
-	\end{minipage}
+	
 \end{figure}
-
-
-Na figura \ref{novouser} é apresentada a interface \textit{web} para o registo de um novo utilizador no sistema. Este, ao registar-se, terá que escolher a empresa a que se associa, sendo esta notificada por email da existência de um novo utilizador. A empresa terá que aceder à sua área reservada para validar ou remover o utilizador associado (figura \ref{validateuser}).
 
 
 
 \begin{figure}[h]
 	\centering
-	\begin{minipage}[b]{0.49\textwidth}
 		\centering
-		\includegraphics[width=\textwidth]{prints-web/sensor_show.png}
+		\includegraphics[width=0.9\textwidth]{prints-web/validate_company.png}
+		\caption{Interface para validação de utilizadores, com \textit{feedback} após validação}
+		\label{validateuser}
+
+\end{figure}
+
+
+
+Na figura \ref{novouser} é apresentada a interface \textit{web} para o registo de um novo utilizador no sistema. Este, ao registar-se, terá que escolher a empresa a que se associa, sendo esta notificada por email da existência de um novo utilizador. A empresa terá que aceder à sua área reservada para validar ou remover o utilizador associado (figura \ref{validateuser}).
+
+\newpage
+
+\begin{figure}[h]
+	\centering
+
+		\centering
+		\includegraphics[width=0.8\textwidth]{prints-web/sensor_show.png}
 		\caption{Interface para visualizar sensores}
 		\label{view-sensorall}
-	\end{minipage}
-	\hfill
-	\begin{minipage}[b]{0.49\textwidth}
+
+\end{figure}
+
+
+
+\begin{figure}[h]
 		\centering
-		\includegraphics[width=\textwidth]{prints-web/sensor_add.png}
+		\includegraphics[width=0.8\textwidth]{prints-web/sensor_add.png}
 		\caption{ Interface para adicionar sensores}
 		\label{add-sensorall}
-	\end{minipage}
+
 \end{figure}
 
 
@@ -205,22 +218,26 @@ A figura \ref{view-sensorall} apresenta a página que permite verificar todos os
 
 
 
+\newpage
+
+
 
 \begin{figure}[h]
 	\centering
-	\begin{minipage}[b]{0.49\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{prints-web/sm_show.png}
+
+		\includegraphics[width=0.8\textwidth]{prints-web/sm_show.png}
 		\caption{Visualização dos \textit{Sensor Modules} associados a um \acl{CM} }
 		\label{view-sm}
-	\end{minipage}
-	\hfill
-	\begin{minipage}[b]{0.49\textwidth}
+
+\end{figure}
+
+
+\begin{figure}[h]
 		\centering
 		\includegraphics[width=0.7\textwidth]{prints-web/sm_add.png}
 		\caption{Interface para adição de um novo \acl{SM} }
 		\label{add-sm}
-	\end{minipage}
+
 \end{figure}
 
 
@@ -228,35 +245,44 @@ A figura \ref{view-sensorall} apresenta a página que permite verificar todos os
 Na figura \ref{view-sm} é possível observar os \textit{Sensor Modules} associados ao \acl{CM} denominado por Raspi. São visíveis todas as características de cada \acl{SM}, bem como os botões que permitem a adição, edição, remoção ou visualização dos dados adquiridos. Na figura \ref{add-sm} é apresentada a interface para adição de um novo \acl{SM} e respetivos \textit{feedbacks} para o utilizador. O processo de visualização e adição de um \acl{CM} é idêntico. 
 
 
+\newpage
+
+
+
 \begin{figure}[h]
-	\centering
-	\begin{minipage}[b]{0.495\textwidth}
+
 		\centering
-		\includegraphics[width=\textwidth]{prints-web/dataview.png}
+		\includegraphics[width=0.8\textwidth]{prints-web/dataview.png}
 		\caption{Visualização de dados destacando a filtragem por data}
 		\label{view_grap_data}
-	\end{minipage}
-	\hfill
-	\begin{minipage}[b]{0.495\textwidth}
-		\centering
-		\includegraphics[width=\textwidth]{prints-web/datatab.png}
-		\caption{Visualização tabular de dados, destacando a exportação para \acs{CSV}}
-		\label{view_tab_data}
-	\end{minipage}
+
 \end{figure}
 
 
 
+
+\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.8\textwidth]{prints-web/datatab.png}
+		\caption{Visualização tabular de dados, destacando a exportação para \acs{CSV}}
+		\label{view_tab_data}
+
+\end{figure}
+
+Na figura \ref{view_grap_data} é apresentada a interface de visualização gráfica dos dados adquiridos pelos diferentes sensores de um \acl{SM} ou por outros componentes existentes, isto é, atuação remota ou sistema videovigilância. Nesta figura é destacada a filtragem por data, a atuação remota e o botão ``Dataset View'' que permite visualizar os dados em formato tabular (figura \ref{view_tab_data}). Estes dados são passíveis de serem ordenados pelos diferentes campos bem como a sua exportação para um ficheiro do tipo \ac{CSV} através de um botão existente. 
+
+
+\newpage
+
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.9\linewidth]{prints-web/humidity.png}
+	\includegraphics[width=0.8\linewidth]{prints-web/humidity.png}
 	\caption{Visualização gráfica dos dados adquiridos por um sensor de luminosidade durante quatro dias, destacando os valores máximos, mínimos e médios}
 	\label{grafico_humidade}
 \end{figure}
 
 
 
-Na figura \ref{view_grap_data} é apresentada a interface de visualização gráfica dos dados adquiridos pelos diferentes sensores de um \acl{SM} ou por outros componentes existentes, isto é, atuação remota ou sistema videovigilância. Nesta figura é destacada a filtragem por data, a atuação remota e o botão ``Dataset View'' que permite visualizar os dados em formato tabular (figura \ref{view_tab_data}). Estes dados são passíveis de serem ordenados pelos diferentes campos bem como a sua exportação para um ficheiro do tipo \ac{CSV} através de um botão existente. 
 
 
 Seguidamente, na figura \ref{grafico_humidade} é apresentado o resultado dos dados adquiridos para o sensor de luminosidade durante quatro dias. Os dados eram recebido dos sensores de 5 em 5 minutos. Na mesma interface é possível observar o número de leituras efetuadas nesta data, o valor máximo e mínimo medido e o valor médio. Os valores 5, 20, 130 e 250 são botões que permitem alterar o numero de leituras apresentadas no gráfico. 
@@ -282,12 +308,15 @@ Seguidamente, na figura \ref{grafico_humidade} é apresentado o resultado dos da
 
 Na figura \ref{process_remota} é possível observar o processo de atuação remota através de ativação do \textit{switch}, sendo apresentada a mensagem "Enable water valve". A figura \ref{resutl_remota} apresenta o resultado da atuação remota onde é possível observar a alteração do estado de abertura da válvula (de zero para um, fechado e aberto, respetivamente).  
 
+\newpage
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\linewidth]{prints-web/dashboard1.png}
 	\caption{Interface principal após \textit{login} (\textit{dashboard})}
 	\label{ddashboard}
 \end{figure}
+
 
 
 
@@ -323,9 +352,8 @@ Na figura \ref{ddashboard} é apresentada a \textit{dashboard} do sistema após 
 \end{figure}
 
 
-\newpage
 
-Na figura \ref{vigilancia} é apresentada a incorporação do sistema de videovigilância na plataforma \textit{web} do sistema. Por fim, na figura \ref{responsiveinterface} é apresentado o acesso à \textit{dashboard} através de um dispositivo \textit{mobile} (através de um \textit{browser}), sendo possível constatar o seu \textit{design} totalmente responsivo, permitindo utilizar esta interface como ponto de partida para criação da aplicação \textit{mobile} planeada. 
+Na figura \ref{vigilancia} é apresentada a incorporação do sistema de videovigilância na plataforma \textit{web} do sistema. Por fim, na figura \ref{responsiveinterface} é apresentado o acesso à \textit{dashboard} através de um dispositivo \textit{mobile} (através de um \textit{browser}), sendo possível constatar o seu \textit{design} totalmente responsivo, permitindo utilizar esta interface como ponto de partida para a criação da aplicação \textit{mobile} planeada. 
 
 
 

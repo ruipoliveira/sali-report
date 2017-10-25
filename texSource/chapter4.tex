@@ -3,12 +3,6 @@
 \chapter{Sistema de controlo e monitorização: arquitetura e modelação}
 
 
-Este capítulo tem como principal objetivo a descrição do sistema que resultou do trabalho prático
-desta dissertação. Cada elemento do sistema é caracterizado de acordo com as suas funções, especificidades e arquitetura, bem como a forma como os elementos interagem entre si. Para além disso, é apresentado todo o processo de modelação do sistema tendo por base os requisitos do cliente.
-
- 
-
-INTERLIGAÇÃO ENTRE ISTO...
 
 %Dashboard - 
 
@@ -38,7 +32,7 @@ Dada a elevada complexidade de um sistema de informação, é possível identifi
 \end{itemize}
 
 
-
+Este capítulo tem como principal objetivo a descrição do sistema de informação que resultou do trabalho prático desta dissertação. Cada elemento do sistema é caracterizado de acordo com as suas funções, especificidades e arquitetura, bem como a forma como os elementos interagem entre si. Para além disso, é apresentado todo o processo de modelação do sistema tendo por base os requisitos do cliente que de seguida se descrevem.
 
 
 \section{Análise de requisitos}
@@ -47,7 +41,7 @@ Dada a elevada complexidade de um sistema de informação, é possível identifi
 
 %http://www.sersc.org/journals/IJSEIA/vol8_no3_2014/38.pdf
 
-Após o entendimento da descrição geral do sistema bem como todos os componentes envolvidos, segue a fase de efectuar o levantamento dos requisitos do sistema, levando-nos a entender o que o cliente deseja possibilitando a criação dos processos de negócio necessários ao sistema. Seguidamente apresentam-se os requisitos funcionais e não funcionais deste sistema. Relativamente à metodologia apresenta na secção \ref{method}, esta etapa refere-se às duas primeiras fases: Análise da viabilidade e Análise e especificação de requisitos. 
+Antes de entender a descrição geral do sistema e os componentes envolvidos, foi realizado um levantamento do requisitos do sistema, levando-nos a entender o que o cliente deseja. Estes requisitos, permitem a criação dos processos de negócio necessários. Seguidamente, apresentam-se os requisitos funcionais e não funcionais deste sistema. Relativamente à metodologia apresenta na secção \ref{method}, esta etapa refere-se às duas primeiras fases: Análise da viabilidade e Análise e especificação de requisitos. 
 
 
 \subsection{Requisitos funcionais}
@@ -166,7 +160,6 @@ Os requisitos não funcionais são todos os requisitos da aplicação relacionad
 
 
 
-\newpage
 
 \section{Descrição global do sistema}
 
@@ -200,7 +193,7 @@ Como vimos no capítulo 3, uma plantação de  Salicórnia carece de um controlo
 Tal como ilustrado na figura \ref{leira}, foram colocados módulos com sensores (SM) distribuídos estrategicamente por cada leira. Cada um desses módulos, irá comunicar com um módulo central (CM) originando uma topologia de rede em estrela.  Por sua vez, cada um destes módulos centrais irá comunicar diretamente com o servidor que receberá todos os dados adquiridos tanto pelos sensores como por atuadores, permitindo que estes sejam guardados numa base de dados específica. Os atuadores, permitirão despoletar ações que autorizam a ativação ou desativação de bombas e/ou válvulas para transferências de água de modo a melhorar as condições de cultivo da Salicórnia. 
 Os módulos centrais têm acesso à camada protocolar \ac{TCP}/\ac{IP} (Internet) para possibilitar a utilização da \acs{API} \acs{REST} desenvolvida para o efeito. 
 
-No que diz respeito às plataformas de interação com o cliente, existe uma \textit{dashboard} (plataforma \textit{web}) e uma aplicação \textit{mobile}. A \textit{dashboard} disponibiliza uma interface que apresenta as informações mais importantes para o utilizador de forma apelativa, tornando mais fácil a sua interação e respetiva leitura, possibilitando ainda a gestão de todo o sistema e realização de operações de controlo remoto. Por outro lado, a aplicação \textit{mobile} permite apenas a monitorização do cultivo da Salicórnia e receção de alertas quando estes ocorrem.
+No que diz respeito às plataformas de interação com o cliente, existe uma \textit{dashboard} (plataforma \textit{web}) e a planificação de uma aplicação \textit{mobile}. A \textit{dashboard} disponibiliza uma interface que apresenta as informações mais importantes para o utilizador de forma apelativa, tornando mais fácil a sua interação e respetiva leitura, possibilitando ainda a gestão de todo o sistema e realização de operações de controlo remoto. Por outro lado, a aplicação \textit{mobile} permite apenas a monitorização do cultivo da Salicórnia e a receção de alertas quando estes ocorrem.
 
 
 
@@ -218,16 +211,17 @@ No contexto desta dissertação é necessário reter dois conceitos principais, 
 \end{itemize}
 
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.95\linewidth]{esquemas/general-electronic-modules.pdf}
+	\caption{Esquema de componentes e respetiva comunicação entre três \ac{SM} e um \ac{CM}}
+	\label{esquema1}
+\end{figure}
+
 O cenário da figura \ref{esquema1} ilustra três \textit{Sensor Modules} que comunicam com um \acl{CM}. Cada um desses \acl{SM} possui um conjunto específico de sensores, podendo estes ser atuadores ou câmaras. Para a comunicação com o \acl{CM}, cada \acl{SM} possui um determinado módulo de comunicação que permite a transferência dos dados adquiridos pelos sensores. Posteriormente, o \acl{CM} possui também um determinado módulo de comunicação (\acs{TCP}/\acs{IP}) que permite a utilização da \ac{API} e respetivo envio ou atualização dos dados adquiridos pelo sistema. 
 
 
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=\linewidth]{esquemas/general-electronic-modules.pdf}
-	\caption{Esquema de componentes e respetiva comunicação entre três \ac{SM} e um \ac{CM}}
-	\label{esquema1}
-\end{figure}
 
 
 Seguidamente serão especificados todos os detalhes de cada módulo, uma vez que serão considerados na modelação de todo o sistema. 
@@ -309,17 +303,18 @@ Seguidamente serão descritos cada um dos casos de uso para as duas plataformas.
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[width=\linewidth]{esquemas/use-case-web.pdf}
+	\includegraphics[width=0.85\linewidth]{esquemas/use-case-web.pdf}
 	\caption{Casos de uso para a aplicação \textit{web} (\textit{dashboard}) }
 	\label{usedash}
 \end{figure}
 
 
+\newpage
 
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[width=\linewidth]{esquemas/use-case-mobile.pdf}
+	\includegraphics[width=0.85\linewidth]{esquemas/use-case-mobile.pdf}
 	\caption{Casos de uso para a aplicação \textit{mobile}}
 	\label{useMobile}
 \end{figure}
@@ -327,7 +322,6 @@ Seguidamente serão descritos cada um dos casos de uso para as duas plataformas.
 
 
 
-\newpage
 
 \begin{itemize}
 	\item \textbf{Login no sistema}: qualquer utilizador (\textit{general user}, \textit{company user} ou \textit{admin}) poderá aceder ao sistema tendo para isso que possuir uma conta registada e validada no caso de ser um \textit{general user}. Após a validação das suas credenciais (\textit{username} e \textit{password}) o utilizador poderá aceder à página inicial da \textit{dashboard} e a todo o seu conteúdo. Este caso de uso encontra-se disponível para os dois tipos de plataformas; 
@@ -408,7 +402,7 @@ Depois da análise dos requisitos desenhou-se um modelo de dados que permitisse 
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[width=\linewidth]{esquemas/database_tese.pdf}
+	\includegraphics[width=0.9\linewidth]{esquemas/database_tese.pdf}
 	\caption{Esquema relacional da estrutura da base de dados}
 	\label{esquemarelacional}
 \end{figure}
@@ -421,26 +415,28 @@ Nas tabelas \ref{tabeladb1} e \ref{tabeladb2} são descritas cada uma das entida
 \newpage
 \begin{landscape}
 	
+	
+
+
 \begin{table}[]
 	\centering
 
-	
 	\begin{tabular}{|
 			>{\columncolor[HTML]{EFEFEF}}l |l|l|l|}
 		\hline
-		\textbf{Nome da tabela} & \cellcolor[HTML]{EFEFEF}\textbf{Chave primária (\acs{PK})} & \cellcolor[HTML]{EFEFEF}\textbf{Chave estrangeira (\acs{FK})} & \cellcolor[HTML]{EFEFEF}\textbf{Descrição} \\ \hline
+		\textbf{Nome da tabela} & \cellcolor[HTML]{EFEFEF}\textbf{Chave primária (PK)} & \cellcolor[HTML]{EFEFEF}\textbf{Chave estrangeira (FK)} & \cellcolor[HTML]{EFEFEF}\textbf{Descrição} \\ \hline
 		\textbf{User} & id (auto-incrementado) & N/A & \begin{tabular}[c]{@{}l@{}}Identifica cada um dos \\ utilizadores inseridos no sistema\end{tabular} \\ \hline
-		\textbf{Token} & \begin{tabular}[c]{@{}l@{}}authtoken\_token\_pkey\\ (character varying(40))\end{tabular} & user\_id & \begin{tabular}[c]{@{}l@{}}Possui o \textit{token} de autenticação \\ do utilizador para a \ac{API}\end{tabular} \\ \hline
-		\textbf{Group} & id (auto-incrementado) & N/A & \begin{tabular}[c]{@{}l@{}}Possui todos os grupos \\ existentes:\textit{ general user},\\ \textit{company user} e \textit{admin}\end{tabular} \\ \hline
-		\textbf{UserGroups} & id (auto-incrementado) & user\_id group\_id & \begin{tabular}[c]{@{}l@{}}Permite associar um \\ utilizador a um\\  determinado grupo\end{tabular} \\ \hline
-		\textbf{Permisson} & id (auto-incrementado) & N/A & \begin{tabular}[c]{@{}l@{}}Possui todas as permissões \\ existentes (escrita, leitura,\\  delete...)\end{tabular} \\ \hline
-		\textbf{GroupPermisson} & id (auto-incrementado) & group\_id permission\_id & \begin{tabular}[c]{@{}l@{}}Associa a cada grupo \\ determinadas permissões\end{tabular} \\ \hline
-		\textbf{UserPerCompany} & id (auto-incrementado) & company\_id general\_user\_id & \begin{tabular}[c]{@{}l@{}}Associa cada \textit{general user}\\  a um \textit{company user}\end{tabular} \\ \hline
-		\textbf{CommunicationType} & id (auto-incrementado) & N/A & \begin{tabular}[c]{@{}l@{}}Identifica cada um dos tipos \\ de comunicação inseridos \\ no sistema\end{tabular} \\ \hline
-		\textbf{ControllerModule} & id (auto-incrementado) & N/A & \begin{tabular}[c]{@{}l@{}}Identifica cada um dos \\ \acl{CM} \\ inseridos no sistema\end{tabular} \\ \hline
+		\textbf{Token} & \begin{tabular}[c]{@{}l@{}}authtoken\_token\_pkey\\ (character varying(40))\end{tabular} & id\_user & \begin{tabular}[c]{@{}l@{}}Possui o \textit{token} de autenticação\\ do utilizador para a API\end{tabular} \\ \hline
+		\textbf{Group} & id (auto-incrementado) & N/A & \begin{tabular}[c]{@{}l@{}}Possui todos os tipos de grupos\\  existentes: \textit{general user}, \\ \textit{company user} e \textit{admin}\end{tabular} \\ \hline
+		\textbf{UserGroups} & id (auto-incrementado) & id\_user, id\_group & \begin{tabular}[c]{@{}l@{}}Permite associar um utilizador\\  a um determinado grupo\end{tabular} \\ \hline
+		\textbf{Permisson} & id (auto-incrementado) & N/A & \begin{tabular}[c]{@{}l@{}}Possui todas as permissões\\  existentes (escrita, leitura,\\  delete...)\end{tabular} \\ \hline
+		\textbf{GroupPermisson} & id (auto-incrementado) & id\_group, id\_permission & \begin{tabular}[c]{@{}l@{}}Associa a cada grupo \\ determinadas permissões\end{tabular} \\ \hline
+		\textbf{UserPerCompany} & id (auto-incrementado) & id\_company, id\_general\_user & \begin{tabular}[c]{@{}l@{}}Associa cada \textit{general user}\\  a um \textit{company user}\end{tabular} \\ \hline
+		\textbf{CommunicationType} & id (auto-incrementado) & N/A & \begin{tabular}[c]{@{}l@{}}Identifica cada um dos tipos\\  de comunicação inseridos\\  no sistema\end{tabular} \\ \hline
+		\textbf{ControllerModule} & id (auto-incrementado) & id\_communication & \begin{tabular}[c]{@{}l@{}}Identifica cada um dos \\ \textit{controller module}\\  inseridos no sistema\end{tabular} \\ \hline
 	\end{tabular}
-	\caption{Especificação das tabelas da base de dados existentes no sistema }
-	\label{tabeladb1}
+		\caption{Especificação das tabelas da base de dados existentes no sistema }
+		\label{tabeladb1}
 \end{table}
 
 
@@ -449,26 +445,27 @@ Nas tabelas \ref{tabeladb1} e \ref{tabeladb2} são descritas cada uma das entida
 
 
 
+
+
+
+
 \begin{table}[]
 	\centering
-
-	
 	\begin{tabular}{|
 			>{\columncolor[HTML]{EFEFEF}}l |l|l|l|}
 		\hline
-		\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{Nome da tabela}} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}\textbf{Chave primária (PK)}} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}\textbf{Chave estrangeira (FK)}} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}\textbf{Descrição}} \\ \hline
-		\textbf{CMPerCompany} & id (auto-incrementado) & \begin{tabular}[c]{@{}l@{}}cm\_id\\ company\_id\end{tabular} & \begin{tabular}[c]{@{}l@{}}Associa todos os \acl{CM}\\  a um determinado \textit{company user}\end{tabular} \\ \hline
-		\textbf{SensorModule} & id (auto-incrementado) & N/A & \begin{tabular}[c]{@{}l@{}}Identifica cada um dos \textit{Sensor} \\ \textit{Module} inseridos no sistema\end{tabular} \\ \hline
-		\textbf{SMperCM} & id (auto-incrementado) & \begin{tabular}[c]{@{}l@{}}cm\_id\\ sm\_id\end{tabular} & \begin{tabular}[c]{@{}l@{}}Associa os \textit{Sensor Modules} a \\ um determinado \acl{CM}\end{tabular} \\ \hline
-		\textbf{CommunicationTypePerSM} & id (auto-incrementado) & \begin{tabular}[c]{@{}l@{}}communication\_type\_id\\ \\ sm\_id\end{tabular} & \begin{tabular}[c]{@{}l@{}}Permite associar a um \textit{Sensor} \\ \textit{Module} um ou várias tipos \\ de comunicação\end{tabular} \\ \hline
-		\textbf{SensorType} & id (auto-incrementado) & N/A & \begin{tabular}[c]{@{}l@{}}Identifica cada um dos tipos \\ de sensores inseridos no sistema\end{tabular} \\ \hline
-		\textbf{Sensor} & id (auto-incrementado) & \begin{tabular}[c]{@{}l@{}}sensor\_type\_id\\ sm\_id\end{tabular} & \begin{tabular}[c]{@{}l@{}}Permite identificar um \\ determinado sensor\end{tabular} \\ \hline
-		\textbf{AlarmsSettings} & id (auto-incrementado) & sensor\_id & \begin{tabular}[c]{@{}l@{}}Permite guardar as configurações \\ para um determinado sensor\\ (valor máximo, mínimo, mensagem)\end{tabular} \\ \hline
-		\textbf{Reading} & id (auto-incrementado) & sensor\_id & \begin{tabular}[c]{@{}l@{}}Permite guardar as leituras de \\ um determinado sensor\end{tabular} \\ \hline
-		\textbf{Alarms} & id (auto-incrementado) & reading\_id & \begin{tabular}[c]{@{}l@{}}Armazena os alarmes que são  \\ gerados, associados a uma leitura\end{tabular} \\ \hline
+		\textbf{Nome da tabela} & \cellcolor[HTML]{EFEFEF}\textbf{Chave primária (PK)} & \cellcolor[HTML]{EFEFEF}\textbf{Chave estrangeira (FK)} & \cellcolor[HTML]{EFEFEF}\textbf{Descrição} \\ \hline
+		\textbf{CMPerCompany} & N/A & id\_cm, id\_company & \begin{tabular}[c]{@{}l@{}}Associa todos os \textit{Controller Module}\\  a um determinado \textit{company user}\end{tabular} \\ \hline
+		\textbf{SensorModule} & id (auto-incrementado) & id\_cm, id\_communication & \begin{tabular}[c]{@{}l@{}}Identifica cada um dos \textit{sensor} \\ \textit{module} inseridos no sistema\end{tabular} \\ \hline
+		\textbf{CommunicationTypePerSM} & N/A & id\_communication\_type, id\_sm & \begin{tabular}[c]{@{}l@{}}Permite associar a um \textit{sensor}\\  \textit{module} um ou várias tipos de\\  comunicação\end{tabular} \\ \hline
+		\textbf{SensorType} & id (auto-incrementado) & N/A & \begin{tabular}[c]{@{}l@{}}Identifica cada um dos tipos de \\ sensores inseridos no sistema\end{tabular} \\ \hline
+		\textbf{Sensor} & id (auto-incrementado) & id\_sensor\_type, id\_sm & \begin{tabular}[c]{@{}l@{}}Permite identificar um \\ determinado sensor\end{tabular} \\ \hline
+		\textbf{AlarmsSettings} & id (auto-incrementado) & id\_sensor & \begin{tabular}[c]{@{}l@{}}Permite guardar as configurações \\ para um determinado \\ sensor (max,min…)\end{tabular} \\ \hline
+		\textbf{Reading} & id (auto-incrementado) & id\_sensor & \begin{tabular}[c]{@{}l@{}}Permite guardar as \\ leituras de um \\ determinado sensor\end{tabular} \\ \hline
+		\textbf{Alarms} & N/A & id\_reading & \begin{tabular}[c]{@{}l@{}}Armazena os alarmes \\ que são gerados\end{tabular} \\ \hline
 	\end{tabular}
-	\caption{Especificação das tabelas  da base de dados existentes no sistema (continuação) }
-	\label{tabeladb2}
+		\caption{Especificação das tabelas  da base de dados existentes no sistema (continuação) }
+		\label{tabeladb2}
 \end{table}
 
 \end{landscape}
@@ -522,7 +519,7 @@ Relativamente à camada de acesso a dados, deverão estar presentes as funcional
 
 
 Enquanto que a arquitetura lógica se concentra nos diferentes níveis de abstração do sistema a arquitetura física foca-se na estrutura de alto nível.  
-Seguidamente são apresentados todos os componentes físicos, tanto  a nível de \textit{software} com de \textit{hardware}, que são fundamentais para ter um maior perceção do real funcionamento de todo o sistema. 
+Seguidamente são apresentados todos os componentes físicos, tanto  a nível de \textit{software} como de \textit{hardware}, que são fundamentais para ter um maior perceção do real funcionamento de todo o sistema. 
 A figura \ref{fisicablocos} representa genericamente os blocos principais do sistema proposto que seguidamente serão descritos. 
 
 
@@ -553,7 +550,7 @@ A aplicação \textit{web} é um componente essencial, enquadrando-se tanto na c
 Tal como vimos na secção \ref{django-conclusao} do Estado de Arte, a tecnologia para o desenvolvimento \textit{web} recaiu sobre a \textit{framework} Django, mais precisamente na versão 1.11 para python 2.7, sendo que como \ac{IDE} foi utilizada a verão 2016.3.3 do PyCharm. Dada a facilidade com que esta \textit{framework} tem em manipular \textit{views} e \textit{templates}, optou-se que ambas as componentes (\textit{frontend}/\textit{backend}) fossem desenvolvidas recorrendo ao Django. Para além disso, optou-se por criar uma API REST que permitisse a manipulação dos dados existentes na base de dados, sendo esta também desenvolvida paralelamente com a aplicação \textit{web}. Seguidamente será explicada a sua arquitetura.   
 
 
-\newpage
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\linewidth]{esquemas/fisica-si.pdf}
@@ -589,7 +586,7 @@ No que diz respeito à camada de apresentação na plataforma \textit{web} foram
 \subsection{\acs{API} \acs{REST}}
 
 
-Os métodos desta \ac{API} permitiram executar funções do tipo \ac{REST}. A tecnologia \ac{REST} foi apresentada por Roy Fielding na Universidade de Califórnia no ano de 2000, cujo o titulo da sua dissertação era "Architectural Styles and the Design of Network-based Software Architectures". Roy estudou um conjunto de arquiteturas de \textit{software} que usam a \textit{web} como uma plataforma para computação distribuída\cite{restpaper}. Esta tecnologia define um conjunto de princípios que possibilitam desenhar serviços \textit{web} com base nos recursos do sistema, considerando a forma com os recursos são coordenados e transferidos através de \ac{HTTP} para vários clientes nas mais diversificadas linguagens. 
+Os métodos desenvolvidos para esta \ac{API} permitirem executar funções do tipo \ac{REST}. A tecnologia \ac{REST} foi apresentada por Roy Fielding na Universidade de Califórnia no ano de 2000. Roy, estudou um conjunto de arquiteturas de \textit{software} que usam a \textit{web} como uma plataforma para computação distribuída\cite{restpaper}. Esta tecnologia define um conjunto de princípios que possibilitam desenhar serviços \textit{web} com base nos recursos existentes num determinado sistema. Nesta arquitetura, é considerada a forma com os recursos são coordenados e transferidos através do protocolo \ac{HTTP} para os vários clientes nas mais diversas linguagens. 
 
 Os métodos da API permitem executar as funções \ac{REST} usando métodos \ac{HTTP} explicitamente. Assim, torna-se fundamental perceber estes métodos para ter um melhor conhecimento do funcionamento da \ac{API}. Seguidamente são descritos os métodos mais importantes que dão suporte a cada uma das funções \ac{REST}.
 
@@ -634,7 +631,7 @@ Resumidamente e com o objetivo de explicar o esquema da figura \ref{autnetAPI}, 
 Na tabela \ref{endpointsapi} encontram-se todos os \textit{endpoints} e respetivamente funções (POST/GET/PUT) a implementar. Seguidamente será descrito como foi implementada a documentação interativa desta \ac{API}.  
 
 
-\newpage
+
 
 \begin{table}[h]
 	\centering
@@ -692,7 +689,7 @@ Para implementação do projeto anteriormente descrito e respetiva API, foi-me d
 
 
 Para o processo de \textit{deployment} do projeto optou-se pela utilização do servidor Apache juntamente com o pacote mod\_wsgi\footnote{\url{https://modwsgi.readthedocs.io/en/develop/}}. 
-Este pacote fornece uma \ac{WSGI} compatível para o alojamento de aplicações \textit{web} em Python sob o servidor \ac{HTTP} Apache. O Apache é um servidor \textit{web} \textit{open-source} mais utilizado em todo o mundo\cite{TheApacheSoftwareFoundation2016}.
+Este pacote fornece uma \ac{WSGI} compatível para o alojamento de aplicações \textit{web} em Python sob o servidor \ac{HTTP} Apache. O Apache é um dos servidores \textit{web} \textit{open-source} mais  populares em todo o mundo\cite{TheApacheSoftwareFoundation2016}.
 
 
 
@@ -728,13 +725,15 @@ Após a análise de requisitos da aplicação \textit{mobile}, optou-se por elab
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale = 0.5]{esquemas/arquitetura-mobile.pdf}
+	\includegraphics[scale = 0.4]{esquemas/arquitetura-mobile.pdf}
 	\caption{Arquitetura da aplicação \textit{mobile} com respetivas tecnologias}
 	\label{arquiteturamobile}
 \end{figure}
 
+\newpage
 
-Tal como descrito no capítulo \ref{state} (Estado da Arte), para o desenvolvimento da plataforma \textit{mobile} optou-se pela utilização de um paradigma multi-plataforma, mais concretamente a \textit{framework} Phonegap. Esta framework utilizada a tecnologia Cordova da Apache que permite a integração com recursos nativos dos dispositivos. Através dela, é possível desenvolver aplicações móveis utilizando simplesmente \ac{HTML}, \ac{CSS} e \ac{JS} sem a necessidade de depender de APIs específicas. De modo a facilitar a manipulação do \ac{JS} optou-se por utilizar a \textit{framework} AngularJS. Esta biblioteca \textit{open source} mantida pela Google desde 2010, permite abstrair a manipulação do \ac{DOM} e segue uma arquitetura \ac{MVC}\cite{Google2015}. 
+
+Tal como descrito no capítulo \ref{state} (Estado da Arte), para o desenvolvimento da aplicação \textit{mobile} optou-se pela utilização de um paradigma multi-plataforma, mais concretamente a \textit{framework} Phonegap. Esta \textit{framework} utilizada a tecnologia Cordova da Apache que permite a integração com recursos nativos dos dispositivos. Através dela, é possível desenvolver aplicações móveis utilizando simplesmente \ac{HTML}, \ac{CSS} e \ac{JS} sem a necessidade de depender de APIs específicas. De modo a facilitar a manipulação do \ac{JS} optou-se por utilizar a \textit{framework} Angular2. Esta biblioteca \textit{open source} mantida pela Google desde 2010, segue uma arquitetura \ac{MVC} e será utilizada para permitir a abstração da manipulação do \ac{DOM} e facilitar a criação/utilização de rotas\cite{Google2015}.
 
 
 
@@ -750,7 +749,7 @@ Seguidamente, são apresentados os sensores bem como os tipos de comunicação u
 
 \subsubsection{Sensores utilizados}
 
-Nesta secção apresentam-se os sensores utilizados na simulação e as suas principais características. Todos os sensores foram escolhidos tendo em conta o seu enquadramento no projeto e a sua disponibilidade em laboratório, sendo que serão ligados ao Arduino Nano. \\
+Nesta secção apresentam-se os sensores utilizados na simulação e as suas principais características. Todos os sensores foram escolhidos tendo em conta o seu enquadramento no projeto e a sua disponibilidade em laboratório. \\
 
 
 \textbf{Temperatura}
@@ -802,7 +801,7 @@ Como sensor de temperatura foi utilizado um termístor do tipo \ac{NTC}. Como vi
 
 
 
-Para simular a luminosidade incidente foi utilizado um sensor do tipo foto-resistência, neste caso o GL5528 (figura \ref{cGL5528}). Este sensor, também conhecido como \ac{LDR}, não é mais do que uma resistência variável cujo o seu valor varia conforme a intensidade da luz que incide sobre ele, isto é, à medida que a intensidade da luz aumenta, a sua resistência diminui. Este sensor tem múltiplas aplicações, entre as quais se destaca a monitorização solar, indicador da posição do sol (\textit{up}/\textit{down}), alarmes anti-roubo, alarme para abertura/fecho de portas entre outras. Como vimos no capítulo \ref{state} é um sensor de baixo custo e de fácil utilização. Na figura \ref{lum-esquema} encontra-se o esquema de ligação do componente e na tabela \ref{lum-cara} são apresentadas as principais características do sensor utilizado. 
+Para simular a luminosidade incidente foi utilizado um sensor do tipo foto-resistência, neste caso, o GL5528 (figura \ref{cGL5528}). Este sensor, também conhecido como \ac{LDR}, não é mais do que uma resistência variável cujo o seu valor varia conforme a intensidade da luz que incide sobre ele, isto é, à medida que a intensidade da luz aumenta, a sua resistência diminui. Este sensor tem múltiplas aplicações, entre as quais se destaca a monitorização solar, indicador da posição do sol (\textit{up}/\textit{down}), alarmes anti-roubo, alarme para abertura/fecho de portas entre outras. Como vimos no capítulo \ref{state} é um sensor de baixo custo e de fácil utilização. Na figura \ref{lum-esquema} encontra-se o esquema de ligação do componente e na tabela \ref{lum-cara} são apresentadas as principais características do sensor utilizado. 
 
 
 
@@ -1002,9 +1001,7 @@ No contexto desta dissertação surgiu a necessidade de implementar um sistema d
 %Neste secção é descrita a tecnologia de processamento de imagem utilizada tal como o material necessário e respetiva arquitetura. 
 
 
-\subsubsection{Biblioteca para processamento de imagem: OpenCV}
 
-O OpenCV, também conhecido por \textit{Open Source Computer Vision Library}, é uma biblioteca de \textit{software} de visão por computador de código \textit{open-source}. Esta biblioteca possui mais de 2500 algoritmos otimizados, que inclui um conjunto abrangente de algoritmos clássicos e avançados de visão computacional bem como algoritmos de \textit{machine learning}. Esses algoritmos podem ser utilizados para os mais diversos fins, como por exemplo, para detetar e reconhecer rostos, identificar objetos, classificar ações humanas em vídeos, detetar movimentos numa câmara, seguir um objetos em movimento, entre outros. Esta biblioteca é amplamente utilizada em empresas e grupos de investigação, tendo interfaces nas mais diversas linguagens: C++, C, Python, Java e MATLAB, embora seja nativamente escrita na linguagem C. OpenCV tem mais de 47 mil pessoas na sua comunidade e excede os 7 milhões de \textit{downloads}, tendo suporte para Windows, Linux e Mac OS\cite{Itseez}.
 
 
 
@@ -1019,16 +1016,19 @@ O OpenCV, também conhecido por \textit{Open Source Computer Vision Library}, é
 
 
 
-
-Desde logo, a escolha da tecnologia para processamento de imagem recaiu sobre o OpenCV não apenas por ser uma biblioteca bastante popular e possuir bastantes algoritmos implementados mas também por eu próprio possuir já algum \textit{background} e projetos desenvolvidos nesta área. Pretendia-se que este processamento fosse implementado em material já adquirido sem necessidade de gastos. Optou-se então por utilizar um \textit{Raspberry Pi 3} que juntamente com um \textit{Raspberry Pi camera module} (figura \ref{raspicam}) permitirá a aquisição de imagem e servirá também como \acl{CM} ao sistema de aquisição de dados. Na tabela \ref{cara-cam} apresentam-se algumas características deste módulo para o Raspberry Pi 3. 
+Desde logo, a escolha da tecnologia para processamento de imagem recaiu sobre o OpenCV não apenas por ser uma biblioteca bastante popular e possuir bastantes algoritmos implementados mas também por eu próprio possuir já algum \textit{background} e projetos desenvolvidos nesta área. Pretendia-se que este processamento fosse implementado em material já adquirido sem necessidade de gastos. Optou-se então por utilizar um \textit{Raspberry Pi 3} que juntamente com um \textit{Raspberry Pi camera module} (figura \ref{raspicam}) permitirá a aquisição de imagem e servirá também como \acl{CM} ao sistema de aquisição de dados. Na tabela \ref{cara-cam} apresentam-se algumas características deste módulo para o Raspberry Pi 3.
+\newpage
+ 
 
 
 \begin{figure}[!htb]
 	\centering
-	\includegraphics[width=0.3\linewidth]{img/hardware/camera_v2.jpg}
+	\includegraphics[width=0.25\linewidth]{img/hardware/camera_v2.jpg}
 	\caption{Raspberry Pi Camera Board V2 8MP 1080p}
 	\label{raspicam}
 \end{figure}
+
+
 
 
 
@@ -1053,12 +1053,10 @@ Desde logo, a escolha da tecnologia para processamento de imagem recaiu sobre o 
 
 
 
-Inicialmente, após incorporar o \textit{Raspberry Pi camera module} no Raspberry Pi 3 através do \ac{CSI} (imagem 3.5 da secção 3.6.2), testou-se a captura de vídeo através do raspivid. Esta ferramenta de linha de comando, permite testar o funcionamento do módulo, e para além disso, definir em que formato será guardado o vídeo adquirido, bem como o seu comprimento e dimensões\cite{raspivid}. 
 
 
-Posteriormente, procedeu-se ao envio da imagem capturada, sem qualquer processamento, para o Youtube Live através da ferramenta FFMpeg. O Youtube Live permite que qualquer utilizador possa realizar \textit{streaming} de vídeo, possibilitando escolher entre dois modos: alta latência e baixa latência, isto é, boa ou má qualidade. Uma das grandes vantagens desta ferramenta é manter a \textit{stream} transmitida permitindo consultá-la quando desejado. O Youtube Live utiliza o protocolo \ac{RTMP}, pertencente à camada protocolar TCP/IP, mantendo uma conexão persistente com um servidor que permite a comunicação em tempo real de vídeo ou áudio. Por outro lado, o FFMpeg é uma ferramenta líder, capaz de codificar ou descodificar qualquer tipo de conteúdo, possibilitando a criação ou conversão de \textit{stream} de vídeo/áudio em qualquer formato. É uma ferramenta \textit{open-source} sendo que a sua interação é concretizada através de linha de comandos\cite{FFmpeg2015}. 
 
-
+Inicialmente, após incorporar o \textit{Raspberry Pi camera module} no Raspberry Pi 3 através do \ac{CSI} (imagem 3.5 da secção 3.6.2), testou-se a captura de vídeo através do raspivid. Esta ferramenta de linha de comando, permite testar o funcionamento do módulo, e para além disso, definir em que formato será guardado o vídeo adquirido, bem como o seu comprimento e dimensões\cite{raspivid}. Posteriormente, procedeu-se ao envio da imagem capturada, sem qualquer processamento, para o Youtube Live através da ferramenta FFMpeg.
 
 
 Na figura \ref{arquiteturavisao} encontra-se a arquitetura do sistema de videovigilância anteriormente descrito. No próximo capítulo será apresentado o algoritmo de deteção de intrusos disponibilizado pela ferramenta OpenCV. 
@@ -1079,10 +1077,22 @@ Na figura \ref{arquiteturavisao} encontra-se a arquitetura do sistema de videovi
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[scale = 0.5]{esquemas/videostream.pdf}
+	\includegraphics[scale = 0.4]{esquemas/videostream.pdf}
 	\caption{Arquitetura do sistema de videovigilância e deteção de intrusos }
 	\label{arquiteturavisao}
 \end{figure}
+
+
+
+\subsubsection{Biblioteca para processamento de imagem: OpenCV}
+
+O OpenCV, também conhecido por \textit{Open Source Computer Vision Library}, é uma biblioteca de \textit{software} de visão por computador de código \textit{open-source}. Esta biblioteca possui mais de 2500 algoritmos otimizados, que inclui um conjunto abrangente de algoritmos clássicos e avançados de visão computacional bem como algoritmos de \textit{machine learning}. Esses algoritmos podem ser utilizados para os mais diversos fins, como por exemplo, para detetar e reconhecer rostos, identificar objetos, classificar ações humanas em vídeos, detetar movimentos numa câmara, seguir um objetos em movimento, entre outros. Esta biblioteca é amplamente utilizada em empresas e grupos de investigação, tendo interfaces nas mais diversas linguagens: C++, C, Python, Java e MATLAB, embora seja nativamente escrita na linguagem C. OpenCV tem mais de 47 mil pessoas na sua comunidade e excede os 7 milhões de \textit{downloads}, tendo suporte para Windows, Linux e Mac OS\cite{Itseez}.
+
+
+
+\subsubsection{\textit{Streaming} de vídeo: Youtube Live}
+
+ O Youtube Live permite que qualquer utilizador possa realizar \textit{streaming} de vídeo, possibilitando escolher entre dois modos: alta latência e baixa latência, isto é, boa ou má qualidade. Uma das grandes vantagens desta ferramenta é manter a \textit{stream} transmitida permitindo consultá-la quando desejado. O Youtube Live utiliza o protocolo \ac{RTMP}, pertencente à camada protocolar TCP/IP, mantendo uma conexão persistente com um servidor que permite a comunicação em tempo real de vídeo ou áudio. Por outro lado, o FFMpeg é uma ferramenta líder, capaz de codificar ou descodificar qualquer tipo de conteúdo, possibilitando a criação ou conversão de \textit{stream} de vídeo/áudio em qualquer formato. É uma ferramenta \textit{open-source} sendo que a sua interação é concretizada através de linha de comandos\cite{FFmpeg2015}. 
 
 
 
@@ -1117,7 +1127,7 @@ No que toca à comunicação entre os diferentes componentes, esta baseia-se ess
 \section{Considerações finais}
 
 
-Neste capítulo foi projetada toda a arquitetura do sistema, tendo por base os requisitos do cliente e respetiva a modelação. Para além disso, a arquitetura anteriormente apresenta foi concebida tendo como garantia que poderia ser adaptada a quaisquer outros cenários distintos do apresentado. Esta arquitetura é apoiada através da exposição de diagramas de arquitetura, casos de uso e modelo de dados. 
+Neste capítulo foi projetada toda a arquitetura do sistema, tendo por base os requisitos do cliente e a respetiva modelação. Para além disso, a arquitetura anteriormente apresenta foi concebida tendo como garantia que poderia ser adaptada a quaisquer outros cenários distintos do apresentado. Esta arquitetura é apoiada através da exposição de diagramas de arquitetura, casos de uso e modelo de dados. 
 
 
 
