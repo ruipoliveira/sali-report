@@ -21,15 +21,20 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{Verma2008}
+S.~Verma and S.~P. Singh, ``{Current and future status of herbal medicines},''
+  pp. 347--350, 2008.
+
+\bibitem{Newman2012}
+D.~J. Newman and G.~M. Cragg, ``{Natural products as sources of new drugs over
+  the 30 years from 1981 to 2010},'' pp. 311--335, 2012.
+
 \bibitem{Ventura2011}
-\BIBentryALTinterwordspacing
 Y.~Ventura, W.~A. Wuddineh, M.~Myrzabayeva, Z.~Alikulov, I.~Khozin-Goldberg,
   M.~Shpigel, T.~M. Samocha, and M.~Sagi, ``{Effect of seawater concentration
   on the productivity and nutritional value of annual Salicornia and perennial
   Sarcocornia halophytes as leafy vegetable crops},'' \emph{Scientia
-  Horticulturae}, vol. 128, no.~3, pp. 189--196, apr 2011. [Online]. Available:
-  \url{http://linkinghub.elsevier.com/retrieve/pii/S0304423811000537}
-\BIBentrySTDinterwordspacing
+  Horticulturae}, vol. 128, no.~3, pp. 189--196, apr 2011.
 
 \bibitem{jnsalic}
 \BIBentryALTinterwordspacing
@@ -39,57 +44,56 @@ Y.~Ventura, W.~A. Wuddineh, M.~Myrzabayeva, Z.~Alikulov, I.~Khozin-Goldberg,
   [Accessed: 2017-10-16]
 \BIBentrySTDinterwordspacing
 
+\bibitem{Farooq2015}
+M.~U. Farooq and M.~Waseem, ``{A Review on Internet of Things ( IoT )},''
+  \emph{International Journal of Computer Applications}, vol. 113, no.~1, pp.
+  1--7, 2015.
+
 \bibitem{desingprocess}
 \BIBentryALTinterwordspacing
-``{The Engineering Design Process}.'' [Online]. Available:
+Sciencebuddies, ``{The Engineering Design Process}.'' [Online]. Available:
   \url{https://www.sciencebuddies.org/engineering-design-process/engineering-design-process-steps.shtml}
   [Accessed: 2017-07-27]
 \BIBentrySTDinterwordspacing
 
 \bibitem{Saini2014}
-\BIBentryALTinterwordspacing
-P.~T. Hiep, H.~Noi, V.~Nam, N.~H. Hoang, H.~Noi, and V.~Nam, ``{A Review of
-  Open Source Software Development Life Cycle Models},'' \emph{International
-  Journal of Multmedia and Ubiquituous Engineering}, vol.~9, no.~5, pp.
-  391--402, 2014. [Online]. Available:
-  \url{http://dx.doi.org/10.14257/ijseia.2014.8.3.38}
-\BIBentrySTDinterwordspacing
+M.~Saini and K.~Kaur, ``{A Review of Open Source Software Development Life
+  Cycle Models},'' \emph{International Journal of Engineering and Its
+  Applications}, vol.~8, no.~3, pp. 417--434, 2014.
 
 \bibitem{JoaoSilva}
 \BIBentryALTinterwordspacing
-{Jo{\~{a}}o Silva}, ``{Sal verde, National Geographic}.'' [Online]. Available:
-  \url{https://nationalgeographic.sapo.pt/23-arquivo/as-nossas-historias/298-sal-verde}
+J.~Silva, ``{Quando o sal tem forma de planta},'' 2014. [Online]. Available:
+  \url{https://nationalgeographic.sapo.pt/natureza/actualidade/1425-salicornia-out2014}
   [Accessed: 2017-02-01]
 \BIBentrySTDinterwordspacing
 
 \bibitem{chenopodiaceae}
-S.~Beer and O.~Demina, ``{A new species of Salicornia (Chenopodiaceae) from
-  European Russia},'' pp. 253--257, 2005.
+S.~S. Beer and O.~N. Demina, ``{A new species of Salicornia (Chenopodiaceae)
+  from European Russia.}'' \emph{Willdenowia}, vol.~35, no.~2, p. 253, 2005.
 
 \bibitem{ferri}
 M.~Ferri and N.~Menezes, \emph{{Gloss{\'{a}}rio Ilustrado de Bot{\^{a}}nica}},
-  1st~ed., {Livraria Nobel}, Ed., Brasil, 1981.
+  1st~ed.\hskip 1em plus 0.5em minus 0.4em\relax Brasil: Livraria Nobel, 1981.
 
 \bibitem{Silva2000}
-\BIBentryALTinterwordspacing
 M.~H.~A. Silva, ``{Aspectos morfol{\'{o}}gicos e ecofisiol{\'{o}}gicos de
-  algumas hal{\'{o}}fitas do sapal da Ria de Aveiro},'' Ph.D. dissertation,
-  Universidade de Aveiro, 2000. [Online]. Available:
-  \url{http://ria.ua.pt/handle/10773/925}
-\BIBentrySTDinterwordspacing
+  algumas hal{\'{o}}fitas do sapal da Ria de Aveiro},'' Tese de Doutoramento,
+  Universidade de Aveiro, 2000.
 
 \bibitem{overviewsal}
-V.~Isca, A.~Seca, D.~Pinto, and A.~Silva, \emph{{An overview of Salicornia
-  genus: the phytochemical and pharmacological profile}}, natural pr~ed.,
-  V.~Gupta, Ed.\hskip 1em plus 0.5em minus 0.4em\relax Daya Publishing House,
-  New Delhi, 2014.
+V.~M. Isca, A.~M. Seca, D.~C. Pinto, and A.~M. Silva, ``{An Overview of
+  Salicornia Genus: The Phytochemical and Pharmacological Profile},'' in
+  \emph{Natural Products: Research Reviews Vol. 2}, natural pr~ed., V.~Gupta,
+  Ed.\hskip 1em plus 0.5em minus 0.4em\relax Daya Publishing House, New Delhi,
+  2014, vol.~2, pp. 145--176.
 
 \bibitem{Figueroa1987}
-E.~Figueroa, J.~Jimenez-Nieva, J.~Carranza, and C.~{Gonzalez Vilches},
-  ``{Distribucion y Nutricion Mineral de Salicornia ramosissima J. Woods,
-  Salicornia europaea L. y Salicornia dolichostachya Moss. en el estuario de
-  los rios Odiel y Tinto (Huelva, SO Espa{\~{n}}a)},'' \emph{Limnetica},
-  vol.~3, no.~2, pp. 307--310, 1987.
+E.~Figueroa, J.~Jimenez-Nieva, J.~Carranza, and C.~G. Vilches, ``{Distribucion
+  y Nutricion Mineral de Salicornia ramosissima J. Woods, Salicornia europaea
+  L. y Salicornia dolichostachya Moss. en el estuario de los rios Odiel y Tinto
+  (Huelva, SO Espa{\~{n}}a)},'' \emph{Limnetica}, vol.~3, no.~2, pp. 307--310,
+  1987.
 
 \bibitem{RaquelPinto}
 \BIBentryALTinterwordspacing
@@ -104,57 +108,51 @@ H.~Silva, G.~Caldeira, and H.~Freitas, ``{Salicornia ramosissima population
   no.~1, pp. 125--134, 2007.
 
 \bibitem{Rubio-Casal2003}
-\BIBentryALTinterwordspacing
 A.~Rubio-Casal, J.~Castillo, C.~Luque, and M.~Figueroa, ``{Influence of
   salinity on germination and seeds viability of two primary colonizers of
   Mediterranean salt pans},'' \emph{Journal of Arid Environments}, vol.~53,
-  no.~2, pp. 145--154, feb 2003. [Online]. Available:
-  \url{http://linkinghub.elsevier.com/retrieve/pii/S0140196302910426}
-\BIBentrySTDinterwordspacing
+  no.~2, pp. 145--154, feb 2003.
 
 \bibitem{Filomena2009}
 M.~Filomena, D.~J. Raposo, R.~Manuel, S.~Costa, A.~Maria, and M.~Bernardo,
   ``{Controlled atmosphere storage for the preservation of Salicornia
-  ramosissima},'' no. October 2016, 2009.
+  ramosissima},'' \emph{Int J Postharvest Technology and Innovation}, vol.~1,
+  no.~4, pp. 394--404, 2009.
 
 \bibitem{Wang2012}
-\BIBentryALTinterwordspacing
 Q.~Z. Wang, X.~F. Liu, Y.~Shan, F.~Q. Guan, Y.~Chen, X.~Y. Wang, M.~Wang, and
   X.~Feng, ``{Two new nortriterpenoid saponins from Salicornia bigelovii Torr.
   and their cytotoxic activity},'' \emph{Fitoterapia}, vol.~83, no.~4, pp.
-  742--749, jun 2012. [Online]. Available:
-  \url{http://www.ncbi.nlm.nih.gov/pubmed/22414316}
-\BIBentrySTDinterwordspacing
+  742--749, jun 2012.
 
 \bibitem{Evans2011a}
 D.~Evans, ``{A Internet das Coisas Como a pr{\'{o}}xima evolu{\c{c}}{\~{a}}o da
-  Internet est{\'{a}} mudando tudo},'' pp. 5--7, 2011.
+  Internet est{\'{a}} mudando tudo},'' pp. 1--13, 2011.
 
-\bibitem{Getting}
+\bibitem{Li2015}
+L.~Atzori, A.~Iera, and G.~Morabito, ``{The Internet of Things: A survey},''
+  \emph{Computer Networks}, vol.~54, no.~15, pp. 2787--2805, oct 2010.
+
+\bibitem{KevinAshton}
+K.~Ashton, ``{That Internet of Things Thing},'' jun 2009.
+
+\bibitem{Rivera2014}
 \BIBentryALTinterwordspacing
-B.~Getting, ``{Basic Definitions: Web 1.0, Web. 2.0, Web 3.0 | Practical
-  Ecommerce}.'' [Online]. Available:
-  \url{http://www.practicalecommerce.com/articles/464-Basic-Definitions-Web-1-0-Web-2-0-Web-3-0}
-  [Accessed: 2017-02-20]
+J.~Rivera and R.~van~der Meulen, ``{Gartner Says 4.9 Billion Connected "Things"
+  Will Be in Use in 2015},'' pp. 9--10, 2014. [Online]. Available:
+  \url{http://www.gartner.com/newsroom/id/2905717} [Accessed: 2017-10-28]
 \BIBentrySTDinterwordspacing
 
-\bibitem{Lovato2014}
-\BIBentryALTinterwordspacing
-J.~Lovato, ``{Google's evolution in 10 years},'' 2014. [Online]. Available:
-  \url{http://www.mediavisioninteractive.com/blog/search-enginenews/looking-back-moving-forward-google-evolution/}
-  [Accessed: 2017-02-20]
-\BIBentrySTDinterwordspacing
+\bibitem{Gubbi2013}
+J.~Gubbi, R.~Buyya, S.~Marusic, and M.~Palaniswami, ``{Internet of Things
+  (IoT): A vision, architectural elements, and future directions},''
+  \emph{Future Generation Computer Systems}, vol.~29, no.~7, pp. 1645--1660,
+  sep 2013.
 
-\bibitem{Our2013}
-T.~Our, ``{Resume : Context Aware Computing for The Internet of Things : A
-  Survey Article 2013},'' pp. 1--5, 2013.
-
-\bibitem{Rowley2007}
-\BIBentryALTinterwordspacing
-J.~Rowley, ``{The wisdom hierarchy: representations of the DIKW hierarchy},''
-  \emph{Journal of Information Science}, vol.~33, no.~2, pp. 163--180, 2007.
-  [Online]. Available: \url{http://alturl.com/7qike}
-\BIBentrySTDinterwordspacing
+\bibitem{-2013}
+F.~TongKe, ``{Smart Agriculture Based on Cloud Computing and IOT},''
+  \emph{Journal of Convergence Information Technology}, vol.~8, no.~2, pp.
+  210--216, jan 2013.
 
 \bibitem{MySQL2011}
 \BIBentryALTinterwordspacing
@@ -164,13 +162,13 @@ MySQL, ``{MySQL :: About MySQL},'' 2011. [Online]. Available:
 
 \bibitem{why-msql}
 \BIBentryALTinterwordspacing
-``{MySQL :: Why MySQL?}'' [Online]. Available:
+------, ``{MySQL :: Why MySQL?}'' [Online]. Available:
   \url{http://www.mysql.com/why-mysql/} [Accessed: 2017-10-24]
 \BIBentrySTDinterwordspacing
 
 \bibitem{linuxsqlserver}
 \BIBentryALTinterwordspacing
-``{SQL Server 2017 on Windows and Linux | Microsoft},'' 2017. [Online].
+Microsoft, ``{SQL Server 2017 on Windows and Linux},'' 2017. [Online].
   Available: \url{https://www.microsoft.com/en-us/sql-server/sql-server-2017}
   [Accessed: 2017-07-17]
 \BIBentrySTDinterwordspacing
@@ -186,23 +184,17 @@ MySQL, ``{MySQL :: About MySQL},'' 2011. [Online]. Available:
 \BIBentryALTinterwordspacing
 DB-Engines, ``{Historical Trend of the Popularity Ranking of Database
   Management Systems},'' 2014. [Online]. Available:
-  \url{http://db-engines.com/en/ranking{\%}7B{\%}5C{\_}{\%}7Dtrend} [Accessed:
-  2017-07-13]
+  \url{https://db-engines.com/en/ranking{\_}trend} [Accessed: 2017-07-13]
 \BIBentrySTDinterwordspacing
 
 \bibitem{Lopez2009}
-\BIBentryALTinterwordspacing
-I.~V. L{\'{o}}pez and G.~B. Guti{\'{e}}rrez, ``{El Benchmark TPC-H en MySQL y
-  PostgreSQL},'' \emph{Ingenieria.Lm.Uasnet.Mx}, pp. 1--7, 2009. [Online].
-  Available:
-  \url{http://ingenieria.lm.uasnet.mx/sitio/congreso/documentos/iso15.pdf}
-\BIBentrySTDinterwordspacing
+B.~Beltr{\'{a}}n, ``{El Benchmark TPC-H en MySQL y PostgreSQL},''
+  \emph{T{\'{e}}cnicas Avanzadas de Bases de Datos}, pp. 1--7, 2008.
 
 \bibitem{Microsoft2016}
 \BIBentryALTinterwordspacing
 Microsoft, ``{ASP.NET Overview},'' p.~1, 2016. [Online]. Available:
-  \url{https://msdn.microsoft.com/en-us/library/4w3ex9c2.aspx} [Accessed:
-  2017-07-17]
+  \url{https://msdn.microsoft.com/en-us/library/4w3ex9c2.aspx}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Flask2014}
@@ -212,12 +204,8 @@ Flask, ``{Welcome | Flask (A Python Microframework)},'' 2014. [Online].
 \BIBentrySTDinterwordspacing
 
 \bibitem{Deacon2005}
-\BIBentryALTinterwordspacing
-J.~Deacon, ``{Model-View-Controller (MVC) Architecture},'' \emph{JOHN DEACON
-  Computer Systems Development, Consulting {\&} Training}, pp. 1--6, 2009.
-  [Online]. Available:
-  \url{http://www.jdl.co.uk/briefings/index.html{\%}5C{\#}mvc}
-\BIBentrySTDinterwordspacing
+J.~Deacon, ``{Model-View-Controller (MVC) Architecture},'' \emph{Computer
+  Systems Development, Consulting {\&} Training}, pp. 1--6, 2009.
 
 \bibitem{Sugrue2013}
 J.~Sugrue, \emph{{Beginning Backbone.js}}, 2013.
@@ -245,21 +233,15 @@ Ionic, ``{Welcome to Ionic - Ionic Framework},'' 2016. [Online]. Available:
 \BIBentrySTDinterwordspacing
 
 \bibitem{Kang2015}
-\BIBentryALTinterwordspacing
 I.~S. Kang, R.~Morais, and W.~Santos, ``{Padr{\~{a}}o TISS: Um Estudo de Caso
-  sobre o uso de web services para o seu desenvolvimento},'' \emph{12th
+  sobre o uso de web services para o seu desenvolvimento},'' in \emph{12th
   CONTECSI International Conference on Information Systems and Technology
-  Management}, pp. 1--17, 2015. [Online]. Available:
-  \url{http://www.contecsi.fea.usp.br/envio/index.php/contecsi/12CONTECSI/paper/view/2185}
-\BIBentrySTDinterwordspacing
+  Management}, S{\~{a}}o Paulo, 2015, pp. 1--17.
 
 \bibitem{restpaper}
-\BIBentryALTinterwordspacing
-R.~T. Fielding, ``{UNIVERSITY OF CALIFORNIA, IRVINE Architectural Styles and
-  the Design of Network-based Software Architectures},'' 2000. [Online].
-  Available:
-  \url{http://jpkc.fudan.edu.cn/picture/article/216/35/4b/22598d594e3d93239700ce79bce1/7ed3ec2a-03c2-49cb-8bf8-5a90ea42f523.pdf}
-\BIBentrySTDinterwordspacing
+R.~T. Fielding, ``{Architectural Styles and the Design of Network-based
+  Software Architectures},'' Tese de Doutoramento, University of California,
+  2000.
 
 \bibitem{restdjango}
 \BIBentryALTinterwordspacing
@@ -276,11 +258,7 @@ Flask-RESTful, ``{Flask-RESTful — Flask-RESTful 0.2.1 documentation},'' 2017.
 \BIBentrySTDinterwordspacing
 
 \bibitem{microcontrollers}
-\BIBentryALTinterwordspacing
 G.~Gridling and B.~Weiss, ``{Introduction to Microcontrollers},'' 2007.
-  [Online]. Available:
-  \url{https://ti.tuwien.ac.at/ecs/teaching/courses/mclu/theory-material/Microcontroller.pdf}
-\BIBentrySTDinterwordspacing
 
 \bibitem{Banzi2012}
 \BIBentryALTinterwordspacing
@@ -291,7 +269,7 @@ M.~Banzi, D.~Cuartielles, T.~Igoe, G.~Martion, and D.~Mellis, ``{Arduino -
 
 \bibitem{arduinonanouser}
 \BIBentryALTinterwordspacing
-``{Arduino Nano - User Manual}.'' [Online]. Available:
+Arduino, ``{Arduino Nano - User Manual}.'' [Online]. Available:
   \url{https://www.arduino.cc/en/uploads/Main/ArduinoNanoManual23.pdf}
 \BIBentrySTDinterwordspacing
 
@@ -311,23 +289,20 @@ J.~Melorose, R.~Perroy, and S.~Careas, ``{Arduino Nano},'' 2015. [Online].
 
 \bibitem{REOTEMPInstrumentCorporation}
 \BIBentryALTinterwordspacing
-{REOTEMP Instrument Corporation}, ``{Thermocouple-Thermocouples-What is a
+{Reotemp Instrument Corporation}, ``{Thermocouple-Thermocouples-What is a
   thermocouple-Types of thermocouples}.'' [Online]. Available:
   \url{http://www.thermocoupleinfo.com/index.htm} [Accessed: 2017-07-17]
 \BIBentrySTDinterwordspacing
 
 \bibitem{TemperatureSensors}
 \BIBentryALTinterwordspacing
-``{Temperature Sensors Watlow Educational Series}.'' [Online]. Available:
-  \url{https://kontrolotomasyon.files.wordpress.com/2016/10/dt{\_}temperaturesensors{\%}5C{\_}thewatlow{\%}5C{\_}25ekim2016.pdf}
+{Watlow Educational Series}, \emph{{Temperature Sensors Watlow Educational
+  Series}}. [Online]. Available:
+  \url{https://kontrolotomasyon.files.wordpress.com/2015/09/dttemperaturesensors2015v1{\_}29eylul2015.pdf}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Argus2010}
-\BIBentryALTinterwordspacing
-Argus, ``{Light and lighting contril in greenhouses},'' no. August, pp. 1--29,
-  2010. [Online]. Available:
-  \url{http://www.arguscontrols.com/resources/Light-and-Lighting-Control-in-Greenhouses.pdf}
-\BIBentrySTDinterwordspacing
+Argus, ``{Light and lighting contril in greenhouses},'' pp. 1--29, 2010.
 
 \bibitem{World2014}
 \BIBentryALTinterwordspacing
@@ -340,25 +315,19 @@ L.~World, ``{Libelium World › Libelium World : Smart Water Sensors to monitor
 
 \bibitem{sall}
 \BIBentryALTinterwordspacing
-``{Salinity Sensor (Order Code SAL-BTA) Collecting Data with the Salinity
-  Sensor}.'' [Online]. Available:
+Vernier, ``{Salinity Sensor (Order Code SAL-BTA) Collecting Data with the
+  Salinity Sensor}.'' [Online]. Available:
   \url{https://www.vernier.com/files/manuals/sal-bta.pdf}
 \BIBentrySTDinterwordspacing
 
 \bibitem{Bruno2002}
-\BIBentryALTinterwordspacing
 R.~Bruno, M.~Conti, and E.~Gregori, ``{Bluetooth : Architecture , Protocols and
   Scheduling Algorithms},'' \emph{Cluster Computing}, vol.~5, no.~2, pp.
-  117--131, 2002. [Online]. Available:
-  \url{http://link.springer.com/10.1023/A:1013989524865}
-\BIBentrySTDinterwordspacing
+  117--131, 2002.
 
 \bibitem{BluetoothTM2001}
-\BIBentryALTinterwordspacing
 Bluetooth(TM), ``{Bluetooth Specification},'' \emph{Specification of the
-  Bluetooth System}, vol.~1, p. 1084, 2001. [Online]. Available:
-  \url{http://www.bluetooth.com}
-\BIBentrySTDinterwordspacing
+  Bluetooth System}, vol.~1, p. 1084, 2001.
 
 \bibitem{Paper2005}
 \BIBentryALTinterwordspacing
@@ -375,11 +344,8 @@ W.~Paper, ``{IEEE 802.11g The New Mainstream Wireless LAN Standard},'' 2005.
 \BIBentrySTDinterwordspacing
 
 \bibitem{Rahman2015}
-\BIBentryALTinterwordspacing
 A.~B.~A. Rahman, ``{Comparison of Internet of Things ( IoT ) Data Link
-  Protocols},'' pp. 1--21, 2015. [Online]. Available:
-  \url{http://www.cse.wustl.edu/{~}jain/cse570-15/index.html}
-\BIBentrySTDinterwordspacing
+  Protocols},'' \emph{Comparison of Internet of Things}, pp. 1--21, 2015.
 
 \bibitem{LinkLabs2015}
 \BIBentryALTinterwordspacing
@@ -396,7 +362,7 @@ Semtech, ``{What Is LoRa? | Semtech},'' p.~1, 2017. [Online]. Available:
 
 \bibitem{sigfoxsite}
 \BIBentryALTinterwordspacing
-``{Sigfox Technology Overview | Sigfox}.'' [Online]. Available:
+Sigfox, ``{Sigfox Technology Overview},'' 2017. [Online]. Available:
   \url{https://www.sigfox.com/en/sigfox-iot-technology-overview} [Accessed:
   2017-07-18]
 \BIBentrySTDinterwordspacing
@@ -422,9 +388,8 @@ N.~Josuttis, ``{Designing a 3-Tier-Architecture},'' \emph{Design}, 2001.
 
 \bibitem{gravatar}
 \BIBentryALTinterwordspacing
-``{Gravatar - Globally Recognized Avatars}.'' [Online]. Available:
-  \url{http://pt.gravatar.com/site/implement https://secure.gravatar.com/}
-  [Accessed: 2017-06-10]
+Gravatar, ``{Gravatar - Globally Recognized Avatars}.'' [Online]. Available:
+  \url{http://pt.gravatar.com/site/implement} [Accessed: 2017-06-10]
 \BIBentrySTDinterwordspacing
 
 \bibitem{tokenREST}
@@ -450,8 +415,7 @@ T.~Christie, ``{Django REST framework TokenAuthentication},'' 2016. [Online].
 \bibitem{TheApacheSoftwareFoundation2016}
 \BIBentryALTinterwordspacing
 {The Apache Software Foundation}, ``{Foundation Project},'' 2016. [Online].
-  Available: \url{https://www.apache.org/foundation/
-  http://apache.org/foundation/} [Accessed: 2017-06-12]
+  Available: \url{http://apache.org/foundation/} [Accessed: 2017-06-12]
 \BIBentrySTDinterwordspacing
 
 \bibitem{Google2015}
@@ -469,26 +433,26 @@ Google, ``{AngularJS — Superheroic JavaScript MVW Framework},'' 2015.
 
 \bibitem{lum-data}
 \BIBentryALTinterwordspacing
-L.~{LIDA OPTICAL{\&}ELECTRONIC CO.}, ``{Datasheet, CdS Photoconductive cells,
-  GL5528},'' p.~1. [Online]. Available:
-  \url{https://pi.gate.ac.uk/pages/airpi-files/PD0001.pdf} [Accessed:
-  2017-05-24]
+L.~{Lida Optical {\&} Electronic Co.}, ``{Datasheet, CdS Photoconductive cells,
+  GL5528},'' Tech. Rep. [Online]. Available:
+  \url{https://pi.gate.ac.uk/pages/airpi-files/PD0001.pdf}
 \BIBentrySTDinterwordspacing
 
 \bibitem{GuangzhouHCInformationTechnologyCo.2011}
-L.~{Guangzhou HC Information Technology Co .}, ``{HC06 Datasheet},'' no.~13,
-  pp. 1--17, 2011.
+L.~{Guangzhou HC Information Technology Co .}, ``{HC06 Datasheet},'' pp. 1--17,
+  2011.
 
 \bibitem{raspivid}
 \BIBentryALTinterwordspacing
-``{raspivid - Raspberry Pi Documentation}.'' [Online]. Available:
+Raspberrypi.org, ``{raspivid - Raspberry Pi Documentation}.'' [Online].
+  Available:
   \url{https://www.raspberrypi.org/documentation/usage/camera/raspicam/raspivid.md}
   [Accessed: 2017-07-25]
 \BIBentrySTDinterwordspacing
 
 \bibitem{Itseez}
 \BIBentryALTinterwordspacing
-Itseez, ``{About - OpenCV library}.'' [Online]. Available:
+Itseez, ``{About - OpenCV library},'' 2000. [Online]. Available:
   \url{http://opencv.org/about.html} [Accessed: 2017-05-19]
 \BIBentrySTDinterwordspacing
 
@@ -498,26 +462,30 @@ FFmpeg, ``{About FFmpeg},'' 2015. [Online]. Available:
   \url{https://www.ffmpeg.org/about.html} [Accessed: 2017-07-25]
 \BIBentrySTDinterwordspacing
 
+\bibitem{quickstart}
+\BIBentryALTinterwordspacing
+D.~R. Framework, ``{Quickstart - Django REST framework}.'' [Online]. Available:
+  \url{http://www.django-rest-framework.org/tutorial/quickstart/} [Accessed:
+  2017-10-30]
+\BIBentrySTDinterwordspacing
+
 \bibitem{streamlive}
 \BIBentryALTinterwordspacing
-``{Stream Live with Raspberry Pi Camera}.'' [Online]. Available:
+Maker.io, ``{Stream Live with Raspberry Pi Camera}.'' [Online]. Available:
   \url{https://www.digikey.com/en/maker/blogs/streaming-live-to-youtube-and-facebook-using-raspberry-pi-camera/969a7932d47d42a79ba72c81da4d9b66}
   [Accessed: 2017-07-29]
 \BIBentrySTDinterwordspacing
 
 \bibitem{Dalal}
-\BIBentryALTinterwordspacing
 N.~Dalal and B.~Triggs, ``{Histograms of Oriented Gradients for Human
   Detection},'' \emph{Proc. Int. Conf. Computer Vision and Pattern
-  Recognition}, pp. 886--893, 2005. [Online]. Available:
-  \url{http://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf}
-\BIBentrySTDinterwordspacing
+  Recognition}, pp. 886--893, 2005.
 
 \bibitem{featuredetection}
 \BIBentryALTinterwordspacing
-``{Feature Detection — OpenCV 2.4.13.2 documentation [ONLINE]}.'' [Online].
+OpenCv, ``{Feature Detection - OpenCV 2.4.13.2 documentation}.'' [Online].
   Available:
-  \url{http://docs.opencv.org/2.4/modules/gpu/doc/object{\_}detection.html}
+  \url{https://docs.opencv.org/2.4/modules/gpu/doc/object{\_}detection.html}
   [Accessed: 2017-07-10]
 \BIBentrySTDinterwordspacing
 

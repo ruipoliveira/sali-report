@@ -12,7 +12,7 @@
 \contentsline {section}{\numberline {2.2}Condi\IeC {\c c}\IeC {\~o}es ideais de cultivo da Salic\IeC {\'o}rnia}{8}{section.2.2}
 \contentsline {section}{\numberline {2.3}Import\IeC {\^a}ncia da planta}{9}{section.2.3}
 \contentsline {section}{\numberline {2.4}Evolu\IeC {\c c}\IeC {\~a}o tecnol\IeC {\'o}gica: o \acl {IoT}}{9}{section.2.4}
-\contentsline {section}{\numberline {2.5}Considera\IeC {\c c}\IeC {\~o}es finais}{11}{section.2.5}
+\contentsline {section}{\numberline {2.5}Considera\IeC {\c c}\IeC {\~o}es finais}{12}{section.2.5}
 \contentsline {chapter}{\numberline {3}Estado da arte}{13}{chapter.3}
 \contentsline {section}{\numberline {3.1}Conceitos tecnol\IeC {\'o}gicos}{13}{section.3.1}
 \contentsline {section}{\numberline {3.2}\acl {SGBD}}{14}{section.3.2}
@@ -54,7 +54,7 @@
 \contentsline {subsection}{\numberline {4.1.2}Requisitos n\IeC {\~a}o funcionais}{32}{subsection.4.1.2}
 \contentsline {section}{\numberline {4.2}Descri\IeC {\c c}\IeC {\~a}o global do sistema}{32}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Componentes}{33}{subsection.4.2.1}
-\contentsline {subsubsection}{\acl {SM}}{34}{section*.65}
+\contentsline {subsubsection}{\acl {SM}}{34}{section*.64}
 \contentsline {subsubsection}{\acl {CM}}{35}{section*.68}
 \contentsline {section}{\numberline {4.3}Modela\IeC {\c c}\IeC {\~a}o}{35}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Entidades envolvidas}{35}{subsection.4.3.1}
@@ -63,7 +63,7 @@
 \contentsline {section}{\numberline {4.4}Arquitetura l\IeC {\'o}gica}{43}{section.4.4}
 \contentsline {section}{\numberline {4.5}Arquitetura f\IeC {\'\i }sica}{44}{section.4.5}
 \contentsline {subsection}{\numberline {4.5.1}Sistema de informa\IeC {\c c}\IeC {\~a}o}{45}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Aplica\IeC {\c c}\IeC {\~a}o web}{45}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.2}Aplica\IeC {\c c}\IeC {\~a}o \textit {web}}{45}{subsection.4.5.2}
 \contentsline {subsection}{\numberline {4.5.3}\acs {API} \acs {REST}}{46}{subsection.4.5.3}
 \contentsline {subsection}{\numberline {4.5.4}Documenta\IeC {\c c}\IeC {\~a}o interativa}{48}{subsection.4.5.4}
 \contentsline {subsection}{\numberline {4.5.5}Implementa\IeC {\c c}\IeC {\~a}o do sistema}{49}{subsection.4.5.5}
@@ -102,7 +102,7 @@
 \contentsline {section}{\numberline {7.1}Conclus\IeC {\~o}es}{87}{section.7.1}
 \contentsline {section}{\numberline {7.2}Problemas encontrados}{88}{section.7.2}
 \contentsline {section}{\numberline {7.3}Trabalho futuro}{88}{section.7.3}
-\contentsline {chapter}{\numberline {A}\textit {Mockup} da aplica\IeC {\c c}\IeC {\~a}o \textit {mobile}}{96}{appendix.A}
+\contentsline {chapter}{\numberline {A}\textit {Mockup} da aplica\IeC {\c c}\IeC {\~a}o \textit {mobile}}{97}{appendix.A}
 \contentsline {chapter}{\numberline {B}Implementa\IeC {\c c}\IeC {\~a}o do \textit {trigger} \acs {SQL} }{99}{appendix.B}
 \contentsline {chapter}{\numberline {C}\acl {API} \acs {REST}}{101}{appendix.C}
 \contentsline {chapter}{\numberline {D}Interliga\IeC {\c c}\IeC {\~a}o de componentes}{105}{appendix.D}

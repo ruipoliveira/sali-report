@@ -25,99 +25,71 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: tese.bib
+Repeated entry---line 481 of file tese.bib
+ : @misc{Microsoft2016
+ :                    ,
+I'm skipping whatever remains of this entry
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
-Warning--there is url but no urldate in Ventura2011
-Warning--there is url but no urldate in Saini2014
-Warning--empty journal in chenopodiaceae
-Warning--missing publisher in ferri
-Warning--there is url but no urldate in Silva2000
 Warning--edition ordinal word "Natural Pr" may be too high (or improper) for conversion in overviewsal
-Warning--there is url but no urldate in Rubio-Casal2003
-Warning--empty journal in Filomena2009
-Warning--there is url but no urldate in Wang2012
-Warning--empty journal in Evans2011a
-Warning--empty journal in Our2013
-Warning--there is url but no urldate in Rowley2007
-Warning--there is url but no urldate in Lopez2009
-Warning--there is url but no urldate in Deacon2005
+Warning--there is url but no urldate in Microsoft2016
 Warning--missing publisher in Sugrue2013
 Warning--missing publisher in Holovaty2009
-Warning--there is url but no urldate in Kang2015
-Warning--empty journal in restpaper
-Warning--there is url but no urldate in restpaper
-Warning--empty journal in microcontrollers
-Warning--there is url but no urldate in microcontrollers
-Warning--empty author in arduinonanouser
-Warning--empty journal in arduinonanouser
-Warning--empty year in arduinonanouser
 Warning--there is url but no urldate in arduinonanouser
-Warning--empty author in TemperatureSensors
-Warning--empty journal in TemperatureSensors
+Warning--missing publisher in TemperatureSensors
 Warning--empty year in TemperatureSensors
 Warning--there is url but no urldate in TemperatureSensors
-Warning--empty journal in Argus2010
-Warning--there is url but no urldate in Argus2010
-Warning--empty author in sall
-Warning--empty journal in sall
-Warning--empty year in sall
 Warning--there is url but no urldate in sall
-Warning--there is url but no urldate in Bruno2002
-Warning--there is url but no urldate in BluetoothTM2001
 Warning--empty journal in Paper2005
 Warning--there is url but no urldate in Paper2005
-Warning--empty journal in Rahman2015
-Warning--there is url but no urldate in Rahman2015
 Warning--there is url but no urldate in Turban1996
 Warning--there is url but no urldate in Josuttis2001
-Warning--empty author in temp-dta
-Warning--empty journal in temp-dta
-Warning--empty year in temp-dta
 Warning--there is url but no urldate in temp-dta
-Warning--empty journal in GuangzhouHCInformationTechnologyCo.2011
-Warning--there is url but no urldate in Dalal
+Warning--missing institution in lum-data
+Warning--empty year in lum-data
+Warning--there is url but no urldate in lum-data
 
 Done.
-You've used 74 entries,
+You've used 79 entries,
             4106 wiz_defined-function locations,
-            1277 strings with 20069 characters,
-and the built_in function-call counts, 36426 in all, are:
-= -- 2876
-> -- 632
-< -- 180
-+ -- 333
-- -- 116
-* -- 1759
-:= -- 6151
-add.period$ -- 145
-call.type$ -- 74
-change.case$ -- 75
-chr.to.int$ -- 405
-cite$ -- 123
-duplicate$ -- 2772
-empty$ -- 3183
-format.name$ -- 135
-if$ -- 8145
+            1315 strings with 19872 characters,
+and the built_in function-call counts, 41716 in all, are:
+= -- 3337
+> -- 752
+< -- 244
++ -- 399
+- -- 135
+* -- 1885
+:= -- 6841
+add.period$ -- 156
+call.type$ -- 79
+change.case$ -- 78
+chr.to.int$ -- 555
+cite$ -- 96
+duplicate$ -- 3144
+empty$ -- 3612
+format.name$ -- 159
+if$ -- 9452
 int.to.chr$ -- 0
-int.to.str$ -- 74
-missing$ -- 534
-newline$ -- 367
-num.names$ -- 64
-pop$ -- 1523
+int.to.str$ -- 79
+missing$ -- 613
+newline$ -- 350
+num.names$ -- 78
+pop$ -- 1667
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 4
-skip$ -- 2755
+skip$ -- 3198
 stack$ -- 0
-substring$ -- 999
-swap$ -- 1846
-text.length$ -- 45
+substring$ -- 1356
+swap$ -- 2236
+text.length$ -- 59
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 74
-warning$ -- 49
-while$ -- 151
-width$ -- 76
-write$ -- 755
-(There were 49 warnings)
+type$ -- 79
+warning$ -- 17
+while$ -- 190
+width$ -- 81
+write$ -- 779
+(There was 1 error message)
