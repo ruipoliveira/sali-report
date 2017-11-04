@@ -42,7 +42,7 @@
 \BOOKMARK [2][-]{subsection.3.7.3}{Sensor de salinidade}{section.3.7}% 42
 \BOOKMARK [1][-]{section.3.8}{Tecnologias de comunica\347\343o}{chapter.3}% 43
 \BOOKMARK [2][-]{subsection.3.8.1}{Bluetooth}{section.3.8}% 44
-\BOOKMARK [2][-]{subsection.3.8.2}{Wi-Fi \(IEEE 802.11\)}{section.3.8}% 45
+\BOOKMARK [2][-]{subsection.3.8.2}{Wi-Fi}{section.3.8}% 45
 \BOOKMARK [2][-]{subsection.3.8.3}{Zigbee}{section.3.8}% 46
 \BOOKMARK [2][-]{subsection.3.8.4}{LoRa}{section.3.8}% 47
 \BOOKMARK [2][-]{subsection.3.8.5}{Sigfox}{section.3.8}% 48
@@ -68,11 +68,11 @@
 \BOOKMARK [2][-]{subsection.4.5.5}{Implementa\347\343o do sistema}{section.4.5}% 68
 \BOOKMARK [2][-]{subsection.4.5.6}{Aplica\347\343o mobile}{section.4.5}% 69
 \BOOKMARK [2][-]{subsection.4.5.7}{Simula\347\343o em hardware}{section.4.5}% 70
-\BOOKMARK [3][-]{section*.83}{Sensores utilizados}{subsection.4.5.7}% 71
-\BOOKMARK [3][-]{section*.91}{Comunica\347\343o}{subsection.4.5.7}% 72
+\BOOKMARK [3][-]{section*.84}{Sensores utilizados}{subsection.4.5.7}% 71
+\BOOKMARK [3][-]{section*.92}{Comunica\347\343o}{subsection.4.5.7}% 72
 \BOOKMARK [2][-]{subsection.4.5.8}{Sistema de videovigil\342ncia }{section.4.5}% 73
-\BOOKMARK [3][-]{section*.100}{Biblioteca para processamento de imagem: OpenCV}{subsection.4.5.8}% 74
-\BOOKMARK [3][-]{section*.101}{Streaming de v\355deo: Youtube Live}{subsection.4.5.8}% 75
+\BOOKMARK [3][-]{section*.101}{Biblioteca para processamento de imagem: OpenCV}{subsection.4.5.8}% 74
+\BOOKMARK [3][-]{section*.102}{Streaming de v\355deo: Youtube Live}{subsection.4.5.8}% 75
 \BOOKMARK [1][-]{section.4.6}{Diagrama de componentes}{chapter.4}% 76
 \BOOKMARK [1][-]{section.4.7}{Considera\347\365es finais}{chapter.4}% 77
 \BOOKMARK [0][-]{chapter.5}{Implementa\347\343o}{}% 78
@@ -104,5 +104,5 @@
 \BOOKMARK [0][-]{appendix.A}{Mockup da aplica\347\343o mobile}{}% 104
 \BOOKMARK [0][-]{appendix.B}{Implementa\347\343o do trigger SQL }{}% 105
 \BOOKMARK [0][-]{appendix.C}{Application Programming Interface REST}{}% 106
-\BOOKMARK [0][-]{appendix.D}{Interliga\347\343o de componentes}{}% 107
-\BOOKMARK [0][-]{appendix.E}{Packages utilizados}{}% 108
+\BOOKMARK [0][-]{appendix.D}{Packages utilizados}{}% 107
+\BOOKMARK [0][-]{appendix.E}{Interliga\347\343o de componentes}{}% 108

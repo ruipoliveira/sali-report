@@ -113,7 +113,7 @@ De modo a tornar o sistema genérico foram impostos os seguintes requisitos adic
 	
 	\item Consultar a documentação da \ac{API} de modo interativo;
 	
-	\item Gerar e consultar  \textit{token} de autenticação para utilização da \ac{API};
+	\item Gerar e consultar os \textit{tokens} de autenticação para utilização da \ac{API};
 	
 	\item Alterar configurações base do utilizador (primeiro nome, último nome, email, etc.).
 	
@@ -216,7 +216,7 @@ No contexto desta dissertação é necessário reter dois conceitos principais, 
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.95\linewidth]{esquemas/general-electronic-modules.pdf}
+	\includegraphics[width=0.9\linewidth]{esquemas/general-electronic-modules.pdf}
 	\caption{Esquema de componentes e respetiva comunicação entre três \ac{SM} e um \ac{CM}}
 	\label{esquema1}
 \end{figure}
@@ -238,7 +238,7 @@ Seguidamente serão especificados todos os detalhes de cada módulo, uma vez que
 Um \acl{SM} consiste num microcontrolador responsável pela aquisição de dados provenientes dos mais diversos tipos de sensores, podendo estes ser atuadores ou câmaras. No caso de se tratar de um atuador, isto é, válvulas, bombas, contadores, pás ou cancelas, apenas serão lidos valores binários. Caso se trate de uma câmara, todo o processamento é feito internamente nesta, sendo que o sistema apenas irá receber o \ac{IP} da câmara ou um \ac{URL} para um servidor de \ac{RTMP}.  
 
 
-Tal como referido anteriormente, cada \acl{SM} terá que utilizar um determinado módulo de comunicação para possibilitar a transferência dos dados adquiridos para o módulo central. Para além disso, pretende-se que o \acl{SM} em condições extremas, possa tomar decisões de atuação, isto é, caso seja lido um valor fora do padrão e que seja necessário a ativação de um atuador, este deverá ser auto suficiente em tomar esta decisão, sem necessidade de intervenção do utilizador. 
+Tal como referido anteriormente, cada \acl{SM} terá que utilizar um determinado módulo de comunicação para possibilitar a transferência dos dados adquiridos para o módulo central. Para além disso, pretende-se que o \acl{SM} em condições extremas, possa tomar decisões de atuação. Isto é, caso seja lido um valor fora da gama prevista e que seja necessária a ativação de um atuador ou se a comunicação com o \acl{CM} falhar, o \acl{SM} deverá ser auto suficiente em tomar uma decisão, sem necessidade de intervenção do utilizador. 
 
 Pretende-se que este módulo seja identificado por um determinado nome, possua uma bateria que permita a sua mobilidade, tenha um ou vários módulos de comunicação acoplados que permitam comunicar com um módulo centrar. Tenha uma determinada memória e um módulo \ac{GPS} que permita aceder à sua localização, identificando-o em caso de furto. Para além disso, um \acl{SM} terá que possuir obrigatoriamente um ou vários sensores.
 
@@ -273,7 +273,7 @@ Um \acl{CM} consiste num microcontrolador responsável pela receção dos dados 
 
 \section{Modelação}
 
-Tal como vimos no início da secção \ref{sect:analise}, a conceção de uma arquitetura envolve o estudo e respetiva modelação dos componentes de \textit{software} e \textit{hardware} que são fundamentais para a realização da mesma, bem como a análise dos casos de uso e respetiva especificação, criação do modelo de dados, diagramas de fluxos, entre outros. Toda esta modelação será descrita nesta secção permitindo entender melhor como emparelhar toda a estrutura pretendida. Relativamente à metodologia apresenta na secção \ref{method}, esta etapa refere-se à fase de \textit{Designing} (figura \ref{sdlcartic}). 
+Tal como vimos no início do capítulo 4, a conceção de uma arquitetura envolve o estudo e respetiva modelação dos componentes de \textit{software} e \textit{hardware} que são fundamentais para a realização da mesma, bem como a análise dos casos de uso e respetiva especificação, criação do modelo de dados, diagramas de fluxos, entre outros. Toda esta modelação será descrita nesta secção permitindo entender melhor como emparelhar toda a estrutura pretendida. Relativamente à metodologia apresenta na secção \ref{method}, esta etapa refere-se à fase de \textit{Designing} (figura \ref{sdlcartic}). 
 
 
 
@@ -337,19 +337,19 @@ Seguidamente serão descritos cada um dos casos de uso para as duas plataformas.
 	
 	
 	
-	\item \textbf{Adicionar, editar, remover tipos de comunicação}: qualquer \textit{general user} ou \textit{company user} poderá adicionar, editar ou remover os tipos de comunicação existentes no sistema. Ao  adicionar, o utilizador terá que introduzir um nome, um caminho relevante para o tipo de comunicação e selecionar um icon ilustrativo. No caso da remoção, esta ação apenas é possível se o tipo de comunicação não se encontrar em utilização por nenhum \acl{CM} ou \acl{SM};  
+	\item \textbf{Adicionar, editar, remover tipos de comunicação}: qualquer \textit{general user} ou \textit{company user} poderá adicionar, editar ou remover os tipos de comunicação existentes no sistema. Ao  adicionar, o utilizador terá que introduzir um nome, um caminho relevante para o tipo de comunicação (\ac{URL}, \ac{IMEI}, etc) e selecionar um \textit{icon} ilustrativo. No caso da remoção, esta ação apenas é possível se o tipo de comunicação não se encontrar em utilização por nenhum \acl{CM} ou \acl{SM};  
 	
-	\item \textbf{Adicionar, editar, remover tipos de sensores}: qualquer \textit{general user} ou \textit{company user} poderá adicionar, editar ou remover os tipos de sensores existentes no sistema. Ao  adicionar, o utilizador terá que introduzir um nome que o identifique, uma fonte de dados ou a escala dos mesmos e um icon que identifique o sensor. Para além disso, o utilizador terá que escolher uma cor que identifique o tipo de sensor na \textit{dashboard}. No caso da remoção, esta ação apenas é possível se o tipo de sensor não se encontrar em utilização por nenhum \acl{SM};   
+	\item \textbf{Adicionar, editar, remover tipos de sensores}: qualquer \textit{general user} ou \textit{company user} poderá adicionar, editar ou remover os tipos de sensores existentes no sistema. Ao  adicionar, o utilizador terá que introduzir um nome que o identifique, uma fonte de dados ou a escala dos mesmos e um \textit{icon} que identifique o sensor. Para além disso, o utilizador terá que escolher uma cor que identifique o tipo de sensor na \textit{dashboard}. No caso da remoção, esta ação apenas é possível se o tipo de sensor não se encontrar em utilização por nenhum \acl{SM};   
 	 
 	
-	\item \textbf{Adicionar, editar, remover um \acl{CM}}: qualquer \textit{general user} ou \textit{company user} poderá adicionar, editar ou remover um \acl{CM} existente no sistema. Neste caso, pressupõe-se que o utilizador possua um microcontrolador com as seguintes características que serão  adicionadas: nome para identificação, valor da memória \ac{RAM} em MBytes, estado inicial (ativo ou desativo) e um módulo de comunicação que permita comunicar com o servidor. Estas características são possíveis de  alteração. Pretende-se que um \acl{CM} possa ser removido tendo \textit{Sensor Modules} a ele associado, sendo estes também removidos automaticamente do sistema;
+	\item \textbf{Adicionar, editar, remover um \acl{CM}}: qualquer \textit{general user} ou \textit{company user} poderá adicionar, editar ou remover um \acl{CM} existente no sistema. Neste caso, pressupõe-se que o utilizador possua um microcontrolador com as seguintes características que serão  adicionadas: nome para identificação, valor da memória \ac{RAM} em MBytes, estado inicial (ativo ou inativo) e um módulo de comunicação que permita comunicar com o servidor. Estas características são possíveis de  alteração. Pretende-se que um \acl{CM} possa ser removido tendo \textit{Sensor Modules} a ele associado, sendo estes também removidos automaticamente do sistema;
 
 
 	\item \textbf{Adicionar, editar, remover um \acl{SM}}: qualquer \textit{general user} ou \textit{company user} poderá adicionar, editar ou remover um \acl{SM} existente no sistema. Pressupõe-se que o utilizador possua um determinado microcontrolador com um ou mais sensores. Para adicionar o \acl{SM} à plataforma o utilizador terá que atribuir um nome que o identifique, definir qual o seu estado inicial (ativo ou desativo), escolher os tipos de comunicação presentes e definir o intervalo de tempo para o qual pretende receber os dados lidos pelos sensores. Para além disso, permite associar ao \acl{SM} os sensores presentes e definir o valor máximo e mínimo para os quais são gerados alarmes e respetivas mensagens para notificação. Todos estes dados são possíveis de edição; 
 	
 
 	
-	\item \textbf{Receber notificações (gerar alarmes)}: sempre que um valor lido por um determinado sensor sai fora dos limites impostos, isto é do valor máximo e do valor mínimo, é gerado um alarme para o utilizador de modo a que este possa intervir. Este caso de uso encontra-se disponível para os dois tipos de plataformas;
+	\item \textbf{Receber notificações (gerar alarmes)}: sempre que um valor lido por um determinado sensor sai fora dos limites impostos, isto é, do valor máximo e do valor mínimo, é gerado um alarme para o utilizador de modo a que este possa intervir. Este caso de uso encontra-se disponível para os dois tipos de plataformas;
 	
 	
 	\item \textbf{Visualizar graficamente os dados lidos pelos sensores}: o utilizador poderá interagir com as duas plataformas a fim de visualizar graficamente os dados lidos pelos diferentes tipos de sensores existentes, tendo a possibilidade de selecionar as datas de início e fim da consulta. Para além disso, poderá guardar os gráficos em diferentes formatos de imagem;
@@ -375,12 +375,12 @@ Seguidamente serão descritos cada um dos casos de uso para as duas plataformas.
 	\item \textbf{Remover \textit{Sensor Modules} e \textit{Controller Modules} }: o \textit{admin} do sistema tem a possibilidade de remover os \textit{Sensor Modules} e/ou \textit{Controller Modules} existentes no sistema; 
 	
 	
-	\item \textbf{Visualizar todos os \textit{Sensor Modules} e \textit{Controller Modules}}: o \textit{admim} do sistema tem a possibilidade de visualizar todos os \textit{Sensor Modules} e \textit{Controller Modules} existentes no sistema de modo a alertar os clientes em caso de anomalias;
+	\item \textbf{Visualizar todos os \textit{Sensor Modules} e \textit{Controller Modules}}: o \textit{admin} do sistema tem a possibilidade de visualizar todos os \textit{Sensor Modules} e \textit{Controller Modules} existentes no sistema de modo a alertar os clientes em caso de anomalias;
 	
 	
-	\item \textbf{Criar um novo \textit{company user}}: o \textit{admim} tem a possibilidade de adicionar novos \textit{company user} ao sistema; 
+	\item \textbf{Criar um novo \textit{company user}}: o \textit{admin} tem a possibilidade de adicionar novos \textit{company user} ao sistema; 
 	
-	\item \textbf{Remover um \textit{company use}r}: o \textit{admim} tem a possibilidade de remover qualquer \textit{company user} registado no sistema.
+	\item \textbf{Remover um \textit{company use}r}: o \textit{admin} tem a possibilidade de remover qualquer \textit{company user} registado no sistema.
 	
 	
 \end{itemize}
@@ -432,7 +432,7 @@ Nas tabelas \ref{tabeladb1} e \ref{tabeladb2} são descritas cada uma das entida
 		\textbf{Token} & \begin{tabular}[c]{@{}l@{}}authtoken\_token\_pkey\\ (character varying(40))\end{tabular} & id\_user & \begin{tabular}[c]{@{}l@{}}Possui o \textit{token} de autenticação\\ do utilizador para a API\end{tabular} \\ \hline
 		\textbf{Group} & id (auto-incrementado) & N/A & \begin{tabular}[c]{@{}l@{}}Possui todos os tipos de grupos\\  existentes: \textit{general user}, \\ \textit{company user} e \textit{admin}\end{tabular} \\ \hline
 		\textbf{UserGroups} & id (auto-incrementado) & id\_user, id\_group & \begin{tabular}[c]{@{}l@{}}Permite associar um utilizador\\  a um determinado grupo\end{tabular} \\ \hline
-		\textbf{Permisson} & id (auto-incrementado) & N/A & \begin{tabular}[c]{@{}l@{}}Possui todas as permissões\\  existentes (escrita, leitura,\\  delete...)\end{tabular} \\ \hline
+		\textbf{Permisson} & id (auto-incrementado) & N/A & \begin{tabular}[c]{@{}l@{}}Possui todas as permissões\\  existentes (escrita, leitura\\  e remoção)\end{tabular} \\ \hline
 		\textbf{GroupPermisson} & id (auto-incrementado) & id\_group, id\_permission & \begin{tabular}[c]{@{}l@{}}Associa a cada grupo \\ determinadas permissões\end{tabular} \\ \hline
 		\textbf{UserPerCompany} & id (auto-incrementado) & id\_company, id\_general\_user & \begin{tabular}[c]{@{}l@{}}Associa cada \textit{general user}\\  a um \textit{company user}\end{tabular} \\ \hline
 		\textbf{CommunicationType} & id (auto-incrementado) & N/A & \begin{tabular}[c]{@{}l@{}}Identifica cada um dos tipos\\  de comunicação inseridos\\  no sistema\end{tabular} \\ \hline
@@ -463,7 +463,7 @@ Nas tabelas \ref{tabeladb1} e \ref{tabeladb2} são descritas cada uma das entida
 		\textbf{CommunicationTypePerSM} & N/A & id\_communication\_type, id\_sm & \begin{tabular}[c]{@{}l@{}}Permite associar a um \textit{sensor}\\  \textit{module} um ou várias tipos de\\  comunicação\end{tabular} \\ \hline
 		\textbf{SensorType} & id (auto-incrementado) & N/A & \begin{tabular}[c]{@{}l@{}}Identifica cada um dos tipos de \\ sensores inseridos no sistema\end{tabular} \\ \hline
 		\textbf{Sensor} & id (auto-incrementado) & id\_sensor\_type, id\_sm & \begin{tabular}[c]{@{}l@{}}Permite identificar um \\ determinado sensor\end{tabular} \\ \hline
-		\textbf{AlarmsSettings} & id (auto-incrementado) & id\_sensor & \begin{tabular}[c]{@{}l@{}}Permite guardar as configurações \\ para um determinado \\ sensor (max,min…)\end{tabular} \\ \hline
+		\textbf{AlarmsSettings} & id (auto-incrementado) & id\_sensor & \begin{tabular}[c]{@{}l@{}}Permite guardar as configurações \\ para um determinado \\ sensor (valor máximo e mínimo)\end{tabular} \\ \hline
 		\textbf{Reading} & id (auto-incrementado) & id\_sensor & \begin{tabular}[c]{@{}l@{}}Permite guardar as \\ leituras de um \\ determinado sensor\end{tabular} \\ \hline
 		\textbf{Alarms} & N/A & id\_reading & \begin{tabular}[c]{@{}l@{}}Armazena os alarmes \\ que são gerados\end{tabular} \\ \hline
 	\end{tabular}
@@ -674,7 +674,7 @@ Na tabela \ref{endpointsapi} encontram-se todos os \textit{endpoints} e respetiv
 \subsection{Documentação interativa}
 
 
-Para a geração automática da documentação da \ac{API} utilizou-se o Swagger. Tal como descrito no site oficial desta \textit{framework}\cite{SmartBearSoftware2017}, o Swagger é considerado a ferramenta de APIs mais popular e completa de todo o mundo permitindo facilmente o desenvolvimento do ciclo de vida de uma \ac{API}, desde o \textit{design}, documentação, testes e também implementação, tendo a grande vantagem de ser \textit{open-source}. Neste contexto, apenas será utilizada como documentação, de modo a facilitar a interpretação da \ac{API} criada. O Swagger possui uma interface apelativa e intuitiva, permitindo interagir com a \ac{API} de modo que os seus utilizadores tenham uma ideia geral de como esta responde aos pedidos para diversos parâmetros e opções. 
+Para a geração automática da documentação da \ac{API} utilizou-se o Swagger. Tal como descrito no site oficial desta \textit{framework}\cite{SmartBearSoftware2017}, o Swagger é considerada a ferramenta de APIs mais popular e completa de todo o mundo permitindo facilmente o desenvolvimento do ciclo de vida de uma \ac{API}, desde o \textit{design}, documentação, testes e também implementação, tendo a grande vantagem de ser \textit{open-source}. Neste contexto, apenas será utilizada como documentação, de modo a facilitar a interpretação da \ac{API} criada. O Swagger possui uma interface apelativa e intuitiva, permitindo interagir com a \ac{API} de modo que os seus utilizadores tenham uma ideia geral de como esta responde aos pedidos para diversos parâmetros e opções. 
 
 
 
@@ -1049,7 +1049,7 @@ Desde logo, a escolha da tecnologia para processamento de imagem recaiu sobre o 
 		\textbf{Compatibilidades}& ultima versão do Raspbian \\ \hline
 		\textbf{Preço}& 26,67 \euro /unidade  \\ \hline
 	\end{tabular}
-	\caption[Características do módulo bluetooth HC-06]{Características do Raspberry Pi camera module}
+	\caption[Características do Raspberry Pi camera module]{Características do Raspberry Pi camera module}
 	\label{cara-cam}
 \end{table}
 
@@ -1059,7 +1059,7 @@ Desde logo, a escolha da tecnologia para processamento de imagem recaiu sobre o 
 
 
 
-Inicialmente, após incorporar o \textit{Raspberry Pi camera module} no Raspberry Pi 3 através do \ac{CSI} (imagem 3.5 da secção 3.6.2), testou-se a captura de vídeo através do raspivid. Esta ferramenta de linha de comando, permite testar o funcionamento do módulo, e para além disso, definir em que formato será guardado o vídeo adquirido, bem como o seu comprimento e as suas dimensões\cite{raspivid}. Posteriormente, procedeu-se ao envio da imagem capturada, sem qualquer processamento, para o Youtube Live através da ferramenta FFMpeg.
+Inicialmente, após incorporar o \textit{Raspberry Pi camera module} no Raspberry Pi 3 através do \ac{CSI} (imagem 3.5 da secção 3.6.2), testou-se a captura de vídeo através do raspivid. Esta ferramenta de linha de comando, permite testar o funcionamento do módulo, e para além disso, definir em que formato será guardado o vídeo adquirido, bem como o seu comprimento e as suas dimensões\cite{raspivid}. Posteriormente, procedeu-se ao envio da imagem capturada, sem qualquer processamento, para o Youtube Live através da ferramenta FFmpeg.
 
 
 Na figura \ref{arquiteturavisao} encontra-se a arquitetura do sistema de videovigilância anteriormente descrito. No próximo capítulo será apresentado o algoritmo de deteção de intrusos disponibilizado pela ferramenta OpenCV. 
@@ -1089,13 +1089,13 @@ Na figura \ref{arquiteturavisao} encontra-se a arquitetura do sistema de videovi
 
 \subsubsection{Biblioteca para processamento de imagem: OpenCV}
 
-O OpenCV, também conhecido por \textit{Open Source Computer Vision Library}, é uma biblioteca de \textit{software} de visão por computador de código \textit{open-source}. Esta biblioteca possui mais de 2500 algoritmos otimizados, que inclui um conjunto abrangente de algoritmos clássicos e avançados de visão computacional bem como algoritmos de \textit{machine learning}. Esses algoritmos podem ser utilizados para os mais diversos fins, como por exemplo, para detetar e reconhecer rostos, identificar objetos, classificar ações humanas em vídeos, detetar movimentos numa câmara, seguir objetos em movimento, entre outros. Esta biblioteca é amplamente utilizada em empresas e grupos de investigação, tendo interfaces nas mais diversas linguagens: C++, C, Python, Java e MATLAB, embora seja nativamente escrita na linguagem C. OpenCV tem mais de 47 mil pessoas na sua comunidade e excede os 7 milhões de \textit{downloads}, tendo suporte para Windows, Linux e Mac OS\cite{Itseez}.
+O OpenCV, também conhecido por \textit{Open Source Computer Vision Library}, é uma biblioteca de \textit{software} de visão por computador de código \textit{open-source}. Esta biblioteca possui mais de 2500 algoritmos otimizados, que inclui um conjunto abrangente de algoritmos clássicos e avançados de visão computacional bem como algoritmos de \textit{machine learning}. Esses algoritmos podem ser utilizados para os mais diversos fins, como por exemplo, para detetar e reconhecer rostos, identificar objetos, classificar ações humanas em vídeos, detetar movimentos numa câmara, seguir objetos em movimento, entre outros. Esta biblioteca é amplamente utilizada em empresas e grupos de investigação, tendo interfaces nas mais diversas linguagens: C++, C, Python, Java e MATLAB, embora seja nativamente escrita na linguagem C. O OpenCV tem mais de 47 mil pessoas na sua comunidade e excede os 7 milhões de \textit{downloads}, tendo suporte para Windows, Linux e Mac OS\cite{Itseez}.
 
 
 
 \subsubsection{\textit{Streaming} de vídeo: Youtube Live}
 
- O Youtube Live permite que qualquer utilizador possa realizar \textit{streaming} de vídeo, possibilitando escolher entre dois modos: alta latência e baixa latência, isto é, boa ou má qualidade. Uma das grandes vantagens desta ferramenta é manter a \textit{stream} transmitida permitindo consultá-la quando desejado. O Youtube Live utiliza o protocolo \ac{RTMP}, pertencente à camada protocolar TCP/IP, mantendo uma conexão persistente com um servidor que permite a comunicação em tempo real de vídeo ou áudio. Por outro lado, o FFMpeg é uma ferramenta líder, capaz de codificar ou descodificar qualquer tipo de conteúdo, possibilitando a criação ou conversão de \textit{stream} de vídeo/áudio em qualquer formato. É uma ferramenta \textit{open-source} sendo que a sua interação é concretizada através de linha de comandos\cite{FFmpeg2015}. 
+ O Youtube Live permite que qualquer utilizador possa realizar \textit{streaming} de vídeo, possibilitando escolher entre dois modos: alta latência e baixa latência, isto é, boa ou má qualidade. Uma das grandes vantagens desta ferramenta é manter a \textit{stream} transmitida permitindo consultá-la quando desejado. O Youtube Live utiliza o protocolo \ac{RTMP}, pertencente à camada protocolar TCP/IP, mantendo uma conexão persistente com um servidor que permite a comunicação em tempo real de vídeo ou áudio. Por outro lado, o FFmpeg é uma ferramenta líder, capaz de codificar ou descodificar qualquer tipo de conteúdo, possibilitando a criação ou conversão de \textit{stream} de vídeo/áudio em qualquer formato. É uma ferramenta \textit{open-source} sendo que a sua interação é concretizada através de linha de comandos\cite{FFmpeg2015}. 
 
 
 
@@ -1130,7 +1130,7 @@ No que toca à comunicação entre os diferentes componentes, esta baseia-se ess
 \section{Considerações finais}
 
 
-Neste capítulo foi projetada toda a arquitetura do sistema, tendo por base os requisitos do cliente e a respetiva modelação. Para além disso, a arquitetura anteriormente apresenta foi concebida tendo como garantia que poderia ser adaptada a quaisquer outros cenários distintos do apresentado. Esta arquitetura é apoiada através da exposição de diagramas de arquitetura, casos de uso e modelo de dados. 
+Neste capítulo foi projetada toda a arquitetura do sistema, tendo por base os requisitos do cliente e a respetiva modelação. Para além disso, a arquitetura anteriormente apresentada foi concebida tendo como garantia que poderia ser adaptada a quaisquer outros cenários distintos do apresentado. Esta arquitetura é apoiada através da exposição de diagramas de arquitetura, casos de uso e modelo de dados. 
 
 
 

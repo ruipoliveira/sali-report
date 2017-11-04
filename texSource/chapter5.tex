@@ -55,7 +55,7 @@ class SensorModule(models.Model):
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.4]{prints-web/admindjango.png}
-	\caption{Painel administrativo da \textit{framework} Django }
+	\caption{Área administrativa da \textit{framework} Django }
 	\label{admingdjango}
 \end{figure}
 
@@ -134,7 +134,7 @@ Em ambas as visualizações anteriormente descritas é possível fazer uma filtr
 No que toca à visualização gráfica toda a representação foi concebida recorrendo à biblioteca ZingChart em \ac{JS}, sendo que toda a manipulação de dados é realizada a nível de \textit{backend} e posteriormente apresentada através dos \textit{templates} do Django. Esta biblioteca permite ainda que o cliente possa guardar os gráficos obtidos em formato de imagem (PNG, JPEG ou PDF).  A análise estatística para o intervalo de datas considerado permitirá ao cliente visualizar o valor máximo lido, o valor mínimo lido bem como o valor médio, sendo também todo o processamento realizado a nível de \textit{backend}. Para além disso, a página de visualização gráfica também possibilitará a ativação/desativação remota dos atuadores existentes no terreno. 
 
 
-Por fim, relativamente à visualização tabular os dados são apresentados em três campos distintos que representam o tipo de sensor, data e hora da leitura, valor lido e a escala. A tabela contém paginação sendo possível escolher o número de entradas que serão apresentadas (10, 25, 50 ou 100). Complementarmente, existe uma caixa de texto que permite ao cliente pesquisar pelos campos apresentados. Para além disso é possível ordenar alfabeticamente ou numericamente esses campos. O cliente também poderá exportar os dados apresentados num ficheiro do tipo \ac{CSV} com a estrutura apresentada na tabela \ref{exportcsv}. Para a implementação desta funcionalidade foram utilizados os métodos \texttt{writer} e \texttt{writerow()} disponíveis no pacote \texttt{csv} do Python.  
+Por fim, relativamente à visualização tabular os dados são apresentados em três campos distintos que representam o tipo de sensor, data e hora da leitura, valor lido e a escala. A tabela contém paginação sendo possível escolher o número de entradas que serão apresentadas (10, 25, 50 ou 100). Complementarmente, existe uma caixa de texto que permite ao cliente pesquisar pelos campos apresentados. Para além disso é possível ordenar alfabeticamente ou numericamente esses campos (figura 6.17). O cliente também poderá exportar os dados apresentados num ficheiro do tipo \ac{CSV} com a estrutura apresentada na tabela \ref{exportcsv}. Para a implementação desta funcionalidade foram utilizados os métodos \texttt{writer} e \texttt{writerow()} disponíveis no pacote \texttt{csv} do Python.  
 
 
 \begin{table}[h]
@@ -231,7 +231,7 @@ Para a utilização da documentação interativa da API REST foi utilizada a fer
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.71\linewidth]{prints-web/api-doc.png}
+	\includegraphics[width=0.91\linewidth]{prints-web/api-doc.png}
 	\caption{Documentação da API REST com a ferramenta Swagger}
 	\label{docapi}
 \end{figure}
@@ -536,7 +536,7 @@ Nesta simulação, o \acl{CM} recebe apenas os dados adquiridos por um \acl{SM},
 \section{Sistema de videovigilância}
 
 
-Tal como descrito na secção \ref{videoviarqut}, foram utilizadas as ferramentas FFMpeg e raspivid para envio de vídeo sem qualquer tipo de processamento para o servidor \ac{RTMP} do Youtube. Para testar a funcionalidade, foi executado o seguinte comando no terminal do Raspberry Pi 3, sendo possível observar o resultado na conta do Youtube.
+Tal como descrito na secção \ref{videoviarqut}, foram utilizadas as ferramentas FFmpeg e raspivid para envio de vídeo sem qualquer tipo de processamento para o servidor \ac{RTMP} do Youtube. Para testar a funcionalidade, foi executado o seguinte comando no terminal do Raspberry Pi 3, sendo possível observar o resultado na conta do Youtube.
 
 
 \begin{lstlisting}[
@@ -559,7 +559,7 @@ raspivid -o - -t 0 -vf -hf -fps 30 -b 6000000 | ffmpeg -re -ar 44100 -ac 2 -acod
 Seguidamente, são descritos alguns dos parâmetros mais importantes presentes no comando anterior\cite{streamlive}. 
 
 \begin{itemize}
-	\item \texttt{-o -}: grava o vídeo para que possa ser utilizado pelo FFMpeg; 
+	\item \texttt{-o -}: grava o vídeo para que possa ser utilizado pelo FFmpeg; 
 	
 	\item \texttt{-t 0}: grava e transmite o vídeo até que seja parado manualmente; 
 	
@@ -569,7 +569,7 @@ Seguidamente, são descritos alguns dos parâmetros mais importantes presentes n
 	
 	\item \texttt{-ar 44100 -ac 2 -acodec pcm\_s16le -f s16le -ac 2 -i /dev/zero}: adiciona um canal de áudio preenchido a zeros, uma vez que o YouTube rejeita fluxos sem um canal de áudio; 
 	
-	\item \texttt{-f h264}: diz ao FFMpeg que irá receber entrada h264 ( padrão para compressão de vídeo). 
+	\item \texttt{-f h264}: diz ao FFmpeg que irá receber entrada h264 ( padrão para compressão de vídeo). 
 	
 \end{itemize}
 
@@ -634,6 +634,12 @@ hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
 \end{itemize}
 
 
+
+O algoritmo apresentado permite a deteção de intrusos (humanos), quando estes surgem em vídeos ou imagens. Pretende-se incorporar este algoritmo no sistema de videovigilância (Youtube Live), possibilitando a deteção de indivíduos quando estes são capturados pela câmara, gerando alarmes para a plataforma. Para incorporar o algoritmo apresentado com o Youtube Live é necessário entender o mecanismo de \textit{streaming} disponibilizado pela \ac{API} do YouTube Live Streaming\footnote{\url{https://developers.google.com/youtube/v3/live/getting-started}}.  
+
+
+\newpage
+
 \begin{figure}[h]
 	\centering
 	\begin{minipage}[b]{0.49\textwidth}
@@ -655,7 +661,6 @@ hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
 
 
 
-O algoritmo apresentado permite a deteção de intrusos (humanos), quando estes surgem em vídeos ou imagens. Pretende-se incorporar este algoritmo no sistema de videovigilância (Youtube Live), possibilitando a deteção de indivíduos quando estes são capturados pela câmara, gerando alarmes para a plataforma. Para incorporar o algoritmo apresentado com o Youtube Live é necessário entender o mecanismo de \textit{streaming} disponibilizado pela \ac{API} do YouTube Live Streaming\footnote{\url{https://developers.google.com/youtube/v3/live/getting-started}}.  
 
 
 Como vimos anteriormente, existem vários parâmetros para o método \linebreak \texttt{detectMultiScale()}, que permitem ajustar o tamanho da deteção. Dependendo da disposição exata da câmara, é possível ajustar estes parâmetros permitindo uma deteção o mais eficaz possível. No próximo capítulo serão apresentados alguns exemplos em que é possível testar o algoritmo apresentado.  

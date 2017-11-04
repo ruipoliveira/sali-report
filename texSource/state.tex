@@ -65,7 +65,7 @@ O PostgreSQL é um \ac{SGBD} livre do tipo objeto-relacional uma vez que permite
 
 
 
-Na tabela \ref{Ranking-engines2016} encontra-se a classificação atribuída pela \textit{Ranking DB-Engines} para os \ac{SGBD} estudados de acordo com a sua popularidade, nos meses de Junho e Julho de 2017 e Julho de 2016\cite{DB-engines2016}. O MySQL é considerado o mais popular dos estudados, seguindo-se o SQL Server e por fim o PostgreSQL. A tabela \ref{comp-sqgbdcar} permite comparar algumas das características dos \ac{SGBD} estudados, possibilitando concluir que todas usam o modelo relacional mas apenas o MySQL e o PostgreSQL são \textit{open-source}. Uma vez que o cliente que idealizou este sistema pretende que sejam utilizadas tecnologias sem qualquer custo adicional (sendo mais à frente referido nos requisitos não funcionais), excluiu-se  desde logo o SQL Server da Microsoft. Restam então duas tecnologias estudadas, o PostgreSQL e o MySQL.
+Na tabela \ref{Ranking-engines2016} encontra-se a classificação atribuída pela \textit{Ranking DB-Engines} para os \ac{SGBD} estudados de acordo com a sua popularidade, nos meses de Junho e Julho de 2017 e Julho de 2016\cite{DB-engines2016}. O MySQL é considerado o mais popular dos estudados, seguindo-se o SQL Server e por fim o PostgreSQL. A tabela \ref{comp-sqgbdcar} permite comparar algumas das características dos \ac{SGBD} estudados, possibilitando concluir que todos usam o modelo relacional mas apenas o MySQL e o PostgreSQL são \textit{open-source}. Uma vez que o cliente que idealizou este sistema pretende que sejam utilizadas tecnologias sem qualquer custo adicional (sendo mais à frente referido nos requisitos não funcionais), excluiu-se  desde logo o SQL Server da Microsoft. Restam então duas tecnologias estudadas, o PostgreSQL e o MySQL.
 
 
 \begin{table}[h]
@@ -79,7 +79,7 @@ Na tabela \ref{Ranking-engines2016} encontra-se a classificação atribuída pel
 		\textbf{SQL Server} & 3º lugar & 3º lugar & 3º lugar \\ \hline
 		\textbf{PostgreSQL} & 4º lugar & 4º lugar & 5º lugar \\ \hline
 	\end{tabular}
-	\caption[\textit{Ranking BD-Engines} para popularidade dos \ac{SGBD} estudados]{\textit{Ranking BD-Engines} para popularidade dos \ac{SGBD} estudados\cite{DB-engines2016}}
+	\caption[\textit{Ranking BD-Engines} para popularidade dos \ac{SGBD} referidos anteriormente]{\textit{Ranking BD-Engines} para popularidade dos \ac{SGBD} referidos anteriormente\cite{DB-engines2016}}
 	\label{Ranking-engines2016}
 \end{table}
 
@@ -139,7 +139,7 @@ No que diz respeito ao desenvolvimento \textit{web} do sistema, permitindo que e
 \end{itemize}
 
 
-De modo a facilitar o desenvolvimento do sistema, optou-se por desenvolver paralelamente o \textit{frontend} e o \textit{backend}. Posto isto, será utilizada uma \textit{framework} em que o servidor disponibilizará os conteúdos em função das necessidade do cliente. Esta estratégia é mais eficiente e com tempos de resposta mais curtos, relativamente à primeira apresentada. De seguida, são apresentadas três \textit{frameworks} bastante populares e com características distintas. 
+De modo a facilitar o desenvolvimento do sistema, optou-se por desenvolver paralelamente o \textit{frontend} e o \textit{backend}. Posto isto, será utilizada uma \textit{framework} em que o servidor disponibilizará os conteúdos em função das necessidade do cliente. Esta estratégia é mais eficiente e com tempos de resposta mais curtos, relativamente à primeira apresentada. De seguida, são descritas três \textit{frameworks} bastante populares e com características distintas. 
 
 
 
@@ -276,7 +276,7 @@ Uma aplicação nativa é desenvolvida exclusivamente para ser utilizada por um 
 %http://websocialdev.com/lista-de-frameworks-para-desenvolvimento-mobile/
 
 
-Uma aplicação multi-plataforma ou híbrida, é desenvolvida utilizando tecnologias \textit{web}, como por exemplo o \ac{HTML}, \ac{CSS} e \ac{JS}. Estas aplicações utilizam uma funcionalidade denominada por WebView permitindo que o código \textit{web} seja adaptado a uma aplicação responsiva para uma determinada plataforma. De seguida, são apresentadas algumas características desta estratégia de desenvolvimento\cite{Ibm2012a}: 
+Uma aplicação multi-plataforma ou híbrida, é desenvolvida utilizando tecnologias \textit{web}, como por exemplo o \ac{HTML}, \ac{CSS} e \ac{JS}. Estas aplicações utilizam uma funcionalidade denominada por \textit{webview} permitindo que o código \textit{web} seja adaptado a uma aplicação responsiva para uma determinada plataforma. De seguida, são apresentadas algumas características desta estratégia de desenvolvimento\cite{Ibm2012a}: 
 
 
 
@@ -286,7 +286,7 @@ Uma aplicação multi-plataforma ou híbrida, é desenvolvida utilizando tecnolo
 % ftp://public.dhe.ibm.com/software/pdf/mobile-enterprise/WSW14182USEN.pdf
 
 \begin{itemize}
-	\item \textbf{Performance}: relativamente à performance, não são dados pontos positivos no que toca às aplicações híbridas, uma vez que estas usam  WebViews e outros \textit{plug-ins} que permitem abstrair o acesso às APIs nativas; 
+	\item \textbf{Performance}: relativamente à performance, não são dados pontos positivos no que toca às aplicações híbridas, uma vez que estas usam  \textit{webviews} e outros \textit{plugins} que permitem abstrair o acesso às APIs nativas; 
 
 	
 	\item \textbf{Desenvolvimento}: são utilizadas tecnologias \textit{web} (\ac{HTML}, \ac{CSS} e \ac{JS}), que são mais eficazes em termos de custo uma vez que permitem reutilizar código para diferentes tipos de dispositivos; 
@@ -295,20 +295,20 @@ Uma aplicação multi-plataforma ou híbrida, é desenvolvida utilizando tecnolo
 	\item \textbf{Interface}: para aceder à mesma \ac{UI} do dispositivo, é necessário utilizar \textit{plug-ins} adicionais; 
 	
 	
-	\item \textbf{Recursos e \textit{Plug-ins}}: existem muitos recursos disponíveis para aplicações \linebreak multi-plataforma através de \textit{plug-ins}, permitindo ter o mesmo efeito em todas as plataformas. Por outro lado, impõe-se a questão da performance; 
+	\item \textbf{Recursos e \textit{Plugins}}: existem muitos recursos disponíveis para aplicações \linebreak multi-plataforma através de \textit{plugins}, permitindo ter o mesmo efeito em todas as plataformas. Por outro lado, impõe-se a questão da performance; 
 
 	
-	\item \textbf{Segurança}: recorrem a \textit{plug-ins} externos para garantir maior segurança sendo potencialmente mais vulneráveis.
+	\item \textbf{Segurança}: recorrem a \textit{plugins} externos para garantir maior segurança sendo potencialmente mais vulneráveis.
 	
 	
 \end{itemize}
 
-Existem várias \textit{frameworks} para o desenvolvimento multi-plataforma, entre as quais destaco as três mais utilizadas no mercado: Ionic, PhoneGap e Xmarin. 
+Existem várias \textit{frameworks} para o desenvolvimento multi-plataforma, entre as quais destaco as três mais utilizadas no mercado: Ionic, PhoneGap e Xamarin. 
 
 \begin{itemize}
 	\item \textbf{Ionic}: consiste numa ferramenta para desenvolvimento \textit{mobile}, sendo constituída por outro conjunto de \textit{frameworks}: Cordova (permite a integração de recursos nativos), AngularJS (criação da \textit{web app}) e Ionic Module e CLI (ferramenta e componentes disponibilizados pelo Ionic)\cite{Ionic2016}. 
 	
-	\item \textbf{PhoneGap}: tal como o Ionic, consiste numa \textit{framework} mobile que utiliza o Cordava da Apache para aceder aos recursos nativos do sistema. É uma \textit{framework} \textit{open-source}, tendo compatibilidade com outras ferramentas. 
+	\item \textbf{PhoneGap}: tal como o Ionic, consiste numa \textit{framework mobile} que utiliza o Cordava da Apache para aceder aos recursos nativos do sistema. É uma \textit{framework} \textit{open-source}, tendo compatibilidade com outras ferramentas. 
 	
 	\item \textbf{Xamarin}: permite o desenvolvimento \textit{mobile} a partir do .NET Framework, utilizando C\#, possibilitando que o compilador gere código nativo disponível para qualquer tipo de plataforma. Uma das principais desvantagens do Xamarin prende-se com a necessidade de desenvolver a \ac{UI} para todas as plataformas necessárias. 
 \end{itemize}
@@ -650,7 +650,7 @@ O Bluetooth surgiu com a intenção de eliminar o elevado número de cabos exist
 
 
 
-\subsection{Wi-Fi (IEEE 802.11)}
+\subsection{Wi-Fi}
 
 
 O Wi-Fi é uma tecnologia de recepção de transmissão de dados sem fios, baseado no \textit{standard} IEEE 802.11. Com o evoluir da tecnologia, têm surgido diferentes variações do mesmo \textit{standard}, sendo a variante 802.11g a mais comum. Seguidamente, são apresentadas as característica principais desta variante\cite{Paper2005}\cite{urlwifi}:
@@ -659,7 +659,7 @@ O Wi-Fi é uma tecnologia de recepção de transmissão de dados sem fios, basea
 \begin{itemize}
 	\item Banda de frequência de 2.4 GHz;
 	\item Taxa de bits máxima de 54 Mbps na camada física, transferência de dados máxima de 24.7 Mbps;
-	\item Topologia em estrela (infraestrutura) e ponto-a-ponto (ad-hoc);
+	\item Topologia em estrela (infraestrutura) e ponto-a-ponto (\textit{ad-hoc});
 	\item Vários mecanismos de encriptação e autenticação.
 \end{itemize}
 
