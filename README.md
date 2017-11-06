@@ -14,6 +14,14 @@
 * [video surveillance with detection](https://github.com/ruipoliveira)
 
 
+## Environment and dependencies (in ubuntu)
+
+* sudo apt-get install texlive
+* sudo apt-get install textstudio
+* sudo apt-get install texlive-latex-extra
+* sudo apt-get install texlive-lang-portuguese
+* sudo apt-get install texlive-fonts-extra
+
 ### Author
 * Rui Oliveira (ruipedrooliveira@ua.pt)
 
