@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.6)  10 NOV 2017 17:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.6)  16 NOV 2017 11:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3360,7 +3360,7 @@ f-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/eurosym/feymr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/symbols/msam10.pfb>
-Output written on thesis-roliveira.pdf (136 pages, 16458075 bytes).
+Output written on thesis-roliveira.pdf (136 pages, 16458065 bytes).
 PDF statistics:
  3087 PDF objects out of 3580 (max. 8388607)
  2619 compressed objects within 27 object streams
