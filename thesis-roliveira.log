@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.6)  16 NOV 2017 17:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.6)  19 NOV 2017 10:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2967,7 +2967,20 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 369.
 
-[90] (./thesis-roliveira.bbl
+[90]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 369.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 369.
+ [91]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 370.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 370.
+ [92
+
+
+] (./thesis-roliveira.bbl
 Underfull \hbox (badness 5832) in paragraph at lines 54--58
 []\OT1/cmr/m/n/10.95 Sciencebuddies, ``The En-gi-ne-e-ring De-sign Pro-cess.'' 
 [On-
@@ -2983,31 +2996,29 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 83.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 83.
-[91
-
-
+[93
 
 ]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 151.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 151.
- [92]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 227.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 227.
- [93]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 315.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 315.
  [94]
 Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 227.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 227.
+ [95]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 315.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 315.
+ [96]
+Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 395.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 395.
- [95]
+ [97]
 Underfull \hbox (badness 7832) in paragraph at lines 474--478
 []\OT1/cmr/m/n/10.95 Maker.io, ``Stream Live with Rasp-berry Pi Ca-
  []
@@ -3028,17 +3039,17 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 491.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 491.
-[96])
+[98])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 399.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 399.
- [97]
+ [99]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 399.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 399.
- [98
+ [100
 
 ]
 \openout2 = `texSource/appendix2.aux'.
@@ -3051,7 +3062,7 @@ Package babel Info: Redefining portuges shorthand "|
 
 pdfTeX warning: /usr/bin/pdflatex (file ./esquemas/mockup/1.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<esquemas/mockup/1.pdf, id=2649, 790.43303pt x 399.68321pt>
+<esquemas/mockup/1.pdf, id=2657, 790.43303pt x 399.68321pt>
 File: esquemas/mockup/1.pdf Graphic file (type pdf)
 
 <use esquemas/mockup/1.pdf>
@@ -3061,14 +3072,14 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 24.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 24.
- [99
+ [101
 
 
  <./esquemas/mockup/1.pdf>]
 
 pdfTeX warning: /usr/bin/pdflatex (file ./esquemas/mockup/2.pdf): PDF inclusion
 : found PDF version <1.7>, but at most version <1.5> allowed
-<esquemas/mockup/2.pdf, id=2662, 793.83575pt x 403.09596pt>
+<esquemas/mockup/2.pdf, id=2671, 793.83575pt x 403.09596pt>
 File: esquemas/mockup/2.pdf Graphic file (type pdf)
 
 <use esquemas/mockup/2.pdf>
@@ -3079,7 +3090,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 400.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 400.
- [100 <./esquemas/mockup/2.pdf>]
+ [102 <./esquemas/mockup/2.pdf>]
 \openout2 = `texSource/appendix3.aux'.
 
 
@@ -3094,7 +3105,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 40.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 40.
- [101
+ [103
 
 
 
@@ -3104,7 +3115,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 402.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 402.
- [102]
+ [104]
 \openout2 = `texSource/appendix1.aux'.
 
 
@@ -3116,7 +3127,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 26.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 26.
-[103
+[105
 
 
 
@@ -3126,17 +3137,17 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 70.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 70.
- [104]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 125.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 125.
- [105])
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 405.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 405.
  [106]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 125.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 125.
+ [107])
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 405.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 405.
+ [108]
 \openout2 = `texSource/appendix5.aux'.
 
  (./texSource/appendix5.tex)
@@ -3154,7 +3165,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 418.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 418.
- [107
+ [109
 
 
 
@@ -3170,7 +3181,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 419.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 419.
- [108
+ [110
 
 
 ]
@@ -3186,7 +3197,7 @@ pdfTeX warning: /usr/bin/pdflatex (file ./esquemas/arduino-fritzing/esquema-ard
 uino_bb.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5>
  allowed
 
-<esquemas/arduino-fritzing/esquema-arduino_bb.pdf, id=2747, 503.8825pt x 417.56
+<esquemas/arduino-fritzing/esquema-arduino_bb.pdf, id=2755, 503.8825pt x 417.56
 pt>
 File: esquemas/arduino-fritzing/esquema-arduino_bb.pdf Graphic file (type pdf)
  <use esquemas/arduino-fritzing/esquema-arduino_bb.pdf>
@@ -3200,7 +3211,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 12.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 12.
- [109
+ [111
 
 
  <./esquemas/arduino-fritzing/esquema-arduino_bb.pdf>])
@@ -3208,7 +3219,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 421.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 421.
- [110]
+ [112]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 427.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 427.
  (./thesis-roliveira.aux
@@ -3234,8 +3245,8 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 427.
  ) 
 Here is how much of TeX's memory you used:
- 26149 strings out of 494929
- 443984 string characters out of 6180142
+ 26151 strings out of 494929
+ 444000 string characters out of 6180142
  708002 words of memory out of 5000000
  28079 multiletter control sequences out of 15000+600000
  18667 words of font info for 70 fonts, out of 8000000 for 9000
@@ -3360,10 +3371,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/eurosym/feymr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/symbols/msam10.pfb>
-Output written on thesis-roliveira.pdf (136 pages, 16457313 bytes).
+Output written on thesis-roliveira.pdf (138 pages, 16458135 bytes).
 PDF statistics:
- 3087 PDF objects out of 3580 (max. 8388607)
- 2619 compressed objects within 27 object streams
- 673 named destinations out of 1000 (max. 500000)
+ 3095 PDF objects out of 3580 (max. 8388607)
+ 2625 compressed objects within 27 object streams
+ 675 named destinations out of 1000 (max. 500000)
  1237 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -102,8 +102,8 @@
 \contentsline {section}{\numberline {7.1}Conclus\IeC {\~o}es}{89}{section.7.1}
 \contentsline {section}{\numberline {7.2}Problemas encontrados}{90}{section.7.2}
 \contentsline {section}{\numberline {7.3}Trabalho futuro}{90}{section.7.3}
-\contentsline {chapter}{\numberline {A}\textit {Mockup} da aplica\IeC {\c c}\IeC {\~a}o \textit {mobile}}{99}{appendix.A}
-\contentsline {chapter}{\numberline {B}Implementa\IeC {\c c}\IeC {\~a}o do \textit {trigger} \acs {SQL} }{101}{appendix.B}
-\contentsline {chapter}{\numberline {C}\acl {API} \acs {REST}}{103}{appendix.C}
-\contentsline {chapter}{\numberline {D}\textit {Packages} utilizados}{107}{appendix.D}
-\contentsline {chapter}{\numberline {E}Interliga\IeC {\c c}\IeC {\~a}o de componentes}{109}{appendix.E}
+\contentsline {chapter}{\numberline {A}\textit {Mockup} da aplica\IeC {\c c}\IeC {\~a}o \textit {mobile}}{101}{appendix.A}
+\contentsline {chapter}{\numberline {B}Implementa\IeC {\c c}\IeC {\~a}o do \textit {trigger} \acs {SQL} }{103}{appendix.B}
+\contentsline {chapter}{\numberline {C}\acl {API} \acs {REST}}{105}{appendix.C}
+\contentsline {chapter}{\numberline {D}\textit {Packages} utilizados}{109}{appendix.D}
+\contentsline {chapter}{\numberline {E}Interliga\IeC {\c c}\IeC {\~a}o de componentes}{111}{appendix.E}
