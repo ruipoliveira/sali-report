@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.6)  19 NOV 2017 10:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.6)  19 NOV 2017 17:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3245,11 +3245,11 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 427.
  ) 
 Here is how much of TeX's memory you used:
- 26151 strings out of 494929
- 444000 string characters out of 6180142
- 708002 words of memory out of 5000000
- 28079 multiletter control sequences out of 15000+600000
- 18667 words of font info for 70 fonts, out of 8000000 for 9000
+ 26148 strings out of 494929
+ 443970 string characters out of 6180142
+ 708010 words of memory out of 5000000
+ 28077 multiletter control sequences out of 15000+600000
+ 18368 words of font info for 69 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  68i,17n,98p,1497b,2188s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.32} has been referenced but does not ex
@@ -3371,7 +3371,7 @@ f-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/eurosym/feymr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/symbols/msam10.pfb>
-Output written on thesis-roliveira.pdf (138 pages, 16458135 bytes).
+Output written on thesis-roliveira.pdf (138 pages, 16223486 bytes).
 PDF statistics:
  3095 PDF objects out of 3580 (max. 8388607)
  2625 compressed objects within 27 object streams
