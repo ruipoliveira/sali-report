@@ -1,4 +1,13 @@
-# thesis Salicornia report
+### Monitorization and control system of the production of Salicornia in the Ria de Aveiro
+
+#### Report
+
+#### All repositories
+
+* [sali-report](https://github.com/ruipoliveira/sali-report)
+* [sali-dashboard](https://github.com/ruipoliveira/sali-dashboard)
+* [sali-hardware](https://github.com/ruipoliveira/sali-hardware)
+* [sali-surveillance](https://github.com/ruipoliveira/sali-surveillance)
 
 #### [final version (pdf) ](https://github.com/ruipoliveira/ThesisSalicornia-report/blob/master/thesis-roliveira.pdf)
 
