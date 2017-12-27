@@ -7,6 +7,8 @@
 
 #### Report
 
+> Contains: section of acknowledgements, abstract (two version, portuguese and english), list of contents, list of images, list of tables, acronyms, introduction to the work where it is included of the methodology of work, chapter on IoT and the Salicornia plant, chapter of the state of the art, chapter with modeling and architecture, implementation, tests and result, and finally, conclusion and proposal of future work. 
+
 #### All repositories
 
 * [sali-report](https://github.com/ruipoliveira/sali-report)
