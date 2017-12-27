@@ -22,23 +22,12 @@ Após a criação da \ac{API} \ac{REST} foram utilizadas duas ferramentas, uma g
 
 Estas duas ferramentas permitiram testar e validar o funcionamento da API REST através da utilização dos métodos GET, PUT, POST e DELETE para cada \textit{endpoint}, quando aplicado. De notar que para todos os testes foi necessário incorporar o campo \texttt{Authorization} para autenticar a utilização da API através de um \textit{token} fornecido. A figura \ref{testgrap} e o comando abaixo apresentado permitem ilustrar um teste para o método GET no \textit{endpoint} \texttt{api/sm} através da ferramenta gráfica e na de linha de comandos, respetivamente. 
 
-
-
-
-
-
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\linewidth]{prints-web/API_teste1.png}
 	\caption{Resultado da utilização da ferramenta \textit{Advanced REST client}}
 	\label{testgrap}
 \end{figure}
-
-
-
-
-
-
 
 	\begin{lstlisting}[
 	showspaces=false,
@@ -151,17 +140,9 @@ Relativamente ao algoritmo de deteção de intrusos, este foi testado em três c
 Como se pode observar, para os três casos de teste não existe nenhum conjunto de parâmetros que satisfaça todos os cenários, o que torna impossível saber quais os que deverão ser usados no contexto da câmara de videovigilância, uma vez que dependem da localização e do ângulo da mesma no terreno. 
 
 
-
-
-
 \section{Resultados}
 
 Nesta secção mostram-se os principais resultados obtidos no trabalho prático desta dissertação. É apresentado o sistema de registo dos utilizadores e respetiva validação por parte da empresa, a adição de um novo tipo de sensor na \textit{dashboard} bem como a adição de um novo \acl{SM}. Para além disso, é mostrado o resultado do envio contínuo de dados para o cenário de simulação em \textit{hardware} apresentado. Por fim, é mostrado o mecanismo de atuação remota numa válvula e o respetivo resultado obtido. 
-
-
-
-
-
 
 
 \newpage
@@ -283,8 +264,6 @@ Na figura \ref{view_grap_data} é apresentada a interface de visualização grá
 
 
 
-
-
 Seguidamente, na figura \ref{grafico_humidade} é apresentado o resultado dos dados adquiridos para o sensor de luminosidade durante quatro dias. Os dados eram recebidos dos sensores de 5 em 5 minutos. Na mesma interface é possível observar o número de leituras efetuadas nesta data, o valor máximo e mínimo medido e o valor médio. Os valores 5, 20, 130 e 250 são botões que permitem alterar o número de leituras apresentadas no gráfico. 
  
 
@@ -331,11 +310,6 @@ Na figura \ref{ddashboard} é apresentada a página inicial da \textit{dashboard
 \end{figure}
 
 
-
-
-
-
-
 \begin{figure}[h]
 	\centering
 	\begin{minipage}[b]{0.495\textwidth}
@@ -355,12 +329,7 @@ Na figura \ref{ddashboard} é apresentada a página inicial da \textit{dashboard
 
 Na figura \ref{vigilancia} é apresentada a incorporação do sistema de videovigilância na plataforma \textit{web} do sistema. Por fim, na figura \ref{responsiveinterface} é apresentado o acesso à \textit{dashboard} através de um dispositivo \textit{mobile} (através de um \textit{browser}), sendo possível constatar o seu \textit{design} totalmente responsivo, permitindo utilizar esta interface como ponto de partida para a criação da aplicação \textit{mobile} planeada. 
 
-
-
-
 \section{Considerações finais}
-
-
 
 Neste capítulo foram apresentados alguns dos testes funcionais a alguns módulos do sistema, bem como os resultados dos diferentes componentes do sistema integrado.  A plataforma desenvolvida permite que o seu utilizador possa consultar os alarmes gerados e verificar a evolução dos dados lidos pelos diferentes sensores. Complementarmente, o utilizador poderá atuar remotamente em válvulas/motores/comportas de forma a melhorar as condições de cultivo da Salicórnia. Adicionalmente, este sistema disponibiliza uma API que permite a criação de novas aplicações. De forma a simular este cenário, foi criado um protótipo em \textit{hardware} com diferentes sensores e microcontroladores, utilizando protocolos de comunicação sem fios. Por fim, foi criado um sistema de videovigilância e testado um algoritmo de deteção de intrusos. 
 

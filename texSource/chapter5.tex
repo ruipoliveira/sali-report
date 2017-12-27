@@ -1,32 +1,16 @@
 
-
-
-
 \chapter{Implementação}
 \label{implementacao}
-
-
-
-
 
 Neste capítulo, são explicados os detalhes da implementação deste projeto, incluindo especificamente o projeto Django que inclui o sistema de informação com a aplicação web (\textit{frontend}/\textit{backend}) e a API REST. Para além disso, é descrita a implementação da simulação em \textit{hardware} para o cenário descrito no capítulo anterior bem como o sistema de videovigilância para deteção de intrusos. 
 
 Segundo o ciclo de vida de um \textit{software}, estabelecido por \textit{Saini e Kaur}\cite{Saini2014} que se apresentou na secção \ref{method}, este capítulo irá incluir, em parte, a fase de \textit{designing} mas sobretudo a fase de \textit{coding}. 
 
-
-
-
-
 \section{Sistema de informação}
-
 
 Relativamente ao projeto Django, numa primeira fase procedeu-se à incorporação do \ac{SGBD} PostgreSQL através do psycopg2\footnote{\url{http://initd.org/psycopg/docs/}}. O psycopg2 consiste num adaptador entre o PostgreSQL com a linguagem de programação Python, que permite executar de forma eficiente qualquer \textit{script} em \ac{SQL}. É de notar que nesta fase inicial, se encontram instaladas algumas aplicações nativas do Django entre as quais, o  \texttt{django.contrib.auth} e  o \texttt{django.contrib.sessions}. Através delas é possível verificar o total funcionamento da base de dados uma vez que permitem a criação automática das tabelas associadas aos utilizadores, grupos, permissões e respetivos conteúdos, administração, sessões, entres outros. Estas tabelas são fundamentais ao bom funcionamento do sistema, sendo consideradas no modelo de dados descrito na secção \ref{modelocap}. 
 
-
 Posteriormente, procedeu-se à criação dos diferentes \texttt{Models} conforme a nomenclatura apresentada nas tabelas \ref{tabeladb1} e \ref{tabeladb2} da secção \ref{modelocap}. O excerto de código seguinte pretende exemplificar a criação de um \texttt{Model} associado à tabela que representa a estrutura \acl{SM}, com o respetivo identificador e atributos.  Após a criação de cada \texttt{Model} procedeu-se à migração dos dados para o \ac{SGBD} onde foi possível verificar que as tabelas tinham sido criadas, através da utilização da ferramenta gráfica pgAdmin III. De modo a testar a estrutura criada, procedeu-se à introdução de dados através da zona administrativa do Django (figura \ref{admingdjango}). Através dos dados introduzidos e descrevendo um cenário realista foi possível validar a estrutura e proceder à implementação da aplicação \textit{web} e criação da \ac{API} \ac{REST}. 
-
-
-
 
 \begin{lstlisting}[
 language=Python,
@@ -51,7 +35,6 @@ class SensorModule(models.Model):
 
 \end{lstlisting}
 
-
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[scale=0.4]{prints-web/admindjango.png}
@@ -59,17 +42,9 @@ class SensorModule(models.Model):
 	\label{admingdjango}
 \end{figure}
 
-
-
-
-
-
-
-
 \subsection{Sistema de registo e autenticação}
 
 Primeiramente, procedeu-se à adaptação do \textit{template} AdminLTE de modo a criar as páginas de autenticação e registo dos utilizadores. Como vimos anteriormente, irão existir utilizadores distintos. Assim, de modo a identificá-los e a definir as suas permissões, houve necessidade de criar grupos específicos. Foram então criados dois grupos:  \textit{company}, que identifica uma empresa e \textit{general}, que identificada um utilizador comum. O administrador do sistema é um utilizador que tem o estado de \textit{superuser} ativo, isto é, possui todas as permissões sem que estas lhe sejam atribuídas explicitamente.
-
 
 \begin{figure}[!htb]
 	\centering
@@ -82,19 +57,11 @@ Primeiramente, procedeu-se à adaptação do \textit{template} AdminLTE de modo 
 Como vimos anteriormente, o \textit{company user} apenas poderá ser adicionado ao sistema pelo admistrador, tendo este também permissões de gerir todos os utilizadores registados. Por outro lado, os \textit{company user} têm a possibilidade de validar os \textit{general user} que se associam à sua empresa, tendo posteriormente acesso aos dados/conteúdos desta. Após o registo de um novo \textit{general user} e a validação por parte do \textit{company user}, existem notificações que são enviadas via email. Estas mensagens são enviadas recorrendo ao método \texttt{send\_mail}\footnote{\url{https://docs.djangoproject.com/en/1.11/topics/email/}} existente nativamente no Django pelo pacote \texttt{django.core.mail}, sendo construido através do módulo \texttt{smtplib}\footnote{Módulo que define objetos para sessões \ac{SMTP} \url{https://docs.python.org/3/library/smtplib.html\#module-smtplib}}. Na figura \ref{activt-autent} apresenta-se o diagrama de atividades que ilustra o processo de registo de um \textit{general user} que envolve o utilizador responsável pela empresa (\textit{company user}). 
 
 
-
-
-
-
-
-
 \subsection{Geração de alarmes}
 
 No modelo de dados definido, cada sensor tem que ter obrigatoriamente associado a uma entrada na tabela \texttt{AlarmsSettings} que permite definir o valor máximo e mínimo para o qual são gerados alarmes bem como as mensagens de notificação enviadas ao utilizador. 
 
 A geração de alarmes é condicionada pela comparação do valor lido pelos sensores com o valor máximo e mínimo definidos para o sensor em questão. Uma vez que é necessária esta verificação para cada leitura, criou-se um \textit{trigger} em \ac{SQL} que execute este procedimento, ao nível da \ac{SGBD} tornando o processo mais eficiente. Um \textit{trigger} permite que uma determinada sequência de comandos seja executada sempre que um determinado evento ocorra, neste caso uma adição. No Apêndice \ref{triggerSQLImpe} apresenta-se o \textit{stored procedure} (função) que implementa a sequência de comandos bem como a implementação do \textit{trigger} na linguagem \ac{SQL}. Na figura \ref{fluxoSP} encontra-se um diagrama de fluxo que permite ilustrar a lógica do \textit{stored procedure} implementado. 
-
-
 
 \begin{figure}[!htb]
 	\centering
@@ -103,8 +70,6 @@ A geração de alarmes é condicionada pela comparação do valor lido pelos sen
 	\label{fluxoSP}
 \end{figure}
 
-
-
 %\begin{itemize}
 %	\item Análise do valor médio de cinco medições e respetivo desvio padrão 
 %	\item Análise dos dados, também conhecida por data analist......... falta desenvolver data mining  
@@ -112,8 +77,6 @@ A geração de alarmes é condicionada pela comparação do valor lido pelos sen
 
 
 O utilizador através da \textit{dashboard} e da aplicação \textit{mobile} poderá analisar os alarmes gerados bem como se os valores lidos pelos sensores se encontram dentro do intervalo previamente definidos. Para além disso, é apresentada a mensagem pré-definida (notificação) para que o utilizador possa tomar uma decisão.   
-
-
 
 \newpage
 \subsection{Visualização dos dados e cálculos estatísticos}
@@ -152,8 +115,6 @@ Por fim, relativamente à visualização tabular os dados são apresentados em t
 \end{table}
 
 
-
-
 \subsection{API}
 
 
@@ -167,7 +128,6 @@ Primeiramente, procedeu-se à criação de um novo módulo \texttt{serializers.p
 	\item Através da classe  \texttt{APIView} podem ser implementadas várias políticas da \ac{API}. 
 \end{itemize}
 
- 
 A título de exemplo, no excerto de código seguinte encontra-se a implementação do \textit{endpoint} \texttt{api/cm/\{pk\_or\_name\}} para o método GET. 
 
 \begin{lstlisting}[
@@ -214,14 +174,7 @@ url(r'^api/cm/(?P<pk_or_name>[-\w]+)/$',views.ControllerModule_param.as_view()
 
 \end{lstlisting}
 
-
-
 Como descrito anteriormente, a autenticação desta API usa um método de autenticação via \textit{token}. Para tal, foi necessário a instalar a aplicação \texttt{'rest\_framework.authtoken'} que fornece a estrutura \texttt{Token}, possibilitando a criação e modificação do \textit{token} quando pretendido. Para que a autenticação seja possível é necessário incluir no módulo de configuração do Django o método pretendido, neste caso  \ \texttt{'rest\_framework.TokenAuthentication'}. Sempre que um utilizador é adicionado ao sistema também o respetivo \textit{token} é gerado. Para além disso, o utilizador poderá renovar o \textit{token} sempre que pretendido. No anexo \ref{espcifAPIREST} encontram-se as especificações de cada \textit{endpoint} existente nesta API REST.
-
-
-
-
-
 
 \subsection{Documentação da API}
 
@@ -250,8 +203,6 @@ Ao utilizador da \textit{dashboard}, após fazer a autenticação, ser-lhe-ão a
 	\item Últimos valores lidos pelo sensores dos \textit{Sensor Modules}.
 \end{itemize} 
 
-
-
 Cada um dos mapas interativos permitirá localizar o \acl{CM} bem como os \textit{Sensor Modules} a si associados, sendo estes identificados por marcadores\footnote{Um marcador identifica uma localização no mapa. \\ \url{https://developers.google.com/maps/documentation/javascript/markers?hl=pt-br}} de diferentes cores - no caso do \acl{CM}, a vermelho e nos \textit{Sensor Modules}, a azul. A implementação destes mapas recorre à \ac{API} do Google Maps em \ac{JS}, permitindo receber a localização dos módulos em coordenadas \ac{GPS}. Ao clicar sob um determinado marcador este irá direcionar o utilizador para a página de detalhes do módulo em questão. 
 
 
@@ -270,15 +221,7 @@ A interface gráfica da plataforma permite ainda que o utilizador comum possa:
 	\item Alterar o avatar existente através da ferramenta \textit{Gravatar} disponível em \url{http://pt.gravatar.com/}. 
 \end{itemize}
 
-
-
-
-
-
 Sempre que o utilizador executa uma determinada ação na plataforma este é notificado informando-o se a ação foi bem sucedida ou não. A implementação deste mecanismo recorre à estrutura de mensagens\footnote{\url{https://docs.djangoproject.com/en/1.11/ref/contrib/messages/}} do Django, também conhecida por mensagens de \textit{flash}. 
-
-
-
 
 \subsection{\textit{Deploy} do projecto}
 
@@ -286,9 +229,6 @@ Para implementar o projeto Django juntamente com o servidor \textit{web} Apache 
 
 
 %https://jee-appy.blogspot.com.tr/2015/04/deploy-django-project-on-apache-using.html
-
-
-
 
 \begin{enumerate}
 	\item Instalação do Python na versão 2.7 bem como pip\footnote{Sistema de gestão de pacotes usado para instalar e gerir pacotes de software escritos na linguagem Python.} e respetivo \textit{upgrade} para a versão mais recente
@@ -335,9 +275,6 @@ Para implementar o projeto Django juntamente com o servidor \textit{web} Apache 
 	\texttt{git clone https://github.com/ruipoliveira/ThesisSalicornia-web.git}
 	
 	\texttt{pip install -r requirements.txt}
-	
-	
-
 	
 
 	\item Criação do virtual host. Terá que estar no directório \texttt{/etc/apache2/sites-available/} e criar um ficheiro \texttt{.conf} com o seguinte conteúdo. 
@@ -404,22 +341,10 @@ Para implementar o projeto Django juntamente com o servidor \textit{web} Apache 
 	\item Sincronizar a base de dados através do comando: 
 	
 	\texttt{python manage.py migrate}
-	
-	 
-	 
 	 
 \end{enumerate}
 
-
-
-
 %\subsection{Aplicação mobile}
-
-
-
-
-
-
 
 
 \section{Simulação em \textit{hardware}}
@@ -469,8 +394,6 @@ Numa primeira fase, procedeu-se à comunicação entre o \acl{SM} e \acl{CM} atr
 
 Antes de proceder à implementação de envio e receção de dados por Bluetooth no Raspberry Pi 3, testou-se esta funcionalidade isoladamente. Para isso, utilizou-se uma aplicação existente na \textit{Play Store} denominada  de \textit{Bluetooth Terminal HC-05}\footnote{\url{https://play.google.com/store/apps/details?id=project.bluetoothterminal}}, que permitiu facilmente validar este mecanismo. Os resultados deste teste funcional serão apresentados no próximo capítulo. 
 
-
-
 \subsection{Raspberry Pi 3}
 
 Nesta simulação, o \acl{CM} recebe apenas os dados adquiridos por um \acl{SM}, e envia as ações que este terá que executar.  Para a comunicação entre os dois módulos, foi utilizado o módulo interno Bluetooth 4.1 disponível no \textit{hardware} do Raspberry Pi 3. De modo a conseguir receber os dados adquiridos e enviá-los para o servidor através da \ac{API}, desenvolveu-se um \textit{script} em Python que permite o seguinte: 
@@ -492,13 +415,7 @@ Nesta simulação, o \acl{CM} recebe apenas os dados adquiridos por um \acl{SM},
 		
 	\end{itemize}
 	
-	
-
 \end{enumerate}
-
-
-
-
 
 \begin{figure}[h]
 	\centering
@@ -506,14 +423,6 @@ Nesta simulação, o \acl{CM} recebe apenas os dados adquiridos por um \acl{SM},
 	\caption{Lógica de implementação do \textit{script} para o \acl{CM} }
 	\label{threadscript}
 \end{figure}
-
-
-
-
-
-
-
-
 
 
 %>1 fase testar coneccao arduino to rasp via porta serie; foi criado um script em python para processar info e enviar para o servidor através da API 
@@ -524,12 +433,6 @@ Nesta simulação, o \acl{CM} recebe apenas os dados adquiridos por um \acl{SM},
 
 
 %>  pq nao foi usado um sensor de salinidade? nao havia orçamento.. 
-
-
-
-
-
-
 
 
 
@@ -552,10 +455,6 @@ raspivid -o - -t 0 -vf -hf -fps 30 -b 6000000 | ffmpeg -re -ar 44100 -ac 2 -acod
 \end{lstlisting}
 
 
-
-
-
-
 Seguidamente, são descritos alguns dos parâmetros mais importantes presentes no comando anterior\cite{streamlive}. 
 
 \begin{itemize}
@@ -574,21 +473,13 @@ Seguidamente, são descritos alguns dos parâmetros mais importantes presentes n
 \end{itemize}
 
 
-
-
-
-
 Para além do descrito anteriormente, foi criado um \textit{script} em python que permite a aquisição de imagem proveniente do Raspberry Pi através do package \texttt{picamera}\footnote{\url{http://picamera.readthedocs.io/en/release-1.13/}}. Este pacote, fornece  uma interface em Python (disponível para qualquer versão) para o módulo de câmara Raspberry Pi, permitindo uma fácil interação entre a aquisição da imagem e respetivo processamento.
 Seguidamente será explicada a utilização de um algoritmo de deteção de intrusos disponibilizado pelo OpenCV. 
-
-
- 
 
 
 \subsection{Utilização do algoritmo de deteção de intrusos}
 \label{algdetecao}
 % artigo http://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf
-
 
 Para a implementação do algoritmo de deteção de intrusos estudou-se o módulo \linebreak \texttt{peopledetect.py}\footnote{\url{https://github.com/npinto/opencv/blob/master/samples/python2/peopledetect.py}} disponível no repositório github do OpenCV. Este algoritmo permite detetar pessoas recorrendo a algoritmos específicos do OpenCV já treinados para o efeito, que serão descritos seguidamente. Complementarmente, foi analisado um artigo\cite{Dalal} que permitiu entender melhor a implementação apresentada, evidenciando o processo de deteção de características, algoritmos de treino (neste caso \ac{SVM}) e respetivos testes. No excerto de código seguinte encontra-se a implementação base fornecida pelo OpenCV para deteção de pessoas, que seguidamente será descrita. 
 
@@ -633,10 +524,7 @@ hog.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
 	 
 \end{itemize}
 
-
-
 O algoritmo apresentado permite a deteção de intrusos (humanos), quando estes surgem em vídeos ou imagens. Pretende-se incorporar este algoritmo no sistema de videovigilância (Youtube Live), possibilitando a deteção de indivíduos quando estes são capturados pela câmara, gerando alarmes para a plataforma. Para incorporar o algoritmo apresentado com o Youtube Live é necessário entender o mecanismo de \textit{streaming} disponibilizado pela \ac{API} do YouTube Live Streaming\footnote{\url{https://developers.google.com/youtube/v3/live/getting-started}}.  
-
 
 \newpage
 
@@ -658,43 +546,15 @@ O algoritmo apresentado permite a deteção de intrusos (humanos), quando estes 
 	
 \end{figure}
 
-
-
-
-
-
 Como vimos anteriormente, existem vários parâmetros para o método \linebreak \texttt{detectMultiScale()}, que permitem ajustar o tamanho da deteção. Dependendo da disposição exata da câmara, é possível ajustar estes parâmetros permitindo uma deteção o mais eficaz possível. No próximo capítulo serão apresentados alguns exemplos em que é possível testar o algoritmo apresentado.  
 
 
 
-
-
-
-
-
-
-
 %Deteção de intrusos: http://www.pyimagesearch.com/2015/11/09/pedestrian-detection-opencv/
-
-
-
 %versão simplificada: http://www.pyimagesearch.com/2015/02/16/faster-non-maximum-suppression-python/
-
-
-
 %Servidor em falsk 
-
-
 %deploy  https://iotbytes.wordpress.com/python-flask-web-application-on-raspberry-pi-with-nginx-and-uwsgi/
-
-
-
 %Dataset: %http://www.robots.ox.ac.uk/ActiveVision/Research/Projects/2009bbenfold_headpose/project.html
-
-
-
-
-
 
 \iffalse
 
@@ -728,16 +588,9 @@ Caso sejam detetadas pessoas são gerados alarmes através da \ac{API} \ac{REST}
 \fi
 
 
-
-
-
-
-
 \section{Considerações finais}
 
 Neste capítulo foram apresentadas algumas soluções de implementação julgadas mais relevantes. Seguidamente encontram-se algumas conclusões finais da implementação de cada componente e, no próximo capítulo, serão mostrados os testes e resultados. No anexo \ref{packagesAnex} encontram-se todos os \textit{packages} utilizados para a implementação de cada módulo do sistema desenvolvido. 
-
-
 
 \begin{itemize}
 	
@@ -749,11 +602,4 @@ Neste capítulo foram apresentadas algumas soluções de implementação julgada
 	 
 	\item \textbf{Sistema de videovigilância}: relativamente ao sistema de videovigilância foi possível testar o serviço do Youtube Live para este cenário, ficando a faltar a incorporação do algoritmo de deteção com a API do Youtube Live. 
 	
-
-	
 \end{itemize}
-
-
-
-
-

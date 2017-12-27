@@ -4,10 +4,7 @@
 
 Neste capítulo, são apresentados os resultados da pesquisa bibliográfica sobre as ferramentas tecnológicas que poderão ser utilizadas no decorrer do trabalho prático desta dissertação. Serão apresentadas algumas das tecnologias mais populares e realizada uma comparação entre estas. Por fim, será apresentado e descrito o motivo pelo qual serão utilizadas. 
  
-
-
 \section{Conceitos tecnológicos}
-
 
 Nesta secção são apresentados alguns conceitos tecnológicos ou ferramentas utilizadas em toda a dissertação. 
 
@@ -25,8 +22,6 @@ Nesta secção são apresentados alguns conceitos tecnológicos ou ferramentas u
 	
 \end{itemize}
 
-
-
 \section{\acl{SGBD}}
 
 Um \acl{SGBD} (\acs{SGBD}) consiste num \textit{software} ou conjunto de \textit{softwares} responsáveis pela manipulação de uma base de dados, permitindo a realização de um conjunto enorme de operações, como por exemplo, operações básicas de manipulação de registos e respetiva visualização, operações estatísticas e respetivos relatórios, automatização de funcionalidades, entre outras. Seguidamente são apresentados três dos \ac{SGBD} mais populares e a sua respetiva comparação. 
@@ -38,18 +33,9 @@ Um \acl{SGBD} (\acs{SGBD}) consiste num \textit{software} ou conjunto de \textit
 O MySQL é considerado o \ac{SGBD} mais popular, que utiliza a linguagem de consulta estruturada \ac{SQL} como interface. Este \ac{SGBD} é líder em aplicações baseadas na \textit{web}, tais como o Facebook, Twitter, YouTube, Yahoo!, entre outros. O sucesso do MySQL é em grande parte devido à facilidade de  integração com a linguagem PHP, sendo que também possibilita a interação com outras linguagens, como por exemplo, Java, C/C++, C\#, Visual Basic, Python, ASP, entre outras. Possui um elevado desempenho, fiabilidade e facilidade de utilização\cite{MySQL2011}\cite{why-msql}.	
 
 
-
-
-
-
-
-
 \subsection{SQL Server}
 
 O SQL Server é um \ac{SGBD} desenvolvido pela Microsft com bastante popularidade, tendo suporte para as seguintes linguagens de programação: C++, PHP, Java, \ac{JS}, Python, entre outras. A última versão deste \ac{SGBD} é o SQL Server 2017, que também está disponível para ambientes Linux\cite{linuxsqlserver}.
-
-
-
 
 \subsection{PostgreSQL}
 
@@ -58,12 +44,7 @@ O PostgreSQL é um \ac{SGBD} livre do tipo objeto-relacional uma vez que permite
 
 %Ele tem mais de 15 anos de desenvolvimento ativo e uma arquitetura comprovada que ela ganhou uma forte reputação de confiabilidade, integridade de dados e correção. Ele roda em todos os principais sistemas operacionais, incluindo Linux, UNIX (AIX, BSD, HP-UX, SGI IRIX, MacOS, Solaris, Tru64), e Windows. É totalmente compatível com ACID, tem suporte completo para chaves estrangeiras, junções views, triggers e procedimentos armazenados (em várias línguas). Ele inclui mais SQL: 2008 tipos de dados, incluindo INTEGER, NUMERIC, BOOLEAN, CHAR, VARCHAR, DATE, INTERVALO e TIMESTAMP. Ele também suporta o armazenamento de grandes objetos binários, incluindo imagens, sons ou vídeo. Ele tem interfaces de programação nativas para C / C ++, Java, .Net, Perl, Python, Ruby, Tcl, ODBC, entre outros, e documentação
 
-
-
 \subsection{Comparação e solução adotada}
-
-
-
 
 Na tabela \ref{Ranking-engines2016} encontra-se a classificação atribuída pela \textit{Ranking DB-Engines} para os \ac{SGBD} estudados de acordo com a sua popularidade, nos meses de Junho e Julho de 2017 e Julho de 2016\cite{DB-engines2016}. O MySQL é considerado o mais popular dos estudados, seguindo-se o SQL Server e por fim o PostgreSQL. A tabela \ref{comp-sqgbdcar} permite comparar algumas das características dos \ac{SGBD} estudados, possibilitando concluir que todos usam o modelo relacional mas apenas o MySQL e o PostgreSQL são \textit{open-source}. Uma vez que o cliente que idealizou este sistema pretende que sejam utilizadas tecnologias sem qualquer custo adicional (sendo mais à frente referido nos requisitos não funcionais), excluiu-se  desde logo o SQL Server da Microsoft. Restam então duas tecnologias estudadas, o PostgreSQL e o MySQL.
 
@@ -84,22 +65,7 @@ Na tabela \ref{Ranking-engines2016} encontra-se a classificação atribuída pel
 \end{table}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 Embora as diferenças entre estes os dois SGBD não sejam significativas, podemos também ter em consideração a performance. Para tal, existem alguns estudos que pretendem comparar estas duas ferramentas usando a \textit{benchmark} TPC-H\footnote{\url{http://www.tpc.org/tpch/}}, expondo que a performance do PostgreSQL é ligeiramente superior à do MySQL na maioria das \textit{queries}\cite{Lopez2009}. %rever ref.  
-
-
-
 
 \begin{table}[h]
 	\centering
@@ -127,8 +93,6 @@ Embora as diferenças entre estes os dois SGBD não sejam significativas, podemo
 
 \section{Desenvolvimento \textit{web}}
 
-
-
 No que diz respeito ao desenvolvimento \textit{web} do sistema, permitindo que este seja adaptado ao cliente/empresa conforme as suas necessidades, poderão ser adotadas duas estratégias distintas: 
 
 \begin{itemize}
@@ -141,20 +105,13 @@ No que diz respeito ao desenvolvimento \textit{web} do sistema, permitindo que e
 
 De modo a facilitar o desenvolvimento do sistema, optou-se por desenvolver paralelamente o \textit{frontend} e o \textit{backend}. Posto isto, será utilizada uma \textit{framework} em que o servidor disponibilizará os conteúdos em função das necessidade do cliente. Esta estratégia é mais eficiente e com tempos de resposta mais curtos, relativamente à primeira apresentada. De seguida, são descritas três \textit{frameworks} bastante populares e com características distintas. 
 
-
-
-
 \subsection{ASP.net}
-
 
 ASP.net é uma tecnologia de \textit{scripting} que corre do lado do servidor, permitindo colocar numa página \textit{web}, \textit{scripts} que irão ser executados por um determinado servidor. Uma aplicação desenvolvida nesta tecnologia é executada num servidor da Microsoft, conhecido por \ac{IIS}, que pode ser desenvolvida recorrendo à linguagem C\# ou Microsoft Visual Basic. Esta tecnologia oferece três modelos para a criação de aplicações \textit{web}, ASP.NET \textit{Web Forms}, ASP.NET \ac{MVC}, e ASP.NET \textit{Web Pages}, podendo ser criadas aplicações \textit{web} estáveis e maduras com qualquer um deles\cite{Microsoft2016}. 
 
-
 \subsection{Flask}
 
-
 O Flask consiste numa \textit{micro-framewor}k desenvolvida em Python baseada nas bibliotecas \ac{WSGI} Werkzeug e Jinja2\footnote{\url{http://jinja.pocoo.org/} (motor de modelos mais utilizado em Python)}. Esta \textit{framework} disponibiliza um  modelo simples para desenvolvimento \textit{web}, uma vez que permite economizar bastante tempo na sua conceção. O Pinterest e LinkedIn são exemplos de aplicações que utilizam esta \textit{micro-framework}. As suas principais características  são\cite{Flask2014}:  
-
 
 \begin{itemize}
 	\item Possui um servidor para desenvolvimento e \textit{degub}; 
@@ -166,15 +123,10 @@ O Flask consiste numa \textit{micro-framewor}k desenvolvida em Python baseada na
 	\item Possui uma extensa documentação.
 \end{itemize}
 
-
-
-
 \subsection{Django}
 \label{django}
 
 A \textit{framework} Django é uma ferramenta de desenvolvimento \textit{web} de alto nível desenvolvida na linguagem Python, que possui uma arquitetura \ac{MVC}\cite{Deacon2005}, embora com algumas diferenças em relação a esta. No modelo \ac{MVC}, a componente \textit{Model} diz respeito à camada de acesso a dados, a \textit{View} à parte do sistema responsável pela escolha e apresentação da informação e o \textit{Controller} está encarregue de decidir que \textit{views} escolher (figura \ref{mvcdiag}). 
-
-
 
 \begin{figure}[!htb]
 	\centering
@@ -195,38 +147,18 @@ Os criadores do Django consideram a sua arquitetura com sendo \ac{MTV}\cite{Inde
 	
 \end{itemize}
 
-
-
-
 Um dos pontos mais interessantes no Django é sem dúvida a existência de \linebreak \ac{ORM}. Consiste numa técnica de desenvolvimento que permite modelar os dados através de classes em Python. Através dela, é possível gerar tabelas na base de dados e manipulá-las sem a necessidade de interagir diretamente com \ac{SQL} (embora também seja possível).
 
 De acordo com as descrições dos autores, esta ferramenta possui várias vantagens, entre as quais se destaca, uma boa documentação, facilidade, rapidez no desenvolvimento e respetivo \textit{deployment}. Para além disso, é bastante estável e escalável\cite{Index}. 
 
-
-
-
-
-
-
 %aos programadores, permitindo a utilização de boas práticas de desenvolvimento de serviços REST, aproveitando todas as vantagens da plataforma Django, nomeadamente o ORM definido pela própria plataforma, autenticação, gestão de base de dados, de rotas, entre outras.
-
-
-
 
 \subsection{Conclusões e solução adotada}
 \label{django-conclusao}
 
 Tal como referido anteriormente, pretendia-se usar ferramentas \textit{open-source} para que não existam gastos adicionais com este projeto. Esta opção permitiu desde logo excluir a tecnologia ASP.net. A escolha para desenvolvimento \textit{web} recaiu sobre o Django uma vez que esta \textit{framework} recomenda a utilização do PostgreSQL como \ac{SGBD}, indicando que permite alcançar um bom equilíbrio entre custo, características, rapidez e estabilidade\cite{Holovaty2009}. 
 
-
-
-
-
-
-
-
 \section{Desenvolvimento \textit{mobile}}
-
 
 Uma aplicação móvel, vulgarmente denominada por \textit{app mobile}, consiste num determinado \textit{software} utilizado para realizar funções específicas em dispositivos móveis, como \textit{smartphones} ou \textit{tablets}. Este tipo de \textit{software} facilita ao utilizador o desempenho de determinadas atividades à distância de um simples toque no seu dispositivo. 
 
@@ -235,71 +167,43 @@ Relativamente ao desenvolvimento de aplicações móveis, o programador pode rec
 
 %A base para esta diferenciação está na forma como o código é desenvolvido para a aplicação móvel. Aplicações nativas são desenvolvidas em específico para cada plataforma (iOS, Android ou Windows), com base no código particular a esse sistema operativo. Aplicações híbridas são apps desenvolvidas com tecnologia web, como é o HTML5, CSS e o JavaScript, que utilizam uma funcionalidade desses sistemas chamada WebView para apresentar o código web como uma aplicação responsiva para qualquer plataforma. Ambas apresentam vantagens e desvantagens, pelo que é essencial estar familiarizado com ambas antes de tomar a sua decisã
 
-
-
 \subsection{Plataformas nativas}
 
 Uma aplicação nativa é desenvolvida exclusivamente para ser utilizada por um dispositivo ou plataforma específica, como é o caso do iOS, Android, Windows Phone, entre outras. Nestes casos, são usadas ferramentas e linguagens específicas suportadas pela plataforma, podendo interagir com as funcionalidade do sistema operativo ou aplicações existentes. Seguidamente são apresentadas algumas características de uma aplicação do tipo nativo\cite{Ibm2012a}: 
 
-
-
-
-
-
-
-
 \begin{itemize}
 	\item \textbf{Performance}: acarreta benefícios ao nível da performance, uma vez que as aplicações nativas são desenvolvidas em código específico e otimizado; 
 
-	
-	
 	\item \textbf{Desenvolvimento}: tem que ser desenvolvido de raiz para cada dispositivo, exigindo um maior investimento de tempo;
 	
 	\item \textbf{Interface}: podem ser utilizadas as funcionalidades da \ac{UI} dos plataformas em questão;
 	
-	
 	\item \textbf{Recursos disponíveis}: apenas são disponibilizados os recursos de cada plataforma, existindo APIs que permitem o seu acesso;
-	
-	
 
 	\item \textbf{\textit{Plugins}}: os \textit{plugins} são específicos para cada plataforma, dificultando a sua integração para aplicações multi-plataforma; 
 	
-	
 	\item \textbf{Segurança}: recorre a APIs nativas, utilizando os protocolos de segurança conhecidos da plataforma.
 	
-	
 \end{itemize}
-
 
 \subsection{Multi-plataforma}
 
 %http://websocialdev.com/lista-de-frameworks-para-desenvolvimento-mobile/
 
-
 Uma aplicação multi-plataforma ou híbrida, é desenvolvida utilizando tecnologias \textit{web}, como por exemplo o \ac{HTML}, \ac{CSS} e \ac{JS}. Estas aplicações utilizam uma funcionalidade denominada por \textit{webview} permitindo que o código \textit{web} seja adaptado a uma aplicação responsiva para uma determinada plataforma. De seguida, são apresentadas algumas características desta estratégia de desenvolvimento\cite{Ibm2012a}: 
-
-
-
-
-
 
 % ftp://public.dhe.ibm.com/software/pdf/mobile-enterprise/WSW14182USEN.pdf
 
 \begin{itemize}
 	\item \textbf{Performance}: relativamente à performance, não são dados pontos positivos no que toca às aplicações híbridas, uma vez que estas usam  \textit{webviews} e outros \textit{plugins} que permitem abstrair o acesso às APIs nativas; 
 
-	
 	\item \textbf{Desenvolvimento}: são utilizadas tecnologias \textit{web} (\ac{HTML}, \ac{CSS} e \ac{JS}), que são mais eficazes em termos de custo uma vez que permitem reutilizar código para diferentes tipos de dispositivos; 
-	
 	
 	\item \textbf{Interface}: para aceder à mesma \ac{UI} do dispositivo, é necessário utilizar \textit{plug-ins} adicionais; 
 	
-	
 	\item \textbf{Recursos e \textit{Plugins}}: existem muitos recursos disponíveis para aplicações \linebreak multi-plataforma através de \textit{plugins}, permitindo ter o mesmo efeito em todas as plataformas. Por outro lado, impõe-se a questão da performance; 
 
-	
 	\item \textbf{Segurança}: recorrem a \textit{plugins} externos para garantir maior segurança sendo potencialmente mais vulneráveis.
-	
 	
 \end{itemize}
 
@@ -312,23 +216,14 @@ Existem várias \textit{frameworks} para o desenvolvimento multi-plataforma, ent
 	
 	\item \textbf{Xamarin}: permite o desenvolvimento \textit{mobile} a partir do .NET Framework, utilizando C\#, possibilitando que o compilador gere código nativo disponível para qualquer tipo de plataforma. Uma das principais desvantagens do Xamarin prende-se com a necessidade de desenvolver a \ac{UI} para todas as plataformas necessárias. 
 \end{itemize}
- 
-
 
 \subsection{Conclusões e solução adotada}
 
-
-
 Uma vez que o cliente pretende uma solução \textit{mobile} multi-plataforma, isto é, possível de ser executada em iOS e Android optou-se por utilizar a \textit{framework} Phonegap.  Uma das principais desvantagens da utilização deste paradigma multi-plataforma é o seu baixo desempenho na utilização de recursos do dispositivo. Uma vez que não será necessária a utilização desses recursos, optou-se por utilizar a \textit{framework} Phonegap. 
-
-
-
 
 \section{REST \textit{Frameworks}}
 
-
 Com a evolução da tecnologia, houve a necessidade dos programadores exporem os seus serviços para serem utilizados por outras entidades. Neste sentido, foram criados métodos que permitem a comunicação  entre diferentes sistemas, podendo estes serem alojados em máquinas ou redes diferentes. Para atingir este objetivo, existem atualmente algumas arquiteturas bastante populares, como é o caso do \ac{SOAP} e o \ac{REST}. 
-
 
 \begin{itemize}
 	\item \textbf{\ac{SOAP}}: consiste num protocolo aplicado a ambientes distribuídos e descentralizado, isto é, permite que dois processos possam comunicar estando a ser executados em máquinas ou redes diferentes\cite{Kang2015}. A comunicação entre os diferentes componentes é realizada com base em mensagens \ac{XML} (formato \textit{standard}) enviadas entre os intervenientes através \ac{HTTP}.
@@ -336,31 +231,15 @@ Com a evolução da tecnologia, houve a necessidade dos programadores exporem os
 	
 	\item \textbf{\ac{REST}}: é considerada uma alternativa à arquitetura \ac{SOAP}, sendo menos formal do que esta. Usa o protocolo \ac{HTTP} como modo de funcionamento, com a possibilidade de definir o formato das mensagens a trocar, sendo normalmente utilizados os formatos \ac{JSON} ou \ac{XML}. Tem como grande vantagem a facilidade de implementação, escalabilidade, maior performance na execução e sem a complexidade dos \textit{web-services} tradicionais \cite{restpaper}. 
 	
-	
 \end{itemize}
 
 Dadas as vantagens enumeradas relativamente à tecnologia \ac{SOAP}, optou-se por utilizar a tecnologia \ac{REST}. Seguidamente serão apresentadas algumas \textit{frameworks} bastante populares no desenvolvimento de APIs \ac{REST} e a sua respetiva comparação. 
 
-
-
 \subsection{Django Rest Framework}
-
-
 
 O Django REST Framework é considerado pelos seus autores uma ferramenta poderosa e flexível para a construção de APIs Web\cite{restdjango}, sendo de fácil incorporação quando estamos perante um projeto desenvolvido com a \textit{framework} Django. Esta ferramenta disponibiliza um conjunto de funcionalidades que permitem estender as suas características de uma forma simples e intuitiva, tais como a paginação de conteúdos e a utilização de filtros, a escolha dos formatos de dados, entre outras.
 
-
 Uma das vantagens desta \textit{framework} é a capacidade de construção do serviço através de vistas baseadas em classes. Isto permite de um modo quase automático fazer a construção da API através dos modelos disponíveis, não sendo necessário para implementar a lógica de cada um dos \textit{endpoints}\footnote{Endereço ou ponto de conexão a um serviço web} disponibilizados. Assim, existe a possibilidade de personalizar a lógica de negócio das rotas. Além do mais, esta \textit{framework} disponibiliza uma extensa documentação bem detalhada e explicativa, possuindo ainda uma grande comunidade que a apoia. 
-
-
-
-
-
-
-
-
-
-
 
 
 \subsection{Restlet}
@@ -369,30 +248,15 @@ O Restlet consiste numa \textit{framework} de desenvolvimento \ac{REST} \textit{
 
 Esta solução possui um mecanismo de extensões que permite incluir bibliotecas de Java externas com o objetivo de suportar propriedades das bases de dados, \textit{templates}, segurança, e até outros tipos de serialização de conteúdos. Esta \textit{framework} permite a autenticação através de diversos métodos, entre os quais, a autenticação básica em \ac{HTTP}, Amazon S3 ou OAuth2.0.
 
- 
-
-
-
-
-
 \subsection{Flask-RESTful}
 
 O Flask-RESTful é uma extensão para \textit{microframework} Flask. É considerada simples e de fácil utilização, permitindo o desenvolvimento de serviços de forma rápida e leve através da linguagem Python. É ideal para o desenvolvimento de serviços simples e extensíveis, sem necessidade de configurações acrescidas de \ac{ORM}, administração,  autenticação, entre outros\cite{Flask-RESTful2017}.  Adicionalmente, esta extensão permite abstrair as tarefas relativas ao protocolo \ac{HTTP}. No entanto, o seu desenvolvimento é independente da lógica de negócio do serviço, possibilitando ao seu criador a liberdade de implementar o serviço tendo em conta as suas preferências e necessidades.  
 
-
-
-
 \subsection{Conclusões e solução adotada}
-
 
 Existem inúmeras características que potenciam cada uma das ferramentas/\textit{frameworks} abordadas anteriormente, entre as quais destaco a \ac{HATEOAS}. Esta característica determina se a API é  navegável, isto é, se a partir de um determinado recurso é possível descobrir quais os recursos associados e a sua respetiva informação. Na tabela \ref{comp-rest} apresenta-se uma comparação entre as ferramentas/\textit{frameworks} discutidas anteriormente. 
 
-
 O Django REST Framework é a solução que apresenta uma maior maturidade, disponibilizando um conjunto de funções aos programadores, que possibilitam boas práticas de desenvolvimento \ac{REST}, aproveitando as vantagens da \textit{framework} Django enumeradas anteriormente (secção \ref{django}). Para além disso, permite a autenticação da API, possibilitando que apenas alguns utilizadores tenham acesso aos serviços. 
-
-
-
-
 
 
 \begin{table}[h]
@@ -412,14 +276,6 @@ O Django REST Framework é a solução que apresenta uma maior maturidade, dispo
 		\caption{Comparação entre \textit{frameworks} REST estudadas.}
 		\label{comp-rest}
 \end{table}
-
-
-
-
-
-
-
-
 
 
 \section{Microcontroladores}
@@ -455,9 +311,6 @@ O Arduino Nano\cite{Banzi2012} possui um conjunto de pinos que podem ser program
 \end{figure}
 
 
-
-
-
 \begin{table}[h]
 	\centering
 	
@@ -484,16 +337,11 @@ O Arduino Nano\cite{Banzi2012} possui um conjunto de pinos que podem ser program
 
 \footnotetext{Valor na loja online electrofun \url{www.electrofun.pt}} 
 
-
-
-
 \subsection{Raspberry Pi 3}
 
 Um Raspberry Pi (figura \ref{rasp1}) é mais poderoso do que outros dispositivos de igual dimensão e incorpora alguns periféricos \ac{I/O}, tal como um computador normal. Tem o tamanho de um cartão de crédito e possui um conjunto de \textit{hardware} integrado que, tal como o Arduino, possibilita uma interação com o exterior. Este dispositivo, desenvolvido no Reino Unido pela \textit{Raspberry Pi Foundation}, pode ser ligado a um monitor através da saída HDMI, possuindo também uma saída de áudio e várias portas \ac{USB}. O Raspberry Pi é compatível com sistemas operativos baseados em GNU/Linux ou Windows. No trabalho prático desta dissertação será utilizada a versão 3 do Raspberry Pi com a versão Raspbian\footnote{Distribuição Linux oficial do Raspberry Pi:  \url{https://www.raspberrypi.org/downloads/raspbian/}} instalada\cite{RaspberryPiFoundation2012}.
 
- Na figura \ref{comprasp1} encontram-se os principais componentes da versão utilizada e na tabela \ref{comp23} é feita uma comparação entre a versão 2 e 3 do Raspberry Pi, permitindo concluir que a versão utilizada é a mais poderosa. 
-
-
+Na figura \ref{comprasp1} encontram-se os principais componentes da versão utilizada e na tabela \ref{comp23} é feita uma comparação entre a versão 2 e 3 do Raspberry Pi, permitindo concluir que a versão utilizada é a mais poderosa. 
 
 \begin{figure}[h]
 	\centering
@@ -512,9 +360,6 @@ Um Raspberry Pi (figura \ref{rasp1}) é mais poderoso do que outros dispositivos
 		
 	\end{minipage}
 \end{figure}
-
-
-
 
 \begin{table}[h]
 	\centering
@@ -538,20 +383,11 @@ Um Raspberry Pi (figura \ref{rasp1}) é mais poderoso do que outros dispositivos
 	\label{comp23}
 \end{table}
 
-
-
 \footnotetext{Valor na loja online electrofun \url{www.electrofun.pt}}
-
-
-
-
 
 \section{Sensores}
 
-
 Esta secção tem como objetivo fazer um estudo comparativo entre as diferentes tecnologias usadas para a medição dos vários parâmetros ambientais necessários ao controlo e monitorização da produção de Salicórnia. Serão descritos alguns sensores de temperatura, luminosidade e salinidade existentes no mercado. 
-
-
 
 \subsection{Sensor de temperatura }
 Existem vários tipos de sensores de temperatura baseados em princípios de funcionamento distintos, nomeadamente os termopares, os termístores e os de circuito integrado. 
@@ -559,30 +395,19 @@ Existem vários tipos de sensores de temperatura baseados em princípios de func
 \begin{itemize}
 	\item \textbf{Termopares}: são sensores de temperatura simples, robustos e de baixo custo, constituídos por duas partes diferentes de material condutor. Podem medir temperaturas entre os -200ºC e os 2315ºC, sendo usados em grande escala\cite{REOTEMPInstrumentCorporation}; 
 	 
-	
 	\item \textbf{Termístor}: são sensores cuja resistência varia com a temperatura, sendo construídos a partir de materiais semicondutores. Um sensor deste tipo tem uma grande sensibilidade, ou seja, uma pequena variação de temperatura provoca uma grande variação na sua resistência. A gama de valores de um termístor está entre os -100ºC e os 300ºC. Estes sensores são frágeis, baratos e de dimensões reduzidas, sendo suscetíveis a problemas de auto aquecimento\cite{TemperatureSensors};
-	
 
 	\item \textbf{Circuito integrado}: são sensores construídos através de materiais semicondutores, o que faz com que tenham uma gama de temperatura limitada, geralmente entre os -55ºC e os 150ºC. 	Estão disponíveis com saídas em tensão ou corrente linearmente proporcional à temperatura. 
-
 
 \end{itemize}
 
 
-
-
-
 \subsection{Sensor de luminosidade }
-
 
 %O LDR (Light Dependent Resistor) é um componente cuja resistência varia de acordo com a intensidade da luz. Quanto mais luz incidir sobre o componente, menor a resistência. Este sensor de luminosidade pode ser utilizado em projetos com arduino e outros microcontroladores para alarmes, automação residencial, sensores de presença e etc.
 
 
 Existe uma enorme variedade de sensores de luminosidade/radiação no mercado, contudo para monitorizar a luminosidade incidente numa planta é fundamental conhecer a radiação que é utilizada no processo de fotossíntese, denominada por \ac{PAR}. A figura \ref{grapFoto} ilustra o espectro de absorção de luz pelas plantas. É possível ver que estas são mais sensíveis à luz azul e vermelha (300-700 nm).
-
-
-
-
 
 \begin{figure}[!htb]
 	\centering
@@ -596,16 +421,8 @@ Alguns dos sensores de luminosidade/radição mais comuns no mercado são os sen
 \begin{itemize}
 	\item \textbf{Sensores \ac{PAR}}: são desenhados especificamente para medir a \ac{PAR}, sendo indicados para medir a luz incidente numa planta. Os custos associados a este tipo de sensores são elevados e por isso são utilizados maioritariamente na investigação hortícola; 
 	
-
-
-	
-	
-	
 	\item \textbf{Piranómetros}: estes sensores medem a radiação solar total (radiação ultravioleta, visível e infravermelha), devendo ser utilizados no exterior. Este tipo de sensores é particularmente útil em estações meteorológicas. No entanto, são bastante dispendiosos, podendo ser mais caros dos que os sensores \ac{PAR}; 
-	
-	
-	
-	
+
 	\item \textbf{Sensores optoelectrónicos}: são dispositivos eletrónicos que se baseiam em fenómenos fotovoltaicos. Existem três sensores deste tipo, que possuem um elevado desempenho mesmo quando afetados pelo ruído. São considerados os sensores de luminosidade mais económicos.  
 	 
 		\begin{itemize}
@@ -616,45 +433,26 @@ Alguns dos sensores de luminosidade/radição mais comuns no mercado são os sen
 	
 \end{itemize}
 
-
-
-
-
 \subsection{Sensor de salinidade}
-
 
 Atualmente ainda não se encontra disponível nenhum sensor que permita medir exatamente a salinidade. Contudo, existem sensores que medem a condutividade elétrica num determinado meio, permitindo concluir o estado do meio relativamente à quantidade de sal existente. 
 Um exemplo disso, é o \textit{Smart Water Sensors} da Libelium\cite{World2014}  e o sensor SAL-BTA da Vernier\cite{sall}, que permitem medir de forma fácil e precisa o teor de sal dissolvido numa solução aquosa.
-
-
-
 
 \section{Tecnologias de comunicação}
 \label{state-tecc}
 Nesta secção serão apresentadas algumas das tecnologias de comunicação sem fios mais utilizadas em \textit{Internet of Things} que permitem a troca de informação entre dispositivos. Serão abordadas cinco tecnologias bastante populares no contexto do \ac{IoT}: Bluetooth, Wi-Fi, Zigbee LoRa e SigFox. Por fim, é realizada uma comparação entre as tecnologias estudadas. 
 
 
-
-	
-
-
-
-
 \subsection{Bluetooth}
 
 O Bluetooth surgiu com a intenção de eliminar o elevado número de cabos existentes na comunicação entre dispositivos, sendo que este padrão funciona na banda de frequência 2,4 GHz, conhecida como banda \ac{ISM}\footnote{Faixa de frequência compartilhada por dispositivos, como forno micro-ondas e Wi-Fi}, disponível mundialmente sem a necessidade de licenças. O \ac{BLE} é uma marca característica da versão 4.0 do Bluetooth, que foi projetado para aplicações de baixa potência, utilizada em comunicações de curta distância. Esta tecnologia de comunicação bastante conhecida, consiste numa especificação de rede sem fios de âmbito pessoal, também conhecida por \ac{PANs}, sendo de baixo custo e consumo de energia\cite{Bruno2002}\cite{BluetoothTM2001}.
 
-
 %https://sigarra.up.pt/fcup/en/pub_geral.show_file?pi_gdoc_id=730816
-
-
-
 
 \subsection{Wi-Fi}
 
 
 O Wi-Fi é uma tecnologia de recepção de transmissão de dados sem fios, baseado no \textit{standard} IEEE 802.11. Com o evoluir da tecnologia, têm surgido diferentes variações do mesmo \textit{standard}, sendo a variante 802.11g a mais comum. Seguidamente, são apresentadas as característica principais desta variante\cite{Paper2005}\cite{urlwifi}:
-
 
 \begin{itemize}
 	\item Banda de frequência de 2.4 GHz;
@@ -663,36 +461,22 @@ O Wi-Fi é uma tecnologia de recepção de transmissão de dados sem fios, basea
 	\item Vários mecanismos de encriptação e autenticação.
 \end{itemize}
 
-
-
 \subsection{Zigbee}
 
 
 Zigbee é um padrão de rede sem fios destinado a aplicações de controlo e sensores remotos, adequado para operações em ambientes isolados. Esta tecnologia é de curto alcance, baixa complexidade e consumo de energia, possuindo ainda uma baixa taxa de dados. Permite uma topologia de rede \textit{mesh} (malha) permitindo elevados níveis de fiabilidade e maior alcance de cobertura, fornecendo mais do que um caminho através da rede para qualquer ligação\cite{Rahman2015}. 
 
-
 \subsection{LoRa}
 
 \ac{LoRa} é um tipo de comunicação sem fios bastante utilizado no universo do \ac{IoT}, desenvolvido pela empresa Semtech. Esta tecnologia tem um alcance de mais de 15 Km, e uma capacidade de até 1 milhão de nós. Em termos de segurança, o protocolo LoRa possui mecanismos de validação e autenticação dos nós da rede e de encriptação dos dados transmitidos\cite{LinkLabs2015}\cite{Semtech2017}. 
 
-
-
-
-
 \subsection{Sigfox}
 
-
 A tecnologia Sigfox permite a comunicação sem fios entre dispositivos possuindo um baixo consumo de energia, utilizando a banda \ac{ISM}, tal como o Bluetooth. De acordo com o site oficial, o Sigfox é considerado um protocolo leve, permitindo trocas de pequenas mensagens e possibilitando um consumo de bateria bastante reduzido. Esta tecnologia tem o seguinte limite diário de mensagens: 4 em \textit{DownLink} (nó para a estação) e 140 em \textit{UpLink} (estação para o nó)\cite{sigfoxsite}. Trata-se de uma tecnologia totalmente virada para o \ac{IoT} devido ao seu baixo consumo. 
-
-
-
 
 \subsection{Comparação entre tecnologias de comunicação}
 
 Na tabela \ref{com-tecn} é apresentada uma comparação entre algumas características das tecnologias anteriormente estudadas. De acordo com os dados apresentados na tabela, concluímos que o Zigbee, LoRa e Sigfox são tecnologias de baixo consumo, sendo por isso totalmente inseridas no universo do \ac{IoT}. Contudo, o alcance do Zigbee é bastante inferior relativamente aos restantes. 
-
-
-
 
 \begin{table}[h]
 	\centering
@@ -714,19 +498,10 @@ Na tabela \ref{com-tecn} é apresentada uma comparação entre algumas caracter�
 
 %\subsection{Módulo bluetooth}
 
-
-
-
-
-
 %\section{Aplicações relacionadas}
-
-
 
 %Seja para comparar, seja para replicar boas funcionalidades, ou seja para conseguir oferecer algo mais ao utilizador final, quando se pretende desenvolver uma determinada aplicação, e importante proceder a uma avaliação de aplicações da mesma área se encontram no mercado. 
 %Assim, são aqui abordadas algumas das aplicações relacionadas que são mais utilizadas ou que mais se aproximam daquilo que se pretende para a aplicação a desenvolver neste projeto, tendo em conta os diferentes sistemas operativos.
-
-
 
 %\subsection{Multi-monitorização de estufas agrícolas }
 
@@ -741,21 +516,8 @@ Na tabela \ref{com-tecn} é apresentada uma comparação entre algumas caracter�
 
 %\subsection{Sistema de Monitorização de Estufas Agrícolas}
 
-
 %http://www.anje.pt/preview/perfil-coolfarm
-
-
 
 %\cite{Abreu2012}
 
-
 \newpage
-
-
-
-
-
-
-
-
-

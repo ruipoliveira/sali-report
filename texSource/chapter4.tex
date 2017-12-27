@@ -1,18 +1,11 @@
 
-
 \chapter{Sistema de controlo e monitorização: arquitetura e modelação}
-
-
 
 %Dashboard - 
 
-
 % Mockups - Design que a plataforma deverá apresentar no fim do seu desenvolvimento.
 
-
 %\section{title}
-
-
 
 Segundo \textit{Laudon et al.}\cite{Laudon1998}, um sistema de informação define-se como sendo uma inter-relação de múltiplos componentes podendo estes ser equipamentos, telecomunicações, \textit{software}, bases de dados e outras tecnologias de transformação de informação. Todos estes componentes permitem a recolha, processamento, armazenamento e distribuição de informação que possibilita a tomada de decisões e controlo para uma determinada organização, ou até mesmo para a sociedade, de modo a torná-la mais acessível e útil.
 
@@ -138,10 +131,7 @@ De modo a tornar o sistema genérico foram impostos os seguintes requisitos adic
 	
 \end{itemize}
 
-
-
 \subsection{Requisitos não funcionais}
-
 
 Os requisitos não funcionais são todos os requisitos da aplicação relacionados com performance, escalabilidade, segurança, disponibilidade e usabilidade. Estes não são necessariamente requeridos pelo cliente. 
 
@@ -161,9 +151,6 @@ Os requisitos não funcionais são todos os requisitos da aplicação relacionad
 	
 \end{itemize}
 
-
-
-
 \section{Descrição global do sistema}
 
 Este sistema tem como objetivo a supervisão remota da produção de Salicórnia, permitindo não só a monitorização dos dados adquiridos pelos sensores, como também da atuação remota de determinados comandos. Neste contexto, também é possível a aquisição de imagens que possibilitam a deteção de intrusos nas quintas onde se realiza a produção desta espécie. O esquema da figura \ref{componentesalla} ilustra, de um modo geral, todos os componentes e as diferentes plataformas com que o cliente pode interagir. 
@@ -177,13 +164,7 @@ Este sistema tem como objetivo a supervisão remota da produção de Salicórnia
 \end{figure}
 
 
-
-
-
-
 Como vimos no capítulo 3, uma plantação de  Salicórnia carece de um controlo relativamente fino de certos parâmetros ambientais sobretudo da salinidade do terreno, que depende, das chuvas, da salinidade da água dos canais da ria, entre outros. Nas quintas onde se cultiva Salicórnia, a produção faz-se numa espécie de leiras limitadas por pequenos canais de irrigação que podem ser cheios de água salgada proveniente dos esteiros que rodeiam a quinta. Esta operação implica a abertura de válvulas de admissão de água, medir o nível da maré nos canais e monitorizar a qualidade e salinidade da água exterior.
-
-
 
 \begin{figure}[!htb]
 	\centering
@@ -197,9 +178,6 @@ Tal como ilustrado na figura \ref{leira}, foram colocados módulos com sensores 
 Os módulos centrais têm acesso à camada protocolar \ac{TCP}/\ac{IP} (Internet) para possibilitar a utilização da \acs{API} \acs{REST} desenvolvida para o efeito. 
 
 No que diz respeito às plataformas de interação com o cliente, existe uma \textit{dashboard} (plataforma \textit{web}) e a planificação de uma aplicação \textit{mobile}. A \textit{dashboard} disponibiliza uma interface que apresenta as informações mais importantes para o utilizador de forma apelativa, tornando mais fácil a sua interação e respetiva leitura, possibilitando ainda a gestão de todo o sistema e realização de operações de controlo remoto. Por outro lado, a aplicação \textit{mobile} permite apenas a monitorização do cultivo da Salicórnia e a receção de alertas quando estes surgirem.
-
-
-
 
 \subsection{Componentes}
 
@@ -223,17 +201,9 @@ No contexto desta dissertação é necessário reter dois conceitos principais, 
 
 O cenário da figura \ref{esquema1} ilustra três \textit{Sensor Modules} que comunicam com um \acl{CM}. Cada um desses \acl{SM} possui um conjunto específico de sensores, podendo estes ser atuadores ou câmaras. Para a comunicação com o \acl{CM}, cada \acl{SM} possui um determinado módulo de comunicação que permite a transferência dos dados adquiridos pelos sensores. Posteriormente, o \acl{CM} possui também um determinado módulo de comunicação (\acs{TCP}/\acs{IP}) que permite a utilização da \ac{API} e respetivo envio ou atualização dos dados adquiridos pelo sistema. 
 
-
-
-
-
 Seguidamente serão especificados todos os detalhes de cada módulo, uma vez que serão considerados na modelação de todo o sistema. 
 
-
-
 \subsubsection{\acl{SM}}
-
-
 
 Um \acl{SM} consiste num microcontrolador responsável pela aquisição de dados provenientes dos mais diversos tipos de sensores, podendo estes ser atuadores ou câmaras. No caso de se tratar de um atuador, isto é, válvulas, bombas, contadores, pás ou cancelas, apenas serão lidos valores binários. Caso se trate de uma câmara, todo o processamento é feito internamente nesta, sendo que o sistema apenas irá receber o \ac{IP} da câmara ou um \ac{URL} para um servidor de \ac{RTMP}.  
 
@@ -241,11 +211,6 @@ Um \acl{SM} consiste num microcontrolador responsável pela aquisição de dados
 Tal como referido anteriormente, cada \acl{SM} terá que utilizar um determinado módulo de comunicação para possibilitar a transferência dos dados adquiridos para o módulo central. Para além disso, pretende-se que o \acl{SM} em condições extremas, possa tomar decisões de atuação. Isto é, caso seja lido um valor fora da gama prevista e que seja necessária a ativação de um atuador ou se a comunicação com o \acl{CM} falhar, o \acl{SM} deverá ser auto suficiente em tomar uma decisão, sem necessidade de intervenção do utilizador. 
 
 Pretende-se que este módulo seja identificado por um determinado nome, possua uma bateria que permita a sua mobilidade, tenha um ou vários módulos de comunicação acoplados que permitam comunicar com um módulo centrar. Tenha uma determinada memória e um módulo \ac{GPS} que permita aceder à sua localização, identificando-o em caso de furto. Para além disso, um \acl{SM} terá que possuir obrigatoriamente um ou vários sensores.
-
-
-
-
-
 
 
 
@@ -258,27 +223,11 @@ Um \acl{CM} consiste num microcontrolador responsável pela receção dos dados 
 É essencial que este módulo possua alguma capacidade de processamento, uma vez que poderá ter vários \textit{Sensor Modules} a si associados e com necessidade de constante envio e receção de dados.  Para além disso, pretende-se que o \acl{CM} seja identificado por um determinado nome, tenha um  módulo de comunicação que possibilite o envio de dados para um servidor e outros para comunicação com os diferentes \textit{Sensor Modules}. Tal como acontece com os \textit{Sensor Modules}, existe necessidade de acoplar um módulo \ac{GPS} que permita localizar o microcontrolador em caso de roubo.
  
 
-
-
-
-
-
 %\section{Design funcional}
-
-
-
-
-
-
 
 \section{Modelação}
 
 Tal como vimos no início do capítulo 4, a conceção de uma arquitetura envolve o estudo e respetiva modelação dos componentes de \textit{software} e \textit{hardware} que são fundamentais para a realização da mesma, bem como a análise dos casos de uso e respetiva especificação, criação do modelo de dados, diagramas de fluxos, entre outros. Toda esta modelação será descrita nesta secção permitindo entender melhor como emparelhar toda a estrutura pretendida. Relativamente à metodologia apresenta na secção \ref{method}, esta etapa refere-se à fase de \textit{Designing} (figura \ref{sdlcartic}). 
-
-
-
-
-
 
 \subsection{Entidades envolvidas}
 
@@ -294,15 +243,10 @@ As entidades envolvidas ou atores são os utilizadores do sistema, podendo ser h
 	
 \end{itemize}
 
-
-
-
 \subsection{Casos de uso}
 
 Nas figuras \ref{usedash} e \ref{useMobile} encontram-se representados os esquemas dos casos de uso da \textit{dashboard} e da aplicação \textit{mobile}, respetivamente.
 Seguidamente serão descritos cada um dos casos de uso para as duas plataformas. De notar que todos os casos de uso na aplicação \textit{mobile} também se encontram disponíveis através da \textit{dashboard}. 
-
-
 
 \begin{figure}[!htb]
 	\centering
@@ -311,9 +255,7 @@ Seguidamente serão descritos cada um dos casos de uso para as duas plataformas.
 	\label{usedash}
 \end{figure}
 
-
 \newpage
-
 
 \begin{figure}[!htb]
 	\centering
@@ -322,13 +264,8 @@ Seguidamente serão descritos cada um dos casos de uso para as duas plataformas.
 	\label{useMobile}
 \end{figure}
 
-
-
-
-
 \begin{itemize}
 	\item \textbf{Login no sistema}: qualquer utilizador (\textit{general user}, \textit{company user} ou \textit{admin}) poderá aceder ao sistema tendo para isso que possuir uma conta registada e validada no caso de ser um \textit{general user}. Após a validação das suas credenciais (\textit{username} e \textit{password}) o utilizador poderá aceder à página inicial da \textit{dashboard} e a todo o seu conteúdo. Este caso de uso encontra-se disponível para os dois tipos de plataformas; 
-	
 	
 	\item \textbf{Logout no sistema}: qualquer utilizador (\textit{general user}, \textit{company user} ou \textit{admin}) poderá sair do sistema tendo que para isso que estar obrigatoriamente logado no sistema. Após o \textit{logout} ser-lhe-á apresentada novamente a página de \textit{login}. Este caso de uso encontra-se disponível para os dois tipos de plataformas; 
 	
@@ -347,8 +284,6 @@ Seguidamente serão descritos cada um dos casos de uso para as duas plataformas.
 
 	\item \textbf{Adicionar, editar, remover um \acl{SM}}: qualquer \textit{general user} ou \textit{company user} poderá adicionar, editar ou remover um \acl{SM} existente no sistema. Pressupõe-se que o utilizador possua um determinado microcontrolador com um ou mais sensores. Para adicionar o \acl{SM} à plataforma o utilizador terá que atribuir um nome que o identifique, definir qual o seu estado inicial (ativo ou desativo), escolher os tipos de comunicação presentes e definir o intervalo de tempo para o qual pretende receber os dados lidos pelos sensores. Para além disso, permite associar ao \acl{SM} os sensores presentes e definir o valor máximo e mínimo para os quais são gerados alarmes e respetivas mensagens para notificação. Todos estes dados são possíveis de edição; 
 	
-
-	
 	\item \textbf{Receber notificações (gerar alarmes)}: sempre que um valor lido por um determinado sensor sai fora dos limites impostos, isto é, do valor máximo e do valor mínimo, é gerado um alarme para o utilizador de modo a que este possa intervir. Este caso de uso encontra-se disponível para os dois tipos de plataformas;
 	
 	
@@ -364,8 +299,6 @@ Seguidamente serão descritos cada um dos casos de uso para as duas plataformas.
 	\item \textbf{Consultar a documentação da API}: qualquer \textit{general user} ou \textit{company user} poderá aceder à \textit{dashboard} para consultar a documentação iterativa da \ac{API} existente; 
 		
 	\item \textbf{Consultar \textit{token} de autenticação}: qualquer \textit{general user} ou \textit{company user} poderá aceder ao \textit{token} de autenticação para utilização da \ac{API}; 
-	
-
 	
 	\item \textbf{Validar \textit{general user}}: qualquer \textit{company user} tem a possibilidade de validar os \textit{general users} que a si se associam. Sempre que um novo \textit{general user} é registado no sistema o \textit{company user} é notificado via email. Posteriormente, caso o \textit{general user} seja validado este também receberá um email de confirmação;  
 	
@@ -385,23 +318,11 @@ Seguidamente serão descritos cada um dos casos de uso para as duas plataformas.
 	
 \end{itemize}
 
-
-
-
-
-
-
-
-
 \newpage
 \subsection{Modelo de dados}
 \label{modelocap}
 
 Depois da análise dos requisitos desenhou-se um modelo de dados que permite suportar todo o sistema descrito, obtendo-se assim o esquema relacional apresentado na figura \ref{esquemarelacional}.
-
-
-
-
 
 \begin{figure}[!htb]
 	\centering
@@ -413,13 +334,9 @@ Depois da análise dos requisitos desenhou-se um modelo de dados que permite sup
 
 Nas tabelas \ref{tabeladb1} e \ref{tabeladb2} são descritas cada uma das entidades de dados existente neste sistema, evidenciando as chaves primárias (\ac{PK}) e estrangeiras (\ac{FK}) de cada uma. 
 
-
-
 \newpage
 \begin{landscape}
 	
-	
-
 
 \begin{table}[]
 	\centering
@@ -445,13 +362,6 @@ Nas tabelas \ref{tabeladb1} e \ref{tabeladb2} são descritas cada uma das entida
 
 \newpage
 
-
-
-
-
-
-
-
 \begin{table}[]
 	\centering
 	\begin{tabular}{|
@@ -474,17 +384,13 @@ Nas tabelas \ref{tabeladb1} e \ref{tabeladb2} são descritas cada uma das entida
 \end{landscape}
 
 
-
 \newpage
 \section{Arquitetura lógica}
 
 Nesta secção é apresentada a arquitetura lógica do sistema, indicando as camadas que contém e especificando quais as relações de dependência que estas possuem entre si. Seguidamente, é explicado como implementar esta lógica com os respetivos componentes físicos. 
 
-
 Normalmente, este tipo de arquitetura é composto por três camadas (\textit{3 Tier})\cite{Josuttis2001} com funções diferentes: camada de apresentação, camada de lógica de negócio e camada de acesso a dados. Pretende-se que com a descrição desta arquitetura seja facilitada a manutenção, a portabilidade e a
 escalabilidade, fatores importantes quando queremos partilhar funcionalidades e informação entre aplicações de diferentes tipos.
-
-
 
 
 \begin{figure}[!htb]
@@ -494,12 +400,7 @@ escalabilidade, fatores importantes quando queremos partilhar funcionalidades e 
 	\label{logicaarqu}
 \end{figure}
 
-
-
 A camada de apresentação é responsável pela comunicação entre os utilizadores e a aplicação, sendo ela \textit{web} ou \textit{mobile}, exibindo informações aos utilizadores, abrangendo uma interface que permite solicitações ao sistema. Esta camada tem uma relação de dependência com a camada de lógica de negócio e tira partido do acesso a serviços de informação externos, que fornecem diversas funcionalidades. A interface do utilizador foi desenvolvida em  \ac{HTML} e \acs{CSS}, fazendo uso de jQuery e \ac{JS}.
-
-
-
 
 
 A camada de lógica é onde é realizado todo o processamento dos dados adquiridos pelos sensores ou introduzidos pelos utilizadores do sistema através da camada de apresentação.  Tal como apresentado na figura \ref{logicaarqu}, existem quatro sub-camadas principais, que enfatizam os principiais conceitos existentes nesta camada, a seguir descritos.  
@@ -512,8 +413,6 @@ A camada de lógica é onde é realizado todo o processamento dos dados adquirid
 	\item \textbf{Cálculos estatísticos}: este componente da camada de lógica de negócio ganha especial relevância na altura em que se pretende determinar os valores médios, máximos e mínimos de um conjunto de medições para um determinado intervalo de tempo. 
 	\item \textbf{Comunicação via \ac{API}}: este componente é fundamental para que se possa aceder, atualizar ou adicionar dados ao sistema de um modo simples.
 \end{itemize}
-
-
 
 Relativamente à camada de acesso a dados, deverão estar presentes as funcionalidades de criação, edição, remoção ou simples visualização dos dados, sendo responsável pelas operações de persistência e consulta de dados solicitados pela camada de lógica de negócio.
 
@@ -533,17 +432,9 @@ A figura \ref{fisicablocos} representa genericamente os blocos principais do sis
 	\label{fisicablocos}
 \end{figure}
 
-
-  
 \subsection{Sistema de informação}
 
-
-
-
 A figura \ref{arquiteturasi} ilustra a arquitetura do sistema de informação incluindo especificamente a aplicação \textit{web} (\textit{dashboard}), base de dados, \acs{API}   e respetiva implementação do sistema. 
-
-
-
 
 
 \subsection{Aplicação \textit{web}}
@@ -552,8 +443,6 @@ A aplicação \textit{web} é um componente essencial, enquadrando-se tanto na c
 
 Tal como vimos na secção \ref{django-conclusao} do Estado de Arte, a tecnologia para o desenvolvimento \textit{web} recaiu sobre a \textit{framework} Django, mais precisamente na versão 1.11 para python 2.7, sendo que como \ac{IDE} foi utilizada a verão 2016.3.3 do PyCharm. Dada a facilidade com que esta \textit{framework} tem em manipular \textit{views} e \textit{templates}, optou-se que ambas as componentes (\textit{frontend}/\textit{backend}) fossem desenvolvidas recorrendo ao Django. Para além disso, optou-se por criar uma API REST que permitisse a manipulação dos dados existentes na base de dados, sendo esta também desenvolvida paralelamente com a aplicação \textit{web}. Seguidamente será explicada a sua arquitetura.   
 
-
-
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\linewidth]{esquemas/fisica-si.pdf}
@@ -561,11 +450,7 @@ Tal como vimos na secção \ref{django-conclusao} do Estado de Arte, a tecnologi
 	\label{arquiteturasi}
 \end{figure}
 
-
-
-
 Como descrito na secção \ref{django}, o Django permite modelar os dados através de classes, possibilitando gerar tabelas na base de dados de uma forma quase direta, sem recorrer ao \ac{SQL}. A verificação dos valores lidos pelos sensores e possível geração de alarmes é averiguado por um \textit{trigger} desenvolvido em \ac{SQL}. No capítulo \ref{implementacao} será explicada a sua implementação.  
-
 
 Relativamente à escolha do \ac{SGBD} recaiu sobre o PostgreSQL, mais concretamente na versão 9.3.16. Como ferramenta gráfica para administração deste \ac{SGBD} foi utilizado o PgAdmin III\footnote{\url{www.pgadmin.org/}} na versão 1.22. Este \textit{software} com interface gráfica tem inúmeras funcionalidades desde a possibilidade de ligação a base de dados remotas até à adição, edição, remoção e consulta em tabelas. Esta ferramenta é \textit{open-source} e encontra-se disponível para Windows e UNIX. Como vimos no capítulo \ref{state}, este \ac{SGBD} permite com grande facilidade a incorporação a um projeto Django. 
 
@@ -582,10 +467,6 @@ No que diz respeito à camada de apresentação na plataforma \textit{web} foram
 	\item \textbf{ZingChart}: biblioteca em \ac{JS} que permite receber dados e apresentá-los em formato gráfico. Esta solução \textit{open-source} disponibiliza mais de 35 tipos de gráficos. 
 \end{itemize}
 
-
-
-
-
 \subsection{\acs{API} \acs{REST}}
 
 
@@ -601,13 +482,9 @@ Os métodos da API permitem executar as funções \ac{REST} usando métodos \ac{
 	\item \textbf{DELETE}: permite apagar objetos ou recursos ao sistema. 
 \end{itemize}
 
-
-
-
 Como vimos no capítulo \ref{state}, a escolha da \textit{framework} para construção desta \ac{API} \ac{REST} recaiu sobre o \textit{Django REST framework}. Esta ferramenta possui uma extensa documentação e um elevado apoio da comunidade que a utiliza, sendo uma das mais utilizadas e incorporadas em projetos Django. 
 
 Relativamente à autenticação desta \ac{API}, optou-se por utilizar um esquema de autenticação suportado no mecanismo de autenticação \ac{HTTP} baseado em \textit{tokens}\cite{tokenREST}. Neste mecanismo, o cliente primeiramente troca as suas credencias (\textit{username} e \textit{password}) por um \textit{token}, seguidamente, em vez de enviar essas credenciais a cada requisição, o cliente apenas enviará o \textit{token} inicialmente recebido, permitindo assim o acesso aos conteúdos pretendidos, com respetiva autenticação e autorização dos mesmos (figura \ref{autnetAPI}).
-
 
 \begin{figure}[h]
 	\centering
@@ -628,13 +505,7 @@ Resumidamente e com o objetivo de explicar o esquema da figura \ref{autnetAPI}, 
 	\item O servidor pode ter um \textit{endpoint} que renova o \textit{token} sempre que necessário. 
 \end{enumerate}
 
-
-
-
 Na tabela \ref{endpointsapi} encontram-se todos os \textit{endpoints} e respetivas funções (POST/GET/PUT) a implementar. Seguidamente será descrito como foi implementada a documentação interativa desta \ac{API}.  
-
-
-
 
 \begin{table}[h]
 	\centering
@@ -666,19 +537,10 @@ Na tabela \ref{endpointsapi} encontram-se todos os \textit{endpoints} e respetiv
 	\label{endpointsapi}
 \end{table}
 
-
-
-
-
-
 \subsection{Documentação interativa}
 
 
 Para a geração automática da documentação da \ac{API} utilizou-se o Swagger. Tal como descrito no site oficial desta \textit{framework}\cite{SmartBearSoftware2017}, o Swagger é considerada a ferramenta de APIs mais popular e completa de todo o mundo permitindo facilmente o desenvolvimento do ciclo de vida de uma \ac{API}, desde o \textit{design}, documentação, testes e também implementação, tendo a grande vantagem de ser \textit{open-source}. Neste contexto, apenas será utilizada como documentação, de modo a facilitar a interpretação da \ac{API} criada. O Swagger possui uma interface apelativa e intuitiva, permitindo interagir com a \ac{API} de modo que os seus utilizadores tenham uma ideia geral de como esta responde aos pedidos para diversos parâmetros e opções. 
-
-
-
-
 
 \subsection{Implementação do sistema}
 
@@ -694,35 +556,13 @@ Para implementação do projeto anteriormente descrito e respetiva API, foi disp
 Para o processo de \textit{deployment} do projeto optou-se pela utilização do servidor Apache juntamente com o pacote mod\_wsgi\footnote{\url{https://modwsgi.readthedocs.io/en/develop/}}. 
 Este pacote fornece uma \ac{WSGI} compatível para o alojamento de aplicações \textit{web} em Python sob o servidor \ac{HTTP} Apache. O Apache é um dos servidores \textit{web} \textit{open-source} mais  populares no mundo\cite{TheApacheSoftwareFoundation2016}.
 
-
-
-
-
-
-
 % implementação falar da incorporação na dashboard e poss
-
-
-
-
 
 %\section{Documentação automática}
 
 %\subsection{Documentação API}
 
-
-
-
-
-
-
-
-
-
-
-
 \subsection{Aplicação mobile}
-
 
 Após a análise de requisitos da aplicação \textit{mobile}, elaborou-se um protótipo desta antes de proceder à sua real implementação. O \textit{mockup} da aplicação apresenta-se no Apêndice \ref{Mockup}. 
 
@@ -737,8 +577,6 @@ Após a análise de requisitos da aplicação \textit{mobile}, elaborou-se um pr
 
 
 Tal como descrito no capítulo \ref{state} (Estado da Arte), para o desenvolvimento da aplicação \textit{mobile} optou-se pela utilização de um paradigma multi-plataforma, mais concretamente a \textit{framework} Phonegap. Esta \textit{framework} utiliza a tecnologia Cordova da Apache que permite a integração com recursos nativos dos dispositivos. Através dela, é possível desenvolver aplicações móveis utilizando simplesmente \ac{HTML}, \ac{CSS} e \ac{JS} sem a necessidade de depender de APIs específicas. De modo a facilitar a manipulação do \ac{JS} optou-se por utilizar a \textit{framework} Angular2. Esta biblioteca \textit{open source} mantida pela Google desde 2010, segue uma arquitetura \ac{MVC} e será utilizada para permitir a abstração da manipulação do \ac{DOM} e facilitar a criação/utilização de rotas\cite{Google2015}.
-
-
 
 \newpage
 \subsection{Simulação em \textit{hardware}}
@@ -759,7 +597,6 @@ Nesta secção apresentam-se os sensores utilizados na simulação e as suas pri
 
 
 Como sensor de temperatura foi utilizado um termístor do tipo \ac{NTC} (figura \ref{temp_imag}). Como vimos no capítulo \ref{state}, um termístor é um semicondutor sensível à temperatura, ou seja, quando o coeficiente de variação da resistência com a temperatura é negativa, então a temperatura sobe e consequentemente a resistência diminui. Na figura \ref{esquema-temp} encontra-se o esquema de ligação deste componente e na tabela \ref{table-temp} as suas propriedades principais\cite{temp-dta}. 
-
 
 \begin{figure}[h]
 	\centering
@@ -797,19 +634,9 @@ Como sensor de temperatura foi utilizado um termístor do tipo \ac{NTC} (figura 
 	\label{table-temp}
 \end{table}
 
-
-
-
 \textbf{Luminosidade}
 
-
-
 Para simular a luminosidade incidente foi utilizado um sensor do tipo foto-resistência, neste caso, o GL5528 (figura \ref{cGL5528}). Este sensor, também conhecido como \ac{LDR}, não é mais do que uma resistência variável cujo o seu valor varia conforme a intensidade da luz que incide sobre ele, isto é, à medida que a intensidade da luz aumenta, a sua resistência diminui. Este sensor tem múltiplas aplicações, entre as quais se destaca a monitorização solar, indicador da posição do sol (\textit{up}/\textit{down}), alarmes anti-roubo, alarme para abertura/fecho de portas entre outras. Como vimos no capítulo \ref{state}, é um sensor de baixo custo e de fácil utilização. Na figura \ref{lum-esquema} encontra-se o esquema de ligação do componente e na tabela \ref{lum-cara} são apresentadas as principais características do sensor utilizado. 
-
-
-
-
-
 
 
 \begin{figure}[h]
@@ -828,12 +655,6 @@ Para simular a luminosidade incidente foi utilizado um sensor do tipo foto-resis
 		\label{lum-esquema}
 	\end{minipage}
 \end{figure}
-
-
-
-
-
-
 
 \begin{table}[h]
 	\centering
@@ -854,15 +675,9 @@ Para simular a luminosidade incidente foi utilizado um sensor do tipo foto-resis
 	\label{lum-cara}
 \end{table}
 
-
-
-
 \textbf{Sensor para verificação do estado do nível de água}
 
 Este sensor, denominado por \textit{Water Level Switch Liquid Level Sensor Plastic Ball Float} (figura \ref{levelimg}),  não é mais do que um interruptor que é ativado sempre que um determinado líquido ultrapassa o mesmo, isto é, sempre que algum líquido atingir o pedaço de plástico este irá subir ativando assim o circuito. Na figura \ref{esquem-liquido} encontra-se o esquema da ligação deste sensor.
-
-
-
 
 \begin{figure}[h]
 	\centering
@@ -880,8 +695,6 @@ Este sensor, denominado por \textit{Water Level Switch Liquid Level Sensor Plast
 		\label{esquem-liquido}
 	\end{minipage}
 \end{figure}
-
-
 
 \textbf{Simulador de válvula para transferências de águas}
 
@@ -904,8 +717,6 @@ Para a simulação de uma válvula que permitirá a transferência de água doce
 	\end{minipage}
 \end{figure}
 
-
-
 \subsubsection{Comunicação}
 
 Nesta secção, apresentam-se os tipos de comunicação para o cenário escolhido. Pretendia-se que cada um dos módulo ficasse isolado, o que implicou o estudo e respetiva escolha de algumas tecnologias de comunicações sem fios (secção \ref{state-tecc} do capítulo \ref{state}). 
@@ -927,12 +738,7 @@ O esquema da figura \ref{esquemcomm} ilustra os tipos de comunicação envolvido
 	\label{esquemcomm}
 \end{figure}
 
-
-
-
 \textbf{Módulo Bluetooth HC-06}
-
-
 
 Este módulo Bluetooth oferece uma forma simples de envio e receção de informações remotamente, podendo ser adquirido a um custo reduzido. Este componente funciona apenas em modo \textit{slave}, isto é, apenas permite que outros dispositivos se liguem a si, mas não permite que ele próprio se ligue a outros. Para além disso, possui um \ac{LED} que permite indicar se algum dispositivo está emparelhado. É um dos módulos Bluetooth mais comuns para o microcontrolador Arduino, possuindo um alcance máximo de aproximadamente 10 metros\cite{GuangzhouHCInformationTechnologyCo.2011}.
 
@@ -958,8 +764,6 @@ Na figura \ref{comimageesquema} encontra-se o esquema de ligação deste módulo
 	\end{minipage}
 \end{figure}
 
-
-
 \begin{table}[h]
 	\centering
 	
@@ -980,19 +784,10 @@ Na figura \ref{comimageesquema} encontra-se o esquema de ligação deste módulo
 	\label{cara-comm}
 \end{table}
 
-
-
-
 %http://www.instructables.com/id/Modifying-the-AT-Codes-on-a-HC-05-With-the-Code-ZS/
 
 
 %http://www.arduinoecia.com.br/2013/03/modulo-bluetooth-jy-mcu-configuracao.html
-
-
-
-
-
-
 
 
 \subsection{Sistema de videovigilância }
@@ -1003,11 +798,6 @@ No contexto desta dissertação surgiu a necessidade de implementar um sistema d
 
 %Neste secção é descrita a tecnologia de processamento de imagem utilizada tal como o material necessário e respetiva arquitetura. 
 
-
-
-
-
-
 %\begin{figure}[!htb]
 %	\centering
 %	\includegraphics[width=0.3\linewidth]{img/vision/opencv_logo.jpg}
@@ -1015,25 +805,15 @@ No contexto desta dissertação surgiu a necessidade de implementar um sistema d
 %	\label{opencvlogo}
 %\end{figure}
 
-
-
-
-
 Desde logo, a escolha da tecnologia para processamento de imagem recaiu sobre o OpenCV não apenas por ser uma biblioteca bastante popular e possuir bastantes algoritmos implementados mas também por eu próprio possuir já algum \textit{background} e projetos desenvolvidos nesta área. Pretendia-se que este processamento fosse implementado em material já adquirido sem necessidade de gastos. Optou-se então por utilizar um \textit{Raspberry Pi 3} que juntamente com um \textit{Raspberry Pi camera module} (figura \ref{raspicam}) permitirá a aquisição da imagem e servirá também como \acl{CM} ao sistema de aquisição de dados. Na tabela \ref{cara-cam} apresentam-se algumas características deste módulo para o Raspberry Pi 3.
 \newpage
  
-
-
 \begin{figure}[!htb]
 	\centering
 	\includegraphics[width=0.25\linewidth]{img/hardware/camera_v2.jpg}
 	\caption{Raspberry Pi Camera Board V2 8MP 1080p}
 	\label{raspicam}
 \end{figure}
-
-
-
-
 
 
 \begin{table}[h]
@@ -1053,30 +833,16 @@ Desde logo, a escolha da tecnologia para processamento de imagem recaiu sobre o 
 	\label{cara-cam}
 \end{table}
 
-
-
-
-
-
-
 Inicialmente, após incorporar o \textit{Raspberry Pi camera module} no Raspberry Pi 3 através do \ac{CSI} (imagem 3.5 da secção 3.6.2), testou-se a captura de vídeo através do raspivid. Esta ferramenta de linha de comando, permite testar o funcionamento do módulo, e para além disso, definir em que formato será guardado o vídeo adquirido, bem como o seu comprimento e as suas dimensões\cite{raspivid}. Posteriormente, procedeu-se ao envio da imagem capturada, sem qualquer processamento, para o Youtube Live através da ferramenta FFmpeg.
 
 
 Na figura \ref{arquiteturavisao} encontra-se a arquitetura do sistema de videovigilância anteriormente descrito. No próximo capítulo será apresentado o algoritmo de deteção de intrusos disponibilizado pela ferramenta OpenCV. 
-
-
-
-
-
-
 
 %Inicialmente, explorou-se um algoritmo disponibilizado pelo OpenCV para a deteção de pessoas (corpo inteiro). Este algoritmo, juntamente com técnicas de \textit{machine learning}  permitem a deteção de pessoas numa determinada imagem e/ou vídeo. O \textit{machine learning} (em português aprendizagem automática) consiste num  método de análise de dados que automatiza o desenvolvimento de modelos analíticos, sendo usados algoritmos que aprendem interativamente a partir de dados recolhidos à priori\cite{Kotsiantis2007}. 
 
 %Após a realização de vários testes a este algoritmo, pretendeu-se implementar um servidor de \textit{streaming} que possa ser incorporado na \textit{dashboard}. Para tal, optou-se por criar um aplicação em Flask (\textit{framework} abordada no capitulo \ref{state}) que permita a aquisição de vídeo proveniente da  \textit{Raspberry Pi camera module} e realização do respetivo processamento. Esta aplicação web foi implementada num \textit{Raspberry Pi 3} tendo sido necessário optar por um servidor web, neste caso o NGINX\footnote{https://www.nginx.com/resources/wiki/}. O NGINX é um servidor HTTP de alto desempenho e open-source. É conhecido pela sua alta performance, estabilidade, configuração simples e baixo consumo de recursos\cite{Nginx2017}. 
 
 %Para comunicação entre o servidor web com a aplicação em Flask foi necessária a utilização de uma \ac{CGI} que permita gerir páginas dinâmicas, possibilitando ao navegador passar parâmetros para uma aplicação existente num servidor web. Optou-se por utilizar o uWSGI \footnote{https://uwsgi-docs.readthedocs.io}, sendo um dos mais populares. Na figura \ref{arquiteturavisao} encontra-se a arquitetura do sistema de deteção de intrusos e as respetivas tecnologias utilizadas.
-
-
 
 \begin{figure}[h]
 	\centering
@@ -1086,31 +852,22 @@ Na figura \ref{arquiteturavisao} encontra-se a arquitetura do sistema de videovi
 \end{figure}
 
 
-
 \subsubsection{Biblioteca para processamento de imagem: OpenCV}
 
 O OpenCV, também conhecido por \textit{Open Source Computer Vision Library}, é uma biblioteca de \textit{software} de visão por computador de código \textit{open-source}. Esta biblioteca possui mais de 2500 algoritmos otimizados, que inclui um conjunto abrangente de algoritmos clássicos e avançados de visão computacional bem como algoritmos de \textit{machine learning}. Esses algoritmos podem ser utilizados para os mais diversos fins, como por exemplo, para detetar e reconhecer rostos, identificar objetos, classificar ações humanas em vídeos, detetar movimentos numa câmara, seguir objetos em movimento, entre outros. Esta biblioteca é amplamente utilizada em empresas e grupos de investigação, tendo interfaces nas mais diversas linguagens: C++, C, Python, Java e MATLAB, embora seja nativamente escrita na linguagem C. O OpenCV tem mais de 47 mil pessoas na sua comunidade e excede os 7 milhões de \textit{downloads}, tendo suporte para Windows, Linux e Mac OS\cite{Itseez}.
-
-
 
 \subsubsection{\textit{Streaming} de vídeo: Youtube Live}
 
  O Youtube Live permite que qualquer utilizador possa realizar \textit{streaming} de vídeo, possibilitando escolher entre dois modos: alta latência e baixa latência, isto é, boa ou má qualidade. Uma das grandes vantagens desta ferramenta é manter a \textit{stream} transmitida permitindo consultá-la quando desejado. O Youtube Live utiliza o protocolo \ac{RTMP}, pertencente à camada protocolar TCP/IP, mantendo uma conexão persistente com um servidor que permite a comunicação em tempo real de vídeo ou áudio. Por outro lado, o FFmpeg é uma ferramenta líder, capaz de codificar ou descodificar qualquer tipo de conteúdo, possibilitando a criação ou conversão de \textit{stream} de vídeo/áudio em qualquer formato. É uma ferramenta \textit{open-source} sendo que a sua interação é concretizada através de linha de comandos\cite{FFmpeg2015}. 
 
 
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 
 \section{Diagrama de componentes}
 
 Para o cenário de simulação em \textit{hardware} e respetivo sistema de informação, em que se inclui a \textit{dashboard}, a \ac{API}, aplicação \textit{mobile} e o sistema de videovigilância, obteve-se o diagrama de componentes apresentado na figura \ref{componentesall}. 
 
 No que toca à comunicação entre os diferentes componentes, esta baseia-se essencialmente na API REST que foi criada, embora no caso do sistema de videovigilância seja utilizado um serviço externo (Youtube Live). Por fim, para a comunicação entre \acl{CM} e o \acl{SM} no cenário de simulação é utilizada a tecnologia Bluetooth. 
-
-
 
 \newpage
 
@@ -1121,20 +878,8 @@ No que toca à comunicação entre os diferentes componentes, esta baseia-se ess
 	\label{componentesall}
 \end{figure}
 
-
-
-
-
-
-
 \section{Considerações finais}
 
 
 Neste capítulo foi projetada toda a arquitetura do sistema, tendo por base os requisitos do cliente e a respetiva modelação. Para além disso, a arquitetura anteriormente apresentada foi concebida tendo como garantia que poderia ser adaptada a quaisquer outros cenários distintos do apresentado. Esta arquitetura é apoiada através da exposição de diagramas de arquitetura, casos de uso e modelo de dados. 
-
-
-
-
-
-
 
